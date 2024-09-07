@@ -10,7 +10,7 @@ label story_00_start:
     pause 4.0
     play sound "audio/se/glitch_long_01.ogg"
     pause 1.0
-    #play music "audio/bgm/intro_track.ogg"
+    play music "audio/bgm/sanity_glitch.ogg"
     pause 1.0
     scene black with glitch_unload
     pause 1.0
@@ -40,7 +40,7 @@ label story_00_start:
     pause 2.0
     play sound "audio/se/glitch_medium_01.ogg"
     pause 1.0
-    stop music fadeout 0.5
+    stop music fadeout 1.0
     scene black with glitch_unload_5
     pause 3.0
     "EEEEEEEEEEEEEEK"

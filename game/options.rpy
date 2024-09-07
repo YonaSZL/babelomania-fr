@@ -107,7 +107,7 @@ define config.end_game_transition = None
 ## "window hide", and "window auto" statements.
 
 define config.window = "auto"
-
+define config.window_auto_hide = ["scene", "call screen", "menu", "say-centered", "say-bubble", "pause", "call", "hide"]
 
 ## Transitions used to show and hide the dialogue window
 
