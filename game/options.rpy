@@ -44,6 +44,8 @@ define config.save_directory = "babelomania-1725385568"
 
 define config.version = "1.0"
 
+## Custom Mouse Icon
+define config.mouse = {"default":[ ("gui/cursor.png", 1, 1) ] }
 
 ## Sounds and music ############################################################
 
@@ -54,7 +56,6 @@ define config.version = "1.0"
 define config.has_sound = True
 define config.has_music = True
 define config.has_voice = False
-
 
 ## To allow the user to play a test sound on the sound or voice channel,
 ## uncomment a line below and use it to set a sample sound to play.

@@ -12,18 +12,18 @@ screen overlay_stats():
     if inventory_show:
         button:
             add "gui/stats/avatar_bg.png"
-            idle_foreground "gui/stats/placeholder.png"
-            hover_foreground At("gui/stats/placeholder.png", outline_transform(2, "#876a33", 4.0))
+            idle_foreground "gui/stats/case.png"
+            hover_foreground At("gui/stats/case.png", outline_transform(2, "#876a33", 4.0))
             xysize(230,230) xalign 1.0 offset(-50, 30)
             focus_mask True
-            action NullAction()
+            action Show("inventory")
 
 
     
 
 
     vbox:
-        spacing 10 offset(30,30)
+        spacing 10 offset(15,30)
         if time_menu:
             frame:
                 background "gui/stats/time_bg.png"

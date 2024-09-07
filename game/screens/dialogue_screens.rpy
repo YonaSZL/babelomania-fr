@@ -153,7 +153,7 @@ screen nvl_dialogue(dialogue):
         window:
             id d.window_id
 
-            fixed:
+            vbox:
                 yfit True
 
                 if d.who is not None:
@@ -178,20 +178,23 @@ style nvl_window:
 
 # The style for the text of the speaker's name
 style nvl_label:
-    is say_label
-    xpos 645 xanchor 1.0
-    ypos 0 yanchor 0.0
-    xsize 225
-    min_width 225
-    textalign 1.0
-
-# The style for dialogue in NVL
-style nvl_dialogue:
     is say_dialogue
-    xpos 675
+    xpos 0.5
     ypos 12
     xsize 885
     min_width 885
+    font gui.name_text_font
+    size 30
+    color "#951b14"
+
+# The style for dialogue in NVL
+style nvl_dialogue:
+    #is say_dialogue
+    xpos 0.5
+    xoffset 100
+    ypos 12
+    xsize 845
+    min_width 845
 
 # The style for dialogue said by the narrator in NVL
 style nvl_thought:
