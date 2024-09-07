@@ -18,6 +18,31 @@ define s = Character("Other Eileen", image="eileen", what_xoffset=35,ctc="ctc_bl
 image side eileen = "gui/side_image.png"
 
 
+label splashscreen:
+    scene black
+    pause 1.5
+    scene intro_00 with dissolve
+    pause 2.5
+    scene black with Reveal
+    pause 0.5
+    scene intro_01 with dissolve
+    pause 1.0
+    play music "<from 17.45>audio/bgm/babelomania.ogg" fadein 0.1
+    pause 1.5
+    scene black with Reveal
+    pause 0.5
+    scene intro_02 with dissolve
+    pause 2.5
+    scene black with Reveal
+    pause 0.5
+    scene intro_03 with dissolve
+    pause 2.5
+    scene black with Reveal
+    pause 0.5
+    scene main_screen_bg with Reveal
+    pause 3.0
+    return
+
 # The game starts here.
 
 label start:

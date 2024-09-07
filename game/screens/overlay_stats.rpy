@@ -3,7 +3,7 @@ default stat2 = 80
 
 
 default inventory_show = True
-default time_show = True
+default time_menu = True
 default stat1_show = True
 default stat2_show = True
 screen overlay_stats():
@@ -24,7 +24,7 @@ screen overlay_stats():
 
     vbox:
         spacing 10 offset(30,30)
-        if time_show:
+        if time_menu:
             frame:
                 background "gui/stats/time_bg.png"
                 xysize(395, 77)
