@@ -25,6 +25,8 @@ screen inventory():
         text_hover_color '#bfaa8f'
         text_selected_color '#bfaa8f'
         text_idle_color "#876263"
+        hover_sound "audio/sfx/gui_hover.ogg"
+        activate_sound "audio/sfx/gui_inventory.ogg"
 
 
     ##Calculating how man rows are needed
@@ -52,7 +54,8 @@ screen inventory():
                         add "gui/inventory/cell.png"
                         idle_foreground i.img
                         hover_foreground  At(i.img, outline_transform(2, "#876a33", 4.0))
-
+                        hover_sound "audio/sfx/gui_hover.ogg"
+                        activate_sound "audio/sfx/gui_item.ogg"
                         action CaptureFocus(i.drop)
     else:
         text "Inventory empty" align(0.5, 0.5) yoffset -100 size 40 font "gui/font/Klotee.ttf" color '#bfaa8f'
@@ -72,8 +75,8 @@ screen inventory():
 
                 has vbox
 
-                textbutton "Inspect" action [ ClearFocus("item_drop"), Hide("inventory") ] ###Add whatever action is needed
-                textbutton "Use" action [ ClearFocus("item_drop"), Hide("inventory") ]
+                textbutton "Inspect" action [ ClearFocus("item_drop"), Hide("inventory") ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
+                textbutton "Use" action [ ClearFocus("item_drop"), Hide("inventory") ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_item_use.ogg"
                 
 
 style dropdown_vbox:

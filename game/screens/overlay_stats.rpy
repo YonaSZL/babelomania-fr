@@ -17,6 +17,8 @@ screen overlay_stats():
             xysize(230,230) xalign 1.0 offset(-50, 30)
             focus_mask True
             action Show("inventory")
+            hover_sound "audio/sfx/gui_hover.ogg"
+            activate_sound "audio/sfx/gui_inventory.ogg"
 
 
     

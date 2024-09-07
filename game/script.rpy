@@ -64,7 +64,7 @@ label start:
     scene main_menu_bg
     $ quick_menu = False
     $ time_menu = False
-    #$ inventory_show = False
+    $ inventory_show = False
     $ stat1_show = False
     $ stat2_show = False
     #Disclaimer One

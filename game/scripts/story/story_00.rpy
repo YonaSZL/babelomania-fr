@@ -1,4 +1,5 @@
 label story_00_start:
+    $ renpy.block_rollback()
     stop music fadeout 0.5
     scene black with flash
     pause 3.0
@@ -47,6 +48,9 @@ label story_00_start:
     jump story_00_invitation
 
 label story_00_invitation:
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    $ time_menu = True
     pause 0.5
     scene intro_phone_a with Reveal
     pause 1.5
@@ -59,7 +63,7 @@ label story_00_invitation:
     pause 1.5
     play sound "audio/sfx/gui_phone_swipe.ogg"
     pause 0.5
-    phnv """From: Delphine & Francesco
+    d """From: Delphine & Francesco
     Date: Fri, 30 Apr 20XX at 19:46
     Subject: We're getting married!
 
