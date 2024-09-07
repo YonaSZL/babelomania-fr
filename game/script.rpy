@@ -33,6 +33,18 @@ define glitch_unload = ImageDissolve("gui/transitions/glitch.jpg", 0.35, 128, re
 define glitch_load_5 = ImageDissolve("gui/transitions/glitch.jpg", 0.5, 128)
 define glitch_unload_5 = ImageDissolve("gui/transitions/glitch.jpg", 0.5, 128, reverse=True)
 
+#Defining Music Channels
+init python:
+    renpy.music.register_channel("LoNoise", "sfx",)
+    renpy.music.register_channel("LoNoise2", "sfx",)
+    renpy.music.register_channel("LoNoise3", "sfx",)
+    renpy.music.register_channel("sound2", "sfx", loop=False) #Pan Left Channel
+    renpy.music.register_channel("sound3", "sfx", loop=False) #Pan Right Channel
+    renpy.music.register_channel("sound4", "sfx", loop=False)
+    renpy.music.register_channel("sound5", "sfx", loop=False)
+    renpy.music.register_channel("sound6", "sfx", loop=False)
+    renpy.music.register_channel("sound7", "sfx", loop=False)
+
 label splashscreen:
     scene black
     pause 3.0
@@ -70,24 +82,37 @@ label start:
     #Disclaimer One
     d """{b}WARNING{/b}\n
     
-    Due to some of the Themes and Events depicted in this Fictional Story, it is intended for consumption from a Mature Audience, 
-    where Mature stands for: having reached a stage of mental or emotional development characteristic of an adult.\n{nw}
+    Due to some of the Themes and Events depicted in this Fictional Story, it is intended for consumption from a Mature Audience, where Mature stands for: having reached a stage of mental or emotional development characteristic of an adult.\n
 
-    This game contains elements that may be disturbing or triggering to some players, including but not limited to:\n{nw}
-    Blood\n{nw}
-    Gore\n{nw}
-    Violence\n{nw}
-    Intense fear\n{nw}
-    Jump scares\n{nw}
-    Explicit language\n{nw}
-    Death\n{nw}
-    Suicide\n{nw}
-    Suicide Ideation\n{nw}
-    Trauma\n{nw}
-    PTSD\n{nw}
-    Panic Attacks\n{nw}
-    Prejudice\n{nw}
-    Xenophobia.\n{nw}
+    This game contains elements that may be disturbing or triggering to some players, including but not limited to:{nw}
+
+    Blood{nw}
+    
+    Gore{nw}
+    
+    Violence{nw}
+    
+    Intense fear{nw}
+    
+    Jump scares{nw}
+    
+    Explicit language{nw}
+    
+    Death{nw}
+    
+    Suicide{nw}
+    
+    Suicide Ideation{nw}
+    
+    Trauma{nw}
+    
+    PTSD{nw}
+    
+    Panic Attacks{nw}
+    
+    Prejudice{nw}
+    
+    Xenophobia{nw}
 
     Player discretion is advised."""
     nvl clear

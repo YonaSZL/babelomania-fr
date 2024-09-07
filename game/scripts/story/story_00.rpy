@@ -62,50 +62,57 @@ label story_00_invitation:
     pause 1.5
     play sound "audio/sfx/gui_phone_swipe.ogg"
     pause 0.5
-    d """From: Delphine & Francesco
-    Date: Fri, 30 Apr 20XX at 19:46
-    Subject: We're getting married!
+    d """
+    From: Delphine & Francesco{nw}
 
-    Dearest Shigeo,
+    Date: Fri, 30 Apr 20XX at 19:46{nw}
 
-    We're getting married (again!), and you're cordially invited.
+    Subject: We're getting married!\n
 
-    After tying the knot in the presence of our parents and siblings on Saturday, 11th April 20XX, we couldn't wait to celebrate with all our friends and family. We hope you can join us!
+    Dearest Shigeo,\n
 
-    Check out our wedding website and app to RSVP and find more information.
+    We're getting married (again!), and you're cordially invited.\n
+
+    After tying the knot in the presence of our parents and siblings on Saturday, 11th April 20XX, we couldn't wait to celebrate with all our friends and family. We hope you can join us!\n
+
+    Check out our wedding website and app to RSVP and find more information.\n
 
     {b}Saturday, 14 May 20XX{/b}
     """
     nvl clear
     play sound "audio/sfx/gui_phone_swipe.ogg"
     pause 0.5
-    d """From: Delphine & Francesco
-    Date: Wed, 19 Jan 20XX at 19:46
-    Subject: Important Information about the Venue
+    d """
+    From: Delphine & Francesco{nw}
 
-    Dearest Shigeo,
+    Date: Wed, 19 Jan 20XX at 19:46{nw}
 
-    As the countdown to our wedding day continues, we are thrilled to share some essential information to ensure your stay in France 
-    is comfortable and convenient. Below are the details regarding the accommodations for our special day on May 14th.
+    Subject: Important Information about the Venue.\n
+
+    Dearest Shigeo,\n
+
+    As the countdown to our wedding day continues, we are thrilled to share some essential information to ensure your stay in France is comfortable and convenient. Below are the details regarding the accommodations for our special day on May 14th.\n
 
     Location:
-    The {b}Château de Bois-le-Dumont{/b} is unique even among the many beautiful châteaux that populate France. It originated as an eighteenth century vanity project from an aristocrat, left unfinished in the wake of the revolution.
-    After decades of abandon, it was eventually purchased by the eccentric Abelard Du Bois, who over a period of thirty years shaped it into the château as it is today.
+    """
+    play sound4 "audio/sfx/gui_hint.ogg"
+    d """
+    The {b}Château de Bois-le-Dumont{/b} is unique even among the many beautiful châteaux that populate France. It originated as an eighteenth century vanity project from an aristocrat, left unfinished in the wake of the revolution. After decades of abandon, it was eventually purchased by the eccentric {b}Abelard Du Bois{/b}, who over a period of thirty years shaped it into the château as it is today.\n
 
-    The ceremony and reception will take place in the {b}Baroque Building{/b}, while the guests will be accomodated in the {b}Shoin Building{/b}.
+    The ceremony and reception will take place in the {b}Baroque Building{/b}, while the guests will be accomodated in the {b}Shoin Building{/b}.\n
 
     Directions to the Venue:
-    Please use the link below to find some useful information on how to reach the château. Shuttles are going to be organized at specific times for guests.
-    If you'd rather arrange for your own personal transportation, please let us know.
 
-    Warm regards,
+    Please use the link below to find some useful information on how to reach the château. Shuttles are going to be organized at specific times for guests. If you'd rather arrange for your own personal transportation, please let us know.\n
+    
+    Warm regards,{nw}
 
-    Delphine & Francesco
-
+    Delphine & Francesco{nw}
+    
     P.S. If language is a barrier, please contact Delphine for assistance in French.
     """
-    nvl clear
     pause 1.5
+    nvl clear
     scene black with Reveal2
     pause 1.0
     play music "audio/bgm/canon_in_bois.ogg"

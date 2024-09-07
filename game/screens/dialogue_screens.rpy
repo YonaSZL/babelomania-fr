@@ -171,7 +171,7 @@ screen nvl_dialogue(dialogue):
 
 ## This controls the maximum number of NVL-mode entries that can be displayed at
 ## once.
-define config.nvl_list_length = 6
+define config.nvl_list_length = 16
 
 # The style for the NVL "textbox"
 style nvl_window:
