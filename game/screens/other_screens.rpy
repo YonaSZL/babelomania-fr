@@ -126,7 +126,7 @@ screen about():
                 text "{a=https://ellr.itch.io/}Ellr{/a}, {a=https://ateliermagicae.itch.io/}Atelier Magicae{/a}, Dev Tones, {a=https://nox-sound-design.itch.io/}Nox_Sound_Design{/a}, {a=https://www.gamedevmarket.net/member/shashirajproductions}SHASHIRAJproductions{/a}" xoffset 15 yalign 0.5
             vbox:
                 label "{size=35}ADDITIONAL CODE" yalign 0.5
-                text "{a=https://feniksdev.itch.io/}Feniks{/a}" xoffset 15 yalign 0.5
+                text "{a=https://feniksdev.itch.io/}Feniks{/a}, {a=https://remort-studios.itch.io/}Nai @ MakeVisualNovels{/a}" xoffset 15 yalign 0.5
 
         text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
         

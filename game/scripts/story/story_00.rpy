@@ -3,36 +3,47 @@ label story_00_start:
     scene black with flash
     pause 3.0
     scene intro_disclaimer with dissolve
-    pause 5.0
+    pause 6.0
     scene black with Reveal
     pause 1.5
-    scene intro_babel with quick_dissolve
-    pause 3.0 #Or however is needed
-    play music "audio/bgm/intro_track.ogg"
+    show intro_babel with dissolve
+    pause 4.0
+    play sound "audio/se/glitch_long_01.ogg"
     pause 1.0
-    play sound "audio/sfx/gui_glitch.ogg"
-    scene black with glitch
+    #play music "audio/bgm/intro_track.ogg"
     pause 1.0
-    scene intro_00 with dissolve
+    scene black with glitch_unload
+    pause 1.0
+    scene intro_hand_A with glitch_load_5
+    pause 3.5
+    scene intro_corpse with glitch_load_5
+    pause 3.5
+    scene intro_hand_A with glitch_load_5
     pause 1.5
-    scene intro_01 with dissolve
-    pause 1.5
-    scene intro_02 with dissolve
-    pause 1.5
+    scene intro_hand_B with quick_dissolve
+    pause 2.0
     scene black
-    show intro_03:
-        yalign 1.0# yanchor 1.0
+    pause 3.0
+    show intro_tabitha:
+        yalign 1.0
     with dissolve
     pause 1.5
-    show intro_03:
-        linear 3.0 yalign 1.5
-    pause 0.5
-    scene intro_04 with dissolve
+    show intro_tabitha:
+        easein 5.5 yalign 0.0
+    pause 7.0
+    scene black
+    show intro_tabitha_side:
+        yalign 0.0
+    with glitch_load
     pause 1.5
-    play sound "audio/sfx/gui_glitch.ogg"
+    scene intro_reach with glitch_unload
+    pause 2.0
+    play sound "audio/se/glitch_medium_01.ogg"
+    pause 1.0
     stop music fadeout 0.5
-    scene black with glitch
+    scene black with glitch_unload_5
     pause 3.0
+    "EEEEEEEEEEEEEEK"
     jump story_00_invitation
 
 label story_00_invitation:

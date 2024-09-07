@@ -20,11 +20,18 @@ image side eileen = "gui/side_image.png"
 
 ##User Defined Transitions
 
+define flash = Fade(0.1, 0.0, 0.5, color="#fff")
+
 define Reveal = Dissolve(2.0, alpha=False, time_warp=None)
 define Reveal3 = Dissolve(3.0, alpha=False, time_warp=None)
 define Reveal5 = Dissolve(5.0, alpha=False, time_warp=None)
 define quick_dissolve = Dissolve(0.20, alpha=False, time_warp=None)
 
+define glitch_load = ImageDissolve("gui/transitions/glitch.jpg", 0.35, 128)
+define glitch_unload = ImageDissolve("gui/transitions/glitch.jpg", 0.35, 128, reverse=True)
+
+define glitch_load_5 = ImageDissolve("gui/transitions/glitch.jpg", 0.5, 128)
+define glitch_unload_5 = ImageDissolve("gui/transitions/glitch.jpg", 0.5, 128, reverse=True)
 
 label splashscreen:
     scene black
@@ -83,6 +90,7 @@ label start:
     Xenophobia.\n{nw}
 
     Player discretion is advised."""
+    nvl clear
 
 menu:
     "Do you understand?"
