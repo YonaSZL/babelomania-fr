@@ -38,7 +38,7 @@ screen main_menu():
         ####
 
         text "♦" size 20 yalign 0.5
-        textbutton "Quit " action Quit() hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"
+        textbutton "Quit " action Quit() hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_return.ogg"
         
 
 

@@ -18,6 +18,8 @@ screen main_nav():
             add "gui/gm/save.png" at button_fade
             action ShowMenu("load")
             tooltip "Data"
+            hover_sound "audio/sfx/gui_hover.ogg"
+            activate_sound "audio/sfx/gui_confirm.ogg"
 
         button:
             xysize(120,120)
@@ -25,7 +27,8 @@ screen main_nav():
             add "gui/gm/options.png" at button_fade
             action ShowMenu("preferences")
             tooltip "Options"
-
+            hover_sound "audio/sfx/gui_hover.ogg"
+            activate_sound "audio/sfx/gui_confirm.ogg"
 
         button:
             xysize(120,120)
@@ -35,7 +38,8 @@ screen main_nav():
             tooltip "History"
             if main_menu:
                 sensitive False
-
+            hover_sound "audio/sfx/gui_hover.ogg"
+            activate_sound "audio/sfx/gui_confirm.ogg"
 
         button:
             xysize(120,120)
@@ -43,7 +47,8 @@ screen main_nav():
             add "gui/gm/about.png" at button_fade
             action ShowMenu("misc")
             tooltip "About"
-
+            hover_sound "audio/sfx/gui_hover.ogg"
+            activate_sound "audio/sfx/gui_confirm.ogg"
 
         ###This will bring up a second set of menu in place of this one with
         ### the gallery, music room etc.
@@ -53,7 +58,8 @@ screen main_nav():
             add "gui/gm/extra.png" at button_fade
             action NullAction()
             tooltip "Extras"
-
+            hover_sound "audio/sfx/gui_hover.ogg"
+            activate_sound "audio/sfx/gui_confirm.ogg"
 
     $ tooltip = GetTooltip()
     if tooltip:
@@ -78,11 +84,15 @@ screen game_menu(title):
         xysize(66,66) pos(1754,189)
         add "gui/gm/quit.png" at button_fade
         action Quit()
+        hover_sound "audio/sfx/gui_hover.ogg"
+        activate_sound "audio/sfx/gui_return.ogg"
 
     button:
         xysize(66,66) pos(1750,820)
         add "gui/gm/return.png" at button_fade
         action Return()
+        hover_sound "audio/sfx/gui_hover.ogg"
+        activate_sound "audio/sfx/gui_return.ogg"
 
 
     if main_menu:
