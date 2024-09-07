@@ -1,8 +1,12 @@
 label story_00_start:
     stop music fadeout 0.5
     scene black with flash
-    pause 2.0
-    scene babel_tale with quick_dissolve
+    pause 3.0
+    scene intro_disclaimer with dissolve
+    pause 5.0
+    scene black with Reveal
+    pause 1.5
+    scene intro_babel with quick_dissolve
     pause 3.0 #Or however is needed
     play music "audio/bgm/intro_track.ogg"
     pause 1.0
