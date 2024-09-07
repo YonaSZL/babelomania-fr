@@ -19,3 +19,7 @@ image intro_reach_base = At("images/cgs/intro/intro_reach.jpg", lightStatic)
 image intro_reach:
     "intro_reach_base"
     linear 8.0 zoom 1.5 yoffset 100
+
+image intro_phone_a = "images/cgs/intro/intro_phone_a.jpg"
+image intro_phone_b = "images/cgs/intro/intro_phone_b.jpg"
+image intro_phone_c = "images/cgs/intro/intro_phone_c.jpg"

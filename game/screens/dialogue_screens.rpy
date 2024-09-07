@@ -30,6 +30,8 @@ screen say(who, what):
     ## If there's a side image, display it in front of the text.
     add SideImage() xalign 0.0 yalign 1.0 offset(165,-15)
 
+    use quick_menu
+
 
 ## Make the namebox available for styling through the Character object.
 init python:
@@ -96,8 +98,8 @@ screen quick_menu():
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
 ## the player has not explicitly hidden the interface.
-init python:
-    config.overlay_screens.append("quick_menu")
+#init python:
+#    config.overlay_screens.append("quick_menu")
 
 default quick_menu = True
 
@@ -144,6 +146,8 @@ screen nvl(dialogue, items=None):
                 style "nvl_button"
 
     add SideImage() xalign 0.0 yalign 1.0
+
+    use quick_menu
 
 
 screen nvl_dialogue(dialogue):

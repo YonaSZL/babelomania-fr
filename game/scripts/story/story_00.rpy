@@ -44,7 +44,6 @@ label story_00_start:
     stop music fadeout 1.0
     scene black with glitch_unload_5
     pause 3.0
-    "EEEEEEEEEEEEEEK"
     jump story_00_invitation
 
 label story_00_invitation:
@@ -76,8 +75,11 @@ label story_00_invitation:
     Check out our wedding website and app to RSVP and find more information.
 
     {b}Saturday, 14 May 20XX{/b}
-    {clear}
-    From: Delphine & Francesco
+    """
+    nvl clear
+    play sound "audio/sfx/gui_phone_swipe.ogg"
+    pause 0.5
+    d """From: Delphine & Francesco
     Date: Wed, 19 Jan 20XX at 19:46
     Subject: Important Information about the Venue
 
