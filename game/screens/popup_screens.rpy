@@ -25,10 +25,10 @@ screen confirm(message, yes_action, no_action=None):
 
         hbox:
 
-            textbutton _("Confirm") action yes_action
+            textbutton _("Confirm") action yes_action hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"
             # Modified so you can just have a confirmation prompt
             if no_action is not None:
-                textbutton _("Cancel") action no_action
+                textbutton _("Cancel") action no_action hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"
 
     ## Right-click and escape answer "no".
     if no_action is not None:

@@ -37,26 +37,40 @@ screen preferences():
                             # not in fullscreen.
                             selected not preferences.fullscreen
                             action Preference("display", "window")
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
                         textbutton _("Fullscreen"):
                             action Preference("display", "fullscreen")
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
 
                 vbox:
                     style_prefix "check"
                     label _("Skip")
                     textbutton _("Unseen Text"):
                         action Preference("skip", "toggle")
+                        hover_sound "audio/sfx/gui_hover.ogg"
+                        activate_sound "audio/sfx/gui_confirm.ogg"
                     textbutton _("After Choices"):
                         action Preference("after choices", "toggle")
+                        hover_sound "audio/sfx/gui_hover.ogg"
+                        activate_sound "audio/sfx/gui_confirm.ogg"
                     textbutton _("Transitions"):
                         action InvertSelected(Preference("transitions", "toggle"))
+                        hover_sound "audio/sfx/gui_hover.ogg"
+                        activate_sound "audio/sfx/gui_confirm.ogg"
 
                 vbox:
                     style_prefix "check"
                     label _("Font")
                     textbutton _("Serif"):
                         action gui.SetPreference("font", "gui/font/LinLibertine_R.ttf")
+                        hover_sound "audio/sfx/gui_hover.ogg"
+                        activate_sound "audio/sfx/gui_confirm.ogg"
                     textbutton _("Sans Serif"):
                         action gui.SetPreference("font", "gui/font/Roboto-Light.ttf")
+                        hover_sound "audio/sfx/gui_hover.ogg"
+                        activate_sound "audio/sfx/gui_confirm.ogg"
 
             ##divider frame
             frame:
@@ -107,6 +121,8 @@ screen preferences():
                         textbutton _("Mute All"):
                             style_prefix "check"
                             action Preference("all mute", "toggle")
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
 
 
 
