@@ -1,6 +1,4 @@
 label story_00_start:
-    $ quick_menu = False
-    $ time_menu = False
     stop music fadeout 0.5
     scene black with flash
     pause 2.0
@@ -34,8 +32,6 @@ label story_00_start:
     jump story_00_invitation
 
 label story_00_invitation:
-    $ quick_menu = False
-    $ time_menu = False
     pause 0.5
     scene intro_phone_a with Reveal
     pause 1.5

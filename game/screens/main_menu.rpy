@@ -22,7 +22,7 @@ screen main_menu():
         align(0.5, 1.0) yoffset -205 spacing 30 #ysize 150
         textbutton "Continue" action ShowMenu("load") text_size 70 yoffset 15 hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"
         add "gui/main_menu/divider.png" yoffset 15
-        textbutton "Start" action Start() text_size 100
+        textbutton "Start" action Start() text_size 100 hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
         add "gui/main_menu/divider.png" yoffset 15
         textbutton "Options" action ShowMenu("preferences") text_size 70 yoffset 15 hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"
 
