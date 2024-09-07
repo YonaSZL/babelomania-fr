@@ -87,10 +87,10 @@ screen quick_menu():
         hbox:
             style_prefix "quick"
 
-            textbutton _("Back") action Rollback()
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Menu") action ShowMenu('save')
+            textbutton _("Back") action Rollback() activate_sound "audio/sfx/gui_confirm.ogg"
+            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True) activate_sound "audio/sfx/gui_confirm.ogg"
+            textbutton _("Auto") action Preference("auto-forward", "toggle") activate_sound "audio/sfx/gui_confirm.ogg"
+            textbutton _("Menu") action ShowMenu('save') activate_sound "audio/sfx/gui_confirm.ogg"
 
 
 
