@@ -29,8 +29,8 @@ label story_00_start:
     with dissolve
     pause 1.5
     show intro_tabitha:
-        easein 5.5 yalign 0.0
-    pause 7.0
+        easein 7.0 yalign 0.0
+    pause 8.5
     scene black
     show intro_tabitha_side:
         yalign 0.0
