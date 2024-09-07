@@ -100,7 +100,9 @@ label story_00_invitation:
     The {b}Château de Bois-le-Dumont{/b} is unique even among the many beautiful châteaux that populate France. It originated as an eighteenth century vanity project from an aristocrat, left unfinished in the wake of the revolution. After decades of abandon, it was eventually purchased by the eccentric {b}Abelard Du Bois{/b}, who over a period of thirty years shaped it into the château as it is today.\n
 
     The ceremony and reception will take place in the {b}Baroque Building{/b}, while the guests will be accomodated in the {b}Shoin Building{/b}.\n
-
+    """
+    nvl clear
+    d """
     Directions to the Venue:
 
     Please use the link below to find some useful information on how to reach the château. Shuttles are going to be organized at specific times for guests. If you'd rather arrange for your own personal transportation, please let us know.\n
