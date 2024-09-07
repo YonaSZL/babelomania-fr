@@ -29,12 +29,16 @@ screen misc():
             add "gui/gm/about.png" at button_fade align(0.5, 0.5)
             xysize(101, 101)
             action [SetVariable("misc_page", "about"), Show("misc", dissolve)]
+            hover_sound "audio/sfx/gui_hover.ogg"
+            activate_sound "audio/sfx/gui_confirm.ogg"
         add "gui/button/div.png" xalign 0.5
         button:
             add "gui/button/del_bg.png"
             add "gui/gm/help.png" at button_fade align(0.5, 0.5)
             action [SetVariable("misc_page", "help"), Show("misc", dissolve)]
             xysize(101, 101)
+            hover_sound "audio/sfx/gui_hover.ogg"
+            activate_sound "audio/sfx/gui_confirm.ogg"
 
     add "gui/button/dec_2.png"
 
@@ -119,7 +123,7 @@ screen about():
                 text "The Wonderful JPDE Supporters on {a=https://www.patreon.com/JPDE}Patreon{/a} and {a=https://ko-fi.com/jpde}Ko-Fi{/a}" xoffset 15 yalign 0.5
             vbox:
                 label "{size=35}ADDITIONAL SOUND EFFECTS" yalign 0.5
-                text "Cafofo Music, Potion Audio, W.O.W. Sounds, Joel Steudler" xoffset 15 yalign 0.5
+                text "{a=https://www.patreon.com/JPDE}Cafofo Music{/a}, Potion Audio, W.O.W. Sounds, Joel Steudler" xoffset 15 yalign 0.5
                 text "Dreams Circle, Tom Winandy, Vintage Anime SFX" xoffset 15 yalign 0.5
             vbox:
                 label "{size=35}ADDITIONAL MUSIC" yalign 0.5
@@ -181,11 +185,11 @@ screen help():
 
     hbox:
         align(0.5, 1.0) offset(70, -180) spacing 30
-        textbutton _("Keyboard") action SetVariable("device", "keyboard")
-        textbutton _("Mouse") action SetVariable("device", "mouse")
+        textbutton _("Keyboard") action SetVariable("device", "keyboard") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
+        textbutton _("Mouse") action SetVariable("device", "mouse") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
 
         if GamepadExists():
-            textbutton _("Gamepad") action SetVariable("device", "gamepad")
+            textbutton _("Gamepad") action SetVariable("device", "gamepad") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
 
 
 screen keyboard_help():
@@ -289,7 +293,7 @@ screen gamepad_help():
         label _("Y/Top Button")
         text _("Hides the user interface.")
 
-    textbutton _("Calibrate") action GamepadCalibrate()
+    textbutton _("Calibrate") action GamepadCalibrate() hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
 
 
 style help_button:
