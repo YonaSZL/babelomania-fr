@@ -19,7 +19,7 @@ label story_00_start:
     pause 1.5
     scene black
     show intro_03:
-        yalign 1.0 yanchor 1.0
+        yalign 1.0# yanchor 1.0
     with dissolve
     pause 1.5
     show intro_03:
@@ -274,9 +274,9 @@ label story_00_bathroom_painting_photo:
     sh_i neutral "(That seems to be everything I can surmise from this painting...{w=0.5} Too bad about the missing author, now I want to know more.)"
     sh_i smile "(Let me take a picture of it.{w=0.3} I can Coogle it later, or show someone back home.{w=0.3} Dorothy would know.)"
     play sound "audio/sfx/gui_phone_unlock.ogg"
-    call screen phone_camera("bathroom_painting", "story_00_bathroom_painting_photo")
+    call screen phone_camera("bathroom_painting", "story_00_bathroom_return")
 
-label story_00_bathroom_painting_photo:
+label story_00_bathroom_return:
     scene bathroom_painting with phone_pic
     pause 0.5
     sh_i smile "(There we go.)"

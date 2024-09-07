@@ -14,13 +14,13 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("spooktober")
+define config.name = _("BABELOMANIA")
 
 ## A short name for the game used for executables and directories in the built
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "spooktober"
+define build.name = "BABELOMANIA"
 
 ## Save directory ##############################################################
 ##
@@ -37,7 +37,7 @@ define build.name = "spooktober"
 ## literal string, not an expression.
 
 ## Note: a typical save_directory value looks like "FreshProject-1671818013"
-define config.save_directory = "spooktober-1725385568"
+define config.save_directory = "babelomania-1725385568"
 
 
 ## The version of the game.
@@ -67,7 +67,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "audio/bgm/babelomania.ogg"
 
 
 ## Transitions #################################################################

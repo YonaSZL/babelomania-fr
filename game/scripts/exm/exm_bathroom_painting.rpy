@@ -1,6 +1,6 @@
 
 screen bathroom_painting_examine():
-    return
+    text "Hallo"
 
 label exm_bathroom_painting_subject:
     pause 0.5

@@ -64,7 +64,7 @@ screen game_menu(title):
     #style_prefix "game_menu"
 
     if main_menu:
-        add "main_menu_background"
+        add "main_menu_bg"
     add "gui/gm/bg.png"
 
     use main_nav

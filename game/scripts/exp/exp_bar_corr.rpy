@@ -1,7 +1,6 @@
 
 screen exp_bar_corr():
-    return
-
+    text "Hallo"
 
 label exp_bar_corr_window:
     pause 0.5

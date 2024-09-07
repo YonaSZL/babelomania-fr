@@ -6,16 +6,13 @@
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
 ## Replace this with main menu umage
-image main_menu_background = HBox(
-    Solid("#21212d")
-)
 
 screen main_menu():
 
     ## This ensures that any other menu screen is replaced.
     tag menu
 
-    add "main_menu_background"
+    add "main_menu_bg"
 
     add "gui/main_menu/bg.png" align(0.5, 1.0) yoffset -100
 

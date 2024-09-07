@@ -17,29 +17,36 @@ define s = Character("Other Eileen", image="eileen", what_xoffset=35,ctc="ctc_bl
 
 image side eileen = "gui/side_image.png"
 
+##User Defined Transitions
+
+define Reveal = Dissolve(2.0, alpha=False, time_warp=None)
+define Reveal3 = Dissolve(3.0, alpha=False, time_warp=None)
+define Reveal5 = Dissolve(5.0, alpha=False, time_warp=None)
+define quick_dissolve = Dissolve(0.20, alpha=False, time_warp=None)
+
 
 label splashscreen:
     scene black
-    pause 1.5
+    pause 3.0
     scene intro_00 with dissolve
     pause 2.5
-    scene black with Reveal
+    scene black with Reveal3
     pause 0.5
     scene intro_01 with dissolve
     pause 1.0
-    play music "<from 17.45>audio/bgm/babelomania.ogg" fadein 0.1
+    play music "audio/bgm/babelomania.ogg"
     pause 1.5
-    scene black with Reveal
+    scene black with Reveal3
     pause 0.5
     scene intro_02 with dissolve
-    pause 2.5
-    scene black with Reveal
+    pause 3.0
+    scene black with Reveal3
     pause 0.5
     scene intro_03 with dissolve
     pause 2.5
-    scene black with Reveal
+    scene black with Reveal3
     pause 0.5
-    scene main_screen_bg with Reveal
+    scene main_menu_bg with Reveal3
     pause 3.0
     return
 
