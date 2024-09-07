@@ -123,14 +123,7 @@ screen about():
                 text "The Wonderful JPDE Supporters on {a=https://www.patreon.com/JPDE}Patreon{/a} and {a=https://ko-fi.com/jpde}Ko-Fi{/a}" xoffset 15 yalign 0.5
             vbox:
                 label "{size=35}ADDITIONAL SOUND EFFECTS" yalign 0.5
-                text "{a=https://www.patreon.com/JPDE}Cafofo Music{/a}, Potion Audio, W.O.W. Sounds, Joel Steudler" xoffset 15 yalign 0.5
-                text "Dreams Circle, Tom Winandy, Vintage Anime SFX" xoffset 15 yalign 0.5
-            vbox:
-                label "{size=35}ADDITIONAL MUSIC" yalign 0.5
-                text "SpengaliTamale, MurphyMadeBeats, AyatoSoundCreate" xoffset 15 yalign 0.5
-            vbox:
-                label "{size=35}ADDITIONAL ART" yalign 0.5
-                text "MIMO, Visustella, skillmaster" xoffset 15 yalign 0.5
+                text "{a=https://ellr.itch.io/}Ellr{/a}, {a=https://ateliermagicae.itch.io/}Atelier Magicae{/a}, Dev Tones" xoffset 15 yalign 0.5
             vbox:
                 label "{size=35}ADDITIONAL CODE" yalign 0.5
                 text "Feniks" xoffset 15 yalign 0.5
