@@ -1,0 +1,24 @@
+﻿# TODO: Translation updated at 2024-09-08 21:09
+
+translate french strings:
+
+    # game/screens/inventory.rpy:20
+    old "Inventory"
+    new ""
+
+    # game/screens/inventory.rpy:21
+    old "Close"
+    new ""
+
+    # game/screens/inventory.rpy:61
+    old "Inventory empty"
+    new ""
+
+    # game/screens/inventory.rpy:78
+    old "Inspect"
+    new ""
+
+    # game/screens/inventory.rpy:79
+    old "Use"
+    new ""
+
