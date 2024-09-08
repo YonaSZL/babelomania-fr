@@ -16,15 +16,31 @@ define d = Character(None, kind=nvl, ctc="ctc_blink", ctc_position="nestled")
 define s = Character("Other Eileen", image="eileen", what_xoffset=35,ctc="ctc_blink", ctc_position="nestled")
 image side eileen = "gui/side_image.png"
 
+##Shigeo
+define sh = Character(_("Shigeo"), what_prefix='\"', what_suffix='\"', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
+define sh_x = Character(_("?????"), what_prefix='\"', what_suffix='\"', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
+define sh_xi = Character(_("?????"), what_prefix='{i}', what_suffix='\"', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
+define sh_n = Character(_("Shigeo"), what_suffix='\"', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
+define sh_i = Character(_("Shigeo"), what_prefix='{i}', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
+define sh_st = Character(_("Shigeo"), what_prefix='{u}\"', what_suffix='\"', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
+image side shigeo = LayeredImageProxy("Shigeo_por")
+image side shigeo nulla = Null()
+image side shigeo darko = LayeredImageProxy("Shigeo_por", Transform(matrixcolor=TintMatrix(Color("#000", alpha=0.95))))
+
 ##Tabitha
-define tb = Character(_("Tabitha"), what_prefix='\"', what_suffix='\"', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
-define tb_x = Character(_("?????"), what_prefix='\"', what_suffix='\"', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
-define tb_n = Character(_("Tabitha"), what_suffix='\"', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
-define tb_i = Character(_("Tabitha"), what_prefix='{i}', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
-define tb_st = Character(_("Tabitha"), what_prefix='{u}\"', what_suffix='\"', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
+define ta = Character(_("Tabitha"), what_prefix='\"', what_suffix='\"', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
+define ta_x = Character(_("?????"), what_prefix='\"', what_suffix='\"', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
+define ta_n = Character(_("Tabitha"), what_suffix='\"', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
+define ta_i = Character(_("Tabitha"), what_prefix='{i}', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
+define ta_st = Character(_("Tabitha"), what_prefix='{u}\"', what_suffix='\"', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
 image side tabitha = LayeredImageProxy("Tabitha_por")
 image side tabitha nulla = Null()
 image side tabitha darko = LayeredImageProxy("Tabitha_por", Transform(matrixcolor=TintMatrix(Color("#000", alpha=0.95))))
+
+
+##Minor Characters
+define tb_n = Character("Academic Invitee",ctc="ctc_blink", ctc_position="nestled")
+define tb_n2 = Character("Fashionable Invitee",ctc="ctc_blink", ctc_position="nestled")
 
 ##User Defined Transitions
 

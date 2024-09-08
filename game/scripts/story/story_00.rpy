@@ -53,7 +53,6 @@ label story_00_invitation:
     scene black with Reveal5
     pause 1.5
     $ quick_menu = True
-    $ time_menu = True
     pause 1.0
     scene intro_phone_a with Reveal
     pause 1.5
@@ -122,14 +121,14 @@ label story_00_invitation:
     pause 1.5
     nvl clear
     scene black with Reveal3
-    pause 1.0
+    pause 3.0
     play music "audio/bgm/canon_in_bois.ogg"
     pause 1.0
     $ time_menu = True
-    pause 0.5
-    scene chateau_air with Reveal3
+    pause 1.0
+    scene chateau_setting with Reveal3
     pause 3.0
-    scene black with Reveal3
+    scene black with Reveal
     pause 0.5
     play LoNoise "audio/bgs/reception_crowd.ogg" fadein 0.2
     pause 1.0
@@ -155,7 +154,7 @@ label story_00_invitation:
     sh nulla "<Well, if you see something that creepy while entering the toilets you->"
     pause 1.0
     play sound "audio/em/em_surprise.ogg"
-    show screen emote("surprise",0.5,-0.05)
+    #show screen emote("surprise",0.5,-0.05)
     show Shigeo surprise sweat
     sh_i nulla "(Aw, crap!{w=0.3} There's no such thing as scared shitless in French!{w=0.3} They say that you have a 'blue fear'!)"
     tb_n "<Yes, yes, the subject matter is quite fascinatingly grotesque...{w=0.5} So?>"
