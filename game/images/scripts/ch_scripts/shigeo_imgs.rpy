@@ -12,6 +12,7 @@ image shigeo_exp_surprise = "images/chs/shigeo/exp_surprise.png"
 image shigeo_exp_sad = "images/chs/shigeo/exp_sad.png"
 image shigeo_exp_frown = "images/chs/shigeo/exp_frown.png"
 image shigeo_exp_laugh = "images/chs/shigeo/exp_laugh.png"
+image shigeo_exp_angry = "images/chs/shigeo/exp_angry.png"
 
 layeredimage Shigeo:
     group body:
@@ -35,6 +36,8 @@ layeredimage Shigeo:
             "shigeo_exp_frown"
         attribute laugh:
             "shigeo_exp_laugh"
+        attribute angry:
+            "shigeo_exp_angry"
     group accessories:
         attribute blush:
             "shigeo_acc_blush"
@@ -60,6 +63,7 @@ image shigeo_por_exp_surprise = "images/chs/shigeo/por/exp_surprise.png"
 image shigeo_por_exp_sad = "images/chs/shigeo/por/exp_sad.png"
 image shigeo_por_exp_frown = "images/chs/shigeo/por/exp_frown.png"
 image shigeo_por_exp_laugh = "images/chs/shigeo/por/exp_laugh.png"
+image shigeo_por_exp_angry = "images/chs/shigeo/por/exp_angry.png"
 
 layeredimage Shigeo_por:
     group body:
@@ -83,6 +87,8 @@ layeredimage Shigeo_por:
             "shigeo_por_exp_frown"
         attribute laugh:
             "shigeo_por_exp_laugh"
+        attribute angry:
+            "shigeo_por_exp_angry"
     group accessories:
         attribute blush:
             "shigeo_por_acc_blush"

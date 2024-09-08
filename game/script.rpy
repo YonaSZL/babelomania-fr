@@ -31,12 +31,20 @@ image side shigeo darko = LayeredImageProxy("Shigeo_por", Transform(matrixcolor=
 define ta = Character(_("Tabitha"), what_prefix='\"', what_suffix='\"', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
 define ta_x = Character(_("?????"), what_prefix='\"', what_suffix='\"', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
 define ta_n = Character(_("Tabitha"), what_suffix='\"', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
-define ta_i = Character(_("Tabitha"), what_prefix='{i}', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
 define ta_st = Character(_("Tabitha"), what_prefix='{u}\"', what_suffix='\"', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
 image side tabitha = LayeredImageProxy("Tabitha_por")
 image side tabitha nulla = Null()
 image side tabitha darko = LayeredImageProxy("Tabitha_por", Transform(matrixcolor=TintMatrix(Color("#000", alpha=0.95))))
 
+
+##Gaspard
+define ga = Character(_("Gaspard"), what_prefix='\"', what_suffix='\"', image="gaspard", ctc="ctc_blink", ctc_position="nestled")
+define ga_x = Character(_("?????"), what_prefix='\"', what_suffix='\"', image="gaspard", ctc="ctc_blink", ctc_position="nestled")
+define ga_n = Character(_("Gaspard"), what_suffix='\"', image="gaspard", ctc="ctc_blink", ctc_position="nestled")
+define ga_st = Character(_("Gaspard"), what_prefix='{u}\"', what_suffix='\"', image="gaspard", ctc="ctc_blink", ctc_position="nestled")
+image side gaspard = LayeredImageProxy("Gaspard_por")
+image side gaspard nulla = Null()
+image side gaspard darko = LayeredImageProxy("Gaspard_por", Transform(matrixcolor=TintMatrix(Color("#000", alpha=0.95))))
 
 ##Minor Characters
 define tb_n = Character("Academic Invitee",ctc="ctc_blink", ctc_position="nestled")
