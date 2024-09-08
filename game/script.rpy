@@ -72,6 +72,15 @@ init python:
     renpy.music.register_channel("sound6", "sfx", loop=False)
     renpy.music.register_channel("sound7", "sfx", loop=False)
 
+init -1:
+    transform ta_big:
+        yoffset 40
+        #transform_anchor True
+    transform ta_medium:
+        yoffset 100
+        zoom 0.70
+        #transform_anchor True
+
 label splashscreen:
     scene black
     pause 3.0

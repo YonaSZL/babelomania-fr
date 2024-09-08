@@ -52,7 +52,7 @@ layeredimage Tabitha:
     group accessories:
         attribute brief:
             "tabitha_acc_brief"
-    #at character_sprites_tabitha
+    #at character_sprites
 
 #Portrait Images
 image tabitha_por_body_base = "images/chs/tabitha/por/body_base.png"
