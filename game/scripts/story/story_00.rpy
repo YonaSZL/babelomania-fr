@@ -69,7 +69,7 @@ label story_00_invitation:
 
     Subject: We're getting married!\n
 
-    Dearest Shigeo,\n
+    Dearest {b}Shigeo{/b},\n
 
     We're getting married (again!), and you're cordially invited.\n
 
@@ -99,7 +99,7 @@ label story_00_invitation:
     d """
     The {b}Château de Bois-le-Dumont{/b} is unique even among the many beautiful châteaux that populate France. It originated as an eighteenth century vanity project from an aristocrat, left unfinished in the wake of the revolution. After decades of abandon, it was eventually purchased by the eccentric {b}Abelard Du Bois{/b}, who over a period of thirty years shaped it into the château as it is today.\n
 
-    The ceremony and reception will take place in the {b}Baroque Building{/b}, while the guests will be accomodated in the {b}Shoin Building{/b}.\n
+    The ceremony and reception will take place in the {b}Baroque Building{/b}, while the guests will be accomodated in the {b}Taisho Building{/b}.\n
     """
     nvl clear
     d """

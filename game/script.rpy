@@ -82,7 +82,6 @@ label splashscreen:
 
 label start:
     scene main_menu_bg
-    tb "Greetings."
     $ quick_menu = False
     $ time_menu = False
     $ inventory_show = False
