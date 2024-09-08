@@ -115,8 +115,8 @@ screen file_slots(title):
             idle "gui/button/save_idle.png"
             hover "gui/button/save_hover.png"
 
-            hotspot(757, 868, 54, 35) action FilePagePrevious() focus_mask None
-            hotspot(1130, 868, 66, 35) action FilePageNext() focus_mask None
+            hotspot(757, 868, 54, 35) action FilePagePrevious() focus_mask None hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
+            hotspot(1130, 868, 66, 35) action FilePageNext() focus_mask None hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
         ## Buttons to access other pages.
         vbox:
             style_prefix "page"
@@ -128,7 +128,7 @@ screen file_slots(title):
 
                 ## range(1, 10) gives the numbers from 1 to 9.
                 for page in range(1, 10):
-                    textbutton "[page]" action FilePage(page)
+                    textbutton "[page]" action FilePage(page) hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
 
                 #textbutton _(">") action FilePageNext()
 

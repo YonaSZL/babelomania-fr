@@ -41,6 +41,9 @@ define glitch_unload = ImageDissolve("gui/transitions/glitch.jpg", 0.35, 128, re
 define glitch_load_5 = ImageDissolve("gui/transitions/glitch.jpg", 0.5, 128)
 define glitch_unload_5 = ImageDissolve("gui/transitions/glitch.jpg", 0.5, 128, reverse=True)
 
+define glitch_load15 = ImageDissolve("gui/transitions/glitch.jpg", 1.5, 128)
+define glitch_unload15 = ImageDissolve("gui/transitions/glitch.jpg", 1.5, 128, reverse=True)
+
 #Defining Music Channels
 init python:
     renpy.music.register_channel("LoNoise", "sfx",)
@@ -76,7 +79,7 @@ label splashscreen:
     pause 0.5
     scene main_menu_bg with Reveal3
     pause 3.0
-    show babelomania_logo with glitch_load
+    show babelomania_logo with glitch_load_5
     pause 1.5
     scene white with quick_dissolve
     pause 0.5
@@ -91,7 +94,6 @@ label start:
     $ inventory_show = False
     $ stat1_show = False
     $ stat2_show = False
-    #Disclaimer One
     d """{b}WARNING{/b}\n
     
     Due to some of the Themes and Events depicted in this Fictional Story, it is intended for consumption from a Mature Audience, where Mature stands for: having reached a stage of mental or emotional development characteristic of an adult.\n
@@ -148,39 +150,3 @@ menu gore_selection:
     "Censored gore.":
         #gore_setting
         jump story_00_start
-
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
-label original:
-    scene bg room
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show eileen happy
-
-    # These display lines of dialogue.
-
-    e "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan congue dui. Vestibulum vel efficitur nisl. Pellentesque sagittis sagittis risus, sed cursus mauris fermentum sed. Nullam imperdiet massa sit amet arcu consectetur accumsan"
-
-    s "Donec cursus malesuada risus, eu pulvinar diam tempor at. Vestibulum in est posuere, porta massa eget, porttitor mi. Nunc lacus risus, consectetur in nisi vel, blandit rhoncus est. Phasellus quis quam pellentesque diam viverra mattis."
-
-    e "Sed mollis, est eget finibus commodo, ligula mauris scelerisque sapien, ut tempus tortor ligula nec metus. Curabitur in metus egestas, sollicitudin ipsum in, interdum orci."
-
-
-    $ renpy.notify("This is a notification")
-
-    menu:
-        "This is a sample choice menu"
-        "Choice 1":
-            pass
-        "Choice 2":
-            pass
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan congue dui. Vestibulum vel efficitur nisl.":
-            pass
-    # This ends the game.
-
-    return

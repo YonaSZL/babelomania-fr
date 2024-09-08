@@ -72,7 +72,9 @@ label story_00_invitation:
     Date: Fri, 30 Apr 20XX at 19:46{nw}
 
     Subject: We're getting married!\n
-
+    """
+    play sound4 "audio/sfx/gui_hint.ogg"
+    d """
     Dearest {b}Shigeo{/b},\n
 
     We're getting married (again!), and you're cordially invited.\n
