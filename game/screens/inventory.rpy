@@ -17,8 +17,8 @@ screen inventory():
     add "gui/inventory/bg.png"
 
     ###Title and close button
-    label "Inventory" text_font "gui/font/Sok Brubah.ttf" text_color "#951b14" text_size 42 xalign 0.5 ypos 199 
-    textbutton "Close" action Hide("inventory"):
+    label _("Inventory") text_font "gui/font/Sok Brubah.ttf" text_color "#951b14" text_size 42 xalign 0.5 ypos 199 
+    textbutton _("Close") action Hide("inventory"):
         text_font "gui/font/Klotee.ttf" 
         text_size 38 
         xalign 0.5 ypos 658
@@ -58,7 +58,7 @@ screen inventory():
                         activate_sound "audio/sfx/gui_item.ogg"
                         action CaptureFocus(i.drop)
     else:
-        text "Inventory empty" align(0.5, 0.5) yoffset -100 size 40 font "gui/font/Klotee.ttf" color '#bfaa8f'
+        text _("Inventory empty") align(0.5, 0.5) yoffset -100 size 40 font "gui/font/Klotee.ttf" color '#bfaa8f'
 
 
 
@@ -75,8 +75,8 @@ screen inventory():
 
                 has vbox
 
-                textbutton "Inspect" action [ ClearFocus("item_drop"), Hide("inventory") ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
-                textbutton "Use" action [ ClearFocus("item_drop"), Hide("inventory") ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_item_use.ogg"
+                textbutton _("Inspect") action [ ClearFocus("item_drop"), Hide("inventory") ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
+                textbutton _("Use") action [ ClearFocus("item_drop"), Hide("inventory") ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_item_use.ogg"
                 
 
 style dropdown_vbox:

@@ -17,7 +17,7 @@ screen main_nav():
             add "gui/gm/nav_btn.png"
             add "gui/gm/save.png" at button_fade
             action ShowMenu("load")
-            tooltip "Data"
+            tooltip _("Data")
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_confirm.ogg"
 
@@ -26,7 +26,7 @@ screen main_nav():
             add "gui/gm/nav_btn.png"
             add "gui/gm/options.png" at button_fade
             action ShowMenu("preferences")
-            tooltip "Options"
+            tooltip _("Options")
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_confirm.ogg"
 
@@ -35,7 +35,7 @@ screen main_nav():
             add "gui/gm/nav_btn.png"
             add "gui/gm/history.png" at button_fade
             action ShowMenu("history")
-            tooltip "History"
+            tooltip _("History")
             if main_menu:
                 sensitive False
             hover_sound "audio/sfx/gui_hover.ogg"
@@ -46,7 +46,7 @@ screen main_nav():
             add "gui/gm/nav_btn.png"
             add "gui/gm/about.png" at button_fade
             action ShowMenu("misc")
-            tooltip "About"
+            tooltip _("About")
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_confirm.ogg"
 
@@ -57,7 +57,7 @@ screen main_nav():
             add "gui/gm/nav_btn.png"
             add "gui/gm/extra.png" at button_fade
             action NullAction()
-            tooltip "Extras"
+            tooltip _("Extras")
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_confirm.ogg"
 

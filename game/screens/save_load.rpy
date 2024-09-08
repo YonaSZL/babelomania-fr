@@ -97,8 +97,8 @@ screen file_slots(title):
                         style_prefix "quick"
                         offset(-0, 25)
 
-                        textbutton "Save" action FileSave(slot) text_selected_hover_color '#bfaa8f' text_selected_idle_color "#876263" activate_sound "audio/sfx/gui_slots_confirm.ogg"
-                        textbutton "Load" action FileLoad(slot) text_selected_hover_color '#bfaa8f' text_selected_idle_color "#876263" activate_sound "audio/sfx/gui_slots_confirm.ogg"
+                        textbutton _("Save") action FileSave(slot) text_selected_hover_color '#bfaa8f' text_selected_idle_color "#876263" activate_sound "audio/sfx/gui_slots_confirm.ogg"
+                        textbutton _("Load") action FileLoad(slot) text_selected_hover_color '#bfaa8f' text_selected_idle_color "#876263" activate_sound "audio/sfx/gui_slots_confirm.ogg"
 
                     ## https://www.fabriziomusacchio.com/blog/2021-08-15-strftime_Cheat_Sheet/
 

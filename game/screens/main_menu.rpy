@@ -22,25 +22,25 @@ screen main_menu():
 
     hbox:
         align(0.5, 1.0) yoffset -205 spacing 30 #ysize 150
-        textbutton "Continue" action ShowMenu("load") text_size 70 yoffset 15 hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"
+        textbutton _("Continue") action ShowMenu("load") text_size 70 yoffset 15 hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"
         add "gui/main_menu/divider.png" yoffset 15
-        textbutton "Start" action Start() text_size 100 hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
+        textbutton _("Start") action Start() text_size 100 hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
         add "gui/main_menu/divider.png" yoffset 15
-        textbutton "Options" action ShowMenu("preferences") text_size 70 yoffset 15 hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"
+        textbutton _("Options") action ShowMenu("preferences") text_size 70 yoffset 15 hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"
 
     hbox:
         style_prefix "sub"
         align(0.5, 1.0) yoffset -120 spacing 20 
-        textbutton "About" action ShowMenu("misc") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"
+        textbutton _("About") action ShowMenu("misc") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"
 
         ###You can comment these out for now
         ###Here to show layout once gallery is added
         text "♦" size 20 yalign 0.5
-        textbutton "Gallery" action NullAction() hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"
+        textbutton _("Extra") action NullAction() hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"
         ####
 
         text "♦" size 20 yalign 0.5
-        textbutton "Quit " action Quit() hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_return.ogg"
+        textbutton _("Quit") action Quit() hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_return.ogg"
     
 
 

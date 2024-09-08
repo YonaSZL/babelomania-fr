@@ -67,66 +67,66 @@ screen about():
         if gui.about:
             text "[gui.about!t]\n"
 
-        label "{size=35}CREDITS\n" xalign 0.5 yalign 0.5
+        label _("{size=35}CREDITS\n") xalign 0.5 yalign 0.5
         vbox:
             xoffset 15 yoffset -20 spacing 20
             vbox:
-                label "{size=35}PRODUCER, DIRECTOR" yalign 0.5
+                label _("{size=35}PRODUCER, DIRECTOR") yalign 0.5
                 text "\"Meinos Kaen\"" xoffset 15 yalign 0.5
             vbox:
-                label "{size=35}PROGRAMMERS" yalign 0.5
+                label ("{size=35}PROGRAMMERS") yalign 0.5
                 text "\"Meinos Kaen\", \"Skolaztika\", \"Korden\"" xoffset 15 yalign 0.5
             vbox:
-                label "{size=35}BACKGROUND ARTISTS" yalign 0.5
+                label _("{size=35}BACKGROUND ARTISTS") yalign 0.5
                 text "\"kircheis5020\", \"Arsonichawt\", \"Fuura Xen\"" xoffset 15 yalign 0.5
             vbox:
-                label "{size=35}CHARACTER SPRITE ARTIST" yalign 0.5
+                label _("{size=35}CHARACTER SPRITE ARTIST") yalign 0.5
                 text "\"chocojax\", \"michumiyumi\"" xoffset 15 yalign 0.5
             vbox:
-                label "{size=35}CG ILLUSTRATORS" yalign 0.5
+                label _("{size=35}CG ILLUSTRATORS") yalign 0.5
                 text "\"SaDui\", \"Arsonichawt\", \"Halebob\"" xoffset 15 yalign 0.5
             vbox:
-                label "{size=35}ENVIRONMENT CONCEPT ARTIST" yalign 0.5
+                label _("{size=35}ENVIRONMENT CONCEPT ARTIST") yalign 0.5
                 text "\"Fuura Xen\"" xoffset 15 yalign 0.5
             vbox:
-                label "{size=35}CHARACTER CONCEPT ARTIST" yalign 0.5
+                label _("{size=35}CHARACTER CONCEPT ARTIST") yalign 0.5
                 text "\"Amacoworks\"" xoffset 15 yalign 0.5
             vbox:
-                label "{size=35}ADDITIONAL CONCEPTS ARTIST" yalign 0.5
+                label _("{size=35}ADDITIONAL CONCEPTS ARTIST") yalign 0.5
                 text "\"Arsonichawt\"" xoffset 15 yalign 0.5
             vbox:
-                label "{size=35}UI ARTIST" yalign 0.5
+                label _("{size=35}UI ARTIST") yalign 0.5
                 text "\"Skolaztika\"" xoffset 15 yalign 0.5
             vbox:
-                label "{size=35}COMPOSERS" yalign 0.5
+                label _("{size=35}COMPOSERS") yalign 0.5
                 text "\"OddTillTheEnd\", \"Jonathan Jonhson\", \"Nailik\"" xoffset 15 yalign 0.5
             vbox:
-                label "{size=35}AUDIO EDITOR" yalign 0.5
+                label _("{size=35}AUDIO EDITOR") yalign 0.5
                 text "John \"Magnificent Beard\" Schmidt" xoffset 15 yalign 0.5
             vbox:
-                label "{size=35}3D MODELLER" yalign 0.5
+                label _("{size=35}3D MODELLER") yalign 0.5
                 text "\"kircheis5020\"" xoffset 15 yalign 0.5
             vbox:
-                label "{size=35}3D ANIMATOR" yalign 0.5
+                label _("{size=35}3D ANIMATOR") yalign 0.5
                 text "Danny \"DinoMan21779\" Dickson" xoffset 15 yalign 0.5
             vbox:
-                label "{size=35}PLOT, SCRIPT WRITER" yalign 0.5
+                label _("{size=35}PLOT, SCRIPT WRITER") yalign 0.5
                 text "\"Meinos Kaen\"" xoffset 15 yalign 0.5
             vbox:
-                label "{size=35}EDITOR" yalign 0.5
+                label _("{size=35}EDITOR") yalign 0.5
                 text "John \"Magnificent Beard\" Schmidt" xoffset 15 yalign 0.5
             vbox:
-                label "{size=35}IMAGE EDITING" yalign 0.5
+                label _("{size=35}IMAGE EDITING") yalign 0.5
                 text "Danny \"DinoMan21779\" Dickson" xoffset 15 yalign 0.5
             vbox:
-                label "{size=35}THE REAL MVPS" yalign 0.5
+                label _("{size=35}THE REAL MVPS") yalign 0.5
                 text "The Wonderful JPDE Supporters on {a=https://www.patreon.com/JPDE}Patreon{/a} and {a=https://ko-fi.com/jpde}Ko-Fi{/a}" xoffset 15 yalign 0.5
             vbox:
-                label "{size=35}ADDITIONAL SOUND EFFECTS" yalign 0.5
+                label _("{size=35}ADDITIONAL SOUND EFFECTS") yalign 0.5
                 text "{a=https://ellr.itch.io/}Ellr{/a}, {a=https://ateliermagicae.itch.io/}Atelier Magicae{/a}, Dev Tones, {a=https://nox-sound-design.itch.io/}Nox_Sound_Design{/a}, {a=https://www.gamedevmarket.net/member/shashirajproductions}SHASHIRAJproductions{/a}" xoffset 15 yalign 0.5
                 text "{a=https://joelsteudler.itch.io/}Joel Steudler{/a}, W.O.W. Sound Effects" xoffset 15 yalign 0.5
             vbox:
-                label "{size=35}ADDITIONAL CODE" yalign 0.5
+                label _("{size=35}ADDITIONAL CODE") yalign 0.5
                 text "{a=https://feniksdev.com}Feniks{/a}, {a=https://remort-studios.itch.io/}Nai @ MakeVisualNovels{/a}" xoffset 15 yalign 0.5
 
         text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
