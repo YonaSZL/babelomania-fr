@@ -14,9 +14,17 @@ define e = Character("Eileen",ctc="ctc_blink", ctc_position="nestled")
 define d = Character(None, kind=nvl, ctc="ctc_blink", ctc_position="nestled")
 
 define s = Character("Other Eileen", image="eileen", what_xoffset=35,ctc="ctc_blink", ctc_position="nestled")
-
-
 image side eileen = "gui/side_image.png"
+
+##Tabitha
+define tb = Character(_("Tabitha"), what_prefix='\"', what_suffix='\"', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
+define tb_x = Character(_("?????"), what_prefix='\"', what_suffix='\"', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
+define tb_n = Character(_("Tabitha"), what_suffix='\"', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
+define tb_i = Character(_("Tabitha"), what_prefix='{i}', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
+define tb_st = Character(_("Tabitha"), what_prefix='{u}\"', what_suffix='\"', image="tabitha", ctc="ctc_blink", ctc_position="nestled")
+image side tabitha = LayeredImageProxy("Tabitha_por")
+image side tabitha nulla = Null()
+image side tabitha darko = LayeredImageProxy("Tabitha_por", Transform(matrixcolor=TintMatrix(Color("#000", alpha=0.95))))
 
 ##User Defined Transitions
 
@@ -74,6 +82,7 @@ label splashscreen:
 
 label start:
     scene main_menu_bg
+    tb "Greetings."
     $ quick_menu = False
     $ time_menu = False
     $ inventory_show = False
