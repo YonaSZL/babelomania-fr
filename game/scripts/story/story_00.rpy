@@ -128,25 +128,27 @@ label story_00_invitation:
     pause 1.0
     scene chateau_setting with Reveal3
     pause 3.0
-    scene black with Reveal
+    scene black with Reveal3
     pause 0.5
     play LoNoise "audio/bgs/reception_crowd.ogg" fadein 0.2
     pause 1.0
     scene bar_reception with Reveal3
     pause 1.5
-    sh_xi nulla "(I should've just sent a card...{w=0.5} This is killing me.)"
+    sh_xi darko frown "(I should've just sent a card...{w=0.5} This is killing me.)"
     tb_n "<And let me tell you, the attention to detail of monsieur Du Bois went far beyond just architecture!>"
-    sh_xi nulla "(I can recognize the name of the original owner, something about architecture...{w=0.5} Au-delà?{w=0.3} He went beyond architecture, I guess?)"
-    tb_n "<You will find, spread out throughout the buildings, different pieces of art collected over the course of his travels.{w=0.3} Or personally commissioned to complement specific rooms of the complex!>"
+    sh_xi darko neutral "(I can recognize the name of the original owner, something about architecture...{w=0.5} Au-delà?{w=0.3} He went beyond architecture, I guess?)"
+    tb_n "<You will find, spread out throughout the buildings, different pieces of art collected over the course of his travels.{w=0.3} Or personally commissioned, to complement specific rooms of the complex!>"
     tb_n2 "<Indeed?{w=0.5} To be honest, I don't exactly approve of a lot of the placements.>"
-    sh_xi nulla "(Now they're talking about the toilet of all things?{w=0.3} The place of the toilets??)"
+    sh_xi darko surprise "(Now they're talking about the toilet of all things?{w=0.3} The place of the toilets??)"
     tb_n "<Indeed...{w=0.5} You have to remember, though, that the family sold the estate in 2025.{w=0.3} After that, god only knows who had a hand in reshaping it and moving things around.>"
     tb_n2 "<Ah, yes.{w=0.3} That would explain the painting in the bathrooms!>"
-    sh_xi nulla "(Oh, finally!{w=0.3} They're definitely talking about the painting in the toilets!{w=0.3} And I guess how out of place it was?)"
-    sh_x darko "Uhm...{w=0.5} <At first I thought it had been put there to help.>"
+    sh_xi darko smile "(Oh, finally!{w=0.3} They're definitely talking about the painting in the toilets!{w=0.3} And I guess how out of place it is?)"
+    sh_x darko surprise "Uhm...{w=0.5} <At first I thought it had been put there to help.>"
     tb_n "<Huh?{w=0.5} To help?>"
     pause 1.0
-    show Shigeo neutral with Reveal
+    show Shigeo neutral at sh_big:
+        xalign 0.5
+    with Reveal
     pause 0.5
     tb_n2 "<What do you mean, monsieur {b}Arata{/b}?>"
     #Intro Screen for Characters, for Arata
