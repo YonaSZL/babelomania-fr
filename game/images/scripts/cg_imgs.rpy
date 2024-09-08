@@ -1,4 +1,10 @@
+#Chapter Titlecards
+image title_01 = "gui/titlecards/ch_01.jpg"
+
 #Intro Sequence
+image white = "gui/transitions/white.jpg"
+
+image babelomania_logo = At("gui/babelomania_logo.png", glow_outline(4, "#951B14"))
 
 image intro_disclaimer = "images/cgs/intro/intro_disclaimer.jpg"
 

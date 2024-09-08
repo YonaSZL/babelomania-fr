@@ -16,6 +16,8 @@ screen main_menu():
 
     add "gui/main_menu/bg.png" align(0.5, 1.0) yoffset -100
 
+    add "babelomania_logo"
+
     style_prefix "main"
 
     hbox:
@@ -39,7 +41,7 @@ screen main_menu():
 
         text "♦" size 20 yalign 0.5
         textbutton "Quit " action Quit() hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_return.ogg"
-        
+    
 
 
 style main_button_text:

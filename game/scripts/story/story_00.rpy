@@ -48,9 +48,13 @@ label story_00_start:
 
 label story_00_invitation:
     $ renpy.block_rollback()
+    scene title_01 with Reveal
+    pause 3.0
+    scene black with Reveal5
+    pause 1.5
     $ quick_menu = True
     $ time_menu = True
-    pause 0.5
+    pause 1.0
     scene intro_phone_a with Reveal
     pause 1.5
     play sound "audio/sfx/gui_notification.ogg"
@@ -115,19 +119,19 @@ label story_00_invitation:
     """
     pause 1.5
     nvl clear
-    scene black with Reveal2
+    scene black with Reveal3
     pause 1.0
     play music "audio/bgm/canon_in_bois.ogg"
     pause 1.0
     $ time_menu = True
     pause 0.5
-    scene chateau_air with Reveal2
+    scene chateau_air with Reveal3
     pause 3.0
-    scene black with Reveal2
+    scene black with Reveal3
     pause 0.5
     play LoNoise "audio/bgs/reception_crowd.ogg" fadein 0.2
     pause 1.0
-    scene bar_reception with Reveal2
+    scene bar_reception with Reveal3
     pause 1.5
     sh_xi nulla "(I should've just sent a card...{w=0.5} This is killing me.)"
     tb_n "<And let me tell you, the attention to detail of monsieur Du Bois went far beyond just architecture!>"

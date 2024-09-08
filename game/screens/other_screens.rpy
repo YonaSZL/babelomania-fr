@@ -127,7 +127,7 @@ screen about():
                 text "{a=https://joelsteudler.itch.io/}Joel Steudler{/a}" xoffset 15 yalign 0.5
             vbox:
                 label "{size=35}ADDITIONAL CODE" yalign 0.5
-                text "{a=https://feniksdev.itch.io/}Feniks{/a}, {a=https://remort-studios.itch.io/}Nai @ MakeVisualNovels{/a}" xoffset 15 yalign 0.5
+                text "{a=https://feniksdev.com}Feniks{/a}, {a=https://remort-studios.itch.io/}Nai @ MakeVisualNovels{/a}" xoffset 15 yalign 0.5
 
         text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
         

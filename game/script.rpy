@@ -76,6 +76,10 @@ label splashscreen:
     pause 0.5
     scene main_menu_bg with Reveal3
     pause 3.0
+    show babelomania_logo with glitch_load
+    pause 1.5
+    scene white with quick_dissolve
+    pause 0.5
     return
 
 # The game starts here.
