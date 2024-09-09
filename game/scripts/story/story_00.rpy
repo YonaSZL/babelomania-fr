@@ -375,4 +375,30 @@ label story_00_bathroom_return:
     sh_i shock "(That sickly looking grey skin...{w=0.5} Those lifeless ashen eyes...{w=0.5} That even voice, completely devoid of emotion or inflection...)"
     sh_i fear "(What the hell is this {b}thing{/b}?!)"
     sh fear "NNGH!{w=0.3} Let go of me, you-!"
+    ha_x darko "{b}Tabitha{/b}, that's quite enough."
+    sh shock "...!"
+    pause 1.0
+    stop music fadeout 3.5
+    pause 1.0
+    scene bar_corr_recep
+    show Tabitha neutral at ta_med:
+        xalign 0.45
+    show Shigeo shock at sh_med:
+        xalign 0.6
+    with Reveal3
+    pause 0.5
+    ha_x darko "Let the gentleman go.{w=0.3} He barely has the countenance of a grown man, leave alone an outlaw."
+    #show screen emote("surprise",0.57,-0.05)
+    show Shigeo surprise
+    sh nulla "...!{w=0.3} E-{w=0.15}Excuse me?"
+    pause 2.0
+    show Tabitha bow
+    ta_x nulla "Acknowledged, professor."
+    show Tabitha:
+        easein 5.0 xalign 4.0
+    pause 2.0
+    show Shigeo angry:
+        linear 0.5 xalign 0.65
+    pause 0.3
+    sh nulla "Ugh...{w=0.5} If this thing answers to you, may I kindly ask:{w=0.15} what the hell?"
     
