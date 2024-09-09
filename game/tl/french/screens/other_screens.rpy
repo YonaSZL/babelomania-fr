@@ -234,3 +234,15 @@ translate french strings:
     old "Calibrate"
     new ""
 
+# TODO: Translation updated at 2024-09-09 22:18
+
+translate french strings:
+
+    # game/screens/other_screens.rpy:98
+    old "{size=35}LOGO ARTIST"
+    new ""
+
+    # game/screens/other_screens.rpy:113
+    old "{size=35}STORY CONSULTANTS"
+    new ""
+

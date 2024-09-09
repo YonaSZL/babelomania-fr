@@ -156,3 +156,23 @@ translate french strings:
     old "Censored gore."
     new ""
 
+# TODO: Translation updated at 2024-09-09 22:18
+
+translate french strings:
+
+    # game/script.rpy:20
+    old "Shigeo Arata"
+    new ""
+
+    # game/script.rpy:50
+    old "Professor Habiki"
+    new ""
+
+    # game/script.rpy:59
+    old "Academic Invitee"
+    new ""
+
+    # game/script.rpy:60
+    old "Fashionable Invitee"
+    new ""
+

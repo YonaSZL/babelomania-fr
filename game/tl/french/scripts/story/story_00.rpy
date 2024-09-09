@@ -486,3 +486,377 @@ translate french strings:
     old "It favours relaxation."
     new ""
 
+# TODO: Translation updated at 2024-09-09 22:18
+
+# game/scripts/story/story_00.rpy:137
+translate french story_00_invitation_557df6ec:
+
+    # sh_xi darko frown "(I should've just sent a card...{w=0.5} This is killing me.)"
+    sh_xi darko frown ""
+
+# game/scripts/story/story_00.rpy:139
+translate french story_00_invitation_67c25648:
+
+    # sh_xi darko neutral "(I can recognize the name of the original owner, something about architecture...{w=0.5} Au-delà?{w=0.3} He went beyond architecture, I guess?)"
+    sh_xi darko neutral ""
+
+# game/scripts/story/story_00.rpy:140
+translate french story_00_invitation_906b5e73:
+
+    # tb_n "<You will find, spread out throughout the buildings, different pieces of art collected over the course of his travels.{w=0.3} Or personally commissioned, to complement specific rooms of the complex!>"
+    tb_n ""
+
+# game/scripts/story/story_00.rpy:142
+translate french story_00_invitation_b31e05d8:
+
+    # sh_xi darko surprise "(Now they're talking about the toilet of all things?{w=0.3} The place of the toilets??)"
+    sh_xi darko surprise ""
+
+# game/scripts/story/story_00.rpy:145
+translate french story_00_invitation_cf5538e7:
+
+    # sh_xi darko smile "(Oh, finally!{w=0.3} They're definitely talking about the painting in the toilets!{w=0.3} And I guess how out of place it is?)"
+    sh_xi darko smile ""
+
+# game/scripts/story/story_00.rpy:146
+translate french story_00_invitation_d3a83a5a:
+
+    # sh_x darko surprise "Uhm...{w=0.5} <At first I thought it had been put there to help.>"
+    sh_x darko surprise ""
+
+# game/scripts/story/story_00.rpy:230
+translate french story_00_bathroom_break_c1471280:
+
+    # sh_i "(After graduation, though, we both left Italy to go study in different countries...{w=0.5} We kept in touch but, the relationship certainly wasn't as close-knit as it had once been.)"
+    sh_i ""
+
+# game/scripts/story/story_00.rpy:232
+translate french story_00_bathroom_break_b1127550:
+
+    # sh_i nulla "(I didn't even know he had gotten married until I received the invitation...{w=0.5} At first I thought it would be a great opportunity to reconnect but I barely exchanged five words with him.)"
+    sh_i nulla ""
+
+# game/scripts/story/story_00.rpy:234
+translate french story_00_bathroom_break_a2627f76:
+
+    # sh_i nulla "(I don't know anyone else here.{w=0.3} And even when I try and interact, there's...)"
+    sh_i nulla ""
+
+# game/scripts/story/story_00.rpy:304
+translate french story_00_bathroom_encounters_7d1fbbc1:
+
+    # sh_i neutral "(Looking at it up close, it feels even more out of place...{w=0.5} No matter what excuses I make up.)"
+    sh_i neutral ""
+
+# game/scripts/story/story_00.rpy:311
+translate french story_00_bathroom_painting_photo_98010c7c:
+
+    # sh_i smile "(Let me take a picture.{w=0.3} I can {i}Coogle{/i} it later, or show someone back home.{w=0.3} Dorothy would know.)"
+    sh_i smile ""
+
+# game/scripts/story/story_00.rpy:325
+translate french story_00_bathroom_return_462ebeb0:
+
+    # sh_i nulla "(Well, that was a good way to waste a few minutes and distract myself...{w=0.5} And now I have something to occupy myself further, if need be.)"
+    sh_i nulla ""
+
+# game/scripts/story/story_00.rpy:327
+translate french story_00_bathroom_return_35f9e883:
+
+    # sh_i nulla "(Let's go back upstairs, now, and see if I can't actually find someone to socialize with...{w=0.5} Or maybe the bride's family may have finally relinquished their hold on Francesco.{w=0.3} That'd be nice.)"
+    sh_i nulla ""
+
+# game/scripts/story/story_00.rpy:337
+translate french story_00_bathroom_return_ceef4c49:
+
+    # sh_i surprise "(Hmm?{w=0.5} What's that sm-)"
+    sh_i surprise ""
+
+# game/scripts/story/story_00.rpy:339
+translate french story_00_bathroom_return_f6fd28d1:
+
+    # sh_i frown "(Ugh, of course.)"
+    sh_i frown ""
+
+# game/scripts/story/story_00.rpy:345
+translate french story_00_bathroom_return_8f4dff1f:
+
+    # sh_i nulla "(Someone left the door to the smoking room open...{w=0.5} And of course, everyone else now needs to share in their breathalized cancer.)"
+    sh_i nulla ""
+
+# game/scripts/story/story_00.rpy:348
+translate french story_00_bathroom_return_fd1c8581:
+
+    # sh_i nulla "(Let's close the door before the stench seeps in my clo-)"
+    sh_i nulla ""
+
+# game/scripts/story/story_00.rpy:361
+translate french story_00_bathroom_return_83853235:
+
+    # sh_i shock "(What...?!{w=0.5} What is...?!)"
+    sh_i shock ""
+
+# game/scripts/story/story_00.rpy:362
+translate french story_00_bathroom_return_626d11f1:
+
+    # ta_x darko "Warning:{w=0.3} you are entering restricted personal space."
+    ta_x darko ""
+
+# game/scripts/story/story_00.rpy:363
+translate french story_00_bathroom_return_1d854051:
+
+    # sh_i shock sweat "(The grip is so strong but more than that, what...{w=0.5} The hand feels so cold and...{w=0.5} Weird!)"
+    sh_i shock sweat ""
+
+# game/scripts/story/story_00.rpy:364
+translate french story_00_bathroom_return_98891a7a:
+
+    # ta_x darko "Failure to remove yourself from the restricted area will be cause of reprisal.{w=0.3} Please acknowledge."
+    ta_x darko ""
+
+# game/scripts/story/story_00.rpy:365
+translate french story_00_bathroom_return_6a0a05dc:
+
+    # sh_i fear sweat "(It's completely smooth and rigid and yet soft at the same time...?!{w=0.3} What the hell is touching me?!)"
+    sh_i fear sweat ""
+
+# game/scripts/story/story_00.rpy:366
+translate french story_00_bathroom_return_b74b49d0:
+
+    # ta_x darko "I repeat."
+    ta_x darko ""
+
+# game/scripts/story/story_00.rpy:367
+translate french story_00_bathroom_return_06aec286:
+
+    # sh shock "...!{w=0.5} Ugh?!"
+    sh shock ""
+
+# game/scripts/story/story_00.rpy:372
+translate french story_00_bathroom_return_4f68cf38:
+
+    # sh shock "What...?!"
+    sh shock ""
+
+# game/scripts/story/story_00.rpy:373
+translate french story_00_bathroom_return_98891a7a_1:
+
+    # ta_x darko "Failure to remove yourself from the restricted area will be cause of reprisal.{w=0.3} Please acknowledge."
+    ta_x darko ""
+
+# game/scripts/story/story_00.rpy:374
+translate french story_00_bathroom_return_bb438b05:
+
+    # sh_i surprise "(This...{w=0.5} What is this thing?!{w=0.3} It looks human...{w=0.5} It has the proportions of a human, its face looks human and yet...)"
+    sh_i surprise ""
+
+# game/scripts/story/story_00.rpy:375
+translate french story_00_bathroom_return_0e28c24b:
+
+    # sh_i shock "(That sickly looking grey skin...{w=0.5} Those lifeless ashen eyes...{w=0.5} That even voice, completely devoid of emotion or inflection...)"
+    sh_i shock ""
+
+# game/scripts/story/story_00.rpy:376
+translate french story_00_bathroom_return_a66058e8:
+
+    # sh_i fear "(What the hell is this {b}thing{/b}?!)"
+    sh_i fear ""
+
+# game/scripts/story/story_00.rpy:377
+translate french story_00_bathroom_return_15ba0384:
+
+    # sh fear "NNGH!{w=0.3} Let go of me, you-!"
+    sh fear ""
+
+# game/scripts/story/story_00.rpy:378
+translate french story_00_bathroom_return_84d8955c:
+
+    # ha_x darko "{b}Tabitha{/b}, that's quite enough."
+    ha_x darko ""
+
+# game/scripts/story/story_00.rpy:379
+translate french story_00_bathroom_return_36a7eb82:
+
+    # sh shock "...!"
+    sh shock ""
+
+# game/scripts/story/story_00.rpy:390
+translate french story_00_bathroom_return_c10e8908:
+
+    # ha_x darko "Let the gentleman go.{w=0.3} He barely has the countenance of a grown man, leave alone an outlaw."
+    ha_x darko ""
+
+# game/scripts/story/story_00.rpy:393
+translate french story_00_bathroom_return_71a7f762:
+
+    # sh nulla "...!{w=0.3} E-{w=0.15}Excuse me?"
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:396
+translate french story_00_bathroom_return_ed03a834:
+
+    # ta nulla "Acknowledged, professor."
+    ta nulla ""
+
+# game/scripts/story/story_00.rpy:403
+translate french story_00_bathroom_return_79056d29:
+
+    # sh nulla "Ugh...{w=0.5} If this thing answers to you, may I kindly ask:{w=0.15} what the hell?"
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:413
+translate french story_00_bathroom_return_412e734f:
+
+    # ha_x nulla "My, such a rude young man.{w=0.3} Calling my Tabitha a thing..."
+    ha_x nulla ""
+
+# game/scripts/story/story_00.rpy:414
+translate french story_00_bathroom_return_0222371d:
+
+    # sh nulla "It's obviously not a person...{w=0.5} Let's call it android, then."
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:417
+translate french story_00_bathroom_return_1d17c27b:
+
+    # sh nulla "Granted, I've never seen one quite like this, I'll give you that."
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:421
+translate french story_00_bathroom_return_215a30ea:
+
+    # ha_x nulla "But you've seen others...?{w=0.5} They're not exactly common."
+    ha_x nulla ""
+
+# game/scripts/story/story_00.rpy:422
+translate french story_00_bathroom_return_7263cb2c:
+
+    # sh nulla "Unsurprisingly, considering how much they cost...{w=0.5} And their construction being outlawed in most of the world."
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:424
+translate french story_00_bathroom_return_bdf30b6b:
+
+    # sh nulla "<Japan is not one such country, though.{w=0.3} Am I right?>"
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:429
+translate french story_00_bathroom_return_ec38a74a:
+
+    # ha_x nulla "<Fully fluent, and a very light accent...{w=0.5} A {b}hafu{/b}, then?>"
+    ha_x nulla ""
+
+# game/scripts/story/story_00.rpy:430
+translate french story_00_bathroom_return_06e6ed1a:
+
+    # sh nulla "<My mother's from Sapporo, my father from Genova...{w=0.5} My name's Shigeo Arata.>"
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:432
+translate french story_00_bathroom_return_bd927a3c:
+
+    # sh nulla "And you are...?{w=0.5} I don't think I've seen you at the ceremony, nor the reception so far.{w=0.3} I would remember an elderly academic shadowed by a two meters tall android."
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:434
+translate french story_00_bathroom_return_39abbc12:
+
+    # ha_x nulla "Oh, you would be surprised...{w=0.5} But indeed, we've but recently arrived."
+    ha_x nulla ""
+
+# game/scripts/story/story_00.rpy:436
+translate french story_00_bathroom_return_69a6679a:
+
+    # ha_x nulla "The drive to the château was quite long and tiring...{w=0.5} Hence the need to indulge in my little vice.{w=0.3} But I fear that I could not persuade Tabitha to fully close the door."
+    ha_x nulla ""
+
+# game/scripts/story/story_00.rpy:439
+translate french story_00_bathroom_return_2cdf5812:
+
+    # sh nulla "You could not...{w=0.5} Persuade it?"
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:443
+translate french story_00_bathroom_return_51c15520:
+
+    # ha_x nulla "Oh, if I really wanted I could've ordered her to...{w=0.5} But I find that going against actions dictated by her prime directives is quite disruptive."
+    ha_x nulla ""
+
+# game/scripts/story/story_00.rpy:446
+translate french story_00_bathroom_return_77c6f522:
+
+    # ha nulla "In this case, the directive is to protect me from any and all threats...{w=0.5} And with that, let me belatedly introduce myself as {b}professor Habiki{/b}."
+    ha nulla ""
+
+# game/scripts/story/story_00.rpy:449
+translate french story_00_bathroom_return_780164f4:
+
+    # sh nulla "Keeping your last name close to your chest, are you?"
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:450
+translate french story_00_bathroom_return_b05160f1:
+
+    # ha nulla "If I could share it willy nilly, I wouldn't be in need of a 6'6'' tall robotic bodyguard...{w=0.5} I'm afraid you'll have to make do with that, and the knowledge that I am with the groom's party."
+    ha nulla ""
+
+# game/scripts/story/story_00.rpy:452
+translate french story_00_bathroom_return_594ddcb1:
+
+    # ha nulla "And so do you, I believe."
+    ha nulla ""
+
+# game/scripts/story/story_00.rpy:454
+translate french story_00_bathroom_return_e854791a:
+
+    # sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}how can you tell?"
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:456
+translate french story_00_bathroom_return_8c68de93:
+
+    # ha nulla "Are you kidding me?{w=0.5} Delphine's family and male acquaintances wouldn't be caught dead in an Italian-cut suit."
+    ha nulla ""
+
+# game/scripts/story/story_00.rpy:459
+translate french story_00_bathroom_return_4e6d1247:
+
+    # sh nulla "I did notice a certain...{w=0.5} Conforming on that front, yeah."
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:461
+translate french story_00_bathroom_return_c69bb3b1:
+
+    # ha nulla "So you did.{w=0.5} Well, it's been quite the amusing encounter."
+    ha nulla ""
+
+# game/scripts/story/story_00.rpy:463
+translate french story_00_bathroom_return_a3495f30:
+
+    # ha nulla "Have a good evening, mister Arata...{w=0.5} Who knows, we may run into each other again, before the night is over."
+    ha nulla ""
+
+# game/scripts/story/story_00.rpy:466
+translate french story_00_bathroom_return_0f7ddfb0:
+
+    # ha nulla "Let's go, Tabitha."
+    ha nulla ""
+
+# game/scripts/story/story_00.rpy:476
+translate french story_00_bathroom_return_40dd3029:
+
+    # sh_i nulla "(Freaky...{w=0.5} I've never seen an android that looks so much like a human.{w=0.3} Regulations in Japan really are lax, aren't they?)"
+    sh_i nulla ""
+
+# game/scripts/story/story_00.rpy:478
+translate french story_00_bathroom_return_2b672075:
+
+    # sh_i nulla "(Also, why are they going upstairs...?{w=0.5} Oh, whatever.{w=0.3} It's none of my business.)"
+    sh_i nulla ""
+
+# game/scripts/story/story_00.rpy:480
+translate french story_00_bathroom_return_0ecf7f01:
+
+    # sh_i nulla "(Let's just go back in...)"
+    sh_i nulla ""
+

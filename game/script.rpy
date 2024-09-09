@@ -51,9 +51,9 @@ define ha = Character(_("Professor Habiki"), what_prefix='\"', what_suffix='\"',
 define ha_x = Character(_("?????"), what_prefix='\"', what_suffix='\"', image="habiki", ctc="ctc_blink", ctc_position="nestled")
 define ha_n = Character(_("Professor Habiki"), what_suffix='\"', image="habiki", ctc="ctc_blink", ctc_position="nestled")
 define ha_st = Character(_("Professor Habiki"), what_prefix='{u}\"', what_suffix='\"', image="habiki", ctc="ctc_blink", ctc_position="nestled")
-image side habiki = LayeredImageProxy("Habiki_por")
-image side habiki nulla = Null()
-image side habiki darko = LayeredImageProxy("Habiki_por", Transform(matrixcolor=TintMatrix(Color("#000", alpha=0.85))))
+#image side habiki = LayeredImageProxy("Habiki_por")
+#image side habiki nulla = Null()
+#image side habiki darko = LayeredImageProxy("Habiki_por", Transform(matrixcolor=TintMatrix(Color("#000", alpha=0.85))))
 
 ##Minor Characters
 define tb_n = Character(_("Academic Invitee"), what_prefix='\"', what_suffix='\"', ctc="ctc_blink", ctc_position="nestled")
