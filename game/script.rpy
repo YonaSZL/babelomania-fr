@@ -17,12 +17,12 @@ define s = Character("Other Eileen", image="eileen", what_xoffset=35,ctc="ctc_bl
 image side eileen = "gui/side_image.png"
 
 ##Shigeo
-define sh = Character(_("Shigeo"), what_prefix='\"', what_suffix='\"', image="shigeo", ctc="ctc_blink", ctc_position="nestled")
+define sh = Character(_("Shigeo Arata"), what_prefix='\"', what_suffix='\"', image="shigeo", ctc="ctc_blink", ctc_position="nestled")
 define sh_x = Character(_("?????"), what_prefix='\"', what_suffix='\"', image="shigeo", ctc="ctc_blink", ctc_position="nestled")
 define sh_xi = Character(_("?????"), what_prefix='{i}', image="shigeo", ctc="ctc_blink", ctc_position="nestled")
-define sh_n = Character(_("Shigeo"), what_suffix='\"', image="shigeo", ctc="ctc_blink", ctc_position="nestled")
-define sh_i = Character(_("Shigeo"), what_prefix='{i}', image="shigeo", ctc="ctc_blink", ctc_position="nestled")
-define sh_st = Character(_("Shigeo"), what_prefix='{u}\"', what_suffix='\"', image="shigeo", ctc="ctc_blink", ctc_position="nestled")
+define sh_n = Character(_("Shigeo Arata"), what_suffix='\"', image="shigeo", ctc="ctc_blink", ctc_position="nestled")
+define sh_i = Character(_("Shigeo Arata"), what_prefix='{i}', image="shigeo", ctc="ctc_blink", ctc_position="nestled")
+define sh_st = Character(_("Shigeo Arata"), what_prefix='{u}\"', what_suffix='\"', image="shigeo", ctc="ctc_blink", ctc_position="nestled")
 image side shigeo = LayeredImageProxy("Shigeo_por")
 image side shigeo nulla = Null()
 image side shigeo darko = LayeredImageProxy("Shigeo_por", Transform(matrixcolor=TintMatrix(Color("#000", alpha=0.85))))
@@ -45,6 +45,15 @@ define ga_st = Character(_("Gaspard"), what_prefix='{u}\"', what_suffix='\"', im
 image side gaspard = LayeredImageProxy("Gaspard_por")
 image side gaspard nulla = Null()
 image side gaspard darko = LayeredImageProxy("Gaspard_por", Transform(matrixcolor=TintMatrix(Color("#000", alpha=0.85))))
+
+##Habiki
+define ha = Character(_("Habiki Ishii"), what_prefix='\"', what_suffix='\"', image="habiki", ctc="ctc_blink", ctc_position="nestled")
+define ha_x = Character(_("?????"), what_prefix='\"', what_suffix='\"', image="habiki", ctc="ctc_blink", ctc_position="nestled")
+define ha_n = Character(_("Habiki Ishii"), what_suffix='\"', image="habiki", ctc="ctc_blink", ctc_position="nestled")
+define ha_st = Character(_("Habiki Ishii"), what_prefix='{u}\"', what_suffix='\"', image="habiki", ctc="ctc_blink", ctc_position="nestled")
+image side habiki = LayeredImageProxy("Habiki_por")
+image side habiki nulla = Null()
+image side habiki darko = LayeredImageProxy("Habiki_por", Transform(matrixcolor=TintMatrix(Color("#000", alpha=0.85))))
 
 ##Minor Characters
 define tb_n = Character(_("Academic Invitee"), what_prefix='\"', what_suffix='\"', ctc="ctc_blink", ctc_position="nestled")
@@ -99,6 +108,13 @@ init -1:
         yoffset 120
         transform_anchor True
     transform sh_med:
+        yoffset 180
+        zoom 0.70
+        transform_anchor True
+    transform ha_big:
+        yoffset 120
+        transform_anchor True
+    transform ha_med:
         yoffset 180
         zoom 0.70
         transform_anchor True
