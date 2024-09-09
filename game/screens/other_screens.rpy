@@ -75,49 +75,46 @@ screen about():
                 text "\"Meinos Kaen\"" xoffset 15 yalign 0.5
             vbox:
                 label ("{size=35}PROGRAMMERS") yalign 0.5
-                text "\"Meinos Kaen\", \"Skolaztika\", \"Korden\"" xoffset 15 yalign 0.5
+                text "\"Meinos Kaen\", \"Skolaztika\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}BACKGROUND ARTISTS") yalign 0.5
-                text "\"kircheis5020\", \"Arsonichawt\", \"Fuura Xen\"" xoffset 15 yalign 0.5
+                text "\"Reina\", \"Fuura Xen\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}CHARACTER SPRITE ARTIST") yalign 0.5
-                text "\"chocojax\", \"michumiyumi\"" xoffset 15 yalign 0.5
+                text "{a=https://nicanjil.carrd.co/}\"NicAnjil\"{/a}" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}CG ILLUSTRATORS") yalign 0.5
-                text "\"SaDui\", \"Arsonichawt\", \"Halebob\"" xoffset 15 yalign 0.5
+                text "\"NicAnjil\", \"Arsonichawt\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}ENVIRONMENT CONCEPT ARTIST") yalign 0.5
                 text "\"Fuura Xen\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}CHARACTER CONCEPT ARTIST") yalign 0.5
-                text "\"Amacoworks\"" xoffset 15 yalign 0.5
-            vbox:
-                label _("{size=35}ADDITIONAL CONCEPTS ARTIST") yalign 0.5
-                text "\"Arsonichawt\"" xoffset 15 yalign 0.5
+                text "\"Halebob\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}UI ARTIST") yalign 0.5
                 text "\"Skolaztika\"" xoffset 15 yalign 0.5
             vbox:
+                label _("{size=35}LOGO ARTIST") yalign 0.5
+                text "\"????\"" xoffset 15 yalign 0.5
+            vbox:
                 label _("{size=35}COMPOSERS") yalign 0.5
-                text "\"OddTillTheEnd\", \"Jonathan Jonhson\", \"Nailik\"" xoffset 15 yalign 0.5
+                text "\"OddTillTheEnd\", \"Nailik\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}AUDIO EDITOR") yalign 0.5
-                text "John \"Magnificent Beard\" Schmidt" xoffset 15 yalign 0.5
+                text "\"Meinos Kaen\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}3D MODELLER") yalign 0.5
-                text "\"kircheis5020\"" xoffset 15 yalign 0.5
-            vbox:
-                label _("{size=35}3D ANIMATOR") yalign 0.5
-                text "Danny \"DinoMan21779\" Dickson" xoffset 15 yalign 0.5
+                text "\"Reina\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}PLOT, SCRIPT WRITER") yalign 0.5
                 text "\"Meinos Kaen\"" xoffset 15 yalign 0.5
             vbox:
-                label _("{size=35}EDITOR") yalign 0.5
-                text "John \"Magnificent Beard\" Schmidt" xoffset 15 yalign 0.5
+                label _("{size=35}STORY CONSULTANTS") yalign 0.5
+                text "\"BEEB\", \"BAGUETTE\", \"ROSSTAIL\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}IMAGE EDITING") yalign 0.5
-                text "Danny \"DinoMan21779\" Dickson" xoffset 15 yalign 0.5
+                text "\"Meinos Kaen\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}THE REAL MVPS") yalign 0.5
                 text "The Wonderful JPDE Supporters on {a=https://www.patreon.com/JPDE}Patreon{/a} and {a=https://ko-fi.com/jpde}Ko-Fi{/a}" xoffset 15 yalign 0.5
