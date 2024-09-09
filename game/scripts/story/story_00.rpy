@@ -383,7 +383,7 @@ label story_00_bathroom_return:
     scene bar_corr_recep
     show Tabitha neutral at ta_med:
         xalign 0.45
-    show Shigeo shock at sh_med:
+    show Shigeo shock sweat at sh_med:
         xalign 0.6
     with Reveal3
     pause 0.5
@@ -393,7 +393,7 @@ label story_00_bathroom_return:
     sh nulla "...!{w=0.3} E-{w=0.15}Excuse me?"
     pause 2.0
     show Tabitha bow
-    ta_x nulla "Acknowledged, professor."
+    ta nulla "Acknowledged, professor."
     show Tabitha:
         easein 5.0 xalign 4.0
     pause 2.0
@@ -401,4 +401,86 @@ label story_00_bathroom_return:
         linear 0.5 xalign 0.65
     pause 0.3
     sh nulla "Ugh...{w=0.5} If this thing answers to you, may I kindly ask:{w=0.15} what the hell?"
+    pause 1.0
+    show Habiki neutral at ha_med:
+        xalign 0.2
+    with Reveal3
+    pause 0.5
+    play audio "audio/bgm/echo_of_mountains.ogg"
+    pause 1.0
+    show Habiki laugh with dissolve
+    pause 0.5
+    ha_x nulla "My, such a rude young man.{w=0.3} Calling my Tabitha a thing..."
+    sh nulla "It's obviously not a person...{w=0.5} Let's call it android, then."
+    pause 1.0
+    show Shigeo surprise with dissolve
+    sh nulla "Granted, I've never seen one quite like this, I'll give you that."
+    pause 0.5
+    show Tabitha neutral
+    show Habiki neutral
+    ha_x nulla "But you've seen others...?{w=0.5} They're not exactly common."
+    sh nulla "Unsurprisingly, considering how much they cost...{w=0.5} And their construction being outlawed in most of the world."
+    show Shigeo frown
+    sh nulla "<Japan is not one such country, though.{w=0.3} Am I right?>"
+    show Habiki surprise
+    pause 1.0
+    show Habiki neutral
+    play sound "audio/sfx/gui_hint.ogg"
+    ha_x nulla "<Fully fluent, and a very light accent...{w=0.5} A {b}hafu{/b}, then?>"
+    sh nulla "<My mother's from Sapporo, my father from Genova...{w=0.5} My name's Shigeo Arata.>"
+    show Shigeo surprise -sweat
+    sh nulla "And you are...?{w=0.5} I don't think I've seen you at the ceremony, nor the reception so far.{w=0.3} I would remember an elderly academic shadowed by a two meters tall android."
+    show Habiki laugh
+    ha_x nulla "Oh, you would be surprised...{w=0.5} But indeed, we've but recently arrived."
+    show Habiki smile
+    ha_x nulla "The drive to the château was quite long and tiring...{w=0.5} Hence the need to indulge in my little vice.{w=0.3} But I fear that I could not persuade Tabitha to fully close the door."
+    pause 1.0
+    show Shigeo frown
+    sh nulla "You could not...{w=0.5} Persuade it?"
+    pause 1.5
+    show Habiki neutral with dissolve
+    pause 0.5
+    ha_x nulla "Oh, if I really wanted I could've ordered her to...{w=0.5} But I find that going against actions dictated by her prime directives is quite disruptive."
+    show Habiki smile
+    show Tabitha bow
+    ha nulla "In this case, the directive is to protect me from any and all threats...{w=0.5} And with that, let me belatedly introduce myself as {b}professor Habiki{/b}."
+    pause 1.5
+    show Shigeo neutral
+    sh nulla "Keeping your last name close to your chest, are you?"
+    ha nulla "If I could share it willy nilly, I wouldn't be in need of a 6'6'' tall robotic bodyguard...{w=0.5} I'm afraid you'll have to make do with that, and the knowledge that I am with the groom's party."
+    show Habiki neutral
+    ha nulla "And so do you, I believe."
+    show Shigeo surprise
+    sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}how can you tell?"
+    show Habiki laugh
+    ha nulla "Are you kidding me?{w=0.5} Delphine's family and male acquaintances wouldn't be caught dead in an Italian-cut suit."
+    pause 1.0
+    show Shigeo frown
+    sh nulla "I did notice a certain...{w=0.5} Conforming on that front, yeah."
+    show Habiki neutral
+    ha nulla "So you did.{w=0.5} Well, it's been quite the amusing encounter."
+    show Habiki smile
+    ha nulla "Have a good evening, mister Arata...{w=0.5} Who knows, we may run into each other again, before the night is over."
+    stop music fadeout 3.5
+    show Habiki neutral
+    ha nulla "Let's go, Tabitha."
+    pause 1.5
+    play sound3 "audio/se/steps_marble_slow.ogg"
+    hide Habiki with dissolve
+    show Tabitha neutral
+    pause 0.5
+    play sound2 "audio/se/steps_marble_slow.ogg"
+    pause 1.0
+    show Shigeo frown with dissolve
+    pause 0.5
+    sh_i nulla "(Freaky...{w=0.5} I've never seen an android that looks so much like a human.{w=0.3} Regulations in Japan really are lax, aren't they?)"
+    show Shigeo surprise
+    sh_i nulla "(Also, why are they going upstairs...?{w=0.5} Oh, whatever.{w=0.3} It's none of my business.)"
+    show Shigeo sad
+    sh_i nulla "(Let's just go back in...)"
+    pause 1.0
+    scene black with dissolve
+    $ move_time(0,0,7)
+    pause 0.5
+    play music "audio/bgm/canon_in_bois.ogg"
     

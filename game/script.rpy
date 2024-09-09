@@ -47,10 +47,10 @@ image side gaspard nulla = Null()
 image side gaspard darko = LayeredImageProxy("Gaspard_por", Transform(matrixcolor=TintMatrix(Color("#000", alpha=0.85))))
 
 ##Habiki
-define ha = Character(_("Habiki Ishii"), what_prefix='\"', what_suffix='\"', image="habiki", ctc="ctc_blink", ctc_position="nestled")
+define ha = Character(_("Professor Habiki"), what_prefix='\"', what_suffix='\"', image="habiki", ctc="ctc_blink", ctc_position="nestled")
 define ha_x = Character(_("?????"), what_prefix='\"', what_suffix='\"', image="habiki", ctc="ctc_blink", ctc_position="nestled")
-define ha_n = Character(_("Habiki Ishii"), what_suffix='\"', image="habiki", ctc="ctc_blink", ctc_position="nestled")
-define ha_st = Character(_("Habiki Ishii"), what_prefix='{u}\"', what_suffix='\"', image="habiki", ctc="ctc_blink", ctc_position="nestled")
+define ha_n = Character(_("Professor Habiki"), what_suffix='\"', image="habiki", ctc="ctc_blink", ctc_position="nestled")
+define ha_st = Character(_("Professor Habiki"), what_prefix='{u}\"', what_suffix='\"', image="habiki", ctc="ctc_blink", ctc_position="nestled")
 image side habiki = LayeredImageProxy("Habiki_por")
 image side habiki nulla = Null()
 image side habiki darko = LayeredImageProxy("Habiki_por", Transform(matrixcolor=TintMatrix(Color("#000", alpha=0.85))))
