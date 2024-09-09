@@ -225,7 +225,7 @@ label story_00_bathroom_break:
     sh_i sad "(And only the groom.{w=0.3} I know literally no one else, here.)"
     sh_i neutral "(I know Francesco from high school.{w=0.3} He was my best friend, truth tell.)"
     pause 1.0
-    scene bar_corr_recep with Reveal
+    scene bar_corr_recep with Reveal3
     pause 1.5
     sh_i "(After graduation, though, we both left Italy to go study in different countries...{w=0.5} We kept in touch but, the relationship certainly wasn't as close-knit as it had once been.)"
     show Shigeo neutral with dissolve
@@ -246,8 +246,9 @@ label story_00_bathroom_break:
 label story_00_bathroom_encounters:
     sh_i neutral "(There we are.{w=0.3} The stairs going down.)"
     pause 0.5
-    show Shigeo neutral with dissolve:
+    show Shigeo neutral at sh_med:
         xalign 0.5
+    with dissolve
     pause 0.5
     play sound3 "audio/se/steps_stairs_coming_up.ogg" fadein 0.2
     pause 0.3
@@ -270,12 +271,14 @@ label story_00_bathroom_encounters:
     pause 1.0
     play music "audio/bgm/safehouse.ogg"
     pause 1.0
-    scene bar_bathroom with Reveal
+    scene bar_bathroom with Reveal3
     pause 1.0
     play sound "audio/se/water_faucet.ogg"
     sh_i surprise "(Hmmm?)"
     pause 0.5
-    show Gaspard surprise with Reveal
+    show Gaspard surprise at ga_med:
+        xalign 0.5
+    with Reveal
     pause 1.5
     sh neutral "Uhm, hello...{w=0.3} <Good evening?>"
     pause 0.5
@@ -328,4 +331,48 @@ label story_00_bathroom_return:
     pause 0.5
     $ move_time(0,0,4)
     pause 1.0
-    scene bar_corr_recep
+    play music "<from 39>audio/bgm/canon_in_bois_muted.ogg" fadein 0.2
+    scene bar_corr_recep with Reveal3
+    pause 1.5
+    sh_i surprise "(Hmm?{w=0.5} What's that sm-)"
+    pause 1.5
+    sh_i frown "(Ugh, of course.)"
+    pause 0.5
+    show Shigeo frown at sh_med:
+        xalign 0.7
+    with dissolve
+    pause 0.5
+    sh_i nulla "(Someone left the door to the smoking room open...{w=0.5} And of course, everyone else now needs to share in their breathalized cancer.)"
+    show Shigeo:
+        easein 7.0 xalign 0.5
+    sh_i nulla "(Let's close the door before the stench seeps in my clo-)"
+    pause 0.5
+    stop music fadeout 0.2
+    play sound "audio/em/em_shock.ogg"
+    #show screen emote("surprise",0.47,-0.05)
+    show Shigeo surprise
+    pause 1.0
+    play music "audio/bgm/uncanny.ogg"
+    play sound4 "audio/em/em_impact.ogg"
+    scene black
+    show tabitha_grab:
+        xalign -0.5
+    pause 0.5
+    sh_i shock "(What...?!{w=0.5} What is...?!)"
+    ta_x darko "Warning:{w=0.3} you are entering restricted personal space."
+    sh_i shock sweat "(The grip is so strong but more than that, what...{w=0.5} The hand feels so cold and...{w=0.5} Weird!)"
+    ta_x darko "Failure to remove yourself from the restricted area will be cause of reprisal.{w=0.3} Please acknowledge."
+    sh_i fear sweat "(It's completely smooth and rigid and yet soft at the same time...?!{w=0.3} What the hell is touching me?!)"
+    ta_x darko "I repeat."
+    sh shock "...!{w=0.5} Ugh?!"
+    pause 1.5
+    show tabitha_grab:
+        easein 5.0 xalign 0.0
+    pause 7.0
+    sh shock "What...?!"
+    ta_x darko "Failure to remove yourself from the restricted area will be cause of reprisal.{w=0.3} Please acknowledge."
+    sh_i surprise "(This...{w=0.5} What is this thing?!{w=0.3} It looks human...{w=0.5} It has the proportions of a human, its face looks human and yet...)"
+    sh_i shock "(That sickly looking grey skin...{w=0.5} Those lifeless ashen eyes...{w=0.5} That even voice, completely devoid of emotion or inflection...)"
+    sh_i fear "(What the hell is this {b}thing{/b}?!)"
+    sh fear "NNGH!{w=0.3} Let go of me, you-!"
+    

@@ -84,21 +84,21 @@ init -1:
     transform ta_big:
         yoffset 30
         transform_anchor True
-    transform ta_medium:
+    transform ta_med:
         yoffset 70
         zoom 0.70
         transform_anchor True
     transform ga_big:
         yoffset 120
         transform_anchor True
-    transform ga_medium:
+    transform ga_med:
         yoffset 180
         zoom 0.70
         transform_anchor True
     transform sh_big:
         yoffset 120
         transform_anchor True
-    transform sh_medium:
+    transform sh_med:
         yoffset 180
         zoom 0.70
         transform_anchor True
