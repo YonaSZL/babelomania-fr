@@ -227,11 +227,11 @@ label story_00_bathroom_break:
     pause 1.0
     scene bar_corr_recep with Reveal
     pause 1.5
-    sh_i "(After graduation, though, we both left Italy to go study in another country...{w=0.5} We kept in touch but, the relationship certainly wasn't as close-knit as it had once been.)"
+    sh_i "(After graduation, though, we both left Italy to go study in different countries...{w=0.5} We kept in touch but, the relationship certainly wasn't as close-knit as it had once been.)"
     show Shigeo neutral with dissolve
-    sh_i nulla "(I didn't even know he had gotten married until I received the invitation...{w=0.5} At first I thought it would be a great opportunity to reconnect but, I barely exchanged five words with him.)"
+    sh_i nulla "(I didn't even know he had gotten married until I received the invitation...{w=0.5} At first I thought it would be a great opportunity to reconnect but I barely exchanged five words with him.)"
     show Shigeo sad
-    sh_i nulla "(I don't know anyone else here.{w=0.3} And even when I try and interact...)"
+    sh_i nulla "(I don't know anyone else here.{w=0.3} And even when I try and interact, there's...)"
     pause 1.5
     show Shigeo neutral with dissolve
     pause 0.5
@@ -298,14 +298,14 @@ label story_00_bathroom_encounters:
     pause 1.0
     scene bathroom_painting with Reveal
     pause 1.5
-    sh_i neutral "(Looking at it up close, it feels even more out of place...{w=0.5} No matter what excuses I can make up.)"
+    sh_i neutral "(Looking at it up close, it feels even more out of place...{w=0.5} No matter what excuses I make up.)"
     sh_i frown "(When was this made?{w=0.5} And by whom?)"
     pause 1.0
     call screen bathroom_painting_examine
 
 label story_00_bathroom_painting_photo:
     sh_i neutral "(That seems to be everything I can surmise from this painting...{w=0.5} Too bad about the missing author, now I want to know more.)"
-    sh_i smile "(Let me take a picture of it.{w=0.3} I can Coogle it later, or show someone back home.{w=0.3} Dorothy would know.)"
+    sh_i smile "(Let me take a picture.{w=0.3} I can {i}Coogle{/i} it later, or show someone back home.{w=0.3} Dorothy would know.)"
     play sound "audio/sfx/gui_phone_unlock.ogg"
     call screen phone_camera("bathroom_painting", "story_00_bathroom_return")
 
@@ -319,9 +319,9 @@ label story_00_bathroom_return:
     show Shigeo smile
     with dissolve
     pause 0.5
-    sh_i nulla "(Well, that was a good way to waste a few minutes and distract myself...{w=0.5} I have something to occupy myself, too.)"
+    sh_i nulla "(Well, that was a good way to waste a few minutes and distract myself...{w=0.5} And now I have something to occupy myself further, if need be.)"
     show Shigeo neutral
-    sh_i nulla "(Let's go back upstairs, now, and see if I can't actually find someone to socialize with...{w=0.5} Or maybe the bride's family may have finally relinquished their hold on Francesco, that'd be nice.)"
+    sh_i nulla "(Let's go back upstairs, now, and see if I can't actually find someone to socialize with...{w=0.5} Or maybe the bride's family may have finally relinquished their hold on Francesco.{w=0.3} That'd be nice.)"
     pause 1.0
     stop music fadeout 0.5
     scene black with dissolve
