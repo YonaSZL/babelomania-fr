@@ -20,11 +20,13 @@ image intro_tabitha = "images/cgs/intro/intro_tabitha.jpg"
 
 image intro_tabitha_side = "images/cgs/intro/intro_tabitha_side.jpg"
 
-image intro_reach_base = At("images/cgs/intro/intro_reach.jpg", lightStatic)
+image intro_reach_base = At("images/cgs/intro/intro_reach.jpg", Static)
 
 image intro_reach:
     "intro_reach_base"
-    linear 8.0 zoom 1.5 yoffset 100
+    xalign 0.5
+    yalign 0.5
+    linear 10.0 zoom 1.5
 
 image intro_phone_a = "images/cgs/intro/intro_phone_a.jpg"
 image intro_phone_b = "images/cgs/intro/intro_phone_b.jpg"
