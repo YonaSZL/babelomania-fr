@@ -35,7 +35,7 @@ label habiki_01_habiki:
     sh_i surprise "(Is he serious...?{w=0.5} Granted, it's not the first instance I hear of someone commanding a complete information blackout on surface Internet.)"
     sh_i frown "(But the kind of power and influence you need to actually {i}obtain{/i} such a thing are...)"
     pause 1.0
-    if not habiki_01_habiki:
+    if habiki_01_habiki == False:
         $ habiki_01_habiki = True
     call screen habiki_conv_01
 
@@ -65,7 +65,7 @@ label habiki_01_tabitha:
     pause 0.5
     show Tabitha neutral with dissolve
     pause 1.0
-    if not habiki_01_tabitha:
+    if habiki_01_tabitha == False:
         $ habiki_01_tabitha = True
     call screen habiki_conv_01
 
@@ -114,6 +114,6 @@ label habiki_01_wedding:
     ha nulla "As foreseen.{w=0.3} No worries, though, Shigeo-kun.{w=0.3} I have ways to break the status quo."
     sh smile "You do?{w=0.3} Please do, then."
     pause 1.0
-    if not habiki_01_wedding:
-    $ habiki_01_wedding = True
+    if habiki_01_wedding == False:
+        $ habiki_01_wedding = True
     call screen habiki_conv_01

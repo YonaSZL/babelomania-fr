@@ -77,6 +77,10 @@ define glitch_unload_5 = ImageDissolve("gui/transitions/glitch.jpg", 0.5, 32, re
 define glitch_load15 = ImageDissolve("gui/transitions/glitch.jpg", 1.5, 32)
 define glitch_unload15 = ImageDissolve("gui/transitions/glitch.jpg", 1.5, 32, reverse=True)
 
+##Default Variables
+
+default persistent.gore = True
+
 #Defining Music Channels
 init python:
     renpy.music.register_channel("LoNoise", "sfx",)

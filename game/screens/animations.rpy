@@ -9,7 +9,17 @@ transform save_time():
 transform button_fade():
     alpha 0.4
     on idle:
-        linear .15 alpha 0.3
+        linear .15 alpha 0.4
+    on hover:
+        linear .15 alpha 1.0
+    on insensitive:
+        alpha 0.2
+
+
+transform button_fade_light():
+    alpha 0.5
+    on idle:
+        linear .15 alpha 0.5
     on hover:
         linear .15 alpha 1.0
     on insensitive:
@@ -17,5 +27,7 @@ transform button_fade():
 
 transform page_rotate():
     rotate 90
+
+
 
 
