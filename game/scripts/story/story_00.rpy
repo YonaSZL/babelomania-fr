@@ -387,7 +387,7 @@ label story_00_bathroom_return:
         xalign 0.6
     with Reveal3
     pause 0.5
-    ha_x darko "Let the gentleman go."
+    ha_x darko "Let the young man go."
     #show screen emote("surprise",0.57,-0.05)
     show Shigeo surprise
     sh nulla "...!{w=0.3} E-{w=0.15}Excuse me?"
@@ -423,7 +423,7 @@ label story_00_bathroom_return:
     show Habiki neutral
     ha_x nulla "But you've seen others...?{w=0.5} They're not exactly common."
     sh nulla "Unsurprisingly, considering how much they cost...{w=0.5} And their construction being outlawed in most of the world."
-    show Shigeo frown
+    show Shigeo frown -sweat
     sh nulla "<Japan is not one such country, though.{w=0.3} Am I right?>"
     show Habiki surprise
     pause 1.0
