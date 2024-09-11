@@ -483,4 +483,37 @@ label story_00_bathroom_return:
     $ move_time(0,0,7)
     pause 0.5
     play music "audio/bgm/canon_in_bois.ogg"
+    pause 0.5
+    scene bar_reception with Reveal
+    pause 0.5
+    sh_i neutral "(People are standing up...{w=0.5} I guess we're between dishes and there's some kind of small event coming up.)"
+    sh_i smile "(And lo and behold, is that Francesco away from the family table I see?!{w=0.3} Finally!)"
+    sh_i laugh "(Oh, I'm going to be giving him so much shit for 'by the way'-ing me about his-)"
+    ga_x frown "<Excuse me.{w=0.3} Monsieur?>"
+    sh surprise "...!{w=0.3} Hmm?"
+    pause 1.0
+    show Gaspard frown at ga_med:
+        xalign 0.5
+    pause 1.5
+    sh_i surprise "(The...{w=0.5} The guy I ran into in the bathrooms?{w=0.3} Yeah, that's definitely him.)"
+    sh_i neutral "(Never seen anyone go while wearing so many rings, too...{w=0.5} But, whatever.)"
+    sh_i frown "(Expensive looking suit in parisian blue, similarly costly looking accessories from a number of different brands...{w=0.5} Yeah, this guy is definitely with the bride's half of the party.)"
+    ga_x nulla "<Apologies for calling out to you so suddenly but, I believe we ran into each other earlier?>"
+    sh neutral "<You mean in the bathrooms downstairs?{w=0.5} Yes, that's correct.>"
+    ga_x nulla "<I see...{w=0.5} I wanted to apologize.>"
+    show Gaspard neutral
+    ga_x nulla "<I came across as quite rude, I believe, not returning your greeting.{w=0.3} I just wasn't expecting anyone to come through the door at the precise moment.>"
+    sh surprise "<Oh...{w=0.5} Well, it's fine.{w=0.3} No harm done.>"
+    show Gaspard smile
+    ga nulla "<Very gracious of you.{w=0.3} My name is Gaspard Faucigny.>"
+    show Gaspard neutral
+    ga nulla "<Pleased to make your acquaintance.>"
+    sh surprise "<I'm called Arata.{w=0.3} Shigeo Arata...>"
+    sh_i surprise "(Hmmm, I do have a window for Francesco but at the same time, it would be rude to just brush this person off...)"
+    sh_i smile "(Also, he will eventually need to go back to his seat.{w=0.3} This guy looks to be around my same age, so a new acquaintance wouldn't hurt.)"
+    sh surprise "<Pleased to meet you too, Gaspard.>"
+    pause 1.5
+    call screen gaspard_conv_01
+
+label story_00_meet_amina:
     
