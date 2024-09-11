@@ -125,7 +125,10 @@ init -1:
 
 label splashscreen:
     scene black
-    pause 3.0
+    pause 1.5
+    call screen language with dissolve
+    scene black
+    pause 1.5
     scene intro_00 with dissolve
     pause 2.5
     scene black with Reveal3
@@ -212,9 +215,9 @@ menu gore_selection:
     "What level of gore would you prefer? (This setting can be changed at any time from the OPTIONS menu.)"
     
     "Full gore.":
-        #gore_setting
+        $ persistent.gore = True
         jump story_00_start
 
     "Censored gore.":
-        #gore_setting
+        $ persistent.gore = False
         jump story_00_start
