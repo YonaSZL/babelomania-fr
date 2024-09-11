@@ -79,26 +79,41 @@ label habiki_01_wedding:
         sh surprise "If you've only recently arrived, that's why I haven't seen you at the ceremony or the reception.{w=0.3} I would remember an elderly academic shadowed by a two meters tall android."
         show Habiki laugh
         ha nulla "Oh, you would be surprised...{w=0.5} But indeed, we haven't had the opportunity to greet the bride and groom yet, truth tell."
-        show Habiki neutral
-        ha nulla "I was supposed to arrive earlier but bad weather delayed my flight...{w=0.5} I hope young Francesco didn't take offense with it."
-        sh surprise "Francesco...{w=0.5} So you're with the groom's party."
-        show Habiki smile
-        ha nulla "Indeed.{w=0.3} And so do you, I believe."
-        show Tabitha bow
-        sh neutral "Well, yes, but...{w=0.5} How can you tell?"
-        show Habiki laugh
-        ha nulla "Are you kidding me?{w=0.3} Delphine's family and male acquaintances wouldn't be caught dead in a suit that cheap."
-        sh surprise sweat "Ch-!{w=0.3} This suit cost me 800 Euros!{w=0.3} I had to save for it!"
-        show Habiki smile
-        ha nulla "And the ones I've seen them wear at similar occasions range in the tens of thousands.{w=0.3} Like many things in this world, Shigeo-kun, cheapness is a...{w=0.5} Relative concept."
-        pause 1.5
-        sh frown -sweat "How do you know them, anyway?"
-        ha nulla "Young Francesco was my pupil.{w=0.3} One of the finest students I've ever had the honour of teaching...{w=0.5} And you?"
-        sh neutral ".{w=0.3}.{w=0.3}.{w=0.5}Francesco is my childhood friend.{w=0.3} We grew up together."
-        pause 1.0
-        show Habiki surprise with dissolve
-        pause 0.5
-        ha nulla "Indeed?{w=0.5} Hmm."
-        sh surprise "Huh?{w=0.5} Somethign wrong?"
-        show Habiki frown
-        ha nulla ""
+    show Habiki neutral
+    ha nulla "I was supposed to arrive earlier but bad weather delayed my flight...{w=0.5} I hope young Francesco didn't take offense with it."
+    sh surprise "Francesco...{w=0.5} So you're with the groom's party."
+    show Habiki smile
+    ha nulla "Indeed.{w=0.3} And so do you, I believe."
+    show Tabitha bow
+    sh neutral "Well, yes, but...{w=0.5} How can you tell?"
+    show Habiki laugh
+    ha nulla "Are you kidding me?{w=0.3} Delphine's family and male acquaintances wouldn't be caught dead in a suit that cheap."
+    sh surprise sweat "Ch-!{w=0.3} This suit cost me 800 Euros!{w=0.3} I had to save for it!"
+    show Habiki smile
+    ha nulla "And the ones I've seen them wear at similar occasions range in the tens of thousands.{w=0.3} Like many things in this world, Shigeo-kun, cheapness is a...{w=0.5} Relative concept."
+    pause 1.5
+    sh frown -sweat "How do you know them, anyway?"
+    ha nulla "Young Francesco was my pupil.{w=0.3} One of the finest students I've ever had the honour of teaching...{w=0.5} And you?"
+    sh neutral ".{w=0.3}.{w=0.3}.{w=0.5}Francesco is my childhood friend.{w=0.3} We grew up together."
+    pause 1.0
+    show Habiki surprise with dissolve
+    pause 0.5
+    ha nulla "Indeed?{w=0.5} Hmm."
+    sh surprise "Huh?{w=0.5} Something wrong?"
+    show Habiki frown
+    ha nulla ".{w=0.3}.{w=0.3}.{w=0.5}not exactly wrong, just...{w=1.0} Nevermind."
+    show Habiki neutral
+    ha nulla "Nothing of importance.{w=0.3} You're just the first person I meet from Francesco's life from before college."
+    sh surprise "Oh...{w=0.5} Yeah, to be honest, his invite was a surprise.{w=0.3} I didn't even know he had gotten married."
+    ha nulla "I see...{w=0.5} Well, no time like the present to reconnect, don't you think?"
+    show Habiki smile
+    show Tabitha neutral
+    ha nulla "Granted, you'll have to fight tooth and nail for some one-on-one time with him, tonight...{w=0.5} Don't know if you'll have it in you."
+    sh sad "Yeah, I noticed a tendency on the bride's family's behalf to monopolize the happy couple."
+    show Habiki neutral
+    ha nulla "As foreseen.{w=0.3} No worries, though, Shigeo-kun.{w=0.3} I have ways to break the status quo."
+    sh smile "You do?{w=0.3} Please do, then."
+    pause 1.0
+    if not habiki_01_wedding:
+    $ habiki_01_wedding = True
+    call screen habiki_conv_01
