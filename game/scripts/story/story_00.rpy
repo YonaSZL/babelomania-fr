@@ -448,9 +448,10 @@ label story_00_bathroom_return:
 
 label story_00_meet_gaspard:
     show Habiki neutral
-    ha nulla "So you did.{w=0.5} Well, it's been quite the amusing encounter."
+    ha nulla "Well, it's been quite the amusing encounter...{w=0.5} But we've held each other up quite enough, I believe."
     show Habiki smile
-    ha nulla "Have a good evening, mister Arata...{w=0.5} Who knows, we may run into each other again, before the night is over."
+    show Tabitha bow
+    ha nulla "Have a good evening, Shigeo-kun...{w=0.5} Who knows, we may run into each other again, before the night is over."
     stop music fadeout 3.5
     show Habiki neutral
     ha nulla "Let's go, Tabitha."
@@ -470,7 +471,7 @@ label story_00_meet_gaspard:
     sh_i nulla "(Let's just go back in...)"
     pause 1.0
     scene black with dissolve
-    $ move_time(0,0,7)
+    $ move_time(0,0,17)
     pause 0.5
     play music "audio/bgm/canon_in_bois.ogg"
     pause 0.5
