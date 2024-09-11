@@ -123,6 +123,25 @@ screen preferences():
                             action Preference("all mute", "toggle")
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
+            ##divider frame
+            frame:
+                background Solid(u"#4f331d")
+                xysize(500,3)
+                xoffset 200
+
+            hbox:
+                vbox:
+                    style_prefix "radio"
+                    label _("Gore")
+                    textbutton _("Full") action SetVariable("persistent.gore", True) hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
+                    textbutton _("Censored") action SetVariable("persistent.gore", False) hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
+
+
+                vbox:
+                    style_prefix "radio"
+                    label _("Language")
+                    textbutton _("English") action NullAction() hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
+                    textbutton _("French") action NullAction() hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
 
 
 

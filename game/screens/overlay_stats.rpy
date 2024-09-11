@@ -27,10 +27,15 @@ screen overlay_stats():
     vbox:
         spacing 10 offset(15,30)
         if time_menu:
-            frame:
-                background "gui/stats/time_bg.png"
+            button:
+                idle_background "gui/stats/time_bg.png"
+                hover_background At("gui/stats/time_bg.png", outline_transform(2, "#876a33", 4.0))
                 xysize(395, 77)
-                text "19:23  |  2024.09.06" align(0.5, 0.5) textalign 0.5 color '#bfaa8f'
+                text "MORNING" align(0.5, 0.5) yoffset 4 textalign 0.5 color '#bfaa8f' font "gui/font/Klotee.ttf"
+                add "gui/stats/signal.png" yalign 0.5 xoffset 50
+                hover_sound "audio/sfx/gui_hover.ogg"
+                activate_sound "audio/sfx/gui_inventory.ogg"
+                action ShowMenu("codex_main")
 
         if stat1_show:
             bar:
