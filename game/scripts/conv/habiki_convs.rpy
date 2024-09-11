@@ -39,6 +39,7 @@ label habiki_01_habiki:
 
 label habiki_01_tabitha:
 
+
 label habiki_01_wedding:
 
 ##Original Convos cut out of Story00.
@@ -71,25 +72,4 @@ label habiki_01_wedding:
     pause 1.0
     show Shigeo frown
     sh nulla "I did notice a certain...{w=0.5} Conforming on that front, yeah."
-    show Habiki neutral
-    ha nulla "So you did.{w=0.5} Well, it's been quite the amusing encounter."
-    show Habiki smile
-    ha nulla "Have a good evening, mister Arata...{w=0.5} Who knows, we may run into each other again, before the night is over."
-    stop music fadeout 3.5
-    show Habiki neutral
-    ha nulla "Let's go, Tabitha."
-    pause 1.5
-    play sound3 "audio/se/steps_marble_slow.ogg"
-    hide Habiki with dissolve
-    show Tabitha neutral
-    pause 0.5
-    play sound2 "audio/se/steps_marble_slow.ogg"
-    pause 1.0
-    show Shigeo frown with dissolve
-    pause 0.5
-    sh_i nulla "(Freaky...{w=0.5} I've never seen an android that looks so much like a human.{w=0.3} Regulations in Japan really are lax, aren't they?)"
-    show Shigeo surprise
-    sh_i nulla "(Also, why are they going upstairs...?{w=0.5} Oh, whatever.{w=0.3} It's none of my business.)"
-    show Shigeo sad
-    sh_i nulla "(Let's just go back in...)"
-    pause 1.0
+    
