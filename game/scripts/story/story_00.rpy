@@ -438,7 +438,7 @@ label story_00_bathroom_return:
     pause 1.0
     scene bar_corr_recep with dissolve
     pause 0.5
-    show Tabitha bow:
+    show Tabitha neutral:
         xalign 0.3
     show Habiki neutral:
         xalign 0.7

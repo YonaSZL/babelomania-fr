@@ -3,14 +3,45 @@
 screen habiki_conv_01:
     text "YOWZA"
 
+init:
+    default habiki_01_habiki = False
+    default habiki_01_tabitha = False
+    default habiki_01_wedding = False
 
-label habiki_01_gaspard:
-    
+label habiki_01_habiki:
+    pause 0.5
+    sh neutral "Habiki...{w=0.5} So I can call you by your first name?"
+    ha nulla "As long as you remember to add 'professor'."
+    sh surprise "Hm...{w=0.5} Bit odd, not going to lie."
+    pause 0.5
+    show Habiki smile
+    ha nulla "And why would you say that?"
+    sh neutral "You stress the necessity of a honorific, which means you give importance to social etiquette...{w=0.5} Or at least, to your title."
+    sh frown "It's a way to put some kind of distance between you and your interlocutor, and yet you give a stranger your first name instead of your family name.{w=0.3} Kind of contradictory, don't you think?"
+    ha nulla ".{w=0.3}.{w=0.3}.{w=0.5}indeed.{w=0.3} You're well steeped in our culture, I see."
+    show Habiki neutral
+    ha nulla "There's, though, a very logical explanation...{w=0.5} My Tabitha, here, is many things to me.{w=0.3} One of her primary functions is being my bodyguard."
+    show Tabitha bow
+    ha nulla "With that in mind, is it really odd that someone needing a robotic bodyguard would be quite judicious, when it came to handing out his last name?"
+    sh smile ".{w=0.3}.{w=0.3}.{w=0.5}fair enough.{w=0.5} But considering the century we live in, you mean to tell me I won't find that out just by looking up 'japanese professor with android' on a search engine?"
+    pause 1.5
+    show Habiki smile with dissolve
+    ha nulla "Quite."
+    sh surprise "Quite...?{w=0.5} You mean, I won't?"
+    show Habiki neutral
+    show Tabitha neutral
+    ha nulla "You won't."
+    sh surprise "Uhm...{w=0.5} Okay, then?"
+    sh_i surprise "(Is he serious...?{w=0.5} Granted, it's not the first instance I hear of someone commanding a complete information blackout on surface Internet.)"
+    sh_i frown "(But the kind of power and influence you need to actually {i}obtain{/i} such a thing are...)"
+    pause 1.0
+    call screen habiki_conv_01
+
+label habiki_01_tabitha:
+
+label habiki_01_wedding:
 
 ##Original Convos cut out of Story00.
-    sh nulla "Ugh...{w=0.5} If this thing answers to you, may I kindly ask:{w=0.15} what the hell?"
-    
-    
     show Shigeo surprise -sweat
     sh nulla "And you are...?{w=0.5} I don't think I've seen you at the ceremony, nor the reception so far.{w=0.3} I would remember an elderly academic shadowed by a two meters tall android."
     show Habiki laugh
