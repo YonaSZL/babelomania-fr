@@ -29,6 +29,8 @@ screen codex_main():
         add "gui/codex/return_bg.png"
         add "gui/gm/return.png" align(0.5, 0.5) xoffset -2 at button_fade
         pos(1722, 728)
+        hover_sound "audio/sfx/gui_hover.ogg"
+        activate_sound "audio/sfx/gui_codex_close.ogg"
         action Return()
 
 
@@ -62,21 +64,29 @@ screen categories():
                     xysize(350,75)
                     add "gui/codex/btn_bg.png"
                     text "People" 
+                    hover_sound "audio/sfx/gui_hover.ogg"
+                    activate_sound "audio/sfx/gui_confirm.ogg"
                     action [Hide("categories"),Show("entries", dissolve,c_people)]
             button:
                     xysize(350,75)
                     add "gui/codex/btn_bg.png"
                     text "Events" 
+                    hover_sound "audio/sfx/gui_hover.ogg"
+                    activate_sound "audio/sfx/gui_confirm.ogg"
                     action [Hide("categories"),Show("entries", dissolve, c_events)]
             button:
                     xysize(350,75)
                     add "gui/codex/btn_bg.png"
                     text "Locations" 
+                    hover_sound "audio/sfx/gui_hover.ogg"
+                    activate_sound "audio/sfx/gui_confirm.ogg"
                     action [Hide("categories"),Show("entries", dissolve, c_locations)]
             button:
                     xysize(350,75)
                     add "gui/codex/btn_bg.png"
                     text "Items" 
+                    hover_sound "audio/sfx/gui_hover.ogg"
+                    activate_sound "audio/sfx/gui_confirm.ogg"
                     action [Hide("categories"),Show("entries",dissolve, c_items)]
 
 screen entries(cat):
@@ -93,6 +103,8 @@ screen entries(cat):
                         xysize(350,75)
                         add "gui/codex/btn_bg.png"
                         text i.title
+                        hover_sound "audio/sfx/gui_hover.ogg"
+                        activate_sound "audio/sfx/gui_confirm.ogg"
                         action [SetVariable("current_entry", i.scr), Show("codex_main", dissolve)]
 
 
@@ -100,7 +112,8 @@ screen entries(cat):
         xysize(86,86) pos(267,822)
         add "gui/codex/cat_btn.png"
         add "gui/codex/cat.png" at button_fade_light
-
+        hover_sound "audio/sfx/gui_hover.ogg"
+        activate_sound "audio/sfx/gui_codex_close.ogg"
         action [Hide("entries"), Show("categories", dissolve)]
             
 

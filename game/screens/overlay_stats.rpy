@@ -6,6 +6,7 @@ default inventory_show = True
 default time_menu = True
 default stat1_show = True
 default stat2_show = True
+default codex_active = True
 screen overlay_stats():
 
 
@@ -34,8 +35,11 @@ screen overlay_stats():
                 text "[dis_hours]:[dis_minutes]" align(0.5, 0.5) yoffset 4 textalign 0.5 color '#bfaa8f' font "gui/font/Klotee.ttf"
                 add "gui/stats/signal.png" yalign 0.5 xoffset 50
                 hover_sound "audio/sfx/gui_hover.ogg"
-                activate_sound "audio/sfx/gui_inventory.ogg"
-                action ShowMenu("codex_main")
+                if codex_active == True:
+                    activate_sound "audio/sfx/gui_codex.ogg"
+                    action ShowMenu("codex_main")
+                else:
+                    action Null()
 
         if stat1_show:
             bar:
