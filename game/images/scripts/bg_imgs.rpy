@@ -15,5 +15,6 @@ image chateau_setting = "images/bgs/chateau/chateau_setting.jpg"
 ##Baroque Building
 
 image bar_reception = "images/bgs/baroque/bar_reception.jpg"
+image bar_corr_recep = "images/bgs/baroque/bar_corr_recep.jpg"
 image bar_bathroom = "images/bgs/baroque/bar_bathroom.jpg"
 image bathroom_painting = "images/bgs/baroque/bathroom_painting.jpg"

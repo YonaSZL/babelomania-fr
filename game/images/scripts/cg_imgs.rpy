@@ -31,3 +31,8 @@ image intro_reach:
 image intro_phone_a = "images/cgs/intro/intro_phone_a.jpg"
 image intro_phone_b = "images/cgs/intro/intro_phone_b.jpg"
 image intro_phone_c = "images/cgs/intro/intro_phone_c.jpg"
+
+#Chapter 00
+
+image tabitha_grab = "images/cgs/chapter_00/tabitha_grab.jpg"
+image bathroom_painting = "images/cgs/chapter_00/bathroom_painting.jpg"

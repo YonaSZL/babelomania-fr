@@ -136,14 +136,15 @@ label story_00_invitation:
     pause 1.5
     sh_xi darko frown "(I should've just sent a card...{w=0.5} This is killing me.)"
     tb_n "<And let me tell you, the attention to detail of monsieur Du Bois went far beyond just architecture!>"
-    sh_xi darko neutral "(I can recognize the name of the original owner, something about architecture...{w=0.5} Au-delà?{w=0.3} He went beyond architecture, I guess?)"
-    tb_n "<You will find, spread out throughout the buildings, different pieces of art collected over the course of his travels.{w=0.3} Or personally commissioned, to complement specific rooms of the complex!>"
-    tb_n2 "<Indeed?{w=0.5} To be honest, I don't exactly approve of a lot of the placements.{w=0.3} Like in the toilet?>"
+    sh_xi darko neutral "(I can recognize the name of the original owner, something about architecture...{w=0.5} <Au-delà>?{w=0.3} He went beyond architecture, I guess?)"
+    tb_n "<You will find, spread out throughout the estate, different pieces of art collected over the course of his travels.{w=0.3} Or specially commissioned to complement specific rooms of the complex!>"
+    tb_n2 "<Indeed?{w=0.5} To be honest, I don't exactly approve of a lot of the placements.{w=0.3} Like in the toilets downstairs?>"
     sh_xi darko surprise "(Now they're talking about the toilet of all things?{w=0.3} The place of the toilets??)"
-    tb_n "<Indeed...{w=0.5} You have to remember, though, that the family sold the estate in 2025.{w=0.3} After that, god only knows who had a hand in reshaping it and moving things around.>"
+    tb_n "<Indeed...{w=0.5} You have to remember, though, that the family turned the estate from museum to source of profit in 2025.{w=0.3} Afterwards, god only knows who had a hand in reshaping it and moving things around.>"
     tb_n2 "<Ah, yes.{w=0.3} That would explain that monstrosity in the bathrooms!>"
+    sh_xi darko smile "(Oh, finally!{w=0.3} They're definitely talking about {nw}"
     play sound "audio/sfx/gui_hint.ogg"
-    sh_xi darko smile "(Oh, finally!{w=0.3} They're definitely talking about {b}that painting{/b}!{w=0.3} And I guess how out of place it is?)"
+    extend "{b}that painting{/b}!{w=0.3} And I guess how out of place it is?)"
     sh_x darko surprise "Uhm...{w=0.5} <At first I thought it had been put there to help.>"
     tb_n "<Huh?{w=0.5} To help?>"
     pause 1.0
@@ -174,32 +175,34 @@ menu story_00_shit:
     
 
 label story_00_concentration:
+    $ renpy.block_rollback()
     pause 0.5
     sh nulla "<I mean, uhm...{w=0.5} Seeing something like that, in an unexpected place...{w=0.5} It scares you, no?>"
     show Shigeo neutral
     sh nulla "<And being scared makes the blood fast...{w=0.5} That should help, no?>"
     pause 2.0
-    tb_n2 "<Hmm, I guess that is biologically true...{w=0.5} But I doubt it was the reason why they put that painting in the toilets.>"
+    tb_n2 "<Hmm, I guess that is biologically true...{w=0.5} But I doubt it was the reason why they put that thing downstairs.>"
     tb_n "<Our young italian friend gives the current owners too much credit, me thinks!{w=0.3} Ahahahah!>"
     show Shigeo sad
     sh_i nulla "(Oh, thank god...{w=0.5} They don't think I'm a moron yet.{w=0.3} Emphasis on yet.)"
     jump story_00_bathroom_break
 
 label story_00_relaxation:
+    $ renpy.block_rollback()
     pause 0.5
     sh nulla "<Well, such a painting...{w=0.5} It makes you think about it.{w=0.3} About what it means.>"
     show Shigeo neutral
     sh nulla "<And if you get lost in such thoughts, it helps you relax...{w=0.5} And being relaxed is important in this situation, no?>"
     pause 2.0
-    tb_n "<Quite, quite!{w=0.3} It is indeed an intriguing enough painting, especially for those not used to contemplating art.>"
-    tb_n2 "<I doubt most people would expect to contemplate art while going to the bathroom...{w=0.5} Still, I doubt they did that on purpose.>"
+    tb_n "<Quite, quite!{w=0.3} It is indeed an intriguing enough piece, especially for those not used to contemplating art.>"
+    tb_n2 "<I doubt most people would expect to contemplate art in that situation...{w=0.5} Still, I doubt they did it on purpose.>"
     sh_i nulla "(Well, it seems I managed to save my hide...{w=0.5} Or at least make them continue the conversation and ignore me again.)"
     jump story_00_bathroom_break
 
 label story_00_bathroom_break:
     show Shigeo sad
     sh_i nulla "(Ugh, this is really the worst...{w=0.5} I need some air.)"
-    play sound "audio/se/item_drag.ogg"
+    play sound "audio/se/item_slide.ogg"
     tb_n "<Still a shame that the original vision of Du Bois got so altered...{w=0.5} Oh, you're leaving us, young man?>"
     show Shigeo neutral
     sh nulla "<Yes, I'm sorry.{w=0.3} Talking about bathrooms made me think about it.>"
@@ -222,13 +225,17 @@ label story_00_bathroom_break:
     play music "<from 39>audio/bgm/canon_in_bois_muted.ogg" fadein 0.2
     pause 0.5
     sh_i "(My name is Shigeo Arata.{w=0.3} I'm a friend of the groom at this reception...)"
-    sh_i sad "(And only the groom.{w=0.3} I know literally no one else, here.)"
-    sh_i neutral "(I know Francesco from high school.{w=0.3} He was my best friend, truth tell.)"
+    sh_i sad "(And only the groom.)"
+    sh_i neutral "(I know {nw}"
+    play sound "audio/sfx/gui_hint.ogg"
+    extend "{b}Francesco{/b} from high school.{w=0.3} He was my best friend, truth tell.)"
     pause 1.0
     scene bar_corr_recep with Reveal3
     pause 1.5
     sh_i "(After graduation, though, we both left Italy to go study in different countries...{w=0.5} We kept in touch but, the relationship certainly wasn't as close-knit as it had once been.)"
-    show Shigeo neutral with dissolve
+    show Shigeo neutral at sh_big:
+        xalign 0.5
+    with dissolve
     sh_i nulla "(I didn't even know he had gotten married until I received the invitation...{w=0.5} At first I thought it would be a great opportunity to reconnect but I barely exchanged five words with him.)"
     show Shigeo sad
     sh_i nulla "(I don't know anyone else here.{w=0.3} And even when I try and interact, there's...)"
@@ -238,13 +245,10 @@ label story_00_bathroom_break:
     sh_i nulla "(Whatever.{w=0.3} Where were the stairs, again?)"
     pause 0.5
     hide Shigeo with dissolve
-    pause 0.5
-    sh_i neutral "(The bathrooms are {b}downstairs{/b}...)"
     pause 1.0
-    call screen exp_bar_corr
+    call screen exp_bar_corr with dissolve
     
 label story_00_bathroom_encounters:
-    sh_i neutral "(There we are.{w=0.3} The stairs going down.)"
     pause 0.5
     show Shigeo neutral at sh_med:
         xalign 0.5
@@ -252,15 +256,15 @@ label story_00_bathroom_encounters:
     pause 0.5
     play sound "audio/se/steps_stairs_up.ogg"
     pause 0.3
-    show screen emote("surprise",0.45,-0.05)
+    #show screen emote("surprise",0.45,-0.05)
     show Shigeo surprise
     pause 0.2
     play sound "audio/se/whoosh_fast.ogg"
-    show Shigeo shock:
+    show Shigeo shock at sh_med:
         linear 0.3 xalign 0.35
     sh nulla "Woah!{w=0.3} Excuse me!"
     pause 0.5
-    sh_i nulla "(Gee, she was in a hurry!{w=0.3} I think that was one of the bridemaids?)"
+    sh_i nulla "(Geez, she was in a hurry!{w=0.3} I think it was one of the bridemaids?)"
     show Shigeo neutral
     sh_i nulla "(I ended up being the one apologizing, too...{w=0.5} Not even a <désolée>?{w=0.3} Some people are weird.)"
     pause 1.0
@@ -275,7 +279,7 @@ label story_00_bathroom_encounters:
     scene bar_bathroom with Reveal3
     pause 1.0
     play sound "audio/se/water_faucet.ogg"
-    sh_i surprise "(Hmmm?)"
+    sh_i surprise "(Hmmm?{w=0.5} Someone else is here, too.)"
     pause 0.5
     show Gaspard surprise at ga_med:
         xalign 0.5
@@ -356,7 +360,7 @@ label story_00_bathroom_return:
     play sound4 "audio/em/em_impact.ogg"
     scene black
     show tabitha_grab:
-        xalign -0.5
+        xanchor 960 yalign 0.0 xpos 0
     pause 0.5
     sh_i shock "(What...?!{w=0.5} What is...?!)"
     ta_x darko "Warning:{w=0.3} you are entering restricted personal space."
@@ -367,10 +371,10 @@ label story_00_bathroom_return:
     sh shock "...!{w=0.5} Ugh?!"
     pause 1.5
     show tabitha_grab:
-        easein 5.0 xalign 0.0
-    pause 7.0
+        easein 7.0 xalign 0.0
+    pause 9.0
     sh shock "What...?!"
-    ta_x darko "Failure to remove yourself from the restricted area will be cause of reprisal.{w=0.3} Please acknowledge."
+    ta_x darko "Failure to remove yourself from the restricted area will be cause for reprisal.{w=0.3} Please acknowledge."
     sh_i surprise "(This...{w=0.5} What is this thing?!{w=0.3} It looks human...{w=0.5} It has the proportions of a human, its face looks human and yet...)"
     sh_i shock "(That sickly looking grey skin...{w=0.5} Those lifeless ashen eyes...{w=0.5} That even voice, completely devoid of emotion or inflection...)"
     sh_i fear "(What the hell is this {b}thing{/b}?!)"
