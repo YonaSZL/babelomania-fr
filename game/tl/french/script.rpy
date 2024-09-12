@@ -176,3 +176,11 @@ translate french strings:
     old "Fashionable Invitee"
     new ""
 
+# TODO: Translation updated at 2024-09-12 10:43
+
+translate french strings:
+
+    # game/script.rpy:41
+    old "Gaspard Faucigny"
+    new ""
+

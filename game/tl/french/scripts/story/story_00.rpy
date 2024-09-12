@@ -860,3 +860,209 @@ translate french story_00_bathroom_return_0ecf7f01:
     # sh_i nulla "(Let's just go back in...)"
     sh_i nulla ""
 
+# TODO: Translation updated at 2024-09-12 10:43
+
+# game/scripts/story/story_00.rpy:390
+translate french story_00_bathroom_return_0e7aa30c:
+
+    # ha_x darko "Let the young man go."
+    ha_x darko ""
+
+# game/scripts/story/story_00.rpy:410
+translate french story_00_bathroom_return_69f2c699:
+
+    # ha_x nulla "Tabitha, my Tabitha...{w=0.5} Always so overzealous."
+    ha_x nulla ""
+
+# game/scripts/story/story_00.rpy:412
+translate french story_00_bathroom_return_f98477c1:
+
+    # ha_x nulla "This stranger barely has the countenance of a grown man, leave alone an outlaw."
+    ha_x nulla ""
+
+# game/scripts/story/story_00.rpy:413
+translate french story_00_bathroom_return_cfe6349c:
+
+    # sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}you know, considering that your bucket of bolts almost attacked me, I'd think an apology would be a better introduction than veiled insults."
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:416
+translate french story_00_bathroom_return_40551126:
+
+    # ha_x nulla "My, such a rude young man.{w=0.3} Calling my Tabitha a bucket of bolts..."
+    ha_x nulla ""
+
+# game/scripts/story/story_00.rpy:417
+translate french story_00_bathroom_return_f2415613:
+
+    # sh nulla "It's obviously not a person...{w=0.5} Let's call it just Android, then."
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:434
+translate french story_00_bathroom_return_ac356b5c:
+
+    # ha_x nulla "<I see...{w=0.5} Interesting.>"
+    ha_x nulla ""
+
+# game/scripts/story/story_00.rpy:436
+translate french story_00_bathroom_return_1343482f:
+
+    # ha nulla "<Quite interesting indeed...{w=0.5} Please feel free to address me as {b}Professor Habiki{/b}, Shigeo-kun.>"
+    ha nulla ""
+
+# game/scripts/story/story_00.rpy:437
+translate french story_00_bathroom_return_f57763d3:
+
+    # sh_i nulla "(Professor...{w=0.5} {i}Habiki{/i}?)"
+    sh_i nulla ""
+
+# game/scripts/story/story_00.rpy:451
+translate french story_00_meet_gaspard_40f9382d:
+
+    # ha nulla "Well, it's been quite the amusing encounter...{w=0.5} But we've held each other up quite enough, I believe."
+    ha nulla ""
+
+# game/scripts/story/story_00.rpy:454
+translate french story_00_meet_gaspard_c93ac7a5:
+
+    # ha nulla "Have a good evening, Shigeo-kun...{w=0.5} Who knows, we may run into each other again, before the night is over."
+    ha nulla ""
+
+# game/scripts/story/story_00.rpy:457
+translate french story_00_meet_gaspard_0f7ddfb0:
+
+    # ha nulla "Let's go, Tabitha."
+    ha nulla ""
+
+# game/scripts/story/story_00.rpy:467
+translate french story_00_meet_gaspard_40dd3029:
+
+    # sh_i nulla "(Freaky...{w=0.5} I've never seen an android that looks so much like a human.{w=0.3} Regulations in Japan really are lax, aren't they?)"
+    sh_i nulla ""
+
+# game/scripts/story/story_00.rpy:469
+translate french story_00_meet_gaspard_2b672075:
+
+    # sh_i nulla "(Also, why are they going upstairs...?{w=0.5} Oh, whatever.{w=0.3} It's none of my business.)"
+    sh_i nulla ""
+
+# game/scripts/story/story_00.rpy:471
+translate french story_00_meet_gaspard_0ecf7f01:
+
+    # sh_i nulla "(Let's just go back in...)"
+    sh_i nulla ""
+
+# game/scripts/story/story_00.rpy:480
+translate french story_00_meet_gaspard_fd1594ff:
+
+    # sh_i neutral "(People are standing up...{w=0.5} I guess we're between dishes and there's some kind of small event coming up.)"
+    sh_i neutral ""
+
+# game/scripts/story/story_00.rpy:481
+translate french story_00_meet_gaspard_c3285e33:
+
+    # sh_i smile "(And lo and behold, is that Francesco away from the family table I see?!{w=0.3} Finally!)"
+    sh_i smile ""
+
+# game/scripts/story/story_00.rpy:482
+translate french story_00_meet_gaspard_b5b8cfe6:
+
+    # sh_i laugh "(Oh, I'm going to be giving him so much shit for 'by the way'-ing me about his-)"
+    sh_i laugh ""
+
+# game/scripts/story/story_00.rpy:483
+translate french story_00_meet_gaspard_2b72896d:
+
+    # ga_x frown "<Excuse me.{w=0.3} Monsieur?>"
+    ga_x frown ""
+
+# game/scripts/story/story_00.rpy:484
+translate french story_00_meet_gaspard_da733e90:
+
+    # sh surprise "...!{w=0.3} Hmm?"
+    sh surprise ""
+
+# game/scripts/story/story_00.rpy:489
+translate french story_00_meet_gaspard_4fa27871:
+
+    # sh_i surprise "(The...{w=0.5} The guy I ran into in the bathrooms?{w=0.3} Yeah, that's definitely him.)"
+    sh_i surprise ""
+
+# game/scripts/story/story_00.rpy:490
+translate french story_00_meet_gaspard_a4099d28:
+
+    # sh_i neutral "(Never seen anyone go while wearing so many rings, too...{w=0.5} But, whatever.)"
+    sh_i neutral ""
+
+# game/scripts/story/story_00.rpy:491
+translate french story_00_meet_gaspard_75611b23:
+
+    # sh_i frown "(Expensive looking suit in parisian blue, similarly costly looking accessories from a number of different brands...{w=0.5} Yeah, this guy is definitely with the bride's half of the party.)"
+    sh_i frown ""
+
+# game/scripts/story/story_00.rpy:492
+translate french story_00_meet_gaspard_9ab0c4d0:
+
+    # ga_x nulla "<Apologies for calling out to you so suddenly but, I believe we ran into each other earlier?>"
+    ga_x nulla ""
+
+# game/scripts/story/story_00.rpy:493
+translate french story_00_meet_gaspard_089e42f1:
+
+    # sh neutral "<You mean in the bathrooms downstairs?{w=0.5} Yes, that's correct.>"
+    sh neutral ""
+
+# game/scripts/story/story_00.rpy:494
+translate french story_00_meet_gaspard_5a0a987b:
+
+    # ga_x nulla "<I see...{w=0.5} I wanted to apologize.>"
+    ga_x nulla ""
+
+# game/scripts/story/story_00.rpy:496
+translate french story_00_meet_gaspard_91c45b23:
+
+    # ga_x nulla "<I came across as quite rude, I believe, not returning your greeting.{w=0.3} I just wasn't expecting anyone to come through the door at the precise moment.>"
+    ga_x nulla ""
+
+# game/scripts/story/story_00.rpy:497
+translate french story_00_meet_gaspard_467466f6:
+
+    # sh surprise "<Oh...{w=0.5} Well, it's fine.{w=0.3} No harm done.>"
+    sh surprise ""
+
+# game/scripts/story/story_00.rpy:499
+translate french story_00_meet_gaspard_f1cc3d38:
+
+    # ga nulla "<Very gracious of you.{w=0.3} My name is Gaspard Faucigny.>"
+    ga nulla ""
+
+# game/scripts/story/story_00.rpy:501
+translate french story_00_meet_gaspard_cf934aac:
+
+    # ga nulla "<Pleased to make your acquaintance.>"
+    ga nulla ""
+
+# game/scripts/story/story_00.rpy:502
+translate french story_00_meet_gaspard_4c28b76b:
+
+    # sh surprise "<I'm called Arata.{w=0.3} Shigeo Arata...>"
+    sh surprise ""
+
+# game/scripts/story/story_00.rpy:503
+translate french story_00_meet_gaspard_12b20554:
+
+    # sh_i surprise "(Hmmm, I do have a window for Francesco but at the same time, it would be rude to just brush this person off...)"
+    sh_i surprise ""
+
+# game/scripts/story/story_00.rpy:504
+translate french story_00_meet_gaspard_d206e39b:
+
+    # sh_i smile "(Also, he will eventually need to go back to his seat.{w=0.3} This guy looks to be around my same age, so a new acquaintance wouldn't hurt.)"
+    sh_i smile ""
+
+# game/scripts/story/story_00.rpy:505
+translate french story_00_meet_gaspard_0065cb62:
+
+    # sh surprise "<Pleased to meet you too, Gaspard.>"
+    sh surprise ""
+

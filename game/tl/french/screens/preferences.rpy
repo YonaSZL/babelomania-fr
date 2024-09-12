@@ -66,3 +66,31 @@ translate french strings:
     old "Mute All"
     new ""
 
+# TODO: Translation updated at 2024-09-12 10:43
+
+translate french strings:
+
+    # game/screens/preferences.rpy:135
+    old "Gore"
+    new ""
+
+    # game/screens/preferences.rpy:136
+    old "Full"
+    new ""
+
+    # game/screens/preferences.rpy:137
+    old "Censored"
+    new ""
+
+    # game/screens/preferences.rpy:142
+    old "Language"
+    new ""
+
+    # game/screens/preferences.rpy:143
+    old "English"
+    new ""
+
+    # game/screens/preferences.rpy:144
+    old "French"
+    new ""
+
