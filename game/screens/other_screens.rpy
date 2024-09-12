@@ -123,6 +123,9 @@ screen about():
                 text "{a=https://ellr.itch.io/}Ellr{/a}, {a=https://ateliermagicae.itch.io/}Atelier Magicae{/a}, Dev Tones, {a=https://nox-sound-design.itch.io/}Nox_Sound_Design{/a}, {a=https://www.gamedevmarket.net/member/shashirajproductions}SHASHIRAJproductions{/a}" xoffset 15 yalign 0.5
                 text "{a=https://www.joelsteudlermusic.com/}Joel Steudler{/a}, W.O.W. Sound Effects" xoffset 15 yalign 0.5
             vbox:
+                label _("{size=35}ADDITIONAL MUSIC") yalign 0.5
+                text "{a=https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG32138.html}Ayato Sound Create{/a}" xoffset 15 yalign 0.5
+            vbox:
                 label _("{size=35}ADDITIONAL CODE") yalign 0.5
                 text "{a=https://feniksdev.com}Feniks{/a}, {a=https://remort-studios.itch.io/}Nai @ MakeVisualNovels{/a}" xoffset 15 yalign 0.5
 

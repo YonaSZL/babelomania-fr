@@ -255,7 +255,7 @@ label story_00_bathroom_encounters:
     show screen emote("surprise",0.45,-0.05)
     show Shigeo surprise
     pause 0.2
-    play sound "audio/se/swoosh_quick.ogg"
+    play sound "audio/se/whoosh_fast.ogg"
     show Shigeo shock:
         linear 0.3 xalign 0.35
     sh nulla "Woah!{w=0.3} Excuse me!"
@@ -292,12 +292,11 @@ label story_00_bathroom_encounters:
     pause 0.5
     play sound3 "audio/se/door_stall.ogg"
     scene black with dissolve
-    pause 1.5
-    play sound2 "audio/se/water_flush.ogg"
-    pause 1.0
+    pause 2.0
+    play sound "audio/se/water_faucet.ogg"
+    pause 0.5
     scene bar_bathroom with dissolve
     pause 0.5
-    play sound "audio/se/water_faucet.ogg"
     sh_i neutral sweat "(.{w=0.3}.{w=0.3}.{w=0.5}that painting really is something else, isn't it?)"
     pause 1.0
     scene bathroom_painting with Reveal
@@ -317,7 +316,7 @@ label story_00_bathroom_return:
     scene bathroom_painting with phone_pic
     pause 0.5
     sh_i smile "(There we go.)"
-    show screen record_made("")
+    #show screen record_made("")
     pause 1.0
     scene bar_bathroom
     show Shigeo smile
@@ -398,7 +397,7 @@ label story_00_bathroom_return:
     show Tabitha:
         easein 5.0 xalign 4.0
     pause 2.0
-    play sound "audio/se/whoosh_sharp.ogg"
+    play sound "audio/se/whoosh_fast.ogg"
     show Shigeo angry:
         linear 0.5 xalign 0.65
     pause 1.0
@@ -460,11 +459,11 @@ label story_00_meet_gaspard:
     show Habiki neutral
     ha nulla "Let's go, Tabitha."
     pause 1.5
-    play sound3 "audio/se/steps_marble_slow.ogg"
+    play sound3 "audio/se/steps_marble_walk.ogg"
     hide Habiki with dissolve
     show Tabitha neutral
     pause 0.5
-    play sound2 "audio/se/steps_marble_slow.ogg"
+    play sound2 "audio/se/steps_marble_walk.ogg"
     pause 1.0
     show Shigeo frown with dissolve
     pause 0.5
