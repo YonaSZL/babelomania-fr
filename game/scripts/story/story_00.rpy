@@ -217,7 +217,7 @@ label story_00_bathroom_break:
     stop LoNoise fadeout 0.5
     stop music fadeout 0.5
     scene black with dissolve
-    $ move_time(0,0,4)
+    $ move_time(0,4)
     pause 0.5
     play music "<from 39>audio/bgm/canon_in_bois_muted.ogg" fadein 0.2
     pause 0.5
@@ -267,7 +267,7 @@ label story_00_bathroom_encounters:
     scene black with dissolve
     stop music fadeout 1.5
     pause 0.5
-    $ move_time(0,0,3)
+    $ move_time(0,3)
     pause 1.0
     play music "audio/bgm/safehouse.ogg"
     pause 1.0
@@ -329,7 +329,7 @@ label story_00_bathroom_return:
     stop music fadeout 0.5
     scene black with dissolve
     pause 0.5
-    $ move_time(0,0,4)
+    $ move_time(0,4)
     pause 1.0
     play music "<from 39>audio/bgm/canon_in_bois_muted.ogg" fadein 0.2
     scene bar_corr_recep with Reveal3
@@ -448,11 +448,14 @@ label story_00_bathroom_return:
 
 label story_00_meet_gaspard:
     show Habiki neutral
+    show Tabitha neutral
+    stop music fadeout 3.5
     ha nulla "Well, it's been quite the amusing encounter...{w=0.5} But we've held each other up quite enough, I believe."
     show Habiki smile
+    ha nulla "Once again, apologies for the incident.{w=0.3} I'll be more mindful of my surroundings, for the duration."
+    sh neutral "Appreciated...{w=0.5} No harm done, then."
     show Tabitha bow
     ha nulla "Have a good evening, Shigeo-kun...{w=0.5} Who knows, we may run into each other again, before the night is over."
-    stop music fadeout 3.5
     show Habiki neutral
     ha nulla "Let's go, Tabitha."
     pause 1.5
@@ -471,7 +474,7 @@ label story_00_meet_gaspard:
     sh_i nulla "(Let's just go back in...)"
     pause 1.0
     scene black with dissolve
-    $ move_time(0,0,17)
+    $ move_time(0,17)
     pause 0.5
     play music "audio/bgm/canon_in_bois.ogg"
     pause 0.5
@@ -507,3 +510,4 @@ label story_00_meet_gaspard:
     call screen gaspard_conv_01
 
 label story_00_meet_amina:
+    "YO"
