@@ -138,11 +138,12 @@ label story_00_invitation:
     tb_n "<And let me tell you, the attention to detail of monsieur Du Bois went far beyond just architecture!>"
     sh_xi darko neutral "(I can recognize the name of the original owner, something about architecture...{w=0.5} Au-delà?{w=0.3} He went beyond architecture, I guess?)"
     tb_n "<You will find, spread out throughout the buildings, different pieces of art collected over the course of his travels.{w=0.3} Or personally commissioned, to complement specific rooms of the complex!>"
-    tb_n2 "<Indeed?{w=0.5} To be honest, I don't exactly approve of a lot of the placements.>"
+    tb_n2 "<Indeed?{w=0.5} To be honest, I don't exactly approve of a lot of the placements.{w=0.3} Like in the toilet?>"
     sh_xi darko surprise "(Now they're talking about the toilet of all things?{w=0.3} The place of the toilets??)"
     tb_n "<Indeed...{w=0.5} You have to remember, though, that the family sold the estate in 2025.{w=0.3} After that, god only knows who had a hand in reshaping it and moving things around.>"
-    tb_n2 "<Ah, yes.{w=0.3} That would explain the painting in the bathrooms!>"
-    sh_xi darko smile "(Oh, finally!{w=0.3} They're definitely talking about the painting in the toilets!{w=0.3} And I guess how out of place it is?)"
+    tb_n2 "<Ah, yes.{w=0.3} That would explain that monstrosity in the bathrooms!>"
+    play sound "audio/sfx/gui_hint.ogg"
+    sh_xi darko smile "(Oh, finally!{w=0.3} They're definitely talking about {b}that painting{/b}!{w=0.3} And I guess how out of place it is?)"
     sh_x darko surprise "Uhm...{w=0.5} <At first I thought it had been put there to help.>"
     tb_n "<Huh?{w=0.5} To help?>"
     pause 1.0
@@ -151,7 +152,6 @@ label story_00_invitation:
     with Reveal
     pause 0.5
     tb_n2 "<What do you mean, monsieur {b}Arata{/b}?>"
-    #Intro Screen for Characters, for Arata
     show Shigeo smile
     sh nulla "<Well, if you see something that creepy while entering the toilets you->"
     pause 1.0
@@ -199,7 +199,7 @@ label story_00_relaxation:
 label story_00_bathroom_break:
     show Shigeo sad
     sh_i nulla "(Ugh, this is really the worst...{w=0.5} I need some air.)"
-    play sound "audio/se/chair_pull.ogg"
+    play sound "audio/se/item_drag.ogg"
     tb_n "<Still a shame that the original vision of Du Bois got so altered...{w=0.5} Oh, you're leaving us, young man?>"
     show Shigeo neutral
     sh nulla "<Yes, I'm sorry.{w=0.3} Talking about bathrooms made me think about it.>"
@@ -209,7 +209,7 @@ label story_00_bathroom_break:
     pause 0.5
     hide Shigeo with dissolve
     pause 1.0
-    play sound3 "audio/se/steps_marble_slow.ogg"
+    play sound3 "audio/se/steps_marble_walk.ogg"
     pause 0.5
     tb_n "<Peculiar young man...{w=0.5} You say he's with the groom's party?>"
     tb_n2 "<He is.{w=0.3} Wonder why he's sitting with us, then?>"
@@ -250,7 +250,7 @@ label story_00_bathroom_encounters:
         xalign 0.5
     with dissolve
     pause 0.5
-    play sound3 "audio/se/steps_stairs_coming_up.ogg" fadein 0.2
+    play sound "audio/se/steps_stairs_up.ogg"
     pause 0.3
     show screen emote("surprise",0.45,-0.05)
     show Shigeo surprise
@@ -264,6 +264,7 @@ label story_00_bathroom_encounters:
     show Shigeo neutral
     sh_i nulla "(I ended up being the one apologizing, too...{w=0.5} Not even a <désolée>?{w=0.3} Some people are weird.)"
     pause 1.0
+    play sound "audio/se/steps_stairs_down.ogg"
     scene black with dissolve
     stop music fadeout 1.5
     pause 0.5
