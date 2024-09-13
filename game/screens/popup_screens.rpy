@@ -107,7 +107,7 @@ style skip_hbox:
 
 style skip_frame:
     is empty
-    ypos 15
+    ypos 268
     background Frame("gui/skip.png", 24, 30, 75, 30, tile=True)
     padding (24, 12, 75, 12)
 
@@ -149,7 +149,7 @@ transform notify_appear:
 
 style notify_frame:
     is empty
-    ypos 68
+    ypos 218
 
     background Frame("gui/skip.png", 24, 30, 75, 30, tile=True)
     padding (24, 8, 60, 8)
