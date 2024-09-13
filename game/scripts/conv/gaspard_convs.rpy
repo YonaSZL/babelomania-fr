@@ -25,18 +25,18 @@ label gaspard_01_gaspard:
         $ gaspard_01_gaspard = True
     call screen gaspard_conv_01
 
-label gaspard_01_gaspard:
+label gaspard_01_bathroom:
     pause 0.5
 
     pause 1.0
-    if gaspard_01_gaspard == False:
-        $ gaspard_01_gaspard = True
+    if gaspard_01_bathroom == False:
+        $ gaspard_01_bathroom = True
     call screen gaspard_conv_01
 
-label gaspard_01_gaspard:
+label gaspard_01_wedding:
     pause 0.5
 
     pause 1.0
-    if gaspard_01_gaspard == False:
-        $ gaspard_01_gaspard = True
+    if gaspard_01_wedding == False:
+        $ gaspard_01_wedding = True
     call screen gaspard_conv_01
