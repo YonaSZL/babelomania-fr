@@ -1,12 +1,11 @@
 #Conversation Screens with Habiki
 
+default habiki_01_habiki = False
+default habiki_01_tabitha = False
+default habiki_01_wedding = False
+
 screen habiki_conv_01:
     text "YOWZA"
-
-init:
-    default habiki_01_habiki = False
-    default habiki_01_tabitha = False
-    default habiki_01_wedding = False
 
 label habiki_01_habiki:
     pause 0.5
