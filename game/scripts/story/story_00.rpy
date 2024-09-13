@@ -467,6 +467,7 @@ label story_00_meet_gaspard:
     hide Habiki with dissolve
     show Tabitha neutral
     pause 0.5
+    hide Tabitha with dissolve
     play sound2 "audio/se/steps_marble_walk.ogg"
     pause 1.0
     show Shigeo frown with dissolve
@@ -474,8 +475,8 @@ label story_00_meet_gaspard:
     sh_i nulla "(Freaky...{w=0.5} I've never seen an android that looks so much like a human.{w=0.3} Regulations in Japan really are lax, aren't they?)"
     show Shigeo surprise
     sh_i nulla "(Also, why are they going upstairs...?{w=0.5} Oh, whatever.{w=0.3} It's none of my business.)"
-    show Shigeo sad
-    sh_i nulla "(Let's just go back in...)"
+    show Shigeo neutral
+    sh_i nulla "(Let's just go back in.)"
     pause 1.0
     scene black with dissolve
     $ move_time(0,17)
@@ -486,24 +487,25 @@ label story_00_meet_gaspard:
     pause 0.5
     sh_i neutral "(People are standing up...{w=0.5} I guess we're between dishes and there's some kind of small event coming up.)"
     sh_i smile "(And lo and behold, is that Francesco away from the family table I see?!{w=0.3} Finally!)"
-    sh_i laugh "(Oh, I'm going to be giving him so much shit for 'by the way'-ing me about his-)"
+    sh_i laugh "(Oh, I'm going to give him so much shit for 'by the way'-ing me about his-)"
     ga_x frown "<Excuse me.{w=0.3} Monsieur?>"
     sh surprise "...!{w=0.3} Hmm?"
     pause 1.0
     show Gaspard frown at ga_med:
         xalign 0.5
     pause 1.5
-    sh_i surprise "(The...{w=0.5} The guy I ran into in the bathrooms?{w=0.3} Yeah, that's definitely him.)"
-    sh_i neutral "(Never seen anyone go while wearing so many rings, too...{w=0.5} But, whatever.)"
+    sh_i surprise "(The...{w=0.5} The guy I ran into in the bathrooms?)"
     sh_i frown "(Expensive looking suit in parisian blue, similarly costly looking accessories from a number of different brands...{w=0.5} Yeah, this guy is definitely with the bride's half of the party.)"
     ga_x nulla "<Apologies for calling out to you so suddenly but, I believe we ran into each other earlier?>"
-    sh neutral "<You mean in the bathrooms downstairs?{w=0.5} Yes, that's correct.>"
+    sh neutral "<You mean downstairs?{w=0.5} Yes, that's correct.>"
     ga_x nulla "<I see...{w=0.5} I wanted to apologize.>"
     show Gaspard neutral
     ga_x nulla "<I came across as quite rude, I believe, not returning your greeting.{w=0.3} I just wasn't expecting anyone to come through the door at the precise moment.>"
     sh surprise "<Oh...{w=0.5} Well, it's fine.{w=0.3} No harm done.>"
     show Gaspard smile
-    ga nulla "<Very gracious of you.{w=0.3} My name is Gaspard Faucigny.>"
+    ga nulla "<Very gracious of you.{w=0.3} My name is {nw}"
+    play sound "audio/sfx/gui_hint.ogg"
+    extend "{b}Gaspard Faucigny{/b}.>"
     show Gaspard neutral
     ga nulla "<Pleased to make your acquaintance.>"
     sh surprise "<I'm called Arata.{w=0.3} Shigeo Arata...>"
