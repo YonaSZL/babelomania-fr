@@ -132,3 +132,81 @@ translate french exp_bar_corr_up_4737965c:
     # sh_i neutral "(None of my business, either way.{w=0.3} The bathrooms are downstairs.)"
     sh_i neutral ""
 
+# TODO: Translation updated at 2024-09-13 20:39
+
+# game/scripts/exp/exp_bar_corr.rpy:36
+translate french exp_bar_corr_window_430de807:
+
+    # sh_i neutral "(The window frame is quite modern...{w=0.5} I guess the original one needed replacement.{w=0.3} It's the type that need a special key to be opened, hm?)"
+    sh_i neutral ""
+
+# game/scripts/exp/exp_bar_corr.rpy:55
+translate french exp_bar_corr_chapel_7f9dddc4:
+
+    # sh_i neutral "(And while I don't know much about her yet...{w=0.5} I'm sure they would've loved {nw}"
+    sh_i neutral ""
+
+# game/scripts/exp/exp_bar_corr.rpy:57
+translate french exp_bar_corr_chapel_3c414478:
+
+    # extend "{b}Delphine{/b}, too.)"
+    extend ""
+
+# game/scripts/exp/exp_bar_corr.rpy:67
+translate french exp_bar_corr_smoke_0c852823:
+
+    # sh_i neutral "(The rest of the doors on the first floor...{w=0.5} The only one currently open is the {nw}"
+    sh_i neutral ""
+
+# game/scripts/exp/exp_bar_corr.rpy:69
+translate french exp_bar_corr_smoke_7ac93ef3:
+
+    # extend "{b}Smoking Room{/b}, correct?)"
+    extend ""
+
+# game/scripts/exp/exp_bar_corr.rpy:70
+translate french exp_bar_corr_smoke_2df45f79:
+
+    # sh_i frown "(Ugh, what an awful habit.{w=0.3} Wish they didn't encourage it like this.{w=0.3} If you're that much of an addict that you can't go two days without one, you shouldn't attend social functions.)"
+    sh_i frown ""
+
+# game/scripts/exp/exp_bar_corr.rpy:71
+translate french exp_bar_corr_smoke_10366336:
+
+    # sh_i frown "(Then again, some just plain don't care about other people, don't they?{w=0.3} Reminds me of Belgium...{w=0.5} Can't believe they still don't have an outdoor smoke ban for bus and rail stations.)"
+    sh_i frown ""
+
+# game/scripts/exp/exp_bar_corr.rpy:95
+translate french exp_bar_corr_up_db83afc8:
+
+    # sh_i neutral "(Stairs leading to the upper floors, hm?{w=0.3} Wonder what kind of rooms are up there...{w=0.5} The reception room's dome reaches high enough, so I guess there must be a walkway?)"
+    sh_i neutral ""
+
+# game/scripts/exp/exp_bar_corr.rpy:96
+translate french exp_bar_corr_up_b470e055:
+
+    # sh_i surprise "(Kind of creepy, if you think about it...{w=0.5} It's totally dark from what I saw, so someone could be looking in and no one would be the wiser.)"
+    sh_i surprise ""
+
+# game/scripts/exp/exp_bar_corr.rpy:107
+translate french exp_bar_corr_down_ec492010:
+
+    # sh_i neutral "(There we are.{w=0.3} The stairs going down.)"
+    sh_i neutral ""
+
+# game/scripts/exp/exp_bar_corr.rpy:109
+translate french exp_bar_corr_down_f9e58700:
+
+    # sh_i neutral "(Should I go?)" nointeract
+    sh_i neutral "" nointeract
+
+translate french strings:
+
+    # game/scripts/exp/exp_bar_corr.rpy:108
+    old "Let's go."
+    new ""
+
+    # game/scripts/exp/exp_bar_corr.rpy:108
+    old "Actually..."
+    new ""
+

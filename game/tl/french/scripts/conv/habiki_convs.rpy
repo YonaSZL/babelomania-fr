@@ -312,3 +312,17 @@ translate french habiki_01_wedding_8a9124d7:
     # sh smile "You do?{w=0.3} Please do, then."
     sh smile ""
 
+# TODO: Translation updated at 2024-09-13 20:39
+
+# game/scripts/conv/habiki_convs.rpy:85
+translate french habiki_01_habiki_988796ab:
+
+    # sh frown "It's a way to put some kind of distance between you and your interlocutor, and yet you give a stranger your first name instead of your family name.{w=0.3} Kind of contradictory, wouldn't you say?"
+    sh frown ""
+
+# game/scripts/conv/habiki_convs.rpy:159
+translate french habiki_01_wedding_d3e84bc7:
+
+    # ha nulla "Are you kidding me?{w=0.3} Delphine's family and <coterie> wouldn't be caught dead in an outfit that cheap."
+    ha nulla ""
+

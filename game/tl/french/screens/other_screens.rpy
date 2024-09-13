@@ -246,3 +246,11 @@ translate french strings:
     old "{size=35}STORY CONSULTANTS"
     new ""
 
+# TODO: Translation updated at 2024-09-13 20:39
+
+translate french strings:
+
+    # game/screens/other_screens.rpy:126
+    old "{size=35}ADDITIONAL MUSIC"
+    new ""
+
