@@ -1,8 +1,9 @@
+##Photo-activated Variables
+define bathroom_painting = False
 
+define quicker_dissolve = Dissolve(0.1)
 
-define quick_dissolve = Dissolve(0.1)
-
-screen photo(var, val):
+screen photo(var, val, lab):
 
     add "gui/phone/overlay.png" at phone
 
@@ -13,12 +14,12 @@ screen photo(var, val):
 
         at phone_button
 
-        action [Show("flash", quick_dissolve), Return()]
+        action [Play("sound4", "audio/sfx/gui_camera.ogg"), Show("flash", quicker_dissolve), SetVariable(var, val), Jump(lab)]
 
 
 screen flash():
 
-    timer 0.2 action Hide("flash",quick_dissolve)
+    timer 0.2 action Hide("flash",quicker_dissolve)
     add Solid(u"#ffffff")
 transform phone():
 

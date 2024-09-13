@@ -77,8 +77,10 @@ label exm_bathroom_painting_return:
         sh_i neutral "(Should I take that picture now?)"
 
         "Let's take that picture.":
+            $ renpy.block_rollback()
+            pause 1.0
             play sound "audio/sfx/gui_phone_unlock.ogg"
-            call screen phone_camera("bathroom_painting", "story_00_bathroom_return")
+            call screen photo("bathroom_painting", True, "story_00_bathroom_return")
         
         "I want to observe it more.":
             call screen bathroom_painting_examine

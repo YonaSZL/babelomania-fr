@@ -7,8 +7,27 @@ default time_menu = True
 default stat1_show = True
 default stat2_show = True
 default codex_active = True
+
+default amina_cmp = False
+default gaspard_cmp = False
+
 screen overlay_stats():
 
+    vbox:
+        xalign 1.0 offset(-103, 245)  spacing -10
+        if amina_cmp:
+            button:
+                xysize(125,125)
+                background "gui/stats/cm_bg.png"
+                
+                idle_foreground "gui/stats/test.png"##add the face image 
+                hover_foreground At("gui/stats/test.png", outline_transform(2, "#876a33", 4.0))
+                action NullAction()
+        if gaspard_cmp:
+            button:
+                xysize(125,125)
+                background "gui/stats/cm_bg.png"
+                action NullAction()
 
     if inventory_show:
         button:

@@ -310,20 +310,14 @@ label story_00_bathroom_encounters:
     pause 1.0
     call screen bathroom_painting_examine
 
-label story_00_bathroom_painting_photo:
-    sh_i neutral "(That seems to be everything I can surmise from this painting...{w=0.5} Too bad about the missing author, now I want to know more.)"
-    sh_i smile "(Let me take a picture.{w=0.3} I can {i}Coogle{/i} it later, or show someone back home.{w=0.3} Dorothy would know.)"
-    play sound "audio/sfx/gui_phone_unlock.ogg"
-    call screen phone_camera("bathroom_painting", "story_00_bathroom_return")
-
 label story_00_bathroom_return:
-    scene bathroom_painting with phone_pic
+    $ renpy.block_rollback()
     pause 0.5
     sh_i smile "(There we go.)"
-    #show screen record_made("")
     pause 1.0
     scene bar_bathroom
-    show Shigeo smile
+    show Shigeo smile at sh_med:
+        xalign 0.5
     with dissolve
     pause 0.5
     sh_i nulla "(Well, that was a good way to waste a few minutes and distract myself...{w=0.5} And now I have something to occupy myself further, if need be.)"
@@ -347,7 +341,7 @@ label story_00_bathroom_return:
     with dissolve
     pause 0.5
     sh_i nulla "(Someone left the door to the smoking room open...{w=0.5} And of course, everyone else now needs to share in their breathalized cancer.)"
-    show Shigeo:
+    show Shigeo at sh_med:
         easein 7.0 xalign 0.5
     sh_i nulla "(Let's close the door before the stench seeps in my clo-)"
     pause 0.5
@@ -355,12 +349,13 @@ label story_00_bathroom_return:
     play sound "audio/em/em_shock.ogg"
     #show screen emote("surprise",0.47,-0.05)
     show Shigeo surprise
-    pause 1.0
+    pause 1.5
     play music "audio/bgm/uncanny.ogg"
     play sound4 "audio/em/em_impact.ogg"
     scene black
     show tabitha_grab:
         xanchor 960 yalign 0.0 xpos 0
+    with vpunch
     pause 0.5
     sh_i shock "(What...?!{w=0.5} What is...?!)"
     ta_x darko "Warning:{w=0.3} you are entering restricted personal space."
@@ -369,10 +364,10 @@ label story_00_bathroom_return:
     sh_i fear sweat "(It's completely smooth and rigid and yet soft at the same time...?!{w=0.3} What the hell is touching me?!)"
     ta_x darko "I repeat."
     sh shock "...!{w=0.5} Ugh?!"
-    pause 1.5
+    pause 1.0
     show tabitha_grab:
         easein 7.0 xalign 0.0
-    pause 9.0
+    pause 8.0
     sh shock "What...?!"
     ta_x darko "Failure to remove yourself from the restricted area will be cause for reprisal.{w=0.3} Please acknowledge."
     sh_i surprise "(This...{w=0.5} What is this thing?!{w=0.3} It looks human...{w=0.5} It has the proportions of a human, its face looks human and yet...)"
@@ -386,7 +381,7 @@ label story_00_bathroom_return:
     pause 1.0
     scene bar_corr_recep
     show Tabitha neutral at ta_med:
-        xalign 0.45
+        xalign 0.4
     show Shigeo shock sweat at sh_med:
         xalign 0.6
     with Reveal3
@@ -398,18 +393,18 @@ label story_00_bathroom_return:
     pause 2.0
     show Tabitha bow
     ta nulla "Acknowledged, professor."
-    show Tabitha:
-        easein 5.0 xalign 4.0
+    show Tabitha at ta_med:
+        easein 5.0 xalign 0.35
     pause 2.0
     play sound "audio/se/whoosh_fast.ogg"
-    show Shigeo angry:
+    show Shigeo angry at sh_med:
         linear 0.5 xalign 0.65
     pause 1.0
     show Habiki neutral at ha_med:
         xalign 0.2
     with Reveal3
     pause 0.5
-    play audio "audio/bgm/echo_of_mountains.ogg"
+    play music "audio/bgm/echo_of_mountains.ogg"
     pause 1.0
     ha_x nulla "Tabitha, my Tabitha...{w=0.5} Always so overzealous."
     show Habiki smile
@@ -421,7 +416,7 @@ label story_00_bathroom_return:
     sh nulla "It's obviously not a person...{w=0.5} Let's call it just Android, then."
     pause 1.0
     show Shigeo surprise with dissolve
-    sh nulla "Granted, I've never seen one quite like this, I'll give you that."
+    sh nulla "I've never seen one quite like this, I'll give you that."
     pause 0.5
     show Tabitha neutral
     show Habiki neutral
@@ -438,19 +433,23 @@ label story_00_bathroom_return:
     ha_x nulla "<I see...{w=0.5} Interesting.>"
     show Habiki smile
     ha nulla "<Quite interesting indeed...{w=0.5} Please feel free to address me as {b}Professor Habiki{/b}, Shigeo-kun.>"
+    pause 1.0
+    show Shigeo surprise
     sh_i nulla "(Professor...{w=0.5} {i}Habiki{/i}?)"
     pause 1.0
     scene bar_corr_recep with dissolve
-    pause 0.5
-    show Tabitha neutral:
+    pause 1.0
+    show Tabitha neutral at ta_big:
         xalign 0.3
-    show Habiki neutral:
+    show Habiki neutral at ha_big:
         xalign 0.7
     with dissolve
     pause 1.0
+    $ renpy.block_rollback()
     call screen habiki_conv_01
 
 label story_00_meet_gaspard:
+    $ renpy.block_rollback()
     show Habiki neutral
     show Tabitha neutral
     stop music fadeout 3.5
@@ -462,7 +461,7 @@ label story_00_meet_gaspard:
     ha nulla "Have a good evening, Shigeo-kun...{w=0.5} Who knows, we may run into each other again, before the night is over."
     show Habiki neutral
     ha nulla "Let's go, Tabitha."
-    pause 1.5
+    pause 0.5
     play sound3 "audio/se/steps_marble_walk.ogg"
     hide Habiki with dissolve
     show Tabitha neutral
@@ -470,7 +469,9 @@ label story_00_meet_gaspard:
     hide Tabitha with dissolve
     play sound2 "audio/se/steps_marble_walk.ogg"
     pause 1.0
-    show Shigeo frown with dissolve
+    show Shigeo frown at sh_big:
+        xalign 0.5
+    with dissolve
     pause 0.5
     sh_i nulla "(Freaky...{w=0.5} I've never seen an android that looks so much like a human.{w=0.3} Regulations in Japan really are lax, aren't they?)"
     show Shigeo surprise
