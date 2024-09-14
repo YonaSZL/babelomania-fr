@@ -1,11 +1,78 @@
 #Conversation Screens with Gaspard
+#HEC Paris
+#Sorbonne
 
+default gaspard_conv_01 = 0
 default gaspard_01_gaspard = False
 default gaspard_01_bathroom = False
 default gaspard_01_wedding = False
 
 screen gaspard_conv_01:
-    text "YOWZA"
+    add "gui/talkie/bottom.png" yalign 1.0
+
+    if gaspard_conv_01 == 3:
+        textbutton "Return" action Jump("story_00_meet_gaspard") align(1.0, 1.0) offset(-60,-10) text_size 60 hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
+
+    vbox:
+        ypos 300 xpos -880 ##button positions
+
+        ####Indicator if viewport is scrollable
+        ####Scrollbar looked ugly
+        button:
+            xysize(65,65) xalign 1.0 xoffset -400
+            add "gui/talkie/scroll_bg.png"
+            add "gui/talkie/scroll_arrow.png" at arrow_up
+            
+        viewport:
+            style_prefix "talkie"
+            scrollbars "vertical" mousewheel True draggable True
+            vbox:
+                spacing 20
+                button:
+                    text "Gaspard"
+                    at btn_slide
+
+                    ## you can put a simple variable/renpy.seen_label here to determine which bg is shown
+                    ## button.png -> with the X
+                    ## button_empty.png -> without X
+                    if gaspard_01_gaspard:
+                        background "gui/talkie/button.png"
+                    else:
+                        background "gui/talkie/button_empty.png"
+                    hover_sound "audio/sfx/gui_hover.ogg"
+                    activate_sound "audio/sfx/gui_confirm.ogg"
+                    action Jump("gaspard_01_gaspard")
+
+                if gaspard_01_gaspard:
+                    button:
+                        text "The Wedding"
+                        at btn_slide
+                        if gaspard_01_wedding:
+                            background "gui/talkie/button.png"
+                        else:
+                            background "gui/talkie/button_empty.png"
+                        hover_sound "audio/sfx/gui_hover.ogg"
+                        activate_sound "audio/sfx/gui_confirm.ogg"
+                        action Jump("gaspard_01_wedding")
+
+                if gaspard_01_wedding:
+                    button:
+                        text "The Android"
+                        at btn_slide
+                        if gaspard_01_bathroom:
+                            background "gui/talkie/button.png"
+                        else:
+                            background "gui/talkie/button_empty.png"
+                        hover_sound "audio/sfx/gui_hover.ogg"
+                        activate_sound "audio/sfx/gui_confirm.ogg"
+                        action Jump("gaspard_01_bathroom")
+
+
+        ####Indicator if viewport is scrollable
+        button:
+            xysize(65,65) xalign 1.0 xoffset -400
+            add "gui/talkie/scroll_bg.png"
+            add "gui/talkie/scroll_arrow.png" at arrow_down
 
 label gaspard_01_gaspard:
     pause 0.5
@@ -15,22 +82,50 @@ label gaspard_01_gaspard:
     ga nulla "<Oh, our families go way back...{w=0.5} When you deal in our kind of business, you end up always running in the same circles.>"
     show Gaspard neutral
     ga nulla "<We also went to the same business school.{w=0.3} We're not exactly close but, I wasn't about to rebuke a wedding invite.{w=0.3} Especially with Château de Bois-le-Dumont as a location.>"
-    sh surprise "<It is an impressive estate, from what I've seen so far...{w=0.5} You've been here before?>"
+    sh surprise "<It is a beautiful estate, from what I've seen...{w=0.5} You've visited here before?>"
     show Gaspard frown
     ga nulla "<A few times...{w=0.5} Although this is the first time I will have to stay the night in the Taisho building.>"
-    sh surprise "<I see...{w=0.5} And, is there a problem with that?>"
-    ga nulla "<I'm not exactly a fan of the architectural style...{w=0.5} Totalitarian Japan aping the wonders of imperial Europe and producing patchworks without the strength of either.>"
+    sh surprise "<Is there a problem with that?>"
+    ga nulla "<I'm not exactly a fan of the architectural style...{w=0.5} Totalitarian Japan aping the wonders of imperial Europe and producing patchworks without the strengths of either.>"
     show Gaspard neutral
-    ga nulla "<They should've stuck to what they knew best...{w=0.5} And not try being something they weren't.>"
+    ga nulla "<They should've stuck with what they knew...{w=0.5} And not try being something they weren't.>"
     sh_i surprise "(Hmmm.{w=0.5} Is he talking about just the architecture or...?)"
-    sh neutral "<South East Asia would have certainly been better for it, I suppose...{w=0.5} I should mention that my mother is Japanese.>"
+    sh neutral "<South East Asia would have certainly been happier...{w=0.5} I must mention that my mother is Japanese.>"
     pause 1.0
     show Gaspard surprise
     ga nulla "<Huh...{w=0.5} I see.{w=0.3} Did you grow up in Japan?>"
-    sh surprise "<Not exactly.{w=0.3} >"
+    sh surprise "<Not exactly.{w=0.3} I've visited my mother's family a few times growing up, but then...{w=0.5} No, mostly in Italy, that's my father's country.>"
+    ga nulla "<Half Italian, half Japanese?{w=0.3} And your French isn't half bad for a foreigner.>"
+    show Gaspard neutral
+    ga nulla "Although maybe you'd rather we speak English going forward?{w=0.3} I don't really mind."
+    sh laugh sweatdrop "Hahaha, much obliged...{w=0.5} I've only been learning French for a couple years, I barely hit my B2."
+    ga nulla "A commendable effort.{w=0.3} Keep it up."
+    show Gaspard frown
+    ga nulla "I would suggest speaking with more mother-tongue, though.{w=0.3} You're picking up some unbecoming phonetic habits."
+    sh surprise -sweatdrop "Uhm...{w=0.5} I see.{w=0.3} I'll try my best."
+    show Gaspard neutral
+    sh_i surprise "(I have spent two months in Provence, though...?{w=0.3} I didn't think my pronunciation was that bad.{w=0.3} He's understanding everything I put down, anyway.)"
     pause 1.0
     if gaspard_01_gaspard == False:
         $ gaspard_01_gaspard = True
+        $ gaspard_conv_01 += 1
+    call screen gaspard_conv_01
+
+label gaspard_01_wedding:
+    pause 0.5
+    sh neutral "You said that your family and Delphine's are...{w=0.5} Tight, I guess?"
+    ga nulla "More or less.{w=0.3} We took a number of vacations together over the years, but our fathers are closer than me and her ever became."
+    show Gaspard laugh
+    ga nulla "Much to their disappointment, from what I could surmise.{w=0.3} Althought that pales in comparison to what I heard when Delphine got hitched to her Italian beau."
+    sh surprise "Oh...{w=0.5} They weren't supportive?"
+    show Gaspard neutral
+    ga nulla "They were once they ran out of justifications...{w=0.5} Francesco graduated top of his class, is a successful researcher and more than self-sufficient."
+    show Gaspard laugh
+    ga nulla "When they started thinking about using his lack of living parents or any tie to his life before coming to France, "
+    pause 1.0
+    if gaspard_01_wedding == False:
+        $ gaspard_01_wedding = True
+        $ gaspard_conv_01 += 1
     call screen gaspard_conv_01
 
 label gaspard_01_bathroom:
@@ -39,12 +134,5 @@ label gaspard_01_bathroom:
     pause 1.0
     if gaspard_01_bathroom == False:
         $ gaspard_01_bathroom = True
-    call screen gaspard_conv_01
-
-label gaspard_01_wedding:
-    pause 0.5
-
-    pause 1.0
-    if gaspard_01_wedding == False:
-        $ gaspard_01_wedding = True
+        $ gaspard_conv_01 += 1
     call screen gaspard_conv_01
