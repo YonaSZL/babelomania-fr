@@ -121,7 +121,8 @@ label gaspard_01_wedding:
     show Gaspard neutral
     ga nulla "They were once they ran out of justifications...{w=0.5} Francesco graduated top of his class, is a successful researcher and more than self-sufficient."
     show Gaspard laugh
-    ga nulla "When they started thinking about using his lack of living parents or any tie to his life before coming to France, "
+    ga nulla "When they started thinking about using his lack of living relatives and any tie to his old life before coming to France as arguments, I made them respectfullly notice they were grasping at straws."
+    show Gaspard neutral
     pause 1.0
     if gaspard_01_wedding == False:
         $ gaspard_01_wedding = True
