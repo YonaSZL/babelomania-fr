@@ -6,10 +6,8 @@ image gaspard_acc_sweat = "images/chs/gaspard/acc_sweat.png"
 image gaspard_acc_sweatdrop = "images/chs/gaspard/acc_sweatdrop.png"
 
 image gaspard_exp_neutral = "images/chs/gaspard/exp_neutral.png"
-image gaspard_exp_smile = "images/chs/gaspard/exp_smile.png"
 image gaspard_exp_shock = "images/chs/gaspard/exp_shock.png"
 image gaspard_exp_surprise = "images/chs/gaspard/exp_surprise.png"
-image gaspard_exp_sad = "images/chs/gaspard/exp_sad.png"
 image gaspard_exp_frown = "images/chs/gaspard/exp_frown.png"
 image gaspard_exp_laugh = "images/chs/gaspard/exp_laugh.png"
 image gaspard_exp_angry = "images/chs/gaspard/exp_angry.png"
@@ -24,14 +22,10 @@ layeredimage Gaspard:
     group face:
         attribute neutral default:
             "gaspard_exp_neutral"
-        attribute smile:
-            "gaspard_exp_smile"
         attribute shock:
             "gaspard_exp_shock"
         attribute surprise:
             "gaspard_exp_surprise"
-        attribute sad:
-            "gaspard_exp_sad"
         attribute frown:
             "gaspard_exp_frown"
         attribute laugh:
@@ -57,10 +51,8 @@ image gaspard_por_acc_sweat = "images/chs/gaspard/por/acc_sweat.png"
 image gaspard_por_acc_sweatdrop = "images/chs/gaspard/por/acc_sweatdrop.png"
 
 image gaspard_por_exp_neutral = "images/chs/gaspard/por/exp_neutral.png"
-image gaspard_por_exp_smile = "images/chs/gaspard/por/exp_smile.png"
 image gaspard_por_exp_shock = "images/chs/gaspard/por/exp_shock.png"
 image gaspard_por_exp_surprise = "images/chs/gaspard/por/exp_surprise.png"
-image gaspard_por_exp_sad = "images/chs/gaspard/por/exp_sad.png"
 image gaspard_por_exp_frown = "images/chs/gaspard/por/exp_frown.png"
 image gaspard_por_exp_laugh = "images/chs/gaspard/por/exp_laugh.png"
 image gaspard_por_exp_angry = "images/chs/gaspard/por/exp_angry.png"
@@ -75,14 +67,10 @@ layeredimage Gaspard_por:
     group face:
         attribute neutral default:
             "gaspard_por_exp_neutral"
-        attribute smile:
-            "gaspard_por_exp_smile"
         attribute shock:
             "gaspard_por_exp_shock"
         attribute surprise:
             "gaspard_por_exp_surprise"
-        attribute sad:
-            "gaspard_por_exp_sad"
         attribute frown:
             "gaspard_por_exp_frown"
         attribute laugh:
