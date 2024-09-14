@@ -1,3 +1,10 @@
+image flash_circle:
+    "images/bgs/flash_circle.png"
+    pos mouse_pos
+    block:
+        pause 0.1
+        pos mouse_pos
+        repeat
 
 ##System Images
 
@@ -18,3 +25,7 @@ image bar_reception = "images/bgs/baroque/bar_reception.jpg"
 image bar_corr_recep = "images/bgs/baroque/bar_corr_recep.jpg"
 image bar_bathroom = "images/bgs/baroque/bar_bathroom.jpg"
 image bathroom_painting = "images/bgs/baroque/bathroom_painting.jpg"
+
+##Taisho Building
+
+image tai_1f_study_flash = AlphaMask("images/bgs/taisho/flash_1f_study.jpg", "flash_circle")

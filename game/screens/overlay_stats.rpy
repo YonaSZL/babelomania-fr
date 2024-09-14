@@ -13,6 +13,8 @@ default gaspard_cmp = False
 
 screen overlay_stats():
 
+    timer 0.1 action SetVariable("mouse_pos", renpy.get_mouse_pos())
+
     vbox:
         xalign 1.0 offset(-103, 245)  spacing -10
         if amina_cmp:

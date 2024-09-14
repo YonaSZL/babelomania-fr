@@ -81,6 +81,7 @@ define glitch_unload15 = ImageDissolve("gui/transitions/glitch.jpg", 1.5, 32, re
 
 default persistent.gore = True
 default tooltip = "None"
+default mouse_pos = None
 
 #Defining Music Channels
 init python:
@@ -123,6 +124,8 @@ init -1:
         yoffset 180
         zoom 0.70
         transform_anchor True
+    transform flash_position:
+        pos pos_mouse
 
 label splashscreen:
     scene black

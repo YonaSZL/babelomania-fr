@@ -444,6 +444,8 @@ label story_00_bathroom_return:
     pause 1.0
     show Shigeo surprise
     sh_i nulla "(Professor...{w=0.5} {i}Habiki{/i}?)"
+    scene tai_1f_study_flash
+    "OHNOES"
     pause 1.0
     scene bar_corr_recep with dissolve
     pause 1.0
