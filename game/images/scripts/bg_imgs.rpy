@@ -1,3 +1,8 @@
+init python:
+
+    def dark_flashlight(st, at):
+        return Transform("flash_circle", None, anchor=(0.5,0.5), pos=renpy.get_mouse_pos()), 1.0/30.0
+
 ##System Images
 
 image main_menu_bg = "gui/main_menu/main_menu_bg.jpg"
@@ -20,4 +25,6 @@ image bathroom_painting = "images/bgs/baroque/bathroom_painting.jpg"
 
 ##Taisho Building
 
-image tai_1f_study_flash = AlphaMask("images/bgs/taisho/flash_1f_study.jpg", "flash_circle")
+image flash_circle = "images/bgs/flash_circle.png"
+image dark_flashlight = DynamicDisplayable(dark_flashlight)
+image flash_1f_study = "images/bgs/taisho/flash_1f_study.jpg"
