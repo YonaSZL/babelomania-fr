@@ -1240,3 +1240,53 @@ translate french story_00_bathroom_return_c48f135c:
     # sh_i nulla "(Someone left the door to the smoking room open...{w=0.5} And now everyone else can also partake of their breathalized cancer.)"
     sh_i nulla ""
 
+# TODO: Translation updated at 2024-09-14 10:22
+
+# game/scripts/story/story_00.rpy:376
+translate french story_00_bathroom_return_90d2365c_1:
+
+    # ta_x darko "Failure to remove yourself from the restricted area will be cause for reprisal.{w=0.3} Please acknowledge."
+    ta_x darko ""
+
+# game/scripts/story/story_00.rpy:397
+translate french story_00_bathroom_return_ed8f339a:
+
+    # sh nulla "Who...?"
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:435
+translate french story_00_bathroom_return_323f37d2:
+
+    # ha_x nulla "<Fully fluent, and a very light accent...{w=0.5} {nw}"
+    ha_x nulla ""
+
+# game/scripts/story/story_00.rpy:437
+translate french story_00_bathroom_return_3f33c47a:
+
+    # extend "A {b}hafu{/b}, then?>"
+    extend ""
+
+# game/scripts/story/story_00.rpy:441
+translate french story_00_bathroom_return_d2619f95:
+
+    # ha nulla "<Quite interesting indeed...{w=0.5} Please feel free to address me as {nw}"
+    ha nulla ""
+
+# game/scripts/story/story_00.rpy:443
+translate french story_00_bathroom_return_ed9b335e:
+
+    # extend "{b}Professor Habiki{/b}, Shigeo-kun.>"
+    extend ""
+
+# game/scripts/story/story_00.rpy:514
+translate french story_00_meet_gaspard_2693f1d9:
+
+    # ga_x nulla "<I came across as quite rude, I believe, not returning your greeting.{w=0.3} I just wasn't expecting anyone to come through the door at that precise moment.{w=0.3} I'm easily startled.>"
+    ga_x nulla ""
+
+# game/scripts/story/story_00.rpy:515
+translate french story_00_meet_gaspard_7f5dbbcf:
+
+    # sh surprise "<Oh...{w=0.5} Well, it's fine.{w=0.3} Thanks for seeking me out to apologize.>"
+    sh surprise ""
+

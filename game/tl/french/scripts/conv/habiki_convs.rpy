@@ -326,3 +326,47 @@ translate french habiki_01_wedding_d3e84bc7:
     # ha nulla "Are you kidding me?{w=0.3} Delphine's family and <coterie> wouldn't be caught dead in an outfit that cheap."
     ha nulla ""
 
+# TODO: Translation updated at 2024-09-14 10:22
+
+# game/scripts/conv/habiki_convs.rpy:91
+translate french habiki_01_habiki_2123ee23:
+
+    # sh smile ".{w=0.3}.{w=0.3}.{w=0.5}fair enough.{w=0.5} But considering the century we live in, you mean to tell me I won't find that out just by looking up 'japanese professor with Android' on a search engine?"
+    sh smile ""
+
+# game/scripts/conv/habiki_convs.rpy:112
+translate french habiki_01_tabitha_a958570e:
+
+    # ha nulla "I feel a certain animosity, Shigeo-kun.{w=0.3} I assure you that Tabitha didn't mean you any harm."
+    ha nulla ""
+
+# game/scripts/conv/habiki_convs.rpy:144
+translate french habiki_01_wedding_58cc9890:
+
+    # sh surprise "Don't think I've seen you at the ceremony, nor the reception so far.{w=0.3} I would remember an elderly academic shadowed by a two meters tall Android."
+    sh surprise ""
+
+# game/scripts/conv/habiki_convs.rpy:148
+translate french habiki_01_wedding_5ef3738c:
+
+    # sh surprise "If you've only recently arrived, that's why I haven't seen you at the ceremony or the reception.{w=0.3} I would remember an elderly academic shadowed by a two meters tall Android."
+    sh surprise ""
+
+# game/scripts/conv/habiki_convs.rpy:152
+translate french habiki_01_wedding_b5fc8485:
+
+    # ha nulla "I was supposed to arrive earlier but bad weather delayed my flight...{w=0.5} I hope young Francesco didn't take offense with my absence."
+    ha nulla ""
+
+# game/scripts/conv/habiki_convs.rpy:177
+translate french habiki_01_wedding_ffb5e25b:
+
+    # ha nulla "Nothing of importance.{w=0.3} You're just the first person I meet from Francesco's life before college."
+    ha nulla ""
+
+# game/scripts/conv/habiki_convs.rpy:186
+translate french habiki_01_wedding_ed7773ea:
+
+    # sh smile "Really, now?{w=0.3} Please do, then."
+    sh smile ""
+
