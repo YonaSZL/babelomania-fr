@@ -1,11 +1,3 @@
-image flash_circle:
-    "images/bgs/flash_circle.png"
-    pos mouse_pos
-    block:
-        pause 0.1
-        pos mouse_pos
-        repeat
-
 ##System Images
 
 image main_menu_bg = "gui/main_menu/main_menu_bg.jpg"
