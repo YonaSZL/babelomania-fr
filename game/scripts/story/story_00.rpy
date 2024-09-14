@@ -4,11 +4,11 @@ label story_00_start:
     scene black with flash
     pause 3.0
     scene intro_disclaimer with dissolve
-    pause 6.0
+    pause 6.5
     scene black with Reveal
     pause 1.5
     show intro_babel with dissolve
-    pause 4.0
+    pause 4.5
     play sound "audio/se/glitch_long_01.ogg"
     pause 1.0
     play music "audio/bgm/sanity_glitch.ogg"
@@ -102,7 +102,7 @@ label story_00_invitation:
     """
     play sound4 "audio/sfx/gui_hint.ogg"
     d """
-    The {b}Château de Bois-le-Dumont{/b} is unique even among the many beautiful châteaux that populate France. It originated as an eighteenth century vanity project from an aristocrat, left unfinished in the wake of the revolution. After decades of abandon, it was eventually purchased by the eccentric {b}Abelard Du Bois{/b}, who over a period of thirty years shaped it into the château as it is today.\n
+    The {b}Château de Bois-le-Dumont{/b} is unique even among the many beautiful châteaux that populate France. It originated as an eighteenth century vanity project from an aristocrat, left unfinished in the wake of the revolution. After decades of abandon, it was eventually purchased by the eccentric {b}Abelard Du Bois{/b}, who over the following decades shaped it into the château as it is today.\n
 
     The ceremony and reception will take place in the {b}Baroque Building{/b}, while the guests will be accomodated in the {b}Taisho Building{/b}.\n
     """
@@ -157,7 +157,7 @@ label story_00_invitation:
     sh nulla "<Well, if you see something that creepy while entering the toilets you->"
     pause 1.0
     play sound "audio/em/em_surprise.ogg"
-    #show screen emote("surprise",0.5,-0.05)
+    show screen emote("surprise",0.445,0.05)
     show Shigeo surprise sweat
     sh_i nulla "(Aw, crap!{w=0.3} There's no such thing as scared shitless in French!{w=0.3} They say that you have a 'blue fear'!)"
     tb_n "<Yes, yes, the subject matter is quite fascinatingly grotesque...{w=0.5} So?>"
@@ -254,9 +254,9 @@ label story_00_bathroom_encounters:
         xalign 0.5
     with dissolve
     pause 0.5
-    play sound "audio/se/steps_stairs_up.ogg"
+    play sound4 "audio/se/steps_marble_step.ogg"
     pause 0.3
-    #show screen emote("surprise",0.45,-0.05)
+    show screen emote("surprise",0.445,0.05)
     show Shigeo surprise
     pause 0.2
     play sound "audio/se/whoosh_fast.ogg"
@@ -321,6 +321,7 @@ label story_00_bathroom_return:
     with dissolve
     play sound4 "audio/sfx/gui_slots_confirm.ogg"
     show screen notify("Codex Unlocked")
+    $ codex_active = True
     pause 0.5
     sh_i nulla "(Well, that was a good way to waste a few minutes and distract myself...{w=0.5} And now I have something to occupy myself further, if need be.)"
     show Shigeo neutral
@@ -349,7 +350,7 @@ label story_00_bathroom_return:
     pause 0.5
     stop music fadeout 0.2
     play sound "audio/em/em_shock.ogg"
-    #show screen emote("surprise",0.47,-0.05)
+    show screen emote("surprise",0.445,0.05)
     show Shigeo surprise
     pause 1.5
     play music "audio/bgm/uncanny.ogg"
@@ -389,7 +390,7 @@ label story_00_bathroom_return:
     with Reveal3
     pause 0.5
     ha_x darko "Let the young man go."
-    #show screen emote("surprise",0.57,-0.05)
+    show screen emote("surprise",0.55,0.05)
     show Shigeo surprise
     sh nulla "...!{w=0.3} E-{w=0.15}Excuse me?"
     pause 2.0
