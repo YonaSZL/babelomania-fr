@@ -1232,3 +1232,11 @@ translate french story_00_invitation_c199113b:
     # d "The {b}Château de Bois-le-Dumont{/b} is unique even among the many beautiful châteaux that populate France. It originated as an eighteenth century vanity project from an aristocrat, left unfinished in the wake of the revolution. After decades of abandon, it was eventually purchased by the eccentric {b}Abelard Du Bois{/b}, who over the following decades shaped it into the château as it is today.\n"
     d ""
 
+# TODO: Translation updated at 2024-09-14 09:57
+
+# game/scripts/story/story_00.rpy:346
+translate french story_00_bathroom_return_c48f135c:
+
+    # sh_i nulla "(Someone left the door to the smoking room open...{w=0.5} And now everyone else can also partake of their breathalized cancer.)"
+    sh_i nulla ""
+

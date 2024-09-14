@@ -343,7 +343,7 @@ label story_00_bathroom_return:
         xalign 0.7
     with dissolve
     pause 0.5
-    sh_i nulla "(Someone left the door to the smoking room open...{w=0.5} And of course, everyone else now needs to share in their breathalized cancer.)"
+    sh_i nulla "(Someone left the door to the smoking room open...{w=0.5} And now everyone else can also partake of their breathalized cancer.)"
     show Shigeo at sh_med:
         easein 7.0 xalign 0.5
     sh_i nulla "(Let's close the door before the stench seeps in my clo-)"
@@ -351,6 +351,7 @@ label story_00_bathroom_return:
     stop music fadeout 0.2
     play sound "audio/em/em_shock.ogg"
     show screen emote("surprise",0.445,0.05)
+    pause 0.5
     show Shigeo surprise
     pause 1.5
     play music "audio/bgm/uncanny.ogg"
@@ -363,7 +364,7 @@ label story_00_bathroom_return:
     sh_i shock "(What...?!{w=0.5} What is...?!)"
     ta_x darko "Warning:{w=0.3} you are entering restricted personal space."
     sh_i shock sweat "(The grip is so strong but more than that, what...{w=0.5} The hand feels so cold and...{w=0.5} Weird!)"
-    ta_x darko "Failure to remove yourself from the restricted area will be cause of reprisal.{w=0.3} Please acknowledge."
+    ta_x darko "Failure to remove yourself from the restricted area will be cause for reprisal.{w=0.3} Please acknowledge."
     sh_i fear sweat "(It's completely smooth and rigid and yet soft at the same time...?!{w=0.3} What the hell is touching me?!)"
     ta_x darko "I repeat."
     sh shock "...!{w=0.5} Ugh?!"
@@ -390,9 +391,10 @@ label story_00_bathroom_return:
     with Reveal3
     pause 0.5
     ha_x darko "Let the young man go."
-    show screen emote("surprise",0.55,0.05)
+    play sound "audio/em/em_question.ogg"
+    show screen emote("question",0.55,0.05)
     show Shigeo surprise
-    sh nulla "...!{w=0.3} E-{w=0.15}Excuse me?"
+    sh nulla "Who...?"
     pause 2.0
     show Tabitha bow
     ta nulla "Acknowledged, professor."
@@ -430,12 +432,15 @@ label story_00_bathroom_return:
     show Habiki surprise
     pause 1.0
     show Habiki neutral
+    ha_x nulla "<Fully fluent, and a very light accent...{w=0.5} {nw}"
     play sound "audio/sfx/gui_hint.ogg"
-    ha_x nulla "<Fully fluent, and a very light accent...{w=0.5} A {b}hafu{/b}, then?>"
+    extend "A {b}hafu{/b}, then?>"
     sh nulla "<My mother's from Sapporo, my father from Genova...{w=0.5} My name's Shigeo Arata.>"
     ha_x nulla "<I see...{w=0.5} Interesting.>"
     show Habiki smile
-    ha nulla "<Quite interesting indeed...{w=0.5} Please feel free to address me as {b}Professor Habiki{/b}, Shigeo-kun.>"
+    ha nulla "<Quite interesting indeed...{w=0.5} Please feel free to address me as {nw}"
+    play sound "audio/sfx/gui_hint.ogg"
+    extend "{b}Professor Habiki{/b}, Shigeo-kun.>"
     pause 1.0
     show Shigeo surprise
     sh_i nulla "(Professor...{w=0.5} {i}Habiki{/i}?)"
@@ -487,6 +492,7 @@ label story_00_meet_gaspard:
     pause 0.5
     play music "audio/bgm/canon_in_bois.ogg"
     pause 0.5
+    play LoNoise "audio/bgs/reception_crowd.ogg" fadein 0.2
     scene bar_reception with Reveal
     pause 0.5
     sh_i neutral "(People are standing up...{w=0.5} I guess we're between dishes and there's some kind of small event coming up.)"
@@ -497,6 +503,7 @@ label story_00_meet_gaspard:
     pause 1.0
     show Gaspard frown at ga_med:
         xalign 0.5
+    with Reveal
     pause 1.5
     sh_i surprise "(The...{w=0.5} The guy I ran into in the bathrooms?)"
     sh_i frown "(Expensive looking suit in parisian blue, similarly costly looking accessories from a number of different brands...{w=0.5} Yeah, this guy is definitely with the bride's half of the party.)"
@@ -504,9 +511,9 @@ label story_00_meet_gaspard:
     sh neutral "<You mean downstairs?{w=0.5} Yes, that's correct.>"
     ga_x nulla "<I see...{w=0.5} I wanted to apologize.>"
     show Gaspard neutral
-    ga_x nulla "<I came across as quite rude, I believe, not returning your greeting.{w=0.3} I just wasn't expecting anyone to come through the door at the precise moment.>"
-    sh surprise "<Oh...{w=0.5} Well, it's fine.{w=0.3} No harm done.>"
-    show Gaspard smile
+    ga_x nulla "<I came across as quite rude, I believe, not returning your greeting.{w=0.3} I just wasn't expecting anyone to come through the door at that precise moment.{w=0.3} I'm easily startled.>"
+    sh surprise "<Oh...{w=0.5} Well, it's fine.{w=0.3} Thanks for seeking me out to apologize.>"
+    show Gaspard laugh
     ga nulla "<Very gracious of you.{w=0.3} My name is {nw}"
     play sound "audio/sfx/gui_hint.ogg"
     extend "{b}Gaspard Faucigny{/b}.>"
@@ -516,7 +523,13 @@ label story_00_meet_gaspard:
     sh_i surprise "(Hmmm, I do have a window for Francesco but at the same time, it would be rude to just brush this person off...)"
     sh_i smile "(Also, he will eventually need to go back to his seat.{w=0.3} This guy looks to be around my same age, so a new acquaintance wouldn't hurt.)"
     sh surprise "<Pleased to meet you too, Gaspard.>"
-    pause 1.5
+    pause 1.0
+    scene bar_reception with dissolve
+    pause 0.5
+    show Gaspard neutral at ga_big:
+        xalign 0.5
+    with dissolve
+    pause 0.5
     call screen gaspard_conv_01
 
 label story_00_meet_amina:

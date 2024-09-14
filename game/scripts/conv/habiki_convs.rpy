@@ -88,7 +88,7 @@ label habiki_01_habiki:
     ha nulla "There's, though, a very logical explanation...{w=0.5} My Tabitha, here, is many things to me.{w=0.3} One of her primary functions is being my bodyguard."
     show Tabitha bow
     ha nulla "With that in mind, is it really odd that someone needing a two meters tall robotic bodyguard would be quite judicious, when it came to handing out his last name?"
-    sh smile ".{w=0.3}.{w=0.3}.{w=0.5}fair enough.{w=0.5} But considering the century we live in, you mean to tell me I won't find that out just by looking up 'japanese professor with android' on a search engine?"
+    sh smile ".{w=0.3}.{w=0.3}.{w=0.5}fair enough.{w=0.5} But considering the century we live in, you mean to tell me I won't find that out just by looking up 'japanese professor with Android' on a search engine?"
     pause 1.5
     show Habiki smile with dissolve
     ha nulla "Quite."
@@ -109,7 +109,7 @@ label habiki_01_tabitha:
     $ renpy.block_rollback()
     pause 0.5
     sh frown ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha...{w=0.5} Why did you give it a human name?"
-    ha nulla "I feel a certain animosity, Shigeo-kun.{w=0.3} I assure you that Tabitha didn't mean you no harm."
+    ha nulla "I feel a certain animosity, Shigeo-kun.{w=0.3} I assure you that Tabitha didn't mean you any harm."
     sh frown "Gave me quite the fright, that's for sure...{w=0.5} All I wanted to do was close the door to the smoking room properly."
     show Habiki laugh
     ha nulla "Not a fan of smoking either, I assume.{w=0.3} An awful vice to have, I agree."
@@ -141,15 +141,15 @@ label habiki_01_wedding:
     $ renpy.block_rollback()
     pause 0.5
     if not habiki_01_tabitha:
-        sh surprise "Don't think I've seen you at the ceremony, nor the reception so far.{w=0.3} I would remember an elderly academic shadowed by a two meters tall android."
+        sh surprise "Don't think I've seen you at the ceremony, nor the reception so far.{w=0.3} I would remember an elderly academic shadowed by a two meters tall Android."
         show Habiki laugh
         ha nulla "Oh, you would be surprised...{w=0.5} But indeed, we've but recently arrived."
     else:
-        sh surprise "If you've only recently arrived, that's why I haven't seen you at the ceremony or the reception.{w=0.3} I would remember an elderly academic shadowed by a two meters tall android."
+        sh surprise "If you've only recently arrived, that's why I haven't seen you at the ceremony or the reception.{w=0.3} I would remember an elderly academic shadowed by a two meters tall Android."
         show Habiki laugh
         ha nulla "Oh, you would be surprised...{w=0.5} But indeed, we haven't had the opportunity to greet the bride and groom yet, truth tell."
     show Habiki neutral
-    ha nulla "I was supposed to arrive earlier but bad weather delayed my flight...{w=0.5} I hope young Francesco didn't take offense with it."
+    ha nulla "I was supposed to arrive earlier but bad weather delayed my flight...{w=0.5} I hope young Francesco didn't take offense with my absence."
     sh surprise "Francesco...{w=0.5} So you're with the groom's party."
     show Habiki smile
     ha nulla "Indeed.{w=0.3} And so do you, I believe."
@@ -157,6 +157,8 @@ label habiki_01_wedding:
     sh neutral "Well, yes, but...{w=0.5} How can you tell?"
     show Habiki laugh
     ha nulla "Are you kidding me?{w=0.3} Delphine's family and <coterie> wouldn't be caught dead in an outfit that cheap."
+    play sound "audio/em/em_surprise.ogg"
+    show screen emote("surprise",0.17,0.5)
     sh surprise sweat "Ch-!{w=0.3} This suit cost me 800 Euros!{w=0.3} I had to save for it!"
     show Habiki smile
     ha nulla "And the ones I've seen them wear at similar occasions range in the tens of thousands.{w=0.3} Like many things in this world, Shigeo-kun, cheapness is a...{w=0.5} Relative concept."
@@ -172,7 +174,7 @@ label habiki_01_wedding:
     show Habiki frown
     ha nulla ".{w=0.3}.{w=0.3}.{w=0.5}not exactly wrong, just...{w=1.0} Nevermind."
     show Habiki neutral
-    ha nulla "Nothing of importance.{w=0.3} You're just the first person I meet from Francesco's life from before college."
+    ha nulla "Nothing of importance.{w=0.3} You're just the first person I meet from Francesco's life before college."
     sh surprise "Oh...{w=0.5} Yeah, to be honest, his invite was a surprise.{w=0.3} I didn't even know he had gotten married."
     ha nulla "I see...{w=0.5} Well, no time like the present to reconnect, don't you think?"
     show Habiki smile
@@ -181,7 +183,7 @@ label habiki_01_wedding:
     sh sad "Yeah, I noticed a tendency on the bride's family's behalf to monopolize the happy couple."
     show Habiki neutral
     ha nulla "As foreseen.{w=0.3} No worries, though, Shigeo-kun.{w=0.3} I have ways to break the status quo."
-    sh smile "You do?{w=0.3} Please do, then."
+    sh smile "Really, now?{w=0.3} Please do, then."
     pause 1.0
     if habiki_01_wedding == False:
         $ habiki_01_wedding = True

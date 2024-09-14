@@ -121,7 +121,8 @@ transform frust():
     easein 0.2 alpha 0 xoffset -10
 
 screen emote(emotion,x,y):
-
+    zorder 300
+    
     key "dismiss" action Hide('emote')
     frame:
         xsize 169 ysize 266
