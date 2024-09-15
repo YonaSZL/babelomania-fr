@@ -121,8 +121,17 @@ label gaspard_01_wedding:
     show Gaspard neutral
     ga nulla "They were once they ran out of justifications...{w=0.5} Francesco graduated top of his class, is a successful researcher and more than self-sufficient."
     show Gaspard laugh
-    ga nulla "When they started thinking about using his lack of living relatives and any tie to his old life before coming to France as arguments, I made them respectfullly notice they were grasping at straws."
+    ga nulla "When they started talking about using his lack of living relatives and any tie to his old life before coming to France as arguments, I made them respectfullly notice they were grasping at straws."
     show Gaspard neutral
+    ga nulla "They could either come out and say that they didn't want Delphine to marry a non-legacy person or shut up and give them their blessing.{w=0.3} Maybe hope for a quick divorce."
+    sh surprise "Huh...{w=0.5} I guess those kind of dynamics are still a thing in certain circles, aren't they?"
+    show Gaspard laugh
+    ga nulla "You have no idea...{w=0.5} Not my thing, to be completely honest."
+    show Gaspard neutral
+    ga nulla "I find most women in my same...{w=0.5} How do you say it?{w=0.3} Bracket?{w=0.3} Most women in my same bracket of life are quite uninteresting to me."
+    sh smile "I see what you mean.{w=0.3} I guess when you know nothing else your entire life, it can become quite unstimulating."
+    ga nulla "Yeah, that too.{w=0.3} Glad you understand."
+    sh_i surprise "(That {i}too{/i}?{w=0.3} Meaning that's not the main reason why...?{w=0.5} Hm.)"
     pause 1.0
     if gaspard_01_wedding == False:
         $ gaspard_01_wedding = True
