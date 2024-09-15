@@ -104,17 +104,17 @@ init -1:
         zoom 0.70
         transform_anchor True
     transform ga_big:
-        yoffset 120
+        yoffset 117
         transform_anchor True
     transform ga_med:
-        yoffset 180
+        yoffset 175
         zoom 0.70
         transform_anchor True
     transform sh_big:
-        yoffset 120
+        yoffset 123
         transform_anchor True
     transform sh_med:
-        yoffset 180
+        yoffset 185
         zoom 0.70
         transform_anchor True
     transform ha_big:
@@ -122,6 +122,13 @@ init -1:
         transform_anchor True
     transform ha_med:
         yoffset 180
+        zoom 0.70
+        transform_anchor True
+    transform am_big:
+        yoffset 185
+        transform_anchor True
+    transform am_med:
+        yoffset 260
         zoom 0.70
         transform_anchor True
     transform flash_position:
