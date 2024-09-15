@@ -210,3 +210,41 @@ translate french strings:
     old "Actually..."
     new ""
 
+# TODO: Translation updated at 2024-09-15 17:23
+
+# game/scripts/exp/exp_bar_corr.rpy:36
+translate french exp_bar_corr_window_73242be2:
+
+    # sh_i neutral "(The window frame is quite modern...{w=0.5} I guess the original one needed replacement.{w=0.3} It's the type that needs a special key to be opened, hm?)"
+    sh_i neutral ""
+
+# game/scripts/exp/exp_bar_corr.rpy:42
+translate french exp_bar_corr_window_10ebea36:
+
+    # sh_i smile "(If you want to present yourself as a fitting venue for those, the level of security would be a big selling point, wouldn't it?)"
+    sh_i smile ""
+
+# game/scripts/exp/exp_bar_corr.rpy:52
+translate french exp_bar_corr_chapel_8551bf8c:
+
+    # sh_i neutral "(Those heavy doors lead to the chapel...{w=0.5} This château is a pretty cool location, not going to lie.)"
+    sh_i neutral ""
+
+# game/scripts/exp/exp_bar_corr.rpy:53
+translate french exp_bar_corr_chapel_c66c9121:
+
+    # sh_i smile "(I can see why Francesco and his beau chose it.{w=0.3} It reminds me of a lot of our trips, when our families would go out of town together.)"
+    sh_i smile ""
+
+# game/scripts/exp/exp_bar_corr.rpy:84
+translate french exp_bar_corr_reception_64740b90:
+
+    # sh_i sad "(Why did he invite me too, anyway?{w=0.5} He's obviously not wanting for friends.{w=0.3} And it's not like he's made time to try and reconnect.)"
+    sh_i sad ""
+
+# game/scripts/exp/exp_bar_corr.rpy:85
+translate french exp_bar_corr_reception_e3d91d1f:
+
+    # sh_i neutral "(Not that I can blame him, it is his wedding...{w=0.5} But even in an already divided group of people, I can't fit in either way.{w=0.3} It's like high school all over again.)"
+    sh_i neutral ""
+

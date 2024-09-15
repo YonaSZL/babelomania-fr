@@ -59,13 +59,13 @@ screen gaspard_conv_01:
                     button:
                         text "The Android"
                         at btn_slide
-                        if gaspard_01_bathroom:
+                        if gaspard_01_shigeo:
                             background "gui/talkie/button.png"
                         else:
                             background "gui/talkie/button_empty.png"
                         hover_sound "audio/sfx/gui_hover.ogg"
                         activate_sound "audio/sfx/gui_confirm.ogg"
-                        action Jump("gaspard_01_bathroom")
+                        action Jump("gaspard_01_shigeo")
 
 
         ####Indicator if viewport is scrollable
@@ -138,11 +138,35 @@ label gaspard_01_wedding:
         $ gaspard_conv_01 += 1
     call screen gaspard_conv_01
 
-label gaspard_01_bathroom:
+label gaspard_01_shigeo:
     pause 0.5
-
+    ga nulla "So you're most definitely an invitee of Francesco, aren't you?{w=0.3} Because I know pretty much everyone on Delphine's side, and if I don't I know {i}of{/i} them."
+    sh smile "Guilty as charged.{w=0.3} Me and him go way back."
+    ga nulla "Hmm...{w=0.5} From his Bachelor, then.{w=0.3} Another biochemist?"
+    sh surprise "Hm?{w=0.5} No, sorry, I wasn't being clear.{w=0.3} I mean that I know Francesco from childhood."
+    pause 0.5
+    show Gaspard surprise
+    ga nulla "Childhood...?{w=0.5} Not college?"
+    sh smile "Hah, no.{w=0.3} B2 level of French, remember?{w=0.3} I've never even been to Paris, let alone studied there."
+    ga nulla "So...{w=0.5} You don't know anyone from his current circle?{w=0.3} His current life?"
+    sh neutral "Not really, no.{w=0.3} You're literally the person I know the most about at this reception...{w=0.5} That should tell you everything you need to know."
     pause 1.0
-    if gaspard_01_bathroom == False:
-        $ gaspard_01_bathroom = True
+    show Gaspard laugh with dissolve
+    pause 0.5
+    ga nulla "Heh...{w=0.5} Heheheh.{w=0.5} I see."
+    show screen emote("question",0.17,0.5)
+    sh surprise "Hmm?{w=0.5} What do you mean?"
+    ga nulla "Nothing, nothing...{w=0.5} I just thought you were someone from the extended circle, that's all."
+    show Gaspard neutral
+    ga nulla "So you've never met Delphine, either?"
+    sh neutral "No.{w=0.3} When he left Italy after high school we tried to keep in touch but we drifted apart more and more over the years...{w=0.5} I didn't even know he had gotten married, before I got the invite for the religious ceremony."
+    ga nulla "Understandable...{w=0.5} Well, our meeting was quite fortuitous, then.{w=0.3} I know pretty much everyone here, and everything about everyone."
+    show Gaspard laugh
+    ga nulla "Stick with me, and I will have you up to date with Francesco's life by sunrise."
+    sh laugh "Hah!{w=0.3} I'll hold you to that, then!"
+    sh_i laugh "(Well, what do you know?{w=0.3} That weird bathroom encounter turned out fruitful, after all.)"
+    pause 1.0
+    if gaspard_01_shigeo == False:
+        $ gaspard_01_shigeo = True
         $ gaspard_conv_01 += 1
     call screen gaspard_conv_01

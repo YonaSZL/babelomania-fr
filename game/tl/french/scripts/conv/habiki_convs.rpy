@@ -370,3 +370,17 @@ translate french habiki_01_wedding_ed7773ea:
     # sh smile "Really, now?{w=0.3} Please do, then."
     sh smile ""
 
+# TODO: Translation updated at 2024-09-15 17:23
+
+# game/scripts/conv/habiki_convs.rpy:123
+translate french habiki_01_tabitha_206d9528:
+
+    # ha nulla "Oh, if I really wanted I could've ordered her to...{w=0.5} But I find that going against actions dictated by her prime directives is quite disruptive."
+    ha nulla ""
+
+# game/scripts/conv/habiki_convs.rpy:155
+translate french habiki_01_wedding_41f4bcd5:
+
+    # ha nulla "Indeed.{w=0.3} And so are you, I believe."
+    ha nulla ""
+

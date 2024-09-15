@@ -1290,3 +1290,65 @@ translate french story_00_meet_gaspard_7f5dbbcf:
     # sh surprise "<Oh...{w=0.5} Well, it's fine.{w=0.3} Thanks for seeking me out to apologize.>"
     sh surprise ""
 
+# TODO: Translation updated at 2024-09-15 17:23
+
+# game/scripts/story/story_00.rpy:140
+translate french story_00_invitation_ed33af00:
+
+    # tb_n "<You will find, spread throughout the estate, different pieces of art collected over the course of his travels.{w=0.3} Or specially commissioned to complement specific rooms of the complex!>"
+    tb_n ""
+
+# game/scripts/story/story_00.rpy:267
+translate french story_00_bathroom_encounters_47613799:
+
+    # sh_i nulla "(Geez, she was in a hurry!{w=0.3} I think it was one of the bridesmaids?)"
+    sh_i nulla ""
+
+# game/scripts/story/story_00.rpy:282
+translate french story_00_bathroom_encounters_69c34758:
+
+    # sh_i surprise "(Hmmm?{w=0.5} Someone else is here.)"
+    sh_i surprise ""
+
+# game/scripts/story/story_00.rpy:309
+translate french story_00_bathroom_encounters_d06a177c:
+
+    # sh_i neutral -sweat "(Looking at it up close, it feels even more out of place...{w=0.5} No matter what excuses I make up.)"
+    sh_i neutral -sweat ""
+
+# game/scripts/story/story_00.rpy:347
+translate french story_00_bathroom_return_8000d72a:
+
+    # sh_i nulla "(Someone left the door to the smoking room open...{w=0.5} And now everyone else shall partake of their breathalized cancer, too.)"
+    sh_i nulla ""
+
+# game/scripts/story/story_00.rpy:380
+translate french story_00_bathroom_return_371d6feb:
+
+    # sh_i angry "(What the hell is this {b}thing{/b}?!)"
+    sh_i angry ""
+
+# game/scripts/story/story_00.rpy:381
+translate french story_00_bathroom_return_91bdc265:
+
+    # sh angry "NNGH!{w=0.3} Let go of me, you-!"
+    sh angry ""
+
+# game/scripts/story/story_00.rpy:485
+translate french story_00_meet_gaspard_3b36690d:
+
+    # sh_i nulla "(Freaky...{w=0.5} I've never seen an Android that looks so much like a human.{w=0.3} Regulations in Japan really are lax, aren't they?)"
+    sh_i nulla ""
+
+# game/scripts/story/story_00.rpy:525
+translate french story_00_meet_gaspard_14c5206e:
+
+    # sh_i smile "(Also, the groom will eventually need to go back to his seat.{w=0.3} This guy looks to be around my same age, so a new acquaintance wouldn't hurt.)"
+    sh_i smile ""
+
+# game/scripts/story/story_00.rpy:526
+translate french story_00_meet_gaspard_1c5096ce:
+
+    # sh smile "<Pleased to meet you too, Gaspard.>"
+    sh smile ""
+
