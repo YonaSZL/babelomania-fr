@@ -184,3 +184,15 @@ translate french strings:
     old "Gaspard Faucigny"
     new ""
 
+# TODO: Translation updated at 2024-09-15 22:54
+
+translate french strings:
+
+    # game/script.rpy:40
+    old "Amina Abbas"
+    new ""
+
+    # game/script.rpy:49
+    old "Francesco Colombo"
+    new ""
+

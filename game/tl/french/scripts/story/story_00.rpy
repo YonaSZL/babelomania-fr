@@ -1352,3 +1352,407 @@ translate french story_00_meet_gaspard_1c5096ce:
     # sh smile "<Pleased to meet you too, Gaspard.>"
     sh smile ""
 
+# TODO: Translation updated at 2024-09-15 22:54
+
+# game/scripts/story/story_00.rpy:540
+translate french story_00_meet_amina_8c9846a5:
+
+    # ga nulla "You must come sit with me and mine for the rest of the evening.{w=0.3} I insist."
+    ga nulla ""
+
+# game/scripts/story/story_00.rpy:541
+translate french story_00_meet_amina_60b18194:
+
+    # sh smile "I would really appreciate it, thanks.{w=0.3} I've been spending the first part of the dinner surrounded by older academics who don't speak a word of English."
+    sh smile ""
+
+# game/scripts/story/story_00.rpy:543
+translate french story_00_meet_amina_257a1ac4:
+
+    # ga nulla "Oh, we're at least bilingual at our table.{w=0.3} I'm sure you'll-"
+    ga nulla ""
+
+# game/scripts/story/story_00.rpy:544
+translate french story_00_meet_amina_e188a4ad:
+
+    # am_x darko "Gaspard?"
+    am_x darko ""
+
+# game/scripts/story/story_00.rpy:550
+translate french story_00_meet_amina_863f583e:
+
+    # ga nulla "Ah, {b}Amina{/b}.{w=0.3} Perfect timing."
+    ga nulla ""
+
+# game/scripts/story/story_00.rpy:551
+translate french story_00_meet_amina_93f576bf:
+
+    # sh_i surprise "(Amina?{w=0.5} Oh...)"
+    sh_i surprise ""
+
+# game/scripts/story/story_00.rpy:557
+translate french story_00_meet_amina_91e7778b:
+
+    # ga nulla "Let me introduce you to Shigeo Arata.{w=0.3} He's a childhood friend of Francesco, if you can believe it."
+    ga nulla ""
+
+# game/scripts/story/story_00.rpy:559
+translate french story_00_meet_amina_95802636:
+
+    # am nulla "Is he, now?{w=0.5} Interesting."
+    am nulla ""
+
+# game/scripts/story/story_00.rpy:560
+translate french story_00_meet_amina_ffc7f4a4:
+
+    # sh smile "A pleasure to meet you.{w=0.3} I have to ask, though, why is it such a surprise to everyone whenever I mention that?"
+    sh smile ""
+
+# game/scripts/story/story_00.rpy:561
+translate french story_00_meet_amina_8ac17a5b:
+
+    # am nulla "Because Francesco barely talks about his life before coming to France."
+    am nulla ""
+
+# game/scripts/story/story_00.rpy:563
+translate french story_00_meet_amina_3702ad16:
+
+    # am nulla "Having a living piece of it present at his wedding is not something anyone expected...{w=0.5} I'm Amina Abbas, pleasure is mine."
+    am nulla ""
+
+# game/scripts/story/story_00.rpy:564
+translate french story_00_meet_amina_7c4e6156:
+
+    # ga nulla "Also known as my beautiful girlfriend...{w=0.5} You needed something from me, <petite>?"
+    ga nulla ""
+
+# game/scripts/story/story_00.rpy:568
+translate french story_00_meet_amina_6b0e7af2:
+
+    # am nulla "Your father wanted to speak to you.{w=0.3} Something about an email."
+    am nulla ""
+
+# game/scripts/story/story_00.rpy:572
+translate french story_00_meet_amina_089d7a68:
+
+    # ga nulla "Ugh, honestly...{w=0.5} Not disconnecting from work even at an event like this."
+    ga nulla ""
+
+# game/scripts/story/story_00.rpy:574
+translate french story_00_meet_amina_6865aa59:
+
+    # ga nulla "Let me go deal with that real quick.{w=0.3} <Petite>, mind showing Shigeo to our table?{w=0.3} He will be sitting with us for the rest of the night."
+    ga nulla ""
+
+# game/scripts/story/story_00.rpy:576
+translate french story_00_meet_amina_8e5c1904:
+
+    # am nulla "He is?{w=0.3} But Gaspard-"
+    am nulla ""
+
+# game/scripts/story/story_00.rpy:581
+translate french story_00_meet_amina_9ac7c712:
+
+    # am nulla ".{w=0.3}.{w=0.3}.{w=0.5}there are no more free seats."
+    am nulla ""
+
+# game/scripts/story/story_00.rpy:582
+translate french story_00_meet_amina_a1f186a4:
+
+    # sh surprise "Oh.{w=0.3} I'm sorry, I...{w=0.5} I didn't mean to be a bother."
+    sh surprise ""
+
+# game/scripts/story/story_00.rpy:583
+translate french story_00_meet_amina_739a21e6:
+
+    # am nulla "You did nothing wrong...{w=0.5} It's fine, we can just ask the caterers to add one more chair."
+    am nulla ""
+
+# game/scripts/story/story_00.rpy:585
+translate french story_00_meet_amina_4ce07467:
+
+    # am nulla "Honestly, I'm more surprised than anything else.{w=0.3} Gaspard never hits it off so quickly with anyone, leave alone-"
+    am nulla ""
+
+# game/scripts/story/story_00.rpy:588
+translate french story_00_meet_amina_2bc4c415:
+
+    # am nulla "Ehm, nevermind that.{w=0.3} Come, I'll show you to our table."
+    am nulla ""
+
+# game/scripts/story/story_00.rpy:589
+translate french story_00_meet_amina_4ffe9c73:
+
+    # sh surprise "Uhm...{w=0.5} Sure.{w=0.3} Let me just-"
+    sh surprise ""
+
+# game/scripts/story/story_00.rpy:591
+translate french story_00_meet_amina_b5a904d9:
+
+    # fr_x darko smile "<Counterorder, Amina.{w=0.3} I will show him to your table myself in a couple minutes.>"
+    fr_x darko smile ""
+
+# game/scripts/story/story_00.rpy:596
+translate french story_00_meet_amina_e789a115:
+
+    # sh_i sweat surprise "(...!{w=0.5} That...{w=0.5} That voice...)"
+    sh_i sweat surprise ""
+
+# game/scripts/story/story_00.rpy:610
+translate french story_00_meet_amina_8ea2d8d3:
+
+    # sh_i nulla "(It's changed...{w=0.5} It carries something else.{w=0.3} So much else, compared to when we last met...{w=0.5} Yet, the timbre and cadence are...{w=0.5} Unmistakable, even through the filter of French.)"
+    sh_i nulla ""
+
+# game/scripts/story/story_00.rpy:612
+translate french story_00_meet_amina_b2d2a9b3:
+
+    # am nulla "{b}Francesco{/b}, you...{w=0.5} Scared me.{w=0.3} I didn't even hear you approach."
+    am nulla ""
+
+# game/scripts/story/story_00.rpy:614
+translate french story_00_meet_amina_f787d6e1:
+
+    # fr nulla "Oh, you know me, soft stepped and all.{w=0.3} And I guess I felt like surprising you~"
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:616
+translate french story_00_meet_amina_7160fa74:
+
+    # fr nulla "Anyway, as I said:{w=0.3} pleeee~eeeeeease let me catch up a little with my best friend ever?{w=0.5} I only have a few minutes of freedom."
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:619
+translate french story_00_meet_amina_489857af:
+
+    # am nulla "Fine by me.{w=0.3} See you at the table then, Shigeo."
+    am nulla ""
+
+# game/scripts/story/story_00.rpy:625
+translate french story_00_meet_amina_2d31e6d2:
+
+    # sh nulla "Your best friend ever, am I...?"
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:627
+translate french story_00_meet_amina_57b4c7c1:
+
+    # fr nulla "Always have been, man.{w=0.3} It's great to see you face to face again, after all these years."
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:630
+translate french story_00_meet_amina_ff1b83c1:
+
+    # sh nulla "Pfft, how can you say that with a straight face...?{w=0.3} I didn't even know you had gotten married!"
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:632
+translate french story_00_meet_amina_0fb22eef:
+
+    # fr nulla "Oh, believe me, I did you a favour!{w=0.3} The ceremony at the commune was {i}such{/i} a drag!{w=0.3} And it was all in French, mandatory!"
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:634
+translate french story_00_meet_amina_82a5c404:
+
+    # fr nulla "Last I remember, you couldn't stop complaining to me about the language."
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:635
+translate french story_00_meet_amina_31d48409:
+
+    # sh nulla "And I still could, for days...{w=0.5} But leave alone the wedding, you hadn't even told me you had gotten hitched!"
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:637
+translate french story_00_meet_amina_9e03b5a1:
+
+    # fr nulla "Whaaaaat?{w=0.5} I did tell you that dating was going pretty well, didn't I?"
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:639
+translate french story_00_meet_amina_ced662bc:
+
+    # sh nulla "<Oh, you son of a bitch...!>{w=0.5} What's wrong with you?!"
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:641
+translate french story_00_meet_amina_19da28d8:
+
+    # fr nulla "Oh, you have {i}no{/i} idea!"
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:647
+translate french story_00_meet_amina_3aec3e4f:
+
+    # sh nulla "Have you been well?{w=0.3} I can tell you're doing well for yourself romance-wise but what about the rest?"
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:648
+translate french story_00_meet_amina_727b5fb4:
+
+    # fr nulla "Real good.{w=0.3} The in-laws are a bit much but, I can handle them.{w=0.3} I can handle most things that come my way, nowadays."
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:650
+translate french story_00_meet_amina_6f7b3c07:
+
+    # fr nulla "And your parents?{w=0.3} How are they?"
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:653
+translate french story_00_meet_amina_a2d5c467:
+
+    # sh nulla "Better...{w=0.5} Dad's gotten over what happened in Rome, adjusted to his new post."
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:655
+translate french story_00_meet_amina_0520f64e:
+
+    # sh nulla "Still not a word from mother.{w=0.3} But I still keep in contact with uncle's kids, she's doing fine."
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:656
+translate french story_00_meet_amina_aa2da2c8:
+
+    # fr nulla "I see...{w=0.5} Man, it was so screwed up what happened with you and yours."
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:658
+translate french story_00_meet_amina_2260b795:
+
+    # sh nulla "No more screwed up than what happened to {i}you{/i} and yours...{w=0.5} But, we're still here."
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:660
+translate french story_00_meet_amina_68e09601:
+
+    # sh nulla "And I'd like to believe we're better for it."
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:664
+translate french story_00_meet_amina_50bcad35:
+
+    # fr nulla "Are we, Shigeo?{w=0.3} Are we better for it?"
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:666
+translate french story_00_meet_amina_d666e12a:
+
+    # sh nulla "That's the only grace given to us, when things happen that are outside our control...{w=0.5} Learning from them."
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:668
+translate french story_00_meet_amina_3b17e727:
+
+    # sh nulla "So we can protect ourselves better next time...{w=0.5} Or simply do better.{w=0.3} And we're going to do better, aren't we?"
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:672
+translate french story_00_meet_amina_cf4b504f:
+
+    # fr nulla "I knew it...{w=0.5} I made the right choice."
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:677
+translate french story_00_meet_amina_47e353b4:
+
+    # sh nulla "Choice?{w=0.5} What choice?{w=0.3} Are you talking about inviting me?"
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:678
+translate french story_00_meet_amina_821223af:
+
+    # fr nulla "Something like that...{w=0.5} Shigeo, I have been quite private about a lot of things since I moved to France, haven't I?"
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:680
+translate french story_00_meet_amina_c9db7455:
+
+    # fr nulla "Thing is...{w=0.5} I got involved into some shit, man.{w=0.3} Some big stuff and...{w=0.5} I didn't know if it was fair to drag you into it."
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:681
+translate french story_00_meet_amina_5b53b593:
+
+    # sh nulla "Involved in some shit...?{w=0.5} Francesco, are you in trouble?"
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:682
+translate french story_00_meet_amina_2bf1d095:
+
+    # fr nulla "Not exactly...{w=0.5} But, it's fine now."
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:684
+translate french story_00_meet_amina_4c74825d:
+
+    # fr nulla "Now that you're here...{w=0.5} You're going to help me, aren't you?{w=0.3} You're gonna make it right."
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:685
+translate french story_00_meet_amina_b27e95bd:
+
+    # sh nulla "Francesco, I don't understand.{w=0.3} Of course I'm going to help you but...{w=0.5} What's going on?"
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:686
+translate french story_00_meet_amina_5eed6678:
+
+    # fr nulla "You'll see...{w=0.5} I'll make it all clear later."
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:688
+translate french story_00_meet_amina_be8b750b:
+
+    # fr nulla "Just come find me, alright?{w=0.3} We'll have a heart to heart."
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:690
+translate french story_00_meet_amina_6d0d0d4b:
+
+    # fr nulla "Now you should go.{w=0.3} We're actually about to show a little movie...{w=0.5} Be sure to pay attention, alright?{w=0.3} It's going to put you up to speed with what I've been doing with my life."
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:691
+translate french story_00_meet_amina_def53087:
+
+    # sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}fine, but...{w=0.5} Weren't you supposed to show me to my table?"
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:695
+translate french story_00_meet_amina_5c8c2a21:
+
+    # fr nulla "Oh, crap, right!{w=0.3} Uhm, okay, see here..."
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:698
+translate french story_00_meet_amina_edacae2d:
+
+    # fr nulla "See that table over there?{w=0.5} The only one with bottles of hard liquor?"
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:699
+translate french story_00_meet_amina_f27a1c6f:
+
+    # sh nulla "Yeah...?"
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:701
+translate french story_00_meet_amina_aca2309f:
+
+    # fr nulla "That's the one."
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:703
+translate french story_00_meet_amina_a9d98dfd:
+
+    # sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}also, I see Amina sitting there?{w=0.3} You could've just pointed her out?"
+    sh nulla ""
+
+# game/scripts/story/story_00.rpy:705
+translate french story_00_meet_amina_5c8f5c40:
+
+    # fr nulla "Now, Shigeo, where's the fun in being predictable?"
+    fr nulla ""
+

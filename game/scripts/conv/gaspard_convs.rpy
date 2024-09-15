@@ -4,7 +4,7 @@
 
 default gaspard_conv_01 = 0
 default gaspard_01_gaspard = False
-default gaspard_01_bathroom = False
+default gaspard_01_shigeo = False
 default gaspard_01_wedding = False
 
 screen gaspard_conv_01:
@@ -75,17 +75,18 @@ screen gaspard_conv_01:
             add "gui/talkie/scroll_arrow.png" at arrow_down
 
 label gaspard_01_gaspard:
+    $ renpy.block_rollback()
     pause 0.5
-    ga nulla "<Since I haven't had the plesure so far, I assume you are an invitee on the groom's side.>"
+    ga nulla "<Since I haven't had the pleasure so far, I assume you are an invitee on the groom's side.>"
     sh neutral "<Exactly.{w=0.3} I'm an old friend of Francesco...{w=0.5} And how do you know Delphine?>"
-    show Gaspard smile
+    show Gaspard laugh
     ga nulla "<Oh, our families go way back...{w=0.5} When you deal in our kind of business, you end up always running in the same circles.>"
     show Gaspard neutral
     ga nulla "<We also went to the same business school.{w=0.3} We're not exactly close but, I wasn't about to rebuke a wedding invite.{w=0.3} Especially with Château de Bois-le-Dumont as a location.>"
     sh surprise "<It is a beautiful estate, from what I've seen...{w=0.5} You've visited here before?>"
     show Gaspard frown
     ga nulla "<A few times...{w=0.5} Although this is the first time I will have to stay the night in the Taisho building.>"
-    sh surprise "<Is there a problem with that?>"
+    sh neutral "<Is there a problem with that?>"
     ga nulla "<I'm not exactly a fan of the architectural style...{w=0.5} Totalitarian Japan aping the wonders of imperial Europe and producing patchworks without the strengths of either.>"
     show Gaspard neutral
     ga nulla "<They should've stuck with what they knew...{w=0.5} And not try being something they weren't.>"
@@ -112,11 +113,12 @@ label gaspard_01_gaspard:
     call screen gaspard_conv_01
 
 label gaspard_01_wedding:
+    $ renpy.block_rollback()
     pause 0.5
     sh neutral "You said that your family and Delphine's are...{w=0.5} Tight, I guess?"
     ga nulla "More or less.{w=0.3} We took a number of vacations together over the years, but our fathers are closer than me and her ever became."
     show Gaspard laugh
-    ga nulla "Much to their disappointment, from what I could surmise.{w=0.3} Althought that pales in comparison to what I heard when Delphine got hitched to her Italian beau."
+    ga nulla "Much to their disappointment, from what I could surmise.{w=0.3} Although, that pales in comparison to what I heard when Delphine got engaged."
     sh surprise "Oh...{w=0.5} They weren't supportive?"
     show Gaspard neutral
     ga nulla "They were once they ran out of justifications...{w=0.5} Francesco graduated top of his class, is a successful researcher and more than self-sufficient."
@@ -139,9 +141,10 @@ label gaspard_01_wedding:
     call screen gaspard_conv_01
 
 label gaspard_01_shigeo:
+    $ renpy.block_rollback()
     pause 0.5
-    ga nulla "So you're most definitely an invitee of Francesco, aren't you?{w=0.3} Because I know pretty much everyone on Delphine's side, and if I don't I know {i}of{/i} them."
-    sh smile "Guilty as charged.{w=0.3} Me and him go way back."
+    ga nulla "So how do you exactly know Francesco, if I may?"
+    sh smile "Oh, me and him go way back."
     ga nulla "Hmm...{w=0.5} From his Bachelor, then.{w=0.3} Another biochemist?"
     sh surprise "Hm?{w=0.5} No, sorry, I wasn't being clear.{w=0.3} I mean that I know Francesco from childhood."
     pause 0.5
@@ -154,6 +157,7 @@ label gaspard_01_shigeo:
     show Gaspard laugh with dissolve
     pause 0.5
     ga nulla "Heh...{w=0.5} Heheheh.{w=0.5} I see."
+    play sound "audio/em/em_question.ogg"
     show screen emote("question",0.17,0.5)
     sh surprise "Hmm?{w=0.5} What do you mean?"
     ga nulla "Nothing, nothing...{w=0.5} I just thought you were someone from the extended circle, that's all."

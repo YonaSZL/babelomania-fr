@@ -551,7 +551,7 @@ label story_00_meet_amina:
     sh_i surprise "(Amina?{w=0.5} Oh...)"
     pause 1.0
     show Amina neutral at am_big:
-        xalign 0.85
+        xalign 1.0
     with Reveal3
     pause 1.0
     ga nulla "Let me introduce you to Shigeo Arata.{w=0.3} He's a childhood friend of Francesco, if you can believe it."
@@ -563,8 +563,8 @@ label story_00_meet_amina:
     am nulla "Having a living piece of it present at his wedding is not something anyone expected...{w=0.5} I'm Amina Abbas, pleasure is mine."
     ga nulla "Also known as my beautiful girlfriend...{w=0.5} You needed something from me, <petite>?"
     pause 0.5
-    show Amine neutral with dissolve
-    pause 0.5
+    show Amina neutral with dissolve
+    pause 1.0
     am nulla "Your father wanted to speak to you.{w=0.3} Something about an email."
     pause 1.0
     show Gaspard frown with dissolve
@@ -590,6 +590,9 @@ label story_00_meet_amina:
     stop music fadeout 3.5
     fr_x darko smile "<Counterorder, Amina.{w=0.3} I will show him to your table myself in a couple minutes.>"
     show Amina surprise sweat
+    play sound "audio/em/em_shock.ogg"
+    show screen emote2("surprise",0.775,0.05)
+    show screen emote("surprise",0.17,0.5)
     sh_i sweat surprise "(...!{w=0.5} That...{w=0.5} That voice...)"
     pause 1.0
     play music "audio/bgm/francesco.ogg"
@@ -605,6 +608,7 @@ label story_00_meet_amina:
     with Reveal3
     pause 1.5
     sh_i nulla "(It's changed...{w=0.5} It carries something else.{w=0.3} So much else, compared to when we last met...{w=0.5} Yet, the timbre and cadence are...{w=0.5} Unmistakable, even through the filter of French.)"
+    play sound "audio/sfx/gui_hint.ogg"
     am nulla "{b}Francesco{/b}, you...{w=0.5} Scared me.{w=0.3} I didn't even hear you approach."
     show Francesco laugh
     fr nulla "Oh, you know me, soft stepped and all.{w=0.3} And I guess I felt like surprising you~"
@@ -612,8 +616,9 @@ label story_00_meet_amina:
     fr nulla "Anyway, as I said:{w=0.3} pleeee~eeeeeease let me catch up a little with my best friend ever?{w=0.5} I only have a few minutes of freedom."
     pause 1.0
     show Amina neutral -sweat
-    am nulla "Fine by me.{w=0.3} See you at the table then, Arata."
-    play sound2 "audio/se/steps_stone_walk.ogg"
+    am nulla "Fine by me.{w=0.3} See you at the table then, Shigeo."
+    play sound2 "audio/se/steps_marble_walk.ogg"
+    hide Amina with dissolve
     pause 1.0
     show Shigeo neutral -sweat with dissolve
     pause 1.0
@@ -629,7 +634,7 @@ label story_00_meet_amina:
     fr nulla "Last I remember, you couldn't stop complaining to me about the language."
     sh nulla "And I still could, for days...{w=0.5} But leave alone the wedding, you hadn't even told me you had gotten hitched!"
     show Francesco surprise
-    fr nulla "Whaaaaat?{w=0.5} I did tell you that dating was going pretty well, didn't?"
+    fr nulla "Whaaaaat?{w=0.5} I did tell you that dating was going pretty well, didn't I?"
     show Shigeo laugh
     sh nulla "<Oh, you son of a bitch...!>{w=0.5} What's wrong with you?!"
     show Francesco laugh
@@ -648,4 +653,55 @@ label story_00_meet_amina:
     sh nulla "Better...{w=0.5} Dad's gotten over what happened in Rome, adjusted to his new post."
     show Shigeo sad
     sh nulla "Still not a word from mother.{w=0.3} But I still keep in contact with uncle's kids, she's doing fine."
-    fr nulla "I see...{w=0.5} It was so screwed up "
+    fr nulla "I see...{w=0.5} Man, it was so screwed up what happened with you and yours."
+    show Shigeo neutral
+    sh nulla "No more screwed up than what happened to {i}you{/i} and yours...{w=0.5} But, we're still here."
+    show Shigeo smile
+    sh nulla "And I'd like to believe we're better for it."
+    pause 1.0
+    show Francesco neutral with dissolve
+    pause 0.5
+    fr nulla "Are we, Shigeo?{w=0.3} Are we better for it?"
+    show Shigeo neutral
+    sh nulla "That's the only grace given to us, when things happen that are outside our control...{w=0.5} Learning from them."
+    show Shigeo smile
+    sh nulla "So we can protect ourselves better next time...{w=0.5} Or simply do better.{w=0.3} And we're going to do better, aren't we?"
+    pause 1.5
+    show Francesco smile with dissolve
+    pause 0.5
+    fr nulla "I knew it...{w=0.5} I made the right choice."
+    pause 0.5
+    play sound "audio/em/em_question.ogg"
+    show screen emote("question",0.5,0.05)
+    show Shigeo surprise
+    sh nulla "Choice?{w=0.5} What choice?{w=0.3} Are you talking about inviting me?"
+    fr nulla "Something like that...{w=0.5} Shigeo, I have been quite private about a lot of things since I moved to France, haven't I?"
+    show Francesco sad
+    fr nulla "Thing is...{w=0.5} I got involved into some shit, man.{w=0.3} Some big stuff and...{w=0.5} I didn't know if it was fair to drag you into it."
+    sh nulla "Involved in some shit...?{w=0.5} Francesco, are you in trouble?"
+    fr nulla "Not exactly...{w=0.5} But, it's fine now."
+    show Francesco smile
+    fr nulla "Now that you're here...{w=0.5} You're going to help me, aren't you?{w=0.3} You're gonna make it right."
+    sh nulla "Francesco, I don't understand.{w=0.3} Of course I'm going to help you but...{w=0.5} What's going on?"
+    fr nulla "You'll see...{w=0.5} I'll make it all clear later."
+    show Francesco laugh
+    fr nulla "Just come find me, alright?{w=0.3} We'll have a heart to heart."
+    show Francesco smile
+    fr nulla "Now you should go.{w=0.3} We're actually about to show a little movie...{w=0.5} Be sure to pay attention, alright?{w=0.3} It's going to put you up to speed with what I've been doing with my life."
+    sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}fine, but...{w=0.5} Weren't you supposed to show me to my table?"
+    play sound "audio/em/em_surprise.ogg"
+    show screen emote("surprise",0.78,0.05)
+    show Francesco surprise
+    fr nulla "Oh, crap, right!{w=0.3} Uhm, okay, see here..."
+    show Francesco frown at sh_med:
+        easein 5.0 xalign 0.675
+    fr nulla "See that table over there?{w=0.5} The only one with bottles of hard liquor?"
+    sh nulla "Yeah...?"
+    show Francesco smile
+    fr nulla "That's the one."
+    show Shigeo smile
+    sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}also, I see Amina sitting there?{w=0.3} You could've just pointed her out?"
+    show Francesco laugh
+    fr nulla "Now, Shigeo, where's the fun in being predictable?"
+    show Shigeo laugh
+    pause 1.0

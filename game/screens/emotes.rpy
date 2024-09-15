@@ -147,3 +147,31 @@ screen emote(emotion,x,y):
             add "blush_2" xoffset -10
             add "gui/emotes/littlesparkle.png" at frust yoffset 40 xoffset 25
     timer 2 action Hide('emote')
+
+screen emote2(emotion,x,y):
+    zorder 300
+    
+    key "dismiss" action Hide('emote')
+    frame:
+        xsize 169 ysize 266
+        background None
+        ypos y xpos x xoffset -250
+        add "bubble_base" offset (0,-20)
+        if emotion == "angry":
+            add "angry_1"
+            add "angry_2"
+        if emotion == "sweat":
+            add "sweat_1" xoffset -10
+            add "sweat_2" xoffset -10
+
+        if emotion == "surprise":
+            add "surprise"
+        if emotion == "question":
+            add "question"
+        if emotion == "frustration":
+            add "frustration" at frust
+        if emotion == "blush":
+            add "blush_1" xoffset -10
+            add "blush_2" xoffset -10
+            add "gui/emotes/littlesparkle.png" at frust yoffset 40 xoffset 25
+    timer 2 action Hide('emote2')

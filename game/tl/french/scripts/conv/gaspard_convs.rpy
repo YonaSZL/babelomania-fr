@@ -338,3 +338,35 @@ translate french strings:
     old "The Android"
     new ""
 
+# TODO: Translation updated at 2024-09-15 22:54
+
+# game/scripts/conv/gaspard_convs.rpy:80
+translate french gaspard_01_gaspard_d2ac2ff6:
+
+    # ga nulla "<Since I haven't had the pleasure so far, I assume you are an invitee on the groom's side.>"
+    ga nulla ""
+
+# game/scripts/conv/gaspard_convs.rpy:89
+translate french gaspard_01_gaspard_8a234e3b:
+
+    # sh neutral "<Is there a problem with that?>"
+    sh neutral ""
+
+# game/scripts/conv/gaspard_convs.rpy:121
+translate french gaspard_01_wedding_cc835163:
+
+    # ga nulla "Much to their disappointment, from what I could surmise.{w=0.3} Although, that pales in comparison to what I heard when Delphine got engaged."
+    ga nulla ""
+
+# game/scripts/conv/gaspard_convs.rpy:146
+translate french gaspard_01_shigeo_06f35fe0:
+
+    # ga nulla "So how do you exactly know Francesco, if I may?"
+    ga nulla ""
+
+# game/scripts/conv/gaspard_convs.rpy:147
+translate french gaspard_01_shigeo_d68017e9:
+
+    # sh smile "Oh, me and him go way back."
+    sh smile ""
+
