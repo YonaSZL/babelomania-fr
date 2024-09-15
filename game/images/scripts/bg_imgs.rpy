@@ -1,7 +1,20 @@
+default flash_zm_lvl = 1.0
+default flash_zm_hpn = True
+
 init python:
 
     def dark_flashlight(st, at):
-        return Transform("flash_circle", None, anchor=(0.5,0.5), pos=renpy.get_mouse_pos()), 1.0/30.0
+        global flash_zm_lvl
+        global flash_zm_hpn
+        if flash_zm_hpn:
+            flash_zm_lvl += 0.005
+            if flash_zm_lvl >= 1.15:
+                flash_zm_hpn = False
+        if flash_zm_hpn == False:
+            flash_zm_lvl -= 0.005
+            if flash_zm_lvl <= 1.00:
+                flash_zm_hpn = True
+        return Transform("flash_circle", None, anchor=(0.5,0.5), zoom=flash_zm_lvl, pos=renpy.get_mouse_pos()), 1.0/30.0
 
 ##System Images
 
