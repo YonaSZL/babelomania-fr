@@ -11,7 +11,7 @@ screen gaspard_conv_01:
     add "gui/talkie/bottom.png" yalign 1.0
 
     if gaspard_conv_01 == 3:
-        textbutton "Return" action Jump("story_00_meet_gaspard") align(1.0, 1.0) offset(-60,-10) text_size 60 hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
+        textbutton _("Return") action Jump("story_00_meet_amina") align(1.0, 1.0) offset(-60,-10) text_size 60 hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
 
     vbox:
         ypos 300 xpos -880 ##button positions
@@ -29,7 +29,7 @@ screen gaspard_conv_01:
             vbox:
                 spacing 20
                 button:
-                    text "Gaspard"
+                    text _("Gaspard")
                     at btn_slide
 
                     ## you can put a simple variable/renpy.seen_label here to determine which bg is shown
@@ -45,7 +45,7 @@ screen gaspard_conv_01:
 
                 if gaspard_01_gaspard:
                     button:
-                        text "The Wedding"
+                        text _("The Wedding")
                         at btn_slide
                         if gaspard_01_wedding:
                             background "gui/talkie/button.png"
@@ -57,7 +57,7 @@ screen gaspard_conv_01:
 
                 if gaspard_01_wedding:
                     button:
-                        text "The Android"
+                        text _("The Android")
                         at btn_slide
                         if gaspard_01_shigeo:
                             background "gui/talkie/button.png"

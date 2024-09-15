@@ -248,3 +248,31 @@ translate french exp_bar_corr_reception_e3d91d1f:
     # sh_i neutral "(Not that I can blame him, it is his wedding...{w=0.5} But even in an already divided group of people, I can't fit in either way.{w=0.3} It's like high school all over again.)"
     sh_i neutral ""
 
+# TODO: Translation updated at 2024-09-15 17:31
+
+translate french strings:
+
+    # game/scripts/exp/exp_bar_corr.rpy:13
+    old "Chapel Doors"
+    new ""
+
+    # game/scripts/exp/exp_bar_corr.rpy:14
+    old "Courtyard Window"
+    new ""
+
+    # game/scripts/exp/exp_bar_corr.rpy:15
+    old "Smoking Room"
+    new ""
+
+    # game/scripts/exp/exp_bar_corr.rpy:16
+    old "Reception Area"
+    new ""
+
+    # game/scripts/exp/exp_bar_corr.rpy:17
+    old "Stairs Up"
+    new ""
+
+    # game/scripts/exp/exp_bar_corr.rpy:19
+    old "Stairs Down"
+    new ""
+

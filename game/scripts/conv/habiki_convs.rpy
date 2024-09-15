@@ -9,7 +9,7 @@ screen habiki_conv_01:
     add "gui/talkie/bottom.png" yalign 1.0
 
     if habiki_conv_01 == 3:
-        textbutton "Return" action Jump("story_00_meet_gaspard") align(1.0, 1.0) offset(-60,-10) text_size 60 hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
+        textbutton _("Return") action Jump("story_00_meet_gaspard") align(1.0, 1.0) offset(-60,-10) text_size 60 hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
 
     vbox:
         ypos 300 xpos -880 ##button positions
@@ -27,7 +27,7 @@ screen habiki_conv_01:
             vbox:
                 spacing 20
                 button:
-                    text "Professor Habiki"
+                    text _("Professor Habiki")
                     at btn_slide
 
                     ## you can put a simple variable/renpy.seen_label here to determine which bg is shown
@@ -43,7 +43,7 @@ screen habiki_conv_01:
 
 
                 button:
-                    text "The Android"
+                    text _("The Android")
                     at btn_slide
                     if habiki_01_tabitha:
                         background "gui/talkie/button.png"
@@ -55,7 +55,7 @@ screen habiki_conv_01:
 
 
                 button:
-                    text "The Wedding"
+                    text _("The Wedding")
                     at btn_slide
                     if habiki_01_wedding:
                         background "gui/talkie/button.png"

@@ -8,11 +8,11 @@ screen bathroom_painting_examine():
         ground "images/cgs/chapter_00/bathroom_painting.jpg"
         hover "images/cgs/chapter_00/bathroom_painting.jpg"
 
-        hotspot (460, 0, 1460, 825) action Jump("exm_bathroom_painting_subject") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip "Painting Subject"#SUBJECT
-        hotspot (533, 980, 856, 100) action Jump("exm_bathroom_painting_title") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip "Frame"#TITLE
-        hotspot (0, 0, 300, 130) action Jump("exm_bathroom_painting_signature") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip "Handwriting"#SIGNATURE
+        hotspot (460, 0, 1460, 825) action Jump("exm_bathroom_painting_subject") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Painting Subject")#SUBJECT
+        hotspot (533, 980, 856, 100) action Jump("exm_bathroom_painting_title") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Frame")#TITLE
+        hotspot (0, 0, 300, 130) action Jump("exm_bathroom_painting_signature") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Handwriting")#SIGNATURE
         if bathroom_painting_examine == 3:
-            hotspot (1645, 922, 275, 158) action Jump("exm_bathroom_painting_return") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip "Return"#RETURN
+            hotspot (1645, 922, 275, 158) action Jump("exm_bathroom_painting_return") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Return")#RETURN
     
     $ tooltip = GetTooltip()
 

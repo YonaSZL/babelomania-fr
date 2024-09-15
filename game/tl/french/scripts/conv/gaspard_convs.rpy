@@ -326,3 +326,15 @@ translate french gaspard_01_shigeo_3e3f4dbd:
     # sh_i laugh "(Well, what do you know?{w=0.3} That weird bathroom encounter turned out fruitful, after all.)"
     sh_i laugh ""
 
+# TODO: Translation updated at 2024-09-15 17:31
+
+translate french strings:
+
+    # game/scripts/conv/gaspard_convs.rpy:48
+    old "The Wedding"
+    new ""
+
+    # game/scripts/conv/gaspard_convs.rpy:60
+    old "The Android"
+    new ""
+

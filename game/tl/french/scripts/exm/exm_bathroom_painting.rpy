@@ -156,3 +156,19 @@ translate french strings:
     old "I want to observe it more."
     new ""
 
+# TODO: Translation updated at 2024-09-15 17:31
+
+translate french strings:
+
+    # game/scripts/exm/exm_bathroom_painting.rpy:11
+    old "Painting Subject"
+    new ""
+
+    # game/scripts/exm/exm_bathroom_painting.rpy:12
+    old "Frame"
+    new ""
+
+    # game/scripts/exm/exm_bathroom_painting.rpy:13
+    old "Handwriting"
+    new ""
+

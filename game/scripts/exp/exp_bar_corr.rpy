@@ -10,13 +10,13 @@ screen exp_bar_corr():
         ground "images/bgs/baroque/bar_corr_recep.jpg"
         hover "images/bgs/baroque/bar_corr_recep.jpg"
 
-        hotspot (676, 74, 503, 359) action Jump("exp_bar_corr_chapel") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip "Chapel Doors"#CHAPEL
-        hotspot (383, 90, 228, 297) action Jump("exp_bar_corr_window") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip "Courtyard Window"#WINDOW
-        hotspot (11, 311, 162, 728) action Jump("exp_bar_corr_smoke") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip "Smoking Room"#SMOKE
-        hotspot (1724, 367, 196, 713) action Jump("exp_bar_corr_reception") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip "Reception Area"#RECEPTION
-        hotspot (1213, 39, 161, 256) action Jump("exp_bar_corr_up") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip "Stairs Up"#STAIRS UP
+        hotspot (676, 74, 503, 359) action Jump("exp_bar_corr_chapel") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Chapel Doors")#CHAPEL
+        hotspot (383, 90, 228, 297) action Jump("exp_bar_corr_window") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Courtyard Window")#WINDOW
+        hotspot (11, 311, 162, 728) action Jump("exp_bar_corr_smoke") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Smoking Room")#SMOKE
+        hotspot (1724, 367, 196, 713) action Jump("exp_bar_corr_reception") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Reception Area")#RECEPTION
+        hotspot (1213, 39, 161, 256) action Jump("exp_bar_corr_up") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Stairs Up")#STAIRS UP
         if exp_bar_corr_01 == 5:
-            hotspot (1211, 343, 134, 261) action Jump("exp_bar_corr_down") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip "Stairs Down"#STAIRS DOWN
+            hotspot (1211, 343, 134, 261) action Jump("exp_bar_corr_down") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Stairs Down")#STAIRS DOWN
     
     $ tooltip = GetTooltip()
 

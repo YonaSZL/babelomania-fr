@@ -63,28 +63,28 @@ screen categories():
             button:
                     xysize(350,75)
                     add "gui/codex/btn_bg.png"
-                    text "People" 
+                    text _("People" )
                     hover_sound "audio/sfx/gui_hover.ogg"
                     activate_sound "audio/sfx/gui_confirm.ogg"
                     action [Hide("categories"),Show("entries", dissolve,c_people)]
             button:
                     xysize(350,75)
                     add "gui/codex/btn_bg.png"
-                    text "Events" 
+                    text _("Events" )
                     hover_sound "audio/sfx/gui_hover.ogg"
                     activate_sound "audio/sfx/gui_confirm.ogg"
                     action [Hide("categories"),Show("entries", dissolve, c_events)]
             button:
                     xysize(350,75)
                     add "gui/codex/btn_bg.png"
-                    text "Locations" 
+                    text _("Locations" )
                     hover_sound "audio/sfx/gui_hover.ogg"
                     activate_sound "audio/sfx/gui_confirm.ogg"
                     action [Hide("categories"),Show("entries", dissolve, c_locations)]
             button:
                     xysize(350,75)
                     add "gui/codex/btn_bg.png"
-                    text "Items" 
+                    text _("Items" )
                     hover_sound "audio/sfx/gui_hover.ogg"
                     activate_sound "audio/sfx/gui_confirm.ogg"
                     action [Hide("categories"),Show("entries",dissolve, c_items)]
