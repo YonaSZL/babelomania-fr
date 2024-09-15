@@ -137,7 +137,7 @@ label story_00_invitation:
     sh_xi darko frown "(I should've just sent a card...{w=0.5} This is killing me.)"
     tb_n "<And let me tell you, the attention to detail of monsieur Du Bois went far beyond just architecture!>"
     sh_xi darko neutral "(I can recognize the name of the original owner, something about architecture...{w=0.5} <Au-delà>?{w=0.3} He went beyond architecture, I guess?)"
-    tb_n "<You will find, spread out throughout the estate, different pieces of art collected over the course of his travels.{w=0.3} Or specially commissioned to complement specific rooms of the complex!>"
+    tb_n "<You will find, spread throughout the estate, different pieces of art collected over the course of his travels.{w=0.3} Or specially commissioned to complement specific rooms of the complex!>"
     tb_n2 "<Indeed?{w=0.5} To be honest, I don't exactly approve of a lot of the placements.{w=0.3} Like in the toilets downstairs?>"
     sh_xi darko surprise "(Now they're talking about the toilet of all things?{w=0.3} The place of the toilets??)"
     tb_n "<Indeed...{w=0.5} You have to remember, though, that the family turned the estate from museum to source of profit in 2025.{w=0.3} Afterwards, god only knows who had a hand in reshaping it and moving things around.>"
@@ -151,13 +151,13 @@ label story_00_invitation:
     show Shigeo neutral at sh_big:
         xalign 0.5
     with Reveal
-    pause 0.5
+    pause 1.5
     tb_n2 "<What do you mean, monsieur {b}Arata{/b}?>"
     show Shigeo smile
     sh nulla "<Well, if you see something that creepy while entering the toilets you->"
     pause 1.0
     play sound "audio/em/em_surprise.ogg"
-    show screen emote("surprise",0.445,0.05)
+    show screen emote("surprise",0.5,0.05)
     show Shigeo surprise sweat
     sh_i nulla "(Aw, crap!{w=0.3} There's no such thing as scared shitless in French!{w=0.3} They say that you have a 'blue fear'!)"
     tb_n "<Yes, yes, the subject matter is quite fascinatingly grotesque...{w=0.5} So?>"
@@ -200,7 +200,7 @@ label story_00_relaxation:
     jump story_00_bathroom_break
 
 label story_00_bathroom_break:
-    show Shigeo sad
+    show Shigeo sad -sweat
     sh_i nulla "(Ugh, this is really the worst...{w=0.5} I need some air.)"
     play sound "audio/se/item_slide.ogg"
     tb_n "<Still a shame that the original vision of Du Bois got so altered...{w=0.5} Oh, you're leaving us, young man?>"
@@ -218,10 +218,10 @@ label story_00_bathroom_break:
     tb_n2 "<He is.{w=0.3} Wonder why he's sitting with us, then?>"
     pause 1.0
     stop LoNoise fadeout 0.5
-    stop music fadeout 0.5
+    stop music fadeout 1.0
     scene black with dissolve
     $ move_time(0,4)
-    pause 0.5
+    pause 1.0
     play music "<from 39>audio/bgm/canon_in_bois_muted.ogg" fadein 0.2
     pause 0.5
     sh_i "(My name is Shigeo Arata.{w=0.3} I'm a friend of the groom at this reception...)"
@@ -264,7 +264,7 @@ label story_00_bathroom_encounters:
         linear 0.3 xalign 0.35
     sh nulla "Woah!{w=0.3} Excuse me!"
     pause 0.5
-    sh_i nulla "(Geez, she was in a hurry!{w=0.3} I think it was one of the bridemaids?)"
+    sh_i nulla "(Geez, she was in a hurry!{w=0.3} I think it was one of the bridesmaids?)"
     show Shigeo neutral
     sh_i nulla "(I ended up being the one apologizing, too...{w=0.5} Not even a <désolée>?{w=0.3} Some people are weird.)"
     pause 1.0
@@ -279,7 +279,7 @@ label story_00_bathroom_encounters:
     scene bar_bathroom with Reveal3
     pause 1.0
     play sound "audio/se/water_faucet.ogg"
-    sh_i surprise "(Hmmm?{w=0.5} Someone else is here, too.)"
+    sh_i surprise "(Hmmm?{w=0.5} Someone else is here.)"
     pause 0.5
     show Gaspard surprise at ga_med:
         xalign 0.5
@@ -297,6 +297,7 @@ label story_00_bathroom_encounters:
     play sound3 "audio/se/door_stall.ogg"
     scene black with dissolve
     pause 2.0
+    $ move_time(0,5)
     play sound "audio/se/water_faucet.ogg"
     pause 0.5
     scene bar_bathroom with dissolve
@@ -305,7 +306,7 @@ label story_00_bathroom_encounters:
     pause 1.0
     scene bathroom_painting with Reveal
     pause 1.5
-    sh_i neutral "(Looking at it up close, it feels even more out of place...{w=0.5} No matter what excuses I make up.)"
+    sh_i neutral -sweat "(Looking at it up close, it feels even more out of place...{w=0.5} No matter what excuses I make up.)"
     sh_i frown "(When was this made?{w=0.5} And by whom?)"
     pause 1.0
     call screen bathroom_painting_examine
@@ -327,7 +328,7 @@ label story_00_bathroom_return:
     show Shigeo neutral
     sh_i nulla "(Let's go back upstairs, now, and see if I can't actually find someone to socialize with...{w=0.5} Or maybe the bride's family may have finally relinquished their hold on Francesco.{w=0.3} That'd be nice.)"
     pause 1.0
-    stop music fadeout 0.5
+    stop music fadeout 1.0
     scene black with dissolve
     pause 0.5
     $ move_time(0,4)
@@ -343,14 +344,14 @@ label story_00_bathroom_return:
         xalign 0.7
     with dissolve
     pause 0.5
-    sh_i nulla "(Someone left the door to the smoking room open...{w=0.5} And now everyone else can also partake of their breathalized cancer.)"
+    sh_i nulla "(Someone left the door to the smoking room open...{w=0.5} And now everyone else shall partake of their breathalized cancer, too.)"
     show Shigeo at sh_med:
         easein 7.0 xalign 0.5
     sh_i nulla "(Let's close the door before the stench seeps in my clo-)"
     pause 0.5
     stop music fadeout 0.2
     play sound "audio/em/em_shock.ogg"
-    show screen emote("surprise",0.445,0.05)
+    show screen emote("surprise",0.5,0.05)
     pause 0.5
     show Shigeo surprise
     pause 1.5
@@ -376,15 +377,15 @@ label story_00_bathroom_return:
     ta_x darko "Failure to remove yourself from the restricted area will be cause for reprisal.{w=0.3} Please acknowledge."
     sh_i surprise "(This...{w=0.5} What is this thing?!{w=0.3} It looks human...{w=0.5} It has the proportions of a human, its face looks human and yet...)"
     sh_i shock "(That sickly looking grey skin...{w=0.5} Those lifeless ashen eyes...{w=0.5} That even voice, completely devoid of emotion or inflection...)"
-    sh_i fear "(What the hell is this {b}thing{/b}?!)"
-    sh fear "NNGH!{w=0.3} Let go of me, you-!"
+    sh_i angry "(What the hell is this {b}thing{/b}?!)"
+    sh angry "NNGH!{w=0.3} Let go of me, you-!"
     ha_x darko "{b}Tabitha{/b}, that's quite enough."
     sh shock "...!"
     pause 1.0
     stop music fadeout 3.5
     pause 1.0
     scene bar_corr_recep
-    show Tabitha neutral at ta_med:
+    show Tabitha neutral brief at ta_med:
         xalign 0.4
     show Shigeo shock sweat at sh_med:
         xalign 0.6
@@ -392,7 +393,7 @@ label story_00_bathroom_return:
     pause 0.5
     ha_x darko "Let the young man go."
     play sound "audio/em/em_question.ogg"
-    show screen emote("question",0.55,0.05)
+    show screen emote("question",0.6,0.05)
     show Shigeo surprise
     sh nulla "Who...?"
     pause 2.0
@@ -422,7 +423,7 @@ label story_00_bathroom_return:
     pause 1.0
     show Shigeo surprise with dissolve
     sh nulla "I've never seen one quite like this, I'll give you that."
-    pause 0.5
+    pause 1.0
     show Tabitha neutral
     show Habiki neutral
     ha_x nulla "But you've seen others...?{w=0.5} They're not exactly common."
@@ -447,7 +448,7 @@ label story_00_bathroom_return:
     pause 1.0
     scene bar_corr_recep with dissolve
     pause 1.0
-    show Tabitha neutral at ta_big:
+    show Tabitha neutral brief at ta_big:
         xalign 0.3
     show Habiki neutral at ha_big:
         xalign 0.7
@@ -481,7 +482,7 @@ label story_00_meet_gaspard:
         xalign 0.5
     with dissolve
     pause 0.5
-    sh_i nulla "(Freaky...{w=0.5} I've never seen an android that looks so much like a human.{w=0.3} Regulations in Japan really are lax, aren't they?)"
+    sh_i nulla "(Freaky...{w=0.5} I've never seen an Android that looks so much like a human.{w=0.3} Regulations in Japan really are lax, aren't they?)"
     show Shigeo surprise
     sh_i nulla "(Also, why are they going upstairs...?{w=0.5} Oh, whatever.{w=0.3} It's none of my business.)"
     show Shigeo neutral
@@ -521,8 +522,8 @@ label story_00_meet_gaspard:
     ga nulla "<Pleased to make your acquaintance.>"
     sh surprise "<I'm called Arata.{w=0.3} Shigeo Arata...>"
     sh_i surprise "(Hmmm, I do have a window for Francesco but at the same time, it would be rude to just brush this person off...)"
-    sh_i smile "(Also, he will eventually need to go back to his seat.{w=0.3} This guy looks to be around my same age, so a new acquaintance wouldn't hurt.)"
-    sh surprise "<Pleased to meet you too, Gaspard.>"
+    sh_i smile "(Also, the groom will eventually need to go back to his seat.{w=0.3} This guy looks to be around my same age, so a new acquaintance wouldn't hurt.)"
+    sh smile "<Pleased to meet you too, Gaspard.>"
     pause 1.0
     scene bar_reception with dissolve
     pause 0.5

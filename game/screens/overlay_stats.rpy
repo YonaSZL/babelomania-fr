@@ -53,8 +53,8 @@ screen overlay_stats():
                 xysize(395, 77)
                 text "[dis_hours]:[dis_minutes]" align(0.5, 0.5) yoffset 4 textalign 0.5 color '#bfaa8f' font "gui/font/Klotee.ttf"
                 add "gui/stats/signal.png" yalign 0.5 xoffset 50
-                hover_sound "audio/sfx/gui_hover.ogg"
                 if codex_active == True:
+                    hover_sound "audio/sfx/gui_hover.ogg"
                     activate_sound "audio/sfx/gui_codex.ogg"
                     action ShowMenu("codex_main")
                 else:

@@ -33,13 +33,13 @@ label exp_bar_corr_window:
     pause 0.5
     play sound "audio/se/window_closed.ogg"
     pause 0.5
-    sh_i neutral "(The window frame is quite modern...{w=0.5} I guess the original one needed replacement.{w=0.3} It's the type that need a special key to be opened, hm?)"
+    sh_i neutral "(The window frame is quite modern...{w=0.5} I guess the original one needed replacement.{w=0.3} It's the type that needs a special key to be opened, hm?)"
     sh_i frown "(I can barely see the inner courtyard through the tempered glass...)"
     play sound "audio/sfx/gui_hint.ogg"
     sh_i surprise "(Wait, {b}tempered glass{/b}?{w=0.5} Why would they need to have tempered glass windows, here?)"
     sh_i neutral "(Are they that worried about intruders?{w=0.3} I mean, it is kind of isolated but...)"
     sh_i frown "(Then again, they have been hosting some pretty exclusive events here over the years.{w=0.3} Celebrity weddings, launch parties, even political summits.)"
-    sh_i smile "(If you want to sell yourself as a fitting venue for those, the level of security would be a big selling point, wouldn't it?)"
+    sh_i smile "(If you want to present yourself as a fitting venue for those, the level of security would be a big selling point, wouldn't it?)"
     pause 1.0
     if exp_bar_corr_window == False:
         $ exp_bar_corr_window = True
@@ -49,8 +49,8 @@ label exp_bar_corr_window:
 label exp_bar_corr_chapel:
     $ renpy.block_rollback()
     pause 0.5
-    sh_i neutral "(Those heavy doors lead to the chapel...{w=0.5} Pretty cool location, not going to lie.)"
-    sh_i smile "(I can see why Francesco and his beau chose it.{w=0.3} It reminded me of a lot of our trips, when our families would go out of town together.)"
+    sh_i neutral "(Those heavy doors lead to the chapel...{w=0.5} This château is a pretty cool location, not going to lie.)"
+    sh_i smile "(I can see why Francesco and his beau chose it.{w=0.3} It reminds me of a lot of our trips, when our families would go out of town together.)"
     sh_i sad "(It's heartbreaking his parents couldn't be here today...{w=0.5} They would've loved this place.)"
     sh_i neutral "(And while I don't know much about her yet...{w=0.5} I'm sure they would've loved {nw}"
     play sound "audio/sfx/gui_hint.ogg"
@@ -81,8 +81,8 @@ label exp_bar_corr_reception:
     sh_i neutral "(I can still hear the background music.{w=0.3} The chatter of invitees, making merry.{w=0.3} The family of the bride, happily sharing a table with the newly weds.)"
     sh_i frown "(And the constant undercurrent of snide comments.{w=0.3} From what little Francesco told me when we last talked, it was always going to be a water and oil situation but...)"
     sh_i surprise "(Makes one wonder how the heck they even ended up meeting.{w=0.3} The guy I knew wouldn't be caught dead hanging out with some of the types at this wedding.)"
-    sh_i sad "(Why did he invite me too, anyway?{w=0.5} He's not wanting for friends, certainly.{w=0.3} And it's not like he's made any time to try and reconnect.)"
-    sh_i neutral "(Even in an already divided group of people, I can't fit in either way...{w=0.5} It's like high school all over again.)"
+    sh_i sad "(Why did he invite me too, anyway?{w=0.5} He's obviously not wanting for friends.{w=0.3} And it's not like he's made time to try and reconnect.)"
+    sh_i neutral "(Not that I can blame him, it is his wedding...{w=0.5} But even in an already divided group of people, I can't fit in either way.{w=0.3} It's like high school all over again.)"
     pause 1.0
     if exp_bar_corr_reception == False:
         $ exp_bar_corr_reception = True

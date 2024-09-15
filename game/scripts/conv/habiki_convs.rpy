@@ -120,7 +120,7 @@ label habiki_01_tabitha:
     pause 0.5
     sh surprise "You could not...{w=0.5} Persuade your Android?"
     show Habiki neutral
-    ha_x nulla "Oh, if I really wanted I could've ordered her to...{w=0.5} But I find that going against actions dictated by her prime directives is quite disruptive."
+    ha nulla "Oh, if I really wanted I could've ordered her to...{w=0.5} But I find that going against actions dictated by her prime directives is quite disruptive."
     sh frown "Disruptive to...{w=0.5} What, exactly?"
     pause 1.0
     show Habiki smile with dissolve
@@ -152,7 +152,7 @@ label habiki_01_wedding:
     ha nulla "I was supposed to arrive earlier but bad weather delayed my flight...{w=0.5} I hope young Francesco didn't take offense with my absence."
     sh surprise "Francesco...{w=0.5} So you're with the groom's party."
     show Habiki smile
-    ha nulla "Indeed.{w=0.3} And so do you, I believe."
+    ha nulla "Indeed.{w=0.3} And so are you, I believe."
     show Tabitha bow
     sh neutral "Well, yes, but...{w=0.5} How can you tell?"
     show Habiki laugh
