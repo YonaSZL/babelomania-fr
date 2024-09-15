@@ -36,6 +36,23 @@ image side tabitha = LayeredImageProxy("Tabitha_por")
 image side tabitha nulla = Null()
 image side tabitha darko = LayeredImageProxy("Tabitha_por", Transform(matrixcolor=TintMatrix(Color("#000", alpha=0.85))))
 
+##Amina
+define am = Character(_("Amina Abbas"), what_prefix='\"', what_suffix='\"', image="amina", ctc="ctc_blink", ctc_position="nestled")
+define am_x = Character(_("?????"), what_prefix='\"', what_suffix='\"', image="amina", ctc="ctc_blink", ctc_position="nestled")
+define am_n = Character(_("Amina Abbas"), what_suffix='\"', image="amina", ctc="ctc_blink", ctc_position="nestled")
+define am_st = Character(_("Amina Abbas"), what_prefix='{u}\"', what_suffix='\"', image="amina", ctc="ctc_blink", ctc_position="nestled")
+image side amina = LayeredImageProxy("Amina_por")
+image side amina nulla = Null()
+image side amina darko = LayeredImageProxy("Amina_por", Transform(matrixcolor=TintMatrix(Color("#000", alpha=0.85))))
+
+##Francesco
+define fr = Character(_("Francesco Colombo"), what_prefix='\"', what_suffix='\"', image="francesco", ctc="ctc_blink", ctc_position="nestled")
+define fr_x = Character(_("?????"), what_prefix='\"', what_suffix='\"', image="francesco", ctc="ctc_blink", ctc_position="nestled")
+define fr_n = Character(_("Francesco Colombo"), what_suffix='\"', image="francesco", ctc="ctc_blink", ctc_position="nestled")
+define fr_st = Character(_("Francesco Colombo"), what_prefix='{u}\"', what_suffix='\"', image="francesco", ctc="ctc_blink", ctc_position="nestled")
+image side francesco = LayeredImageProxy("Francesco_por")
+image side francesco nulla = Null()
+image side francesco darko = LayeredImageProxy("Francesco_por", Transform(matrixcolor=TintMatrix(Color("#000", alpha=0.85))))
 
 ##Gaspard
 define ga = Character(_("Gaspard Faucigny"), what_prefix='\"', what_suffix='\"', image="gaspard", ctc="ctc_blink", ctc_position="nestled")
@@ -131,8 +148,13 @@ init -1:
         yoffset 260
         zoom 0.70
         transform_anchor True
-    transform flash_position:
-        pos pos_mouse
+    transform fr_big:
+        yoffset 123
+        transform_anchor True
+    transform fr_med:
+        yoffset 185
+        zoom 0.70
+        transform_anchor True
 
 label splashscreen:
     scene black

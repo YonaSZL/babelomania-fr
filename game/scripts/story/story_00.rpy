@@ -534,4 +534,118 @@ label story_00_meet_gaspard:
     call screen gaspard_conv_01
 
 label story_00_meet_amina:
-    "YO"
+    $ move_time(0,9)
+    $ renpy.block_rollback()
+    pause 0.5
+    ga nulla "You must come sit with me and mine for the rest of the evening.{w=0.3} I insist."
+    sh smile "I would really appreciate it, thanks.{w=0.3} I've been spending the first part of the dinner surrounded by older academics who don't speak a word of English."
+    show Gaspard neutral
+    ga nulla "Oh, we're at least bilingual at our table.{w=0.3} I'm sure you'll-"
+    am_x darko "Gaspard?"
+    pause 0.5
+    show Gaspard surprise
+    pause 1.0
+    show Gaspard neutral with dissolve
+    pause 0.5
+    ga nulla "Ah, {b}Amina{/b}.{w=0.3} Perfect timing."
+    sh_i surprise "(Amina?{w=0.5} Oh...)"
+    pause 1.0
+    show Amina neutral at am_big:
+        xalign 0.85
+    with Reveal3
+    pause 1.0
+    ga nulla "Let me introduce you to Shigeo Arata.{w=0.3} He's a childhood friend of Francesco, if you can believe it."
+    show Amina surprise
+    am nulla "Is he, now?{w=0.5} Interesting."
+    sh smile "A pleasure to meet you.{w=0.3} I have to ask, though, why is it such a surprise to everyone whenever I mention that?"
+    am nulla "Because Francesco barely talks about his life before coming to France."
+    show Amina smile
+    am nulla "Having a living piece of it present at his wedding is not something anyone expected...{w=0.5} I'm Amina Abbas, pleasure is mine."
+    ga nulla "Also known as my beautiful girlfriend...{w=0.5} You needed something from me, <petite>?"
+    pause 0.5
+    show Amine neutral with dissolve
+    pause 0.5
+    am nulla "Your father wanted to speak to you.{w=0.3} Something about an email."
+    pause 1.0
+    show Gaspard frown with dissolve
+    pause 0.5
+    ga nulla "Ugh, honestly...{w=0.5} Not disconnecting from work even at an event like this."
+    show Gaspard neutral
+    ga nulla "Let me go deal with that real quick.{w=0.3} <Petite>, mind showing Shigeo to our table?{w=0.3} He will be sitting with us for the rest of the night."
+    show Amina surprise
+    am nulla "He is?{w=0.3} But Gaspard-"
+    hide Gaspard with dissolve
+    pause 1.0
+    show Amina frown with dissolve
+    pause 0.5
+    am nulla ".{w=0.3}.{w=0.3}.{w=0.5}there are no more free seats."
+    sh surprise "Oh.{w=0.3} I'm sorry, I...{w=0.5} I didn't mean to be a bother."
+    am nulla "You did nothing wrong...{w=0.5} It's fine, we can just ask the caterers to add one more chair."
+    show Amina surprise
+    am nulla "Honestly, I'm more surprised than anything else.{w=0.3} Gaspard never hits it off so quickly with anyone, leave alone-"
+    pause 1.0
+    show Amina neutral
+    am nulla "Ehm, nevermind that.{w=0.3} Come, I'll show you to our table."
+    sh surprise "Uhm...{w=0.5} Sure.{w=0.3} Let me just-"
+    stop music fadeout 3.5
+    fr_x darko smile "<Counterorder, Amina.{w=0.3} I will show him to your table myself in a couple minutes.>"
+    show Amina surprise sweat
+    sh_i sweat surprise "(...!{w=0.5} That...{w=0.5} That voice...)"
+    pause 1.0
+    play music "audio/bgm/francesco.ogg"
+    pause 1.5
+    scene bar_reception with dissolve
+    pause 0.5
+    show Francesco smile at fr_med:
+        xalign 0.85
+    show Shigeo surprise sweat at sh_med:
+        xalign 0.5
+    show Amina surprise sweat at am_med:
+        xalign 0.2
+    with Reveal3
+    pause 1.5
+    sh_i nulla "(It's changed...{w=0.5} It carries something else.{w=0.3} So much else, compared to when we last met...{w=0.5} Yet, the timbre and cadence are...{w=0.5} Unmistakable, even through the filter of French.)"
+    am nulla "{b}Francesco{/b}, you...{w=0.5} Scared me.{w=0.3} I didn't even hear you approach."
+    show Francesco laugh
+    fr nulla "Oh, you know me, soft stepped and all.{w=0.3} And I guess I felt like surprising you~"
+    show Francesco smile
+    fr nulla "Anyway, as I said:{w=0.3} pleeee~eeeeeease let me catch up a little with my best friend ever?{w=0.5} I only have a few minutes of freedom."
+    pause 1.0
+    show Amina neutral -sweat
+    am nulla "Fine by me.{w=0.3} See you at the table then, Arata."
+    play sound2 "audio/se/steps_stone_walk.ogg"
+    pause 1.0
+    show Shigeo neutral -sweat with dissolve
+    pause 1.0
+    sh nulla "Your best friend ever, am I...?"
+    show Francesco neutral
+    fr nulla "Always have been, man.{w=0.3} It's great to see you face to face again, after all these years."
+    pause 1.0
+    show Shigeo smile
+    sh nulla "Pfft, how can you say that with a straight face...?{w=0.3} I didn't even know you had gotten married!"
+    show Francesco surprise
+    fr nulla "Oh, believe me, I did you a favour!{w=0.3} The ceremony at the commune was {i}such{/i} a drag!{w=0.3} And it was all in French, mandatory!"
+    show Francesco smile
+    fr nulla "Last I remember, you couldn't stop complaining to me about the language."
+    sh nulla "And I still could, for days...{w=0.5} But leave alone the wedding, you hadn't even told me you had gotten hitched!"
+    show Francesco surprise
+    fr nulla "Whaaaaat?{w=0.5} I did tell you that dating was going pretty well, didn't?"
+    show Shigeo laugh
+    sh nulla "<Oh, you son of a bitch...!>{w=0.5} What's wrong with you?!"
+    show Francesco laugh
+    fr nulla "Oh, you have {i}no{/i} idea!"
+    pause 1.5
+    show Shigeo smile
+    show Francesco smile
+    with dissolve
+    pause 1.0
+    sh nulla "Have you been well?{w=0.3} I can tell you're doing well for yourself romance-wise but what about the rest?"
+    fr nulla "Real good.{w=0.3} The in-laws are a bit much but, I can handle them.{w=0.3} I can handle most things that come my way, nowadays."
+    show Francesco surprise
+    fr nulla "And your parents?{w=0.3} How are they?"
+    pause 0.5
+    show Shigeo neutral
+    sh nulla "Better...{w=0.5} Dad's gotten over what happened in Rome, adjusted to his new post."
+    show Shigeo sad
+    sh nulla "Still not a word from mother.{w=0.3} But I still keep in contact with uncle's kids, she's doing fine."
+    fr nulla "I see...{w=0.5} It was so screwed up "
