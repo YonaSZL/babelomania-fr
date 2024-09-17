@@ -36,3 +36,8 @@ image intro_phone_c = "images/cgs/intro/intro_phone_c.jpg"
 
 image tabitha_grab = "images/cgs/chapter_00/tabitha_grab.jpg"
 image bathroom_painting = "images/cgs/chapter_00/bathroom_painting.jpg"
+
+image gaspard_turn_00 = "images/cgs/chapter_00/gaspard/gaspard_turn_00.jpg"
+image gaspard_turn_01 = "images/cgs/chapter_00/gaspard/gaspard_turn_01.jpg"
+image gaspard_turn_02 = "images/cgs/chapter_00/gaspard/gaspard_turn_02.jpg"
+image gaspard_turn_03 = "images/cgs/chapter_00/gaspard/gaspard_turn_03.jpg"
