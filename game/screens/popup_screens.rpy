@@ -25,10 +25,10 @@ screen confirm(message, yes_action, no_action=None):
 
         hbox:
 
-            textbutton _("Confirm") action yes_action hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"
+            textbutton _("Confirm") action yes_action
             # Modified so you can just have a confirmation prompt
             if no_action is not None:
-                textbutton _("Cancel") action no_action hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"
+                textbutton _("Cancel") action no_action
 
     ## Right-click and escape answer "no".
     if no_action is not None:
@@ -107,7 +107,7 @@ style skip_hbox:
 
 style skip_frame:
     is empty
-    ypos 268
+    ypos 15
     background Frame("gui/skip.png", 24, 30, 75, 30, tile=True)
     padding (24, 12, 75, 12)
 
@@ -134,7 +134,7 @@ screen notify(message):
     style_prefix "notify"
 
     frame at notify_appear:
-        text "[message!tq]"
+        text "[message!tq]" align(0.5, 0.5)
 
     timer 3.25 action Hide('notify')
 
@@ -149,13 +149,13 @@ transform notify_appear:
 
 style notify_frame:
     is empty
-    ypos 218
+    ypos 68 xalign 0.5
 
-    background Frame("gui/skip.png", 24, 30, 75, 30, tile=True)
-    padding (24, 8, 60, 8)
+    background Frame("gui/button/choice_idle_background.png", 150, 33, 150, 33, tile=False)
+    padding (140, 15, 140, 15)
 
 style notify_text:
-    size 24
+    size 30
     color '#bfaa8f'
 
 
