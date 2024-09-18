@@ -5,3 +5,4 @@ label it_flashlight_use:
         jump story_01_be_light
     else:
         $ flashlight_consume = True
+        call screen VARIABLE
