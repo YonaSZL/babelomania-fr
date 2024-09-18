@@ -15,5 +15,8 @@ label story_01_awakening:
     pause 1.3
     sh surprise sweat ".{w=0.3}.{w=0.3}.{w=0.5}where...?"
     pause 1.0
+    $ current_location = "taisho_1f_study"
     scene black
     call screen taisho_1f_study_examine_01
+
+label story_01_be_light:

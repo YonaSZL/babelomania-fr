@@ -4,14 +4,21 @@ default stat2 = 80
 
 default inventory_show = True
 default time_menu = True
-default stat1_show = True
+default stat1_show = True #Flashlight Charge
 default stat2_show = True
 default codex_active = True
+default flashlight_use = False
+default flashlight_consume = False
 
 default amina_cmp = False
 default gaspard_cmp = False
 
 screen overlay_stats():
+
+    if flashlight_use:
+        add "dark_flashlight"
+    if flashlight_consume:
+        text "YO" #timer to lower charge
 
     vbox:
         xalign 1.0 offset(-103, 245)  spacing -10

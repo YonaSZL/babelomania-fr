@@ -10,7 +10,8 @@ init python:
 
     test_item = Item("Apple", "gui/inventory/test.png", "item_drop")
 
-default inventory = [test_item,test_item,test_item,test_item,test_item]
+default inventory = [it_flashlight]
+define it_flashlight = Item(_("Flashlight"), "gui/inventory/flashlight.png", "item_drop")
 screen inventory():
 
     modal True

@@ -99,6 +99,8 @@ define glitch_unload15 = ImageDissolve("gui/transitions/glitch.jpg", 1.5, 32, re
 default persistent.gore = True
 default tooltip = "None"
 default mouse_pos = None
+default story_progress = 0
+default current_location = 0
 
 #Defining Music Channels
 init python:
