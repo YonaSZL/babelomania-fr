@@ -779,7 +779,7 @@ label story_00_meet_amina:
     $ quick_menu = False
     scene bar_reception_mood_video
     pause 1.0
-    play sound "audio/se/transform_video.ogg" fadein 2.0
+    play sound "audio/se/wedding_video.ogg" fadein 1.0
     show bar_reception_mood_video_glitch
     pause 1.5
     show bathroom_painting_glitch
@@ -790,7 +790,7 @@ label story_00_meet_amina:
     pause 0.5
     show bathroom_painting_glitch_2
     pause 1.0
-    play sound4 "audio/se/glitch_short.ogg"
+    play sound4 "audio/se/glitch_long.ogg"
     scene black with glitch_unload_5
     pause 2.0
     jump story_01_awakening

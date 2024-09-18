@@ -37,6 +37,7 @@ image bar_corr_recep = "images/bgs/baroque/bar_corr_recep.jpg"
 image bar_bathroom = "images/bgs/baroque/bar_bathroom.jpg"
 image bathroom_painting = "images/bgs/baroque/bathroom_painting.jpg"
 
+image bar_reception_mood = "images/bgs/baroque/bar_reception_mood.jpg"
 image bar_reception_mood_video = "images/bgs/baroque/bar_reception_mood_video.jpg"
 image bar_reception_mood_video_glitch_base = At("images/bgs/baroque/bar_reception_mood_video.jpg", Static)
 image bar_reception_mood_video_glitch:
@@ -49,4 +50,5 @@ image bar_reception_mood_video_glitch:
 
 image flash_circle = "images/bgs/flash_circle.png"
 image dark_flashlight = DynamicDisplayable(dark_flashlight)
-image taisho_1f_study = "images/bgs/taisho/1f_study.jpg"
+image taisho_1f_study_bare = "images/bgs/taisho/1f_study_bare.jpg"
+image taisho_1f_study_flashlight = "images/bgs/taisho/1f_study_flashlight.jpg"
