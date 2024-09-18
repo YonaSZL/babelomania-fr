@@ -4,13 +4,13 @@ translate french strings:
 
     # game/screens/main_menu.rpy:27
     old "Start"
-    new ""
+    new "Commencer"
 
     # game/screens/main_menu.rpy:39
     old "Extra"
-    new ""
+    new "Extra"
 
     # game/screens/main_menu.rpy:43
     old "Quit"
-    new ""
+    new "Quitter"
 

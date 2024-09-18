@@ -4,21 +4,21 @@ translate french strings:
 
     # game/screens/inventory.rpy:20
     old "Inventory"
-    new ""
+    new "Inventaire"
 
     # game/screens/inventory.rpy:21
     old "Close"
-    new ""
+    new "Fermer"
 
     # game/screens/inventory.rpy:61
     old "Inventory empty"
-    new ""
+    new "Inventaire vide"
 
     # game/screens/inventory.rpy:78
     old "Inspect"
-    new ""
+    new "Inspecter"
 
     # game/screens/inventory.rpy:79
     old "Use"
-    new ""
+    new "Utiliser"
 
