@@ -10,13 +10,15 @@ screen taisho_1f_study_explore_01():
         ground "taisho_1f_study"
         hover "taisho_1f_study"
         
-        hotspot (460, 0, 1460, 825) action Jump("exp_taisho_1f_study_01_couch") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#COUCH/PHONE
+        hotspot (494, 717, 571, 201) action Jump("exp_taisho_1f_study_01_couch") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#COUCH/PHONE
         if exp_taisho_1f_study_01_couch:
-            hotspot (533, 980, 856, 100) action Jump("exp_taisho_1f_study_01_lamp") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#LAMP
-            hotspot (0, 0, 300, 130) action Jump("exp_taisho_1f_study_01_floor") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#FLOOR
+            hotspot (953, 163, 336, 250) action Jump("exp_taisho_1f_study_01_lamp") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#LAMP
+            hotspot (1443, 905, 424, 133) action Jump("exp_taisho_1f_study_01_floor") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#FLOOR
             if taisho_1f_study_explore_01 == 3:
-                hotspot (1645, 922, 275, 158) action Jump("exp_taisho_1f_study_01_flashlight") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#FLASHLIGHT
+                hotspot (1377, 630, 111, 76) action Jump("exp_taisho_1f_study_01_flashlight") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#FLASHLIGHT
     
+    add "darkness_layer"
+
     $ tooltip = GetTooltip()
 
     nearrect:
@@ -44,7 +46,7 @@ label exp_taisho_1f_study_01_couch:
         sh shock "My phone is {nw}"
         play sound "audio/sfx/gui_spook.ogg"
         extend "{b}gone?!{/b}"
-        play music "audio/bgm/shadows_breathe.ogg"
+        play music "audio/bgm/shadows_whisper.ogg"
         if exp_taisho_1f_study_01_couch == False:
             $ exp_taisho_1f_study_01_couch = True
     else:

@@ -11,7 +11,7 @@ init python:
     test_item = Item("Apple", "gui/inventory/test.png", "item_drop")
 
 default inventory = [it_flashlight]
-define it_flashlight = Item(_("Flashlight"), "gui/inventory/flashlight.png", "item_drop")
+define it_flashlight = Item(_("Flashlight"), "gui/inventory/flashlight.png", "flashlight_drop")
 screen inventory():
 
     modal True
@@ -78,7 +78,21 @@ screen inventory():
 
                 textbutton _("Inspect") action [ ClearFocus("item_drop"), Hide("inventory") ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
                 textbutton _("Use") action [ ClearFocus("item_drop"), Hide("inventory") ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_item_use.ogg"
-                
+    if GetFocusRect("flashlight_drop"):
+        dismiss action ClearFocus("flashlight_drop")
+        nearrect:
+            focus "item_drop"
+            frame:
+                style_prefix "dropdown"
+                #modal True
+
+                has vbox
+
+                textbutton _("Inspect") action [ ClearFocus("flashlight_drop"), Hide("inventory") ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
+                if story_progress > 0:
+                    textbutton _("Use") action [ ClearFocus("flashlight_drop"), Hide("inventory"), Play("sound4","audio/se/flashlight_on.ogg"), SetVariable("flashlight_use", True), SetVariable("flashlight_consume", True) ] hover_sound "audio/sfx/gui_hover.ogg"
+                else:
+                    textbutton _("Use") action [ ClearFocus("flashlight_drop"), Hide("inventory"), Play("sound4","audio/se/flashlight_on.ogg"), SetVariable("flashlight_use", True), Jump("first_flashlight_use") ] hover_sound "audio/sfx/gui_hover.ogg"
 
 style dropdown_vbox:
     spacing -5

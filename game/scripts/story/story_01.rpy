@@ -1,7 +1,7 @@
 label story_01_awakening:
-    pause 1.0
+    pause 3.0
     play LoNoise "audio/bgs/taisho_bgs.ogg" fadein 1.0
-    pause 1.5
+    pause 2.5
     show Shigeo cloudy with Reveal3:
         xalign 0.5 zoom 1.0 yoffset 150
     pause 2.0
@@ -17,6 +17,4 @@ label story_01_awakening:
     pause 1.0
     $ current_location = "taisho_1f_study"
     scene black
-    call screen taisho_1f_study_examine_01
-
-label story_01_be_light:
+    call screen taisho_1f_study_explore_01

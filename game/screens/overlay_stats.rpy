@@ -47,10 +47,6 @@ screen overlay_stats():
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_inventory.ogg"
 
-
-    
-
-
     vbox:
         spacing 10 offset(15,30)
         if time_menu:

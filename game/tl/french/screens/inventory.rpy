@@ -22,3 +22,11 @@ translate french strings:
     old "Use"
     new ""
 
+# TODO: Translation updated at 2024-09-18 21:05
+
+translate french strings:
+
+    # game/screens/inventory.rpy:14
+    old "Flashlight"
+    new ""
+

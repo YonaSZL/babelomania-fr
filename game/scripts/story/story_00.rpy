@@ -755,7 +755,7 @@ label story_00_meet_amina:
     hide Francesco with dissolve
     pause 1.0
     scene bar_reception_mood with Reveal
-    pause 1.0
+    pause 1.5
     ha neutral ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha?"
     ta neutral "Yes, professor?"
     pause 1.0
@@ -773,24 +773,32 @@ label story_00_meet_amina:
     show Tabitha bow with dissolve
     pause 1.5
     scene bar_reception_mood
-    pause 1.0
+    pause 2.5
     play sound4 "audio/se/glitch_short.ogg"
     $ time_menu = False
     $ quick_menu = False
     scene bar_reception_mood_video
-    pause 1.0
+    pause 2.0
     play sound "audio/se/wedding_video.ogg" fadein 1.0
     show bar_reception_mood_video_glitch
     pause 1.5
     show bathroom_painting_glitch
-    pause 1.5
+    pause 3.0
     show bathroom_painting_glitch_2
-    pause 1.0
+    pause 3.0
     show bathroom_painting_glitch
     pause 0.5
+    show bathroom_painting_glitch_2
+    pause 0.15
+    show bathroom_painting_glitch
+    pause 0.15
+    show bathroom_painting_glitch_2
+    pause 0.15
+    show bathroom_painting_glitch
+    pause 0.15
     show bathroom_painting_glitch_2
     pause 1.0
     play sound4 "audio/se/glitch_long.ogg"
     scene black with glitch_unload_5
-    pause 2.0
+    pause 3.0
     jump story_01_awakening
