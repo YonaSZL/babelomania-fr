@@ -98,4 +98,30 @@ label exm_taisho_1f_study_01_floor:
 label exm_taisho_1f_study_01_flashlight:
     $ renpy.block_rollback()
     pause 0.5
-    
+    sh_i surprise "(Tall furniture, a library...{w=0.5} Is this a fireplace?)"
+    sh_i neutral "(Alright, slowly, Shigeo...{w=0.5} Try not to knock anything over-)"
+    play sound "audio/se/item_bump.ogg"
+    pause 0.2
+    sh surprise sweat "Ugh, last famous words...{w=0.5} Hmm...?"
+    sh frown -sweat ".{w=0.3}.{w=0.3}.{w=0.5}this shape...?"
+    pause 1.5
+    play sound "audio/em/em_shock.ogg"
+    show emote screen("surprise",0.17,0.5)
+    sh shock "...!{w=0.3} Seriously?!"
+    play sound "audio/sfx/gui_item_get.ogg"
+    show it_flashlight with dissolve:
+        xalign 0.5 yalign 0.4
+    sh_i neutral "(A {b}flashlight{/b}!{w=0.3} What are even the chances?!)"
+    sh_i smile "(I can finally start shedding some light on this whole situation...{w=0.5} Heh.)"
+    play sound4 "audio/sfx/gui_slots_confirm.ogg"
+    show screen notify("Inventory Unlocked")
+    $ inventory_show = True
+    sh_i frown "(It's a rechargeable model with an internal battery...{w=0.5} And an USB-C port.)"
+    sh_i neutral "(Which means that as long as I {nw}"
+    play sound4 "audio/sfx/gui_hint.ogg"
+    extend "{b}find a charger{/b}, no matter what it's powering, I can recharge it.)"
+    sh_i neutral "(Maybe the flashlight's own charger may be around here?{w=0.3} Would make sense.)"
+    pause 1.0
+    if exm_taisho_1f_study_01_flashlight == False:
+        $ exm_taisho_1f_study_01_flashlight = True
+    call screen taisho_1f_study_examine_01
