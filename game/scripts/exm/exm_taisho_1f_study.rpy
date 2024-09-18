@@ -1,19 +1,21 @@
 default taisho_1f_study_examine_01 = 0
 default exm_taisho_1f_study_01_couch = False
-default exm_taisho_1f_study_01_title = False
-default exm_taisho_1f_study_01_signature = False
+default exm_taisho_1f_study_01_phone = False
+default exm_taisho_1f_study_01_lamp = False
+default exm_taisho_1f_study_01_floor = False
+default exm_taisho_1f_study_01_flashlight = False
 
 screen taisho_1f_study_examine_01():
     imagemap:
         ground "taisho_1f_study"
         hover "taisho_1f_study"
         
-        hotspot (460, 0, 1460, 825) action Jump("exm_taisho_1f_study_01_couch") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#COUCH
+        hotspot (460, 0, 1460, 825) action Jump("exm_taisho_1f_study_01_couch") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#COUCH/PHONE
         if exm_taisho_1f_study_01_couch:
-            hotspot (533, 980, 856, 100) action Jump("exm_taisho_1f_study_01_title") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#TITLE
-            hotspot (0, 0, 300, 130) action Jump("exm_taisho_1f_study_01_signature") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#SIGNATURE
+            hotspot (533, 980, 856, 100) action Jump("exm_taisho_1f_study_01_lamp") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#LAMP
+            hotspot (0, 0, 300, 130) action Jump("exm_taisho_1f_study_01_floor") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#FLOOR
             if taisho_1f_study_examine_01 == 3:
-                hotspot (1645, 922, 275, 158) action Jump("exm_taisho_1f_study_01_return") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#FLASHLIGHT
+                hotspot (1645, 922, 275, 158) action Jump("exm_taisho_1f_study_01_flashlight") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#FLASHLIGHT
     
     $ tooltip = GetTooltip()
 
@@ -43,45 +45,57 @@ label exm_taisho_1f_study_01_couch:
         play sound "audio/sfx/gui_spook.ogg"
         extend "{b}gone?!{/b}"
         play music "audio/bgm/shadows_breathe.ogg"
+        if exm_taisho_1f_study_01_couch == False:
+            $ exm_taisho_1f_study_01_couch = True
+    else:
+        sh_i surprise "(Maybe I dropped it when...{w=0.5} When I...?)"
+        pause 1.5
+        sh_i frown sweat "(I did not simply fall asleep, didn't I?{w=0.3} I was brought here, I...{w=0.5} I still have my shoes on, I would never...)"
+        sh_i neutral "(Even if I don't remember a lick of it, one thing is certain.{w=0.3} {nw}"
+        play sound "audio/sfx/gui_spook.ogg"
+        extend "{b}I did not get on that couch by myself{/b}.)"
+        if exm_taisho_1f_study_01_phone == False:
+            $ exm_taisho_1f_study_01_phone = True
+            $ taisho_1f_study_examine_01 += 1
     pause 1.0
-    if exm_taisho_1f_study_01_couch == False:
-        $ exm_taisho_1f_study_01_couch = True
+    call screen taisho_1f_study_examine_01
+
+label exm_taisho_1f_study_01_lamp:
+    $ renpy.block_rollback()
+    pause 0.5
+    sh_i neutral "(I can see a chandelier hanging from the ceiling...{w=0.5} Off, obviously, but that doesn't cut it, on its own.)"
+    sh_i frown "(I remember the walk from the parking area to the estate proper.{w=0.3} There were plenty of lamposts, and I noticed other kinds of fixtures spread throughout what I could see of the estate.)"
+    sh_i neutral "(Also, I remember checking the weather before I came...{w=0.5} Mostly clear, a few clouds and a last quarter moon.{w=0.3} There should be plenty of light to go around.)"
+    sh_i frown "(Which means that either this room has no windows, or {nw}"
+    play sound "audio/sfx/gui_spook.ogg"
+    extend "{b}that the window has been shuttered{/b}.)"
+    sh_i surprise "(But why?{w=0.5} And how?{w=0.3} I don't remember seeing any...{w=0.5} Unless?!)"
+    pause 1.0
+    if exm_taisho_1f_study_01_lamp == False:
+        $ exm_taisho_1f_study_01_lamp = True
         $ taisho_1f_study_examine_01 += 1
     call screen taisho_1f_study_examine_01
 
-label exm_taisho_1f_study_01_title:
+label exm_taisho_1f_study_01_floor:
+    $ renpy.block_rollback()
+    pause 0.5
+    sh_i frown "(I gotta find the door...{w=0.5} And the light switch.{w=0.3} Slowly, now, let's follow the floor until I hit a wall...)"
+    play sound "audio/se/clothes_rustle.ogg"
+    pause 1.0
+    sh_i neutral "(Huh...{w=0.5} The floor is...{w=0.5} Different.)"
+    sh_i surprise "(Very different...{w=0.5} This is wood, isn't it?{w=0.3} But all the floors I had seen in the Baroque building had tile...{w=0.5} Or marble.)"
+    sh_i frown "(Even the glimpse I caught of the smoking room had flooring in tile...{w=0.5} Which means.)"
+    sh_i surprise "(I'm no longer in the same place...{w=0.5} {nw}"
+    play sound "audio/sfx/gui_spook.ogg"
+    extend "{b}This isn't the Baroque Building{/b}.)"
+    sh_i frown "(Granted, I could just be on the upper floor of the building but...{w=0.5} I have a hunch that's not the case.)"
+    pause 1.0
+    if exm_taisho_1f_study_01_floor == False:
+        $ exm_taisho_1f_study_01_floor = True
+        $ taisho_1f_study_examine_01 += 1
+    call screen taisho_1f_study_examine_01
+
+label exm_taisho_1f_study_01_flashlight:
     $ renpy.block_rollback()
     pause 0.5
     
-    pause 1.0
-    if exm_taisho_1f_study_01_title == False:
-        $ exm_taisho_1f_study_01_title = True
-        $ taisho_1f_study_examine_01 += 1
-    call screen taisho_1f_study_examine_01
-
-label exm_taisho_1f_study_01_signature:
-    $ renpy.block_rollback()
-    pause 0.5
-    
-    pause 1.0
-    if exm_taisho_1f_study_01_signature == False:
-        $ exm_taisho_1f_study_01_signature = True
-        $ taisho_1f_study_examine_01 += 1
-    call screen taisho_1f_study_examine_01
-
-label exm_taisho_1f_study_01_return:
-    $ renpy.block_rollback()
-    pause 0.5
-    sh_i neutral "(That seems to be everything I can surmise from this painting...{w=0.5} Too bad about the ruined signature of the author, I'd like to know more about them.)"
-    sh_i smile "(I should take a picture.{w=0.3} I can reverse-image search it later, or show someone back home.)"
-    menu:
-        sh_i neutral "(Should I take that picture now?)"
-
-        "Let's take that picture.":
-            $ renpy.block_rollback()
-            pause 1.0
-            play sound "audio/sfx/gui_phone_unlock.ogg"
-            call screen photo("bathroom_painting", True, "story_00_bathroom_return")
-        
-        "I want to observe it more.":
-            call screen taisho_1f_study_examine_01
