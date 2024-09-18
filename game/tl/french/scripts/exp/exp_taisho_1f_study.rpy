@@ -216,3 +216,41 @@ translate french strings:
     old "Darkness"
     new ""
 
+# TODO: Translation updated at 2024-09-18 22:54
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:40
+translate french exp_taisho_1f_study_01_couch_6efacb64:
+
+    # sh_i frown -sweat "(What time is it...?{w=0.5} {nw}"
+    sh_i frown -sweat ""
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:42
+translate french exp_taisho_1f_study_01_couch_0dadd955:
+
+    # extend "And I need some light, I need to...)"
+    extend ""
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:53
+translate french exp_taisho_1f_study_01_couch_329cf767:
+
+    # sh_i surprise -sweat "(Maybe I dropped it when...{w=0.5} When I...?)"
+    sh_i surprise -sweat ""
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:56
+translate french exp_taisho_1f_study_01_couch_dfaddf4a:
+
+    # sh_i neutral -sweat "(Even if I don't remember a lick of it, one thing is certain.{w=0.3} {nw}"
+    sh_i neutral -sweat ""
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:69
+translate french exp_taisho_1f_study_01_lamp_36e6bc9a:
+
+    # sh_i frown "(I remember the walk from the parking area to the estate proper.{w=0.3} There were plenty of lamposts, and I noticed other kinds of fixtures spread throughout.)"
+    sh_i frown ""
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:70
+translate french exp_taisho_1f_study_01_lamp_f65a2883:
+
+    # sh_i neutral "(Also, I checked the weather before flying in to France...{w=0.5} Mostly clear, a few clouds and a last quarter moon.{w=0.3} There should be plenty of light to go around.)"
+    sh_i neutral ""
+

@@ -11,7 +11,7 @@ screen taisho_1f_study_explore_01():
         hover "taisho_1f_study"
         
         hotspot (494, 717, 571, 201) action Jump("exp_taisho_1f_study_01_couch") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#COUCH/PHONE
-        if exp_taisho_1f_study_01_couch:
+        if exp_taisho_1f_study_01_phone:
             hotspot (953, 163, 336, 250) action Jump("exp_taisho_1f_study_01_lamp") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#LAMP
             hotspot (1443, 905, 424, 133) action Jump("exp_taisho_1f_study_01_floor") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#FLOOR
             if taisho_1f_study_explore_01 == 3:
@@ -37,12 +37,12 @@ label exp_taisho_1f_study_01_couch:
         sh_i neutral "(This...{w=0.5} Is a couch, and a table in front of it...{w=0.5} This isn't the reception or any other room I've seen.{w=0.3} What...?)"
         sh_i surprise "(What happened?{w=0.3} Last thing I remember was Francesco talking about a wedding video and...{w=0.5} And then...?)"
         pause 1.5
+        sh_i frown -sweat "(What time is it...?{w=0.5} {nw}"
         play sound "audio/se/clothes_rustle.ogg"
-        sh_i frown "(What time is it...?{w=0.5} And I need some light, I need to...)"
+        extend "And I need some light, I need to...)"
         pause 1.5
+        play sound4 "audio/se/clothes_rustle.ogg"
         sh surprise "My...{w=0.5} My phone?"
-        play sound "audio/em/em_shock.ogg"
-        show screen emote("surprise",0.17,0.5)
         sh shock "My phone is {nw}"
         play sound "audio/sfx/gui_spook.ogg"
         extend "{b}gone?!{/b}"
@@ -50,10 +50,10 @@ label exp_taisho_1f_study_01_couch:
         if exp_taisho_1f_study_01_couch == False:
             $ exp_taisho_1f_study_01_couch = True
     else:
-        sh_i surprise "(Maybe I dropped it when...{w=0.5} When I...?)"
+        sh_i surprise -sweat "(Maybe I dropped it when...{w=0.5} When I...?)"
         pause 1.5
         sh_i frown sweat "(I did not simply fall asleep, didn't I?{w=0.3} I was brought here, I...{w=0.5} I still have my shoes on, I would never...)"
-        sh_i neutral "(Even if I don't remember a lick of it, one thing is certain.{w=0.3} {nw}"
+        sh_i neutral -sweat "(Even if I don't remember a lick of it, one thing is certain.{w=0.3} {nw}"
         play sound "audio/sfx/gui_spook.ogg"
         extend "{b}I did not get on that couch by myself{/b}.)"
         if exp_taisho_1f_study_01_phone == False:
@@ -66,8 +66,8 @@ label exp_taisho_1f_study_01_lamp:
     $ renpy.block_rollback()
     pause 0.5
     sh_i neutral "(I can see a chandelier hanging from the ceiling...{w=0.5} Off, obviously, but that doesn't cut it, on its own.)"
-    sh_i frown "(I remember the walk from the parking area to the estate proper.{w=0.3} There were plenty of lamposts, and I noticed other kinds of fixtures spread throughout what I could see of the estate.)"
-    sh_i neutral "(Also, I remember checking the weather before I came...{w=0.5} Mostly clear, a few clouds and a last quarter moon.{w=0.3} There should be plenty of light to go around.)"
+    sh_i frown "(I remember the walk from the parking area to the estate proper.{w=0.3} There were plenty of lamposts, and I noticed other kinds of fixtures spread throughout.)"
+    sh_i neutral "(Also, I checked the weather before flying in to France...{w=0.5} Mostly clear, a few clouds and a last quarter moon.{w=0.3} There should be plenty of light to go around.)"
     sh_i frown "(Which means that either this room has no windows, or {nw}"
     play sound "audio/sfx/gui_spook.ogg"
     extend "{b}that the window has been shuttered{/b}.)"
