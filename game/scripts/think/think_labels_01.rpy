@@ -16,7 +16,7 @@ label think_01_comein:
     pause 1.0
     jump think_01_door
 
-label think_01_comein:
+label think_01_locked:
     play sound4 "audio/sfx/gui_hint.ogg"
     $ renpy.block_rollback()
     sh_i nulla "(Because it's locked...{w=0.5} The door is locked.{w=0.3} Or rather...)"

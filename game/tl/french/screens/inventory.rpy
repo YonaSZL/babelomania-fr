@@ -30,3 +30,11 @@ translate french strings:
     old "Flashlight"
     new ""
 
+# TODO: Translation updated at 2024-09-19 21:30
+
+translate french strings:
+
+    # game/screens/inventory.rpy:96
+    old "Battery's Dead."
+    new ""
+

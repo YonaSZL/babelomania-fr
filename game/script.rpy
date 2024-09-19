@@ -102,6 +102,7 @@ default mouse_pos = None
 default story_progress = 0
 default current_location = "None"
 default dark_environ = False
+default briefcase_carry = False
 
 #Defining Music Channels
 init python:

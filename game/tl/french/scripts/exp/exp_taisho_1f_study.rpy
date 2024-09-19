@@ -254,3 +254,105 @@ translate french exp_taisho_1f_study_01_lamp_f65a2883:
     # sh_i neutral "(Also, I checked the weather before flying in to France...{w=0.5} Mostly clear, a few clouds and a last quarter moon.{w=0.3} There should be plenty of light to go around.)"
     sh_i neutral ""
 
+# TODO: Translation updated at 2024-09-19 21:30
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:164
+translate french exp_taisho_1f_study_02_window_cdf963b5:
+
+    # sh_i neutral "(As I thought...{w=0.5} The window is shuttered.{w=0.3} But here's the twist.)"
+    sh_i neutral ""
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:165
+translate french exp_taisho_1f_study_02_window_9d8fa586:
+
+    # sh_i surprise "(This is not a normal shutter.{w=0.3} This is a {nw}"
+    sh_i surprise ""
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:167
+translate french exp_taisho_1f_study_02_window_a1c625be:
+
+    # extend "{b}security shutter{/b}.{w=0.3} Of the type I've seen in governmental buildings.)"
+    extend ""
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:168
+translate french exp_taisho_1f_study_02_window_b28e6641:
+
+    # sh_i frown "(Nothing short of an explosive could damage one of these things...{w=0.5} Selling point or not, this seems excessive for a place like this.)"
+    sh_i frown ""
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:169
+translate french exp_taisho_1f_study_02_window_b3b92d23:
+
+    # sh_i neutral "(But it also begs the question:{w=0.3} why are they down right now?)"
+    sh_i neutral ""
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:183
+translate french exp_taisho_1f_study_02_scrolls_9dbd0798:
+
+    # sh_i neutral "(Hanging scrolls...{w=0.5} That's a new one.{w=0.3} I haven't seen anything like this in years.)"
+    sh_i neutral ""
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:184
+translate french exp_taisho_1f_study_02_scrolls_b266bb60:
+
+    # sh_i frown "(The rest of the furniture seems quite western-inspired, but I can't say the same for the ceiling, the window...{w=0.5} What a strange mixture of influences.)"
+    sh_i frown ""
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:188
+translate french exp_taisho_1f_study_02_scrolls_6272eedf:
+
+    # sh_i surprise "(Wait...{w=0.5} Mixture of influences...?{w=0.3} I remember talking about this with Gaspard, earlier.)"
+    sh_i surprise ""
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:190
+translate french exp_taisho_1f_study_02_scrolls_cfa12e38:
+
+    # sh_i neutral "(Of course.{w=0.3} This must be the {b}Taisho Building{/b}.{w=0.3} We were going to be spend the night in here, weren't we?)"
+    sh_i neutral ""
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:192
+translate french exp_taisho_1f_study_02_scrolls_75940fdd:
+
+    # sh_i surprise "(This doesn't look like a bedroom, though...{w=0.3} I must be in a different wing of the building, then.)"
+    sh_i surprise ""
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:193
+translate french exp_taisho_1f_study_02_scrolls_6fb7e869:
+
+    # sh_i neutral "(Also, no trace of a charger for the flashlight.{w=0.3} Pity.)"
+    sh_i neutral ""
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:207
+translate french exp_taisho_1f_study_02_door_7b6a4872:
+
+    # sh_i smile "(The door, and the light switch.{w=0.3} Let's see...)"
+    sh_i smile ""
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:215
+translate french exp_taisho_1f_study_02_door_8d1f924e:
+
+    # sh frown "Of course not."
+    sh frown ""
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:216
+translate french exp_taisho_1f_study_02_door_90352cac:
+
+    # sh_i frown "(So the lights are out.{w=0.3} Or maybe it's just this one room?)"
+    sh_i frown ""
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:217
+translate french exp_taisho_1f_study_02_door_8b7e5c59:
+
+    # sh_i neutral "(I can't see a plug, nor anything else I can use to try and check though...{w=0.3} I'll need to leave, then.)"
+    sh_i neutral ""
+
+translate french strings:
+
+    # game/scripts/exp/exp_taisho_1f_study.rpy:119
+    old "Inventory Unlocked"
+    new ""
+
+    # game/scripts/exp/exp_taisho_1f_study.rpy:191
+    old "Codex Updated."
+    new ""
+

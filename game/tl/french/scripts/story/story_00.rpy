@@ -1878,3 +1878,11 @@ translate french story_00_meet_amina_386c4502:
     # extend "{b}directive{/b} for you."
     extend ""
 
+# TODO: Translation updated at 2024-09-19 21:30
+
+translate french strings:
+
+    # game/scripts/story/story_00.rpy:324
+    old "Codex Unlocked"
+    new ""
+

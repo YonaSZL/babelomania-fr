@@ -44,8 +44,12 @@ screen overlay_stats():
     if inventory_show:
         button:
             add "gui/stats/avatar_bg.png"
-            idle_foreground "gui/stats/case.png"
-            hover_foreground At("gui/stats/case.png", outline_transform(2, "#876a33", 4.0))
+            if briefcase_carry:
+                idle_foreground "gui/stats/case.png"
+                hover_foreground At("gui/stats/case.png", outline_transform(2, "#876a33", 4.0))
+            else:
+                idle_foreground "gui/stats/inventory.png"
+                hover_foreground At("gui/stats/inventory.png", outline_transform(2, "#876a33", 4.0))
             xysize(230,230) xalign 1.0 offset(-50, 30)
             focus_mask True
             action Show("inventory")
