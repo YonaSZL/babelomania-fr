@@ -100,7 +100,8 @@ default persistent.gore = True
 default tooltip = "None"
 default mouse_pos = None
 default story_progress = 0
-default current_location = 0
+default current_location = "None"
+default dark_environ = False
 
 #Defining Music Channels
 init python:

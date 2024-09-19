@@ -13,8 +13,8 @@ label story_01_awakening:
     pause 1.5
     play sound "audio/se/whoosh_heavy.ogg"
     pause 0.2
+    $ dark_environ = True
     scene taisho_1f_study
-    show darkness_layer
     pause 1.3
     sh surprise sweat ".{w=0.3}.{w=0.3}.{w=0.5}where...?"
     pause 1.0

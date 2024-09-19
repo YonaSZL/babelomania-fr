@@ -127,3 +127,36 @@ label exp_taisho_1f_study_01_flashlight:
     if exp_taisho_1f_study_01_flashlight == False:
         $ exp_taisho_1f_study_01_flashlight = True
     call screen taisho_1f_study_explore_01
+
+#After getting the flashlight
+
+default taisho_1f_study_explore_02 = 0
+default exp_taisho_1f_study_01_couch = False
+default exp_taisho_1f_study_01_phone = False
+default exp_taisho_1f_study_01_lamp = False
+default exp_taisho_1f_study_01_floor = False
+default exp_taisho_1f_study_01_flashlight = False
+
+screen taisho_1f_study_explore_02():
+    imagemap:
+        ground "taisho_1f_study"
+        hover "taisho_1f_study"
+        
+        hotspot (494, 717, 571, 201) action Jump("exp_taisho_1f_study_01_couch") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#COUCH/PHONE
+        if exp_taisho_1f_study_01_phone:
+            hotspot (953, 163, 336, 250) action Jump("exp_taisho_1f_study_01_lamp") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#LAMP
+            hotspot (1443, 905, 424, 133) action Jump("exp_taisho_1f_study_01_floor") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#FLOOR
+            if taisho_1f_study_explore_02 == 3:
+                hotspot (1377, 630, 111, 76) action Jump("exp_taisho_1f_study_01_flashlight") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#FLASHLIGHT
+    
+    add "darkness_layer"
+
+    $ tooltip = GetTooltip()
+
+    nearrect:
+        focus "tooltip"
+        prefer_top True
+
+        frame:
+            xalign 0.5
+            text "[tooltip]"

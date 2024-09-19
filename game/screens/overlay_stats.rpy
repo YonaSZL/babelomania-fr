@@ -14,7 +14,9 @@ default amina_cmp = False
 default gaspard_cmp = False
 
 screen overlay_stats():
-
+    
+    if dark_environ:
+        add "darkness_layer"
     if flashlight_use:
         add "dark_flashlight"
     if flashlight_consume:
