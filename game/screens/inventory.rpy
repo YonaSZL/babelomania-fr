@@ -90,12 +90,13 @@ screen inventory():
 
                 textbutton _("Inspect") action [ ClearFocus("flashlight_drop"), Hide("inventory") ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
                 if story_progress > 0:
-                    textbutton _("Use") action [ ClearFocus("flashlight_drop"), Hide("inventory"), Play("sound4","audio/se/flashlight_on.ogg"), SetVariable("flashlight_use", True), SetVariable("flashlight_consume", True) ] hover_sound "audio/sfx/gui_hover.ogg"
-                else:
                     if stat1 > 0:
-                        textbutton _("Use") action [ ClearFocus("flashlight_drop"), Hide("inventory"), Play("sound4","audio/se/flashlight_on.ogg"), Jump("first_flashlight_use") ] hover_sound "audio/sfx/gui_hover.ogg"
+                        textbutton _("Use") action [ ClearFocus("flashlight_drop"), Hide("inventory"), Play("sound4","audio/se/flashlight_on.ogg"), SetVariable("dark_environ", False), SetVariable("flashlight_use", True), SetVariable("flashlight_consume", True) ] hover_sound "audio/sfx/gui_hover.ogg"
                     else:
                         textbutton _("Use") action Null() hover_sound "audio/sfx/gui_hover.ogg" tooltip _("Battery's Dead.")
+                else:
+                    textbutton _("Use") action [ ClearFocus("flashlight_drop"), Hide("inventory"), Play("sound4","audio/se/flashlight_on.ogg"), Jump("first_flashlight_use") ] hover_sound "audio/sfx/gui_hover.ogg"
+                    
 
 style dropdown_vbox:
     spacing -5
