@@ -116,7 +116,7 @@ label exp_taisho_1f_study_01_flashlight:
     sh_i neutral "(A {b}flashlight{/b}!{w=0.3} What are even the chances?!)"
     sh_i smile "(I can finally start shedding some light on this whole situation...{w=0.5} Heh.)"
     play sound4 "audio/sfx/gui_slots_confirm.ogg"
-    show screen notify("Inventory Unlocked")
+    show screen notify(_("Inventory Unlocked"))
     $ inventory_show = True
     sh_i frown "(It's a rechargeable model with an internal battery...{w=0.5} And an USB-C port.)"
     sh_i neutral "(Which means that as long as I {nw}"
@@ -131,11 +131,9 @@ label exp_taisho_1f_study_01_flashlight:
 #After getting the flashlight
 
 default taisho_1f_study_explore_02 = 0
-default exp_taisho_1f_study_01_couch = False
-default exp_taisho_1f_study_01_phone = False
-default exp_taisho_1f_study_01_lamp = False
-default exp_taisho_1f_study_01_floor = False
-default exp_taisho_1f_study_01_flashlight = False
+
+default exp_taisho_1f_study_02_window = False
+default exp_taisho_1f_study_02_scrolls = False
 
 screen taisho_1f_study_explore_02():
     imagemap:
@@ -148,8 +146,6 @@ screen taisho_1f_study_explore_02():
             hotspot (1443, 905, 424, 133) action Jump("exp_taisho_1f_study_01_floor") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#FLOOR
             if taisho_1f_study_explore_02 == 3:
                 hotspot (1377, 630, 111, 76) action Jump("exp_taisho_1f_study_01_flashlight") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#FLASHLIGHT
-    
-    add "darkness_layer"
 
     $ tooltip = GetTooltip()
 
@@ -160,3 +156,70 @@ screen taisho_1f_study_explore_02():
         frame:
             xalign 0.5
             text "[tooltip]"
+
+label exp_taisho_1f_study_02_window:
+    $ flashlight_consume = False
+    $ renpy.block_rollback()
+    pause 0.5
+    sh_i neutral "(As I thought...{w=0.5} The window is shuttered.{w=0.3} But here's the twist.)"
+    sh_i surprise "(This is not a normal shutter.{w=0.3} This is a {nw}"
+    play sound4 "audio/sfx/gui_hint.ogg"
+    extend "{b}security shutter{/b}.{w=0.3} Of the type I've seen in governmental buildings.)"
+    sh_i frown "(Nothing short of an explosive could damage one of these things...{w=0.5} Selling point or not, this seems excessive for a place like this.)"
+    sh_i neutral "(But it also begs the question:{w=0.3} why are they down right now?)"
+    pause 1.0
+    if exp_taisho_1f_study_02_window == False:
+        $ exp_taisho_1f_study_02_window = True
+        $ taisho_1f_study_explore_02 += 1
+    if taisho_1f_study_explore_02 >= 3:
+        jump story_01_there_were_three
+    $ flashlight_consume = True
+    call screen taisho_1f_study_explore_02
+
+label exp_taisho_1f_study_02_scrolls:
+    $ flashlight_consume = False
+    $ renpy.block_rollback()
+    pause 0.5
+    sh_i neutral "(Hanging scrolls...{w=0.5} That's a new one.{w=0.3} I haven't seen anything like this in years.)"
+    sh_i frown "(The rest of the furniture seems quite western-inspired, but I can't say the same for the ceiling, the window...{w=0.5} What a strange mixture of influences.)"
+    pause 1.5
+    play sound "audio/em/em_surprise.ogg"
+    show screen emote("surprise",0.17,0.5)
+    sh_i surprise "(Wait...{w=0.5} Mixture of influences...?{w=0.3} I remember talking about this with Gaspard, earlier.)"
+    play sound4 "audio/sfx/gui_solved.ogg"
+    sh_i neutral "(Of course.{w=0.3} This must be the {b}Taisho Building{/b}.{w=0.3} We were going to be spend the night in here, weren't we?)"
+    show screen notify(_("Codex Updated."))
+    sh_i surprise "(This doesn't look like a bedroom, though...{w=0.3} I must be in a different wing of the building, then.)"
+    sh_i neutral "(Also, no trace of a charger for the flashlight.{w=0.3} Pity.)"
+    pause 1.0
+    if exp_taisho_1f_study_02_scrolls == False:
+        $ exp_taisho_1f_study_02_scrolls = True
+        $ taisho_1f_study_explore_02 += 1
+    if taisho_1f_study_explore_02 >= 3:
+        jump story_01_there_were_three
+    $ flashlight_consume = True
+    call screen taisho_1f_study_explore_02
+
+label exp_taisho_1f_study_02_door:
+    $ flashlight_consume = False
+    $ renpy.block_rollback()
+    pause 0.5
+    sh_i smile "(The door, and the light switch.{w=0.3} Let's see...)"
+    play sound "audio/se/switch_01.ogg"
+    pause 1.5
+    play sound4 "audio/se/switch_01.ogg"
+    pause 1.0
+    play sound "audio/se/switch_01.ogg"
+    pause 0.5
+    play sound4 "audio/se/switch_01.ogg"
+    sh frown "Of course not."
+    sh_i frown "(So the lights are out.{w=0.3} Or maybe it's just this one room?)"
+    sh_i neutral "(I can't see a plug, nor anything else I can use to try and check though...{w=0.3} I'll need to leave, then.)"
+    pause 1.0
+    if exp_taisho_1f_study_02_window == False:
+        $ exp_taisho_1f_study_02_window = True
+        $ taisho_1f_study_explore_02 += 1
+    if taisho_1f_study_explore_02 >= 3:
+        jump story_01_there_were_three
+    $ flashlight_consume = True
+    call screen taisho_1f_study_explore_02

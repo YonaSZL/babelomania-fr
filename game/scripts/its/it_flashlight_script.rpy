@@ -12,6 +12,8 @@ label first_flashlight_use:
     pause 2.5
     scene taisho_1f_study
     $ flashlight_use = True
+    $ flashlight_consume = True
     $ story_progress = 1
+    $ inventory_show = True
     pause 0.5
     call screen taisho_1f_study_explore_02

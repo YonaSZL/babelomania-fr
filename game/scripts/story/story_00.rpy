@@ -321,7 +321,7 @@ label story_00_bathroom_return:
         xalign 0.5
     with dissolve
     play sound4 "audio/sfx/gui_slots_confirm.ogg"
-    show screen notify("Codex Unlocked")
+    show screen notify(_("Codex Unlocked"))
     $ codex_active = True
     pause 0.5
     sh_i nulla "(Well, that was a good way to waste a few minutes and distract myself...{w=0.5} And now I have something to occupy myself further, if need be.)"
