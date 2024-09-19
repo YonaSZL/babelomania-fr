@@ -10,8 +10,8 @@ init python:
 
     test_item = Item("Apple", "gui/inventory/test.png", "item_drop")
 
-default inventory = [it_flashlight]
-define it_flashlight = Item(_("Flashlight"), "gui/inventory/flashlight.png", "flashlight_drop")
+default item_flashlight = Item(_("Flashlight"), "gui/inventory/flashlight.png", "flashlight_drop")
+default inventory = [item_flashlight]
 screen inventory():
 
     modal True
@@ -81,7 +81,7 @@ screen inventory():
     if GetFocusRect("flashlight_drop"):
         dismiss action ClearFocus("flashlight_drop")
         nearrect:
-            focus "item_drop"
+            focus "flashlight_drop"
             frame:
                 style_prefix "dropdown"
                 #modal True

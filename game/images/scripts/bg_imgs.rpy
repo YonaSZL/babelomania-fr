@@ -50,9 +50,21 @@ image bar_reception_mood_video_glitch:
 
 image flash_circle = "images/bgs/flash_circle.png"
 image dark_flashlight = DynamicDisplayable(dark_flashlight)
+image darkness_layers = ConditionSwitch(
+    "dark_environ == True", "darkness_layer",
+    "flashlight_use == True", "dark_flashlight"
+)
+
 image taisho_1f_study_bare = "images/bgs/taisho/1f_study_bare.jpg"
 image taisho_1f_study_flashlight = "images/bgs/taisho/1f_study_flashlight.jpg"
-image taisho_1f_study = ConditionSwitch(
+image taisho_1f_study_base = ConditionSwitch(
     "story_progress == 0", "taisho_1f_study_flashlight",
     "story_progress > 0", "taisho_1f_study_bare"
 )
+layeredimage taisho_1f_study:
+    group bottom:
+        attribute base default:
+            "taisho_1f_study_base"
+    group top:
+        attribute top_dark default:
+            "darkness_layers"

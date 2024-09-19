@@ -309,11 +309,13 @@ label story_00_bathroom_encounters:
     sh_i neutral -sweat "(Looking at it up close, it feels even more out of place...{w=0.5} No matter what excuses I make up.)"
     sh_i frown "(When was this made?{w=0.5} And by whom?)"
     pause 1.0
+    $ time_menu = False
     call screen bathroom_painting_examine
 
 label story_00_bathroom_return:
     $ renpy.block_rollback()
     pause 0.5
+    $ time_menu = True
     sh_i smile "(There we go.)"
     pause 1.0
     scene bar_bathroom

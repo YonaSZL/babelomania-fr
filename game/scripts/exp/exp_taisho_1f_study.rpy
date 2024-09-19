@@ -6,6 +6,9 @@ default exp_taisho_1f_study_01_floor = False
 default exp_taisho_1f_study_01_flashlight = False
 
 screen taisho_1f_study_explore_01():
+
+    tag exploration
+
     imagemap:
         ground "taisho_1f_study"
         hover "taisho_1f_study"
@@ -16,8 +19,6 @@ screen taisho_1f_study_explore_01():
             hotspot (1443, 905, 424, 133) action Jump("exp_taisho_1f_study_01_floor") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#FLOOR
             if taisho_1f_study_explore_01 == 3:
                 hotspot (1377, 630, 111, 76) action Jump("exp_taisho_1f_study_01_flashlight") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#FLASHLIGHT
-    
-    add "darkness_layer"
 
     $ tooltip = GetTooltip()
 
@@ -104,16 +105,17 @@ label exp_taisho_1f_study_01_flashlight:
     sh_i neutral "(Alright, slowly, Shigeo...{w=0.5} Try not to knock anything over-)"
     play sound "audio/se/item_bump.ogg"
     pause 0.2
+    show screen emote("surprise",0.17,0.5)
     sh surprise sweat "Ugh, last famous words...{w=0.5} Hmm...?"
     sh frown -sweat ".{w=0.3}.{w=0.3}.{w=0.5}this shape...?"
     pause 1.5
-    play sound "audio/em/em_shock.ogg"
-    show emote screen("surprise",0.17,0.5)
+    play sound4 "audio/em/em_shock.ogg"
+    show screen emote("surprise",0.17,0.5)
     sh shock "...!{w=0.3} Seriously?!"
     play sound "audio/sfx/gui_item_get.ogg"
     show it_flashlight with dissolve:
-        xalign 0.5 yalign 0.4
-    sh_i neutral "(A {b}flashlight{/b}!{w=0.3} What are even the chances?!)"
+        xalign 0.5 yalign 0.4 
+    sh_i surprise "(A {b}flashlight{/b}!{w=0.3} What are even the chances?!)"
     sh_i smile "(I can finally start shedding some light on this whole situation...{w=0.5} Heh.)"
     play sound4 "audio/sfx/gui_slots_confirm.ogg"
     show screen notify(_("Inventory Unlocked"))
@@ -123,6 +125,7 @@ label exp_taisho_1f_study_01_flashlight:
     play sound4 "audio/sfx/gui_hint.ogg"
     extend "{b}find a charger{/b}, no matter what it's powering, I can recharge it.)"
     sh_i neutral "(Maybe the flashlight's own charger may be around here?{w=0.3} Would make sense.)"
+    hide it_flashlight with dissolve
     pause 1.0
     if exp_taisho_1f_study_01_flashlight == False:
         $ exp_taisho_1f_study_01_flashlight = True
@@ -136,6 +139,9 @@ default exp_taisho_1f_study_02_window = False
 default exp_taisho_1f_study_02_scrolls = False
 
 screen taisho_1f_study_explore_02():
+
+    tag exploration
+
     imagemap:
         ground "taisho_1f_study"
         hover "taisho_1f_study"

@@ -15,10 +15,10 @@ default gaspard_cmp = False
 
 screen overlay_stats():
     
-    if dark_environ:
-        add "darkness_layer"
-    if flashlight_use:
-        add "dark_flashlight"
+    tag gui_screens
+
+    zorder 999
+
     if flashlight_consume:
         if stat1 > 0:
             timer 15.0 action SetVariable("stat1", (stat1 - 1)) repeat True
