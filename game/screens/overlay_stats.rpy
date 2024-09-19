@@ -1,4 +1,4 @@
-default stat1 = 50
+default stat1 = 50 #Flashlight Charge
 default stat2 = 80
 
 
@@ -20,7 +20,10 @@ screen overlay_stats():
     if flashlight_use:
         add "dark_flashlight"
     if flashlight_consume:
-        text "YO" #timer to lower charge
+        if stat1 > 0:
+            timer 15.0 action SetVariable("stat1", (stat1 - 1)) repeat True
+        else:
+            timer 0.01 action [ SetVariable("flashlight_consume", False), SetVariable("flashlight_use", False), SetVariable("dark_environ", True) ] repeat False
 
     vbox:
         xalign 1.0 offset(-103, 245)  spacing -10

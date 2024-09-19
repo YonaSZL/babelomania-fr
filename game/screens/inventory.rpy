@@ -92,7 +92,10 @@ screen inventory():
                 if story_progress > 0:
                     textbutton _("Use") action [ ClearFocus("flashlight_drop"), Hide("inventory"), Play("sound4","audio/se/flashlight_on.ogg"), SetVariable("flashlight_use", True), SetVariable("flashlight_consume", True) ] hover_sound "audio/sfx/gui_hover.ogg"
                 else:
-                    textbutton _("Use") action [ ClearFocus("flashlight_drop"), Hide("inventory"), Play("sound4","audio/se/flashlight_on.ogg"), Jump("first_flashlight_use") ] hover_sound "audio/sfx/gui_hover.ogg"
+                    if stat1 > 0:
+                        textbutton _("Use") action [ ClearFocus("flashlight_drop"), Hide("inventory"), Play("sound4","audio/se/flashlight_on.ogg"), Jump("first_flashlight_use") ] hover_sound "audio/sfx/gui_hover.ogg"
+                    else:
+                        textbutton _("Use") action Null() hover_sound "audio/sfx/gui_hover.ogg" tooltip _("Battery's Dead.")
 
 style dropdown_vbox:
     spacing -5
