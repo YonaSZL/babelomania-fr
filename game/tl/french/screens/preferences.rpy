@@ -48,7 +48,7 @@ translate french strings:
 
     # game/screens/preferences.rpy:94
     old "Auto-Forward Time"
-    new "Temps de Leture Automatique" # Pas sur
+    new "Temps de Lecture Automatique" # Pas sur
 
     # game/screens/preferences.rpy:100
     old "Music Volume"
@@ -67,8 +67,6 @@ translate french strings:
     new "Rendre Tout Muet"
 
 # TODO: Translation updated at 2024-09-12 10:43
-
-translate french strings:
 
     # game/screens/preferences.rpy:135
     old "Gore"

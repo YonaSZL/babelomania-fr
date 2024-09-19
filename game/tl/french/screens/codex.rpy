@@ -4,7 +4,7 @@ translate french strings:
 
     # game/screens/codex.rpy:66
     old "People"
-    new ""
+    new "Habitants"
 
     # game/screens/codex.rpy:73
     old "Events"

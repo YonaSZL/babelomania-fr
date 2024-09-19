@@ -36,7 +36,7 @@ translate french strings:
 
     # game/screens/other_screens.rpy:92
     old "{size=35}CHARACTER CONCEPT ARTIST"
-    new "{size=35}ARTISTE CONCEPT PERSONNAGE"
+    new "{size=35}CONCEPTEUR PERSONNAGE"
 
     # game/screens/other_screens.rpy:95
     old "{size=35}ADDITIONAL CONCEPTS ARTIST"
@@ -64,7 +64,7 @@ translate french strings:
 
     # game/screens/other_screens.rpy:113
     old "{size=35}PLOT, SCRIPT WRITER"
-    new "{size=35}PLOT, SCRIPT WRITER"
+    new "{size=35}AUTEUR INTRIGUE ET SCÉNARIO"
 
     # game/screens/other_screens.rpy:116
     old "{size=35}EDITOR"
@@ -192,7 +192,7 @@ translate french strings:
 
     # game/screens/other_screens.rpy:247
     old "Middle Click"
-    new "Clic Milieu"
+    new "Clic Molette"
 
     # game/screens/other_screens.rpy:251
     old "Right Click"
@@ -236,19 +236,16 @@ translate french strings:
 
 # TODO: Translation updated at 2024-09-09 22:18
 
-translate french strings:
-
     # game/screens/other_screens.rpy:98
     old "{size=35}LOGO ARTIST"
     new "{size=35}ARTISTE LOGO"
 
     # game/screens/other_screens.rpy:113
     old "{size=35}STORY CONSULTANTS"
-    new "{size=35}CONSULTANTS DE L'HISTOIRE"
+    new "{size=35}CONSULTANTS HISTOIRE"
 
 # TODO: Translation updated at 2024-09-13 20:39
 
-translate french strings:
 
     # game/screens/other_screens.rpy:126
     old "{size=35}ADDITIONAL MUSIC"
