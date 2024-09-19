@@ -59,8 +59,4 @@ label story_01_there_were_three:
         xalign 0.5
     with Reveal3
     pause 1.5
-    menu:
-        sh_i surprise "(Why are they {b}trying{/b} to open the door?)"
-
-        "Because they can't open it.":
-            jump 
+    jump think_01_door
