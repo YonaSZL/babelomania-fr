@@ -20,11 +20,11 @@ translate french strings:
 
     # game/screens/preferences.rpy:50
     old "Unseen Text"
-    new "Texte non vu"
+    new "Texte Non Vu"
 
     # game/screens/preferences.rpy:54
     old "After Choices"
-    new "Après choix"
+    new "Après Choix"
 
     # game/screens/preferences.rpy:58
     old "Transitions"
@@ -48,7 +48,7 @@ translate french strings:
 
     # game/screens/preferences.rpy:94
     old "Auto-Forward Time"
-    new "Temps de Lecture Automatique" # Pas sur
+    new "Temps de Lecture Automatique"
 
     # game/screens/preferences.rpy:100
     old "Music Volume"

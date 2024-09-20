@@ -180,7 +180,7 @@ translate french strings:
 
     # game/screens/other_screens.rpy:233
     old "Toggles assistive {a=https://www.renpy.org/l/voicing}self-voicing{/a}."
-    new "Active/Désactive {a=https://www.renpy.org/l/voicing}l'auto-voix assistée{/a}."
+    new "Active/Désactive {a=https://www.renpy.org/l/voicing}la narration assistée{/a}."
 
     # game/screens/other_screens.rpy:237
     old "Opens the accessibility menu."
