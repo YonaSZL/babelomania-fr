@@ -64,15 +64,15 @@ screen gaspmina_conv_01:
                 
                 if gaspmina_01_code:
                     button:
-                    text _("Phones")
-                    at btn_slide
-                    if gaspmina_01_phone:
-                        background "gui/talkie/button.png"
-                    else:
-                        background "gui/talkie/button_empty.png"
-                    hover_sound "audio/sfx/gui_hover.ogg"
-                    activate_sound "audio/sfx/gui_confirm.ogg"
-                    action Jump("gaspmina_01_phone")
+                        text _("Phones")
+                        at btn_slide
+                        if gaspmina_01_phone:
+                            background "gui/talkie/button.png"
+                        else:
+                            background "gui/talkie/button_empty.png"
+                        hover_sound "audio/sfx/gui_hover.ogg"
+                        activate_sound "audio/sfx/gui_confirm.ogg"
+                        action Jump("gaspmina_01_phone")
 
 
         ####Indicator if viewport is scrollable

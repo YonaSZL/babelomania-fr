@@ -364,3 +364,15 @@ translate french exp_taisho_1f_study_01_flashlight_3e702ccd:
     # sh_i surprise "(A {b}flashlight{/b}!{w=0.3} What are even the chances?!)"
     sh_i surprise ""
 
+# TODO: Translation updated at 2024-09-20 23:06
+
+translate french strings:
+
+    # game/scripts/exp/exp_taisho_1f_study.rpy:151
+    old "Hanging Scrolls"
+    new ""
+
+    # game/scripts/exp/exp_taisho_1f_study.rpy:152
+    old "Door"
+    new ""
+

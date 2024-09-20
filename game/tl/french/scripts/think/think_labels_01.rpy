@@ -66,3 +66,23 @@ translate french strings:
     old "Because they wanted to protect me."
     new ""
 
+# TODO: Translation updated at 2024-09-20 23:06
+
+# game/scripts/think/think_labels_01.rpy:44
+translate french think_01_trap_2df29929:
+
+    # sh_i nulla "(A door easily opened from inside but not outside...{w=0.5} Unless this is a special room that can only be opened from outside?{w=0.3} Which just so happens to look like a meeting room?{w=0.3} That's...{w=0.5} Unlikely.)"
+    sh_i nulla ""
+
+# game/scripts/think/think_labels_01.rpy:51
+translate french think_01_protect_5d4b7c9f:
+
+    # sh_i nulla "(Whoever stuffed me in here, then locked the door from outside.{w=0.3} If it was the same person now at the door they would be able to get in again no issue...)"
+    sh_i nulla ""
+
+# game/scripts/think/think_labels_01.rpy:53
+translate french think_01_protect_80632cdd:
+
+    # sh_i nulla "(So it's not the same person and...{w=0.5} If the door can be opened from my side...{w=0.5} They put me in here to hide me!)"
+    sh_i nulla ""
+
