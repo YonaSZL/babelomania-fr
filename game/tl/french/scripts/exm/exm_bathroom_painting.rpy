@@ -22,7 +22,7 @@ translate french exm_bathroom_painting_subject_044a7202:
 translate french exm_bathroom_painting_subject_299914d6:
 
     # sh_i frown "(This feels more like a depiction of what came after the big G went all old testament on humanity...{w=0.5} Although that doesn't explain the rivers of blood.)"
-    sh_i frown "(Cela ressemble plus à une représentation de ce qui s'est passé après que le grand G se soit vengé de l'humanité...{w=0.5} Bien que cela n'explique pas les rivières de sang...)"
+    sh_i frown "(Cela ressemble plus à une représentation de ce qui s'est passé après que le grand D se soit vengé de l'humanité...{w=0.5} Bien que cela n'explique pas les rivières de sang...)"
 
 # game/scripts/exm/exm_bathroom_painting.rpy:12
 translate french exm_bathroom_painting_subject_2c29dd32:
@@ -102,7 +102,7 @@ translate french exm_bathroom_painting_subject_08378f1a:
 translate french exm_bathroom_painting_subject_ff9954bd:
 
     # sh_i frown "(This feels more like a depiction of what came after the big G went all old testament on it...{w=0.5} Although that doesn't explain the rivers of blood.)"
-    sh_i frown "(Cela ressemble plus à une représentation de ce qui s'est passé après que le grand G se soit mis à faire l'Ancien Testament...{w=0.5} Bien que cela n'explique pas les rivières de sang...)"
+    sh_i frown "(Cela ressemble plus à une représentation de ce qui s'est passé après que le grand D se soit mis à faire l'Ancien Testament...{w=0.5} Bien que cela n'explique pas les rivières de sang...)"
 
 # game/scripts/exm/exm_bathroom_painting.rpy:46
 translate french exm_bathroom_painting_title_2260a322:
