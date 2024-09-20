@@ -131,7 +131,7 @@ label story_01_door_opens:
     show Shigeo neutral at sh_med:
         xalign 0.375
     sh nulla "I don't come from any kind of money, old or new."
-    am nulla "Shigeo Arata...!{w=0.5} "
+    am nulla "Shigeo Arata...!{w=0.5} <Sur le Coran de la Mecque!>"
     show Gaspard angry
     ga nulla "<What the fuck is wrong with you?!{w=0.3} You scared the shit out of me!>"
     sh nulla "Apologies.{w=0.3} I was waiting to see who came through that door...{w=0.5} And how they would choose to act."
@@ -146,4 +146,3 @@ label story_01_door_opens:
     pause 1.0
 
 label story_00_taisho:
-    
