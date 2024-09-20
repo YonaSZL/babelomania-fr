@@ -134,4 +134,16 @@ label story_01_door_opens:
     am nulla "Shigeo Arata...!{w=0.5} "
     show Gaspard angry
     ga nulla "<What the fuck is wrong with you?!{w=0.3} You scared the shit out of me!>"
-    sh nulla "Apologies."
+    sh nulla "Apologies.{w=0.3} I was waiting to see who came through that door...{w=0.5} And how they would choose to act."
+    show Shigeo frown
+    sh nulla "As you aptly put, this is a very weird situation...{w=0.5} And I agree with Amina that at this moment, it'd be better to collect our thoughts for a few minutes."
+    pause 1.0
+    show Amina neutral
+    show Gaspard frown
+    with dissolve
+    am nulla "Also gives me time to get my heart-rate down."
+    ga nulla "<Tsk.{w=0.3} Whatever.>"
+    pause 1.0
+
+label story_00_taisho:
+    
