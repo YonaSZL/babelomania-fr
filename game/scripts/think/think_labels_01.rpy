@@ -41,12 +41,16 @@ label think_01_trap:
     $ renpy.block_rollback()
     sh_i nulla "(Trap me?{w=0.3} No, it doesn't make sense.{w=0.3} They could have tied me down, too...{w=0.5} I don't have my phone, yes, but...)"
     show Shigeo surprise with dissolve
+    sh_i nulla "(A door easily opened from inside but not outside...{w=0.5} Unless this is a special room that can only be opened from outside?{w=0.3} Which just so happens to look like a meeting room?{w=0.3} That's...{w=0.5} Unlikely.)"
     pause 1.0
     jump think_01_door
 
 label think_01_protect:
-    play sound4 "audio/sfx/gui_hint.ogg"
     $ renpy.block_rollback()
-    
-    pause 1.0
+    play sound3 "audio/se/doorknob_rattle.ogg"
+    sh_i nulla "(Whoever stuffed me in here, then locked the door from outside.{w=0.3} If it was the same person now at the door they would be able to get in again no issue...)"
+    show Shigeo surprise with dissolve
+    sh_i nulla "(So it's not the same person and...{w=0.5} If the door can be opened from my side...{w=0.5} They put me in here to hide me!)"
+    play sound4 "audio/sfx/gui_solved.ogg"
+    pause 2.0
     jump think_01_room

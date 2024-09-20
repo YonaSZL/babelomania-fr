@@ -146,12 +146,14 @@ screen taisho_1f_study_explore_02():
         ground "taisho_1f_study"
         hover "taisho_1f_study"
         
-        hotspot (494, 717, 571, 201) action Jump("exp_taisho_1f_study_01_couch") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#COUCH/PHONE
-        if exp_taisho_1f_study_01_phone:
-            hotspot (953, 163, 336, 250) action Jump("exp_taisho_1f_study_01_lamp") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#LAMP
-            hotspot (1443, 905, 424, 133) action Jump("exp_taisho_1f_study_01_floor") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#FLOOR
-            if taisho_1f_study_explore_02 == 3:
-                hotspot (1377, 630, 111, 76) action Jump("exp_taisho_1f_study_01_flashlight") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#FLASHLIGHT
+        if flashlight_use:
+            hotspot (494, 717, 571, 201) action Jump("exp_taisho_1f_study_02_window") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Window")#WINDOW
+            hotspot (953, 163, 336, 250) action Jump("exp_taisho_1f_study_02_scrolls") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Hanging Scrolls")#SCROLLS
+            hotspot (1443, 905, 424, 133) action Jump("exp_taisho_1f_study_02_door") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Door")#DOOR
+        else:
+            hotspot (494, 717, 571, 201) action Jump("exp_taisho_1f_study_02_window") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Window")#WINDOW
+            hotspot (953, 163, 336, 250) action Jump("exp_taisho_1f_study_02_scrolls") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Hanging Scrolls")#SCROLLS
+            hotspot (1443, 905, 424, 133) action Jump("exp_taisho_1f_study_02_door") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Door")#DOOR
 
     $ tooltip = GetTooltip()
 
