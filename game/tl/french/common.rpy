@@ -4,99 +4,99 @@ translate french strings:
 
     # renpy/common/00accessibility.rpy:28
     old "Self-voicing disabled."
-    new ""
+    new "Narration désactivée."
 
     # renpy/common/00accessibility.rpy:29
     old "Clipboard voicing enabled. "
-    new ""
+    new "Narration du presse-papier activée."
 
     # renpy/common/00accessibility.rpy:30
     old "Self-voicing enabled. "
-    new ""
+    new "Narration activée."
 
     # renpy/common/00accessibility.rpy:32
     old "bar"
-    new ""
+    new "barre"
 
     # renpy/common/00accessibility.rpy:33
     old "selected"
-    new ""
+    new "sélectionné"
 
     # renpy/common/00accessibility.rpy:34
     old "viewport"
-    new ""
+    new "fenêtre"
 
     # renpy/common/00accessibility.rpy:35
     old "horizontal scroll"
-    new ""
+    new "scroll horizontal"
 
     # renpy/common/00accessibility.rpy:36
     old "vertical scroll"
-    new ""
+    new "scroll vertical"
 
     # renpy/common/00accessibility.rpy:37
     old "activate"
-    new ""
+    new "activer"
 
     # renpy/common/00accessibility.rpy:38
     old "deactivate"
-    new ""
+    new "désactiver"
 
     # renpy/common/00accessibility.rpy:39
     old "increase"
-    new ""
+    new "augmenter"
 
     # renpy/common/00accessibility.rpy:40
     old "decrease"
-    new ""
+    new "diminuer"
 
     # renpy/common/00accessibility.rpy:121
     old "Accessibility Menu. Use up and down arrows to navigate, and enter to activate buttons and bars."
-    new ""
+    new "Menu d'Accessibilité. Utiliser les fléches haut et bas pour naviguer, et entrée pour activer les boutons et barres."
 
     # renpy/common/00accessibility.rpy:140
     old "Font Override"
-    new ""
+    new "Remplacer police"
 
     # renpy/common/00accessibility.rpy:144
     old "Default"
-    new ""
+    new "Par défaut"
 
     # renpy/common/00accessibility.rpy:148
     old "DejaVu Sans"
-    new ""
+    new "DejaVu Sans"
 
     # renpy/common/00accessibility.rpy:152
     old "Opendyslexic"
-    new ""
+    new "Opendyslexic"
 
     # renpy/common/00accessibility.rpy:158
     old "Text Size Scaling"
-    new ""
+    new "Mise à l'échelle texte"
 
     # renpy/common/00accessibility.rpy:164
     old "Reset"
-    new ""
+    new "Réinitialiser"
 
     # renpy/common/00accessibility.rpy:170
     old "Line Spacing Scaling"
-    new ""
+    new "Mise à l'échelle espacement des lignes"
 
     # renpy/common/00accessibility.rpy:182
     old "High Contrast Text"
-    new ""
+    new "Texte Haut Contraste"
 
     # renpy/common/00accessibility.rpy:184
     old "Enable"
-    new ""
+    new "Activer"
 
     # renpy/common/00accessibility.rpy:188
     old "Disable"
-    new ""
+    new "Désactiver"
 
     # renpy/common/00accessibility.rpy:195
     old "Self-Voicing"
-    new ""
+    new "Narration"
 
     # renpy/common/00accessibility.rpy:198
     old "Self-voicing support is limited when using a touch screen."
