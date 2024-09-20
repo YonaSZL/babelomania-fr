@@ -141,6 +141,7 @@ label story_01_door_opens:
     show Amina neutral
     show Gaspard frown
     with dissolve
+    play music "audio/bgm/shadows_whisper.ogg"
     am nulla "Also gives me time to get my heart-rate down."
     ga nulla "<Tsk.{w=0.3} Whatever.>"
     pause 1.0

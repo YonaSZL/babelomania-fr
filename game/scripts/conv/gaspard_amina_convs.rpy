@@ -3,15 +3,16 @@
 #Sorbonne
 
 default gaspmina_conv_01 = 0
-default gaspmina_01_gaspard = False
 default gaspmina_01_shigeo = False
-default gaspmina_01_wedding = False
+default gaspmina_01_gaspardamina = False
+default gaspmina_01_code = False
+default gaspmina_01_phone = False
 
 screen gaspmina_conv_01:
     add "gui/talkie/bottom.png" yalign 1.0
 
-    if gaspmina_conv_01 == 3:
-        textbutton _("Return") action Jump("story_00_meet_amina") align(1.0, 1.0) offset(-60,-10) text_size 60 hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
+    if gaspmina_conv_01 == 4:
+        textbutton _("Return") action Jump("story_00_taisho") align(1.0, 1.0) offset(-60,-10) text_size 60 hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
 
     vbox:
         ypos 300 xpos -880 ##button positions
@@ -29,43 +30,49 @@ screen gaspmina_conv_01:
             vbox:
                 spacing 20
                 button:
-                    text _("Gaspard")
+                    text _("Shigeo")
                     at btn_slide
-
-                    ## you can put a simple variable/renpy.seen_label here to determine which bg is shown
-                    ## button.png -> with the X
-                    ## button_empty.png -> without X
-                    if gaspmina_01_gaspard:
+                    if gaspmina_01_shigeo:
                         background "gui/talkie/button.png"
                     else:
                         background "gui/talkie/button_empty.png"
                     hover_sound "audio/sfx/gui_hover.ogg"
                     activate_sound "audio/sfx/gui_confirm.ogg"
-                    action Jump("gaspmina_01_gaspard")
+                    action Jump("gaspmina_01_shigeo")
 
-                if gaspmina_01_gaspard:
-                    button:
-                        text _("The Wedding")
-                        at btn_slide
-                        if gaspmina_01_wedding:
-                            background "gui/talkie/button.png"
-                        else:
-                            background "gui/talkie/button_empty.png"
-                        hover_sound "audio/sfx/gui_hover.ogg"
-                        activate_sound "audio/sfx/gui_confirm.ogg"
-                        action Jump("gaspmina_01_wedding")
+                button:
+                    text _("Gaspard&Amina")
+                    at btn_slide
+                    if gaspmina_01_gaspardamina:
+                        background "gui/talkie/button.png"
+                    else:
+                        background "gui/talkie/button_empty.png"
+                    hover_sound "audio/sfx/gui_hover.ogg"
+                    activate_sound "audio/sfx/gui_confirm.ogg"
+                    action Jump("gaspmina_01_gaspardamina")
 
-                if gaspmina_01_wedding:
+                button:
+                    text _("Door Code")
+                    at btn_slide
+                    if gaspmina_01_code:
+                        background "gui/talkie/button.png"
+                    else:
+                        background "gui/talkie/button_empty.png"
+                    hover_sound "audio/sfx/gui_hover.ogg"
+                    activate_sound "audio/sfx/gui_confirm.ogg"
+                    action Jump("gaspmina_01_code")
+                
+                if gaspmina_01_code:
                     button:
-                        text _("The Android")
-                        at btn_slide
-                        if gaspmina_01_shigeo:
-                            background "gui/talkie/button.png"
-                        else:
-                            background "gui/talkie/button_empty.png"
-                        hover_sound "audio/sfx/gui_hover.ogg"
-                        activate_sound "audio/sfx/gui_confirm.ogg"
-                        action Jump("gaspmina_01_shigeo")
+                    text _("Phones")
+                    at btn_slide
+                    if gaspmina_01_phone:
+                        background "gui/talkie/button.png"
+                    else:
+                        background "gui/talkie/button_empty.png"
+                    hover_sound "audio/sfx/gui_hover.ogg"
+                    activate_sound "audio/sfx/gui_confirm.ogg"
+                    action Jump("gaspmina_01_phone")
 
 
         ####Indicator if viewport is scrollable
@@ -74,40 +81,103 @@ screen gaspmina_conv_01:
             add "gui/talkie/scroll_bg.png"
             add "gui/talkie/scroll_arrow.png" at arrow_down
 
-label gaspmina_01_gaspard:
+label gaspmina_01_shigeo:
     $ renpy.block_rollback()
     pause 0.5
-    ga nulla "<Since I haven't had the pleasure so far, I assume you are an invitee on the groom's side.>"
-    sh neutral "<Exactly.{w=0.3} I'm an old friend of Francesco...{w=0.5} And how do you know Delphine?>"
-    show Gaspard laugh
-    ga nulla "<Oh, our families go way back...{w=0.5} When you deal in our kind of business, you end up always running in the same circles.>"
-    show Gaspard neutral
-    ga nulla "<We also went to the same business school.{w=0.3} We're not exactly close but, I wasn't about to rebuke a wedding invite.{w=0.3} Especially with Château de Bois-le-Dumont as a location.>"
-    sh surprise "<It is a beautiful estate, from what I've seen...{w=0.5} You've visited here before?>"
-    show Gaspard frown
-    ga nulla "<A few times...{w=0.5} Although this is the first time I will have to stay the night in the Taisho building.>"
-    sh neutral "<Is there a problem with that?>"
-    ga nulla "<I'm not exactly a fan of the architectural style...{w=0.5} Totalitarian Japan aping the wonders of imperial Europe and producing patchworks without the strengths of either.>"
-    show Gaspard neutral
-    ga nulla "<They should've stuck with what they knew...{w=0.5} And not try being something they weren't.>"
-    sh_i surprise "(Hmmm.{w=0.5} Is he talking about just the architecture or...?)"
-    sh neutral "<South East Asia would have certainly been happier...{w=0.5} I must mention that my mother is Japanese.>"
-    pause 1.0
+    ga nulla "<What were you even doing, in here?>"
+    sh neutral -sweat "I wasn't exactly {i}doing{/i} anything, other than looking around.{w=0.3} I woke up in here not long ago, in complete darkness."
     show Gaspard surprise
-    ga nulla "<Huh...{w=0.5} I see.{w=0.3} Did you grow up in Japan?>"
-    sh surprise "<Not exactly.{w=0.3} I've visited my mother's family a few times growing up, but then...{w=0.5} No, mostly in Italy, that's my father's country.>"
-    ga nulla "<Half Italian, half Japanese?{w=0.3} And your French isn't half bad for a foreigner.>"
-    show Gaspard neutral
-    ga nulla "Although maybe you'd rather we speak English going forward?{w=0.3} I don't really mind."
-    sh laugh sweatdrop "Hahaha, much obliged...{w=0.5} I've only been learning French for a couple years, I barely hit my B2."
-    ga nulla "A commendable effort.{w=0.3} Keep it up."
+    show Amina surprise
+    am nulla "Just like us...{w=0.5} What is the last thing you remember?"
+    sh frown "The wedding.{w=0.3} The start of the video, projected on the wall screen...{w=0.5} Then nothing."
+    sh neutral "Next thing I know I was waking up, laid up on that couch.{w=0.3} What about the two of you?"
     show Gaspard frown
-    ga nulla "I would suggest speaking with more mother-tongue, though.{w=0.3} You're picking up some unbecoming phonetic habits."
-    sh surprise -sweatdrop "Uhm...{w=0.5} I see.{w=0.3} I'll try my best."
-    show Gaspard neutral
-    sh_i surprise "(I have spent two months in Provence, though...?{w=0.3} I didn't think my pronunciation was that bad.{w=0.3} He's understanding everything I put down, anyway.)"
+    am nulla "Pretty much the same story...{w=0.5} We woke up sprawled out on the floor in a nearby room."
+    show Amina neutral
+    am nulla "Last thing I remember was that video, too.{w=0.3} I mean..."
+    show Amina surprise
+    am nulla "Not...{w=0.5} I mean, I remember that that's what we were doing but...{w=0.5} I don't really remember {nw}"
+    play sound "audio/sfx/gui_spook.ogg"
+    extend "{b}anything about the contents{/b}?"
+    show Gaspard surprise
+    ga nulla "<You don't remember the video itself...?>"
+    sh surprise "Now that you mention it...{w=0.5} You're right, I don't remember anything about that, either."
+    sh frown "And yet, I'm sure that I saw at least a few seconds of it before...{w=0.5} Blacking out."
+    show Amina neutral
+    am nulla "That's quite odd...{w=0.5} Gaspard, how about you?"
     pause 1.0
-    if gaspmina_01_gaspard == False:
-        $ gaspmina_01_gaspard = True
+    show Gaspard frown
+    ga nulla "<If neither of you remember it and so far we've all had the same experiences, what makes you think this is any different?>"
+    show Amina surprise
+    am nulla "I...{w=0.5} I was just checking."
+    ga nulla "<Hmph.>"
+    sh neutral ".{w=0.3}.{w=0.3}."
+    pause 1.0
+    if gaspmina_01_shigeo == False:
+        $ gaspmina_01_shigeo = True
+        $ gaspmina_conv_01 += 1
+    call screen gaspmina_conv_01
+
+label gaspmina_01_gaspardamina:
+    $ renpy.block_rollback()
+    pause 0.5
+    sh neutral -sweat "How long ago did you wake up?{w=0.3} Have you met anyone else?"
+    ga nulla "<No one.{w=0.3} I woke up first, the room was...{w=0.5} Similar to this one.{w=0.3} A small study with awful furnishing...{w=0.5} Definitely the Taisho building.>"
+    show Amina neutral
+    am nulla "I woke up shortly afterwards.{w=0.3} Total darkness, lights don't work.{w=0.3} Same for the main corridor, although there's light coming through the window from outside."
+    sh frown "Which means that the power failure is concentrated...{w=0.5} Maybe something happened to the transformer, or they messed with the eletrical panel."
+    show Gaspard surprise
+    ga nulla "<They messed with the...{w=0.5} What?{w=0.3} What's that word?>"
+    sh surprise "Ah?{w=0.3} Uhm, the...{w=0.5} Damn it, I don't know the word in French..."
+    am nulla "<Le tableau de distribution électrique, Gaspard.>"
+    ga nulla "<Ah, that!{w=0.3} That...>"
+    show Gaspard frown
+    ga nulla "<Ugh, speak French already!{w=0.3} What's the matter with you?>"
+    sh neutral "I'm...{w=0.5} Sorry, but I'm not fluent enough in it to properly articulate my thoughts in such a situation."
+    am nulla "Gaspard, it's fine.{w=0.3} I can translate if there's anything you don't understand."
+    show Gaspard angry
+    ga nulla "<Oh, thank you {i}so{/i} much!{w=0.3} That's not the point!>"
+    show Amina surprise
+    am nulla "Gaspard...!"
+    ga nulla "<Why do I have to be the one accomodating him?!{w=0.3} We're in France, damn it!{w=0.3} Speak the language if we really must suffer...>"
+    pause 1.0
+    show Gaspard surprise sweat with dissolve
+    ga nulla "<Suffer...{w=0.5} Aaaah...>"
+    pause 1.0
+    show Amina sad
+    pause 0.5
+    sh neutral "<We're in a difficult, mysterious situation.{w=0.3} Being stressed is perfectly normal.>"
+    sh frown "<I understand wanting things to feel familiar.{w=0.3} Safe.{w=0.3} But because it's a difficult situation, I need to speak the best I can.>"
+    show Gaspard frown
+    sh neutral "<And I'm not good enough in your language to do that.{w=0.3} But you're good enough with mine, right?{w=0.3} You told me so earlier.>"
+    ga nulla "<Whatever....{w=0.5} I don't get why you're here too, anyway.>"
+    show Amina neutral
+    sh neutral "I've been asking myself the same question...{w=0.5} I can guess that between the two of you, any kidnapper would be able to request a hefty sum for your safe return."
+    sh surprise "Not so much for me.{w=0.3} I'm a public servant, entry level, and both of my parents are middle class."
+    am nulla "Which means...{w=0.5} That whoever put us here is not after money."
+    sh neutral sweat ".{w=0.3}.{w=0.3}.{w=0.5}I'm afraid so."
+    pause 1.0
+    if gaspmina_01_gaspardamina == False:
+        $ gaspmina_01_gaspardamina = True
+        $ gaspmina_conv_01 += 1
+    call screen gaspmina_conv_01
+
+label gaspmina_01_code:
+    $ renpy.block_rollback()
+    pause 0.5
+    
+    pause 1.0
+    if gaspmina_01_code == False:
+        $ gaspmina_01_code = True
+        $ gaspmina_conv_01 += 1
+    call screen gaspmina_conv_01
+
+label gaspmina_01_phone:
+    $ renpy.block_rollback()
+    pause 0.5
+    
+    pause 1.0
+    if gaspmina_01_phone == False:
+        $ gaspmina_01_phone = True
         $ gaspmina_conv_01 += 1
     call screen gaspmina_conv_01
