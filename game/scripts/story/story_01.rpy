@@ -25,7 +25,8 @@ label story_01_there_were_three:
     $ renpy.block_rollback()
     $ flashlight_consume = False
     stop music fadeout 3.5
-    scene taisho_1f_study
+    scene taisho_1f_study_bare
+    show dark_flashlight
     pause 1.0
     sh_i neutral "(Alright, then.{w=0.3} I should leave, now.)"
     pause 0.5
@@ -41,9 +42,7 @@ label story_01_there_were_three:
     play sound4 "audio/em/em_surprise.ogg"
     show screen emote("surprise",0.5,0.05)
     show Shigeo surprise
-    pause 1.0
-    play music "audio/bgm/shadows_breathe.ogg"
-    pause 0.5
+    pause 1.5
     sh_i nulla "(The doorknob...{w=0.5} Someone's trying to open the door!)"
     show Shigeo smile
     sh_i nulla "(Thank goodness!{w=0.3} It means that there's other people around that-)"
@@ -53,6 +52,9 @@ label story_01_there_were_three:
     sh_i nulla "(Wait...{w=0.5} {nw}"
     play sound "audio/sfx/gui_spook.ogg"
     extend "{b}trying{/b} to open the door?)"
+    play sound3 "audio/se/doorknob_rattle.ogg"
+    pause 0.5
+    play music "audio/bgm/shadows_breathe.ogg"
     pause 1.0
     scene black
     show darkness_layer
@@ -60,15 +62,19 @@ label story_01_there_were_three:
         xalign 0.5
     with Reveal3
     pause 1.5
+    $ renpy.block_rollback()
     jump think_01_door
 
 label story_01_door_opens:
     $ renpy.block_rollback()
-    scene taisho_1f_study
+    scene taisho_1f_study_bare
+    show dark_flashlight
     show Shigeo surprise at sh_big:
         xalign 0.5
+    with Reveal
     pause 0.5
     play sound3 "audio/se/door_slam.ogg"
+    pause 0.5
     show Shigeo frown
     sh_i nulla "(That doesn't sound good at all...{w=0.5} Maybe I'm being paranoid, but I'd rather get out of here on my own terms.)"
     hide Shigeo with dissolve
@@ -80,7 +86,7 @@ label story_01_door_opens:
     pause 0.5
     play sound4 "audio/se/fist_slam.ogg"
     pause 0.5
-    sh_i angry "(Ugh, they're persistent...!{w=0.3} But the door seems reinforced.{w=0.3} They'll need to give up, eventually...)"
+    sh_i angry "(Ugh, they're persistent...!{w=0.3} But the door seems reinforced.)"
     pause 3.0
     sh_i neutral "(.{w=0.3}.{w=0.3}.{w=0.5}did they give up?)"
     pause 0.5
@@ -95,16 +101,16 @@ label story_01_door_opens:
     play sound "audio/se/steps_wood_slow.ogg"
     pause 1.0
     sh_i frown sweat "(One...{w=0.5} Two.{w=0.3} Two sets of steps.)"
-    am_x darko surprise "(<...shoulder?>)"
-    ga_x darko angry "<I'm fine!{w=0.3} Mind your own business!>"
+    am_x darko surprise "<...shoulder?>"
+    ga_x darko angry sweat "<I'm fine!{w=0.3} Mind your own business!>"
     am_x darko angry "<Why are you being such an asshole?!{w=0.3} I was trying to help!>"
     sh_i surprise "(They're...{w=0.5} Arguing?{w=0.3} In French?{w=0.5} Wait, I think...{w=0.3} Are they...?)"
     stop music fadeout 3.5
     pause 0.5
     show Amina angry at am_med:
-        xalign 0.85
+        xalign 0.95
     show Gaspard angry at ga_med:
-        xalign 0.63
+        xalign 0.52
     with Reveal
     pause 0.5
     sh_i surprise "(Gaspard and Amina!)"
@@ -112,7 +118,7 @@ label story_01_door_opens:
     show Amina frown
     am nulla "<The way you're holding your shoulder begs to differ.{w=0.3} You've been acting crazy ever since we woke up!>"
     show Gaspard frown
-    ga nulla "<Oh, I'm sorry me if the situation we're in is getting to me...>"
+    ga nulla "<Oh, I'm sorry if the situation we're in is getting to me...>"
     show Amina neutral
     am nulla "<It's exactly because the situation we're in is weird that we need to keep a level head...{w=0.5} Just running around opening random doors won't do us any good.{w=0.3} We need to think.>"
     show Gaspard surprise
@@ -121,15 +127,16 @@ label story_01_door_opens:
     am nulla "<What kind of kidnapper would leave us unrestrained in a room we can open?{w=0.3} And with a {nw}"
     play sound "audio/sfx/gui_hint.ogg"
     extend "{b}code that allows us to open another door{/b}?!>"
-    sh neutral ".{w=0.3}.{w=0.3}.{w=0.5}and why would they kidnap me, too?"
+    sh neutral -sweat ".{w=0.3}.{w=0.3}.{w=0.5}and why would they kidnap me, too?"
     play sound "audio/em/em_shock.ogg"
     show Gaspard shock sweat
     show Amina shock sweat
-    show screen emote("surprise",0.63,0.05)
-    show screen emote2("surprise",0.85,0.05)
+    show screen emote("surprise",0.52,0.05)
+    show screen emote2("surprise",0.8,0.05)
     pause 1.0
     show Shigeo neutral at sh_med:
-        xalign 0.375
+        xalign 0.1
+    with Reveal
     sh nulla "I don't come from any kind of money, old or new."
     am nulla "Shigeo Arata...!{w=0.5} <Sur le Coran de la Mecque!>"
     show Gaspard angry
@@ -145,5 +152,17 @@ label story_01_door_opens:
     am nulla "Also gives me time to get my heart-rate down."
     ga nulla "<Tsk.{w=0.3} Whatever.>"
     pause 1.0
+    scene taisho_1f_study_bare
+    show dark_flashlight
+    with dissolve
+    pause 0.5
+    show Gaspard frown at ga_big:
+        xalign 0.37
+    show Amina neutral at am_big:
+        xalign 0.97
+    with dissolve
+    pause 0.5
+    $ renpy.block_rollback()
+    call screen gaspmina_conv_01
 
 label story_00_taisho:

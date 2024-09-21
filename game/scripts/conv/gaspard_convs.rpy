@@ -123,10 +123,10 @@ label gaspard_01_wedding:
     show Gaspard neutral
     ga nulla "They were once they ran out of justifications...{w=0.5} Francesco graduated top of his class, is a successful researcher and more than self-sufficient."
     show Gaspard laugh
-    ga nulla "When they started talking about using his lack of living relatives and any tie to his old life before coming to France as arguments, I made them respectfullly notice they were grasping at straws."
+    ga nulla "When they started talking about using his lack of living relatives and any ties to his old life before coming to France as arguments, I made them respectfully notice they were grasping at straws."
     show Gaspard neutral
     ga nulla "They could either come out and say that they didn't want Delphine to marry a non-legacy person or shut up and give them their blessing.{w=0.3} Maybe hope for a quick divorce."
-    sh surprise "Huh...{w=0.5} I guess those kind of dynamics are still a thing in certain circles, aren't they?"
+    sh surprise "Huh...{w=0.5} I guess those kinds of dynamics are still a thing in certain circles, aren't they?"
     show Gaspard laugh
     ga nulla "You have no idea...{w=0.5} Not my thing, to be completely honest."
     show Gaspard neutral

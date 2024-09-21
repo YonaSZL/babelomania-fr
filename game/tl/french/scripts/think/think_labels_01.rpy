@@ -86,3 +86,17 @@ translate french think_01_protect_80632cdd:
     # sh_i nulla "(So it's not the same person and...{w=0.5} If the door can be opened from my side...{w=0.5} They put me in here to hide me!)"
     sh_i nulla ""
 
+# TODO: Translation updated at 2024-09-21 16:11
+
+# game/scripts/think/think_labels_01.rpy:57
+translate french think_01_protect_3d8435af:
+
+    # sh_i nulla "(So it's not the same person and...{w=0.5} If the door can be opened from my side...{w=0.5} {nw}"
+    sh_i nulla ""
+
+# game/scripts/think/think_labels_01.rpy:59
+translate french think_01_protect_8f5d7dc1:
+
+    # extend "{b}They put me in here to hide me{/b}!)"
+    extend ""
+

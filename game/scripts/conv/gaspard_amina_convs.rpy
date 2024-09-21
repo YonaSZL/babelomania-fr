@@ -89,8 +89,8 @@ label gaspmina_01_shigeo:
     show Gaspard surprise
     show Amina surprise
     am nulla "Just like us...{w=0.5} What is the last thing you remember?"
-    sh frown "The wedding.{w=0.3} The start of the video, projected on the wall screen...{w=0.5} Then nothing."
-    sh neutral "Next thing I know I was waking up, laid up on that couch.{w=0.3} What about the two of you?"
+    sh frown "The wedding.{w=0.3} The start of the video, playing on the wall screen...{w=0.5} Then nothing."
+    sh neutral "Next thing I know I was waking up, laying down on that couch.{w=0.3} What about the two of you?"
     show Gaspard frown
     am nulla "Pretty much the same story...{w=0.5} We woke up sprawled out on the floor in a nearby room."
     show Amina neutral
@@ -113,6 +113,7 @@ label gaspmina_01_shigeo:
     ga nulla "<Hmph.>"
     sh neutral ".{w=0.3}.{w=0.3}."
     pause 1.0
+    $ renpy.block_rollback()
     if gaspmina_01_shigeo == False:
         $ gaspmina_01_shigeo = True
         $ gaspmina_conv_01 += 1
@@ -157,6 +158,7 @@ label gaspmina_01_gaspardamina:
     am nulla "Which means...{w=0.5} That whoever put us here is not after money."
     sh neutral sweat ".{w=0.3}.{w=0.3}.{w=0.5}I'm afraid so."
     pause 1.0
+    $ renpy.block_rollback()
     if gaspmina_01_gaspardamina == False:
         $ gaspmina_01_gaspardamina = True
         $ gaspmina_conv_01 += 1
@@ -197,6 +199,7 @@ label gaspmina_01_code:
     show screen emote("surprise",0.17,0.5)
     sh shock "Wait, your...{w=0.5} Your phone?!"
     pause 1.0
+    $ renpy.block_rollback()
     if gaspmina_01_code == False:
         $ gaspmina_01_code = True
         $ gaspmina_conv_01 += 1
@@ -216,6 +219,7 @@ label gaspmina_01_phone:
     ga nulla "<I have.{w=0.3} Unfortunately, there's no networks available.>"
     sh surprise "Not even for Emergency Calls?{w=0.5} But that's..."
     pause 1.0
+    $ renpy.block_rollback()
     if gaspmina_01_phone == False:
         $ gaspmina_01_phone = True
         $ gaspmina_conv_01 += 1

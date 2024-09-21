@@ -376,3 +376,29 @@ translate french strings:
     old "Door"
     new ""
 
+# TODO: Translation updated at 2024-09-21 16:11
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:173
+translate french exp_taisho_1f_need_flashlight_d4f6f175:
+
+    # sh_i neutral "(It's too dark to see anything properly...{w=0.5} I need to {nw}"
+    sh_i neutral ""
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:175
+translate french exp_taisho_1f_need_flashlight_f230e188:
+
+    # extend "{b}use the flashlight{/b}.)"
+    extend ""
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:214
+translate french exp_taisho_1f_study_02_scrolls_3fa0e390:
+
+    # sh_i neutral "(Of course.{w=0.3} This must be the {nw}"
+    sh_i neutral ""
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:216
+translate french exp_taisho_1f_study_02_scrolls_3922d976:
+
+    # extend "{b}Taisho Building{/b}.{w=0.3} We were going to be spend the night in here, weren't we?)"
+    extend ""
+

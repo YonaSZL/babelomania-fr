@@ -69,3 +69,4 @@ layeredimage taisho_1f_study:
     group top:
         attribute top_dark default:
             "darkness_layers"
+    

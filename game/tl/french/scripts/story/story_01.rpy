@@ -208,3 +208,35 @@ translate french story_01_door_opens_ad7ceece:
     # ga nulla "<Tsk.{w=0.3} Whatever.>"
     ga nulla ""
 
+# TODO: Translation updated at 2024-09-21 16:11
+
+# game/scripts/story/story_01.rpy:89
+translate french story_01_door_opens_0ad7e43f:
+
+    # sh_i angry "(Ugh, they're persistent...!{w=0.3} But the door seems reinforced.)"
+    sh_i angry ""
+
+# game/scripts/story/story_01.rpy:104
+translate french story_01_door_opens_7d420ac6:
+
+    # am_x darko surprise "<...shoulder?>"
+    am_x darko surprise ""
+
+# game/scripts/story/story_01.rpy:105
+translate french story_01_door_opens_87c85de4:
+
+    # ga_x darko angry sweat "<I'm fine!{w=0.3} Mind your own business!>"
+    ga_x darko angry sweat ""
+
+# game/scripts/story/story_01.rpy:121
+translate french story_01_door_opens_798246ff:
+
+    # ga nulla "<Oh, I'm sorry if the situation we're in is getting to me...>"
+    ga nulla ""
+
+# game/scripts/story/story_01.rpy:130
+translate french story_01_door_opens_a4e0066d:
+
+    # sh neutral -sweat ".{w=0.3}.{w=0.3}.{w=0.5}and why would they kidnap me, too?"
+    sh neutral -sweat ""
+

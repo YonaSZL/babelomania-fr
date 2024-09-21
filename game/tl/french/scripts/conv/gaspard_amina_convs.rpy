@@ -404,3 +404,17 @@ translate french strings:
     old "Phones"
     new ""
 
+# TODO: Translation updated at 2024-09-21 16:11
+
+# game/scripts/conv/gaspard_amina_convs.rpy:92
+translate french gaspmina_01_shigeo_6076741e:
+
+    # sh frown "The wedding.{w=0.3} The start of the video, playing on the wall screen...{w=0.5} Then nothing."
+    sh frown ""
+
+# game/scripts/conv/gaspard_amina_convs.rpy:93
+translate french gaspmina_01_shigeo_5b15dd61:
+
+    # sh neutral "Next thing I know I was waking up, laying down on that couch.{w=0.3} What about the two of you?"
+    sh neutral ""
+

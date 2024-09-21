@@ -137,6 +137,7 @@ default taisho_1f_study_explore_02 = 0
 
 default exp_taisho_1f_study_02_window = False
 default exp_taisho_1f_study_02_scrolls = False
+default exp_taisho_1f_study_02_door = False
 
 screen taisho_1f_study_explore_02():
 
@@ -169,7 +170,7 @@ label exp_taisho_1f_need_flashlight:
     scene taisho_1f_study
     $ renpy.block_rollback()
     pause 0.5
-    sh_i neutral "(It's too dark to see anything properly...{w=0.5} I need {nw}"
+    sh_i neutral "(It's too dark to see anything properly...{w=0.5} I need to {nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
     extend "{b}use the flashlight{/b}.)"
     pause 1.0
@@ -177,6 +178,8 @@ label exp_taisho_1f_need_flashlight:
     call screen taisho_1f_study_explore_02
 
 label exp_taisho_1f_study_02_window:
+    scene taisho_1f_study_bare
+    show dark_flashlight
     $ flashlight_consume = False
     $ renpy.block_rollback()
     pause 0.5
@@ -187,6 +190,7 @@ label exp_taisho_1f_study_02_window:
     sh_i frown "(Nothing short of an explosive could damage one of these things...{w=0.5} Selling point or not, this seems excessive for a place like this.)"
     sh_i neutral "(But it also begs the question:{w=0.3} why are they down right now?)"
     pause 1.0
+    scene black
     if exp_taisho_1f_study_02_window == False:
         $ exp_taisho_1f_study_02_window = True
         $ taisho_1f_study_explore_02 += 1
@@ -196,6 +200,8 @@ label exp_taisho_1f_study_02_window:
     call screen taisho_1f_study_explore_02
 
 label exp_taisho_1f_study_02_scrolls:
+    scene taisho_1f_study_bare
+    show dark_flashlight
     $ flashlight_consume = False
     $ renpy.block_rollback()
     pause 0.5
@@ -205,12 +211,15 @@ label exp_taisho_1f_study_02_scrolls:
     play sound "audio/em/em_surprise.ogg"
     show screen emote("surprise",0.17,0.5)
     sh_i surprise "(Wait...{w=0.5} Mixture of influences...?{w=0.3} I remember talking about this with Gaspard, earlier.)"
+    sh_i neutral "(Of course.{w=0.3} This must be the {nw}"
     play sound4 "audio/sfx/gui_solved.ogg"
-    sh_i neutral "(Of course.{w=0.3} This must be the {b}Taisho Building{/b}.{w=0.3} We were going to be spend the night in here, weren't we?)"
+    extend "{b}Taisho Building{/b}.{w=0.3} We were going to be spend the night in here, weren't we?)"
+    play sound4 "audio/sfx/gui_slots_confirm.ogg"
     show screen notify(_("Codex Updated."))
     sh_i surprise "(This doesn't look like a bedroom, though...{w=0.3} I must be in a different wing of the building, then.)"
     sh_i neutral "(Also, no trace of a charger for the flashlight.{w=0.3} Pity.)"
     pause 1.0
+    scene black
     if exp_taisho_1f_study_02_scrolls == False:
         $ exp_taisho_1f_study_02_scrolls = True
         $ taisho_1f_study_explore_02 += 1
@@ -220,6 +229,8 @@ label exp_taisho_1f_study_02_scrolls:
     call screen taisho_1f_study_explore_02
 
 label exp_taisho_1f_study_02_door:
+    scene taisho_1f_study_bare
+    show dark_flashlight
     $ flashlight_consume = False
     $ renpy.block_rollback()
     pause 0.5
@@ -235,8 +246,9 @@ label exp_taisho_1f_study_02_door:
     sh_i frown "(So the lights are out.{w=0.3} Or maybe it's just this one room?)"
     sh_i neutral "(I can't see a plug, nor anything else I can use to try and check though...{w=0.3} I'll need to leave, then.)"
     pause 1.0
-    if exp_taisho_1f_study_02_window == False:
-        $ exp_taisho_1f_study_02_window = True
+    scene black
+    if exp_taisho_1f_study_02_door == False:
+        $ exp_taisho_1f_study_02_door = True
         $ taisho_1f_study_explore_02 += 1
     if taisho_1f_study_explore_02 >= 3:
         jump story_01_there_were_three
