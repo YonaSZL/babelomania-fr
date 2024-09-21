@@ -46,3 +46,19 @@ translate french strings:
     old "It's a rechargeable flashlight. Nothing remarkable about it."
     new ""
 
+# TODO: Translation updated at 2024-09-21 23:08
+
+translate french strings:
+
+    # game/screens/inventory.rpy:14
+    old "Door Code Note"
+    new ""
+
+    # game/screens/inventory.rpy:115
+    old "It's the note Amina gave me. The code written on it is 19120730."
+    new ""
+
+    # game/screens/inventory.rpy:118
+    old "There's nothing I can do with this."
+    new ""
+

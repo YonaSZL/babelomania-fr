@@ -262,3 +262,5 @@ label story_01_taisho_corridor:
     am nulla "The window is not shuttered, unlike those in the rooms...{w=0.5} But it's still locked."
     sh frown "Also, it's made of tempered glass...{w=0.5} No chance of breaking through that bare handed."
     sh neutral "Well, let's look around and see what our options are."
+    pause 1.0
+    call screen taisho_1f_corridor_explore_01
