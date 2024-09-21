@@ -187,7 +187,7 @@ label splashscreen:
     scene main_menu_bg with Reveal3
     pause 3.0
     play sound "audio/sfx/gui_slots_confirm.ogg"
-    show babelomania_logo with glitch_load_5
+    scene main_menu_bg_logo with glitch_load_5
     pause 1.5
     scene white with quick_dissolve
     pause 0.5

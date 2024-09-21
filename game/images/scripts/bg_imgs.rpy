@@ -19,6 +19,7 @@ init python:
 ##System Images
 
 image main_menu_bg = "gui/main_menu/main_menu_bg.jpg"
+image main_menu_bg_logo = "gui/main_menu/main_menu_bg_logo.jpg"
 image darkness_layer = "gui/darkness_layer.png"
 
 image intro_00 = "gui/main_menu/intro_00.jpg"
