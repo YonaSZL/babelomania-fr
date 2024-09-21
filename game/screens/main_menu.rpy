@@ -16,8 +16,6 @@ screen main_menu():
 
     add "gui/main_menu/bg.png" align(0.5, 1.0) yoffset -100
 
-    add "babelomania_logo"
-
     style_prefix "main"
 
     hbox:

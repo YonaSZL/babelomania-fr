@@ -147,13 +147,13 @@ screen taisho_1f_study_explore_02():
         hover "taisho_1f_study"
         
         if flashlight_use:
-            hotspot (494, 717, 571, 201) action Jump("exp_taisho_1f_study_02_window") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Window")#WINDOW
-            hotspot (953, 163, 336, 250) action Jump("exp_taisho_1f_study_02_scrolls") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Hanging Scrolls")#SCROLLS
-            hotspot (1443, 905, 424, 133) action Jump("exp_taisho_1f_study_02_door") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Door")#DOOR
+            hotspot (326, 352, 451, 497) action Jump("exp_taisho_1f_study_02_window") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Window")#WINDOW
+            hotspot (1212, 457, 291, 227) action Jump("exp_taisho_1f_study_02_scrolls") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Hanging Scrolls")#SCROLLS
+            hotspot (1762, 327, 158, 589) action Jump("exp_taisho_1f_study_02_door") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Door")#DOOR
         else:
-            hotspot (494, 717, 571, 201) action Jump("exp_taisho_1f_study_02_window") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Window")#WINDOW
-            hotspot (953, 163, 336, 250) action Jump("exp_taisho_1f_study_02_scrolls") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Hanging Scrolls")#SCROLLS
-            hotspot (1443, 905, 424, 133) action Jump("exp_taisho_1f_study_02_door") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Door")#DOOR
+            hotspot (326, 352, 451, 497) action Jump("exp_taisho_1f_need_flashlight") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#WINDOW
+            hotspot (1212, 457, 291, 227) action Jump("exp_taisho_1f_need_flashlight") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#SCROLLS
+            hotspot (1762, 327, 158, 589) action Jump("exp_taisho_1f_need_flashlight") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#DOOR
 
     $ tooltip = GetTooltip()
 
@@ -164,6 +164,17 @@ screen taisho_1f_study_explore_02():
         frame:
             xalign 0.5
             text "[tooltip]"
+
+label exp_taisho_1f_need_flashlight:
+    scene taisho_1f_study
+    $ renpy.block_rollback()
+    pause 0.5
+    sh_i neutral "(It's too dark to see anything properly...{w=0.5} I need {nw}"
+    play sound4 "audio/sfx/gui_hint.ogg"
+    extend "{b}use the flashlight{/b}.)"
+    pause 1.0
+    scene black
+    call screen taisho_1f_study_explore_02
 
 label exp_taisho_1f_study_02_window:
     $ flashlight_consume = False
