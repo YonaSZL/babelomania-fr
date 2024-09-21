@@ -38,3 +38,11 @@ translate french strings:
     old "Battery's Dead."
     new ""
 
+# TODO: Translation updated at 2024-09-21 22:08
+
+translate french strings:
+
+    # game/screens/inventory.rpy:91
+    old "It's a rechargeable flashlight. Nothing remarkable about it."
+    new ""
+

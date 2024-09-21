@@ -12,7 +12,7 @@ screen gaspmina_conv_01:
     add "gui/talkie/bottom.png" yalign 1.0
 
     if gaspmina_conv_01 == 4:
-        textbutton _("Return") action Jump("story_00_taisho") align(1.0, 1.0) offset(-60,-10) text_size 60 hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
+        textbutton _("Return") action Jump("story_01_taisho") align(1.0, 1.0) offset(-60,-10) text_size 60 hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
 
     vbox:
         ypos 300 xpos -880 ##button positions
@@ -150,13 +150,14 @@ label gaspmina_01_gaspardamina:
     sh neutral "<We're in a difficult, mysterious situation.{w=0.3} Being stressed is perfectly normal.>"
     sh frown "<I understand wanting things to feel familiar.{w=0.3} Safe.{w=0.3} But because it's a difficult situation, I need to speak the best I can.>"
     show Gaspard frown
-    sh neutral "<And I'm not good enough in your language to do that.{w=0.3} But you're good enough with mine, right?{w=0.3} You told me so earlier.>"
+    sh neutral "<And I'm not good enough with your language to do that.{w=0.3} But you're good enough with mine, right?{w=0.3} You told me.>"
     ga nulla "<Whatever...{w=0.5} I don't get why you're here too, anyway.>"
     show Amina neutral
     sh neutral "I've been asking myself the same question...{w=0.5} I can guess that between the two of you, any kidnapper would be able to request a hefty sum for your safe return."
     sh surprise "Not so much for me.{w=0.3} I'm a public servant, entry level, and both of my parents are middle class."
-    am nulla "Which means...{w=0.5} That whoever put us here is not after money."
-    sh neutral sweat ".{w=0.3}.{w=0.3}.{w=0.5}I'm afraid so."
+    show Gaspard -sweat
+    ga nulla "<Oh, like those types understand stuff like this.{w=0.3} You were at the same reception and at our same table, they just grabbed whoever they could.>"
+    sh neutral ".{w=0.3}.{w=0.3}.{w=0.5}maybe so."
     pause 1.0
     $ renpy.block_rollback()
     if gaspmina_01_gaspardamina == False:
@@ -187,17 +188,18 @@ label gaspmina_01_code:
     am nulla "I just went off a hunch based on {b}this{/b}."
     sh surprise "Hmm?{w=0.3} That's..."
     play sound "audio/sfx/gui_item_get.ogg"
-    show it_papernote with dissolve:
+    show it_taisho_note with dissolve:
         xalign 0.5 yalign 0.4 
     pause 0.5
     sh surprise "A note?"
-    am nulla "With a six digits code.{w=0.3} When we left the room we woke up in, the door locked behind us and this didn't work on it...{w=0.5} So I figured, might as well."
-    sh neutral "And it worked...{w=0.5} A note with the code needed to open the door to this room.{w=0.3} And you found it laying around?"
+    am nulla "With a six digits code.{w=0.3} When we left the room we woke up in, the door locked behind us and this didn't work on that one...{w=0.5} So I figured, might as well."
+    sh neutral "A note with the code needed to open the door to this room.{w=0.3} And you found it laying around?"
     ga nulla "<No.{w=0.3} I found it in my pocket when I grabbed my {b}phone{/b}.>"
     pause 0.5
     play sound "audio/em/em_shock.ogg"
     show screen emote("surprise",0.17,0.5)
     sh shock "Wait, your...{w=0.5} Your phone?!"
+    hide it_taisho_note with dissolve
     pause 1.0
     $ renpy.block_rollback()
     if gaspmina_01_code == False:
@@ -221,7 +223,7 @@ label gaspmina_01_phone:
     pause 1.5
     sh frown ".{w=0.3}.{w=0.3}.{w=0.5}this isn't good.{w=0.3} Not good at all."
     show Amina neutral -sweatdrop
-    am nulla "It wasn't going swimmingly before-hand...{w=0.5} But, what are you referring to?"
+    am nulla "It wasn't going swimmingly before...{w=0.5} But, what are you referring to?"
     sh frown "The fact that they let you keep your phone while they took away mine...{w=0.5} The implications aren't good at all."
     sh neutral "My phone is special, so to speak.{w=0.3} It's the one I use for work and, on top of having a number of useful contacts, {nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
@@ -229,7 +231,7 @@ label gaspmina_01_phone:
     show Gaspard surprise
     show Amina surprise
     ga nulla "<A satellite network?>"
-    sh neutral "Yes.{w=0.3} There's very few places on earth where I cannot use it, leave alone an estate in the middle of France."
+    sh neutral "Yes.{w=0.3} There's very few places on Earth where I cannot use it, leave alone an estate in the middle of France."
     sh frown "So, the fact that they removed {i}my{/i} phone specifically while they left yours with you...{w=0.5} Implies two things.{w=0.3} First, they {nw}"
     play sound4 "audio/sfx/gui_spook.ogg"
     extend "{b}must know what I do for a living{/b}.{w=0.3} And second..."
@@ -253,7 +255,7 @@ label gaspmina_01_phone:
     show Gaspard surprise
     pause 1.0
     show Gaspard frown
-    show Gaspard sad
+    show Amina sad
     pause 1.0
     $ renpy.block_rollback()
     if gaspmina_01_phone == False:

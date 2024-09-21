@@ -22,6 +22,7 @@ label story_01_awakening:
     call screen taisho_1f_study_explore_01
 
 label story_01_there_were_three:
+    $ move_time(0,12)
     $ renpy.block_rollback()
     $ flashlight_consume = False
     stop music fadeout 3.5
@@ -162,11 +163,14 @@ label story_01_door_opens:
         xalign 0.97
     with dissolve
     pause 0.5
+    $ move_time(0,4)
     $ renpy.block_rollback()
     call screen gaspmina_conv_01
 
-label story_00_taisho:
+label story_01_taisho:
     $ renpy.block_rollback()
+    $ move_time(0,9)
+    stop music fadeout 3.5
     pause 0.5
     sh neutral "We've stood still long enough...{w=0.5} We should move."
     pause 0.5
@@ -180,11 +184,81 @@ label story_00_taisho:
         xalign 0.1
     with dissolve
     pause 0.5
-    sh nulla "Can you tell me what time it is?{w=0.3} Also, do you have anything on you to draw a map?"
+    sh nulla "Can you tell me what time is it?{w=0.3} Also, do you have anything on you to draw a map?"
     show Amina surprise
-    am nulla "22:51...{w=0.5} And I could make one with a Sketch App on my phone?"
+    am nulla "[dis_hours]:[dis_minutes]...{w=0.5} And I could make one with a Sketch App on my phone?"
     show Shigeo frown
     sh nulla "It's going to be inaccessible if the battery runs out...{w=0.5} But it will do until we find something to write."
     show Gaspard angry
     ga nulla "<Hey hey hey, wait a damn minute!{w=0.3} Who the hell put you in charge?!>"
-    
+    pause 1.5
+    show Shigeo neutral with dissolve
+    sh nulla "Nobody, I guess...{w=0.5} So, what do you suggest we should do?"
+    pause 0.5
+    show Gaspard frown with dissolve
+    ga nulla "<We...{w=0.5} We should check the other doors in the corridor.{w=0.3} See if we can find a way out.{w=0.3} Yes.>"
+    show Shigeo smile
+    show Amina sad
+    sh nulla "Very well.{w=0.3} Let's do that, then."
+    ga nulla "<.{w=0.3}.{w=0.3}.{w=0.5}fucking...>"
+    pause 0.5
+    play sound "audio/se/steps_wood_slow.ogg"
+    hide Gaspard with dissolve
+    pause 0.5
+    am nulla "Thank you for being patient with him...{w=0.5} He's usually not this bad."
+    show Shigeo neutral
+    sh nulla "One doesn't usually find themselves in such a situation.{w=0.3} It's alright, I'm not taking it personally.{w=0.3} He obviously needs to feel in control to be at ease...{w=0.5} I will accomodate."
+    show Amina surprise
+    am nulla "Could you elaborate further on what you meant?{w=0.3} About this not just being a ransom situation?"
+    pause 1.0
+    show Shigeo frown with dissolve
+    pause 0.5
+    sh nulla "We've been out for little more than an hour.{w=0.3} If it was about ransom, they would have taken us somewhere far away and isolated, instead we're still at the château...{w=0.5} And that's without adding in the detail that I'm not really worth anything, monetarily."
+    show Amina neutral
+    sh nulla "Also, there's matter with my phone and the doors...{w=0.5} Earlier, I thought they had placed me in such a room for protection, but now I fear that this is something much more elaborate and sinister."
+    show Shigeo neutral
+    sh nulla "I don't know exactly what, yet...{w=0.5} But we should take into account that {nw}"
+    play sound4 "audio/sfx/gui_spook.ogg"
+    extend "{b}our captors may be observing us right now{/b}."
+    play sound "audio/em/em_shock.ogg"
+    show screen emote("surprise",0.83,0.05)
+    show Amina surprise sweat
+    pause 1.5
+    am nulla "You...{w=0.5} You're serious, aren't you?{w=0.3} But more than that..."
+    show Amina neutral
+    am nulla "You seem to be...{w=0.5} Unbelievably calm, despite the circumstances."
+    show Shigeo smile sweat
+    sh nulla "Oh, I'm the right amount of nervous, believe me...{w=0.5} But, in a weird way, such a situation is actually more calming for me."
+    show Shigeo laugh -sweat
+    sh nulla "I'm used to dealing with stuff like this on the job...{w=0.5} Although, never this directly."
+    am nulla "Right, what you 'do for a living'...{w=0.5} And that would be?"
+    pause 1.5
+    show Shigeo neutral with dissolve
+    sh nulla "I'm with {nw}"
+    play sound4 "audio/sfx/gui_solved.ogg"
+    extend "{b}Europol{/b}.{w=0.5} I'm a {b}behavioral analyst and criminal profiler{/b}."
+    show Amina surprise -sweat
+    pause 1.0
+    play music "audio/bgm/shadows_whisper.ogg"
+    pause 1.5
+    scene black with dissolve
+    $ flashlight_use = False
+    $ flashlight_consume = False
+    $ flashlight_allowed = False
+    $ move_time(0,4)
+    pause 1.0
+    jump story_01_taisho_corridor
+
+label story_01_taisho_corridor:
+    scene taisho_1f_corridor with Reveal3
+    pause 1.5
+    show Gaspard frown:
+        zoom 0.14 xpos 1000 ypos 460
+    show Amina neutral at am_big:
+        xpos 205
+    with dissolve
+    pause 1.5
+    sh surprise "The light coming in from outside is strong enough...{w=0.5} Saves us some battery."
+    am nulla "The window is not shuttered, unlike those in the rooms...{w=0.5} But it's still locked."
+    sh frown "Also, it's made of tempered glass...{w=0.5} No chance of breaking through that bare handed."
+    sh neutral "Well, let's look around and see what our options are."

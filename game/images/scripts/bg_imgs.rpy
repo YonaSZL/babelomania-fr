@@ -69,4 +69,5 @@ layeredimage taisho_1f_study:
     group top:
         attribute top_dark default:
             "darkness_layers"
-    
+
+image taisho_1f_corridor = "images/bgs/taisho/1f_corridor.jpg"

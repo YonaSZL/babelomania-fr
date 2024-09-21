@@ -9,6 +9,7 @@ default stat2_show = True
 default codex_active = True
 default flashlight_use = False
 default flashlight_consume = False
+default flashlight_allowed = True
 
 default amina_cmp = False
 default gaspard_cmp = False

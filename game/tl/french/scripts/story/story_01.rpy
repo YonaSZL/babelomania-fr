@@ -240,3 +240,167 @@ translate french story_01_door_opens_a4e0066d:
     # sh neutral -sweat ".{w=0.3}.{w=0.3}.{w=0.5}and why would they kidnap me, too?"
     sh neutral -sweat ""
 
+# TODO: Translation updated at 2024-09-21 22:08
+
+# game/scripts/story/story_01.rpy:175
+translate french story_01_taisho_5f686328:
+
+    # sh neutral "We've stood still long enough...{w=0.5} We should move."
+    sh neutral ""
+
+# game/scripts/story/story_01.rpy:187
+translate french story_01_taisho_333dbbf3:
+
+    # sh nulla "Can you tell me what time is it?{w=0.3} Also, do you have anything on you to draw a map?"
+    sh nulla ""
+
+# game/scripts/story/story_01.rpy:189
+translate french story_01_taisho_6f692dd1:
+
+    # am nulla "[dis_hours]:[dis_minutes]...{w=0.5} And I could make one with a Sketch App on my phone?"
+    am nulla ""
+
+# game/scripts/story/story_01.rpy:191
+translate french story_01_taisho_8c1768bc:
+
+    # sh nulla "It's going to be inaccessible if the battery runs out...{w=0.5} But it will do until we find something to write."
+    sh nulla ""
+
+# game/scripts/story/story_01.rpy:193
+translate french story_01_taisho_b2cf9141:
+
+    # ga nulla "<Hey hey hey, wait a damn minute!{w=0.3} Who the hell put you in charge?!>"
+    ga nulla ""
+
+# game/scripts/story/story_01.rpy:196
+translate french story_01_taisho_fe6b6eaa:
+
+    # sh nulla "Nobody, I guess...{w=0.5} So, what do you suggest we should do?"
+    sh nulla ""
+
+# game/scripts/story/story_01.rpy:199
+translate french story_01_taisho_a94150ad:
+
+    # ga nulla "<We...{w=0.5} We should check the other doors in the corridor.{w=0.3} See if we can find a way out.{w=0.3} Yes.>"
+    ga nulla ""
+
+# game/scripts/story/story_01.rpy:202
+translate french story_01_taisho_b9120810:
+
+    # sh nulla "Very well.{w=0.3} Let's do that, then."
+    sh nulla ""
+
+# game/scripts/story/story_01.rpy:203
+translate french story_01_taisho_8dbf8941:
+
+    # ga nulla "<.{w=0.3}.{w=0.3}.{w=0.5}fucking...>"
+    ga nulla ""
+
+# game/scripts/story/story_01.rpy:208
+translate french story_01_taisho_664df09e:
+
+    # am nulla "Thank you for being patient with him...{w=0.5} He's usually not this bad."
+    am nulla ""
+
+# game/scripts/story/story_01.rpy:210
+translate french story_01_taisho_0eab138e:
+
+    # sh nulla "One doesn't usually find themselves in such a situation.{w=0.3} It's alright, I'm not taking it personally.{w=0.3} He obviously needs to feel in control to be at ease...{w=0.5} I will accomodate."
+    sh nulla ""
+
+# game/scripts/story/story_01.rpy:212
+translate french story_01_taisho_303c2c8c:
+
+    # am nulla "Could you elaborate further on what you meant?{w=0.3} About this not just being a ransom situation?"
+    am nulla ""
+
+# game/scripts/story/story_01.rpy:216
+translate french story_01_taisho_588a01ef:
+
+    # sh nulla "We've been out for little more than an hour.{w=0.3} If it was about ransom, they would have taken us somewhere far away and isolated, instead we're still at the château...{w=0.5} And that's without adding in the detail that I'm not really worth anything, monetarily."
+    sh nulla ""
+
+# game/scripts/story/story_01.rpy:218
+translate french story_01_taisho_82fddb95:
+
+    # sh nulla "Also, there's matter with my phone and the doors...{w=0.5} Earlier, I thought they had placed me in such a room for protection, but now I fear that this is something much more elaborate and sinister."
+    sh nulla ""
+
+# game/scripts/story/story_01.rpy:220
+translate french story_01_taisho_f65f870c:
+
+    # sh nulla "I don't know exactly what, yet...{w=0.5} But we should take into account that {nw}"
+    sh nulla ""
+
+# game/scripts/story/story_01.rpy:222
+translate french story_01_taisho_26b54d54:
+
+    # extend "{b}our captors may be observing us right now{/b}."
+    extend ""
+
+# game/scripts/story/story_01.rpy:227
+translate french story_01_taisho_8a666dc0:
+
+    # am nulla "You...{w=0.5} You're serious, aren't you?{w=0.3} But more than that..."
+    am nulla ""
+
+# game/scripts/story/story_01.rpy:229
+translate french story_01_taisho_3ea5645f:
+
+    # am nulla "You seem to be...{w=0.5} Unbelievably calm, despite the circumstances."
+    am nulla ""
+
+# game/scripts/story/story_01.rpy:231
+translate french story_01_taisho_7412fe05:
+
+    # sh nulla "Oh, I'm the right amount of nervous, believe me...{w=0.5} But, in a weird way, such a situation is actually more calming for me."
+    sh nulla ""
+
+# game/scripts/story/story_01.rpy:233
+translate french story_01_taisho_6d25e07c:
+
+    # sh nulla "I'm used to dealing with stuff like this on the job...{w=0.5} Although, never this directly."
+    sh nulla ""
+
+# game/scripts/story/story_01.rpy:234
+translate french story_01_taisho_a0e2e4f2:
+
+    # am nulla "Right, what you 'do for a living'...{w=0.5} And that would be?"
+    am nulla ""
+
+# game/scripts/story/story_01.rpy:237
+translate french story_01_taisho_b71f8304:
+
+    # sh nulla "I'm with {nw}"
+    sh nulla ""
+
+# game/scripts/story/story_01.rpy:239
+translate french story_01_taisho_fbbd0918:
+
+    # extend "{b}Europol{/b}.{w=0.5} I'm a {b}behavioral analyst and criminal profiler{/b}."
+    extend ""
+
+# game/scripts/story/story_01.rpy:261
+translate french story_01_taisho_corridor_d50c9115:
+
+    # sh surprise "The light coming in from outside is strong enough...{w=0.5} Saves us some battery."
+    sh surprise ""
+
+# game/scripts/story/story_01.rpy:262
+translate french story_01_taisho_corridor_b4350b6b:
+
+    # am nulla "The window is not shuttered, unlike those in the rooms...{w=0.5} But it's still locked."
+    am nulla ""
+
+# game/scripts/story/story_01.rpy:263
+translate french story_01_taisho_corridor_6c142867:
+
+    # sh frown "Also, it's made of tempered glass...{w=0.5} No chance of breaking through that bare handed."
+    sh frown ""
+
+# game/scripts/story/story_01.rpy:264
+translate french story_01_taisho_corridor_455dac3a:
+
+    # sh neutral "Well, let's look around and see what our options are."
+    sh neutral ""
+

@@ -418,3 +418,149 @@ translate french gaspmina_01_shigeo_5b15dd61:
     # sh neutral "Next thing I know I was waking up, laying down on that couch.{w=0.3} What about the two of you?"
     sh neutral ""
 
+# TODO: Translation updated at 2024-09-21 22:08
+
+# game/scripts/conv/gaspard_amina_convs.rpy:153
+translate french gaspmina_01_gaspardamina_10812d52:
+
+    # sh neutral "<And I'm not good enough with your language to do that.{w=0.3} But you're good enough with mine, right?{w=0.3} You told me.>"
+    sh neutral ""
+
+# game/scripts/conv/gaspard_amina_convs.rpy:159
+translate french gaspmina_01_gaspardamina_6d4e05c2:
+
+    # ga nulla "<Oh, like those types understand stuff like this.{w=0.3} You were at the same reception and at our same table, they just grabbed whoever they could.>"
+    ga nulla ""
+
+# game/scripts/conv/gaspard_amina_convs.rpy:160
+translate french gaspmina_01_gaspardamina_08c344b7:
+
+    # sh neutral ".{w=0.3}.{w=0.3}.{w=0.5}maybe so."
+    sh neutral ""
+
+# game/scripts/conv/gaspard_amina_convs.rpy:195
+translate french gaspmina_01_code_b40dcdf0:
+
+    # am nulla "With a six digits code.{w=0.3} When we left the room we woke up in, the door locked behind us and this didn't work on that one...{w=0.5} So I figured, might as well."
+    am nulla ""
+
+# game/scripts/conv/gaspard_amina_convs.rpy:196
+translate french gaspmina_01_code_2dec4271:
+
+    # sh neutral "A note with the code needed to open the door to this room.{w=0.3} And you found it laying around?"
+    sh neutral ""
+
+# game/scripts/conv/gaspard_amina_convs.rpy:222
+translate french gaspmina_01_phone_ae83cb01:
+
+    # sh surprise "Not even for Emergency Calls?{w=0.5} That's..."
+    sh surprise ""
+
+# game/scripts/conv/gaspard_amina_convs.rpy:224
+translate french gaspmina_01_phone_14e9d7ed:
+
+    # sh frown ".{w=0.3}.{w=0.3}.{w=0.5}this isn't good.{w=0.3} Not good at all."
+    sh frown ""
+
+# game/scripts/conv/gaspard_amina_convs.rpy:226
+translate french gaspmina_01_phone_e9195073:
+
+    # am nulla "It wasn't going swimmingly before...{w=0.5} But, what are you referring to?"
+    am nulla ""
+
+# game/scripts/conv/gaspard_amina_convs.rpy:227
+translate french gaspmina_01_phone_d25cfd84:
+
+    # sh frown "The fact that they let you keep your phone while they took away mine...{w=0.5} The implications aren't good at all."
+    sh frown ""
+
+# game/scripts/conv/gaspard_amina_convs.rpy:228
+translate french gaspmina_01_phone_2cc2c47d:
+
+    # sh neutral "My phone is special, so to speak.{w=0.3} It's the one I use for work and, on top of having a number of useful contacts, {nw}"
+    sh neutral ""
+
+# game/scripts/conv/gaspard_amina_convs.rpy:230
+translate french gaspmina_01_phone_14985522:
+
+    # extend "{b}it can connect to a dedicated satellite network{/b}."
+    extend ""
+
+# game/scripts/conv/gaspard_amina_convs.rpy:233
+translate french gaspmina_01_phone_015eec8b:
+
+    # ga nulla "<A satellite network?>"
+    ga nulla ""
+
+# game/scripts/conv/gaspard_amina_convs.rpy:234
+translate french gaspmina_01_phone_cf304a42:
+
+    # sh neutral "Yes.{w=0.3} There's very few places on Earth where I cannot use it, leave alone an estate in the middle of France."
+    sh neutral ""
+
+# game/scripts/conv/gaspard_amina_convs.rpy:235
+translate french gaspmina_01_phone_e4fb9801:
+
+    # sh frown "So, the fact that they removed {i}my{/i} phone specifically while they left yours with you...{w=0.5} Implies two things.{w=0.3} First, they {nw}"
+    sh frown ""
+
+# game/scripts/conv/gaspard_amina_convs.rpy:237
+translate french gaspmina_01_phone_7bb45820:
+
+    # extend "{b}must know what I do for a living{/b}.{w=0.3} And second..."
+    extend ""
+
+# game/scripts/conv/gaspard_amina_convs.rpy:239
+translate french gaspmina_01_phone_34a8de15:
+
+    # am nulla "Leaving us our phones is of no consequence to whoever's doing this."
+    am nulla ""
+
+# game/scripts/conv/gaspard_amina_convs.rpy:242
+translate french gaspmina_01_phone_62f5fb07:
+
+    # sh smile "Exactly."
+    sh smile ""
+
+# game/scripts/conv/gaspard_amina_convs.rpy:243
+translate french gaspmina_01_phone_d7e7ad98:
+
+    # ga nulla "<Alright, hold your horses here.{w=0.3} This is all well and good but, it may just be that there's no connection in this particular area of the building.>"
+    ga nulla ""
+
+# game/scripts/conv/gaspard_amina_convs.rpy:245
+translate french gaspmina_01_phone_332133df:
+
+    # ga nulla "<Meeting rooms with one-way locked doors, sound-proofing...{w=0.5} I wouldn't be surprised if the lack of connection wasn't planned, too.>"
+    ga nulla ""
+
+# game/scripts/conv/gaspard_amina_convs.rpy:247
+translate french gaspmina_01_phone_0a464c4a:
+
+    # am nulla "Huh...{w=0.5} That's a good point."
+    am nulla ""
+
+# game/scripts/conv/gaspard_amina_convs.rpy:248
+translate french gaspmina_01_phone_c2cd7e01:
+
+    # sh neutral "<Very possible, indeed.>"
+    sh neutral ""
+
+# game/scripts/conv/gaspard_amina_convs.rpy:250
+translate french gaspmina_01_phone_57c7087e:
+
+    # ga nulla "<What...?{w=0.5} No, I mean, you...>"
+    ga nulla ""
+
+# game/scripts/conv/gaspard_amina_convs.rpy:252
+translate french gaspmina_01_phone_f3ff0914:
+
+    # ga nulla "<They way you were talking made it sound like...{w=0.5} We've just been kidnapped for ransom, no?{w=0.3} And you probably lost your phone while they were moving you.>"
+    ga nulla ""
+
+# game/scripts/conv/gaspard_amina_convs.rpy:254
+translate french gaspmina_01_phone_bfe5a91a:
+
+    # sh frown "I don't think so."
+    sh frown ""
+
