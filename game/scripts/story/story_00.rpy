@@ -122,7 +122,7 @@ label story_00_invitation:
     nvl clear
     scene black with Reveal3
     pause 3.0
-    play music "audio/bgm/canon_in_bois.ogg"
+    play music "audio/bgm/sins_not_tragedies.ogg"
     pause 1.0
     $ time_menu = True
     pause 1.0
@@ -222,7 +222,7 @@ label story_00_bathroom_break:
     scene black with dissolve
     $ move_time(0,4)
     pause 1.0
-    play music "<from 39>audio/bgm/canon_in_bois_muted.ogg" fadein 0.2
+    play music "<from 39>audio/bgm/sins_not_tragedies_muted.ogg" fadein 0.2
     pause 0.5
     sh_i "(My name is Shigeo Arata.{w=0.3} I'm a friend of the groom at this reception...)"
     sh_i sad "(And only the groom.)"
@@ -335,7 +335,7 @@ label story_00_bathroom_return:
     pause 0.5
     $ move_time(0,4)
     pause 1.0
-    play music "<from 39>audio/bgm/canon_in_bois_muted.ogg" fadein 0.2
+    play music "<from 39>audio/bgm/sins_not_tragedies_muted.ogg" fadein 0.2
     scene bar_corr_recep with Reveal3
     pause 1.5
     sh_i surprise "(Hmm?{w=0.5} What's that sm-)"
@@ -493,7 +493,7 @@ label story_00_meet_gaspard:
     scene black with dissolve
     $ move_time(0,17)
     pause 0.5
-    play music "audio/bgm/canon_in_bois.ogg"
+    play music "audio/bgm/sins_not_tragedies.ogg"
     pause 0.5
     play LoNoise "audio/bgs/reception_crowd.ogg" fadein 0.2
     scene bar_reception with Reveal
