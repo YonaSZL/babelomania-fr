@@ -217,7 +217,43 @@ label gaspmina_01_phone:
     sh surprise "No...{w=0.5} I do not.{w=0.3} It's currently missing.{w=0.3} Have you tried using them already?"
     show Gaspard frown
     ga nulla "<I have.{w=0.3} Unfortunately, there's no networks available.>"
-    sh surprise "Not even for Emergency Calls?{w=0.5} But that's..."
+    sh surprise "Not even for Emergency Calls?{w=0.5} That's..."
+    pause 1.5
+    sh frown ".{w=0.3}.{w=0.3}.{w=0.5}this isn't good.{w=0.3} Not good at all."
+    show Amina neutral -sweatdrop
+    am nulla "It wasn't going swimmingly before-hand...{w=0.5} But, what are you referring to?"
+    sh frown "The fact that they let you keep your phone while they took away mine...{w=0.5} The implications aren't good at all."
+    sh neutral "My phone is special, so to speak.{w=0.3} It's the one I use for work and, on top of having a number of useful contacts, {nw}"
+    play sound4 "audio/sfx/gui_hint.ogg"
+    extend "{b}it can connect to a dedicated satellite network{/b}."
+    show Gaspard surprise
+    show Amina surprise
+    ga nulla "<A satellite network?>"
+    sh neutral "Yes.{w=0.3} There's very few places on earth where I cannot use it, leave alone an estate in the middle of France."
+    sh frown "So, the fact that they removed {i}my{/i} phone specifically while they left yours with you...{w=0.5} Implies two things.{w=0.3} First, they {nw}"
+    play sound4 "audio/sfx/gui_spook.ogg"
+    extend "{b}must know what I do for a living{/b}.{w=0.3} And second..."
+    show Amina frown
+    am nulla "Leaving us our phones is of no consequence to whoever's doing this."
+    pause 1.0
+    show Gaspard frown with dissolve
+    sh smile "Exactly."
+    ga nulla "<Alright, hold your horses here.{w=0.3} This is all well and good but, it may just be that there's no connection in this particular area of the building.>"
+    show Gaspard neutral
+    ga nulla "<Meeting rooms with one-way locked doors, sound-proofing...{w=0.5} I wouldn't be surprised if the lack of connection wasn't planned, too.>"
+    show Amina surprise
+    am nulla "Huh...{w=0.5} That's a good point."
+    sh neutral "<Very possible, indeed.>"
+    show Gaspard surprise
+    ga nulla "<What...?{w=0.5} No, I mean, you...>"
+    show Gaspard frown
+    ga nulla "<They way you were talking made it sound like...{w=0.5} We've just been kidnapped for ransom, no?{w=0.3} And you probably lost your phone while they were moving you.>"
+    pause 1.0
+    sh frown "I don't think so."
+    show Gaspard surprise
+    pause 1.0
+    show Gaspard frown
+    show Gaspard sad
     pause 1.0
     $ renpy.block_rollback()
     if gaspmina_01_phone == False:

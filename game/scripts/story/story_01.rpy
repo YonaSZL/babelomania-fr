@@ -166,3 +166,25 @@ label story_01_door_opens:
     call screen gaspmina_conv_01
 
 label story_00_taisho:
+    $ renpy.block_rollback()
+    pause 0.5
+    sh neutral "We've stood still long enough...{w=0.5} We should move."
+    pause 0.5
+    scene taisho_1f_study_bare
+    show dark_flashlight
+    show Amina neutral at am_med:
+        xalign 0.95
+    show Gaspard frown at ga_med:
+        xalign 0.52
+    show Shigeo neutral at sh_med:
+        xalign 0.1
+    with dissolve
+    pause 0.5
+    sh nulla "Can you tell me what time it is?{w=0.3} Also, do you have anything on you to draw a map?"
+    show Amina surprise
+    am nulla "22:51...{w=0.5} And I could make one with a Sketch App on my phone?"
+    show Shigeo frown
+    sh nulla "It's going to be inaccessible if the battery runs out...{w=0.5} But it will do until we find something to write."
+    show Gaspard angry
+    ga nulla "<Hey hey hey, wait a damn minute!{w=0.3} Who the hell put you in charge?!>"
+    
