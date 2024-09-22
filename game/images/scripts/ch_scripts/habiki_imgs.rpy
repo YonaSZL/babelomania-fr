@@ -5,17 +5,16 @@ image habiki_clothes_full = "images/chs/habiki/clothes_full.png"
 image habiki_acc_blush = "images/chs/habiki/acc_blush.png"
 image habiki_acc_sweat = "images/chs/habiki/acc_sweat.png"
 image habiki_acc_sweatdrop = "images/chs/habiki/acc_sweatdrop.png"
+image habiki_acc_glasses = "images/chs/habiki/acc_glasses.png"
+image habiki_acc_sunglasses = "images/chs/habiki/acc_sunglasses.png"
+image habiki_acc_traglasses = "images/chs/habiki/acc_traglasses.png"
 
 image habiki_exp_neutral = "images/chs/habiki/exp_neutral.png"
 image habiki_exp_smile = "images/chs/habiki/exp_smile.png"
-image habiki_exp_shock = "images/chs/habiki/exp_shock.png"
 image habiki_exp_surprise = "images/chs/habiki/exp_surprise.png"
-image habiki_exp_sad = "images/chs/habiki/exp_sad.png"
+image habiki_exp_pity = "images/chs/habiki/exp_pity.png"
 image habiki_exp_frown = "images/chs/habiki/exp_frown.png"
 image habiki_exp_laugh = "images/chs/habiki/exp_laugh.png"
-image habiki_exp_angry = "images/chs/habiki/exp_angry.png"
-image habiki_exp_fear = "images/chs/habiki/exp_fear.png"
-image habiki_exp_pain = "images/chs/habiki/exp_pain.png"
 
 layeredimage Habiki:
     group body:
@@ -29,22 +28,14 @@ layeredimage Habiki:
             "habiki_exp_neutral"
         attribute smile:
             "habiki_exp_smile"
-        attribute shock:
-            "habiki_exp_shock"
         attribute surprise:
             "habiki_exp_surprise"
-        attribute sad:
-            "habiki_exp_sad"
+        attribute pity:
+            "habiki_exp_pity"
         attribute frown:
             "habiki_exp_frown"
         attribute laugh:
             "habiki_exp_laugh"
-        attribute angry:
-            "habiki_exp_angry"
-        attribute fear:
-            "habiki_exp_fear"
-        attribute pain:
-            "habiki_exp_pain"
     group accessories:
         attribute blush:
             "habiki_acc_blush"
@@ -54,6 +45,13 @@ layeredimage Habiki:
     group accessories_3:
         attribute sweatdrop:
             "habiki_acc_sweatdrop"
+    group accessories_4:
+        attribute glasses:
+            "habiki_acc_glasses"
+        attribute traglasses:
+            "habiki_acc_traglasses"
+        attribute sunglasses default:
+            "habiki_acc_sunglasses"
     #at character_sprites_habiki
 
 #Portrait Images
@@ -62,17 +60,16 @@ image habiki_por_clothes_full = "images/chs/habiki/por/clothes_full.png"
 image habiki_por_acc_blush = "images/chs/habiki/por/acc_blush.png"
 image habiki_por_acc_sweat = "images/chs/habiki/por/acc_sweat.png"
 image habiki_por_acc_sweatdrop = "images/chs/habiki/por/acc_sweatdrop.png"
+image habiki_acc_glasses = "images/chs/habiki/por/acc_glasses.png"
+image habiki_acc_sunglasses = "images/chs/habiki/por/acc_sunglasses.png"
+image habiki_acc_traglasses = "images/chs/habiki/por/acc_traglasses.png"
 
 image habiki_por_exp_neutral = "images/chs/habiki/por/exp_neutral.png"
 image habiki_por_exp_smile = "images/chs/habiki/por/exp_smile.png"
-image habiki_por_exp_shock = "images/chs/habiki/por/exp_shock.png"
 image habiki_por_exp_surprise = "images/chs/habiki/por/exp_surprise.png"
-image habiki_por_exp_sad = "images/chs/habiki/por/exp_sad.png"
+image habiki_por_exp_pity = "images/chs/habiki/por/exp_pity.png"
 image habiki_por_exp_frown = "images/chs/habiki/por/exp_frown.png"
 image habiki_por_exp_laugh = "images/chs/habiki/por/exp_laugh.png"
-image habiki_por_exp_angry = "images/chs/habiki/por/exp_angry.png"
-image habiki_por_exp_fear = "images/chs/habiki/por/exp_fear.png"
-image habiki_por_exp_pain = "images/chs/habiki/por/exp_pain.png"
 
 layeredimage Habiki_por:
     group body:
@@ -86,22 +83,14 @@ layeredimage Habiki_por:
             "habiki_por_exp_neutral"
         attribute smile:
             "habiki_por_exp_smile"
-        attribute shock:
-            "habiki_por_exp_shock"
         attribute surprise:
             "habiki_por_exp_surprise"
-        attribute sad:
-            "habiki_por_exp_sad"
+        attribute pity:
+            "habiki_por_exp_pity"
         attribute frown:
             "habiki_por_exp_frown"
         attribute laugh:
             "habiki_por_exp_laugh"
-        attribute angry:
-            "habiki_por_exp_angry"
-        attribute fear:
-            "habiki_por_exp_fear"
-        attribute pain:
-            "habiki_por_exp_pain"
     group accessories:
         attribute blush:
             "habiki_por_acc_blush"
@@ -111,3 +100,10 @@ layeredimage Habiki_por:
     group accessories_3:
         attribute sweatdrop:
             "habiki_por_acc_sweatdrop"
+    group accessories_4:
+        attribute glasses:
+            "habiki_acc_glasses"
+        attribute traglasses:
+            "habiki_acc_traglasses"
+        attribute sunglasses default:
+            "habiki_acc_sunglasses"
