@@ -404,3 +404,205 @@ translate french story_01_taisho_corridor_455dac3a:
     # sh neutral "Well, let's look around and see what our options are."
     sh neutral ""
 
+# TODO: Translation updated at 2024-09-22 15:11
+
+# game/scripts/story/story_01.rpy:124
+translate french story_01_door_opens_c1a07500:
+
+    # am nulla "<It's exactly because the situation we're in is weird that we need to keep a level head...{w=0.5} Just running around ramming random doors won't do us any good.{w=0.3} We need to think.>"
+    am nulla ""
+
+# game/scripts/story/story_01.rpy:231
+translate french story_01_taisho_9f8a54b7:
+
+    # sh nulla "Oh, I'm the right amount of nervous, believe me.{w=0.3} You should've seen before I found the flashlight...{w=0.5} But, in a weird way, such a situation is actually more calming for me."
+    sh nulla ""
+
+# TODO: Translation updated at 2024-09-23 23:14
+
+# game/scripts/story/story_01.rpy:288
+translate french story_01_taisho_side_meet_efa75df8:
+
+    # sh neutral ".{w=0.3}.{w=0.3}.{w=0.5}no one's here."
+    sh neutral ""
+
+# game/scripts/story/story_01.rpy:289
+translate french story_01_taisho_side_meet_a72977b3:
+
+    # ga frown "<Also:{w=0.3} another dead end.>"
+    ga frown ""
+
+# game/scripts/story/story_01.rpy:290
+translate french story_01_taisho_side_meet_db4e7e07:
+
+    # am surprise "Or is it?{w=0.3} Look."
+    am surprise ""
+
+# game/scripts/story/story_01.rpy:294
+translate french story_01_taisho_side_meet_66ac3cfc:
+
+    # am surprise "Another locked door...{w=0.5} Shigeo, what's the code you used?"
+    am surprise ""
+
+# game/scripts/story/story_01.rpy:295
+translate french story_01_taisho_side_meet_d0c408c8:
+
+    # sh neutral "19261225."
+    sh neutral ""
+
+# game/scripts/story/story_01.rpy:297
+translate french story_01_taisho_side_meet_5d301f82:
+
+    # am neutral "Alright.{w=0.3} I'm going to try both."
+    am neutral ""
+
+# game/scripts/story/story_01.rpy:307
+translate french story_01_taisho_side_meet_fc874a88:
+
+    # am sad "Ugh, would've been too easy, I guess...{w=0.5} Any ideas?"
+    am sad ""
+
+# game/scripts/story/story_01.rpy:308
+translate french story_01_taisho_side_meet_a36a0362:
+
+    # ga frown "<Ugh, this is ridiculous!{w=0.3} Why are we even in here?!{w=0.3} We should be trying to open the door to the stairwell!>"
+    ga frown ""
+
+# game/scripts/story/story_01.rpy:309
+translate french story_01_taisho_side_meet_3e27d687:
+
+    # sh neutral "We currently lack the means to.{w=0.3} We need to-"
+    sh neutral ""
+
+# game/scripts/story/story_01.rpy:312
+translate french story_01_taisho_side_meet_03b439e8:
+
+    # ga angry "<Then the window!{w=0.3} This one, or the one in the corridor!>"
+    ga angry ""
+
+# game/scripts/story/story_01.rpy:316
+translate french story_01_taisho_side_meet_82f55a5e:
+
+    # ga angry "<Let's try and break open one of {i}these{/i} fucking things, already!{w=0.3} Let's do SOMETHING!>"
+    ga angry ""
+
+# game/scripts/story/story_01.rpy:317
+translate french story_01_taisho_side_meet_a94e0d9e:
+
+    # am surprise "Gaspard...!"
+    am surprise ""
+
+# game/scripts/story/story_01.rpy:318
+translate french story_01_taisho_side_meet_4ea69bb4:
+
+    # sh neutral "I understand your frustration, but-"
+    sh neutral ""
+
+# game/scripts/story/story_01.rpy:320
+translate french story_01_taisho_side_meet_79c64c4b:
+
+    # ga angry "<Do you?!{w=0.3} Do you really?!{w=0.3} You seem to be taking this quite IN STRIDE!>"
+    ga angry ""
+
+# game/scripts/story/story_01.rpy:321
+translate french story_01_taisho_side_meet_27264ee3:
+
+    # sh surprise "...!"
+    sh surprise ""
+
+# game/scripts/story/story_01.rpy:323
+translate french story_01_taisho_side_meet_8a3b518a:
+
+    # ga angry sweat "<All calm and collected, while I'm losing my fucking mind!{w=0.3} Locked in this REVOLTING building, made to solve FUCKING riddles?!{w=0.3} How dare!{w=0.3} HOW DARE?!>"
+    ga angry sweat ""
+
+# game/scripts/story/story_01.rpy:326
+translate french story_01_taisho_side_meet_32c5246e:
+
+    # am surprise sweat "Gaspard, please calm down!{w=0.3} What's wrong with you?!"
+    am surprise sweat ""
+
+# game/scripts/story/story_01.rpy:330
+translate french story_01_taisho_side_meet_219c51a8:
+
+    # ga angry "<What's wrong?!{w=0.3} WHAT'S WRONG?!>"
+    ga angry ""
+
+# game/scripts/story/story_01.rpy:335
+translate french story_01_taisho_side_meet_d24b1fb0:
+
+    # ga surprise "<What's...{w=0.5} What's wrong.{w=0.3}.{w=0.3}.{w=0.3}?{w=0.5} I...>"
+    ga surprise ""
+
+# game/scripts/story/story_01.rpy:337
+translate french story_01_taisho_side_meet_2160c050:
+
+    # am sad sweat "I've never seen you this upset...{w=0.5} Are you feeling alright?"
+    am sad sweat ""
+
+# game/scripts/story/story_01.rpy:341
+translate french story_01_taisho_side_meet_75252558:
+
+    # ga frown "I...{w=0.5} I feel a little hot, actually, I...{w=0.5} And I'm thirsty."
+    ga frown ""
+
+# game/scripts/story/story_01.rpy:342
+translate french story_01_taisho_side_meet_cb2078b2:
+
+    # sh neutral sweat ".{w=0.3}.{w=0.3}.{w=0.5}let's take a small break.{w=0.3} Amina, please assist him.{w=0.3} I will take a look around."
+    sh neutral sweat ""
+
+# game/scripts/story/story_01.rpy:343
+translate french story_01_taisho_side_meet_b9dee754:
+
+    # am sad -sweat "Thanks...{w=0.5} <Gaspard, why don't you lay down?>"
+    am sad -sweat ""
+
+# game/scripts/story/story_01.rpy:351
+translate french story_01_taisho_side_meet_edf4a1df:
+
+    # sh_i nulla "(The stress must be getting to him...{w=0.5} Did they know that he doesn't like the building?{w=0.3} And of his temper?{w=0.3} Is that why they put him in here?)"
+    sh_i nulla ""
+
+# game/scripts/story/story_01.rpy:353
+translate french story_01_taisho_side_meet_84e20177:
+
+    # sh_i nulla "(I wouldn't put it past whoever's doing this.{w=0.5} The fact that we are allowed to walk around this building, able to guess our way to opening the doors...{w=0.5} This isn't a kidnapping, this is {nw}"
+    sh_i nulla ""
+
+# game/scripts/story/story_01.rpy:355
+translate french story_01_taisho_side_meet_5773c096:
+
+    # extend "{b}some kind of game or test{/b}...{w=0.5} I have no doubt that we're being observed, now.)"
+    extend ""
+
+# game/scripts/story/story_01.rpy:357
+translate french story_01_taisho_side_meet_31f73105:
+
+    # sh_i nulla "(I should keep this to myself, for now.{w=0.3} Let's just hope they don't introduce any new variables before I figure out the rules or a way out of this building...)"
+    sh_i nulla ""
+
+# game/scripts/story/story_01.rpy:384
+translate french story_01_taisho_side_meet_572d23dc:
+
+    # ga frown sweat "<That water was disgusting.>"
+    ga frown sweat ""
+
+# game/scripts/story/story_01.rpy:385
+translate french story_01_taisho_side_meet_5cc2b49d:
+
+    # am neutral "<Just be glad it wasn't stagnant.{w=0.3} It did come from a flower vase, after all.>"
+    am neutral ""
+
+# game/scripts/story/story_01.rpy:386
+translate french story_01_taisho_side_meet_27681a3c:
+
+    # ga surprise "<With fake flowers...?{w=0.5} Why?>"
+    ga surprise ""
+
+# game/scripts/story/story_01.rpy:387
+translate french story_01_taisho_side_meet_16b18e5e:
+
+    # am smile "<I don't know.{w=0.3} Authenticity?>"
+    am smile ""
+

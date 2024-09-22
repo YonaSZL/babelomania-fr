@@ -4,6 +4,7 @@ image gaspard_clothes_full = "images/chs/gaspard/clothes_full.png"
 image gaspard_acc_blush = "images/chs/gaspard/acc_blush.png"
 image gaspard_acc_sweat = "images/chs/gaspard/acc_sweat.png"
 image gaspard_acc_sweatdrop = "images/chs/gaspard/acc_sweatdrop.png"
+image gaspard_acc_light = "images/chs/gaspard/acc_light.png"
 
 image gaspard_exp_neutral = "images/chs/gaspard/exp_neutral.png"
 image gaspard_exp_shock = "images/chs/gaspard/exp_shock.png"
@@ -41,6 +42,9 @@ layeredimage Gaspard:
     group accessories_3:
         attribute sweatdrop:
             "gaspard_acc_sweatdrop"
+    group accessories_4:
+        attribute light:
+            "gaspard_acc_light"
     #at character_sprites_gaspard
 
 #Portrait Images

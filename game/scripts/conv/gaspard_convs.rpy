@@ -57,7 +57,7 @@ screen gaspard_conv_01:
 
                 if gaspard_01_wedding:
                     button:
-                        text _("The Android")
+                        text _("Shigeo")
                         at btn_slide
                         if gaspard_01_shigeo:
                             background "gui/talkie/button.png"

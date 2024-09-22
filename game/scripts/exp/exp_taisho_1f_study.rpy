@@ -17,7 +17,7 @@ screen taisho_1f_study_explore_01():
         if exp_taisho_1f_study_01_phone:
             hotspot (953, 163, 336, 250) action Jump("exp_taisho_1f_study_01_lamp") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#LAMP
             hotspot (1443, 905, 424, 133) action Jump("exp_taisho_1f_study_01_floor") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#FLOOR
-            if taisho_1f_study_explore_01 == 3:
+            if taisho_1f_study_explore_01 == 3 and exp_taisho_1f_study_01_flashlight == False:
                 hotspot (1377, 630, 111, 76) action Jump("exp_taisho_1f_study_01_flashlight") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#FLASHLIGHT
 
     $ tooltip = GetTooltip()
@@ -216,6 +216,7 @@ label exp_taisho_1f_study_02_scrolls:
     extend "{b}Taishō Building{/b}.{w=0.3} We were going to be spend the night in here, weren't we?)"
     play sound4 "audio/sfx/gui_slots_confirm.ogg"
     show screen notify(_("Codex Updated."))
+    $ c_chateau_dubois_taisho = True
     sh_i surprise "(This doesn't look like a bedroom, though...{w=0.3} I must be in a different wing of the building, then.)"
     sh_i neutral "(Also, no trace of a charger for the flashlight.{w=0.3} Pity.)"
     pause 1.0

@@ -6,7 +6,7 @@ default inventory_show = True
 default time_menu = True
 default stat1_show = True #Flashlight Charge
 default stat2_show = True
-default codex_active = True
+default codex_active = False
 default flashlight_use = False
 default flashlight_consume = False
 default flashlight_allowed = True
@@ -71,7 +71,7 @@ screen overlay_stats():
                     activate_sound "audio/sfx/gui_codex.ogg"
                     action ShowMenu("codex_main")
                 else:
-                    action Null()
+                    action NullAction()
 
         if stat1_show:
             bar:

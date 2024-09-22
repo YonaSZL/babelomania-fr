@@ -71,3 +71,21 @@ layeredimage taisho_1f_study:
             "darkness_layers"
 
 image taisho_1f_corridor = "images/bgs/taisho/1f_corridor.jpg"
+image taisho_1f_side_meet_base = "images/bgs/taisho/taisho_1f_side_meet.jpg"
+layeredimage taisho_1f_side_meet:
+    group bottom:
+        attribute base default:
+            "taisho_1f_side_meet_base"
+    group top:
+        attribute top_dark default:
+            "darkness_layers"
+
+image taisho_1f_tabitha_base = "images/bgs/taisho/taisho_1f_tabitha.jpg"
+
+layeredimage taisho_1f_tabitha:
+    group bottom:
+        attribute base default:
+            "taisho_1f_tabitha_base"
+    group top:
+        attribute top_dark default:
+            "darkness_layer"

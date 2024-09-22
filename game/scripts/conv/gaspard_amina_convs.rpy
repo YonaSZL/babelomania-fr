@@ -192,7 +192,7 @@ label gaspmina_01_code:
         xalign 0.5 yalign 0.4 
     pause 0.5
     sh surprise "A note?"
-    am nulla "With a six digits code.{w=0.3} When we left the room we woke up in, the door locked behind us and this didn't work on that one...{w=0.5} So I figured, might as well."
+    am nulla "With a eight digits code.{w=0.3} When we left the room we woke up in, the door locked behind us and this didn't work on that one...{w=0.5} So I figured, might as well."
     sh neutral "A note with the code needed to open the door to this room.{w=0.3} And you found it laying around?"
     ga nulla "<No.{w=0.3} I found it in my pocket when I grabbed my {b}phone{/b}.>"
     pause 0.5

@@ -402,3 +402,11 @@ translate french exp_taisho_1f_study_02_scrolls_3922d976:
     # extend "{b}Taisho Building{/b}.{w=0.3} We were going to be spend the night in here, weren't we?)"
     extend ""
 
+# TODO: Translation updated at 2024-09-22 15:11
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:216
+translate french exp_taisho_1f_study_02_scrolls_c9a62014:
+
+    # extend "{b}Taishō Building{/b}.{w=0.3} We were going to be spend the night in here, weren't we?)"
+    extend ""
+

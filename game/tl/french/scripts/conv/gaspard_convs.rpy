@@ -384,3 +384,11 @@ translate french gaspard_01_wedding_8818ddf0:
     # sh surprise "Huh...{w=0.5} I guess those kinds of dynamics are still a thing in certain circles, aren't they?"
     sh surprise ""
 
+# TODO: Translation updated at 2024-09-22 15:11
+
+# game/scripts/conv/gaspard_convs.rpy:88
+translate french gaspard_01_gaspard_7094832f:
+
+    # ga nulla "<A few times...{w=0.5} Although this is the first time I will have to stay the night in the Taishō building.>"
+    ga nulla ""
+

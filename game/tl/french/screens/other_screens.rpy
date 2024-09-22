@@ -246,8 +246,23 @@ translate french strings:
 
 # TODO: Translation updated at 2024-09-13 20:39
 
-
     # game/screens/other_screens.rpy:126
     old "{size=35}ADDITIONAL MUSIC"
     new "{size=35}MUSIQUE ADDITIONNELLE"
+
+# TODO: Translation updated at 2024-09-22 19:25
+
+    # game/screens/other_screens.rpy:95
+    old "{size=35}GUI ARTIST, PROGRAMMER"
+    new "{size=35}ARTISTE INTERFACE GRAPHIQUE, PROGRAMMEUR"
+
+    # game/screens/other_screens.rpy:116
+    old "{size=35}FRENCH TRANSLATORS"
+    new "{size=35}TRADUCTEURS FRANÇAIS"
+
+# TODO: Translation updated at 2024-09-23 20:49
+
+    # game/screens/other_screens.rpy:135
+    old "{size=35}ADDITIONAL IMAGES"
+    new "{size=35}IMAGES ADDITIONNELLES"
 

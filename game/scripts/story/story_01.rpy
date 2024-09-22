@@ -121,7 +121,7 @@ label story_01_door_opens:
     show Gaspard frown
     ga nulla "<Oh, I'm sorry if the situation we're in is getting to me...>"
     show Amina neutral
-    am nulla "<It's exactly because the situation we're in is weird that we need to keep a level head...{w=0.5} Just running around opening random doors won't do us any good.{w=0.3} We need to think.>"
+    am nulla "<It's exactly because the situation we're in is weird that we need to keep a level head...{w=0.5} Just running around ramming random doors won't do us any good.{w=0.3} We need to think.>"
     show Gaspard surprise
     ga nulla "<What is there to think about?!{w=0.3} It's clear we've been kidnapped!>"
     show Amina surprise
@@ -228,7 +228,7 @@ label story_01_taisho:
     show Amina neutral
     am nulla "You seem to be...{w=0.5} Unbelievably calm, despite the circumstances."
     show Shigeo smile sweat
-    sh nulla "Oh, I'm the right amount of nervous, believe me...{w=0.5} But, in a weird way, such a situation is actually more calming for me."
+    sh nulla "Oh, I'm the right amount of nervous, believe me.{w=0.3} You should've seen before I found the flashlight...{w=0.5} But, in a weird way, such a situation is actually more calming for me."
     show Shigeo laugh -sweat
     sh nulla "I'm used to dealing with stuff like this on the job...{w=0.5} Although, never this directly."
     am nulla "Right, what you 'do for a living'...{w=0.5} And that would be?"
@@ -250,6 +250,7 @@ label story_01_taisho:
     jump story_01_taisho_corridor
 
 label story_01_taisho_corridor:
+    $ renpy.block_rollback()
     scene taisho_1f_corridor with Reveal3
     pause 1.5
     show Gaspard frown:
@@ -264,3 +265,124 @@ label story_01_taisho_corridor:
     sh neutral "Well, let's look around and see what our options are."
     pause 1.0
     call screen taisho_1f_corridor_explore_01
+
+label story_01_taisho_side_meet:
+    $ renpy.block_rollback()
+    play sound "audio/sfx/pad_input.ogg"
+    pause 1.0
+    play sound4 "audio/sfx/pad_success.ogg"
+    pause 0.2
+    play sound "audio/se/door_unlock.ogg"
+    pause 1.0
+    scene black with dissolve
+    $ move_time(0,17)
+    pause 0.5
+    $ flashlight_use = True
+    $ flashlight_allowed = True
+    play sound4 "audio/se/flashlight_on.ogg"
+    pause 1.0
+    scene taisho_1f_side_meet_base
+    show darkness_layers
+    with Reveal3
+    pause 1.0
+    sh neutral ".{w=0.3}.{w=0.3}.{w=0.5}no one's here."
+    ga frown "<Also:{w=0.3} another dead end.>"
+    am surprise "Or is it?{w=0.3} Look."
+    pause 0.5
+    show Amina surprise with dissolve:
+        zoom 0.29 xpos 289 ypos 456
+    am surprise "Another locked door...{w=0.5} Shigeo, what's the code you used?"
+    sh neutral "19261225."
+    show Amina neutral
+    am neutral "Alright.{w=0.3} I'm going to try both."
+    play sound "audio/sfx/pad_input.ogg"
+    pause 1.0
+    play sound4 "audio/sfx/pad_wrong.ogg"
+    pause 1.0
+    play sound "audio/sfx/pad_input.ogg"
+    pause 1.0
+    play sound4 "audio/sfx/pad_wrong.ogg"
+    pause 0.5
+    show Amina sad
+    am sad "Ugh, would've been too easy, I guess...{w=0.5} Any ideas?"
+    ga frown "<Ugh, this is ridiculous!{w=0.3} Why are we even in here?!{w=0.3} We should be trying to open the door to the stairwell!>"
+    sh neutral "We currently lack the means to.{w=0.3} We need to-"
+    play sound "audio/em/em_angry.ogg"
+    show screen emote("angry",0.17,0.5)
+    ga angry "<Then the window!{w=0.3} This one, or the one in the corridor!>"
+    show Amina surprise
+    show Gaspard angry with dissolve:
+        zoom 0.32 xpos 1538 ypos 380
+    ga angry "<Let's try and break open one of {i}these{/i} fucking things, already!{w=0.3} Let's do SOMETHING!>"
+    am surprise "Gaspard...!"
+    sh neutral "I understand your frustration, but-"
+    play sound4 "audio/se/door_fist.ogg"
+    ga angry "<Do you?!{w=0.3} Do you really?!{w=0.3} You seem to be taking this quite IN STRIDE!>"
+    sh surprise "...!"
+    show Gaspard sweat
+    ga angry sweat "<All calm and collected, while I'm losing my fucking mind!{w=0.3} Locked in this REVOLTING building, made to solve FUCKING riddles?!{w=0.3} How dare!{w=0.3} HOW DARE?!>"
+    show Amina:
+        easein 1.0 xpos 362
+    am surprise sweat "Gaspard, please calm down!{w=0.3} What's wrong with you?!"
+    play sound4 "audio/se/door_fist.ogg"
+    show Gaspard:
+        linear 0.2 xpos 1488
+    ga angry "<What's wrong?!{w=0.3} WHAT'S WRONG?!>"
+    pause 1.0
+    stop music fadeout 3.5
+    show Gaspard surprise with dissolve
+    pause 1.0
+    ga surprise "<What's...{w=0.5} What's wrong.{w=0.3}.{w=0.3}.{w=0.3}?{w=0.5} I...>"
+    show Amina sad sweat
+    am sad sweat "I've never seen you this upset...{w=0.5} Are you feeling alright?"
+    pause 0.5
+    show Gaspard frown with dissolve
+    pause 0.5
+    ga frown "I...{w=0.5} I feel a little hot, actually, I...{w=0.5} And I'm thirsty."
+    sh neutral sweat ".{w=0.3}.{w=0.3}.{w=0.5}let's take a small break.{w=0.3} Amina, please assist him.{w=0.3} I will take a look around."
+    am sad -sweat "Thanks...{w=0.5} <Gaspard, why don't you lay down?>"
+    pause 0.5
+    hide Amina with dissolve
+    hide Gaspard with dissolve
+    pause 1.5
+    show Shigeo neutral sweat at sh_big:
+        xalign 0.5
+    with dissolve
+    sh_i nulla "(The stress must be getting to him...{w=0.5} Did they know that he doesn't like the building?{w=0.3} And of his temper?{w=0.3} Is that why they put him in here?)"
+    show Shigeo frown
+    sh_i nulla "(I wouldn't put it past whoever's doing this.{w=0.5} The fact that we are allowed to walk around this building, able to guess our way to opening the doors...{w=0.5} This isn't a kidnapping, this is {nw}"
+    play sound4 "audio/sfx/gui_spook.ogg"
+    extend "{b}some kind of game or test{/b}...{w=0.5} I have no doubt that we're being observed, now.)"
+    show Shigeo neutral
+    sh_i nulla "(I should keep this to myself, for now.{w=0.3} Let's just hope they don't introduce any new variables before I figure out the rules or a way out of this building...)"
+    pause 1.5
+    stop LoNoise fadeout 3.5
+    scene black with Reveal3
+    $ time_menu = False
+    $ stat1_show = False
+    $ inventory_show = False
+    pause 2.0
+    scene taisho_1f_tabitha with Reveal3
+    pause 3.0
+    show Tabitha bow at ta_big:
+        xalign 0.5
+    with Reveal
+    pause 2.8
+    play sound "audio/se/sting.ogg"
+    pause 0.2
+    show Tabitha r_cold
+    pause 1.5
+    scene black
+    pause 5.0
+    $ move_time(0,10)
+    pause 1.0
+    play LoNoise "audio/bgs/taisho_bgs.ogg" fadein 1.0
+    pause 1.5
+    $ time_menu = True
+    $ stat1_show = True
+    $ inventory_show = True
+    ga frown sweat "<That water was disgusting.>"
+    am neutral "<Just be glad it wasn't stagnant.{w=0.3} It did come from a flower vase, after all.>"
+    ga surprise "<With fake flowers...?{w=0.5} Why?>"
+    am smile "<I don't know.{w=0.3} Authenticity?>"
+    pause 1.0

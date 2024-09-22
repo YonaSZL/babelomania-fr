@@ -11,8 +11,8 @@ init python:
     test_item = Item("Apple", "gui/inventory/test.png", "item_drop")
 
 default item_flashlight = Item(_("Flashlight"), "gui/inventory/flashlight.png", "flashlight_drop")
-default item_taisho_note = Item(_("Door Code Note"), "gui/inventory/flashlight.png", "taisho_note_drop")
-default item_smartwatch = Item(_("Smartwatch"), "gui/inventory/flashlight.png", "smartwatch_drop")
+default item_taisho_note = Item(_("Door Code Note"), "gui/inventory/taisho_note.png", "taisho_note_drop")
+default item_smartwatch = Item(_("Smartwatch"), "gui/inventory/smartwatch.png", "smartwatch_drop")
 
 default inventory = [item_flashlight]
 screen inventory():
@@ -117,6 +117,17 @@ screen inventory():
                 else:
                     textbutton _("Inspect") action [ ClearFocus("taisho_note_drop"), Hide("inventory"), Jump("exp_taisho_1f_corridor_01_taisho_note") ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
                 textbutton _("Use") action [ ClearFocus("taisho_note_drop"), Show("notify", None, _("There's nothing I can do with this.")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_item_use.ogg"
+    if GetFocusRect("smartwatch_drop"):
+        dismiss action ClearFocus("smartwatch_drop")
+        nearrect:
+            focus "smartwatch_drop"
+            frame:
+                style_prefix "dropdown"
+                #modal True
+
+                has vbox
+
+                textbutton _("Inspect") action [ ClearFocus("smartwatch_drop"), Show("notify", None, _("It's a Smartwatch I got from Gaspard. It connects wirelessly to a phone.")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
 
 style dropdown_vbox:
     spacing -5
