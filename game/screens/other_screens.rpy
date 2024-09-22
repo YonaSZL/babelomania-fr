@@ -111,10 +111,10 @@ screen about():
                 text "\"Meinos Kaen\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}STORY CONSULTANTS") yalign 0.5
-                text "\"Adori\"(aka Meinos Kaen's wife), {a=mailto:yona.sazela@gmail.com}\"Yona\"{/a}, \"ROSSTAIL\"" xoffset 15 yalign 0.5
+                text "\"Adori\"(aka Meinos Kaen's wife), {a=mailto:yona.sazela@gmail.com}\"Yona\"{/a}, Anthony \"Rosstail\" Bac" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}FRENCH TRANSLATORS") yalign 0.5
-                text "\"Yona\", \"ROSSTAIL\"" xoffset 15 yalign 0.5
+                text "\"Yona\", Anthony \"Rosstail\" Bac" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}IMAGE EDITING") yalign 0.5
                 text "\"Meinos Kaen\"" xoffset 15 yalign 0.5
