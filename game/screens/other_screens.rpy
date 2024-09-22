@@ -90,7 +90,7 @@ screen about():
                 text "{a=https://x.com/FuuraXen}\"Fuura Xen\"{/a}" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}CHARACTER CONCEPT ARTIST") yalign 0.5
-                text "{a=https://halebobuwu.carrd.co/}\"Halebob\"{/a}" xoffset 15 yalign 0.5
+                text "{a=https://halebob.artstation.com/}\"Halebob\"{/a}" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}GUI ARTIST, PROGRAMMER") yalign 0.5
                 text "\"Skolaztika\"" xoffset 15 yalign 0.5
