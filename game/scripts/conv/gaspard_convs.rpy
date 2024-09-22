@@ -85,7 +85,7 @@ label gaspard_01_gaspard:
     ga nulla "<We also went to the same business school.{w=0.3} We're not exactly close but, I wasn't about to rebuke a wedding invite.{w=0.3} Especially with Château de Bois-le-Dumont as a location.>"
     sh surprise "<It is a beautiful estate, from what I've seen...{w=0.5} You've visited here before?>"
     show Gaspard frown
-    ga nulla "<A few times...{w=0.5} Although this is the first time I will have to stay the night in the Taisho building.>"
+    ga nulla "<A few times...{w=0.5} Although this is the first time I will have to stay the night in the Taishō building.>"
     sh neutral "<Is there a problem with that?>"
     ga nulla "<I'm not exactly a fan of the architectural style...{w=0.5} Totalitarian Japan aping the wonders of imperial Europe and producing patchworks without the strengths of either.>"
     show Gaspard neutral

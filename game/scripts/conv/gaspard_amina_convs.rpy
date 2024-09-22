@@ -123,7 +123,7 @@ label gaspmina_01_gaspardamina:
     $ renpy.block_rollback()
     pause 0.5
     sh neutral -sweat "How long ago did you wake up?{w=0.3} Have you met anyone else?"
-    ga nulla "<No one.{w=0.3} I woke up first, the room was...{w=0.5} Similar to this one.{w=0.3} A small study with awful furnishing...{w=0.5} Definitely the Taisho building.>"
+    ga nulla "<No one.{w=0.3} I woke up first, the room was...{w=0.5} Similar to this one.{w=0.3} A small study with awful furnishing...{w=0.5} Definitely the Taishō building.>"
     show Amina neutral
     am nulla "I woke up shortly afterwards.{w=0.3} Total darkness, lights don't work.{w=0.3} Same for the main corridor, although there's light coming through the window from outside."
     sh frown "Which means that the power failure is concentrated...{w=0.5} Maybe something happened to the transformer, or they messed with the eletrical panel."

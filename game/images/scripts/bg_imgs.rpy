@@ -47,7 +47,7 @@ image bar_reception_mood_video_glitch:
     yalign 0.5
     linear 10.0 zoom 1.5
 
-##Taisho Building
+##Taishō Building
 
 image flash_circle = "images/bgs/flash_circle.png"
 image dark_flashlight = DynamicDisplayable(dark_flashlight)

@@ -104,7 +104,7 @@ label story_00_invitation:
     d """
     The {b}Château de Bois-le-Dumont{/b} is unique even among the many beautiful châteaux that populate France. It originated as an eighteenth century vanity project from an aristocrat, left unfinished in the wake of the revolution. After decades of abandon, it was eventually purchased by the eccentric {b}Abelard Du Bois{/b}, who over the following decades shaped it into the château as it is today.\n
 
-    The ceremony and reception will take place in the {b}Baroque Building{/b}, while the guests will be accomodated in the {b}Taisho Building{/b}.\n
+    The ceremony and reception will take place in the {b}Baroque Building{/b}, while the guests will be accomodated in the {b}Taishō Building{/b}.\n
     """
     nvl clear
     d """

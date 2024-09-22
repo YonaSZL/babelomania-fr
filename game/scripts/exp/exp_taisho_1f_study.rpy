@@ -213,7 +213,7 @@ label exp_taisho_1f_study_02_scrolls:
     sh_i surprise "(Wait...{w=0.5} Mixture of influences...?{w=0.3} I remember talking about this with Gaspard, earlier.)"
     sh_i neutral "(Of course.{w=0.3} This must be the {nw}"
     play sound4 "audio/sfx/gui_solved.ogg"
-    extend "{b}Taisho Building{/b}.{w=0.3} We were going to be spend the night in here, weren't we?)"
+    extend "{b}Taishō Building{/b}.{w=0.3} We were going to be spend the night in here, weren't we?)"
     play sound4 "audio/sfx/gui_slots_confirm.ogg"
     show screen notify(_("Codex Updated."))
     sh_i surprise "(This doesn't look like a bedroom, though...{w=0.3} I must be in a different wing of the building, then.)"

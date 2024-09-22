@@ -65,11 +65,62 @@ screen taisho_1f_corridor_explore_01():
 label exp_taisho_1f_corridor_01_gaspard:
     $ renpy.block_rollback()
     pause 0.5
-    sh neutral "This is a test button."
+    sh_i neutral "(He's checking the door to the stairwell...{w=0.5} Doesn't seem like it's going well.)"
+    pause 0.5
+    show Shigeo neutral:
+        zoom 0.14 xpos 900 ypos 460
+    with dissolve
+    sh neutral "Is it also locked?"
+    ga frown "<Unfortunately...{w=0.5} And I can't understand how.>"
+    show Gaspard surprise
+    ga surprise "<There's no keyhole and there's no numerical input pad.{w=0.3} The door doesn't seem like it was made to be locked, and yet it doesn't budge no matter how much I push.>"
+    sh neutral "Which means it's locked remotely...{w=0.5} Which means there's some kind of {nw}"
+    play sound4 "audio/sfx/gui_spook.ogg"
+    extend "{b}control room{/b} somewhere...{w=0.5} Probably where security usually is."
+    ga surprise "<Security...?{w=0.5} Hey, no, if that was true, then why haven't they done anything yet?!>"
+    pause 1.5
+    show Shigeo sad with dissolve
+    sh sad "I have a feeling they might not be able to."
+    ga sweat surprise "<The hell...?!{w=0.3} You mean they...>"
+    show Shigeo neutral
+    sh neutral "I'm not sure about anything, right now.{w=0.3} But, consider the fact we're locked inside a building of the château.{w=0.3} A large estate which is always, receptions or not, guarded in some way."
+    show Shigeo frown
+    sh frown "The first thing a perpetrator would need to do, to set something like this up, is neutralize the security guards..."
     pause 1.0
-    if exp_taisho_1f_corridor_01_gaspard == False:
-        $ exp_taisho_1f_corridor_01_gaspard = True
-        $ taisho_1f_corridor_explore_01 += 1
+    show Gaspard angry with dissolve
+    ga angry "<Shit...{w=0.5} Shit shit shit!{w=0.3} What the fuck IS this bullshit?!>"
+    play sound4 "audio/se/door_fist.ogg"
+    if taisho_note_inspected:
+        show Shigeo surprise
+        sh_i surprise "(He seems to be getting increasingly upset...{w=0.5} I fear he might injure himself further.)"
+        menu:
+            sh_i neutral "(What should I do...?)"
+
+            "Leave him alone.":
+                hide Shigeo
+                show Gaspard frown -sweat
+                with dissolve
+                call screen taisho_1f_corridor_explore_01
+            "Try and change the subject.":
+                sh_i surprise "(Let's see, let's think back...{w=0.5} Oh, he seemed to have an opinion on this building before we even came in here, didn't we?)"
+                show Shigeo smile
+                sh smile "<And to make it worse, they chose the worst building, didn't they?>"
+                show Gaspard surprise
+                ga surprise "<Hmmm?{w=0.5} Oh, yeah, don't get me {i}started{/i}.{w=0.3} The Taishō, of all things.>"
+                show Gaspard frown -sweat
+                ga frown "<I looked up some stuff about Abelard Du Bois, you know?{w=0.3} The guy was an absolute weirdo.{w=0.3} On one hand, great patriot, on the other he seemed to have a fascination with...{w=0.5} Other countries.>"
+                show Gaspard surprise
+                ga surprise "<Which is not unheard of but, the periods he decided to take inspiration from are...{w=0.5} Peculiar.{w=0.3} I mean, the Taishō era>"
+                pause 1.0
+                if exp_taisho_1f_corridor_01_gaspard == False:
+                    $ exp_taisho_1f_corridor_01_gaspard = True
+                    $ taisho_1f_corridor_explore_01 += 1
+                    call screen taisho_1f_corridor_explore_01        
+    else:
+        hide Shigeo
+        show Gaspard frown -sweat
+        with dissolve
+    pause 1.0
     call screen taisho_1f_corridor_explore_01
 
 label exp_taisho_1f_corridor_01_amina:
@@ -132,7 +183,7 @@ label exp_taisho_1f_corridor_01_taisho_note:
     sh_i surprise "(Also, this format...{w=0.5} Wait, could this be a {nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
     extend "{b}date of some kind{/b}?)"
-    sh_i frown "(.{w=0.3}.{w=0.3}.{w=0.5}it's a longshot, but...{w=0.5} Maybe the other doors...?)"
+    sh_i frown "(.{w=0.3}.{w=0.3}.{w=0.5}it's a longshot, but...{w=0.5} Maybe the codes for the other doors...?)"
     hide it_taisho_note with dissolve
     pause 1.0
     if taisho_note_inspected == False:

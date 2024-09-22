@@ -85,7 +85,7 @@ label story_01_door_opens:
     pause 1.5
     play sound3 "audio/se/door_slam.ogg"
     pause 0.5
-    play sound4 "audio/se/fist_slam.ogg"
+    play sound4 "audio/se/door_fist.ogg"
     pause 0.5
     sh_i angry "(Ugh, they're persistent...!{w=0.3} But the door seems reinforced.)"
     pause 3.0
