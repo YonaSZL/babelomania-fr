@@ -254,3 +254,15 @@ translate french strings:
     old "{size=35}ADDITIONAL MUSIC"
     new ""
 
+# TODO: Translation updated at 2024-09-22 19:25
+
+translate french strings:
+
+    # game/screens/other_screens.rpy:95
+    old "{size=35}GUI ARTIST, PROGRAMMER"
+    new ""
+
+    # game/screens/other_screens.rpy:116
+    old "{size=35}FRENCH TRANSLATORS"
+    new ""
+

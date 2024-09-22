@@ -78,19 +78,19 @@ screen about():
                 text "\"Meinos Kaen\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}BACKGROUND ARTISTS") yalign 0.5
-                text "\"Reina\", \"Fuura Xen\"" xoffset 15 yalign 0.5
+                text "{a=https://x.com/ReinaTensei}\"Reina\"{/a}, \"Fuura Xen\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}CHARACTER SPRITE ARTIST") yalign 0.5
                 text "{a=https://nicanjil.carrd.co/}\"NicAnjil\"{/a}" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}CG ILLUSTRATORS") yalign 0.5
-                text "\"NicAnjil\", \"Arsonichawt\"" xoffset 15 yalign 0.5
+                text "\"NicAnjil\", {a=https://twitter.com/arsonic_hawt}\"Arsonichawt\"{/a}" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}ENVIRONMENT CONCEPT ARTIST") yalign 0.5
-                text "\"Fuura Xen\"" xoffset 15 yalign 0.5
+                text "{a=https://x.com/FuuraXen}\"Fuura Xen\"{/a}" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}CHARACTER CONCEPT ARTIST") yalign 0.5
-                text "\"Halebob\"" xoffset 15 yalign 0.5
+                text "{a=https://halebobuwu.carrd.co/}\"Halebob\"{/a}" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}GUI ARTIST, PROGRAMMER") yalign 0.5
                 text "\"Skolaztika\"" xoffset 15 yalign 0.5
@@ -99,7 +99,7 @@ screen about():
                 text "{a=https://johanmeow.carrd.co/}\"Johan Meow\"{/a}, \"Meinos Kaen\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}COMPOSERS") yalign 0.5
-                text "\"OddTillTheEnd\", \"Nailik\"" xoffset 15 yalign 0.5
+                text "{a=https://x.com/OddTillTheEnd}\"OddTillTheEnd\"{/a}, \"Nailik\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}AUDIO EDITOR") yalign 0.5
                 text "\"Meinos Kaen\"" xoffset 15 yalign 0.5
