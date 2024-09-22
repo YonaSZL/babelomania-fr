@@ -223,10 +223,6 @@ label start:
     
     Death{nw}
     
-    Suicide{nw}
-    
-    Suicide Ideation{nw}
-    
     Trauma{nw}
     
     PTSD{nw}

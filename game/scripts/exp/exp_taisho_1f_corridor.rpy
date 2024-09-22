@@ -249,18 +249,46 @@ label exp_taisho_1f_corridor_01_taisho_note:
 label exp_taisho_1f_corridor_01_side_meet:
     $ renpy.block_rollback()
     pause 0.5
-    sh neutral "This is a test button."
+    show Shigeo neutral with dissolve:
+        zoom 0.11 ypos 475 xpos 795
+    sh_i neutral "(This door looks identical to the other ones, in make...{w=0.5} And just like the other ones, it requires a code.)"
+    if exp_taisho_1f_corridor_01_amina == False:
+        show Shigeo frown
+        sh_i frown "(I should ask Amina if she's tried opening this one yet.{w=0.3} Maybe ask her for the code they found.)"
+    else:
+        if taisho_note_inspected == False:
+            show Shigeo frown
+            sh_i frown "(I should take a look at the note Amina found, try the code.)"
+        else:
+            show Shigeo frown
+            sh_i frown "(Let's see if the code I got off Amina's note works.)"
+            play sound2 "audio/sfx/pad_input.ogg"
+            pause 1.0
+            play sound "audio/sfx/pad_wrong.ogg"
+            pause 0.5
+            sh_i frown "(No dice...{w=0.5} Is there any way I can try and guess it?)"
+            show Shigeo neutral
+            sh_i neutral "(I should talk to Amina and Gaspard, see if they have any ideas or information.)"
+            #if exp_taisho_1f_corridor_01_side_meet == False:
+            #$ exp_taisho_1f_corridor_01_side_meet = True
+            #$ taisho_1f_corridor_explore_01 += 1
     pause 1.0
-    if exp_taisho_1f_corridor_01_side_meet == False:
-        $ exp_taisho_1f_corridor_01_side_meet = True
-        $ taisho_1f_corridor_explore_01 += 1
+    hide Shigeo with dissolve
     call screen taisho_1f_corridor_explore_01
 
 label exp_taisho_1f_corridor_01_gamina_wake:
     $ renpy.block_rollback()
     pause 0.5
-    sh neutral "This is a test button."
+    sh neutral "Amina, is this the room where you and Gaspard woke up?"
+    show Amina surprise
+    am nulla "Yes.{w=0.3} As I mentioned earlier, the code which we used for your door doesn't work for that one."
+    sh neutral "Fair.{w=0.3} Did you take a good look around before you left?"
+    show Amina frown
+    am nulla "I want to say yes, but...{w=0.5} I wouldn't call it a thorough inspection, exactly."
+    sh neutral "I see..."
+    sh_i neutral "(So if there's an opportunity to go back in there, we should.)"
     pause 1.0
+    show Amina neutral
     if exp_taisho_1f_corridor_01_gamina_wake == False:
         $ exp_taisho_1f_corridor_01_gamina_wake = True
         $ taisho_1f_corridor_explore_01 += 1
@@ -269,7 +297,8 @@ label exp_taisho_1f_corridor_01_gamina_wake:
 label exp_taisho_1f_corridor_01_shigeo_wake:
     $ renpy.block_rollback()
     pause 0.5
-    sh neutral "This is a test button."
+    sh_i neutral "(This is the room where I woke up...)"
+    sh_i frown "(No reason to go back in there, at the moment...{w=0.5} And there's nothing helpful about the door, either.)"
     pause 1.0
     if exp_taisho_1f_corridor_01_shigeo_wake == False:
         $ exp_taisho_1f_corridor_01_shigeo_wake = True

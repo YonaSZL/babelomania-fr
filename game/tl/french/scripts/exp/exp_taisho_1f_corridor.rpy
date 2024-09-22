@@ -526,3 +526,89 @@ translate french exp_taisho_1f_corridor_01_gaspard_84c1c476:
     # ga frown "<Think nothing of it.{w=0.3} Now, is there like a panel or something movable...?{w=0.5} Or do we need to crack the wall?>"
     ga frown ""
 
+# TODO: Translation updated at 2024-09-22 18:11
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:254
+translate french exp_taisho_1f_corridor_01_side_meet_c8cd229d:
+
+    # sh_i neutral "(This door looks identical to the other ones, in make...{w=0.5} And just like the other ones, it requires a code.)"
+    sh_i neutral ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:257
+translate french exp_taisho_1f_corridor_01_side_meet_d62d72ed:
+
+    # sh_i frown "(I should ask Amina if she's tried opening this one yet.{w=0.3} Maybe ask her for the code they found.)"
+    sh_i frown ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:261
+translate french exp_taisho_1f_corridor_01_side_meet_b515c3a3:
+
+    # sh_i frown "(I should take a look at the note Amina found, try the code.)"
+    sh_i frown ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:264
+translate french exp_taisho_1f_corridor_01_side_meet_62f8500c:
+
+    # sh_i frown "(Let's see if the code I got off Amina's note works.)"
+    sh_i frown ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:269
+translate french exp_taisho_1f_corridor_01_side_meet_22de6c37:
+
+    # sh_i frown "(No dice...{w=0.5} Is there any way I can try and guess it?)"
+    sh_i frown ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:271
+translate french exp_taisho_1f_corridor_01_side_meet_c1a3b7da:
+
+    # sh_i neutral "(I should talk to Amina and Gaspard, see if they have any ideas or information.)"
+    sh_i neutral ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:282
+translate french exp_taisho_1f_corridor_01_gamina_wake_bcc77c62:
+
+    # sh neutral "Amina, is this the room where you and Gaspard woke up?"
+    sh neutral ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:284
+translate french exp_taisho_1f_corridor_01_gamina_wake_d876155e:
+
+    # am nulla "Yes.{w=0.3} As I mentioned earlier, the code which we used for your door doesn't work for that one."
+    am nulla ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:285
+translate french exp_taisho_1f_corridor_01_gamina_wake_3331fac9:
+
+    # sh neutral "Fair.{w=0.3} Did you take a good look around before you left?"
+    sh neutral ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:287
+translate french exp_taisho_1f_corridor_01_gamina_wake_dda58206:
+
+    # am nulla "I want to say yes, but...{w=0.5} I wouldn't call it a thorough inspection, exactly."
+    am nulla ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:288
+translate french exp_taisho_1f_corridor_01_gamina_wake_77c365a4:
+
+    # sh neutral "I see..."
+    sh neutral ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:289
+translate french exp_taisho_1f_corridor_01_gamina_wake_bf252c28:
+
+    # sh_i neutral "(So if there's an opportunity to go back in there, we should.)"
+    sh_i neutral ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:300
+translate french exp_taisho_1f_corridor_01_shigeo_wake_93fe4ae1:
+
+    # sh_i neutral "(This is the room where I woke up...)"
+    sh_i neutral ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:301
+translate french exp_taisho_1f_corridor_01_shigeo_wake_42695009:
+
+    # sh_i frown "(No reason to go back in there, at the moment...{w=0.5} And there's nothing helpful about the door, either.)"
+    sh_i frown ""
+
