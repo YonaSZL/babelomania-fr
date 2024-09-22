@@ -1886,3 +1886,17 @@ translate french strings:
     old "Codex Unlocked"
     new ""
 
+# TODO: Translation updated at 2024-09-22 15:11
+
+# game/scripts/story/story_00.rpy:104
+translate french story_00_invitation_0201c8e5:
+
+    # d "The ceremony and reception will take place in the {b}Baroque Building{/b}, while the guests will be accomodated in the {b}Taishō Building{/b}.\n"
+    d ""
+
+# game/scripts/story/story_00.rpy:761
+translate french story_00_meet_amina_8c37d57a:
+
+    # ha neutral traglasses ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha?"
+    ha neutral traglasses ""
+

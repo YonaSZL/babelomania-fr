@@ -68,7 +68,8 @@ label exp_taisho_1f_corridor_01_gaspard:
     sh_i neutral "(He's checking the door to the stairwell...{w=0.5} Doesn't seem like it's going well.)"
     pause 0.5
     show Shigeo neutral:
-        zoom 0.14 xpos 900 ypos 460
+        zoom 0.14 xpos 900 ypos 450
+    show Amina neutral
     with dissolve
     sh neutral "Is it also locked?"
     ga frown "<Unfortunately...{w=0.5} And I can't understand how.>"
@@ -210,8 +211,8 @@ label exp_taisho_1f_corridor_01_amina:
     show Amina neutral
     am nulla "Hmm...{w=0.5} Guess not.{w=0.3} I'll keep trying to unlock the door here."
     show Amina smile
-    am nulla "I'm usually pretty good with guessing games.{w=0.3} Maybe luck will favour me."
-    sh smile "Statistics may yet work in our favour...{w=0.5} Good luck."
+    am nulla "I'm usually pretty good with guessing games.{w=0.3} Maybe I'll get lucky."
+    sh smile "Statistics may yet work in our favour...{w=0.5} Good luck, then."
     pause 1.0
     call screen taisho_1f_corridor_explore_01
 

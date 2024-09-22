@@ -139,11 +139,12 @@ init -1:
         zoom 0.70
         transform_anchor True
     transform ha_big:
-        yoffset 120
+        yoffset 215
+        zoom 0.90
         transform_anchor True
     transform ha_med:
-        yoffset 180
-        zoom 0.70
+        yoffset 290
+        zoom 0.61
         transform_anchor True
     transform am_big:
         yoffset 185

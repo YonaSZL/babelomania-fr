@@ -62,3 +62,11 @@ translate french strings:
     old "There's nothing I can do with this."
     new ""
 
+# TODO: Translation updated at 2024-09-22 15:11
+
+translate french strings:
+
+    # game/screens/inventory.rpy:15
+    old "Smartwatch"
+    new ""
+

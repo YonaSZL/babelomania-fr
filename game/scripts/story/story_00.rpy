@@ -409,7 +409,7 @@ label story_00_bathroom_return:
         linear 0.5 xalign 0.65
     pause 1.0
     show Habiki neutral at ha_med:
-        xalign 0.2
+        xalign 0.175
     with Reveal3
     pause 0.5
     play music "audio/bgm/echo_of_mountains.ogg"
@@ -758,13 +758,13 @@ label story_00_meet_amina:
     pause 1.0
     scene bar_reception_mood with Reveal
     pause 1.5
-    ha neutral ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha?"
+    ha neutral traglasses ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha?"
     ta neutral "Yes, professor?"
     pause 1.0
     scene black
     show Tabitha neutral brief at ta_big:
         xalign 0.3
-    show Habiki neutral at ha_big:
+    show Habiki neutral traglasses at ha_big:
         xalign 0.7
     with Reveal
     pause 1.5

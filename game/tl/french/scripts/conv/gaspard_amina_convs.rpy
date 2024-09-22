@@ -564,3 +564,11 @@ translate french gaspmina_01_phone_bfe5a91a:
     # sh frown "I don't think so."
     sh frown ""
 
+# TODO: Translation updated at 2024-09-22 15:11
+
+# game/scripts/conv/gaspard_amina_convs.rpy:126
+translate french gaspmina_01_gaspardamina_ff947377:
+
+    # ga nulla "<No one.{w=0.3} I woke up first, the room was...{w=0.5} Similar to this one.{w=0.3} A small study with awful furnishing...{w=0.5} Definitely the Taishō building.>"
+    ga nulla ""
+

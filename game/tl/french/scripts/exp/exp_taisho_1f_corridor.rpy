@@ -196,3 +196,259 @@ translate french strings:
     old "Received Door Code Note."
     new ""
 
+# TODO: Translation updated at 2024-09-22 15:11
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:68
+translate french exp_taisho_1f_corridor_01_gaspard_9dc51401:
+
+    # sh_i neutral "(He's checking the door to the stairwell...{w=0.5} Doesn't seem like it's going well.)"
+    sh_i neutral ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:74
+translate french exp_taisho_1f_corridor_01_gaspard_887a90ee:
+
+    # sh neutral "Is it also locked?"
+    sh neutral ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:75
+translate french exp_taisho_1f_corridor_01_gaspard_3bbe281d:
+
+    # ga frown "<Unfortunately...{w=0.5} And I can't understand how.>"
+    ga frown ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:77
+translate french exp_taisho_1f_corridor_01_gaspard_2dd026d9:
+
+    # ga surprise "<There's no keyhole and there's no numerical input pad.{w=0.3} The door doesn't seem like it was made to be locked, and yet it doesn't budge no matter how much I push.>"
+    ga surprise ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:78
+translate french exp_taisho_1f_corridor_01_gaspard_bda9ada3:
+
+    # sh neutral "Which means it's locked remotely...{w=0.5} Which means there's some kind of {nw}"
+    sh neutral ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:80
+translate french exp_taisho_1f_corridor_01_gaspard_967e6d97:
+
+    # extend "{b}control room{/b} somewhere...{w=0.5} Probably where security usually is."
+    extend ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:81
+translate french exp_taisho_1f_corridor_01_gaspard_24e42aa8:
+
+    # ga surprise "<Security...?{w=0.5} Hey, no, if that was true, then why haven't they done anything yet?!>"
+    ga surprise ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:84
+translate french exp_taisho_1f_corridor_01_gaspard_08e3f4b7:
+
+    # sh sad "I have a feeling they might not be able to."
+    sh sad ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:85
+translate french exp_taisho_1f_corridor_01_gaspard_e5218f55:
+
+    # ga sweat surprise "<The hell...?!{w=0.3} You mean they...>"
+    ga sweat surprise ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:87
+translate french exp_taisho_1f_corridor_01_gaspard_577ab810:
+
+    # sh neutral "I'm not sure about anything, right now.{w=0.3} But, consider the fact we're locked inside a building of the château.{w=0.3} A large estate which is always, receptions or not, guarded in some way."
+    sh neutral ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:89
+translate french exp_taisho_1f_corridor_01_gaspard_e1a4d061:
+
+    # sh frown "The first thing a perpetrator would need to do, to set something like this up, is neutralize the security guards..."
+    sh frown ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:92
+translate french exp_taisho_1f_corridor_01_gaspard_087efd22:
+
+    # ga angry "<Shit...{w=0.5} Shit shit shit!{w=0.3} What the fuck IS this bullshit?!>"
+    ga angry ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:96
+translate french exp_taisho_1f_corridor_01_gaspard_07cd8cd5:
+
+    # sh_i surprise "(He seems to be getting increasingly upset...{w=0.5} I fear he might injure himself further.)"
+    sh_i surprise ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:98
+translate french exp_taisho_1f_corridor_01_gaspard_b2ac7482:
+
+    # sh_i neutral "(What should I do...?)" nointeract
+    sh_i neutral "" nointeract
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:106
+translate french exp_taisho_1f_corridor_01_gaspard_a8994a70:
+
+    # sh_i surprise "(Let's see, let's think back...{w=0.5} Oh, he seemed to have an opinion on this building before we even came in here, didn't we?)"
+    sh_i surprise ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:108
+translate french exp_taisho_1f_corridor_01_gaspard_ac7d7af6:
+
+    # sh smile "<And to make it worse, they chose the worst building, didn't they?>"
+    sh smile ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:110
+translate french exp_taisho_1f_corridor_01_gaspard_018c8b4e:
+
+    # ga surprise "<Hmmm?{w=0.5} Oh, yeah, don't get me {i}started{/i}.{w=0.3} The Taishō, of all things.>"
+    ga surprise ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:112
+translate french exp_taisho_1f_corridor_01_gaspard_1237a827:
+
+    # ga frown "<I looked up some stuff about Abelard Du Bois, you know?{w=0.3} The guy was an absolute weirdo.{w=0.3} On one hand, great patriot, on the other he seemed to have a fascination with...{w=0.5} Other countries.>"
+    ga frown ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:114
+translate french exp_taisho_1f_corridor_01_gaspard_6bb32ab3:
+
+    # ga surprise "<Which is not unheard of but, the periods he decided to take inspiration from are...{w=0.5} Peculiar.{w=0.3} I mean, the Taishō era of all things?!>"
+    ga surprise ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:116
+translate french exp_taisho_1f_corridor_01_gaspard_a41cc868:
+
+    # sh surprise "<You seem to not like the architecture very much.>"
+    sh surprise ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:118
+translate french exp_taisho_1f_corridor_01_gaspard_ff5263a1:
+
+    # ga frown "<It's not just the architecture, it's just...{w=0.5} He invested I don't know how much money in replicating a weird style from an era that lasted a measly fourteen years?{w=0.3} If he was doing it for grandeur, why not choose Meiji?>"
+    ga frown ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:120
+translate french exp_taisho_1f_corridor_01_gaspard_ad72acf8:
+
+    # ga neutral "<Now, {i}that{/i} was an interesting period.>"
+    ga neutral ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:122
+translate french exp_taisho_1f_corridor_01_gaspard_2aee048c:
+
+    # sh neutral "<I'm surprised.{w=0.3} You seem to like Japanese history very much.>"
+    sh neutral ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:124
+translate french exp_taisho_1f_corridor_01_gaspard_05feac70:
+
+    # ga smile "<Heh...{w=0.5} I wouldn't exactly say I like it.{w=0.3} Business school, remember?{w=0.5} My firm has a lot of oversea offices, including Japan...{w=0.5} And when dealing with foreigners, it's important to understand where they're coming from.>"
+    ga smile ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:126
+translate french exp_taisho_1f_corridor_01_gaspard_c44c8d98:
+
+    # ga neutral "<And that includes their history.{w=0.5} I find it quite exotic how they still name their historic eras after their emperors, despite them now being ceremonial figureheads...{w=0.5} Guess they really can't quit that habit.>"
+    ga neutral ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:129
+translate french exp_taisho_1f_corridor_01_gaspard_d15553af:
+
+    # sh_i frown "(That's very {b}incorrect{/b}, but...{w=0.5} Let's not antagonize him, he seems to have calmed down.)"
+    sh_i frown ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:131
+translate french exp_taisho_1f_corridor_01_gaspard_4b9e2cfb:
+
+    # ga smile "<And of all the periods he could have chosen, Du Bois went with the shortest one named after a walking corpse of an emperor...{w=0.5} {nw}"
+    ga smile ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:133
+translate french exp_taisho_1f_corridor_01_gaspard_e2b656bd:
+
+    # extend "{b}1912 to 1926{/b}.{w=0.3} They got all of World War I without even a little {i}Belle Époque{/i} first.>"
+    extend ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:134
+translate french exp_taisho_1f_corridor_01_gaspard_1b480b0c:
+
+    # sh frown "<Hmm...{w=0.5} I guess maybe he->"
+    sh frown ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:138
+translate french exp_taisho_1f_corridor_01_gaspard_4506d59c:
+
+    # sh surprise "Wait...{w=0.5} 1912?"
+    sh surprise ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:140
+translate french exp_taisho_1f_corridor_01_gaspard_06f28569:
+
+    # ga surprise "<What...?{w=0.5} Yeah, those are the years.>"
+    ga surprise ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:142
+translate french exp_taisho_1f_corridor_01_gaspard_659c3dc8:
+
+    # sh frown ".{w=0.3}.{w=0.3}.{w=0.5}could it be?"
+    sh frown ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:144
+translate french exp_taisho_1f_corridor_01_gaspard_90b6aca2:
+
+    # ga surprise "<Could it be what?{w=0.5} Ah, whatever, I don't really care.>"
+    ga surprise ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:146
+translate french exp_taisho_1f_corridor_01_gaspard_5137daeb:
+
+    # ga neutral "<I'm going to try and see if there's some way I can access the wiring, or something...{w=0.5} Mind taking this off my hands?>"
+    ga neutral ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:148
+translate french exp_taisho_1f_corridor_01_gaspard_b9099c87:
+
+    # sh surprise "Taking what off your hands...?"
+    sh surprise ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:153
+translate french exp_taisho_1f_corridor_01_gaspard_f27e4b6d:
+
+    # sh surprise "A {b}smartwatch{/b}?"
+    sh surprise ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:154
+translate french exp_taisho_1f_corridor_01_gaspard_a76a1995:
+
+    # ga neutral "<An absolutely >"
+    ga neutral ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:214
+translate french exp_taisho_1f_corridor_01_amina_fea6681e:
+
+    # am nulla "I'm usually pretty good with guessing games.{w=0.3} Maybe I'll get lucky."
+    am nulla ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:215
+translate french exp_taisho_1f_corridor_01_amina_537afaed:
+
+    # sh smile "Statistics may yet work in our favour...{w=0.5} Good luck, then."
+    sh smile ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:230
+translate french exp_taisho_1f_corridor_01_taisho_note_1420c1b2:
+
+    # sh_i frown "(.{w=0.3}.{w=0.3}.{w=0.5}it's a longshot, but...{w=0.5} Maybe the codes for the other doors...?)"
+    sh_i frown ""
+
+translate french strings:
+
+    # game/scripts/exp/exp_taisho_1f_corridor.rpy:97
+    old "Leave him alone."
+    new ""
+
+    # game/scripts/exp/exp_taisho_1f_corridor.rpy:97
+    old "Try and change the subject."
+    new ""
+
+    # game/scripts/exp/exp_taisho_1f_corridor.rpy:157
+    old "Received Smartwatch."
+    new ""
+

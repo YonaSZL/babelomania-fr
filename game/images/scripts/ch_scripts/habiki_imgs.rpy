@@ -60,9 +60,9 @@ image habiki_por_clothes_full = "images/chs/habiki/por/clothes_full.png"
 image habiki_por_acc_blush = "images/chs/habiki/por/acc_blush.png"
 image habiki_por_acc_sweat = "images/chs/habiki/por/acc_sweat.png"
 image habiki_por_acc_sweatdrop = "images/chs/habiki/por/acc_sweatdrop.png"
-image habiki_acc_glasses = "images/chs/habiki/por/acc_glasses.png"
-image habiki_acc_sunglasses = "images/chs/habiki/por/acc_sunglasses.png"
-image habiki_acc_traglasses = "images/chs/habiki/por/acc_traglasses.png"
+image habiki_por_acc_glasses = "images/chs/habiki/por/acc_glasses.png"
+image habiki_por_acc_sunglasses = "images/chs/habiki/por/acc_sunglasses.png"
+image habiki_por_acc_traglasses = "images/chs/habiki/por/acc_traglasses.png"
 
 image habiki_por_exp_neutral = "images/chs/habiki/por/exp_neutral.png"
 image habiki_por_exp_smile = "images/chs/habiki/por/exp_smile.png"
@@ -102,8 +102,8 @@ layeredimage Habiki_por:
             "habiki_por_acc_sweatdrop"
     group accessories_4:
         attribute glasses:
-            "habiki_acc_glasses"
+            "habiki_por_acc_glasses"
         attribute traglasses:
-            "habiki_acc_traglasses"
+            "habiki_por_acc_traglasses"
         attribute sunglasses default:
-            "habiki_acc_sunglasses"
+            "habiki_por_acc_sunglasses"

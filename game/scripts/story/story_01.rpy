@@ -121,7 +121,7 @@ label story_01_door_opens:
     show Gaspard frown
     ga nulla "<Oh, I'm sorry if the situation we're in is getting to me...>"
     show Amina neutral
-    am nulla "<It's exactly because the situation we're in is weird that we need to keep a level head...{w=0.5} Just running around opening random doors won't do us any good.{w=0.3} We need to think.>"
+    am nulla "<It's exactly because the situation we're in is weird that we need to keep a level head...{w=0.5} Just running around ramming random doors won't do us any good.{w=0.3} We need to think.>"
     show Gaspard surprise
     ga nulla "<What is there to think about?!{w=0.3} It's clear we've been kidnapped!>"
     show Amina surprise
@@ -228,7 +228,7 @@ label story_01_taisho:
     show Amina neutral
     am nulla "You seem to be...{w=0.5} Unbelievably calm, despite the circumstances."
     show Shigeo smile sweat
-    sh nulla "Oh, I'm the right amount of nervous, believe me...{w=0.5} But, in a weird way, such a situation is actually more calming for me."
+    sh nulla "Oh, I'm the right amount of nervous, believe me.{w=0.3} You should've seen before I found the flashlight...{w=0.5} But, in a weird way, such a situation is actually more calming for me."
     show Shigeo laugh -sweat
     sh nulla "I'm used to dealing with stuff like this on the job...{w=0.5} Although, never this directly."
     am nulla "Right, what you 'do for a living'...{w=0.5} And that would be?"

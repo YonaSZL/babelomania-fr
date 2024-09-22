@@ -404,3 +404,17 @@ translate french story_01_taisho_corridor_455dac3a:
     # sh neutral "Well, let's look around and see what our options are."
     sh neutral ""
 
+# TODO: Translation updated at 2024-09-22 15:11
+
+# game/scripts/story/story_01.rpy:124
+translate french story_01_door_opens_c1a07500:
+
+    # am nulla "<It's exactly because the situation we're in is weird that we need to keep a level head...{w=0.5} Just running around ramming random doors won't do us any good.{w=0.3} We need to think.>"
+    am nulla ""
+
+# game/scripts/story/story_01.rpy:231
+translate french story_01_taisho_9f8a54b7:
+
+    # sh nulla "Oh, I'm the right amount of nervous, believe me.{w=0.3} You should've seen before I found the flashlight...{w=0.5} But, in a weird way, such a situation is actually more calming for me."
+    sh nulla ""
+
