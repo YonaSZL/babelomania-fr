@@ -12,6 +12,7 @@ init python:
 
 default item_flashlight = Item(_("Flashlight"), "gui/inventory/flashlight.png", "flashlight_drop")
 default item_taisho_note = Item(_("Door Code Note"), "gui/inventory/flashlight.png", "taisho_note_drop")
+default item_smartwatch = Item(_("Smartwatch"), "gui/inventory/flashlight.png", "smartwatch_drop")
 
 default inventory = [item_flashlight]
 screen inventory():

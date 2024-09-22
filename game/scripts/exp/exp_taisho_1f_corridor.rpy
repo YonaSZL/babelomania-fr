@@ -110,12 +110,55 @@ label exp_taisho_1f_corridor_01_gaspard:
                 show Gaspard frown -sweat
                 ga frown "<I looked up some stuff about Abelard Du Bois, you know?{w=0.3} The guy was an absolute weirdo.{w=0.3} On one hand, great patriot, on the other he seemed to have a fascination with...{w=0.5} Other countries.>"
                 show Gaspard surprise
-                ga surprise "<Which is not unheard of but, the periods he decided to take inspiration from are...{w=0.5} Peculiar.{w=0.3} I mean, the Taishō era>"
+                ga surprise "<Which is not unheard of but, the periods he decided to take inspiration from are...{w=0.5} Peculiar.{w=0.3} I mean, the Taishō era of all things?!>"
+                show Shigeo surprise
+                sh surprise "<You seem to not like the architecture very much.>"
+                show Gaspard frown
+                ga frown "<It's not just the architecture, it's just...{w=0.5} He invested I don't know how much money in replicating a weird style from an era that lasted a measly fourteen years?{w=0.3} If he was doing it for grandeur, why not choose Meiji?>"
+                show Gaspard neutral
+                ga neutral "<Now, {i}that{/i} was an interesting period.>"
+                show Shigeo neutral
+                sh neutral "<I'm surprised.{w=0.3} You seem to like Japanese history very much.>"
+                show Gaspard smile
+                ga smile "<Heh...{w=0.5} I wouldn't exactly say I like it.{w=0.3} Business school, remember?{w=0.5} My firm has a lot of oversea offices, including Japan...{w=0.5} And when dealing with foreigners, it's important to understand where they're coming from.>"
+                show Gaspard neutral
+                ga neutral "<And that includes their history.{w=0.5} I find it quite exotic how they still name their historic eras after their emperors, despite them now being ceremonial figureheads...{w=0.5} Guess they really can't quit that habit.>"
+                pause 1.5
+                show Shigeo frown
+                sh_i frown "(That's very {b}incorrect{/b}, but...{w=0.5} Let's not antagonize him, he seems to have calmed down.)"
+                show Gaspard smile
+                ga smile "<And of all the periods he could have chosen, Du Bois went with the shortest one named after a walking corpse of an emperor...{w=0.5} {nw}"
+                play sound4 "audio/sfx/gui_hint.ogg"
+                extend "{b}1912 to 1926{/b}.{w=0.3} They got all of World War I without even a little {i}Belle Époque{/i} first.>"
+                sh frown "<Hmm...{w=0.5} I guess maybe he->"
+                pause 0.5
+                play sound "audio/em/em_surprise.ogg"
+                show Shigeo surprise
+                sh surprise "Wait...{w=0.5} 1912?"
+                show Gaspard surprise
+                ga surprise "<What...?{w=0.5} Yeah, those are the years.>"
+                show Shigeo frown
+                sh frown ".{w=0.3}.{w=0.3}.{w=0.5}could it be?"
+                show Gaspard frown
+                ga surprise "<Could it be what?{w=0.5} Ah, whatever, I don't really care.>"
+                show Gaspard neutral
+                ga neutral "<I'm going to try and see if there's some way I can access the wiring, or something...{w=0.5} Mind taking this off my hands?>"
+                show Shigeo surprise
+                sh surprise "Taking what off your hands...?"
+                play sound "audio/sfx/gui_item_get.ogg"
+                show it_smartwatch with dissolve:
+                    xalign 0.5 yalign 0.4
                 pause 1.0
+                sh surprise "A {b}smartwatch{/b}?"
+                ga neutral "<An absolutely >"
                 if exp_taisho_1f_corridor_01_gaspard == False:
+                    play sound4 "audio/sfx/gui_slots_confirm.ogg"
+                    show screen notify(_("Received Smartwatch."))
+                    $ inventory.append(item_smartwatch)
                     $ exp_taisho_1f_corridor_01_gaspard = True
                     $ taisho_1f_corridor_explore_01 += 1
-                    call screen taisho_1f_corridor_explore_01        
+                pause 1.0
+                call screen taisho_1f_corridor_explore_01        
     else:
         hide Shigeo
         show Gaspard frown -sweat

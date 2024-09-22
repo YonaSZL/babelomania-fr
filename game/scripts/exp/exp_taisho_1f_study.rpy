@@ -114,7 +114,7 @@ label exp_taisho_1f_study_01_flashlight:
     sh shock "...!{w=0.3} Seriously?!"
     play sound "audio/sfx/gui_item_get.ogg"
     show it_flashlight with dissolve:
-        xalign 0.5 yalign 0.4 
+        xalign 0.5 yalign 0.4
     sh_i surprise "(A {b}flashlight{/b}!{w=0.3} What are even the chances?!)"
     sh_i smile "(I can finally start shedding some light on this whole situation...{w=0.5} Heh.)"
     play sound4 "audio/sfx/gui_slots_confirm.ogg"
