@@ -384,3 +384,29 @@ translate french habiki_01_wedding_41f4bcd5:
     # ha nulla "Indeed.{w=0.3} And so are you, I believe."
     ha nulla ""
 
+# TODO: Translation updated at 2024-09-21 16:11
+
+# game/scripts/conv/habiki_convs.rpy:84
+translate french habiki_01_habiki_b7cc1033:
+
+    # sh neutral "You stress the necessity of an honorific, which means you give importance to social etiquette...{w=0.5} Or at least, to your title."
+    sh neutral ""
+
+# game/scripts/conv/habiki_convs.rpy:91
+translate french habiki_01_habiki_3d9abc8c:
+
+    # sh smile ".{w=0.3}.{w=0.3}.{w=0.5}fair enough.{w=0.5} But considering the century we live in, you mean to tell me I won't find that out just by looking up 'Japanese professor with Android' on a search engine?"
+    sh smile ""
+
+# game/scripts/conv/habiki_convs.rpy:167
+translate french habiki_01_wedding_6e6a59e2:
+
+    # ha nulla "Young Francesco was my pupil.{w=0.3} One of the finest students I've ever had the honor of teaching...{w=0.5} And you?"
+    ha nulla ""
+
+# game/scripts/conv/habiki_convs.rpy:177
+translate french habiki_01_wedding_11254898:
+
+    # ha nulla "Nothing of importance.{w=0.3} You're just the first person I met from Francesco's life before college."
+    ha nulla ""
+

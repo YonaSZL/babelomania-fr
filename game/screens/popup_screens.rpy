@@ -107,7 +107,7 @@ style skip_hbox:
 
 style skip_frame:
     is empty
-    ypos 15
+    ypos 600
     background Frame("gui/skip.png", 24, 30, 75, 30, tile=True)
     padding (24, 12, 75, 12)
 

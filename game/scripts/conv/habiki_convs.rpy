@@ -81,14 +81,14 @@ label habiki_01_habiki:
     pause 0.5
     show Habiki smile
     ha nulla "And why would you say that?"
-    sh neutral "You stress the necessity of a honorific, which means you give importance to social etiquette...{w=0.5} Or at least, to your title."
+    sh neutral "You stress the necessity of an honorific, which means you give importance to social etiquette...{w=0.5} Or at least, to your title."
     sh frown "It's a way to put some kind of distance between you and your interlocutor, and yet you give a stranger your first name instead of your family name.{w=0.3} Kind of contradictory, wouldn't you say?"
     ha nulla ".{w=0.3}.{w=0.3}.{w=0.5}indeed.{w=0.3} You're well steeped in our culture, I see."
     show Habiki neutral
     ha nulla "There's, though, a very logical explanation...{w=0.5} My Tabitha, here, is many things to me.{w=0.3} One of her primary functions is being my bodyguard."
     show Tabitha bow
     ha nulla "With that in mind, is it really odd that someone needing a two meters tall robotic bodyguard would be quite judicious, when it came to handing out his last name?"
-    sh smile ".{w=0.3}.{w=0.3}.{w=0.5}fair enough.{w=0.5} But considering the century we live in, you mean to tell me I won't find that out just by looking up 'japanese professor with Android' on a search engine?"
+    sh smile ".{w=0.3}.{w=0.3}.{w=0.5}fair enough.{w=0.5} But considering the century we live in, you mean to tell me I won't find that out just by looking up 'Japanese professor with Android' on a search engine?"
     pause 1.5
     show Habiki smile with dissolve
     ha nulla "Quite."
@@ -164,7 +164,7 @@ label habiki_01_wedding:
     ha nulla "And the ones I've seen them wear at similar occasions range in the tens of thousands.{w=0.3} Like many things in this world, Shigeo-kun, cheapness is a...{w=0.5} Relative concept."
     pause 1.5
     sh frown -sweat "How do you know them, anyway?"
-    ha nulla "Young Francesco was my pupil.{w=0.3} One of the finest students I've ever had the honour of teaching...{w=0.5} And you?"
+    ha nulla "Young Francesco was my pupil.{w=0.3} One of the finest students I've ever had the honor of teaching...{w=0.5} And you?"
     sh neutral ".{w=0.3}.{w=0.3}.{w=0.5}Francesco is my childhood friend.{w=0.3} We grew up together."
     pause 1.0
     show Habiki surprise with dissolve
@@ -174,7 +174,7 @@ label habiki_01_wedding:
     show Habiki frown
     ha nulla ".{w=0.3}.{w=0.3}.{w=0.5}not exactly wrong, just...{w=1.0} Nevermind."
     show Habiki neutral
-    ha nulla "Nothing of importance.{w=0.3} You're just the first person I meet from Francesco's life before college."
+    ha nulla "Nothing of importance.{w=0.3} You're just the first person I met from Francesco's life before college."
     sh surprise "Oh...{w=0.5} Yeah, to be honest, his invite was a surprise.{w=0.3} I didn't even know he had gotten married."
     ha nulla "I see...{w=0.5} Well, no time like the present to reconnect, don't you think?"
     show Habiki smile
