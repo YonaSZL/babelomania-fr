@@ -452,3 +452,77 @@ translate french strings:
     old "Received Smartwatch."
     new ""
 
+# TODO: Translation updated at 2024-09-22 16:23
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:78
+translate french exp_taisho_1f_corridor_01_gaspard_aa4c5530:
+
+    # sh neutral "Which means it's locked remotely...{w=0.5} Which implies the existence of some kind of {nw}"
+    sh neutral ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:80
+translate french exp_taisho_1f_corridor_01_gaspard_c1feb45b:
+
+    # extend "{b}control room{/b} somewhere...{w=0.5} That's probably where the estate's security usually resides."
+    extend ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:96
+translate french exp_taisho_1f_corridor_01_gaspard_1e7eae18:
+
+    # sh_i surprise "(He's getting increasingly frustrated...{w=0.5} I fear he might injure himself further.)"
+    sh_i surprise ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:107
+translate french exp_taisho_1f_corridor_01_gaspard_40b8e35c:
+
+    # sh_i surprise "(Let's see, let's think back...{w=0.5} Oh, he seemed to have an opinion on this building before we even came in here, didn't he?)"
+    sh_i surprise ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:113
+translate french exp_taisho_1f_corridor_01_gaspard_5b92be34:
+
+    # ga frown -sweat "<I looked up some stuff about Abelard Du Bois, you know?{w=0.3} The guy was an absolute weirdo.{w=0.3} On one hand, great patriot, on the other he seemed to have a fascination with...{w=0.5} Other countries.>"
+    ga frown -sweat ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:119
+translate french exp_taisho_1f_corridor_01_gaspard_60993e1e:
+
+    # ga frown "<It's not just the architecture, it's just...{w=0.5} He invested I don't know how much money in replicating a weird style from an era that lasted a measly fourteen years?{w=0.3} If he was doing it for grandeur, why not choose {i}Meiji{/i}?>"
+    ga frown ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:127
+translate french exp_taisho_1f_corridor_01_gaspard_39014036:
+
+    # ga laugh "<And that includes their history.{w=0.5} Amazing how they still to this day name their historic eras after their emperors, despite them now being ceremonial figureheads...{w=0.5} Guess they really can't quit the kowtowing habit.>"
+    ga laugh ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:144
+translate french exp_taisho_1f_corridor_01_gaspard_27e1f4a2:
+
+    # sh frown ".{w=0.3}.{w=0.3}.{w=0.5}could it be...?"
+    sh frown ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:156
+translate french exp_taisho_1f_corridor_01_gaspard_134eab13:
+
+    # ga frown "<An absolutely horrid purchase.{w=0.3} It'll teach me to follow trends...{w=0.5} The wristband is itchy and plasticky and it's been bothering me all evening.>"
+    ga frown ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:158
+translate french exp_taisho_1f_corridor_01_gaspard_bbd07f94:
+
+    # ga neutral "<You seemed to be quite lost without your phone...{w=0.5} With this, you can at least tell the time.>"
+    ga neutral ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:168
+translate french exp_taisho_1f_corridor_01_gaspard_3fdded09:
+
+    # sh smile "I see...{w=0.5} Much appreciated, Gaspard."
+    sh smile ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:170
+translate french exp_taisho_1f_corridor_01_gaspard_84c1c476:
+
+    # ga frown "<Think nothing of it.{w=0.3} Now, is there like a panel or something movable...?{w=0.5} Or do we need to crack the wall?>"
+    ga frown ""
+
