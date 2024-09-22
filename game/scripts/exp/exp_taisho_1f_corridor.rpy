@@ -261,10 +261,10 @@ label exp_taisho_1f_corridor_01_side_meet:
             sh_i frown "(I should take a look at the note Amina found, try the code.)"
         else:
             if exp_taisho_1f_corridor_01_gaspard:
-                damn
+                "damn"
                 if exp_taisho_1f_corridor_01_side_meet == False:
-                $ exp_taisho_1f_corridor_01_side_meet = True
-                $ taisho_1f_corridor_explore_01 += 1
+                    $ exp_taisho_1f_corridor_01_side_meet = True
+                    $ taisho_1f_corridor_explore_01 += 1
             else:
                 show Shigeo frown
                 sh_i frown "(Let's see if the code I got off Amina's note works.)"

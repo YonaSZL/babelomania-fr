@@ -106,6 +106,7 @@ label story_00_invitation:
 
     The ceremony and reception will take place in the {b}Baroque Building{/b}, while the guests will be accomodated in the {b}Taishō Building{/b}.\n
     """
+    $ c_locations.append(c_chateau_dubois)
     nvl clear
     d """
     Directions to the Venue:

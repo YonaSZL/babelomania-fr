@@ -8,15 +8,12 @@ init python:
 
     test_entry = Entry("Test title", "stuff", False)
 
-    c_people = [test_entry,test_entry,test_entry,test_entry,test_entry]
-    c_events = [test_entry,test_entry,test_entry,test_entry]
-    c_locations = [test_entry,test_entry]
-    c_items = [test_entry,test_entry,test_entry,test_entry,test_entry, test_entry,test_entry]
+    c_people = []
+    c_events = []
+    c_locations = []
+    c_items = []
 
-
-
-
-
+default c_chateau_dubois = Entry("Chateau de Bois-le-Dumont", "scr_chateau_dubois", False)
 
 default current_entry = None
 screen codex_main():
@@ -60,34 +57,38 @@ screen categories():
         yalign 0.5 xpos 141 ysize 400 xsize 380 scrollbars "vertical" mousewheel True draggable True
         vbox:
             spacing 30
-            button:
-                    xysize(350,75)
-                    add "gui/codex/btn_bg.png"
-                    text _("People" )
-                    hover_sound "audio/sfx/gui_hover.ogg"
-                    activate_sound "audio/sfx/gui_confirm.ogg"
-                    action [Hide("categories"),Show("entries", dissolve,c_people)]
-            button:
-                    xysize(350,75)
-                    add "gui/codex/btn_bg.png"
-                    text _("Events" )
-                    hover_sound "audio/sfx/gui_hover.ogg"
-                    activate_sound "audio/sfx/gui_confirm.ogg"
-                    action [Hide("categories"),Show("entries", dissolve, c_events)]
-            button:
-                    xysize(350,75)
-                    add "gui/codex/btn_bg.png"
-                    text _("Locations" )
-                    hover_sound "audio/sfx/gui_hover.ogg"
-                    activate_sound "audio/sfx/gui_confirm.ogg"
-                    action [Hide("categories"),Show("entries", dissolve, c_locations)]
-            button:
-                    xysize(350,75)
-                    add "gui/codex/btn_bg.png"
-                    text _("Items" )
-                    hover_sound "audio/sfx/gui_hover.ogg"
-                    activate_sound "audio/sfx/gui_confirm.ogg"
-                    action [Hide("categories"),Show("entries",dissolve, c_items)]
+            if len(c_people) > 0:
+                button:
+                        xysize(350,75)
+                        add "gui/codex/btn_bg.png"
+                        text _("People" )
+                        hover_sound "audio/sfx/gui_hover.ogg"
+                        activate_sound "audio/sfx/gui_confirm.ogg"
+                        action [Hide("categories"),Show("entries", dissolve,c_people)]
+            if len(c_events) > 0:
+                button:
+                        xysize(350,75)
+                        add "gui/codex/btn_bg.png"
+                        text _("Events" )
+                        hover_sound "audio/sfx/gui_hover.ogg"
+                        activate_sound "audio/sfx/gui_confirm.ogg"
+                        action [Hide("categories"),Show("entries", dissolve, c_events)]
+            if len(c_locations) > 0:
+                button:
+                        xysize(350,75)
+                        add "gui/codex/btn_bg.png"
+                        text _("Locations" )
+                        hover_sound "audio/sfx/gui_hover.ogg"
+                        activate_sound "audio/sfx/gui_confirm.ogg"
+                        action [Hide("categories"),Show("entries", dissolve, c_locations)]
+            if len(c_items) > 0:
+                button:
+                        xysize(350,75)
+                        add "gui/codex/btn_bg.png"
+                        text _("Items" )
+                        hover_sound "audio/sfx/gui_hover.ogg"
+                        activate_sound "audio/sfx/gui_confirm.ogg"
+                        action [Hide("categories"),Show("entries",dissolve, c_items)]
 
 screen entries(cat):
 
