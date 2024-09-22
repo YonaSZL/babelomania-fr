@@ -260,18 +260,21 @@ label exp_taisho_1f_corridor_01_side_meet:
             show Shigeo frown
             sh_i frown "(I should take a look at the note Amina found, try the code.)"
         else:
-            show Shigeo frown
-            sh_i frown "(Let's see if the code I got off Amina's note works.)"
-            play sound2 "audio/sfx/pad_input.ogg"
-            pause 1.0
-            play sound "audio/sfx/pad_wrong.ogg"
-            pause 0.5
-            sh_i frown "(No dice...{w=0.5} Is there any way I can try and guess it?)"
-            show Shigeo neutral
-            sh_i neutral "(I should talk to Amina and Gaspard, see if they have any ideas or information.)"
-            #if exp_taisho_1f_corridor_01_side_meet == False:
-            #$ exp_taisho_1f_corridor_01_side_meet = True
-            #$ taisho_1f_corridor_explore_01 += 1
+            if exp_taisho_1f_corridor_01_gaspard:
+                damn
+                if exp_taisho_1f_corridor_01_side_meet == False:
+                $ exp_taisho_1f_corridor_01_side_meet = True
+                $ taisho_1f_corridor_explore_01 += 1
+            else:
+                show Shigeo frown
+                sh_i frown "(Let's see if the code I got off Amina's note works.)"
+                play sound2 "audio/sfx/pad_input.ogg"
+                pause 1.0
+                play sound "audio/sfx/pad_wrong.ogg"
+                pause 0.5
+                sh_i frown "(No dice...{w=0.5} Is there any way I can try and guess it?)"
+                show Shigeo neutral
+                sh_i neutral "(I should talk to Amina and Gaspard, see if they have any ideas or information.)"
     pause 1.0
     hide Shigeo with dissolve
     call screen taisho_1f_corridor_explore_01
