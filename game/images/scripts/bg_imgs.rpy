@@ -79,3 +79,13 @@ layeredimage taisho_1f_side_meet:
     group top:
         attribute top_dark default:
             "darkness_layers"
+
+image taisho_1f_tabitha_base = "images/bgs/taisho/taisho_1f_tabitha.jpg"
+
+layeredimage taisho_1f_tabitha:
+    group bottom:
+        attribute base default:
+            "taisho_1f_tabitha_base"
+    group top:
+        attribute top_dark default:
+            "darkness_layer"
