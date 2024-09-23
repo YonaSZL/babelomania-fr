@@ -6,6 +6,7 @@ image amina_clothes_full = "images/chs/amina/clothes_full.png"
 image amina_acc_blush = "images/chs/amina/acc_blush.png"
 image amina_acc_sweat = "images/chs/amina/acc_sweat.png"
 image amina_acc_sweatdrop = "images/chs/amina/acc_sweatdrop.png"
+image amina_acc_light = "images/chs/amina/acc_light.png"
 
 image amina_exp_neutral = "images/chs/amina/exp_neutral.png"
 image amina_exp_smile = "images/chs/amina/exp_smile.png"
@@ -55,6 +56,9 @@ layeredimage Amina:
     group accessories_3:
         attribute sweatdrop:
             "amina_acc_sweatdrop"
+    group accessories_4:
+        attribute light:
+            "amina_acc_light"
     #at character_sprites_amina
 
 #Portrait Images
