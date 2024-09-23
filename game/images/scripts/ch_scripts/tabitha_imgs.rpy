@@ -16,6 +16,7 @@ image tabitha_exp_r_sigh = "images/chs/tabitha/red/exp_r_sigh.png"
 image tabitha_exp_r_surprise = "images/chs/tabitha/red/exp_r_surprise.png"
 image tabitha_exp_r_angry = "images/chs/tabitha/red/exp_r_angry.png"
 image tabitha_exp_r_frown = "images/chs/tabitha/red/exp_r_frown.png"
+image tabitha_exp_r_cold = "images/chs/tabitha/red/exp_r_cold.png"
 
 layeredimage Tabitha:
     group body:
@@ -49,6 +50,8 @@ layeredimage Tabitha:
             "tabitha_exp_r_angry"
         attribute r_frown:
             "tabitha_exp_r_frown"
+        attribute r_cold:
+            "tabitha_exp_r_cold"
     group accessories:
         attribute brief:
             "tabitha_acc_brief"

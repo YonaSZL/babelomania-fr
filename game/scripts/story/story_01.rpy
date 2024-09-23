@@ -367,9 +367,10 @@ label story_01_taisho_side_meet:
     show Tabitha bow at ta_big:
         xalign 0.5
     with Reveal
-    pause 3.0
+    pause 2.8
     play sound "audio/se/sting.ogg"
-    show Tabitha r_frown with quick_dissolve
+    pause 0.2
+    show Tabitha r_cold
     pause 1.5
     scene black
     pause 5.0
