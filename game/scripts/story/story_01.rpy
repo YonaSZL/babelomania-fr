@@ -272,4 +272,6 @@ label story_01_taisho_side_meet:
     pause 0.2
     play sound "audio/se/door_unlock.ogg"
     pause 1.0
+    scene taisho_1f_side_meet with Reveal3
+    pause 1.0
     
