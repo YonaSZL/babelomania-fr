@@ -1,7 +1,7 @@
 screen scr_chateau_dubois():
     label "Chateau de Bois-le-Dumont"
     add "images/cdx/locs/001_chateau_du_bois.jpg"
-    text """One of the most renown among France's 45.000 châteaux, the history of his estate is as fragmented as its current configuration is bizarre. It started as a vanity project from a member of pre-revolutionary aristocracy, in a bid to emulate the pomp of King Louis the XIV's Versailles."""
+    text """One of the most renown among France's 45.000 châteaux, the history of his estate is as fragmented as its current configuration is bizarre. It started as a vanity project from a member of pre-revolutionary aristocracy, in a bid to emulate the pomp of King Louis the XIV's Palace of Versailles. Unfortunately, the chaos of the revolution would put an end to the project and the September Massacres would put an end to his lineage."""
 
     text """Aenean tincidunt enim non consequat fringilla. Maecenas iaculis ex id ipsum blandit porta sed sed nulla. Etiam tristique libero vitae ipsum gravida, a dapibus nisl viverra. Aliquam pretium mauris eu lorem lobortis scelerisque. Sed quis condimentum nisl, ultrices interdum tellus. Suspendisse vel varius nulla, eu eleifend sapien. Etiam et lorem eget felis hendrerit scelerisque. Integer in nisl quis mi facilisis posuere et sit amet nulla. Donec molestie hendrerit nibh, ut imperdiet metus commodo nec. Donec ut neque dolor."""
 
