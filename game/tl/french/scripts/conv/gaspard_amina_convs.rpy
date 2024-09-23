@@ -4,19 +4,19 @@
 translate french gaspmina_01_shigeo_70186b5e:
 
     # ga nulla "<What were you even doing, in here?>"
-    ga nulla ""
+    ga nulla "<Qu'est-ce que tu faisais, ici ?>"
 
 # game/scripts/conv/gaspard_amina_convs.rpy:88
 translate french gaspmina_01_shigeo_a30b4288:
 
     # sh neutral -sweat "I wasn't exactly {i}doing{/i} anything, other than looking around.{w=0.3} I woke up in here not long ago, in complete darkness."
-    sh neutral -sweat ""
+    sh neutral -sweat "Je pas {i}faisais{/i} pas exactement quelque chose, à part regarder autour de moi.{w=0.3} Je me suis réveillé ici il n'y a pas longtemps, dans le noir complet."
 
 # game/scripts/conv/gaspard_amina_convs.rpy:91
 translate french gaspmina_01_shigeo_0e117604:
 
     # am nulla "Just like us...{w=0.5} What is the last thing you remember?"
-    am nulla ""
+    am nulla "Tout comme nous...{w=0.5} Quelle est la dernière chose dont vous vous souvenez ?"
 
 # game/scripts/conv/gaspard_amina_convs.rpy:92
 translate french gaspmina_01_shigeo_e5a26f96:
@@ -178,7 +178,7 @@ translate french gaspmina_01_gaspardamina_2ce149b7:
 translate french gaspmina_01_gaspardamina_b66faae3:
 
     # am nulla "Gaspard...!"
-    am nulla ""
+    am nulla "Gaspard...!"
 
 # game/scripts/conv/gaspard_amina_convs.rpy:142
 translate french gaspmina_01_gaspardamina_2e606abf:
@@ -316,13 +316,13 @@ translate french gaspmina_01_code_7493c4ee:
 translate french gaspmina_01_code_c4a4fa84:
 
     # sh surprise "Hmm?{w=0.3} That's..."
-    sh surprise ""
+    sh surprise "Hmm?{w=0.3} C'est..."
 
 # game/scripts/conv/gaspard_amina_convs.rpy:191
 translate french gaspmina_01_code_d52fb192:
 
     # sh surprise "A note?"
-    sh surprise ""
+    sh surprise "Une note ?"
 
 # game/scripts/conv/gaspard_amina_convs.rpy:192
 translate french gaspmina_01_code_c0a48b6c:
@@ -394,15 +394,15 @@ translate french strings:
 
     # game/scripts/conv/gaspard_amina_convs.rpy:44
     old "Gaspard&Amina"
-    new ""
+    new "Gaspard & Amina"
 
     # game/scripts/conv/gaspard_amina_convs.rpy:55
     old "Door Code"
-    new ""
+    new "Code de la porte"
 
     # game/scripts/conv/gaspard_amina_convs.rpy:67
     old "Phones"
-    new ""
+    new "Téléphones"
 
 # TODO: Translation updated at 2024-09-21 16:11
 
@@ -520,7 +520,7 @@ translate french gaspmina_01_phone_34a8de15:
 translate french gaspmina_01_phone_62f5fb07:
 
     # sh smile "Exactly."
-    sh smile ""
+    sh smile "Exactement."
 
 # game/scripts/conv/gaspard_amina_convs.rpy:243
 translate french gaspmina_01_phone_d7e7ad98:
@@ -562,7 +562,7 @@ translate french gaspmina_01_phone_f3ff0914:
 translate french gaspmina_01_phone_bfe5a91a:
 
     # sh frown "I don't think so."
-    sh frown ""
+    sh frown "Je ne pense pas."
 
 # TODO: Translation updated at 2024-09-22 15:11
 
