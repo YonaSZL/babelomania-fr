@@ -1072,145 +1072,145 @@ translate french story_00_meet_gaspard_0065cb62:
 translate french story_00_invitation_007062fe:
 
     # sh_xi darko neutral "(I can recognize the name of the original owner, something about architecture...{w=0.5} <Au-delà>?{w=0.3} He went beyond architecture, I guess?)"
-    sh_xi darko neutral ""
+    sh_xi darko neutral "(Je reconnais le nom du propriétaire original, quelque chose à propos de l'architecture...{w=0.5} <Au-delà> ?{w=0.3} Il est allé au-delà de l'architecture, je suppose ?)"
 
 # game/scripts/story/story_00.rpy:140
 translate french story_00_invitation_31b1e1b4:
 
     # tb_n "<You will find, spread out throughout the estate, different pieces of art collected over the course of his travels.{w=0.3} Or specially commissioned to complement specific rooms of the complex!>"
-    tb_n ""
+    tb_n "<Vous trouverez, réparties dans les bâtiments, différentes œuvres d'Art collectées au cours de ses voyages.{w=0.3} Ou commandées personnellement pour compléter des pièces spécifiques du complexe !>"
 
 # game/scripts/story/story_00.rpy:141
 translate french story_00_invitation_0ab620a9:
 
     # tb_n2 "<Indeed?{w=0.5} To be honest, I don't exactly approve of a lot of the placements.{w=0.3} Like in the toilets downstairs?>"
-    tb_n2 ""
+    tb_n2 "<En effet ?{w=0.5} Pour être honnête, je n'approuve pas vraiment beaucoup des aménagements.{w=0.3} Comme les toilettes en bas ?>"
 
 # game/scripts/story/story_00.rpy:143
 translate french story_00_invitation_9566c415:
 
     # tb_n "<Indeed...{w=0.5} You have to remember, though, that the family turned the estate from museum to source of profit in 2025.{w=0.3} Afterwards, god only knows who had a hand in reshaping it and moving things around.>"
-    tb_n ""
+    tb_n "<En effet...{w=0.5} Vous devez vous rappeler, cependant, que la famille a transformé le domaine de musée à source de profit en 2025.{w=0.3} Après cela, Dieu seul sait qui a eu la main pour le remodeler et déplacer les choses.>"
 
 # game/scripts/story/story_00.rpy:144
 translate french story_00_invitation_45e26784:
 
     # tb_n2 "<Ah, yes.{w=0.3} That would explain that monstrosity in the bathrooms!>"
-    tb_n2 ""
+    tb_n2 "<Ah, oui.{w=0.3} Cela expliquerait cette monstruosité dans les toilettes !>"
 
 # game/scripts/story/story_00.rpy:145
 translate french story_00_invitation_abe6c394:
 
     # sh_xi darko smile "(Oh, finally!{w=0.3} They're definitely talking about {nw}"
-    sh_xi darko smile ""
+    sh_xi darko smile "(Oh, enfin !{w=0.3} Ils parlent bien de {nw}"
 
 # game/scripts/story/story_00.rpy:147
 translate french story_00_invitation_68d4b417:
 
     # extend "{b}that painting{/b}!{w=0.3} And I guess how out of place it is?)"
-    extend ""
+    extend "{b}ce tableau{/b} !{w=0.3} Et je suppose d'à quel point il fait tâche ?)"
 
 # game/scripts/story/story_00.rpy:184
 translate french story_00_concentration_2a54284e:
 
     # tb_n2 "<Hmm, I guess that is biologically true...{w=0.5} But I doubt it was the reason why they put that thing downstairs.>"
-    tb_n2 ""
+    tb_n2 "<Hmm, je suppose que c'est biologiquement vrai...{w=0.5} Mais je doute que ce soit la raison pour laquelle ils ont mis cette peinture en bas.>"
 
 # game/scripts/story/story_00.rpy:197
 translate french story_00_relaxation_1e89591f:
 
     # tb_n "<Quite, quite!{w=0.3} It is indeed an intriguing enough piece, especially for those not used to contemplating art.>"
-    tb_n ""
+    tb_n "<Tout à fait, tout à fait !{w=0.3} C'est en effet une peinture assez intrigante, surtout pour ceux qui n'ont pas l'habitude de contempler l'Art...>"
 
 # game/scripts/story/story_00.rpy:198
 translate french story_00_relaxation_80514e4e:
 
     # tb_n2 "<I doubt most people would expect to contemplate art in that situation...{w=0.5} Still, I doubt they did it on purpose.>"
-    tb_n2 ""
+    tb_n2 "<Je doute que la plupart des gens s'attendent à contempler de l'Art dans cette situation...{w=0.5} Je doute toujours qu'ils l'aient fait exprès.>"
 
 # game/scripts/story/story_00.rpy:228
 translate french story_00_bathroom_break_b827b6ce:
 
     # sh_i sad "(And only the groom.)"
-    sh_i sad ""
+    sh_i sad "(Et seulement le marié.)"
 
 # game/scripts/story/story_00.rpy:229
 translate french story_00_bathroom_break_7e1da034:
 
     # sh_i neutral "(I know {nw}"
-    sh_i neutral ""
+    sh_i neutral "(Je connais {nw}"
 
 # game/scripts/story/story_00.rpy:231
 translate french story_00_bathroom_break_77d87648:
 
     # extend "{b}Francesco{/b} from high school.{w=0.3} He was my best friend, truth tell.)"
-    extend ""
+    extend "{b}Francesco{/b} du lycée.{w=0.3} C'était mon meilleur ami, à vrai dire.)"
 
 # game/scripts/story/story_00.rpy:267
 translate french story_00_bathroom_encounters_575d1709:
 
     # sh_i nulla "(Geez, she was in a hurry!{w=0.3} I think it was one of the bridemaids?)"
-    sh_i nulla ""
+    sh_i nulla "(Mince, elle était pressée !{w=0.3} Je crois que c'était une des demoiselles d'honneur ?)"
 
 # game/scripts/story/story_00.rpy:282
 translate french story_00_bathroom_encounters_a0d156a5:
 
     # sh_i surprise "(Hmmm?{w=0.5} Someone else is here, too.)"
-    sh_i surprise ""
+    sh_i surprise "(Hmmm ? {w=0.5} Quelqu'un d'autre est là, aussi.)"
 
 # game/scripts/story/story_00.rpy:374
 translate french story_00_bathroom_return_90d2365c:
 
     # ta_x darko "Failure to remove yourself from the restricted area will be cause for reprisal.{w=0.3} Please acknowledge."
-    ta_x darko ""
+    ta_x darko "Ne pas quitter la zone interdite, vous expose à des représailles.{w=0.3} Veuillez accuser réception."
 
 # game/scripts/story/story_00.rpy:421
 translate french story_00_bathroom_return_a9a8fd9b:
 
     # sh nulla "I've never seen one quite like this, I'll give you that."
-    sh nulla ""
+    sh nulla "Je n'en ai jamais vu de pareil, je vous l'accorde."
 
 # game/scripts/story/story_00.rpy:460
 translate french story_00_meet_gaspard_4e1e019f:
 
     # ha nulla "Once again, apologies for the incident.{w=0.3} I'll be more mindful of my surroundings, for the duration."
-    ha nulla ""
+    ha nulla "Encore une fois, mes excuses pour l'incident.{w=0.3} Je ferai plus attention à mon environnement, pour le reste de la fête."
 
 # game/scripts/story/story_00.rpy:461
 translate french story_00_meet_gaspard_8050d2d5:
 
     # sh neutral "Appreciated...{w=0.5} No harm done, then."
-    sh neutral ""
+    sh neutral "J'apprécie...{w=0.5} Aucun mal n'a été fait, alors."
 
 # game/scripts/story/story_00.rpy:482
 translate french story_00_meet_gaspard_0d88f131:
 
     # sh_i nulla "(Let's just go back in.)"
-    sh_i nulla ""
+    sh_i nulla "(Retournons à l'intérieur...)"
 
 # game/scripts/story/story_00.rpy:493
 translate french story_00_meet_gaspard_2f84b70c:
 
     # sh_i laugh "(Oh, I'm going to give him so much shit for 'by the way'-ing me about his-)"
-    sh_i laugh ""
+    sh_i laugh "(Oh, je vais tellement lui en vouloir pour m'avoir dit 'au fait' à propos de son-)"
 
 # game/scripts/story/story_00.rpy:500
 translate french story_00_meet_gaspard_d4063a41:
 
     # sh_i surprise "(The...{w=0.5} The guy I ran into in the bathrooms?)"
-    sh_i surprise ""
+    sh_i surprise "(Le...{w=0.5} Le type que j'ai croisé dans les toilettes ?)"
 
 # game/scripts/story/story_00.rpy:503
 translate french story_00_meet_gaspard_b1ec8aa1:
 
     # sh neutral "<You mean downstairs?{w=0.5} Yes, that's correct.>"
-    sh neutral ""
+    sh neutral "<Vous voulez dire en bas ?{w=0.5} Oui, c'est ça.>"
 
 # game/scripts/story/story_00.rpy:509
 translate french story_00_meet_gaspard_1abb5ac0:
 
     # ga nulla "<Very gracious of you.{w=0.3} My name is {nw}"
-    ga nulla ""
+    ga nulla "<C'est très aimable de votre part.{w=0.3} Mon nom est {nw}"
 
 # game/scripts/story/story_00.rpy:511
 translate french story_00_meet_gaspard_b3e3f329:
