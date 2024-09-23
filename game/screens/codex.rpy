@@ -8,12 +8,15 @@ init python:
 
     test_entry = Entry("Test title", "stuff", False)
 
-    c_people = []
-    c_events = []
-    c_locations = []
-    c_items = []
+
+default c_people = []
+default c_events = []
+default c_locations = []
+default c_items = []
 
 default c_chateau_dubois = Entry("Chateau de Bois-le-Dumont", "scr_chateau_dubois", False)
+default c_chateau_dubois_taisho = False
+
 default c_taisho = Entry("Taisho Era of Japan", "scr_taisho", False)
 default c_babel_painting = Entry("Painting of Babel", "scr_babel_painting", False)
 

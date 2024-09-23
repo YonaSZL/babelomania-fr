@@ -266,3 +266,11 @@ translate french strings:
     old "{size=35}FRENCH TRANSLATORS"
     new ""
 
+# TODO: Translation updated at 2024-09-23 20:49
+
+translate french strings:
+
+    # game/screens/other_screens.rpy:135
+    old "{size=35}ADDITIONAL IMAGES"
+    new ""
+

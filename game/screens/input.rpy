@@ -16,8 +16,8 @@ screen input(prompt):
         # This makes the background the same as the ADV dialogue box
 
         vbox:
-            xanchor 0.0 ypos 20 spacing 10
-            text prompt style "input_prompt"
+            xanchor 0.0 ypos 70 spacing 10
+            text prompt style "input_prompt" color u'#bfaa8f'
             input id "input"
 
 style input_prompt:

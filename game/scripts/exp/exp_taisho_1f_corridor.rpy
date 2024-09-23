@@ -284,7 +284,7 @@ label exp_taisho_1f_corridor_01_side_meet:
                     show Shigeo neutral
                     sh_i neutral "(Going by that logic, maybe the password for this other door would be another {i}similarly relevant date...{/i}?)"
                     pause 1.0
-                    $ numeric_puzzle_input = renpy.input(default='00000000', allow='0123456789', length=8, copypaste=True)
+                    $ numeric_puzzle_input = renpy.input(prompt="What's the passcode for this door?", default='00000000', allow='0123456789', length=8, copypaste=True)
                     if numeric_puzzle_input == "19261225":
                         play sound "audio/sfx/pad_input.ogg"
                         pause 1.0

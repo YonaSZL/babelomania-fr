@@ -216,6 +216,7 @@ label exp_taisho_1f_study_02_scrolls:
     extend "{b}Taishō Building{/b}.{w=0.3} We were going to be spend the night in here, weren't we?)"
     play sound4 "audio/sfx/gui_slots_confirm.ogg"
     show screen notify(_("Codex Updated."))
+    $ c_chateau_dubois_taisho = True
     sh_i surprise "(This doesn't look like a bedroom, though...{w=0.3} I must be in a different wing of the building, then.)"
     sh_i neutral "(Also, no trace of a charger for the flashlight.{w=0.3} Pity.)"
     pause 1.0
