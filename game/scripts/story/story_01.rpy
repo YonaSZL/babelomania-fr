@@ -264,3 +264,12 @@ label story_01_taisho_corridor:
     sh neutral "Well, let's look around and see what our options are."
     pause 1.0
     call screen taisho_1f_corridor_explore_01
+
+label story_01_taisho_side_meet:
+    play sound "audio/sfx/pad_input.ogg"
+    pause 1.0
+    play sound4 "audio/sfx/pad_success.ogg"
+    pause 0.2
+    play sound "audio/se/door_unlock.ogg"
+    pause 1.0
+    

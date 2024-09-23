@@ -254,33 +254,85 @@ label exp_taisho_1f_corridor_01_side_meet:
     pause 0.5
     show Shigeo neutral with dissolve:
         zoom 0.11 ypos 475 xpos 795
-    sh_i neutral "(This door looks identical to the other ones, in make...{w=0.5} And just like the other ones, it requires a code.)"
-    if exp_taisho_1f_corridor_01_amina == False:
+    if exp_taisho_1f_corridor_01_side_meet:
+        sh_i neutral "(This is the door I've unlocked...{w=0.5} We can go in whenever we're ready.)"
         show Shigeo frown
-        sh_i frown "(I should ask Amina if she's tried opening this one yet.{w=0.3} Maybe ask her for the code they found.)"
-    else:
-        if taisho_note_inspected == False:
-            show Shigeo frown
-            sh_i frown "(I should take a look at the note Amina found, try the code.)"
-        else:
-            if exp_taisho_1f_corridor_01_gaspard:
-                "damn"
-                if exp_taisho_1f_corridor_01_side_meet == False:
-                    $ exp_taisho_1f_corridor_01_side_meet = True
-                    $ taisho_1f_corridor_explore_01 += 1
-            else:
-                show Shigeo frown
-                sh_i frown "(Let's see if the code I got off Amina's note works.)"
-                play sound2 "audio/sfx/pad_input.ogg"
+        menu:
+            sh_i frown "(Should we go in?)"
+            
+            "Let's go in.":
+                jump story_01_taisho_side_meet
+            "Not quite yet.":
                 pause 1.0
-                play sound "audio/sfx/pad_wrong.ogg"
-                pause 0.5
-                sh_i frown "(No dice...{w=0.5} Is there any way I can try and guess it?)"
-                show Shigeo neutral
-                sh_i neutral "(I should talk to Amina and Gaspard, see if they have any ideas or information.)"
-    pause 1.0
-    hide Shigeo with dissolve
-    call screen taisho_1f_corridor_explore_01
+                hide Shigeo with dissolve
+                call screen taisho_1f_corridor_explore_01
+    else:
+        sh_i neutral "(This door looks identical to the other ones, in make...{w=0.5} And just like the other ones, it requires a code.)"
+        if exp_taisho_1f_corridor_01_amina == False:
+            show Shigeo frown
+            sh_i frown "(I should ask Amina if she's tried opening this one yet.{w=0.3} Maybe ask her for the code they found.)"
+        else:
+            if taisho_note_inspected == False:
+                show Shigeo frown
+                sh_i frown "(I should take a look at the note Amina found, try the code.)"
+            else:
+                if exp_taisho_1f_corridor_01_gaspard:
+                    show Shigeo frown
+                    sh_i frown "(Alright...{w=0.5} I think I have a good idea of what the password might be.{w=0.3} Speaking with Gaspard made me realize that the password they found was {nw}"
+                    play sound4 "audio/sfx/gui_hint.ogg"
+                    extend "{b}the official starting date of the Taishō era{/b}...{w=0.5} Written in the international standard format.)"
+                    show Shigeo neutral
+                    sh_i neutral "(Going by that logic, maybe the password for this other door would be another {i}similarly relevant date...{/i}?)"
+                    pause 1.0
+                    $ numeric_puzzle_input = renpy.input(default='00000000', allow='0123456789', length=8, copypaste=True)
+                    if numeric_puzzle_input == "19261225":
+                        play sound "audio/sfx/pad_input.ogg"
+                        pause 1.0
+                        play sound4 "audio/sfx/pad_success.ogg"
+                        pause 0.2
+                        play sound "audio/se/door_unlock.ogg"
+                        show Shigeo smile
+                        sh smile "Yes!"
+                        show Amina surprise
+                        show Gaspard surprise
+                        am nulla "What was that?{w=0.3} Did I hear a door unlock?"
+                        sh smile "You did.{w=0.3} We can go in."
+                        ga surprise "<How did you guess the code...?>"
+                        show Shigeo neutral
+                        sh neutral "It appears that the codes are not randomly generated but specific references to the Taisho period...{w=0.5} This door's code was the official end date of the era."
+                        am nulla "For real...?{w=0.5} Oddly specific."
+                        show Gaspard neutral
+                        ga neutral "<Hmph.{w=0.3} You're lucky I have an interest in the subject, then.{w=0.3} You're welcome.>"
+                        sh neutral ".{w=0.3}.{w=0.3}.{w=0.5}sure.{w=0.5} Thank you."
+                        show Shigeo frown
+                        sh frown "We can go in whenever you're ready.{w=0.3} I'll be in front."
+                        show Gaspard frown
+                        show Amina neutral
+                        if exp_taisho_1f_corridor_01_side_meet == False:
+                            $ exp_taisho_1f_corridor_01_side_meet = True
+                            $ taisho_1f_corridor_explore_01 += 1
+                    else:
+                        play sound "audio/sfx/pad_input.ogg"
+                        pause 1.0
+                        play sound4 "audio/sfx/pad_wrong.ogg"
+                        pause 0.5
+                        show Shigeo frown
+                        sh_i frown "(Darn it.{w=0.3} What did I get wrong?)"
+                        show Shigeo neutral
+                        sh_i neutral "(I'm pretty sure it must be the end date of the Taishō era, which was...?)"
+                else:
+                    show Shigeo frown
+                    sh_i frown "(Let's see if the code I got off Amina's note works.)"
+                    play sound2 "audio/sfx/pad_input.ogg"
+                    pause 1.0
+                    play sound "audio/sfx/pad_wrong.ogg"
+                    pause 0.5
+                    sh_i frown "(No dice...{w=0.5} Is there any way I can try and guess it?)"
+                    show Shigeo neutral
+                    sh_i neutral "(I should talk to Amina and Gaspard, see if they have any ideas or information.)"
+        pause 1.0
+        hide Shigeo with dissolve
+        call screen taisho_1f_corridor_explore_01
 
 label exp_taisho_1f_corridor_01_gamina_wake:
     $ renpy.block_rollback()

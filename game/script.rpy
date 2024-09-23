@@ -103,6 +103,7 @@ default story_progress = 0
 default current_location = "None"
 default dark_environ = False
 default briefcase_carry = False
+default numeric_puzzle_input = "None"
 
 #Defining Music Channels
 init python:
