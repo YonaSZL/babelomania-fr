@@ -162,7 +162,7 @@ translate french story_00_invitation_de4a6b33:
 translate french story_00_invitation_b2407151:
 
     # tb_n "<You will find, spread out throughout the buildings, different pieces of art collected over the course of his travels.{w=0.3} Or personally commissioned to complement specific rooms of the complex!>"
-    tb_n "<Vous trouverez, réparties dans les bâtiments, différentes œuvres d'art collectées au cours de ses voyages.{w=0.3} Ou commandées personnellement pour compléter des pièces spécifiques du complexe !>"
+    tb_n "<Vous trouverez, réparties dans les bâtiments, différentes œuvres d'Art collectées au cours de ses voyages.{w=0.3} Ou commandées personnellement pour compléter des pièces spécifiques du complexe !>"
 
 # game/scripts/story/story_00.rpy:141
 translate french story_00_invitation_7982d1b4:
@@ -174,7 +174,7 @@ translate french story_00_invitation_7982d1b4:
 translate french story_00_invitation_f1c8088e:
 
     # sh_xi nulla "(Now they're talking about the toilet of all things?{w=0.3} The place of the toilets??)"
-    sh_xi nulla "(Maintenant, ils parlent des toilettes de toutes les choses dont on pouvait parler ? La place des toilettes ??)"
+    sh_xi nulla "(Maintenant, ils parlent des toilettes de toutes les choses dont on pouvait parler ?{w=0.3} La place des toilettes ??)"
 
 # game/scripts/story/story_00.rpy:143
 translate french story_00_invitation_520c7b77:
@@ -492,373 +492,373 @@ translate french strings:
 translate french story_00_invitation_557df6ec:
 
     # sh_xi darko frown "(I should've just sent a card...{w=0.5} This is killing me.)"
-    sh_xi darko frown ""
+    sh_xi darko frown "(J'aurais dû envoyer une carte...{w=0.5} Ça me mine.)"
 
 # game/scripts/story/story_00.rpy:139
 translate french story_00_invitation_67c25648:
 
     # sh_xi darko neutral "(I can recognize the name of the original owner, something about architecture...{w=0.5} Au-delà?{w=0.3} He went beyond architecture, I guess?)"
-    sh_xi darko neutral ""
+    sh_xi darko neutral "(Je reconnais le nom du propriétaire original, quelque chose à propos de l'architecture...{w=0.5} Au-delà ?{w=0.3} Il est allé au-delà de l'architecture, je suppose ?)"
 
 # game/scripts/story/story_00.rpy:140
 translate french story_00_invitation_906b5e73:
 
     # tb_n "<You will find, spread out throughout the buildings, different pieces of art collected over the course of his travels.{w=0.3} Or personally commissioned, to complement specific rooms of the complex!>"
-    tb_n ""
+    tb_n "<Vous trouverez, réparties dans les bâtiments, différentes œuvres d'Art collectées au cours de ses voyages.{w=0.3} Ou commandées personnellement, pour compléter des pièces spécifiques du complexe !>"
 
 # game/scripts/story/story_00.rpy:142
 translate french story_00_invitation_b31e05d8:
 
     # sh_xi darko surprise "(Now they're talking about the toilet of all things?{w=0.3} The place of the toilets??)"
-    sh_xi darko surprise ""
+    sh_xi darko surprise "(Maintenant, ils parlent des toilettes de toutes les choses dont on pouvait parler ?{w=0.3} La place des toilettes ??)"
 
 # game/scripts/story/story_00.rpy:145
 translate french story_00_invitation_cf5538e7:
 
     # sh_xi darko smile "(Oh, finally!{w=0.3} They're definitely talking about the painting in the toilets!{w=0.3} And I guess how out of place it is?)"
-    sh_xi darko smile ""
+    sh_xi darko smile "(Oh, enfin !{w=0.3} Ils parlent bien du tableau dans les toilettes !{w=0.3} Et je suppose d'à quel point il fait tâche ?)"
 
 # game/scripts/story/story_00.rpy:146
 translate french story_00_invitation_d3a83a5a:
 
     # sh_x darko surprise "Uhm...{w=0.5} <At first I thought it had been put there to help.>"
-    sh_x darko surprise ""
+    sh_x darko surprise "Uhm...{w=0.5} <Au début, j'ai pensé qu'il avait été mis là pour aider.>"
 
 # game/scripts/story/story_00.rpy:230
 translate french story_00_bathroom_break_c1471280:
 
     # sh_i "(After graduation, though, we both left Italy to go study in different countries...{w=0.5} We kept in touch but, the relationship certainly wasn't as close-knit as it had once been.)"
-    sh_i ""
+    sh_i "(Après avoir obtenu notre diplôme, nous avons tous les deux quitté l'Italie pour aller étudier dans un pays différent...{w=0.5} Nous sommes restés en contact, mais notre relation n'était certainement plus aussi soudée qu'elle l'avait été.)"
 
 # game/scripts/story/story_00.rpy:232
 translate french story_00_bathroom_break_b1127550:
 
     # sh_i nulla "(I didn't even know he had gotten married until I received the invitation...{w=0.5} At first I thought it would be a great opportunity to reconnect but I barely exchanged five words with him.)"
-    sh_i nulla ""
+    sh_i nulla "(Je ne savais même pas qu'il s'était marié jusqu'à ce que je reçoive l'invitation...{w=0.5} Au début, j'ai pensé que ce serait une bonne occasion de reprendre contact, mais j'ai à peine pu échangé cinq mots avec lui.)"
 
 # game/scripts/story/story_00.rpy:234
 translate french story_00_bathroom_break_a2627f76:
 
     # sh_i nulla "(I don't know anyone else here.{w=0.3} And even when I try and interact, there's...)"
-    sh_i nulla ""
+    sh_i nulla "(Je ne connais personne d'autre ici.{w=0.3} Et même quand j'essaie d'interagir, il y a...)"
 
 # game/scripts/story/story_00.rpy:304
 translate french story_00_bathroom_encounters_7d1fbbc1:
 
     # sh_i neutral "(Looking at it up close, it feels even more out of place...{w=0.5} No matter what excuses I make up.)"
-    sh_i neutral ""
+    sh_i neutral "(En la regardant de près, elle semble encore plus faire tâche...{w=0.5} Peu importe les excuses que je peux inventer.)"
 
 # game/scripts/story/story_00.rpy:311
 translate french story_00_bathroom_painting_photo_98010c7c:
 
     # sh_i smile "(Let me take a picture.{w=0.3} I can {i}Coogle{/i} it later, or show someone back home.{w=0.3} Dorothy would know.)"
-    sh_i smile ""
+    sh_i smile "(Je vais en prendre une photo.{w=0.3} Je pourrai la {i}Googler{/i} plus tard, ou la montrer à quelqu'un à la maison.{w=0.3} Dorothy le saurait.)"
 
 # game/scripts/story/story_00.rpy:325
 translate french story_00_bathroom_return_462ebeb0:
 
     # sh_i nulla "(Well, that was a good way to waste a few minutes and distract myself...{w=0.5} And now I have something to occupy myself further, if need be.)"
-    sh_i nulla ""
+    sh_i nulla "(Eh bien, c'était un bon moyen de perdre quelques minutes et de me distraire...{w=0.5} J'ai désormais de quoi m'occuper, si besoin.)"
 
 # game/scripts/story/story_00.rpy:327
 translate french story_00_bathroom_return_35f9e883:
 
     # sh_i nulla "(Let's go back upstairs, now, and see if I can't actually find someone to socialize with...{w=0.5} Or maybe the bride's family may have finally relinquished their hold on Francesco.{w=0.3} That'd be nice.)"
-    sh_i nulla ""
+    sh_i nulla "(Retournons à l'étage, maintenant, et voyons si je ne peux pas trouver quelqu'un avec qui socialiser...{w=0.5} Ou peut-être que la famille de la mariée a finalement libérée Francesco.{w=0.3} Ce serait bien.)"
 
 # game/scripts/story/story_00.rpy:337
 translate french story_00_bathroom_return_ceef4c49:
 
     # sh_i surprise "(Hmm?{w=0.5} What's that sm-)"
-    sh_i surprise ""
+    sh_i surprise "(Hmm ?{w=0.5} C'est quoi cette od-)"
 
 # game/scripts/story/story_00.rpy:339
 translate french story_00_bathroom_return_f6fd28d1:
 
     # sh_i frown "(Ugh, of course.)"
-    sh_i frown ""
+    sh_i frown "(Ugh, bien sûr.)"
 
 # game/scripts/story/story_00.rpy:345
 translate french story_00_bathroom_return_8f4dff1f:
 
     # sh_i nulla "(Someone left the door to the smoking room open...{w=0.5} And of course, everyone else now needs to share in their breathalized cancer.)"
-    sh_i nulla ""
+    sh_i nulla "(Quelqu'un a laissé la porte du fumoir ouverte...{w=0.5} Et bien sûr, tous les autres doivent maintenant partager leur cancer haleinique)."
 
 # game/scripts/story/story_00.rpy:348
 translate french story_00_bathroom_return_fd1c8581:
 
     # sh_i nulla "(Let's close the door before the stench seeps in my clo-)"
-    sh_i nulla ""
+    sh_i nulla "(Fermons la porte avant que la puanteur ne s'infiltre dans mon espac-)"
 
 # game/scripts/story/story_00.rpy:361
 translate french story_00_bathroom_return_83853235:
 
     # sh_i shock "(What...?!{w=0.5} What is...?!)"
-    sh_i shock ""
+    sh_i shock "(Quoi... ?!{w=0.5} Qu'est-ce que... ?!)"
 
 # game/scripts/story/story_00.rpy:362
 translate french story_00_bathroom_return_626d11f1:
 
     # ta_x darko "Warning:{w=0.3} you are entering restricted personal space."
-    ta_x darko ""
+    ta_x darko "Attention:{w=0.3} vous entrez dans un espace personnel restreint."
 
 # game/scripts/story/story_00.rpy:363
 translate french story_00_bathroom_return_1d854051:
 
     # sh_i shock sweat "(The grip is so strong but more than that, what...{w=0.5} The hand feels so cold and...{w=0.5} Weird!)"
-    sh_i shock sweat ""
+    sh_i shock sweat "(La poigne est si forte mais plus encore, qu'est-ce...{w=0.5} La main est si froide et...{w=0.5} Bizarre !)"
 
 # game/scripts/story/story_00.rpy:364
 translate french story_00_bathroom_return_98891a7a:
 
     # ta_x darko "Failure to remove yourself from the restricted area will be cause of reprisal.{w=0.3} Please acknowledge."
-    ta_x darko ""
+    ta_x darko "Ne pas quitter la zone interdite, vous expose à des représailles.{w=0.3} Veuillez accuser réception."
 
 # game/scripts/story/story_00.rpy:365
 translate french story_00_bathroom_return_6a0a05dc:
 
     # sh_i fear sweat "(It's completely smooth and rigid and yet soft at the same time...?!{w=0.3} What the hell is touching me?!)"
-    sh_i fear sweat ""
+    sh_i fear sweat "(C'est complètement lisse et rigide et doux à la fois... ?!{w=0.3} Qu'est-ce qui me touche ?!)"
 
 # game/scripts/story/story_00.rpy:366
 translate french story_00_bathroom_return_b74b49d0:
 
     # ta_x darko "I repeat."
-    ta_x darko ""
+    ta_x darko "Je répéte."
 
 # game/scripts/story/story_00.rpy:367
 translate french story_00_bathroom_return_06aec286:
 
     # sh shock "...!{w=0.5} Ugh?!"
-    sh shock ""
+    sh shock "... !{w=0.5} Ugh ?!"
 
 # game/scripts/story/story_00.rpy:372
 translate french story_00_bathroom_return_4f68cf38:
 
     # sh shock "What...?!"
-    sh shock ""
+    sh shock "Quoi... ?!"
 
 # game/scripts/story/story_00.rpy:373
 translate french story_00_bathroom_return_98891a7a_1:
 
     # ta_x darko "Failure to remove yourself from the restricted area will be cause of reprisal.{w=0.3} Please acknowledge."
-    ta_x darko ""
+    ta_x darko "Ne pas quitter la zone interdite, vous expose à des représailles.{w=0.3} Veuillez accuser réception."
 
 # game/scripts/story/story_00.rpy:374
 translate french story_00_bathroom_return_bb438b05:
 
     # sh_i surprise "(This...{w=0.5} What is this thing?!{w=0.3} It looks human...{w=0.5} It has the proportions of a human, its face looks human and yet...)"
-    sh_i surprise ""
+    sh_i surprise "(Cette...{w=0.5} Qu'est-ce que c'est que cette chose ?!{w=0.3} Elle a l'air humaine...{w=0.5} Elle a les proportions d'un humain, son visage semble humain et pourtant...)"
 
 # game/scripts/story/story_00.rpy:375
 translate french story_00_bathroom_return_0e28c24b:
 
     # sh_i shock "(That sickly looking grey skin...{w=0.5} Those lifeless ashen eyes...{w=0.5} That even voice, completely devoid of emotion or inflection...)"
-    sh_i shock ""
+    sh_i shock "(Cette peau grise à l'aspect maladif...{w=0.5} Ces yeux cendrés sans vie...{w=0.5} Cette voix égale, complètement dépourvue d'émotion ou d'inflexion...)"
 
 # game/scripts/story/story_00.rpy:376
 translate french story_00_bathroom_return_a66058e8:
 
     # sh_i fear "(What the hell is this {b}thing{/b}?!)"
-    sh_i fear ""
+    sh_i fear "(Qu'est-ce que c'est que cette {b}chose{/b} ?!)"
 
 # game/scripts/story/story_00.rpy:377
 translate french story_00_bathroom_return_15ba0384:
 
     # sh fear "NNGH!{w=0.3} Let go of me, you-!"
-    sh fear ""
+    sh fear "NNGH !{w=0.3} Lâche-moi, espèce de... !"
 
 # game/scripts/story/story_00.rpy:378
 translate french story_00_bathroom_return_84d8955c:
 
     # ha_x darko "{b}Tabitha{/b}, that's quite enough."
-    ha_x darko ""
+    ha_x darko "{b}Tabitha{/b}, assez."
 
 # game/scripts/story/story_00.rpy:379
 translate french story_00_bathroom_return_36a7eb82:
 
     # sh shock "...!"
-    sh shock ""
+    sh shock "...!"
 
 # game/scripts/story/story_00.rpy:390
 translate french story_00_bathroom_return_c10e8908:
 
     # ha_x darko "Let the gentleman go.{w=0.3} He barely has the countenance of a grown man, leave alone an outlaw."
-    ha_x darko ""
+    ha_x darko "Laisse partir le gentleman.{w=0.3} Il a à peine le visage d'un adulte, et encore moins d'un hors-la-loi."
 
 # game/scripts/story/story_00.rpy:393
 translate french story_00_bathroom_return_71a7f762:
 
     # sh nulla "...!{w=0.3} E-{w=0.15}Excuse me?"
-    sh nulla ""
+    sh nulla "... !{w=0.3} P-{w=0.15}Pardon ?"
 
 # game/scripts/story/story_00.rpy:396
 translate french story_00_bathroom_return_ed03a834:
 
     # ta nulla "Acknowledged, professor."
-    ta nulla ""
+    ta nulla "Reçu, Professeur."
 
 # game/scripts/story/story_00.rpy:403
 translate french story_00_bathroom_return_79056d29:
 
     # sh nulla "Ugh...{w=0.5} If this thing answers to you, may I kindly ask:{w=0.15} what the hell?"
-    sh nulla ""
+    sh nulla "Ugh...{w=0.5} Si cette chose vous répond, puis-je vous demander gentillement :{w=0.15} c'est quoi ce bazar ?"
 
 # game/scripts/story/story_00.rpy:413
 translate french story_00_bathroom_return_412e734f:
 
     # ha_x nulla "My, such a rude young man.{w=0.3} Calling my Tabitha a thing..."
-    ha_x nulla ""
+    ha_x nulla "Mon Dieu, quel jeune homme si grossier.{w=0.3} Traiter ma Tabitha de chose..."
 
 # game/scripts/story/story_00.rpy:414
 translate french story_00_bathroom_return_0222371d:
 
     # sh nulla "It's obviously not a person...{w=0.5} Let's call it android, then."
-    sh nulla ""
+    sh nulla "Ce n'est évidemment pas une personne...{w=0.5} Appelons-ça androïde, alors."
 
 # game/scripts/story/story_00.rpy:417
 translate french story_00_bathroom_return_1d17c27b:
 
     # sh nulla "Granted, I've never seen one quite like this, I'll give you that."
-    sh nulla ""
+    sh nulla "Certes, je n'en ai jamais vu de pareil, je vous l'accorde."
 
 # game/scripts/story/story_00.rpy:421
 translate french story_00_bathroom_return_215a30ea:
 
     # ha_x nulla "But you've seen others...?{w=0.5} They're not exactly common."
-    ha_x nulla ""
+    ha_x nulla "Mais vous en avez vu d'autres... ?{w=0.5} Ils ne sont pas vraiment communs."
 
 # game/scripts/story/story_00.rpy:422
 translate french story_00_bathroom_return_7263cb2c:
 
     # sh nulla "Unsurprisingly, considering how much they cost...{w=0.5} And their construction being outlawed in most of the world."
-    sh nulla ""
+    sh nulla "Sans surprise, compte tenu de leur coût...{w=0.5} Et que leur construction est interdite dans la plupart des pays du monde."
 
 # game/scripts/story/story_00.rpy:424
 translate french story_00_bathroom_return_bdf30b6b:
 
     # sh nulla "<Japan is not one such country, though.{w=0.3} Am I right?>"
-    sh nulla ""
+    sh nulla "<Le Japon n'est pas un de ces pays, pourtant.{w=0.3} N'est-ce pas ?>"
 
 # game/scripts/story/story_00.rpy:429
 translate french story_00_bathroom_return_ec38a74a:
 
     # ha_x nulla "<Fully fluent, and a very light accent...{w=0.5} A {b}hafu{/b}, then?>"
-    ha_x nulla ""
+    ha_x nulla "<Parfaitement bilingue, avec un très léger accent...{w=0.5} Un {b}hafu{/b}, je devine ?>"
 
 # game/scripts/story/story_00.rpy:430
 translate french story_00_bathroom_return_06e6ed1a:
 
     # sh nulla "<My mother's from Sapporo, my father from Genova...{w=0.5} My name's Shigeo Arata.>"
-    sh nulla ""
+    sh nulla "<Ma mère est de Sapporo, mon père de Génève...{w=0.5} Je m'appelle Shigeo Arata...>"
 
 # game/scripts/story/story_00.rpy:432
 translate french story_00_bathroom_return_bd927a3c:
 
     # sh nulla "And you are...?{w=0.5} I don't think I've seen you at the ceremony, nor the reception so far.{w=0.3} I would remember an elderly academic shadowed by a two meters tall android."
-    sh nulla ""
+    sh nulla "Et vous êtes... ?{w=0.5} Je ne pense pas vous avoir vu à la cérémonie, ni à la réception jusqu'à présent.{w=0.3} Je me souviendrais d'un vieil universitaire suivi d'un androïde de deux mètres de haut."
 
 # game/scripts/story/story_00.rpy:434
 translate french story_00_bathroom_return_39abbc12:
 
     # ha_x nulla "Oh, you would be surprised...{w=0.5} But indeed, we've but recently arrived."
-    ha_x nulla ""
+    ha_x nulla "Oh, vous seriez surpris...{w=0.5} Mais en effet, nous sommes arrivés depuis peu. "
 
 # game/scripts/story/story_00.rpy:436
 translate french story_00_bathroom_return_69a6679a:
 
     # ha_x nulla "The drive to the château was quite long and tiring...{w=0.5} Hence the need to indulge in my little vice.{w=0.3} But I fear that I could not persuade Tabitha to fully close the door."
-    ha_x nulla ""
+    ha_x nulla "Mais le trajet jusqu'au château a été assez long et fatigant...{w=0.5} D'où la nécessité de me livrer à mon petit vice.{w=0.3} Mais je crains de ne pas avoir pu persuader Tabatha de fermer complètement la porte."
 
 # game/scripts/story/story_00.rpy:439
 translate french story_00_bathroom_return_2cdf5812:
 
     # sh nulla "You could not...{w=0.5} Persuade it?"
-    sh nulla ""
+    sh nulla "Vous n'avez pas pu...{w=0.5} Le persuader ?"
 
 # game/scripts/story/story_00.rpy:443
 translate french story_00_bathroom_return_51c15520:
 
     # ha_x nulla "Oh, if I really wanted I could've ordered her to...{w=0.5} But I find that going against actions dictated by her prime directives is quite disruptive."
-    ha_x nulla ""
+    ha_x nulla "Oh, si j'avais vraiment voulu, j'aurais pu lui ordonner de le faire...{w=0.5} Mais je trouve qu'aller à l'encontre des actions dictées par ses directives principales est assez perturbant."
 
 # game/scripts/story/story_00.rpy:446
 translate french story_00_bathroom_return_77c6f522:
 
     # ha nulla "In this case, the directive is to protect me from any and all threats...{w=0.5} And with that, let me belatedly introduce myself as {b}professor Habiki{/b}."
-    ha nulla ""
+    ha nulla "Dans notre cas, la directive est de me protéger contre toute menace...{w=0.5} Et sur ce, permettez-moi de me présenter tardivement en tant que {b}Professeur Habiki{/b}."
 
 # game/scripts/story/story_00.rpy:449
 translate french story_00_bathroom_return_780164f4:
 
     # sh nulla "Keeping your last name close to your chest, are you?"
-    sh nulla ""
+    sh nulla "Vous gardez votre nom de famille près de votre cœur, n'est-ce pas ?"
 
 # game/scripts/story/story_00.rpy:450
 translate french story_00_bathroom_return_b05160f1:
 
     # ha nulla "If I could share it willy nilly, I wouldn't be in need of a 6'6'' tall robotic bodyguard...{w=0.5} I'm afraid you'll have to make do with that, and the knowledge that I am with the groom's party."
-    ha nulla ""
+    ha nulla "Si je pouvais le partager bon gré mal gré, je n'aurais pas besoin d'un garde du corps robotisé de 1m80...{w=0.5} J'ai bien peur que vous deviez vous contenter de cela, et de savoir que je fais partie du cortège du marié."
 
 # game/scripts/story/story_00.rpy:452
 translate french story_00_bathroom_return_594ddcb1:
 
     # ha nulla "And so do you, I believe."
-    ha nulla ""
+    ha nulla "Et vous aussi, je suppose."
 
 # game/scripts/story/story_00.rpy:454
 translate french story_00_bathroom_return_e854791a:
 
     # sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}how can you tell?"
-    sh nulla ""
+    sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}comment le savez-vous ?"
 
 # game/scripts/story/story_00.rpy:456
 translate french story_00_bathroom_return_8c68de93:
 
     # ha nulla "Are you kidding me?{w=0.5} Delphine's family and male acquaintances wouldn't be caught dead in an Italian-cut suit."
-    ha nulla ""
+    ha nulla "Vous plaisantez ?{w=0.5} La famille et les fréquentations mâles de Delphine ne se laisseraient pas prendre dans un costume italien."
 
 # game/scripts/story/story_00.rpy:459
 translate french story_00_bathroom_return_4e6d1247:
 
     # sh nulla "I did notice a certain...{w=0.5} Conforming on that front, yeah."
-    sh nulla ""
+    sh nulla "J'ai remarqué une certaine...{w=0.5} Conformité sur ce point, oui."
 
 # game/scripts/story/story_00.rpy:461
 translate french story_00_bathroom_return_c69bb3b1:
 
     # ha nulla "So you did.{w=0.5} Well, it's been quite the amusing encounter."
-    ha nulla ""
+    ha nulla "Vous l'avez remarqué.{w=0.5} Eh bien, ce fut une rencontre amusante."
 
 # game/scripts/story/story_00.rpy:463
 translate french story_00_bathroom_return_a3495f30:
 
     # ha nulla "Have a good evening, mister Arata...{w=0.5} Who knows, we may run into each other again, before the night is over."
-    ha nulla ""
+    ha nulla "Passez une bonne soirée, Monsieur Arata...{w=0.5} Qui sait, nous nous croiserons peut-être à nouveau avant la fin de la nuit."
 
 # game/scripts/story/story_00.rpy:466
 translate french story_00_bathroom_return_0f7ddfb0:
 
     # ha nulla "Let's go, Tabitha."
-    ha nulla ""
+    ha nulla "Allons-y, Tabitha."
 
 # game/scripts/story/story_00.rpy:476
 translate french story_00_bathroom_return_40dd3029:
 
     # sh_i nulla "(Freaky...{w=0.5} I've never seen an android that looks so much like a human.{w=0.3} Regulations in Japan really are lax, aren't they?)"
-    sh_i nulla ""
+    sh_i nulla "(Flippant...{w=0.5} Je n'ai jamais vu un androïde qui ressemble autant à un humain.{w=0.3} La réglementation au Japon est vraiment laxiste, hein ?)"
 
 # game/scripts/story/story_00.rpy:478
 translate french story_00_bathroom_return_2b672075:
 
     # sh_i nulla "(Also, why are they going upstairs...?{w=0.5} Oh, whatever.{w=0.3} It's none of my business.)"
-    sh_i nulla ""
+    sh_i nulla "(Et pourquoi montent-ils à l'étage... ?{w=0.5} Oh, peu importe.{w=0.3} Ce n'est plus mon problème.)"
 
 # game/scripts/story/story_00.rpy:480
 translate french story_00_bathroom_return_0ecf7f01:
 
     # sh_i nulla "(Let's just go back in...)"
-    sh_i nulla ""
+    sh_i nulla "(Retournons à l'intérieur...)"
 
 # TODO: Translation updated at 2024-09-12 10:43
 
@@ -866,205 +866,205 @@ translate french story_00_bathroom_return_0ecf7f01:
 translate french story_00_bathroom_return_0e7aa30c:
 
     # ha_x darko "Let the young man go."
-    ha_x darko ""
+    ha_x darko "Laisse partir le jeune homme."
 
 # game/scripts/story/story_00.rpy:410
 translate french story_00_bathroom_return_69f2c699:
 
     # ha_x nulla "Tabitha, my Tabitha...{w=0.5} Always so overzealous."
-    ha_x nulla ""
+    ha_x nulla "Tabitha, ma Tabitha...{w=0.5} Toujours aussi zélée."
 
 # game/scripts/story/story_00.rpy:412
 translate french story_00_bathroom_return_f98477c1:
 
     # ha_x nulla "This stranger barely has the countenance of a grown man, leave alone an outlaw."
-    ha_x nulla ""
+    ha_x nulla "Cet étranger a à peine le visage d'un adulte, et encore moins d'un hors-la-loi."
 
 # game/scripts/story/story_00.rpy:413
 translate french story_00_bathroom_return_cfe6349c:
 
     # sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}you know, considering that your bucket of bolts almost attacked me, I'd think an apology would be a better introduction than veiled insults."
-    sh nulla ""
+    sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}vous savez, étant donné que votre seau de boulons a failli m'attaquer, je pense que des excuses seraient une meilleure introduction que des insultes voilées."
 
 # game/scripts/story/story_00.rpy:416
 translate french story_00_bathroom_return_40551126:
 
     # ha_x nulla "My, such a rude young man.{w=0.3} Calling my Tabitha a bucket of bolts..."
-    ha_x nulla ""
+    ha_x nulla "Mon Dieu, quel jeune homme si grossier.{w=0.3} Traiter ma Tabitha de seau de boulons..."
 
 # game/scripts/story/story_00.rpy:417
 translate french story_00_bathroom_return_f2415613:
 
     # sh nulla "It's obviously not a person...{w=0.5} Let's call it just Android, then."
-    sh nulla ""
+    sh nulla "Ce n'est évidemment pas une personne...{w=0.5} Appelons-ça Androïde, alors."
 
 # game/scripts/story/story_00.rpy:434
 translate french story_00_bathroom_return_ac356b5c:
 
     # ha_x nulla "<I see...{w=0.5} Interesting.>"
-    ha_x nulla ""
+    ha_x nulla "<Je vois...{w=0.5} Intéressant.>"
 
 # game/scripts/story/story_00.rpy:436
 translate french story_00_bathroom_return_1343482f:
 
     # ha nulla "<Quite interesting indeed...{w=0.5} Please feel free to address me as {b}Professor Habiki{/b}, Shigeo-kun.>"
-    ha nulla ""
+    ha nulla "<Assez intéressant en effet...{w=0.5} N'hésitez pas à m'appeler {b}Professeur Habiki{/b}, Shigeo-kun.>"
 
 # game/scripts/story/story_00.rpy:437
 translate french story_00_bathroom_return_f57763d3:
 
     # sh_i nulla "(Professor...{w=0.5} {i}Habiki{/i}?)"
-    sh_i nulla ""
+    sh_i nulla "(Professeur...{w=0.5} {i}Habiki{/i} ?)"
 
 # game/scripts/story/story_00.rpy:451
 translate french story_00_meet_gaspard_40f9382d:
 
     # ha nulla "Well, it's been quite the amusing encounter...{w=0.5} But we've held each other up quite enough, I believe."
-    ha nulla ""
+    ha nulla "Eh bien, ce fut une rencontre amusante...{w=0.5} Mais nous nous sommes suffisamment supportés, je pense."
 
 # game/scripts/story/story_00.rpy:454
 translate french story_00_meet_gaspard_c93ac7a5:
 
     # ha nulla "Have a good evening, Shigeo-kun...{w=0.5} Who knows, we may run into each other again, before the night is over."
-    ha nulla ""
+    ha nulla "Passez une bonne soirée, Shigeo-kun...{w=0.5} Qui sait, nous nous croiserons peut-être à nouveau avant la fin de la nuit."
 
 # game/scripts/story/story_00.rpy:457
 translate french story_00_meet_gaspard_0f7ddfb0:
 
     # ha nulla "Let's go, Tabitha."
-    ha nulla ""
+    ha nulla "Allons-y, Tabitha."
 
 # game/scripts/story/story_00.rpy:467
 translate french story_00_meet_gaspard_40dd3029:
 
     # sh_i nulla "(Freaky...{w=0.5} I've never seen an android that looks so much like a human.{w=0.3} Regulations in Japan really are lax, aren't they?)"
-    sh_i nulla ""
+    sh_i nulla "(Flippant...{w=0.5} Je n'ai jamais vu un androïde qui ressemble autant à un humain.{w=0.3} La réglementation au Japon est vraiment laxiste, hein ?)"
 
 # game/scripts/story/story_00.rpy:469
 translate french story_00_meet_gaspard_2b672075:
 
     # sh_i nulla "(Also, why are they going upstairs...?{w=0.5} Oh, whatever.{w=0.3} It's none of my business.)"
-    sh_i nulla ""
+    sh_i nulla "(Et pourquoi montent-ils à l'étage... ?{w=0.5} Oh, peu importe.{w=0.3} Ce n'est plus mon problème.)"
 
 # game/scripts/story/story_00.rpy:471
 translate french story_00_meet_gaspard_0ecf7f01:
 
     # sh_i nulla "(Let's just go back in...)"
-    sh_i nulla ""
+    sh_i nulla "(Retournons à l'intérieur...)"
 
 # game/scripts/story/story_00.rpy:480
 translate french story_00_meet_gaspard_fd1594ff:
 
     # sh_i neutral "(People are standing up...{w=0.5} I guess we're between dishes and there's some kind of small event coming up.)"
-    sh_i neutral ""
+    sh_i neutral "(Les gens se lèvent...{w=0.5} Je suppose que nous sommes entre deux plats et qu'il y a une sorte de petit événement qui arrive.)"
 
 # game/scripts/story/story_00.rpy:481
 translate french story_00_meet_gaspard_c3285e33:
 
     # sh_i smile "(And lo and behold, is that Francesco away from the family table I see?!{w=0.3} Finally!)"
-    sh_i smile ""
+    sh_i smile "(Et voilà, c'est Francesco que je vois loin de la table familiale ?!{w=0.3} Enfin !)"
 
 # game/scripts/story/story_00.rpy:482
 translate french story_00_meet_gaspard_b5b8cfe6:
 
     # sh_i laugh "(Oh, I'm going to be giving him so much shit for 'by the way'-ing me about his-)"
-    sh_i laugh ""
+    sh_i laugh "(Oh, je vais tellement lui en vouloir pour m'avoir dit 'au fait' à propos de son-)"
 
 # game/scripts/story/story_00.rpy:483
 translate french story_00_meet_gaspard_2b72896d:
 
     # ga_x frown "<Excuse me.{w=0.3} Monsieur?>"
-    ga_x frown ""
+    ga_x frown "<Excusez-moi.{w=0.3} Monsieur ?>"
 
 # game/scripts/story/story_00.rpy:484
 translate french story_00_meet_gaspard_da733e90:
 
     # sh surprise "...!{w=0.3} Hmm?"
-    sh surprise ""
+    sh surprise "...!{w=0.3} Hmm?"
 
 # game/scripts/story/story_00.rpy:489
 translate french story_00_meet_gaspard_4fa27871:
 
     # sh_i surprise "(The...{w=0.5} The guy I ran into in the bathrooms?{w=0.3} Yeah, that's definitely him.)"
-    sh_i surprise ""
+    sh_i surprise "(Le...{w=0.5} Le type que j'ai croisé dans les toilettes ?{w=0.3} Ouais, c'est bien lui.)"
 
 # game/scripts/story/story_00.rpy:490
 translate french story_00_meet_gaspard_a4099d28:
 
     # sh_i neutral "(Never seen anyone go while wearing so many rings, too...{w=0.5} But, whatever.)"
-    sh_i neutral ""
+    sh_i neutral "(Je n'ai jamais vu personne partir en portant autant de bagues, aussi...{w=0.5} Mais, peu importe.)"
 
 # game/scripts/story/story_00.rpy:491
 translate french story_00_meet_gaspard_75611b23:
 
     # sh_i frown "(Expensive looking suit in parisian blue, similarly costly looking accessories from a number of different brands...{w=0.5} Yeah, this guy is definitely with the bride's half of the party.)"
-    sh_i frown ""
+    sh_i frown "(Un costume cher en bleu parisien, des accessoires tout aussi chers de différentes marques...{w=0.5} Ouais, ce type est définitivement avec le cortège de la mariée.)"
 
 # game/scripts/story/story_00.rpy:492
 translate french story_00_meet_gaspard_9ab0c4d0:
 
     # ga_x nulla "<Apologies for calling out to you so suddenly but, I believe we ran into each other earlier?>"
-    ga_x nulla ""
+    ga_x nulla "<Désolé de vous avoir appelé si soudainement mais je crois qu'on s'est croisés plus tôt ?>"
 
 # game/scripts/story/story_00.rpy:493
 translate french story_00_meet_gaspard_089e42f1:
 
     # sh neutral "<You mean in the bathrooms downstairs?{w=0.5} Yes, that's correct.>"
-    sh neutral ""
+    sh neutral "<Vous voulez dire dans les toilettes en bas ?{w=0.5} Oui, c'est ça.>"
 
 # game/scripts/story/story_00.rpy:494
 translate french story_00_meet_gaspard_5a0a987b:
 
     # ga_x nulla "<I see...{w=0.5} I wanted to apologize.>"
-    ga_x nulla ""
+    ga_x nulla "<Je vois...{w=0.5} Je voulais m'excuser.>"
 
 # game/scripts/story/story_00.rpy:496
 translate french story_00_meet_gaspard_91c45b23:
 
     # ga_x nulla "<I came across as quite rude, I believe, not returning your greeting.{w=0.3} I just wasn't expecting anyone to come through the door at the precise moment.>"
-    ga_x nulla ""
+    ga_x nulla "<Je me suis montré assez impoli, je crois, en ne vous rendant pas votre salut.{w=0.3} Je ne m'attendais simplement pas à ce que quelqu'un franchisse la porte au moment précis.>"
 
 # game/scripts/story/story_00.rpy:497
 translate french story_00_meet_gaspard_467466f6:
 
     # sh surprise "<Oh...{w=0.5} Well, it's fine.{w=0.3} No harm done.>"
-    sh surprise ""
+    sh surprise "<Oh...{w=0.5} Eh bien, ce n'est pas grave.{w=0.3} Aucun mal n'a été fait.>"
 
 # game/scripts/story/story_00.rpy:499
 translate french story_00_meet_gaspard_f1cc3d38:
 
     # ga nulla "<Very gracious of you.{w=0.3} My name is Gaspard Faucigny.>"
-    ga nulla ""
+    ga nulla "<C'est très aimable de votre part.{w=0.3} Mon nom est Gaspard Faucigny.>"
 
 # game/scripts/story/story_00.rpy:501
 translate french story_00_meet_gaspard_cf934aac:
 
     # ga nulla "<Pleased to make your acquaintance.>"
-    ga nulla ""
+    ga nulla "<Enchanté de faire votre connaissance.>"
 
 # game/scripts/story/story_00.rpy:502
 translate french story_00_meet_gaspard_4c28b76b:
 
     # sh surprise "<I'm called Arata.{w=0.3} Shigeo Arata...>"
-    sh surprise ""
+    sh surprise "<Je m'appelle Arata.{w=0.3} Shigeo Arata...>"
 
 # game/scripts/story/story_00.rpy:503
 translate french story_00_meet_gaspard_12b20554:
 
     # sh_i surprise "(Hmmm, I do have a window for Francesco but at the same time, it would be rude to just brush this person off...)"
-    sh_i surprise ""
+    sh_i surprise "(Hmmm, j'ai une fenêtre de temps pour Francesco mais en même temps, ce serait impoli de simplement écarter cette personne...)"
 
 # game/scripts/story/story_00.rpy:504
 translate french story_00_meet_gaspard_d206e39b:
 
     # sh_i smile "(Also, he will eventually need to go back to his seat.{w=0.3} This guy looks to be around my same age, so a new acquaintance wouldn't hurt.)"
-    sh_i smile ""
+    sh_i smile "(De plus, il devra éventuellement retourner à sa place.{w=0.3} Ce type semble avoir à peu près le même âge que moi, donc une nouvelle connaissance ne ferait pas de mal.)"
 
 # game/scripts/story/story_00.rpy:505
 translate french story_00_meet_gaspard_0065cb62:
 
     # sh surprise "<Pleased to meet you too, Gaspard.>"
-    sh surprise ""
+    sh surprise "<Enchanté de vous rencontrer également, Gaspard.>"
 
 # TODO: Translation updated at 2024-09-13 20:39
 
@@ -1216,13 +1216,13 @@ translate french story_00_meet_gaspard_1abb5ac0:
 translate french story_00_meet_gaspard_b3e3f329:
 
     # extend "{b}Gaspard Faucigny{/b}.>"
-    extend ""
+    extend "{b}Gaspard Faucigny{/b}.>"
 
 # game/scripts/story/story_00.rpy:522
 translate french story_00_meet_amina_d86362ec:
 
     # "YO"
-    ""
+    "YO"
 
 # TODO: Translation updated at 2024-09-14 09:55
 
@@ -1736,13 +1736,13 @@ translate french story_00_meet_amina_edacae2d:
 translate french story_00_meet_amina_f27a1c6f:
 
     # sh nulla "Yeah...?"
-    sh nulla ""
+    sh nulla "Oui...?"
 
 # game/scripts/story/story_00.rpy:701
 translate french story_00_meet_amina_aca2309f:
 
     # fr nulla "That's the one."
-    fr nulla ""
+    fr nulla "C'est celle-là."
 
 # game/scripts/story/story_00.rpy:703
 translate french story_00_meet_amina_a9d98dfd:
@@ -1834,7 +1834,7 @@ translate french story_00_meet_amina_a606286e:
 translate french story_00_meet_amina_b58a8f6c:
 
     # ga neutral "Really, now?"
-    ga neutral ""
+    ga neutral "Vraiment ?"
 
 # game/scripts/story/story_00.rpy:748
 translate french story_00_meet_amina_ffa0dcdc:
@@ -1858,13 +1858,13 @@ translate french story_00_meet_amina_1f7b9c50:
 translate french story_00_meet_amina_854912d0:
 
     # ha neutral ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha?"
-    ha neutral ""
+    ha neutral ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha?"
 
 # game/scripts/story/story_00.rpy:760
 translate french story_00_meet_amina_589f90f9:
 
     # ta neutral "Yes, professor?"
-    ta neutral ""
+    ta neutral "Oui, professeur ?"
 
 # game/scripts/story/story_00.rpy:769
 translate french story_00_meet_amina_45322549:
@@ -1884,7 +1884,7 @@ translate french strings:
 
     # game/scripts/story/story_00.rpy:324
     old "Codex Unlocked"
-    new ""
+    new "Codex Débloqué"
 
 # TODO: Translation updated at 2024-09-22 15:11
 
@@ -1892,11 +1892,11 @@ translate french strings:
 translate french story_00_invitation_0201c8e5:
 
     # d "The ceremony and reception will take place in the {b}Baroque Building{/b}, while the guests will be accomodated in the {b}Taishō Building{/b}.\n"
-    d ""
+    d "La cérémonie et la réception auront lieu dans le {b}Bâtiment baroque{/b}, tandis que les invités seront logés dans le {b}Bâtiment Taishō{/b}.\n"
 
 # game/scripts/story/story_00.rpy:761
 translate french story_00_meet_amina_8c37d57a:
 
     # ha neutral traglasses ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha?"
-    ha neutral traglasses ""
+    ha neutral traglasses ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha?"
 
