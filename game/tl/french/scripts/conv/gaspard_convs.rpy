@@ -180,7 +180,7 @@ translate french gaspard_01_wedding_a3a7bf32:
 translate french gaspard_01_wedding_e6589f6d:
 
     # ga nulla "When they started talking about using his lack of living relatives and any tie to his old life before coming to France as arguments, I made them respectfullly notice they were grasping at straws."
-    ga nulla "Lorsqu'ils ont commencé à parler de l'absence de proches en vie et de tout lien avec son ancienne vie avant de venir en France comme arguments, je leur ai fait remarquer respectueusement qu'ils s'accrochaient à des chimères"
+    ga nulla "Lorsqu'ils ont commencé à parler de l'absence de proches en vie et de tout lien avec son ancienne vie avant de venir en France comme arguments, je leur ai fait remarquer respectueusement qu'ils s'accrochaient à des chimères."
 
 # game/scripts/conv/gaspard_convs.rpy:126
 translate french gaspard_01_wedding_01a0ea4a:
@@ -376,13 +376,13 @@ translate french gaspard_01_shigeo_d68017e9:
 translate french gaspard_01_wedding_761959d4:
 
     # ga nulla "When they started talking about using his lack of living relatives and any ties to his old life before coming to France as arguments, I made them respectfully notice they were grasping at straws."
-    ga nulla ""
+    ga nulla "Lorsqu'ils ont commencé à parler de l'absence de proches en vie et de tout lien avec son ancienne vie avant de venir en France comme arguments, je leur ai fait remarquer respectueusement qu'ils s'accrochaient à des chimères."
 
 # game/scripts/conv/gaspard_convs.rpy:129
 translate french gaspard_01_wedding_8818ddf0:
 
     # sh surprise "Huh...{w=0.5} I guess those kinds of dynamics are still a thing in certain circles, aren't they?"
-    sh surprise ""
+    sh surprise "Huh...{w=0.5} Je suppose que ce genre de dynamique est toujours d'actualité dans certains milieux, n'est-ce pas ?"
 
 # TODO: Translation updated at 2024-09-22 15:11
 
@@ -390,5 +390,5 @@ translate french gaspard_01_wedding_8818ddf0:
 translate french gaspard_01_gaspard_7094832f:
 
     # ga nulla "<A few times...{w=0.5} Although this is the first time I will have to stay the night in the Taishō building.>"
-    ga nulla ""
+    ga nulla "<Quelques fois...{w=0.5} C'est la première fois que je dois passer la nuit dans le bâtiment Taisho.>"
 
