@@ -12,11 +12,9 @@ screen main_menu():
     ## This ensures that any other menu screen is replaced.
     tag menu
 
-    add "main_menu_bg"
+    add "main_menu_bg_logo"
 
     add "gui/main_menu/bg.png" align(0.5, 1.0) yoffset -100
-
-    add "babelomania_logo"
 
     style_prefix "main"
 

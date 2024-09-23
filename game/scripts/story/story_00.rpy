@@ -104,8 +104,9 @@ label story_00_invitation:
     d """
     The {b}Château de Bois-le-Dumont{/b} is unique even among the many beautiful châteaux that populate France. It originated as an eighteenth century vanity project from an aristocrat, left unfinished in the wake of the revolution. After decades of abandon, it was eventually purchased by the eccentric {b}Abelard Du Bois{/b}, who over the following decades shaped it into the château as it is today.\n
 
-    The ceremony and reception will take place in the {b}Baroque Building{/b}, while the guests will be accomodated in the {b}Taisho Building{/b}.\n
+    The ceremony and reception will take place in the {b}Baroque Building{/b}, while the guests will be accomodated in the {b}Taishō Building{/b}.\n
     """
+    $ c_locations.append(c_chateau_dubois)
     nvl clear
     d """
     Directions to the Venue:
@@ -122,7 +123,7 @@ label story_00_invitation:
     nvl clear
     scene black with Reveal3
     pause 3.0
-    play music "audio/bgm/canon_in_bois.ogg"
+    play music "audio/bgm/sins_not_tragedies.ogg"
     pause 1.0
     $ time_menu = True
     pause 1.0
@@ -222,7 +223,7 @@ label story_00_bathroom_break:
     scene black with dissolve
     $ move_time(0,4)
     pause 1.0
-    play music "<from 39>audio/bgm/canon_in_bois_muted.ogg" fadein 0.2
+    play music "<from 39>audio/bgm/sins_not_tragedies_muted.ogg" fadein 0.2
     pause 0.5
     sh_i "(My name is Shigeo Arata.{w=0.3} I'm a friend of the groom at this reception...)"
     sh_i sad "(And only the groom.)"
@@ -309,11 +310,13 @@ label story_00_bathroom_encounters:
     sh_i neutral -sweat "(Looking at it up close, it feels even more out of place...{w=0.5} No matter what excuses I make up.)"
     sh_i frown "(When was this made?{w=0.5} And by whom?)"
     pause 1.0
+    $ time_menu = False
     call screen bathroom_painting_examine
 
 label story_00_bathroom_return:
     $ renpy.block_rollback()
     pause 0.5
+    $ time_menu = True
     sh_i smile "(There we go.)"
     pause 1.0
     scene bar_bathroom
@@ -321,7 +324,7 @@ label story_00_bathroom_return:
         xalign 0.5
     with dissolve
     play sound4 "audio/sfx/gui_slots_confirm.ogg"
-    show screen notify("Codex Unlocked")
+    show screen notify(_("Codex Unlocked"))
     $ codex_active = True
     pause 0.5
     sh_i nulla "(Well, that was a good way to waste a few minutes and distract myself...{w=0.5} And now I have something to occupy myself further, if need be.)"
@@ -333,7 +336,7 @@ label story_00_bathroom_return:
     pause 0.5
     $ move_time(0,4)
     pause 1.0
-    play music "<from 39>audio/bgm/canon_in_bois_muted.ogg" fadein 0.2
+    play music "<from 39>audio/bgm/sins_not_tragedies_muted.ogg" fadein 0.2
     scene bar_corr_recep with Reveal3
     pause 1.5
     sh_i surprise "(Hmm?{w=0.5} What's that sm-)"
@@ -407,7 +410,7 @@ label story_00_bathroom_return:
         linear 0.5 xalign 0.65
     pause 1.0
     show Habiki neutral at ha_med:
-        xalign 0.2
+        xalign 0.175
     with Reveal3
     pause 0.5
     play music "audio/bgm/echo_of_mountains.ogg"
@@ -491,7 +494,7 @@ label story_00_meet_gaspard:
     scene black with dissolve
     $ move_time(0,17)
     pause 0.5
-    play music "audio/bgm/canon_in_bois.ogg"
+    play music "audio/bgm/sins_not_tragedies.ogg"
     pause 0.5
     play LoNoise "audio/bgs/reception_crowd.ogg" fadein 0.2
     scene bar_reception with Reveal
@@ -705,3 +708,100 @@ label story_00_meet_amina:
     fr nulla "Now, Shigeo, where's the fun in being predictable?"
     show Shigeo laugh
     pause 1.0
+    stop music fadeout 3.5
+    scene black with Reveal
+    pause 0.5
+    $ move_time(0,15)
+    pause 1.5
+    sh_i frown "(Francesco...{w=0.5} I wonder what happened to you, since we last saw each other.)"
+    pause 1.0
+    scene bar_reception with Reveal
+    pause 0.5
+    sh_i neutral "(You say that you've been well but you're asking for my help.{w=0.5} You're surrounded by people, new friends and acquaintances you've made over the years.{w=0.3} Getting married, gaining a new family...)"
+    pause 0.5
+    stop LoNoise fadeout 3.5
+    show Francesco neutral at fr_big:
+        xalign 0.5
+    with dissolve
+    pause 0.5
+    sh_i surprise "(And yet you came to me for help?{w=0.3} You couldn't turn to any of the people in this room?)"
+    show Francesco pain sweatdrop
+    fr nulla "Alright, this is the part of the evening I {i}dreaded{/i} the most...{w=0.5} The videooooooo."
+    play sound "audio/se/crowd_applause.ogg"
+    pause 1.5
+    show Francesco surprise
+    fr nulla "You know me!{w=0.3} You know I hate being the center of attention, which is saying something considering this is my wedding of all things!"
+    show Francesco smile
+    fr nulla "But a promise's a promise...{w=0.5} And we always keep our promises, don't we Delphine?{w=0.3} I love you."
+    play sound "audio/se/crowd_applause_2.ogg"
+    pause 1.0
+    show Francesco -sweatdrop
+    fr nulla "What you're about to see is going to serve two purposes.{w=0.3} First, it's going to introduce you to the rest of our lives going forward..."
+    show Francesco neutral
+    fr nulla "Also, it will hopefully familiarize you with me a little more...{w=0.5} I know that some of you are still a bit wary, on account of not knowing much of my life past the academics."
+    show Francesco laugh
+    fr nulla "I'm sure this will assauge at least some of your curiosity.{w=0.3} And if afterwards you're still curious, you can seek out that guy over there for more information!"
+    play sound "audio/em/em_shock.ogg"
+    sh_i surprise sweat "(...!{w=0.3} He's pointing my way.)"
+    show Francesco neutral
+    fr nulla "Shigeo Arata...{w=0.5} The other great unknown of the evening.{w=0.3} We go way back.{w=0.3} Since childhood, actually...{w=0.5} And, honestly?"
+    show Francesco smile
+    fr nulla "I wouldn't be here right now, if it wasn't for him...{w=0.5} He and his family are the reason why today's events are possible to begin with."
+    ga neutral "Really, now?"
+    sh laugh sweatdrop "Well, uhm...{w=0.5} He's exaggerating, we just...{w=0.5} Gave Francesco a hand when he needed us."
+    show Francesco laugh
+    fr nulla "So keep that in mind for the rest of the evening...{w=0.5} If you want to know about Francesco Colombo, you'd better watch out for Shigeo Arata!"
+    play sound "audio/se/crowd_applause.ogg"
+    show Francesco smile
+    fr nulla "But that's enough stalling...{w=0.5} We have a video to get to.{w=0.3} Lights, please!"
+    pause 0.5
+    hide Francesco with dissolve
+    pause 1.0
+    scene bar_reception_mood with Reveal
+    pause 1.5
+    ha neutral traglasses ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha?"
+    ta neutral "Yes, professor?"
+    pause 1.0
+    scene black
+    show Tabitha neutral brief at ta_big:
+        xalign 0.3
+    show Habiki neutral traglasses at ha_big:
+        xalign 0.7
+    with Reveal
+    pause 1.5
+    ha nulla "I have a new {nw}"
+    play sound "audio/sfx/gui_hint.ogg"
+    extend "{b}directive{/b} for you."
+    pause 1.0
+    show Tabitha bow with dissolve
+    pause 1.5
+    scene bar_reception_mood
+    pause 2.5
+    play sound4 "audio/se/glitch_short.ogg"
+    $ time_menu = False
+    $ quick_menu = False
+    scene bar_reception_mood_video
+    pause 2.0
+    play sound "audio/se/wedding_video.ogg" fadein 1.0
+    show bar_reception_mood_video_glitch
+    pause 1.5
+    show bathroom_painting_glitch
+    pause 3.0
+    show bathroom_painting_glitch_2
+    pause 3.0
+    show bathroom_painting_glitch
+    pause 0.5
+    show bathroom_painting_glitch_2
+    pause 0.15
+    show bathroom_painting_glitch
+    pause 0.15
+    show bathroom_painting_glitch_2
+    pause 0.15
+    show bathroom_painting_glitch
+    pause 0.15
+    show bathroom_painting_glitch_2
+    pause 1.0
+    play sound4 "audio/se/glitch_long.ogg"
+    scene black with glitch_unload_5
+    pause 3.0
+    jump story_01_awakening
