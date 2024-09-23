@@ -14,6 +14,8 @@ init python:
     c_items = []
 
 default c_chateau_dubois = Entry("Chateau de Bois-le-Dumont", "scr_chateau_dubois", False)
+default c_taisho = Entry("Taisho Era of Japan", "scr_taisho", False)
+default c_babel_painting = Entry("Painting of Babel", "scr_babel_painting", False)
 
 default current_entry = None
 screen codex_main():
