@@ -34,13 +34,13 @@ translate french story_00_invitation_1dd8cfbd:
 translate french story_00_invitation_1eed7024:
 
     # d "After tying the knot in the presence of our parents and siblings on Saturday, 11th April 20XX, we couldn't wait to celebrate with all our friends and family. We hope you can join us!\n"
-    d "Après s'être mariés en présence de nos familles, le samedi 11 avril 20XX, nous sommes impatients de célébrer l'événement avec tous nos amis et nos familles. Nous espérons que tu pourras te joindre à nous !"
+    d "Après s'être mariés en présence de nos familles, le samedi 11 avril 20XX, nous sommes impatients de célébrer l'événement avec tous nos amis et nos familles. Nous espérons que tu pourras te joindre à nous !\n"
 
 # game/scripts/story/story_00.rpy:76
 translate french story_00_invitation_6a79a6b1:
 
     # d "Check out our wedding website and app to RSVP and find more information.\n"
-    d "Consultes le site et l'application de notre mariage pour répondre à notre invitation et obtenir plus d'informations."
+    d "Consultes le site et l'application de notre mariage pour répondre à notre invitation et obtenir plus d'informations.\n"
 
 # game/scripts/story/story_00.rpy:76
 translate french story_00_invitation_676cfc13:
@@ -70,19 +70,19 @@ translate french story_00_invitation_964c2dd6:
 translate french story_00_invitation_73cd3f9f:
 
     # d "Subject: Important Information about the Venue.\n"
-    d "Objet : Informations importantes sur le lieu."
+    d "Objet : Informations importantes sur le lieu.\n"
 
 # game/scripts/story/story_00.rpy:90
 translate french story_00_invitation_a7b4979d:
 
     # d "Dearest Shigeo,\n"
-    d "Cher Shigeo,"
+    d "Cher Shigeo,\n"
 
 # game/scripts/story/story_00.rpy:90
 translate french story_00_invitation_8a194413:
 
     # d "As the countdown to our wedding day continues, we are thrilled to share some essential information to ensure your stay in France is comfortable and convenient. Below are the details regarding the accommodations for our special day on May 14th.\n"
-    d "Alors que le compte à rebours jusqu'au mariage se poursuit, nous sommes ravis de partager avec toi quelques informations essentielles pour que ton séjour en France soit confortable et pratique. Tu trouveras ci-dessous les détails concernant l'hébergement pour notre journée spéciale du 14 mai."
+    d "Alors que le compte à rebours jusqu'au mariage se poursuit, nous sommes ravis de partager avec toi quelques informations essentielles pour que ton séjour en France soit confortable et pratique. Tu trouveras ci-dessous les détails concernant l'hébergement pour notre journée spéciale du 14 mai.\n"
 
 # game/scripts/story/story_00.rpy:90
 translate french story_00_invitation_f49a4b49:
@@ -94,7 +94,7 @@ translate french story_00_invitation_f49a4b49:
 translate french story_00_invitation_51360de4:
 
     # d "The {b}Château de Bois-le-Dumont{/b} is unique even among the many beautiful châteaux that populate France. It originated as an eighteenth century vanity project from an aristocrat, left unfinished in the wake of the revolution. After decades of abandon, it was eventually purchased by the eccentric {b}Abelard Du Bois{/b}, who over a period of thirty years shaped it into the château as it is today.\n"
-    d "Le {b}Château de Bois-le-Dumont{/b} est unique, même parmi les nombreux magnifiques châteaux qui peuplent la France. Il est issu d'un projet de fantaisie d'un aristocrate du XVIIIe siècle, laissé inachevé dans le sillage de la Révolution. Après des décennies d'abandon, il a finalement été acheté par l'excentrique {b}Abelard Du Bois{/b}, qui, pendant trente ans, l'a transformé en château tel qu'il est aujourd'hui."
+    d "Le {b}Château de Bois-le-Dumont{/b} est unique, même parmi les nombreux magnifiques châteaux qui peuplent la France. Il est issu d'un projet de fantaisie d'un aristocrate du XVIIIe siècle, laissé inachevé dans le sillage de la Révolution. Après des décennies d'abandon, il a finalement été acheté par l'excentrique {b}Abelard Du Bois{/b}, qui, pendant trente ans, l'a transformé en château tel qu'il est aujourd'hui.\n"
 
 # game/scripts/story/story_00.rpy:104
 translate french story_00_invitation_24c971be:
@@ -114,7 +114,7 @@ translate french story_00_invitation_ca8741bb:
 translate french story_00_invitation_eecd1573:
 
     # d "Please use the link below to find some useful information on how to reach the château. Shuttles are going to be organized at specific times for guests. If you'd rather arrange for your own personal transportation, please let us know.\n"
-    d "Utilises le lien ci-dessous pour trouver des informations utiles sur la route à suivre pour se rendre au château. Des navettes seront organisées à des heures précises pour les invités. Si tu préfères organiser ton propre transport, n'hésite pas à nous le faire savoir."
+    d "Utilises le lien ci-dessous pour trouver des informations utiles sur la route à suivre pour se rendre au château. Des navettes seront organisées à des heures précises pour les invités. Si tu préfères organiser ton propre transport, n'hésite pas à nous le faire savoir.\n"
 
 # game/scripts/story/story_00.rpy:110
 translate french story_00_invitation_82a4fc17:
@@ -168,7 +168,7 @@ translate french story_00_invitation_b2407151:
 translate french story_00_invitation_7982d1b4:
 
     # tb_n2 "<Indeed?{w=0.5} To be honest, I don't exactly approve of a lot of the placements.>"
-    tb_n2 "<Indeed ?{w=0.5} Pour être honnête, je n'approuve pas vraiment beaucoup de ces placements.>"
+    tb_n2 "<Indeed ?{w=0.5} Pour être honnête, je n'approuve pas vraiment beaucoup des aménagements.>"
 
 # game/scripts/story/story_00.rpy:142
 translate french story_00_invitation_f1c8088e:
@@ -258,7 +258,7 @@ translate french story_00_concentration_6b2735e3:
 translate french story_00_concentration_9daf5e3e:
 
     # tb_n "<Our young italian friend gives the current owners too much credit, me thinks!{w=0.3} Ahahahah!>"
-    tb_n "<Notre jeune ami italien accorde trop de crédit aux propriétaires actuels, je pense!{w=0.3} Ahahahah!>"
+    tb_n "<Notre jeune ami italien accorde trop de crédit aux propriétaires actuels, je pense !{w=0.3} Ahahahah !>"
 
 # game/scripts/story/story_00.rpy:183
 translate french story_00_concentration_f0de7980:
@@ -282,7 +282,7 @@ translate french story_00_relaxation_c04e3ef4:
 translate french story_00_relaxation_fecf610b:
 
     # tb_n "<Quite, quite!{w=0.3} It is indeed an intriguing enough painting, especially for those not used to contemplating art.>"
-    tb_n "<Tout à fait, tout à fait !{w=0.3} C'est en effet une peinture assez intrigante, surtout pour ceux qui n'ont pas l'habitude de contempler l'art...>"
+    tb_n "<Tout à fait, tout à fait !{w=0.3} C'est en effet une peinture assez intrigante, surtout pour ceux qui n'ont pas l'habitude de contempler l'Art...>"
 
 # game/scripts/story/story_00.rpy:193
 translate french story_00_relaxation_3dc5d1d5:
@@ -414,7 +414,7 @@ translate french story_00_bathroom_encounters_71290075:
 translate french story_00_bathroom_encounters_76e3ab57:
 
     # sh_i surprise "(Hmmm?)"
-    sh_i surprise "(Hmmm?)"
+    sh_i surprise "(Hmmm ?)"
 
 # game/scripts/story/story_00.rpy:278
 translate french story_00_bathroom_encounters_fdcaa5ca:
@@ -582,7 +582,7 @@ translate french story_00_bathroom_return_f6fd28d1:
 translate french story_00_bathroom_return_8f4dff1f:
 
     # sh_i nulla "(Someone left the door to the smoking room open...{w=0.5} And of course, everyone else now needs to share in their breathalized cancer.)"
-    sh_i nulla "(Quelqu'un a laissé la porte du fumoir ouverte...{w=0.5} Et bien sûr, tous les autres doivent maintenant partager leur cancer haleinique)."
+    sh_i nulla "(Quelqu'un a laissé la porte du fumoir ouverte...{w=0.5} Et bien sûr, tous les autres doivent maintenant partager leur cancer haleinique.)"
 
 # game/scripts/story/story_00.rpy:348
 translate french story_00_bathroom_return_fd1c8581:
@@ -666,7 +666,7 @@ translate french story_00_bathroom_return_a66058e8:
 translate french story_00_bathroom_return_15ba0384:
 
     # sh fear "NNGH!{w=0.3} Let go of me, you-!"
-    sh fear "NNGH !{w=0.3} Lâche-moi, espèce de... !"
+    sh fear "NNGH !{w=0.3} Lâche-moi, espèce de- !"
 
 # game/scripts/story/story_00.rpy:378
 translate french story_00_bathroom_return_84d8955c:
@@ -980,7 +980,7 @@ translate french story_00_meet_gaspard_2b72896d:
 translate french story_00_meet_gaspard_da733e90:
 
     # sh surprise "...!{w=0.3} Hmm?"
-    sh surprise "...!{w=0.3} Hmm?"
+    sh surprise "...!{w=0.3} Hmm ?"
 
 # game/scripts/story/story_00.rpy:489
 translate french story_00_meet_gaspard_4fa27871:
@@ -1230,7 +1230,7 @@ translate french story_00_meet_amina_d86362ec:
 translate french story_00_invitation_c199113b:
 
     # d "The {b}Château de Bois-le-Dumont{/b} is unique even among the many beautiful châteaux that populate France. It originated as an eighteenth century vanity project from an aristocrat, left unfinished in the wake of the revolution. After decades of abandon, it was eventually purchased by the eccentric {b}Abelard Du Bois{/b}, who over the following decades shaped it into the château as it is today.\n"
-    d ""
+    d "Le {b}Château de Bois-le-Dumont{/b} est unique, même parmi les nombreux magnifiques châteaux qui peuplent la France. Il est issu d'un projet de fantaisie d'un aristocrate du 18ème siècle, laissé inachevé dans le sillage de la Révolution. Après des décennies d'abandon, il a finalement été acheté par l'excentrique {b}Abelard Du Bois{/b}, qui, pendant trente ans, l'a transformé en château tel qu'il est aujourd'hui.\n"
 
 # TODO: Translation updated at 2024-09-14 09:57
 
@@ -1238,7 +1238,7 @@ translate french story_00_invitation_c199113b:
 translate french story_00_bathroom_return_c48f135c:
 
     # sh_i nulla "(Someone left the door to the smoking room open...{w=0.5} And now everyone else can also partake of their breathalized cancer.)"
-    sh_i nulla ""
+    sh_i nulla "(Quelqu'un a laissé la porte du fumoir ouverte...{w=0.5} Et maintenant, tous les autres doivent partager leur cancer haleinique.)"
 
 # TODO: Translation updated at 2024-09-14 10:22
 
@@ -1246,49 +1246,49 @@ translate french story_00_bathroom_return_c48f135c:
 translate french story_00_bathroom_return_90d2365c_1:
 
     # ta_x darko "Failure to remove yourself from the restricted area will be cause for reprisal.{w=0.3} Please acknowledge."
-    ta_x darko ""
+    ta_x darko "Ne pas quitter la zone interdite, vous expose à des représailles.{w=0.3} Veuillez accuser réception."
 
 # game/scripts/story/story_00.rpy:397
 translate french story_00_bathroom_return_ed8f339a:
 
     # sh nulla "Who...?"
-    sh nulla ""
+    sh nulla "Qui... ?"
 
 # game/scripts/story/story_00.rpy:435
 translate french story_00_bathroom_return_323f37d2:
 
     # ha_x nulla "<Fully fluent, and a very light accent...{w=0.5} {nw}"
-    ha_x nulla ""
+    ha_x nulla "<Parfaitement bilingue, avec un très léger accent...{w=0.5} {nw}"
 
 # game/scripts/story/story_00.rpy:437
 translate french story_00_bathroom_return_3f33c47a:
 
     # extend "A {b}hafu{/b}, then?>"
-    extend ""
+    extend "Un {b}hafu{/b}, je devine ?>"
 
 # game/scripts/story/story_00.rpy:441
 translate french story_00_bathroom_return_d2619f95:
 
     # ha nulla "<Quite interesting indeed...{w=0.5} Please feel free to address me as {nw}"
-    ha nulla ""
+    ha nulla "<Assez intéressant en effet...{w=0.5} N'hésitez pas à m'appeler {nw}"
 
 # game/scripts/story/story_00.rpy:443
 translate french story_00_bathroom_return_ed9b335e:
 
     # extend "{b}Professor Habiki{/b}, Shigeo-kun.>"
-    extend ""
+    extend "{b}Professeur Habiki{/b}, Shigeo-kun.>"
 
 # game/scripts/story/story_00.rpy:514
 translate french story_00_meet_gaspard_2693f1d9:
 
     # ga_x nulla "<I came across as quite rude, I believe, not returning your greeting.{w=0.3} I just wasn't expecting anyone to come through the door at that precise moment.{w=0.3} I'm easily startled.>"
-    ga_x nulla ""
+    ga_x nulla "<Je me suis montré assez impoli, je crois, en ne vous rendant pas votre salut.{w=0.3} Je ne m'attendais simplement pas à ce que quelqu'un franchisse la porte au moment précis.{w=0.3} J'ai facilement peur.>"
 
 # game/scripts/story/story_00.rpy:515
 translate french story_00_meet_gaspard_7f5dbbcf:
 
     # sh surprise "<Oh...{w=0.5} Well, it's fine.{w=0.3} Thanks for seeking me out to apologize.>"
-    sh surprise ""
+    sh surprise "<Oh...{w=0.5} Eh bien, ce n'est pas grave.{w=0.3} Merci d'être venu me voir pour vous excuser.>"
 
 # TODO: Translation updated at 2024-09-15 17:23
 
@@ -1296,61 +1296,61 @@ translate french story_00_meet_gaspard_7f5dbbcf:
 translate french story_00_invitation_ed33af00:
 
     # tb_n "<You will find, spread throughout the estate, different pieces of art collected over the course of his travels.{w=0.3} Or specially commissioned to complement specific rooms of the complex!>"
-    tb_n ""
+    tb_n "<Vous trouverez, réparties dans les bâtiments, différentes œuvres d'Art collectées au cours de ses voyages.{w=0.3} Ou commandées personnellement pour compléter des pièces spécifiques du complexe !>"
 
 # game/scripts/story/story_00.rpy:267
 translate french story_00_bathroom_encounters_47613799:
 
     # sh_i nulla "(Geez, she was in a hurry!{w=0.3} I think it was one of the bridesmaids?)"
-    sh_i nulla ""
+    sh_i nulla "(Mince, elle était pressée !{w=0.3} Je crois que c'était une des demoiselles d'honneur ?)"
 
 # game/scripts/story/story_00.rpy:282
 translate french story_00_bathroom_encounters_69c34758:
 
     # sh_i surprise "(Hmmm?{w=0.5} Someone else is here.)"
-    sh_i surprise ""
+    sh_i surprise "(Hmmm ? {w=0.5} Quelqu'un d'autre est là, aussi.)"
 
 # game/scripts/story/story_00.rpy:309
 translate french story_00_bathroom_encounters_d06a177c:
 
     # sh_i neutral -sweat "(Looking at it up close, it feels even more out of place...{w=0.5} No matter what excuses I make up.)"
-    sh_i neutral -sweat ""
+    sh_i neutral -sweat "(En la regardant de près, elle semble encore plus faire tâche...{w=0.5} Peu importe les excuses que je peux inventer.)"
 
 # game/scripts/story/story_00.rpy:347
 translate french story_00_bathroom_return_8000d72a:
 
     # sh_i nulla "(Someone left the door to the smoking room open...{w=0.5} And now everyone else shall partake of their breathalized cancer, too.)"
-    sh_i nulla ""
+    sh_i nulla "(Quelqu'un a laissé la porte du fumoir ouverte...{w=0.5} Et bien sûr, tous les autres doivent maintenant aussi partager leur cancer haleinique.)"
 
 # game/scripts/story/story_00.rpy:380
 translate french story_00_bathroom_return_371d6feb:
 
     # sh_i angry "(What the hell is this {b}thing{/b}?!)"
-    sh_i angry ""
+    sh_i angry "(Qu'est-ce que c'est que cette {b}chose{/b} ?!)"
 
 # game/scripts/story/story_00.rpy:381
 translate french story_00_bathroom_return_91bdc265:
 
     # sh angry "NNGH!{w=0.3} Let go of me, you-!"
-    sh angry ""
+    sh angry "NNGH !{w=0.3} Lâche-moi, espèce de- !"
 
 # game/scripts/story/story_00.rpy:485
 translate french story_00_meet_gaspard_3b36690d:
 
     # sh_i nulla "(Freaky...{w=0.5} I've never seen an Android that looks so much like a human.{w=0.3} Regulations in Japan really are lax, aren't they?)"
-    sh_i nulla ""
+    sh_i nulla "(Flippant...{w=0.5} Je n'ai jamais vu un Androïde qui ressemble autant à un humain.{w=0.3} La réglementation au Japon est vraiment laxiste, hein ?)"
 
 # game/scripts/story/story_00.rpy:525
 translate french story_00_meet_gaspard_14c5206e:
 
     # sh_i smile "(Also, the groom will eventually need to go back to his seat.{w=0.3} This guy looks to be around my same age, so a new acquaintance wouldn't hurt.)"
-    sh_i smile ""
+    sh_i smile "(De plus, ille marié devra éventuellement retourner à sa place.{w=0.3} Ce type semble avoir à peu près le même âge que moi, donc une nouvelle connaissance ne ferait pas de mal.)"
 
 # game/scripts/story/story_00.rpy:526
 translate french story_00_meet_gaspard_1c5096ce:
 
     # sh smile "<Pleased to meet you too, Gaspard.>"
-    sh smile ""
+    sh smile "<Enchanté de vous rencontrer également, Gaspard.>"
 
 # TODO: Translation updated at 2024-09-15 22:54
 
@@ -1358,385 +1358,385 @@ translate french story_00_meet_gaspard_1c5096ce:
 translate french story_00_meet_amina_8c9846a5:
 
     # ga nulla "You must come sit with me and mine for the rest of the evening.{w=0.3} I insist."
-    ga nulla ""
+    ga nulla "Vous devez venir vous asseoir avec les miens et moi-même pour le reste de la soirée.{w=0.3} J'insiste."
 
 # game/scripts/story/story_00.rpy:541
 translate french story_00_meet_amina_60b18194:
 
     # sh smile "I would really appreciate it, thanks.{w=0.3} I've been spending the first part of the dinner surrounded by older academics who don't speak a word of English."
-    sh smile ""
+    sh smile "J'apprécierais vraiment, merci.{w=0.3} J'ai passé la première partie du dîner entouré d'universitaires plus âgés qui ne parlent pas un mot d'anglais."
 
 # game/scripts/story/story_00.rpy:543
 translate french story_00_meet_amina_257a1ac4:
 
     # ga nulla "Oh, we're at least bilingual at our table.{w=0.3} I'm sure you'll-"
-    ga nulla ""
+    ga nulla "Oh, nous sommes au moins bilingues à notre table.{w=0.3} Je suis sûr que vous-"
 
 # game/scripts/story/story_00.rpy:544
 translate french story_00_meet_amina_e188a4ad:
 
     # am_x darko "Gaspard?"
-    am_x darko ""
+    am_x darko "Gaspard ?"
 
 # game/scripts/story/story_00.rpy:550
 translate french story_00_meet_amina_863f583e:
 
     # ga nulla "Ah, {b}Amina{/b}.{w=0.3} Perfect timing."
-    ga nulla ""
+    ga nulla "Ah, {b}Amina{/b}.{w=0.3} Un timing parfait."
 
 # game/scripts/story/story_00.rpy:551
 translate french story_00_meet_amina_93f576bf:
 
     # sh_i surprise "(Amina?{w=0.5} Oh...)"
-    sh_i surprise ""
+    sh_i surprise "(Amina ?{w=0.5} Oh...)"
 
 # game/scripts/story/story_00.rpy:557
 translate french story_00_meet_amina_91e7778b:
 
     # ga nulla "Let me introduce you to Shigeo Arata.{w=0.3} He's a childhood friend of Francesco, if you can believe it."
-    ga nulla ""
+    ga nulla "Laisse-moi te présenter Shigeo Arata.{w=0.3} C'est un ami d'enfance de Francesco, si tu peux le croire."
 
 # game/scripts/story/story_00.rpy:559
 translate french story_00_meet_amina_95802636:
 
     # am nulla "Is he, now?{w=0.5} Interesting."
-    am nulla ""
+    am nulla "Il l'est, vraiment ?{w=0.5} Intéressant."
 
 # game/scripts/story/story_00.rpy:560
 translate french story_00_meet_amina_ffc7f4a4:
 
     # sh smile "A pleasure to meet you.{w=0.3} I have to ask, though, why is it such a surprise to everyone whenever I mention that?"
-    sh smile ""
+    sh smile "Un plaisir de vous rencontrer.{w=0.3} Je dois demander, cependant, pourquoi est-ce une telle surprise pour tout le monde quand je mentionne ça ?"
 
 # game/scripts/story/story_00.rpy:561
 translate french story_00_meet_amina_8ac17a5b:
 
     # am nulla "Because Francesco barely talks about his life before coming to France."
-    am nulla ""
+    am nulla "Parce que Francesco parle à peine de sa vie avant la France."
 
 # game/scripts/story/story_00.rpy:563
 translate french story_00_meet_amina_3702ad16:
 
     # am nulla "Having a living piece of it present at his wedding is not something anyone expected...{w=0.5} I'm Amina Abbas, pleasure is mine."
-    am nulla ""
+    am nulla "Avoir un morceau vivant de ça, présent à son mariage n'est pas quelque chose que l'on attendait...{w=0.5} Je suis Amina Abbas, le plaisir est pour moi."
 
 # game/scripts/story/story_00.rpy:564
 translate french story_00_meet_amina_7c4e6156:
 
     # ga nulla "Also known as my beautiful girlfriend...{w=0.5} You needed something from me, <petite>?"
-    ga nulla ""
+    ga nulla "Aussi connue comme ma majestueuse petite amie...{w=0.5} Tu avais besoin de quelque chose, <petite> ?"
 
 # game/scripts/story/story_00.rpy:568
 translate french story_00_meet_amina_6b0e7af2:
 
     # am nulla "Your father wanted to speak to you.{w=0.3} Something about an email."
-    am nulla ""
+    am nulla "Ton père voudrait te parler.{w=0.3} Quelque chose à propos d'un e-mail."
 
 # game/scripts/story/story_00.rpy:572
 translate french story_00_meet_amina_089d7a68:
 
     # ga nulla "Ugh, honestly...{w=0.5} Not disconnecting from work even at an event like this."
-    ga nulla ""
+    ga nulla "Ugh, vraiment...{w=0.5} Ne pas décrocher du travail même lors d'un événement comme celui-ci."
 
 # game/scripts/story/story_00.rpy:574
 translate french story_00_meet_amina_6865aa59:
 
     # ga nulla "Let me go deal with that real quick.{w=0.3} <Petite>, mind showing Shigeo to our table?{w=0.3} He will be sitting with us for the rest of the night."
-    ga nulla ""
+    ga nulla "Laisse-moi m'en occuper rapidement.{w=0.3} <Petite>, ça te dérange de guider Shigeo à notre table ?{w=0.3} Il va rester assis avec nous pour le reste de la soirée."
 
 # game/scripts/story/story_00.rpy:576
 translate french story_00_meet_amina_8e5c1904:
 
     # am nulla "He is?{w=0.3} But Gaspard-"
-    am nulla ""
+    am nulla "Il l'est ?{w=0.3} Mais Gaspard-"
 
 # game/scripts/story/story_00.rpy:581
 translate french story_00_meet_amina_9ac7c712:
 
     # am nulla ".{w=0.3}.{w=0.3}.{w=0.5}there are no more free seats."
-    am nulla ""
+    am nulla ".{w=0.3}.{w=0.3}.{w=0.5}il n'y a plus de place."
 
 # game/scripts/story/story_00.rpy:582
 translate french story_00_meet_amina_a1f186a4:
 
     # sh surprise "Oh.{w=0.3} I'm sorry, I...{w=0.5} I didn't mean to be a bother."
-    sh surprise ""
+    sh surprise "Oh.{w=0.3} Je suis désolé, je...{w=0.5} Je ne voulais pas déranger."
 
 # game/scripts/story/story_00.rpy:583
 translate french story_00_meet_amina_739a21e6:
 
     # am nulla "You did nothing wrong...{w=0.5} It's fine, we can just ask the caterers to add one more chair."
-    am nulla ""
+    am nulla "Vous n'avez rien fait de mal...{w=0.5} C'est bon, on peut juste demander aux traiteurs d'ajouter une chaise de plus."
 
 # game/scripts/story/story_00.rpy:585
 translate french story_00_meet_amina_4ce07467:
 
     # am nulla "Honestly, I'm more surprised than anything else.{w=0.3} Gaspard never hits it off so quickly with anyone, leave alone-"
-    am nulla ""
+    am nulla "Honnêtement, je suis plus surprise qu'autre chose.{w=0.3} Gaspard ne s'entend jamais aussi bien avec qui que ce soit, encore moins-"
 
 # game/scripts/story/story_00.rpy:588
 translate french story_00_meet_amina_2bc4c415:
 
     # am nulla "Ehm, nevermind that.{w=0.3} Come, I'll show you to our table."
-    am nulla ""
+    am nulla "Ehm, laissons tomber.{w=0.3} Viens, je vais vous montrer notre table."
 
 # game/scripts/story/story_00.rpy:589
 translate french story_00_meet_amina_4ffe9c73:
 
     # sh surprise "Uhm...{w=0.5} Sure.{w=0.3} Let me just-"
-    sh surprise ""
+    sh surprise "Uhm...{w=0.5} Bien sûr.{w=0.3} Laissez-moi juste-"
 
 # game/scripts/story/story_00.rpy:591
 translate french story_00_meet_amina_b5a904d9:
 
     # fr_x darko smile "<Counterorder, Amina.{w=0.3} I will show him to your table myself in a couple minutes.>"
-    fr_x darko smile ""
+    fr_x darko smile "<Contre-ordre, Amina.{w=0.3} Je vais lui montrer la table moi-même dans quelques minutes.>"
 
 # game/scripts/story/story_00.rpy:596
 translate french story_00_meet_amina_e789a115:
 
     # sh_i sweat surprise "(...!{w=0.5} That...{w=0.5} That voice...)"
-    sh_i sweat surprise ""
+    sh_i sweat surprise "(... !{w=0.5} Cette...{w=0.5} Cette voix...)"
 
 # game/scripts/story/story_00.rpy:610
 translate french story_00_meet_amina_8ea2d8d3:
 
     # sh_i nulla "(It's changed...{w=0.5} It carries something else.{w=0.3} So much else, compared to when we last met...{w=0.5} Yet, the timbre and cadence are...{w=0.5} Unmistakable, even through the filter of French.)"
-    sh_i nulla ""
+    sh_i nulla "(Elle a changée...{w=0.5} Elle porte autre chose.{w=0.3} Tellement d'autres choses, comparé à la dernière fois que nous nous sommes rencontrés...{w=0.5} Pourtant, le timbre et la cadence sont...{w=0.5} Indubitables, même à travers le filtre du français.)"
 
 # game/scripts/story/story_00.rpy:612
 translate french story_00_meet_amina_b2d2a9b3:
 
     # am nulla "{b}Francesco{/b}, you...{w=0.5} Scared me.{w=0.3} I didn't even hear you approach."
-    am nulla ""
+    am nulla "{b}Francesco{/b}, tu...{w=0.5} M'as fait peur.{w=0.3} Je ne t'ai même pas entendu approcher."
 
 # game/scripts/story/story_00.rpy:614
 translate french story_00_meet_amina_f787d6e1:
 
     # fr nulla "Oh, you know me, soft stepped and all.{w=0.3} And I guess I felt like surprising you~"
-    fr nulla ""
+    fr nulla "Oh, tu me connais, j'ai le pas doux et tout.{w=0.3} Et je suppose que j'avais envie de te surprendre~"
 
 # game/scripts/story/story_00.rpy:616
 translate french story_00_meet_amina_7160fa74:
 
     # fr nulla "Anyway, as I said:{w=0.3} pleeee~eeeeeease let me catch up a little with my best friend ever?{w=0.5} I only have a few minutes of freedom."
-    fr nulla ""
+    fr nulla "Bref, comme je l'ai dit :{w=0.3} s'il te plaîiiiiiiiiiiiiit, laisse-moi rattraper un peu le temps avec mon meilleur ami ?{w=0.5} Je n'ai que quelques minutes de liberté."
 
 # game/scripts/story/story_00.rpy:619
 translate french story_00_meet_amina_489857af:
 
     # am nulla "Fine by me.{w=0.3} See you at the table then, Shigeo."
-    am nulla ""
+    am nulla "Ça me va.{w=0.3} À bientôt à table, Shigeo."
 
 # game/scripts/story/story_00.rpy:625
 translate french story_00_meet_amina_2d31e6d2:
 
     # sh nulla "Your best friend ever, am I...?"
-    sh nulla ""
+    sh nulla "Ton meilleur ami, n'est-ce pas... ?"
 
 # game/scripts/story/story_00.rpy:627
 translate french story_00_meet_amina_57b4c7c1:
 
     # fr nulla "Always have been, man.{w=0.3} It's great to see you face to face again, after all these years."
-    fr nulla ""
+    fr nulla "Je l'ai toujours été, mec.{w=0.3} C'est génial de te revoir en face à face, après toutes ces années."
 
 # game/scripts/story/story_00.rpy:630
 translate french story_00_meet_amina_ff1b83c1:
 
     # sh nulla "Pfft, how can you say that with a straight face...?{w=0.3} I didn't even know you had gotten married!"
-    sh nulla ""
+    sh nulla "Pfft, comment peux-tu dire ça sans sourciller... ?{w=0.3} Je ne savais même pas que tu t'étais marié !"
 
 # game/scripts/story/story_00.rpy:632
 translate french story_00_meet_amina_0fb22eef:
 
     # fr nulla "Oh, believe me, I did you a favour!{w=0.3} The ceremony at the commune was {i}such{/i} a drag!{w=0.3} And it was all in French, mandatory!"
-    fr nulla ""
+    fr nulla "Oh, crois-moi, je t'ai rendu service !{w=0.3} La cérémonie à la commune était {i}tellement{/i} pénible !{w=0.3} Et tout était en français, obligatoire !"
 
 # game/scripts/story/story_00.rpy:634
 translate french story_00_meet_amina_82a5c404:
 
     # fr nulla "Last I remember, you couldn't stop complaining to me about the language."
-    fr nulla ""
+    fr nulla "La dernière fois dont je me souviens, tu n'arrêtais pas de te plaindre de la langue."
 
 # game/scripts/story/story_00.rpy:635
 translate french story_00_meet_amina_31d48409:
 
     # sh nulla "And I still could, for days...{w=0.5} But leave alone the wedding, you hadn't even told me you had gotten hitched!"
-    sh nulla ""
+    sh nulla "Et je pourrais encore, pendant des jours...{w=0.5} Mais laisse de côté la cérémonie, tu ne m'avais même pas dit que tu t'étais marié !"
 
 # game/scripts/story/story_00.rpy:637
 translate french story_00_meet_amina_9e03b5a1:
 
     # fr nulla "Whaaaaat?{w=0.5} I did tell you that dating was going pretty well, didn't I?"
-    fr nulla ""
+    fr nulla "Quoiiiii ?{w=0.5} Je t'avais bien dit que les rendez-vous se passaient plutôt bien, non ?"
 
 # game/scripts/story/story_00.rpy:639
 translate french story_00_meet_amina_ced662bc:
 
     # sh nulla "<Oh, you son of a bitch...!>{w=0.5} What's wrong with you?!"
-    sh nulla ""
+    sh nulla "<Oh, fils de chien... !>{w=0.5} Qu'est-ce qui ne va pas chez toi ?!"
 
 # game/scripts/story/story_00.rpy:641
 translate french story_00_meet_amina_19da28d8:
 
     # fr nulla "Oh, you have {i}no{/i} idea!"
-    fr nulla ""
+    fr nulla "Oh, tu n'as {i}pas{/i} idée !"
 
 # game/scripts/story/story_00.rpy:647
 translate french story_00_meet_amina_3aec3e4f:
 
     # sh nulla "Have you been well?{w=0.3} I can tell you're doing well for yourself romance-wise but what about the rest?"
-    sh nulla ""
+    sh nulla "Tu vas bien ?{w=0.3} Je peux dire que tu te débrouilles bien en ce qui concerne l'amour, mais qu'en est-il du reste ?"
 
 # game/scripts/story/story_00.rpy:648
 translate french story_00_meet_amina_727b5fb4:
 
     # fr nulla "Real good.{w=0.3} The in-laws are a bit much but, I can handle them.{w=0.3} I can handle most things that come my way, nowadays."
-    fr nulla ""
+    fr nulla "Très bien.{w=0.3} Les beaux-parents sont un peu trop, mais je peux les gérer.{w=0.3} Je peux gérer la plupart des choses qui se présentent à moi, de nos jours."
 
 # game/scripts/story/story_00.rpy:650
 translate french story_00_meet_amina_6f7b3c07:
 
     # fr nulla "And your parents?{w=0.3} How are they?"
-    fr nulla ""
+    fr nulla "Et tes parents ?{w=0.3} Comment vont-ils ?"
 
 # game/scripts/story/story_00.rpy:653
 translate french story_00_meet_amina_a2d5c467:
 
     # sh nulla "Better...{w=0.5} Dad's gotten over what happened in Rome, adjusted to his new post."
-    sh nulla ""
+    sh nulla "Mieux...{w=0.5} Père s'est remis de ce qui s'est passé à Rome, s'est adapté à son nouveau poste."
 
 # game/scripts/story/story_00.rpy:655
 translate french story_00_meet_amina_0520f64e:
 
     # sh nulla "Still not a word from mother.{w=0.3} But I still keep in contact with uncle's kids, she's doing fine."
-    sh nulla ""
+    sh nulla "Toujours pas un mot de mère.{w=0.3} Mais vu que je reste en contact avec les enfants de mon oncle, elle va bien."
 
 # game/scripts/story/story_00.rpy:656
 translate french story_00_meet_amina_aa2da2c8:
 
     # fr nulla "I see...{w=0.5} Man, it was so screwed up what happened with you and yours."
-    fr nulla ""
+    fr nulla "Je vois...{w=0.5} Mec, c'était tellement horrible ce qui est arrivé à toi et aux tiens."
 
 # game/scripts/story/story_00.rpy:658
 translate french story_00_meet_amina_2260b795:
 
     # sh nulla "No more screwed up than what happened to {i}you{/i} and yours...{w=0.5} But, we're still here."
-    sh nulla ""
+    sh nulla "Pas plus horrible que ce qui est arrivé à {i}toi{/i} et aux tiens...{w=0.5} Mais, nous sommes toujours là."
 
 # game/scripts/story/story_00.rpy:660
 translate french story_00_meet_amina_68e09601:
 
     # sh nulla "And I'd like to believe we're better for it."
-    sh nulla ""
+    sh nulla "Et j'aimerais croire que nous en sommes meilleurs."
 
 # game/scripts/story/story_00.rpy:664
 translate french story_00_meet_amina_50bcad35:
 
     # fr nulla "Are we, Shigeo?{w=0.3} Are we better for it?"
-    fr nulla ""
+    fr nulla "Vraiment, Shigeo ?{w=0.3} Sommes-nous meilleurs grâce à cela ?"
 
 # game/scripts/story/story_00.rpy:666
 translate french story_00_meet_amina_d666e12a:
 
     # sh nulla "That's the only grace given to us, when things happen that are outside our control...{w=0.5} Learning from them."
-    sh nulla ""
+    sh nulla "C'est la seule grâce qui nous est accordée, lorsque des choses se produisent qui sont hors de notre contrôle...{w=0.5} Apprendre d'elles."
 
 # game/scripts/story/story_00.rpy:668
 translate french story_00_meet_amina_3b17e727:
 
     # sh nulla "So we can protect ourselves better next time...{w=0.5} Or simply do better.{w=0.3} And we're going to do better, aren't we?"
-    sh nulla ""
+    sh nulla "Pour qu'on puisse mieux se protéger la prochaine fois...{w=0.5} Ou simplement faire mieux.{w=0.3} Et on va faire mieux, n'est-ce pas ?"
 
 # game/scripts/story/story_00.rpy:672
 translate french story_00_meet_amina_cf4b504f:
 
     # fr nulla "I knew it...{w=0.5} I made the right choice."
-    fr nulla ""
+    fr nulla "Je le savais...{w=0.5} J'ai fait le bon choix."
 
 # game/scripts/story/story_00.rpy:677
 translate french story_00_meet_amina_47e353b4:
 
     # sh nulla "Choice?{w=0.5} What choice?{w=0.3} Are you talking about inviting me?"
-    sh nulla ""
+    sh nulla "Choix ?{w=0.5} Quel choix ?{w=0.3} Tu parles de m'avoir inviter ?"
 
 # game/scripts/story/story_00.rpy:678
 translate french story_00_meet_amina_821223af:
 
     # fr nulla "Something like that...{w=0.5} Shigeo, I have been quite private about a lot of things since I moved to France, haven't I?"
-    fr nulla ""
+    fr nulla "Quelque chose comme ça...{w=0.5} Shigeo, j'ai été assez discret sur beaucoup de choses depuis que j'ai déménagé en France, n'est-ce pas ?"
 
 # game/scripts/story/story_00.rpy:680
 translate french story_00_meet_amina_c9db7455:
 
     # fr nulla "Thing is...{w=0.5} I got involved into some shit, man.{w=0.3} Some big stuff and...{w=0.5} I didn't know if it was fair to drag you into it."
-    fr nulla ""
+    fr nulla "Le truc, c'est que...{w=0.5} Je me suis retrouvé impliqué dans une merde, mec.{w=0.3} Des trucs importants et...{w=0.5} Je ne savais pas si c'était juste de t'y entraîner."
 
 # game/scripts/story/story_00.rpy:681
 translate french story_00_meet_amina_5b53b593:
 
     # sh nulla "Involved in some shit...?{w=0.5} Francesco, are you in trouble?"
-    sh nulla ""
+    sh nulla "Impliqué dans une merde...?{w=0.5} Francesco, as-tu des ennuis ?"
 
 # game/scripts/story/story_00.rpy:682
 translate french story_00_meet_amina_2bf1d095:
 
     # fr nulla "Not exactly...{w=0.5} But, it's fine now."
-    fr nulla ""
+    fr nulla "Pas exactement...{w=0.5} Mais, ça va maintenant."
 
 # game/scripts/story/story_00.rpy:684
 translate french story_00_meet_amina_4c74825d:
 
     # fr nulla "Now that you're here...{w=0.5} You're going to help me, aren't you?{w=0.3} You're gonna make it right."
-    fr nulla ""
+    fr nulla "Maintenant que tu es là...{w=0.5} Tu vas m'aider, n'est-ce pas ?{w=0.3} Tu vas arranger les choses."
 
 # game/scripts/story/story_00.rpy:685
 translate french story_00_meet_amina_b27e95bd:
 
     # sh nulla "Francesco, I don't understand.{w=0.3} Of course I'm going to help you but...{w=0.5} What's going on?"
-    sh nulla ""
+    sh nulla "Francesco, je ne comprends pas.{w=0.3} Bien sûr que je vais t'aider mais...{w=0.5} Que se passe-t-il ?"
 
 # game/scripts/story/story_00.rpy:686
 translate french story_00_meet_amina_5eed6678:
 
     # fr nulla "You'll see...{w=0.5} I'll make it all clear later."
-    fr nulla ""
+    fr nulla "Tu verras...{w=0.5} Je mettrai tout ça au clair plus tard."
 
 # game/scripts/story/story_00.rpy:688
 translate french story_00_meet_amina_be8b750b:
 
     # fr nulla "Just come find me, alright?{w=0.3} We'll have a heart to heart."
-    fr nulla ""
+    fr nulla "Viens me trouver, d'accord ?{w=0.3} On aura une conversation à cœur ouvert."
 
 # game/scripts/story/story_00.rpy:690
 translate french story_00_meet_amina_6d0d0d4b:
 
     # fr nulla "Now you should go.{w=0.3} We're actually about to show a little movie...{w=0.5} Be sure to pay attention, alright?{w=0.3} It's going to put you up to speed with what I've been doing with my life."
-    fr nulla ""
+    fr nulla "Maintenant tu devrais y aller.{w=0.3} En fait, nous sommes sur le point de montrer un petit film...{w=0.5} Fais bien attention, d'accord ?{w=0.3} Ça va te mettre au courant de ce que j'ai fait de ma vie."
 
 # game/scripts/story/story_00.rpy:691
 translate french story_00_meet_amina_def53087:
 
     # sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}fine, but...{w=0.5} Weren't you supposed to show me to my table?"
-    sh nulla ""
+    sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}d'accord, mais...{w=0.5} Tu n'étais pas censé me montrer ma table ?"
 
 # game/scripts/story/story_00.rpy:695
 translate french story_00_meet_amina_5c8c2a21:
 
     # fr nulla "Oh, crap, right!{w=0.3} Uhm, okay, see here..."
-    fr nulla ""
+    fr nulla "Oh, merde, c'est vrai !{w=0.3} Uhm, ok, regarde par ici..."
 
 # game/scripts/story/story_00.rpy:698
 translate french story_00_meet_amina_edacae2d:
 
     # fr nulla "See that table over there?{w=0.5} The only one with bottles of hard liquor?"
-    fr nulla ""
+    fr nulla "Tu vois cette table là-bas ?{w=0.5} La seule avec des bouteilles d'alcool fort ?"
 
 # game/scripts/story/story_00.rpy:699
 translate french story_00_meet_amina_f27a1c6f:
 
     # sh nulla "Yeah...?"
-    sh nulla "Oui...?"
+    sh nulla "Oui... ?"
 
 # game/scripts/story/story_00.rpy:701
 translate french story_00_meet_amina_aca2309f:
@@ -1748,13 +1748,13 @@ translate french story_00_meet_amina_aca2309f:
 translate french story_00_meet_amina_a9d98dfd:
 
     # sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}also, I see Amina sitting there?{w=0.3} You could've just pointed her out?"
-    sh nulla ""
+    sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}aussi, je vois Amina assise là ?{w=0.3} Tu aurais pu simplement la montrer du doigt ?"
 
 # game/scripts/story/story_00.rpy:705
 translate french story_00_meet_amina_5c8f5c40:
 
     # fr nulla "Now, Shigeo, where's the fun in being predictable?"
-    fr nulla ""
+    fr nulla "Voyons, Shigeo, où est le plaisir à être prévisible ?"
 
 # TODO: Translation updated at 2024-09-17 23:15
 
@@ -1762,73 +1762,73 @@ translate french story_00_meet_amina_5c8f5c40:
 translate french story_00_meet_amina_9be44b0a:
 
     # sh_i frown "(Francesco...{w=0.5} I wonder what happened to you, since we last saw each other.)"
-    sh_i frown ""
+    sh_i frown "(Francesco...{w=0.5} Je me demande ce qui t'est arrivé depuis la dernière fois que nous nous sommes vus.)"
 
 # game/scripts/story/story_00.rpy:717
 translate french story_00_meet_amina_f73b1b7f:
 
     # sh_i neutral "(You say that you've been well but you're asking for my help.{w=0.5} You're surrounded by people, new friends and acquaintances you've made over the years.{w=0.3} Getting married, gaining a new family...)"
-    sh_i neutral ""
+    sh_i neutral "(Tu dis que tu vas bien mais tu me demandes de l'aide.{w=0.5} Tu es entouré de gens, de nouveaux amis et de connaissances que tu t'es fait au fil des ans.{w=0.3} Se marier, fonder une nouvelle famille...)"
 
 # game/scripts/story/story_00.rpy:724
 translate french story_00_meet_amina_8f30c1f3:
 
     # sh_i surprise "(And yet you came to me for help?{w=0.3} You couldn't turn to any of the people in this room?)"
-    sh_i surprise ""
+    sh_i surprise "(Et pourtant tu es venu me demander de l'aide ?{w=0.3} Tu n'as pu te tourner vers aucune des personnes présentes dans cette pièce ?)"
 
 # game/scripts/story/story_00.rpy:726
 translate french story_00_meet_amina_33c7ff31:
 
     # fr nulla "Alright, this is the part of the evening I {i}dreaded{/i} the most...{w=0.5} The videooooooo."
-    fr nulla ""
+    fr nulla "Très bien, c'est la partie de la soirée que je {i}redoutais{/i} le plus...{w=0.5} La vidéooooooo."
 
 # game/scripts/story/story_00.rpy:730
 translate french story_00_meet_amina_df4d4793:
 
     # fr nulla "You know me!{w=0.3} You know I hate being the center of attention, which is saying something considering this is my wedding of all things!"
-    fr nulla ""
+    fr nulla "Vous me connaissez !{w=0.3} Vous savez que je déteste être le centre de l'attention, ce qui n'est pas peu dire étant donné que c'est mon mariage de toutes choses !"
 
 # game/scripts/story/story_00.rpy:732
 translate french story_00_meet_amina_a23f14df:
 
     # fr nulla "But a promise's a promise...{w=0.5} And we always keep our promises, don't we Delphine?{w=0.3} I love you."
-    fr nulla ""
+    fr nulla "Mais une promesse est une promesse...{w=0.5} Et nous tenons toujours nos promesses, n'est-ce pas Delphine ?{w=0.3} Je t'aime."
 
 # game/scripts/story/story_00.rpy:736
 translate french story_00_meet_amina_afad1d8b:
 
     # fr nulla "What you're about to see is going to serve two purposes.{w=0.3} First, it's going to introduce you to the rest of our lives going forward..."
-    fr nulla ""
+    fr nulla "Ce que vous allez voir va servir à deux fins.{w=0.3} D'abord, cela va vous présenter le reste de nos vies à venir..."
 
 # game/scripts/story/story_00.rpy:738
 translate french story_00_meet_amina_cd84c6cf:
 
     # fr nulla "Also, it will hopefully familiarize you with me a little more...{w=0.5} I know that some of you are still a bit wary, on account of not knowing much of my life past the academics."
-    fr nulla ""
+    fr nulla "Aussi, j'espère que cela vous familiarisera un peu plus avec moi-même...{w=0.5} Je sais que certains d'entre vous sont encore un peu méfiants, car ils ne connaissent pas grand-chose de ma vie au-delà des études."
 
 # game/scripts/story/story_00.rpy:740
 translate french story_00_meet_amina_3d87ec53:
 
     # fr nulla "I'm sure this will assauge at least some of your curiosity.{w=0.3} And if afterwards you're still curious, you can seek out that guy over there for more information!"
-    fr nulla ""
+    fr nulla "Je suis sûr que cela apaisera au moins une partie de votre curiosité.{w=0.3} Et si après vous êtes toujours curieux, vous pouvez rechercher ce type là-bas pour plus d'informations !"
 
 # game/scripts/story/story_00.rpy:742
 translate french story_00_meet_amina_18d4ce78:
 
     # sh_i surprise sweat "(...!{w=0.3} He's pointing my way.)"
-    sh_i surprise sweat ""
+    sh_i surprise sweat "(... !{w=0.3} Il me pointe du doigt.)"
 
 # game/scripts/story/story_00.rpy:744
 translate french story_00_meet_amina_6c1ca4db:
 
     # fr nulla "Shigeo Arata...{w=0.5} The other great unknown of the evening.{w=0.3} We go way back.{w=0.3} Since childhood, actually...{w=0.5} And, honestly?"
-    fr nulla ""
+    fr nulla "Shigeo Arata...{w=0.5} L'autre grand inconnu de la soirée.{w=0.3} On se connaît depuis longtemps.{w=0.3} Depuis l'enfance, en fait...{w=0.5} Et, honnêtement ?"
 
 # game/scripts/story/story_00.rpy:746
 translate french story_00_meet_amina_a606286e:
 
     # fr nulla "I wouldn't be here right now, if it wasn't for him...{w=0.5} He and his family are the reason why today's events are possible to begin with."
-    fr nulla ""
+    fr nulla "Je ne serais pas ici en ce moment, si ce n'était pas pour lui...{w=0.5} Lui et sa famille sont la raison pour laquelle les événements d'aujourd'hui sont possibles pour commencer."
 
 # game/scripts/story/story_00.rpy:747
 translate french story_00_meet_amina_b58a8f6c:
@@ -1840,43 +1840,43 @@ translate french story_00_meet_amina_b58a8f6c:
 translate french story_00_meet_amina_ffa0dcdc:
 
     # sh laugh sweatdrop "Well, uhm...{w=0.5} He's exaggerating, we just...{w=0.5} Gave Francesco a hand when he needed us."
-    sh laugh sweatdrop ""
+    sh laugh sweatdrop "Eh bien, uhm...{w=0.5} Il exagère, on a juste...{w=0.5} Donné un coup de main à Francesco quand il avait besoin de nous."
 
 # game/scripts/story/story_00.rpy:750
 translate french story_00_meet_amina_b141714f:
 
     # fr nulla "So keep that in mind for the rest of the evening...{w=0.5} If you want to know about Francesco Colombo, you'd better watch out for Shigeo Arata!"
-    fr nulla ""
+    fr nulla "Alors gardez ça à l'esprit pour le reste de la soirée...{w=0.5} Si vous voulez en savoir plus sur Francesco Colombo, vous feriez mieux de faire attention à Shigeo Arata !"
 
 # game/scripts/story/story_00.rpy:753
 translate french story_00_meet_amina_1f7b9c50:
 
     # fr nulla "But that's enough stalling...{w=0.5} We have a video to get to.{w=0.3} Lights, please!"
-    fr nulla ""
+    fr nulla "Mais ça suffit de gagner du temps...{w=0.5} Nous devons nous rendre à une vidéo.{w=0.3} Lumières, s'il vous plaît !"
 
 # game/scripts/story/story_00.rpy:759
 translate french story_00_meet_amina_854912d0:
 
     # ha neutral ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha?"
-    ha neutral ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha?"
+    ha neutral ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha ?"
 
 # game/scripts/story/story_00.rpy:760
 translate french story_00_meet_amina_589f90f9:
 
     # ta neutral "Yes, professor?"
-    ta neutral "Oui, professeur ?"
+    ta neutral "Oui, Professeur ?"
 
 # game/scripts/story/story_00.rpy:769
 translate french story_00_meet_amina_45322549:
 
     # ha nulla "I have a new {nw}"
-    ha nulla ""
+    ha nulla "J'ai une nouvelle {nw}"
 
 # game/scripts/story/story_00.rpy:771
 translate french story_00_meet_amina_386c4502:
 
     # extend "{b}directive{/b} for you."
-    extend ""
+    extend "{b}directive{/b} pour toi."
 
 # TODO: Translation updated at 2024-09-19 21:30
 
@@ -1898,5 +1898,5 @@ translate french story_00_invitation_0201c8e5:
 translate french story_00_meet_amina_8c37d57a:
 
     # ha neutral traglasses ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha?"
-    ha neutral traglasses ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha?"
+    ha neutral traglasses ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha ?"
 
