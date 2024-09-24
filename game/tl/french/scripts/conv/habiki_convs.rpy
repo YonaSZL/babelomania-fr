@@ -124,7 +124,7 @@ translate french habiki_01_tabitha_c504f797:
 translate french habiki_01_tabitha_8e010e7d:
 
     # ha nulla "But the drive to the château was quite long and tiring...{w=0.5} Hence the need to indulge.{w=0.3} But I fear that I could not persuade Tabitha to fully close the door."
-    ha nulla "Mais le trajet jusqu'au château a été assez long et fatigant...{w=0.5} D'où la nécessité de se faire plaisir.{w=0.3} Mais je crains de ne pas avoir pu persuader Tabatha de fermer complètement la porte."
+    ha nulla "Mais le trajet jusqu'au château a été assez long et fatigant...{w=0.5} D'où la nécessité de se faire plaisir.{w=0.3} Mais je crains de ne pas avoir pu persuader Tabitha de fermer complètement la porte."
 
 # game/scripts/conv/habiki_convs.rpy:54
 translate french habiki_01_tabitha_8648360c:
@@ -154,7 +154,7 @@ translate french habiki_01_tabitha_642b3c30:
 translate french habiki_01_tabitha_1f5c4ae2:
 
     # sh frown ".{w=0.3}.{w=0.3}.{w=0.5}fine.{w=0.3} As long as you can actually control it."
-    sh frown ".{w=0.3}.{w=0.3}.{w=0.5}très bien.{w=0.3} Tant que vous pouvez la maîtriser."
+    sh frown ".{w=0.3}.{w=0.3}.{w=0.5} Très bien.{w=0.3} Tant que vous pouvez la maîtriser."
 
 # game/scripts/conv/habiki_convs.rpy:63
 translate french habiki_01_tabitha_644a2a0a:
@@ -250,7 +250,7 @@ translate french habiki_01_wedding_75ec83b3:
 translate french habiki_01_wedding_5211b2b5:
 
     # sh neutral ".{w=0.3}.{w=0.3}.{w=0.5}Francesco is my childhood friend.{w=0.3} We grew up together."
-    sh neutral ".{w=0.3}.{w=0.3}.{w=0.5}Francesco est mon ami d'enfance.{w=0.3} Nous avons grandi ensemble."
+    sh neutral ".{w=0.3}.{w=0.3}.{w=0.5} Francesco est mon ami d'enfance.{w=0.3} Nous avons grandi ensemble."
 
 # game/scripts/conv/habiki_convs.rpy:101
 translate french habiki_01_wedding_d47daa85:
@@ -268,7 +268,7 @@ translate french habiki_01_wedding_c66eac4b:
 translate french habiki_01_wedding_cc7424bb:
 
     # ha nulla ".{w=0.3}.{w=0.3}.{w=0.5}not exactly wrong, just...{w=1.0} Nevermind."
-    ha nulla ".{w=0.3}.{w=0.3}.{w=0.5}ce n'est pas exactement un problème, c'est juste...{w=1.0} Peu importe."
+    ha nulla ".{w=0.3}.{w=0.3}.{w=0.5} Ce n'est pas exactement un problème, c'est juste...{w=1.0} Peu importe."
 
 # game/scripts/conv/habiki_convs.rpy:106
 translate french habiki_01_wedding_227a3333:
@@ -332,7 +332,7 @@ translate french habiki_01_wedding_d3e84bc7:
 translate french habiki_01_habiki_2123ee23:
 
     # sh smile ".{w=0.3}.{w=0.3}.{w=0.5}fair enough.{w=0.5} But considering the century we live in, you mean to tell me I won't find that out just by looking up 'japanese professor with Android' on a search engine?"
-    sh smile ".{w=0.3}.{w=0.3}.{w=0.5}très juste.{w=0.5} Mais vu le siècle dans lequel nous vivons, vous voulez me dire que je ne le saurais pas en cherchant 'professeur japonais avec androïde' sur un moteur de recherche ?"
+    sh smile ".{w=0.3}.{w=0.3}.{w=0.5} Très juste.{w=0.5} Mais vu le siècle dans lequel nous vivons, vous voulez me dire que je ne le saurais pas en cherchant 'professeur japonais avec androïde' sur un moteur de recherche ?"
 
 # game/scripts/conv/habiki_convs.rpy:112
 translate french habiki_01_tabitha_a958570e:
@@ -396,7 +396,7 @@ translate french habiki_01_habiki_b7cc1033:
 translate french habiki_01_habiki_3d9abc8c:
 
     # sh smile ".{w=0.3}.{w=0.3}.{w=0.5}fair enough.{w=0.5} But considering the century we live in, you mean to tell me I won't find that out just by looking up 'Japanese professor with Android' on a search engine?"
-    sh smile ".{w=0.3}.{w=0.3}.{w=0.5}très juste.{w=0.5} Mais vu le siècle dans lequel nous vivons, vous voulez me dire que je ne le saurais pas en cherchant 'professeur japonais avec androïde' sur un moteur de recherche ?"
+    sh smile ".{w=0.3}.{w=0.3}.{w=0.5} Très juste.{w=0.5} Mais vu le siècle dans lequel nous vivons, vous voulez me dire que je ne le saurais pas en cherchant 'professeur japonais avec androïde' sur un moteur de recherche ?"
 
 # game/scripts/conv/habiki_convs.rpy:167
 translate french habiki_01_wedding_6e6a59e2:
