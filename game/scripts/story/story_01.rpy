@@ -604,7 +604,7 @@ label story_01_library:
     with Reveal3
     pause 1.5
     sh neutral "A big library...{w=0.5} With a twin door on the other side."
-    am surprise "Must lead to the other room that we couldn't open."
+    am surprise "Must lead to the other room we couldn't open."
     ga frown "<Hmm...{w=0.5} Makes sense...>"
     sh neutral "Let's look around, then.{w=0.3} Gaspard, Amina, you can search the left side.{w=0.3} I will take the other half of the room."
     am neutral "Understood.{w=0.3} Gaspard, mind taking the corner library?{w=0.3} Your smartphone has a stronger flash than mine."
@@ -614,3 +614,77 @@ label story_01_library:
     scene black
     show screen taisho_1f_library_explore_01_base
     call screen taisho_1f_library_explore_01 with Reveal
+
+label story_01_gaspard_gone:
+    $ renpy.block_rollback()
+    pause 1.0
+    play sound4 "audio/sfx/gui_spook.ogg"
+    pause 0.5
+    play music "audio/bgm/shadows_breathe.ogg"
+    am surprise sweat "Ga...{w=0.5} Gaspard?!"
+    sh surprise sweat "Where...?!{w=0.3} Gaspard!"
+    pause 1.0
+    scene black
+    hide screen taisho_1f_library_explore_01_base
+    hide screen taisho_1f_library_explore_01
+    show taisho_1f_library_base:
+        xalign 0.0
+    show darkness_layers
+    show Amina surprise sweat at am_big:
+        xalign 0.3
+    show Shigeo surprise sweat at sh_big:
+        xalign 0.7
+    with dissolve
+    am nulla "He's...{w=0.5} He's {i}gone{/i}?!{w=0.3} How can he be gone?!"
+    sh nulla "I...{w=0.5} I didn't notice...{w=0.5} Did you-?!"
+    am nulla "No!{w=0.3} I was looking around the room and...?!{w=0.3} Where is he?!"
+    show Amina sad
+    show Shigeo frown
+    am nulla "GASPARD!{w=0.3} GAS-{nw}"
+    play sound3 "audio/se/door_slam.ogg"
+    pause 0.2
+    show Amina shock
+    show Shigeo shock
+    show screen emote("surprise",0.61,0.05)
+    show screen emote2("surprise",0.33,0.05)
+    $ taisho_1f_library_explore_01 += 1
+    pause 1.5
+    scene black
+    show screen taisho_1f_library_explore_01_base
+    hide Amina
+    hide Shigeo
+    with dissolve
+    pause 1.5
+    am sad sweat "{cps=10}Ga...{w=0.5} Gaspard...?"
+    pause 1.0
+    $ renpy.block_rollback()
+    call screen taisho_1f_library_explore_01
+
+label story_01_gaspard_found:
+    pause 1.0
+    scene black
+    hide screen taisho_1f_library_explore_01_base
+    hide screen taisho_1f_library_explore_01
+    with Reveal3
+    pause 1.0
+    scene gaspard_turn_00
+    show dark_flashlight
+    with Reveal3
+    pause 1.5
+    am surprise sweat "Gaspard?!{w=0.3} <Ya Allah, are you hurt?!>"
+    sh_i surprise sweat "(.{w=0.3}.{w=0.3}.{w=0.5}what...?)"
+    am sad sweat "<Gaspard, answer me!{w=0.3} Are you->{nw}"
+    play sound "audio/se/whoosh_fast.ogg"
+    show screen emote("surprise",0.17,0.5)
+    sh shock sweat "Stop!{w=0.3} Don't get close to him!"
+    play sound4 "audio/em/em_shock.ogg"
+    show screen emote("surprise",0.17,0.5)
+    am shock sweat "...!{w=0.3} But Gaspard...?!"
+    play sound4 "audio/em/em_impact.ogg"
+    sh angry sweat "STAY BACK, I SAID!"
+    am shock sweat "But...{w=0.5} But why?!"
+    stop music fadeout 3.5
+    pause 1.5
+    sh frown sweat ".{w=0.3}.{w=0.3}.{w=0.5}something's wrong."
+    pause 1.5
+    call screen taisho_1f_library_gaspard_scare
