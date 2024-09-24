@@ -617,6 +617,7 @@ label story_01_library:
 
 label story_01_gaspard_gone:
     $ renpy.block_rollback()
+    $ flashlight_consume = False
     pause 1.0
     play sound4 "audio/sfx/gui_spook.ogg"
     pause 0.5
@@ -661,6 +662,7 @@ label story_01_gaspard_gone:
     call screen taisho_1f_library_explore_01
 
 label story_01_gaspard_found:
+    $ renpy.block_rollback()
     pause 1.0
     scene black
     hide screen taisho_1f_library_explore_01_base
@@ -688,3 +690,7 @@ label story_01_gaspard_found:
     sh frown sweat ".{w=0.3}.{w=0.3}.{w=0.5}something's wrong."
     pause 1.5
     call screen taisho_1f_library_gaspard_scare
+
+label taisho_1f_library_gaspard_face:
+    $ renpy.block_rollback()
+    pause 1.5

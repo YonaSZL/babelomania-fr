@@ -366,3 +366,66 @@ label exp_taisho_1f_library_01_bonsai:
     pause 1.0
     $ taisho_1f_library_explore_01_sensitive = True
     call screen taisho_1f_library_explore_01
+
+
+default taisho_1f_library_gaspard_arm = False
+default taisho_1f_library_gaspard_shoulder = False
+
+screen taisho_1f_library_gaspard_scare():
+
+    tag exploration
+
+        button:
+            pos(50,729)
+            xysize(563,351)
+            background None
+            hover_sound "audio/sfx/gui_hover.ogg"
+            activate_sound "audio/sfx/gui_confirm.ogg"
+            action Jump("taisho_1f_library_gaspard_arm")
+            tooltip _("?????")
+        button:
+            pos(1332,76)
+            xysize(258,286)
+            background None
+            hover_sound "audio/sfx/gui_hover.ogg"
+            activate_sound "audio/sfx/gui_confirm.ogg"
+            action Jump("taisho_1f_library_gaspard_shoulder")
+            tooltip _("?????")
+
+        if taisho_1f_library_gaspard_arm and taisho_1f_library_gaspard_shoulder:
+            button:
+                pos(767,126)
+                xysize(264,217)
+                background None
+                hover_sound "audio/sfx/gui_hover.ogg"
+                activate_sound "audio/sfx/gui_confirm.ogg"
+                action Jump("taisho_1f_library_gaspard_face")
+                tooltip _("?????")
+
+    $ tooltip = GetTooltip()
+
+    nearrect:
+        focus "tooltip"
+        prefer_top True
+
+        frame:
+            xalign 0.5
+            text "[tooltip]"
+
+label taisho_1f_library_gaspard_arm:
+    $ renpy.block_rollback()
+    pause 0.5
+    
+    pause 1.0
+    if taisho_1f_library_gaspard_arm == False:
+        $ taisho_1f_library_gaspard_arm = True
+    call screen taisho_1f_library_gaspard_scare
+
+label taisho_1f_library_gaspard_shoulder:
+    $ renpy.block_rollback()
+    pause 0.5
+    
+    pause 1.0
+    if taisho_1f_library_gaspard_shoulder == False:
+        $ taisho_1f_library_gaspard_shoulder = True
+    call screen taisho_1f_library_gaspard_scare
