@@ -686,6 +686,7 @@ label story_01_gaspard_found:
     sh angry sweat "STAY BACK, I SAID!"
     am shock sweat "But...{w=0.5} But why?!"
     stop music fadeout 3.5
+    stop LoNoise fadeout 3.5
     pause 1.5
     sh frown sweat ".{w=0.3}.{w=0.3}.{w=0.5}something's wrong."
     pause 1.5
@@ -693,4 +694,130 @@ label story_01_gaspard_found:
 
 label taisho_1f_library_gaspard_face:
     $ renpy.block_rollback()
+    $ inventory_show = False
+    $ time_menu = False
+    $ stat1_show = False
     pause 1.5
+    sh frown sweat ".{w=0.3}.{w=0.3}.{w=0.5}Gaspard?"
+    pause 2.0
+    play sound "audio/se/glitch_short.ogg"
+    scene gaspard_turn_00
+    show dark_flashlight
+    with glitch_load
+    pause 1.5
+    play sound "audio/se/breath_reveal.ogg"
+    scene gaspard_turn_01
+    show dark_flashlight
+    with dissolve
+    pause 1.0
+    scene gaspard_turn_02
+    show dark_flashlight
+    with dissolve
+    pause 1.0
+    scene gaspard_turn_03
+    show dark_flashlight
+    with dissolve
+    pause 3.0
+    play sound4 "audio/se/gaspard_voice.ogg"
+    scene gaspard_turn_04
+    show dark_flashlight
+    with quick_dissolve
+    pause 0.5
+    play music "audio/bgm/sanity_glitch.ogg"
+    pause 1.0
+    scene white with dissolve
+    pause 1.5
+    show taisho_1f_library_base:
+        xalign 0.0
+    show dark_flashlight
+    show Amina shock sweat at am_big:
+        xalign 0.3
+    show Shigeo shock sweat at sh_big:
+        xalign 0.7
+    am nulla "G-{w=0.15}GASPARD?!"
+    play sound4 "audio/se/whoosh_heavy.ogg"
+    show Shigeo angry
+    sh nulla "AMINA, RUN!"
+    show Amina fear
+    pause 1.0
+    hide Amina
+    hide Shigeo
+    with dissolve
+    play sound3 "audio/se/steps_wood_run.ogg"
+    show taisho_1f_library_base:
+        linear 2.0 xalign 0.5
+    sh_i angry sweat "(What is happening?!{w=0.3} WHAT THE FUCK DID JUST HAPPEN?!)"
+    play sound4 "audio/se/gaspard_voice.ogg"
+    pause 0.5
+    am shock sweat "SHIGEO, WATCH-!"
+    sh surprise sweat "...!"
+    play sound2 "audio/se/door_fist.ogg"
+    show taisho_1f_library_base with blood:
+        xalign 0.5
+        easeout 0.2 xalign 1.0
+    pause 0.1
+    play sound3 "audio/se/glass_smash.ogg"
+    pause 0.5
+    sh shock sweat "UUUUUGH!!"
+    am shock sweat "AAAAAAAAAAAH!!!"
+    sh_i pain sweat "(Fast...{w=0.5} So fast...{w=0.5} I didn't...)"
+    play sound2 "audio/se/gaspard_voice.ogg"
+    am angry sweat "L-{w=0.15}Leave him alone!{w=0.3} GASPARD, STOP!"
+    sh pain sweat "Amina, no...{w=0.5} Run...{w=0.5} While he's...!"
+    play sound "audio/se/door_fist.ogg"
+    am pain sweat "AAAAAAH!{nw}"
+    play sound2 "audio/se/glass_smash.ogg"
+    pause 1.0
+    sh angry sweat "FUCKING...!{w=0.3} BASTARD...!"
+    sh pain sweat "Ugh...!"
+    scene black with dissolve
+    pause 0.5
+    scene taisho_1f_library_base:
+        xalign 1.0
+    show dark_flashlight
+    with dissolve
+    sh_i pain sweat "(Vision...{w=0.5} Swimming...!{w=0.3} He got me good...)"
+    pause 0.5
+    scene black with Reveal
+    pause 1.0
+    sh_i pain sweat "(No...{w=0.5} NononononoNONOGET UP!{w=0.3} MOVE!{w=0.3} THINK!)"
+    play sound4 "audio/em/em_impact.ogg"
+    sh_i angry sweat "(OPEN YOUR FUCKING EYES!{w=0.3} FIGHT!{w=0.3} GET UP!)"
+    pause 1.5
+    scene gaspard_focus_01 with Reveal3
+    play sound2 "audio/se/gaspard_voice.ogg"
+    sh_i angry sweat "\"GET UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUP...!!!\""
+    pause 1.0
+    stop music fadeout 0.3
+    pause 0.5
+    play sound "audio/sfx/gui_hint.ogg"
+    scene gaspard_focus_02
+    pause 1.5
+    sh surprise sweat "...what?"
+    $ renpy.block_rollback()
+    $ quick_menu = False
+    play music "audio/bgm/babelomania.ogg"
+    pause 3.0
+    scene gaspard_rip with Reveal5
+    pause 3.0
+    scene gaspard_focus_01 with glitch_load
+    pause 1.5
+    scene gaspard_focus_02 with glitch_load
+    pause 0.5
+    scene gaspard_rip with glitch_load
+    pause 0.1
+    scene gaspard_focus_01 with glitch_load
+    pause 0.1
+    scene gaspard_focus_02 with glitch_load
+    pause 0.1
+    scene gaspard_tear with bloodo
+    pause 5.0
+    scene black with Reveal5
+    pause 2.0
+    scene main_menu_bg_logo with Reveal3
+    pause 1.0
+    scene thank_you_for_playing with Reveal3
+    pause 7.0
+    stop music fadeout 4.5
+    scene black with Reveal5
+    jump splashscreen

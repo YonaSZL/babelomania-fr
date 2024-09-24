@@ -1900,3 +1900,11 @@ translate french story_00_meet_amina_8c37d57a:
     # ha neutral traglasses ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha?"
     ha neutral traglasses ""
 
+# TODO: Translation updated at 2024-09-25 01:30
+
+# game/scripts/story/story_00.rpy:595
+translate french story_00_meet_amina_cf9f4c61:
+
+    # fr_x darko neutral "<Counterorder, Amina.{w=0.3} I will show him to your table myself in a couple minutes.>"
+    fr_x darko neutral ""
+

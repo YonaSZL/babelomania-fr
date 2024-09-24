@@ -74,7 +74,7 @@ screen about():
                 label _("{size=35}PRODUCER, DIRECTOR") yalign 0.5
                 text "{a=https://nicanjil.carrd.co/}\"Meinos Kaen\"{/a}" xoffset 15 yalign 0.5
             vbox:
-                label ("{size=35}PROGRAMMERS") yalign 0.5
+                label _("{size=35}PROGRAMMERS") yalign 0.5
                 text "\"Meinos Kaen\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}BACKGROUND ARTISTS") yalign 0.5

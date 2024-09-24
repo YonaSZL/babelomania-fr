@@ -80,6 +80,8 @@ define tb_n2 = Character(_("Fashionable Invitee"), what_prefix='\"', what_suffix
 ##User Defined Transitions
 
 define flash = Fade(0.1, 0.0, 0.5, color="#fff")
+define blood = Fade(0.1, 0.0, 0.1, color="#8A0707")
+define bloodo = Fade(0.1, 3.0, 3.0, color="#8A0707")
 
 define Reveal = Dissolve(2.0, alpha=False, time_warp=None)
 define Reveal3 = Dissolve(3.0, alpha=False, time_warp=None)

@@ -375,32 +375,32 @@ screen taisho_1f_library_gaspard_scare():
 
     tag exploration
 
-        button:
-            pos(50,729)
-            xysize(563,351)
-            background None
-            hover_sound "audio/sfx/gui_hover.ogg"
-            activate_sound "audio/sfx/gui_confirm.ogg"
-            action Jump("taisho_1f_library_gaspard_arm")
-            tooltip _("?????")
-        button:
-            pos(1332,76)
-            xysize(258,286)
-            background None
-            hover_sound "audio/sfx/gui_hover.ogg"
-            activate_sound "audio/sfx/gui_confirm.ogg"
-            action Jump("taisho_1f_library_gaspard_shoulder")
-            tooltip _("?????")
+    button:
+        pos(50,729)
+        xysize(563,351)
+        background None
+        hover_sound "audio/sfx/gui_hover.ogg"
+        activate_sound "audio/sfx/gui_confirm.ogg"
+        action Jump("taisho_1f_library_gaspard_arm")
+        tooltip _("?????")
+    button:
+        pos(1332,76)
+        xysize(258,286)
+        background None
+        hover_sound "audio/sfx/gui_hover.ogg"
+        activate_sound "audio/sfx/gui_confirm.ogg"
+        action Jump("taisho_1f_library_gaspard_shoulder")
+        tooltip _("?????")
 
-        if taisho_1f_library_gaspard_arm and taisho_1f_library_gaspard_shoulder:
-            button:
-                pos(767,126)
-                xysize(264,217)
-                background None
-                hover_sound "audio/sfx/gui_hover.ogg"
-                activate_sound "audio/sfx/gui_confirm.ogg"
-                action Jump("taisho_1f_library_gaspard_face")
-                tooltip _("?????")
+    if taisho_1f_library_gaspard_arm and taisho_1f_library_gaspard_shoulder:
+        button:
+            pos(767,126)
+            xysize(264,217)
+            background None
+            hover_sound "audio/sfx/gui_hover.ogg"
+            activate_sound "audio/sfx/gui_confirm.ogg"
+            action Jump("taisho_1f_library_gaspard_face")
+            tooltip _("?????")
 
     $ tooltip = GetTooltip()
 
@@ -415,7 +415,8 @@ screen taisho_1f_library_gaspard_scare():
 label taisho_1f_library_gaspard_arm:
     $ renpy.block_rollback()
     pause 0.5
-    
+    sh_i frown sweat "(That table is...{w=0.5} It's solid mahogany.{w=0.3} And yet, he...{w=0.5} Barehanded?{w=0.3} With his fingernails?)"
+    sh_i angry sweat "(No, those cannot be called fingers anymore...{w=0.5} What are those veins?{w=0.3} Why are they...?!)"
     pause 1.0
     if taisho_1f_library_gaspard_arm == False:
         $ taisho_1f_library_gaspard_arm = True
@@ -424,7 +425,8 @@ label taisho_1f_library_gaspard_arm:
 label taisho_1f_library_gaspard_shoulder:
     $ renpy.block_rollback()
     pause 0.5
-    
+    sh_i surprise sweat "(His clothes...{w=0.5} Was he attacked?{w=0.3} No.)"
+    sh_i shock sweat "(His shoulder, it...{w=0.3} What happened to his body?!)"
     pause 1.0
     if taisho_1f_library_gaspard_shoulder == False:
         $ taisho_1f_library_gaspard_shoulder = True
