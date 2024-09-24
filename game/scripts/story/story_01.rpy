@@ -602,6 +602,6 @@ label story_01_library:
     am neutral "Understood.{w=0.3} Gaspard, mind taking the corner library?{w=0.3} Your smartphone has a stronger flash than mine."
     ga frown sweat "<Corner...{w=0.5} Sure.{w=0.3} Sure.>"
     pause 1.0
-    scene taisho_1f_library_base
-    show darkness_layers
-    
+    scene black
+    show screen taisho_1f_library_explore_01
+    with Reveal
