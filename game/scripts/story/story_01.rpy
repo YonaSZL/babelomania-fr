@@ -385,4 +385,90 @@ label story_01_taisho_side_meet:
     am neutral "<Just be glad it wasn't stagnant.{w=0.3} It did come from a flower vase, after all.>"
     ga surprise "<With fake flowers...?{w=0.5} Why?>"
     am smile "<I don't know.{w=0.3} Authenticity?>"
+    pause 1.5
+    ga neutral "<Heh.{w=0.3} Of all the wasted effort on appearances...>"
+    am smile "<What's that expression in English...?{w=0.5}> 'Game recognizes game'."
     pause 1.0
+    scene taisho_1f_side_meet_base
+    show darkness_layers
+    show Amina neutral at am_big:
+        xalign 0.85
+    show Gaspard neutral sweat at ga_big:
+        xalign 0.5 yoffset 300
+    with Reveal
+    pause 0.5
+    am nulla "<And to be clear...{w=0.5} I'm not talking about you only.>"
+    ga nulla "<Hm.{w=0.3} Finally ready to admit it out loud, then?>"
+    show Amina smile
+    am nulla "<Very vague...{w=0.5} There's a lot of 'it' we're been holding back on.>"
+    show Gaspard laugh
+    ga nulla "<Fair...{w=0.5} I was mainly talking about the fact that you've been dating me to keep daddy happy.>"
+    show Amina neutral
+    am nulla "<Maybe so...{w=0.5} Are you ready to admit that you've been dating me just to piss off yours?>"
+    pause 1.0
+    show Gaspard frown with dissolve
+    ga nulla "<It's not the only reason.>"
+    show Amina surprise
+    am nulla "<Oh, isn't it?{w=0.5} What else is there, then?>"
+    show Gaspard laugh
+    ga nulla "<I'll admit that the subtle twitch of my father's brow the first time I brought you to a family function was...{w=0.5} Titillating.>"
+    show Gaspard neutral
+    ga nulla "<But you're much more than just a stone in the water.{w=0.3} You're crazy smart, Amina.{w=0.3} You're ambitious.{w=0.3} You'll go far and you're a connection worth having, no matter the type.>"
+    pause 1.0
+    show Amina sad with dissolve
+    am nulla "<Gaspard, saying that you've been dating me for my potential is not exactly...{w=0.5} Nice.>"
+    show Gaspard frown
+    ga nulla "<Oh, come off it.{w=0.3} The benefit of making your family fit in certain circles by reflection is also potential.{w=0.3} That's what you've been seeking.>"
+    show Amina frown
+    am nulla "<Fine.{w=0.3} But I've been loyal throughout everything, nonetheless.{w=0.3} Don't think I didn't notice you and that bridesmaid just so happened to come back one after the other.{w=0.3} Don't think I never noticed the others.>"
+    show Gaspard neutral
+    ga nulla "<Really, now?{w=0.3} May I remind you that emotional affairs count, too?>"
+    pause 1.5
+    show Amina sad with dissolve
+    am nulla "<We both went into this relationship already checked out, didn't we?>"
+    show Gaspard frown -sweat
+    ga nulla "<Things that happen when all you do is think about the next step in the plan...{w=0.5} That's the thing that brought us together in the first place, isn't it?>"
+    show Amina neutral
+    ga nulla "<A spasmodic need to finally, one day, have complete control over everything about ourselves and around ourselves...{w=0.5} That doesn't really leave a lot of space to consider someone else an equal.>"
+    am nulla "<.{w=0.3}.{w=0.3}.{w=0.5}we can talk more about this when we're out of this situation.{w=0.3} For what it matters, Gaspard?{w=0.5} I don't think you're a {i}total{/i} ass.>"
+    show Amina surprise
+    am nulla "<Are you feeling better, now?>"
+    show Gaspard neutral
+    ga nulla "<Oh, such praise...{w=0.5} And yeah, I'm feeling better.{w=0.3} Just a little ringing in my ears but the water helped.>"
+    show Gaspard frown
+    ga nulla "<We should go see if the Italian has managed to figure a way out of here...>"
+    am nulla "<I have a feeling you don't like Shigeo that much...{w=0.5} But you're the one who invited him to our table.>"
+    show Gaspard neutral
+    ga nulla "<Oh, that?{w=0.3} That's because he saw me and, most likely, the bridesmaid leaving the bathrooms.{w=0.3} Keep your liabilities close, know what I mean?>"
+    show Amina neutral
+    show Gaspard frown
+    ga nulla "<And it's not that I don't like him, it's just...{w=0.5} I knew everyone at this wedding, and if I didn't, I knew {i}of{/i} them...{w=0.5} But this guy is a complete unknown.>"
+    show Gaspard neutral
+    ga nulla "<Not exactly a calming presence for a control freak, wouldn't you say?>"
+    show Amina smile
+    am nulla "<Moron.>"
+    pause 1.0
+    show Gaspard frown
+    ga nulla "<And, Amina...{w=0.5} For what it's worth?{w=0.3} I'm sorry.{w=0.3} And thank you.>"
+    show Amina neutral
+    am nulla "<.{w=0.3}.{w=0.3}.{w=0.5}I'm sorry too.{w=0.3} Let me help you up.>"
+    $ move_time(0,6)
+    sh neutral "<How is he?>"
+    show Gaspard surprise
+    show Amina surprise
+    pause 0.5
+    play music "audio/bgm/shadows_whisper.ogg"
+    show Amina neutral
+    show Gaspard frown
+    with dissolve
+    am nulla "Better.{w=0.3} Have you made any progress?"
+    sh neutral "Sort of...{w=0.5} I have a plan, actually."
+    pause 1.0
+    scene taisho_1f_side_meet_base
+    show darkness_layers
+    show Shigeo neutral:
+        xalign 0.24
+    show Amina surprise:
+        xalign 0.85
+    show Gaspard frown:
+        xalign 0.6
