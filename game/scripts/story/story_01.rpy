@@ -597,7 +597,9 @@ label story_01_taisho_side_meet:
 
 label story_01_library:
     play LoNoise "audio/bgs/taisho_bgs.ogg" fadein 1.0
-    scene taisho_1f_library_base
+    scene black
+    show taisho_1f_library_base:
+        xalign 0.0
     show darkness_layers
     with Reveal3
     pause 1.5
@@ -608,5 +610,7 @@ label story_01_library:
     am neutral "Understood.{w=0.3} Gaspard, mind taking the corner library?{w=0.3} Your smartphone has a stronger flash than mine."
     ga frown sweat "<Corner...{w=0.5} Sure.{w=0.3} Sure.>"
     pause 1.0
+    $ renpy.block_rollback()
     scene black
+    show screen taisho_1f_library_explore_01_base
     call screen taisho_1f_library_explore_01 with Reveal

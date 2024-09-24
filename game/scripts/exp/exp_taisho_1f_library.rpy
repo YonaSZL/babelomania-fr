@@ -2,19 +2,63 @@ default taisho_1f_library_explore_01_sensitive = True
 default taisho_1f_library_explore_01 = 0
 default taisho_1f_library_explore_timer = False
 
+
+default exp_taisho_1f_library_01_gaspard = False
+default exp_taisho_1f_library_01_amina = False
 default exp_taisho_1f_library_01_bookshelves = False
 default exp_taisho_1f_library_01_window = False
 default exp_taisho_1f_library_01_laptop = False
 default exp_taisho_1f_library_01_painting = False
 default exp_taisho_1f_library_01_bonsai = False
 
+default exp_taisho_1f_library_01_adj = ui.adjustment()
+
+screen taisho_1f_library_explore_01_base():
+
+    tag base_exploration
+
+    viewport:
+        xadjustment exp_taisho_1f_library_01_adj
+        draggable True
+        child_size (2880, 1080)
+        edgescroll(150,200)
+        xsize config.screen_width ysize config.screen_height
+
+        add "taisho_1f_library_base"
+
+        imagebutton:
+            sensitive False
+            idle "Gaspard frown"
+            hover "Gaspard frown"
+            xpos 207
+            ypos 577
+            hover_sound "audio/sfx/gui_hover.ogg"
+            activate_sound "audio/sfx/gui_confirm.ogg"
+            action NullAction()
+            at transform:
+                zoom 0.33
+            
+        imagebutton:
+            sensitive False
+            idle "Amina neutral"
+            hover "Amina neutral"
+            xpos 1301
+            ypos 520
+            hover_sound "audio/sfx/gui_hover.ogg"
+            activate_sound "audio/sfx/gui_confirm.ogg"
+            action NullAction()
+            at transform:
+                zoom 0.2
+
+    add "darkness_layers"
+
 screen taisho_1f_library_explore_01():
 
     tag exploration
 
     viewport:
+        xadjustment exp_taisho_1f_library_01_adj
         draggable True
-        yinitial 0.5 xinitial 0.5
         child_size (2880, 1080)
         edgescroll(150,200)
         xsize config.screen_width ysize config.screen_height
@@ -48,6 +92,7 @@ screen taisho_1f_library_explore_01():
                 zoom 0.2
         
         button:
+            sensitive "taisho_1f_library_explore_01_sensitive"
             pos(1724,414)
             xysize(509,297)
             background None
@@ -56,6 +101,7 @@ screen taisho_1f_library_explore_01():
             action Jump("exp_taisho_1f_library_01_bookshelves")
             tooltip _("Bookshelves")
         button:
+            sensitive "taisho_1f_library_explore_01_sensitive"
             pos(2654,341)
             xysize(226,551)
             background None
@@ -64,6 +110,7 @@ screen taisho_1f_library_explore_01():
             action Jump("exp_taisho_1f_library_01_window")
             tooltip _("Window")
         button:
+            sensitive "taisho_1f_library_explore_01_sensitive"
             pos(1898,707)
             xysize(83,45)
             background None
@@ -72,6 +119,7 @@ screen taisho_1f_library_explore_01():
             action Jump("exp_taisho_1f_library_01_laptop")
             tooltip _("Laptop")
         button:
+            sensitive "taisho_1f_library_explore_01_sensitive"
             pos(2453,257)
             xysize(130,236)
             background None
@@ -79,8 +127,9 @@ screen taisho_1f_library_explore_01():
             activate_sound "audio/sfx/gui_confirm.ogg"
             action Jump("exp_taisho_1f_library_01_painting")
             tooltip _("Painting")
-        if taisho_1f_library_explore_01 == 4:
+        if taisho_1f_library_explore_01 == 6:
             button:
+                sensitive "taisho_1f_library_explore_01_sensitive"
                 pos(2326,560)
                 xysize(232,129)
                 background None
@@ -105,32 +154,50 @@ screen taisho_1f_library_explore_01():
             text "[tooltip]"
 
 label exp_taisho_1f_library_01_gaspard:
+    $ taisho_1f_library_explore_01_sensitive = False
     $ renpy.block_rollback()
     pause 0.5
     sh_i neutral "(I'm worried about him...{w=0.5} He seems sluggish, like he used all his energy in those anger explosions from earlier.)"
     sh_i frown "(It doesn't help that the air in this building is quite stagnant.{w=0.3} It must not have been properly aired in a bit...{w=0.5} The sooner we get out of here, the better.)"
     pause 1.0
+    if exp_taisho_1f_library_01_gaspard == False:
+            $ exp_taisho_1f_library_01_gaspard = True
+            $ taisho_1f_library_explore_01 += 1
+    call screen taisho_1f_library_explore_01
 
 label exp_taisho_1f_library_01_amina:
+    $ taisho_1f_library_explore_01_sensitive = False
     $ renpy.block_rollback()
     pause 0.5
     sh_i neutral "(She's been handling this better than I thought...{w=0.5} I can feel her tension but she's managed to keep a level head.)"
     sh_i smile "(She's got the psychological profile that Human Resources just loves.{w=0.3} Who knows, they may send some scouts her way after they read my report.)"
     pause 1.0
+    if exp_taisho_1f_library_01_amina == False:
+            $ exp_taisho_1f_library_01_amina = True
+            $ taisho_1f_library_explore_01 += 1
+    call screen taisho_1f_library_explore_01
 
 label exp_taisho_1f_library_01_bookshelves:
+    $ taisho_1f_library_explore_01_sensitive = False
     $ renpy.block_rollback()
-    pause 0.5
-    sh_i neutral "(Hm...{w=0.5} It's quite sparsely stocked, for a library this big...)"
-    sh_i frown "(From how the wood is worn down and warped, though, I can tell that it used to house many more tomes...{w=0.5} They've been removed, then?)"
-    sh_i surprise "(I guess that they were particularly unique or antique...{w=0.5} You don't want to leave items like that in the open, when you turn a place like this into a meeting venue.)"
-    sh_i smile "(Which means I can turn the leftover ones in kindle without too much remorse.)"
-    if exp_taisho_1f_library_01_bookshelves == False:
-        $ exp_taisho_1f_library_01_bookshelves = True
-        $ taisho_1f_library_explore_01 += 1
+    if flashlight_use == False:
+        sh_i neutral "(It's too dark.{w=0.3} I need to use the flashlight to look around.)"
+    else:
+        pause 0.5
+        sh_i neutral "(Hm...{w=0.5} It's quite sparsely stocked, for a library this big...)"
+        sh_i frown "(From how the wood is worn down and warped, though, I can tell that it used to house many more tomes...{w=0.5} They've been removed, then?)"
+        sh_i surprise "(I guess that they were particularly unique or antique...{w=0.5} You don't want to leave items like that in the open, when you turn a place like this into a meeting venue.)"
+        sh_i smile "(Which means I can turn the leftover ones in kindle without too much remorse.)"
+        if exp_taisho_1f_library_01_bookshelves == False:
+            $ exp_taisho_1f_library_01_bookshelves = True
+            $ taisho_1f_library_explore_01 += 1
     pause 1.0
+    $ taisho_1f_library_explore_01_sensitive = True
+    scene black
+    call screen taisho_1f_library_explore_01
 
 label exp_taisho_1f_library_01_window:
+    $ taisho_1f_library_explore_01_sensitive = False
     $ renpy.block_rollback()
     pause 0.5
     sh_i neutral "(Security shutters, just like all the other ones...{w=0.5} Except the one in the corridor.)"
@@ -143,8 +210,10 @@ label exp_taisho_1f_library_01_window:
         $ exp_taisho_1f_library_01_window = True
         $ taisho_1f_library_explore_01 += 1
     pause 1.0
+    call screen taisho_1f_library_explore_01
 
 label exp_taisho_1f_library_01_laptop:
+    $ taisho_1f_library_explore_01_sensitive = False
     $ renpy.block_rollback()
     pause 0.5
     sh_i shock "(A laptop...?!{w=0.3} Then maybe...)"
@@ -155,8 +224,10 @@ label exp_taisho_1f_library_01_laptop:
         $ exp_taisho_1f_library_01_laptop = True
         $ taisho_1f_library_explore_01 += 1
     pause 1.0
+    call screen taisho_1f_library_explore_01
 
 label exp_taisho_1f_library_01_painting:
+    $ taisho_1f_library_explore_01_sensitive = False
     $ renpy.block_rollback()
     pause 0.5
     sh_i surprise "(That's a nice Ukiyo-E painting...{w=0.5} I think I've actually seen the image on a book, before.{w=0.3} Although, the way it reflects the light...?)"
@@ -169,8 +240,10 @@ label exp_taisho_1f_library_01_painting:
         $ exp_taisho_1f_library_01_painting = True
         $ taisho_1f_library_explore_01 += 1
     pause 1.0
+    call screen taisho_1f_library_explore_01
 
 label exp_taisho_1f_library_01_bonsai:
+    $ taisho_1f_library_explore_01_sensitive = False
     $ renpy.block_rollback()
     pause 0.5
     stop music fadeout 3.5
