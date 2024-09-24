@@ -404,6 +404,14 @@ translate french strings:
     old "Phones"
     new "Téléphones"
 
+    # game/scripts/conv/gaspard_amina_convs.rpy:55
+    old "Door Code"
+    new ""
+
+    # game/scripts/conv/gaspard_amina_convs.rpy:67
+    old "Phones"
+    new ""
+
 # TODO: Translation updated at 2024-09-21 16:11
 
 # game/scripts/conv/gaspard_amina_convs.rpy:92
@@ -572,3 +580,10 @@ translate french gaspmina_01_gaspardamina_ff947377:
     # ga nulla "<No one.{w=0.3} I woke up first, the room was...{w=0.5} Similar to this one.{w=0.3} A small study with awful furnishing...{w=0.5} Definitely the Taishō building.>"
     ga nulla ""
 
+# TODO: Translation updated at 2024-09-23 20:49
+
+# game/scripts/conv/gaspard_amina_convs.rpy:195
+translate french gaspmina_01_code_338ac35f:
+
+    # am nulla "With a eight digits code.{w=0.3} When we left the room we woke up in, the door locked behind us and this didn't work on that one...{w=0.5} So I figured, might as well."
+    am nulla ""

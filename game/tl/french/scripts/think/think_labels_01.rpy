@@ -60,7 +60,7 @@ translate french strings:
 
     # game/scripts/think/think_labels_01.rpy:30
     old "Because they wanted to trap me."
-    new "Parce qu'ils voulaient me piéger."
+   new "Parce qu'ils voulaient me piéger."
 
     # game/scripts/think/think_labels_01.rpy:30
     old "Because they wanted to protect me."

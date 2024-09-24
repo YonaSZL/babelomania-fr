@@ -612,3 +612,114 @@ translate french exp_taisho_1f_corridor_01_shigeo_wake_42695009:
     # sh_i frown "(No reason to go back in there, at the moment...{w=0.5} And there's nothing helpful about the door, either.)"
     sh_i frown ""
 
+# TODO: Translation updated at 2024-09-23 20:49
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:258
+translate french exp_taisho_1f_corridor_01_side_meet_2aee5a96:
+
+    # sh_i neutral "(This is the door I've unlocked...{w=0.5} We can go in whenever we're ready.)"
+    sh_i neutral ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:261
+translate french exp_taisho_1f_corridor_01_side_meet_169a2d6e:
+
+    # sh_i frown "(Should we go in?)" nointeract
+    sh_i frown "" nointeract
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:281
+translate french exp_taisho_1f_corridor_01_side_meet_daa275f0:
+
+    # sh_i frown "(Alright...{w=0.5} I think I have a good idea of what the password might be.{w=0.3} Speaking with Gaspard made me realize that the password they found was {nw}"
+    sh_i frown ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:283
+translate french exp_taisho_1f_corridor_01_side_meet_54ecd1fc:
+
+    # extend "{b}the official starting date of the Taishō era{/b}...{w=0.5} Written in the international standard format.)"
+    extend ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:285
+translate french exp_taisho_1f_corridor_01_side_meet_e7dbdc38:
+
+    # sh_i neutral "(Going by that logic, maybe the password for this other door would be another {i}similarly relevant date...{/i}?)"
+    sh_i neutral ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:295
+translate french exp_taisho_1f_corridor_01_side_meet_e81f7128:
+
+    # sh smile "Yes!"
+    sh smile ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:298
+translate french exp_taisho_1f_corridor_01_side_meet_26317cf2:
+
+    # am nulla "What was that?{w=0.3} Did I hear a door unlock?"
+    am nulla ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:299
+translate french exp_taisho_1f_corridor_01_side_meet_df0db6ab:
+
+    # sh smile "You did.{w=0.3} We can go in."
+    sh smile ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:300
+translate french exp_taisho_1f_corridor_01_side_meet_812c7f14:
+
+    # ga surprise "<How did you guess the code...?>"
+    ga surprise ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:302
+translate french exp_taisho_1f_corridor_01_side_meet_962ef13d:
+
+    # sh neutral "It appears that the codes are not randomly generated but specific references to the Taisho period...{w=0.5} This door's code was the official end date of the era."
+    sh neutral ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:303
+translate french exp_taisho_1f_corridor_01_side_meet_e18674ec:
+
+    # am nulla "For real...?{w=0.5} Oddly specific."
+    am nulla ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:305
+translate french exp_taisho_1f_corridor_01_side_meet_5d9257f0:
+
+    # ga neutral "<Hmph.{w=0.3} You're lucky I have an interest in the subject, then.{w=0.3} You're welcome.>"
+    ga neutral ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:306
+translate french exp_taisho_1f_corridor_01_side_meet_a5daa832:
+
+    # sh neutral ".{w=0.3}.{w=0.3}.{w=0.5}sure.{w=0.5} Thank you."
+    sh neutral ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:308
+translate french exp_taisho_1f_corridor_01_side_meet_b7ec4b45:
+
+    # sh frown "We can go in whenever you're ready.{w=0.3} I'll be in front."
+    sh frown ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:320
+translate french exp_taisho_1f_corridor_01_side_meet_31f82ff6:
+
+    # sh_i frown "(Darn it.{w=0.3} What did I get wrong?)"
+    sh_i frown ""
+
+# game/scripts/exp/exp_taisho_1f_corridor.rpy:322
+translate french exp_taisho_1f_corridor_01_side_meet_146700fc:
+
+    # sh_i neutral "(I'm pretty sure it must be the end date of the Taishō era, which was...?)"
+    sh_i neutral ""
+
+translate french strings:
+
+    # game/scripts/exp/exp_taisho_1f_corridor.rpy:147
+    old "Codex Updated"
+    new ""
+
+    # game/scripts/exp/exp_taisho_1f_corridor.rpy:260
+    old "Let's go in."
+    new ""
+
+    # game/scripts/exp/exp_taisho_1f_corridor.rpy:260
+    old "Not quite yet."
+    new ""

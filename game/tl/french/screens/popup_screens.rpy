@@ -4,9 +4,9 @@ translate french strings:
 
     # game/screens/popup_screens.rpy:28
     old "Confirm"
-    new ""
+    new "Confirmer"
 
     # game/screens/popup_screens.rpy:85
     old "Skipping"
-    new ""
+    new "Passage en cours"
 

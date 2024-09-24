@@ -1900,3 +1900,147 @@ translate french story_00_meet_amina_8c37d57a:
     # ha neutral traglasses ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha?"
     ha neutral traglasses ".{w=0.3}.{w=0.3}.{w=0.5} Tabitha ?"
 
+# TODO: Translation updated at 2024-09-17 23:15
+
+# game/scripts/story/story_00.rpy:713
+translate french story_00_meet_amina_9be44b0a:
+
+    # sh_i frown "(Francesco...{w=0.5} I wonder what happened to you, since we last saw each other.)"
+    sh_i frown ""
+
+# game/scripts/story/story_00.rpy:717
+translate french story_00_meet_amina_f73b1b7f:
+
+    # sh_i neutral "(You say that you've been well but you're asking for my help.{w=0.5} You're surrounded by people, new friends and acquaintances you've made over the years.{w=0.3} Getting married, gaining a new family...)"
+    sh_i neutral ""
+
+# game/scripts/story/story_00.rpy:724
+translate french story_00_meet_amina_8f30c1f3:
+
+    # sh_i surprise "(And yet you came to me for help?{w=0.3} You couldn't turn to any of the people in this room?)"
+    sh_i surprise ""
+
+# game/scripts/story/story_00.rpy:726
+translate french story_00_meet_amina_33c7ff31:
+
+    # fr nulla "Alright, this is the part of the evening I {i}dreaded{/i} the most...{w=0.5} The videooooooo."
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:730
+translate french story_00_meet_amina_df4d4793:
+
+    # fr nulla "You know me!{w=0.3} You know I hate being the center of attention, which is saying something considering this is my wedding of all things!"
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:732
+translate french story_00_meet_amina_a23f14df:
+
+    # fr nulla "But a promise's a promise...{w=0.5} And we always keep our promises, don't we Delphine?{w=0.3} I love you."
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:736
+translate french story_00_meet_amina_afad1d8b:
+
+    # fr nulla "What you're about to see is going to serve two purposes.{w=0.3} First, it's going to introduce you to the rest of our lives going forward..."
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:738
+translate french story_00_meet_amina_cd84c6cf:
+
+    # fr nulla "Also, it will hopefully familiarize you with me a little more...{w=0.5} I know that some of you are still a bit wary, on account of not knowing much of my life past the academics."
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:740
+translate french story_00_meet_amina_3d87ec53:
+
+    # fr nulla "I'm sure this will assauge at least some of your curiosity.{w=0.3} And if afterwards you're still curious, you can seek out that guy over there for more information!"
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:742
+translate french story_00_meet_amina_18d4ce78:
+
+    # sh_i surprise sweat "(...!{w=0.3} He's pointing my way.)"
+    sh_i surprise sweat ""
+
+# game/scripts/story/story_00.rpy:744
+translate french story_00_meet_amina_6c1ca4db:
+
+    # fr nulla "Shigeo Arata...{w=0.5} The other great unknown of the evening.{w=0.3} We go way back.{w=0.3} Since childhood, actually...{w=0.5} And, honestly?"
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:746
+translate french story_00_meet_amina_a606286e:
+
+    # fr nulla "I wouldn't be here right now, if it wasn't for him...{w=0.5} He and his family are the reason why today's events are possible to begin with."
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:747
+translate french story_00_meet_amina_b58a8f6c:
+
+    # ga neutral "Really, now?"
+    ga neutral ""
+
+# game/scripts/story/story_00.rpy:748
+translate french story_00_meet_amina_ffa0dcdc:
+
+    # sh laugh sweatdrop "Well, uhm...{w=0.5} He's exaggerating, we just...{w=0.5} Gave Francesco a hand when he needed us."
+    sh laugh sweatdrop ""
+
+# game/scripts/story/story_00.rpy:750
+translate french story_00_meet_amina_b141714f:
+
+    # fr nulla "So keep that in mind for the rest of the evening...{w=0.5} If you want to know about Francesco Colombo, you'd better watch out for Shigeo Arata!"
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:753
+translate french story_00_meet_amina_1f7b9c50:
+
+    # fr nulla "But that's enough stalling...{w=0.5} We have a video to get to.{w=0.3} Lights, please!"
+    fr nulla ""
+
+# game/scripts/story/story_00.rpy:759
+translate french story_00_meet_amina_854912d0:
+
+    # ha neutral ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha?"
+    ha neutral ""
+
+# game/scripts/story/story_00.rpy:760
+translate french story_00_meet_amina_589f90f9:
+
+    # ta neutral "Yes, professor?"
+    ta neutral ""
+
+# game/scripts/story/story_00.rpy:769
+translate french story_00_meet_amina_45322549:
+
+    # ha nulla "I have a new {nw}"
+    ha nulla ""
+
+# game/scripts/story/story_00.rpy:771
+translate french story_00_meet_amina_386c4502:
+
+    # extend "{b}directive{/b} for you."
+    extend ""
+
+# TODO: Translation updated at 2024-09-19 21:30
+
+translate french strings:
+
+    # game/scripts/story/story_00.rpy:324
+    old "Codex Unlocked"
+    new ""
+
+# TODO: Translation updated at 2024-09-22 15:11
+
+# game/scripts/story/story_00.rpy:104
+translate french story_00_invitation_0201c8e5:
+
+    # d "The ceremony and reception will take place in the {b}Baroque Building{/b}, while the guests will be accomodated in the {b}Taishō Building{/b}.\n"
+    d ""
+
+# game/scripts/story/story_00.rpy:761
+translate french story_00_meet_amina_8c37d57a:
+
+    # ha neutral traglasses ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha?"
+    ha neutral traglasses ""
+
