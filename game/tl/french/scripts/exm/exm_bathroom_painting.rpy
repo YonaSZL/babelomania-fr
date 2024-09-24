@@ -70,7 +70,7 @@ translate french exm_bathroom_painting_signature_96386b7e:
 translate french exm_bathroom_painting_signature_280f8a5d:
 
     # sh_i neutral "(19...{w=0.5} Well, at least I know it was made in the previou century, so that's something...?)"
-    sh_i neutral "(19...{w=0.5} Au moins, je sais qu'il a été fabriqué au siècle dernier, c'est déjà ça...?)"
+    sh_i neutral "(19...{w=0.5} Au moins, je sais qu'il a été fabriqué au siècle dernier, c'est déjà ça... ?)"
 
 # TODO: Translation updated at 2024-09-13 20:39
 
