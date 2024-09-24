@@ -40,7 +40,7 @@ translate french habiki_01_habiki_6833b483:
 translate french habiki_01_habiki_2f7bad6a:
 
     # ha nulla ".{w=0.3}.{w=0.3}.{w=0.5}indeed.{w=0.3} You're well steeped in our culture, I see."
-    ha nulla ".{w=0.3}.{w=0.3}.{w=0.5}en effet.{w=0.3} Vous êtes bien au fait de notre culture, à ce que je vois."
+    ha nulla ".{w=0.3}.{w=0.3}.{w=0.5} En effet.{w=0.3} Vous êtes bien au fait de notre culture, à ce que je vois."
 
 # game/scripts/conv/habiki_convs.rpy:23
 translate french habiki_01_habiki_5c8290c0:
@@ -58,7 +58,7 @@ translate french habiki_01_habiki_4877d6c9:
 translate french habiki_01_habiki_3ca4a48b:
 
     # sh smile ".{w=0.3}.{w=0.3}.{w=0.5}fair enough.{w=0.5} But considering the century we live in, you mean to tell me I won't find that out just by looking up 'japanese professor with android' on a search engine?"
-    sh smile ".{w=0.3}.{w=0.3}.{w=0.5}très juste.{w=0.5} Mais vu le siècle dans lequel nous vivons, vous voulez me dire que je ne le saurais pas en cherchant 'professeur japonais avec androïde' sur un moteur de recherche ?"
+    sh smile ".{w=0.3}.{w=0.3}.{w=0.5} Très juste.{w=0.5} Mais vu le siècle dans lequel nous vivons, vous voulez me dire que je ne le saurais pas en cherchant 'professeur japonais avec androïde' sur un moteur de recherche ?"
 
 # game/scripts/conv/habiki_convs.rpy:29
 translate french habiki_01_habiki_6e1044dc:
@@ -100,7 +100,7 @@ translate french habiki_01_habiki_f3391a6b:
 translate french habiki_01_tabitha_82aa3c47:
 
     # sh frown ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha...{w=0.5} Why did you give it a human name?"
-    sh frown ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha...{w=0.5} Pourquoi lui avez-vous donné un nom humain ?"
+    sh frown ".{w=0.3}.{w=0.3}.{w=0.5} Tabitha...{w=0.5} Pourquoi lui avez-vous donné un nom humain ?"
 
 # game/scripts/conv/habiki_convs.rpy:45
 translate french habiki_01_tabitha_3bd866f3:
