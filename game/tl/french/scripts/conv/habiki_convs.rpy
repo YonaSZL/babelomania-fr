@@ -332,7 +332,7 @@ translate french habiki_01_wedding_d3e84bc7:
 translate french habiki_01_habiki_2123ee23:
 
     # sh smile ".{w=0.3}.{w=0.3}.{w=0.5}fair enough.{w=0.5} But considering the century we live in, you mean to tell me I won't find that out just by looking up 'japanese professor with Android' on a search engine?"
-    sh smile ".{w=0.3}.{w=0.3}.{w=0.5} Très juste.{w=0.5} Mais vu le siècle dans lequel nous vivons, vous voulez me dire que je ne le saurais pas en cherchant 'professeur japonais avec androïde' sur un moteur de recherche ?"
+    sh smile ".{w=0.3}.{w=0.3}.{w=0.5} Très juste.{w=0.5} Mais vu le siècle dans lequel nous vivons, vous voulez me dire que je ne le saurais pas en cherchant 'professeur japonais avec Androïde' sur un moteur de recherche ?"
 
 # game/scripts/conv/habiki_convs.rpy:112
 translate french habiki_01_tabitha_a958570e:
@@ -344,13 +344,13 @@ translate french habiki_01_tabitha_a958570e:
 translate french habiki_01_wedding_58cc9890:
 
     # sh surprise "Don't think I've seen you at the ceremony, nor the reception so far.{w=0.3} I would remember an elderly academic shadowed by a two meters tall Android."
-    sh surprise "Je ne pense pas vous avoir vu à la cérémonie, ni à la réception jusqu'à présent.{w=0.3} Je me souviendrais certainement d'un vieil universitaire suivi d'un androïde de deux mètres de haut."
+    sh surprise "Je ne pense pas vous avoir vu à la cérémonie, ni à la réception jusqu'à présent.{w=0.3} Je me souviendrais certainement d'un vieil universitaire suivi d'un Androïde de deux mètres de haut."
 
 # game/scripts/conv/habiki_convs.rpy:148
 translate french habiki_01_wedding_5ef3738c:
 
     # sh surprise "If you've only recently arrived, that's why I haven't seen you at the ceremony or the reception.{w=0.3} I would remember an elderly academic shadowed by a two meters tall Android."
-    sh surprise "Si vous êtes arrivés récemment, voilà pourquoi je ne vous ai pas vus à la cérémonie ou à la réception.{w=0.3} Je me souviendrais d'un vieil universitaire suivi par un androïde de deux mètres de haut."
+    sh surprise "Si vous êtes arrivés récemment, voilà pourquoi je ne vous ai pas vus à la cérémonie ou à la réception.{w=0.3} Je me souviendrais d'un vieil universitaire suivi par un Androïde de deux mètres de haut."
 
 # game/scripts/conv/habiki_convs.rpy:152
 translate french habiki_01_wedding_b5fc8485:
@@ -396,7 +396,7 @@ translate french habiki_01_habiki_b7cc1033:
 translate french habiki_01_habiki_3d9abc8c:
 
     # sh smile ".{w=0.3}.{w=0.3}.{w=0.5}fair enough.{w=0.5} But considering the century we live in, you mean to tell me I won't find that out just by looking up 'Japanese professor with Android' on a search engine?"
-    sh smile ".{w=0.3}.{w=0.3}.{w=0.5} Très juste.{w=0.5} Mais vu le siècle dans lequel nous vivons, vous voulez me dire que je ne le saurais pas en cherchant 'professeur japonais avec androïde' sur un moteur de recherche ?"
+    sh smile ".{w=0.3}.{w=0.3}.{w=0.5} Très juste.{w=0.5} Mais vu le siècle dans lequel nous vivons, vous voulez me dire que je ne le saurais pas en cherchant 'professeur japonais avec Androïde' sur un moteur de recherche ?"
 
 # game/scripts/conv/habiki_convs.rpy:167
 translate french habiki_01_wedding_6e6a59e2:
