@@ -34,7 +34,7 @@ translate french gaspard_01_gaspard_53a8c3af:
 translate french gaspard_01_gaspard_93e716df:
 
     # ga nulla "<A few times...{w=0.5} Although this is the first time I will have to stay the night in the Taisho building.>"
-    ga nulla "<Quelques fois...{w=0.5} C'est la première fois que je dois passer la nuit dans le bâtiment Taisho.>"
+    ga nulla "<Quelques fois...{w=0.5} C'est la première fois que je dois passer la nuit dans le bâtiment Taishō.>"
 
 # game/scripts/conv/gaspard_convs.rpy:21
 translate french gaspard_01_gaspard_0f69744f:
@@ -144,7 +144,7 @@ translate french gaspard_01_gaspard_68331590:
 translate french gaspard_01_gaspard_09ed7963:
 
     # sh_i surprise "(I have spent two months in Provence, though...?{w=0.3} I didn't think my pronunciation was that bad.{w=0.3} He's understanding everything I put down, anyway.)"
-    sh_i surprise "(J'ai passé deux mois en Provence, pourtant...?{w=0.3} Je ne pensais pas que ma prononciation était si mauvaise.{w=0.3} Il comprend tout ce que j'écris, en tout cas.)"
+    sh_i surprise "(J'ai passé deux mois en Provence, pourtant... ?{w=0.3} Je ne pensais pas que ma prononciation était si mauvaise.{w=0.3} Il comprend tout ce que j'écris, en tout cas.)"
 
 # game/scripts/conv/gaspard_convs.rpy:116
 translate french gaspard_01_wedding_de57faa9:
@@ -162,7 +162,7 @@ translate french gaspard_01_wedding_d0d806b7:
 translate french gaspard_01_wedding_c34ed81c:
 
     # ga nulla "Much to their disappointment, from what I could surmise.{w=0.3} Althought that pales in comparison to what I heard when Delphine got hitched to her Italian beau."
-    ga nulla "A leur grande déception, d'après ce que j'ai pu deviner.{w=0.3} Mais ce n'est rien en comparaison de ce que j'ai entendu lorsque Delphine s'est fiancée à son fiancé italien."
+    ga nulla "À leur grande déception, d'après ce que j'ai pu deviner.{w=0.3} Mais ce n'est rien en comparaison de ce que j'ai entendu lorsque Delphine s'est fiancée à son petit-ami italien."
 
 # game/scripts/conv/gaspard_convs.rpy:120
 translate french gaspard_01_wedding_5dea5355:
@@ -282,7 +282,7 @@ translate french gaspard_01_shigeo_a9c28b34:
 translate french gaspard_01_shigeo_002efa1b:
 
     # sh surprise "Hmm?{w=0.5} What do you mean?"
-    sh surprise "Hmm?{w=0.5} Que voulez-vous dire ?"
+    sh surprise "Hmm ?{w=0.5} Que voulez-vous dire ?"
 
 # game/scripts/conv/gaspard_convs.rpy:159
 translate french gaspard_01_shigeo_75722352:
@@ -318,7 +318,7 @@ translate french gaspard_01_shigeo_d634e7a1:
 translate french gaspard_01_shigeo_45b3ef59:
 
     # sh laugh "Hah!{w=0.3} I'll hold you to that, then!"
-    sh laugh "Hah!{w=0.3} Je vous tiendrai au fait, alors !"
+    sh laugh "Hah !{w=0.3} Je vous tiendrai au fait, alors !"
 
 # game/scripts/conv/gaspard_convs.rpy:167
 translate french gaspard_01_shigeo_3e3f4dbd:
@@ -356,7 +356,7 @@ translate french gaspard_01_gaspard_8a234e3b:
 translate french gaspard_01_wedding_cc835163:
 
     # ga nulla "Much to their disappointment, from what I could surmise.{w=0.3} Although, that pales in comparison to what I heard when Delphine got engaged."
-    ga nulla "A leur grande déception, d'après ce que j'ai pu deviner.{w=0.3} Mais ce n'est rien en comparaison de ce que j'ai entendu lorsque Delphine s'est fiancée à son fiancé italien."
+    ga nulla "À leur grande déception, d'après ce que j'ai pu deviner.{w=0.3} Mais ce n'est rien en comparaison de ce que j'ai entendu lorsque Delphine s'est fiancée à son petit-ami italien."
 
 # game/scripts/conv/gaspard_convs.rpy:146
 translate french gaspard_01_shigeo_06f35fe0:
@@ -390,7 +390,7 @@ translate french gaspard_01_wedding_8818ddf0:
 translate french gaspard_01_gaspard_7094832f:
 
     # ga nulla "<A few times...{w=0.5} Although this is the first time I will have to stay the night in the Taishō building.>"
-    ga nulla "<Quelques fois...{w=0.5} C'est la première fois que je dois passer la nuit dans le bâtiment Taisho.>"
+    ga nulla "<Quelques fois...{w=0.5} C'est la première fois que je dois passer la nuit dans le bâtiment Taishō.>"
 
 # TODO: Translation updated at 2024-09-21 16:11
 
@@ -398,13 +398,13 @@ translate french gaspard_01_gaspard_7094832f:
 translate french gaspard_01_wedding_761959d4:
 
     # ga nulla "When they started talking about using his lack of living relatives and any ties to his old life before coming to France as arguments, I made them respectfully notice they were grasping at straws."
-    ga nulla ""
+    ga nulla "Lorsqu'ils ont commencé à parler de l'absence de proches en vie et de tout lien avec son ancienne vie avant de venir en France comme arguments, je leur ai fait remarquer respectueusement qu'ils s'accrochaient à des chimères."
 
 # game/scripts/conv/gaspard_convs.rpy:129
 translate french gaspard_01_wedding_8818ddf0:
 
     # sh surprise "Huh...{w=0.5} I guess those kinds of dynamics are still a thing in certain circles, aren't they?"
-    sh surprise ""
+    sh surprise "Huh...{w=0.5} Je suppose que ce genre de dynamique est toujours d'actualité dans certains milieux, n'est-ce pas ?"
 
 # TODO: Translation updated at 2024-09-22 15:11
 
@@ -412,5 +412,5 @@ translate french gaspard_01_wedding_8818ddf0:
 translate french gaspard_01_gaspard_7094832f:
 
     # ga nulla "<A few times...{w=0.5} Although this is the first time I will have to stay the night in the Taishō building.>"
-    ga nulla ""
+    ga nulla "<Quelques fois...{w=0.5} C'est la première fois que je dois passer la nuit dans le bâtiment Taishō.>"
 
