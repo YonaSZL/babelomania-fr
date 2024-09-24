@@ -28,7 +28,7 @@ translate french exm_bathroom_painting_subject_299914d6:
 translate french exm_bathroom_painting_subject_2c29dd32:
 
     # sh_i surprise "(.{w=0.3}.{w=0.3}.{w=0.5}or maybe it does?)"
-    sh_i surprise "(.{w=0.3}.{w=0.3}.{w=0.5}ou peut-être que si ?)"
+    sh_i surprise "(.{w=0.3}.{w=0.3}.{w=0.5} Ou peut-être que si ?)"
 
 # game/scripts/exm/exm_bathroom_painting.rpy:18
 translate french exm_bathroom_painting_title_fd83191a:
