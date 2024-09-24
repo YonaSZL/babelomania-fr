@@ -278,7 +278,7 @@ label story_01_taisho_side_meet:
     $ move_time(0,17)
     pause 0.5
     $ flashlight_use = True
-    $ flashlight_allowed = True
+    $ dark_environ = False
     play sound4 "audio/se/flashlight_on.ogg"
     pause 1.0
     scene taisho_1f_side_meet_base
@@ -385,4 +385,223 @@ label story_01_taisho_side_meet:
     am neutral "<Just be glad it wasn't stagnant.{w=0.3} It did come from a flower vase, after all.>"
     ga surprise "<With fake flowers...?{w=0.5} Why?>"
     am smile "<I don't know.{w=0.3} Authenticity?>"
+    pause 1.5
+    ga neutral "<Heh.{w=0.3} Of all the wasted effort on appearances...>"
+    am smile "<What's that expression in English...?{w=0.5}> 'Game recognizes game'."
     pause 1.0
+    scene taisho_1f_side_meet_base
+    show darkness_layers
+    show Amina neutral at am_big:
+        xalign 0.85
+    show Gaspard neutral sweat at ga_big:
+        xalign 0.5 yoffset 300
+    with Reveal
+    pause 0.5
+    am nulla "<And to be clear...{w=0.5} I'm not talking about you only.>"
+    ga nulla "<Hm.{w=0.3} Finally ready to admit it out loud, then?>"
+    show Amina smile
+    am nulla "<Very vague...{w=0.5} There's a lot of 'it' we're been holding back on.>"
+    show Gaspard laugh
+    ga nulla "<Fair...{w=0.5} I was mainly talking about the fact that you've been dating me to keep daddy happy.>"
+    show Amina neutral
+    am nulla "<Maybe so...{w=0.5} Are you ready to admit that you've been dating me just to piss off yours?>"
+    pause 1.0
+    show Gaspard frown with dissolve
+    ga nulla "<It's not the only reason.>"
+    show Amina surprise
+    am nulla "<Oh, isn't it?{w=0.5} What else is there, then?>"
+    show Gaspard laugh
+    ga nulla "<I'll admit that the subtle twitch of my father's brow the first time I brought you to a family function was...{w=0.5} Titillating.>"
+    show Gaspard neutral
+    ga nulla "<But you're much more than just a stone in the water.{w=0.3} You're crazy smart, Amina.{w=0.3} You're ambitious.{w=0.3} You'll go far and you're a connection worth having, no matter the type.>"
+    pause 1.0
+    show Amina sad with dissolve
+    am nulla "<Gaspard, saying that you've been dating me for my potential is not exactly...{w=0.5} Nice.>"
+    show Gaspard frown
+    ga nulla "<Oh, come off it.{w=0.3} The benefit of making your family fit in certain circles by reflection is also potential.{w=0.3} That's what you've been seeking.>"
+    show Amina frown
+    am nulla "<Fine.{w=0.3} But I've been loyal throughout everything, nonetheless.{w=0.3} Don't think I didn't notice you and that bridesmaid just so happened to come back one after the other.{w=0.3} Don't think I never noticed the others.>"
+    show Gaspard neutral
+    ga nulla "<Really, now?{w=0.3} May I remind you that emotional affairs count, too?>"
+    pause 1.5
+    show Amina sad with dissolve
+    am nulla "<We both went into this relationship already checked out, didn't we?>"
+    show Gaspard frown -sweat
+    ga nulla "<Things that happen when all you do is think about the next step in the plan...{w=0.5} That's the thing that brought us together in the first place, isn't it?>"
+    show Amina neutral
+    ga nulla "<A spasmodic need to finally, one day, have complete control over everything about ourselves and around ourselves...{w=0.5} That doesn't really leave a lot of space to consider someone else an equal.>"
+    am nulla "<.{w=0.3}.{w=0.3}.{w=0.5}we can talk more about this when we're out of this situation.{w=0.3} For what it matters, Gaspard?{w=0.5} I don't think you're a {i}total{/i} ass.>"
+    show Amina surprise
+    am nulla "<Are you feeling better, now?>"
+    show Gaspard neutral
+    ga nulla "<Oh, such praise...{w=0.5} And yeah, I'm feeling better.{w=0.3} Just a little ringing in my ears but the water helped.>"
+    show Gaspard frown
+    ga nulla "<We should go see if the Italian has managed to figure a way out of here...>"
+    am nulla "<I have a feeling you don't like Shigeo that much...{w=0.5} But you're the one who invited him to our table.>"
+    show Gaspard neutral
+    ga nulla "<Oh, that?{w=0.3} That's because he saw me and, most likely, the bridesmaid leaving the bathrooms.{w=0.3} Keep your liabilities close, know what I mean?>"
+    show Amina neutral
+    show Gaspard frown
+    ga nulla "<And it's not that I don't like him, it's just...{w=0.5} I knew everyone at this wedding, and if I didn't, I knew {i}of{/i} them...{w=0.5} But this guy is a complete unknown.>"
+    show Gaspard neutral
+    ga nulla "<Not exactly a calming presence for a control freak, wouldn't you say?>"
+    show Amina smile
+    am nulla "<Moron.>"
+    pause 1.0
+    show Gaspard frown
+    ga nulla "<And, Amina...{w=0.5} For what it's worth?{w=0.3} I'm sorry.{w=0.3} And thank you.>"
+    show Amina neutral
+    am nulla "<.{w=0.3}.{w=0.3}.{w=0.5}I'm sorry too.{w=0.3} Let me help you up.>"
+    $ move_time(0,6)
+    sh neutral "<How is he?>"
+    show Gaspard surprise
+    show Amina surprise
+    pause 0.5
+    play music "audio/bgm/shadows_whisper.ogg"
+    show Amina neutral
+    show Gaspard frown
+    with dissolve
+    am nulla "Better.{w=0.3} Have you made any progress?"
+    sh neutral "Sort of...{w=0.5} I have a {nw}"
+    play sound4 "audio/sfx/gui_hint.ogg"
+    extend "{b}plan{/b}, actually."
+    pause 1.0
+    scene taisho_1f_side_meet_base
+    show darkness_layers
+    show Shigeo neutral:
+        xalign 0.24
+    show Amina surprise:
+        xalign 0.85
+    show Gaspard frown:
+        xalign 0.6
+    with dissolve
+    pause 0.5
+    am nulla "A plan, you say?{w=0.3} For what?"
+    sh nulla "To open the door to the stairwell."
+    show Gaspard surprise
+    ga nulla "<Wait, really?!{w=0.3} Finally, what it is?!>"
+    sh nulla "I'd like to explain my reasoning first, as the proposal involves some risk.{w=0.3} Can I?"
+    show Gaspard frown
+    ga nulla "<Ugh...{w=0.5} Fine, whatever.{w=0.3} Proceed.>"
+    show Amina neutral
+    sh nulla "Thank you.{w=0.3} So, the door in question while magnetically sealed like the ones to the room, doesn't have a keypad.{w=0.3} It's locked and unlocked remotely."
+    show Shigeo frown
+    sh nulla "Which means that to open it, we need to override that lock...{w=0.5} By creating an emergency."
+    show Amina surprise
+    am nulla "An emergency?"
+    show Shigeo neutral
+    sh nulla "Yes.{w=0.3} Building regulations state that doors to stairwells can be lockable as long as they're set to {nw}"
+    play sound4 "audio/sfx/gui_hint.ogg"
+    extend "{b}unlock automatically in case of a fire{/b}."
+    show Gaspard surprise
+    ga nulla "<So that's how it works...{w=0.5} Wait, you mean you want to start a fire?!>"
+    show Shigeo frown
+    sh nulla "Just one small enough to be picked up by the smoke detector.{w=0.3} But still, with the windows being sealed...{w=0.5} It is a risk."
+    show Shigeo neutral
+    sh nulla "So, it's not something I can decide on my own.{w=0.3} If you think it's too dangerous, I will keep looking for a different solution."
+    am nulla ".{w=0.3}.{w=0.3}.{w=0.5}do you even have something to start a fire?"
+    sh nulla "Not currently.{w=0.3} But I'm pretty sure we're going to find something we can use in the next room."
+    ga nulla "<And what makes you so sure?>"
+    pause 1.0
+    show Shigeo frown with dissolve
+    sh nulla "The very specific codes, which related to the building...{w=0.5} The note in your pocket, which opened the room where I was...{w=0.5} The remotely controlled door.{w=0.3} This is not a kidnapping, this is a {i}game{/i}."
+    show Gaspard surprise sweat
+    show Amina surprise sweat
+    ga nulla "<What are you...?!>"
+    sh nulla "I mentioned this to Amina earlier.{w=0.3} I'm a profiler with Europol, my job is to...{w=0.5} Let's say make mental identikits of criminals.{w=0.3} I can see a pattern, here."
+    show Shigeo neutral
+    sh nulla "We've been absconded, but at the same time we've been given the tools to get out of it...{w=0.5} A half-japanese person and someone with knowledge of Japanese history in a Taishō inspired building?{w=0.3} This is not a coincidence."
+    play sound "audio/em/em_angry.ogg"
+    show screen emote("angry",0.17,0.5)
+    show Gaspard angry
+    ga nulla "<It was planned?!{w=0.3} Someone has been looking me up AND PLANNED TO DO THIS TO ME?!>"
+    show Shigeo sweat
+    sh nulla "To us...{w=0.5} And now I can't help but wonder what has happened to the other attendees."
+    am nulla "So you think that...{w=0.5} There may be something to start a fire in the next room because...?"
+    show Shigeo neutral -sweat
+    sh nulla "Because I believe it's the solution to this particular puzzle.{w=0.3} So far we've been given a fair chance to solve them, so...{w=0.5} It seems only logical."
+    show Gaspard frown
+    ga nulla "<So you're trusting in the logic of a madman?{w=0.3} That's your big plan?>"
+    sh nulla "It's the only one I have right now...{w=0.5} But as I said, we won't proceed unless we're all in agreement."
+    pause 1.5
+    show Amina neutral -sweat with dissolve
+    am nulla "What about we postpone the discussion?{w=0.3} Let's get in that room and, if we can find something to start a fire, then we can discuss if to actually do it."
+    sh nulla "Fine by me.{w=0.3} I still need to figure out the code, anyway.{w=0.3} I was thinking of other relevant Taishō era dates but so far, nothing's worked."
+    ga nulla ".{w=0.3}.{w=0.3}.{w=0.5}which ones have you used?"
+    show Shigeo surprise
+    sh nulla "Hmm, the assassination of Prime Minister Hara...{w=0.5} And the appointment of the Emperor's son as regent, but I'm not sure I got the day well."
+    show Gaspard neutral -sweat
+    ga nulla "<Hmph, wouldn't matter anyway.{w=0.3} You're way off mark.{w=0.3} Isn't it obvious what date you're supposed to use?>"
+    show Amina surprise
+    play sound "audio/em/em_surprise.ogg"
+    show screen emote("surprise",0.2,0.05)
+    sh nulla "Uhm...{w=0.5} No, not really.{w=0.3} What do you mean?"
+    show Gaspard frown
+    ga nulla "<Let's say you're right and there's something to start a fire, in the next room...{w=0.5} Going off that logic, the date would need be related to fire too.>"
+    show Gaspard laugh
+    ga nulla "<It just so happens that, during the {nw}"
+    play sound4 "audio/sfx/gui_hint.ogg"
+    extend "{b}Great Kantō earthquake{/b}, the single greatest loss of life was caused by a {i}fire whirl{/i} which incinerated more than 30.000 people.>"
+    play sound "audio/em/em_shock.ogg"
+    show screen emote("surprise",0.75,0.05)
+    show screen emote2("surprise",0.2,0.05)
+    show Shigeo shock
+    show Amina shock sweat
+    am nulla "<Ya Allah!>{w=0.3} Poor people!"
+    sh nulla "A fire whirl...{w=0.5} Of course!"
+    show Gaspard neutral
+    ga nulla "<1st of September 1923.>"
+    show Shigeo smile
+    sh nulla "Which means the code is..."
+    hide Shigeo with dissolve
+    show Amina surprise -sweat
+    pause 0.5
+    play sound "audio/sfx/pad_input.ogg"
+    sh_i neutral "(19230901...)"
+    pause 1.0
+    play sound4 "audio/sfx/pad_success.ogg"
+    pause 0.2
+    play sound "audio/se/door_unlock.ogg"
+    sh smile "It worked!{w=0.3} Great deduction, Gaspard!"
+    show Gaspard laugh
+    ga nulla "<Oh, I didn't do much...{w=0.5} General knowledge, really.>"
+    show Amina smile
+    am nulla "Heh...{w=0.5} Again, you're not a {i}total{/i} ass.{w=0.3} Good job."
+    show Gaspard neutral
+    ga nulla ".{w=0.3}.{w=0.3}.{w=0.5}thanks."
+    pause 1.0
+    hide Amina with dissolve
+    pause 1.0
+    play sound "audio/se/ears_ringing.ogg"
+    show Gaspard frown sweat with dissolve
+    pause 1.0
+    ga_i nulla "(Ugh, the ringing is getting strong...{w=0.5} I think it's my blood pressure...{w=0.5} I need to stop getting that worked up.)"
+    show Gaspard angry
+    ga_i nulla "(And that water didn't do the trick at all...{w=0.5} I'm absolutely parched!{w=0.3} Let's hope there's...{w=0.5} Something...)"
+    pause 1.0
+    scene black with Reveal3
+    pause 0.5
+    ga_i angry sweat "(Something to {nw}"
+    play sound4 "audio/sfx/gui_spook.ogg"
+    extend "{b}sate my thirst...!{/b})"
+    pause 2.0
+    $ flashlight_use = False
+    $ flashlight_allowed = True
+    $ dark_environ = True
+    jump story_01_library
+
+label story_01_library:
+    scene taisho_1f_library_base
+    show darkness_layers
+    with Reveal3
+    pause 1.5
+    sh neutral "A big library...{w=0.5} With a twin door on the other side."
+    am surprise "Must lead to the other room that we couldn't open."
+    ga frown "<Hmm...{w=0.5} Makes sense...>"
+    sh neutral "Let's look around, then.{w=0.3} Gaspard, Amina, you can search the left side.{w=0.3} I will take the other half of the room."
+    am neutral "Understood.{w=0.3} Gaspard, mind taking the corner library?{w=0.3} Your smartphone has a stronger flash than mine."
+    ga frown sweat "<Corner...{w=0.5} Sure.{w=0.3} Sure.>"
+    pause 1.0
+    scene black
+    show screen taisho_1f_library_explore_01
+    with Reveal
