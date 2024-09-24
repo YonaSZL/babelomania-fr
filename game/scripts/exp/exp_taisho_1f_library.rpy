@@ -80,14 +80,17 @@ screen taisho_1f_library_explore_01():
             activate_sound "audio/sfx/gui_confirm.ogg"
             action Jump("exp_taisho_1f_library_01_painting")
             tooltip _("Painting")
-        button:
-            pos(993,454)
-            xysize(128,297)
-            background None
-            hover_sound "audio/sfx/gui_hover.ogg"
-            activate_sound "audio/sfx/gui_confirm.ogg"
-            action Jump("exp_taisho_1f_library_01_bonsai")
-            tooltip _("Bonsai")
+        if taisho_1f_library_explore_01 == 4:
+            timer 60.0 action Play("sound2", "audio/se/fist_slam.ogg")
+            timer 120.0 action Play("sound2", "audio/se/fabric_tearing.ogg")
+            button:
+                pos(993,454)
+                xysize(128,297)
+                background None
+                hover_sound "audio/sfx/gui_hover.ogg"
+                activate_sound "audio/sfx/gui_confirm.ogg"
+                action Jump("exp_taisho_1f_library_01_bonsai")
+                tooltip _("Bonsai")
     
     add "darkness_layers"
 
@@ -105,5 +108,56 @@ label exp_taisho_1f_library_01_gaspard:
     $ renpy.block_rollback()
     pause 0.5
 
+    pause 1.0
+
+label exp_taisho_1f_library_01_amina:
+    $ renpy.block_rollback()
+    pause 0.5
+
+    pause 1.0
+
+label exp_taisho_1f_library_01_bookshelves:
+    $ renpy.block_rollback()
+    pause 0.5
+
+    if exp_taisho_1f_library_01_bookshelves == False:
+        $ exp_taisho_1f_library_01_bookshelves = True
+        $ taisho_1f_library_explore_01 += 1
+    pause 1.0
+
+label exp_taisho_1f_library_01_window:
+    $ renpy.block_rollback()
+    pause 0.5
+
+    if exp_taisho_1f_library_01_window == False:
+        $ exp_taisho_1f_library_01_window = True
+        $ taisho_1f_library_explore_01 += 1
+    pause 1.0
+
+label exp_taisho_1f_library_01_laptop:
+    $ renpy.block_rollback()
+    pause 0.5
+
+    if exp_taisho_1f_library_01_laptop == False:
+        $ exp_taisho_1f_library_01_laptop = True
+        $ taisho_1f_library_explore_01 += 1
+    pause 1.0
+
+label exp_taisho_1f_library_01_painting:
+    $ renpy.block_rollback()
+    pause 0.5
+
+    if exp_taisho_1f_library_01_painting == False:
+        $ exp_taisho_1f_library_01_painting = True
+        $ taisho_1f_library_explore_01 += 1
+    pause 1.0
+
+label exp_taisho_1f_library_01_bonsai:
+    $ renpy.block_rollback()
+    pause 0.5
+
+    if exp_taisho_1f_library_01_bonsai == False:
+        $ exp_taisho_1f_library_01_bonsai = True
+        $ taisho_1f_library_explore_01 += 1
     pause 1.0
     
