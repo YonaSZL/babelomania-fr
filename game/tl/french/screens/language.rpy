@@ -5,4 +5,3 @@ translate french strings:
     # game/screens/language.rpy:33
     old "Français"
     new "Français"
-
