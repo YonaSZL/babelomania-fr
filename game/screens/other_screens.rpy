@@ -72,34 +72,34 @@ screen about():
             xoffset 15 yoffset -20 spacing 20
             vbox:
                 label _("{size=35}PRODUCER, DIRECTOR") yalign 0.5
-                text "\"Meinos Kaen\"" xoffset 15 yalign 0.5
+                text "{a=https://nicanjil.carrd.co/}\"Meinos Kaen\"{/a}" xoffset 15 yalign 0.5
             vbox:
                 label ("{size=35}PROGRAMMERS") yalign 0.5
-                text "\"Meinos Kaen\", \"Skolaztika\"" xoffset 15 yalign 0.5
+                text "\"Meinos Kaen\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}BACKGROUND ARTISTS") yalign 0.5
-                text "\"Reina\", \"Fuura Xen\"" xoffset 15 yalign 0.5
+                text "{a=https://x.com/ReinaTensei}\"Reina\"{/a}, \"Fuura Xen\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}CHARACTER SPRITE ARTIST") yalign 0.5
                 text "{a=https://nicanjil.carrd.co/}\"NicAnjil\"{/a}" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}CG ILLUSTRATORS") yalign 0.5
-                text "\"NicAnjil\", \"Arsonichawt\"" xoffset 15 yalign 0.5
+                text "\"NicAnjil\", {a=https://twitter.com/arsonic_hawt}\"Arsonichawt\"{/a}" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}ENVIRONMENT CONCEPT ARTIST") yalign 0.5
-                text "\"Fuura Xen\"" xoffset 15 yalign 0.5
+                text "{a=https://x.com/FuuraXen}\"Fuura Xen\"{/a}" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}CHARACTER CONCEPT ARTIST") yalign 0.5
-                text "\"Halebob\"" xoffset 15 yalign 0.5
+                text "{a=https://halebob.artstation.com/}\"Halebob\"{/a}" xoffset 15 yalign 0.5
             vbox:
-                label _("{size=35}UI ARTIST") yalign 0.5
+                label _("{size=35}GUI ARTIST, PROGRAMMER") yalign 0.5
                 text "\"Skolaztika\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}LOGO ARTIST") yalign 0.5
-                text "\"????\"" xoffset 15 yalign 0.5
+                text "{a=https://johanmeow.carrd.co/}\"Johan Meow\"{/a}, \"Meinos Kaen\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}COMPOSERS") yalign 0.5
-                text "\"OddTillTheEnd\", \"Nailik\"" xoffset 15 yalign 0.5
+                text "{a=https://x.com/OddTillTheEnd}\"OddTillTheEnd\"{/a}, \"Nailik\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}AUDIO EDITOR") yalign 0.5
                 text "\"Meinos Kaen\"" xoffset 15 yalign 0.5
@@ -111,7 +111,10 @@ screen about():
                 text "\"Meinos Kaen\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}STORY CONSULTANTS") yalign 0.5
-                text "\"BEEB\", \"BAGUETTE\", \"ROSSTAIL\"" xoffset 15 yalign 0.5
+                text "\"Adori\"(aka Meinos Kaen's wife), {a=mailto:yona.sazela@gmail.com}\"Yona\"{/a}, Anthony \"Rosstail\" Bac" xoffset 15 yalign 0.5
+            vbox:
+                label _("{size=35}FRENCH TRANSLATORS") yalign 0.5
+                text "\"Yona\", Anthony \"Rosstail\" Bac" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}IMAGE EDITING") yalign 0.5
                 text "\"Meinos Kaen\"" xoffset 15 yalign 0.5
@@ -128,6 +131,9 @@ screen about():
             vbox:
                 label _("{size=35}ADDITIONAL CODE") yalign 0.5
                 text "{a=https://feniksdev.com}Feniks{/a}, {a=https://remort-studios.itch.io/}Nai @ MakeVisualNovels{/a}" xoffset 15 yalign 0.5
+            vbox:
+                label _("{size=35}ADDITIONAL IMAGES") yalign 0.5
+                text "{a=https://www.flickr.com/photos/40595948@N00/5048729493}A. Davey{/a}}" xoffset 15 yalign 0.5
 
         text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
         

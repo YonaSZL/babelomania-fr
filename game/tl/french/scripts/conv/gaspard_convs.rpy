@@ -370,3 +370,25 @@ translate french gaspard_01_shigeo_d68017e9:
     # sh smile "Oh, me and him go way back."
     sh smile ""
 
+# TODO: Translation updated at 2024-09-21 16:11
+
+# game/scripts/conv/gaspard_convs.rpy:126
+translate french gaspard_01_wedding_761959d4:
+
+    # ga nulla "When they started talking about using his lack of living relatives and any ties to his old life before coming to France as arguments, I made them respectfully notice they were grasping at straws."
+    ga nulla ""
+
+# game/scripts/conv/gaspard_convs.rpy:129
+translate french gaspard_01_wedding_8818ddf0:
+
+    # sh surprise "Huh...{w=0.5} I guess those kinds of dynamics are still a thing in certain circles, aren't they?"
+    sh surprise ""
+
+# TODO: Translation updated at 2024-09-22 15:11
+
+# game/scripts/conv/gaspard_convs.rpy:88
+translate french gaspard_01_gaspard_7094832f:
+
+    # ga nulla "<A few times...{w=0.5} Although this is the first time I will have to stay the night in the Taishō building.>"
+    ga nulla ""
+

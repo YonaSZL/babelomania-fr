@@ -1,17 +1,30 @@
-default stat1 = 50
+default stat1 = 50 #Flashlight Charge
 default stat2 = 80
 
 
 default inventory_show = True
 default time_menu = True
-default stat1_show = True
+default stat1_show = True #Flashlight Charge
 default stat2_show = True
-default codex_active = True
+default codex_active = False
+default flashlight_use = False
+default flashlight_consume = False
+default flashlight_allowed = True
 
 default amina_cmp = False
 default gaspard_cmp = False
 
 screen overlay_stats():
+    
+    tag gui_screens
+
+    zorder 999
+
+    if flashlight_consume:
+        if stat1 > 0:
+            timer 15.0 action SetVariable("stat1", (stat1 - 1)) repeat True
+        else:
+            timer 0.01 action [ SetVariable("flashlight_consume", False), SetVariable("flashlight_use", False), SetVariable("dark_environ", True) ] repeat False
 
     vbox:
         xalign 1.0 offset(-103, 245)  spacing -10
@@ -32,17 +45,17 @@ screen overlay_stats():
     if inventory_show:
         button:
             add "gui/stats/avatar_bg.png"
-            idle_foreground "gui/stats/case.png"
-            hover_foreground At("gui/stats/case.png", outline_transform(2, "#876a33", 4.0))
+            if briefcase_carry:
+                idle_foreground "gui/stats/case.png"
+                hover_foreground At("gui/stats/case.png", outline_transform(2, "#876a33", 4.0))
+            else:
+                idle_foreground "gui/stats/inventory.png"
+                hover_foreground At("gui/stats/inventory.png", outline_transform(2, "#876a33", 4.0))
             xysize(230,230) xalign 1.0 offset(-50, 30)
             focus_mask True
             action Show("inventory")
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_inventory.ogg"
-
-
-    
-
 
     vbox:
         spacing 10 offset(15,30)
@@ -58,7 +71,7 @@ screen overlay_stats():
                     activate_sound "audio/sfx/gui_codex.ogg"
                     action ShowMenu("codex_main")
                 else:
-                    action Null()
+                    action NullAction()
 
         if stat1_show:
             bar:

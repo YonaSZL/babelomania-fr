@@ -20,20 +20,20 @@ screen language():
             xysize(343,755)
             idle_background "gui/language/english.png"
             hover_background At("gui/language/english.png", outline_transform(2, "#342209", 4.0))
-            label "English"
+            label _("English")
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_slots_confirm.ogg"
-            action [Function(renpy.transition, dissolve), SetVariable("persistent.firstopen", True), Return()] ##+ add the language change action
+            action [Language(None), Function(renpy.transition, dissolve), SetVariable("persistent.firstopen", True), Return()] ##+ add the language change action
         
 
         button:
             xysize(343,755)
             idle_background "gui/language/french.png"
             hover_background At("gui/language/french.png", outline_transform(2, "#342209", 4.0))
-            label "Francais"
+            label _("Francais")
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_slots_confirm.ogg"
-            action [Function(renpy.transition, dissolve), Return()] ##+ add the language change action
+            action [Language("french"), Function(renpy.transition, dissolve), Return()] ##+ add the language change action
 
 
 style language_label:

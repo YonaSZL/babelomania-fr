@@ -15,6 +15,7 @@ image shigeo_exp_laugh = "images/chs/shigeo/exp_laugh.png"
 image shigeo_exp_angry = "images/chs/shigeo/exp_angry.png"
 image shigeo_exp_fear = "images/chs/shigeo/exp_fear.png"
 image shigeo_exp_pain = "images/chs/shigeo/exp_pain.png"
+image shigeo_exp_cloudy = "images/chs/shigeo/exp_cloudy.png"
 
 layeredimage Shigeo:
     group body:
@@ -44,6 +45,8 @@ layeredimage Shigeo:
             "shigeo_exp_fear"
         attribute pain:
             "shigeo_exp_pain"
+        attribute cloudy:
+            "shigeo_exp_cloudy"
     group accessories:
         attribute blush:
             "shigeo_acc_blush"
