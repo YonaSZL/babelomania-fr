@@ -591,6 +591,17 @@ label story_01_taisho_side_meet:
     jump story_01_library
 
 label story_01_library:
-    scene taisho_1f_library with Reveal3
+    scene taisho_1f_library_base
+    show darkness_layers
+    with Reveal3
+    pause 1.5
+    sh neutral "A big library...{w=0.5} With a twin door on the other side."
+    am surprise "Must lead to the other room that we couldn't open."
+    ga frown "<Hmm...{w=0.5} Makes sense...>"
+    sh neutral "Let's look around, then.{w=0.3} Gaspard, Amina, you can search the left side.{w=0.3} I will take the other half of the room."
+    am neutral "Understood.{w=0.3} Gaspard, mind taking the corner library?{w=0.3} Your smartphone has a stronger flash than mine."
+    ga frown sweat "<Corner...{w=0.5} Sure.{w=0.3} Sure.>"
     pause 1.0
+    scene taisho_1f_library_base
+    show darkness_layers
     
