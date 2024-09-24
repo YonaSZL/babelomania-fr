@@ -107,19 +107,24 @@ screen taisho_1f_library_explore_01():
 label exp_taisho_1f_library_01_gaspard:
     $ renpy.block_rollback()
     pause 0.5
-
+    sh_i neutral "(I'm worried about him...{w=0.5} He seems sluggish, like he used all his energy in those anger explosions from earlier.)"
+    sh_i frown "(It doesn't help that the air in this building is quite stagnant.{w=0.3} It must not have been properly aired in a bit...{w=0.5} The sooner we get out of here, the better.)"
     pause 1.0
 
 label exp_taisho_1f_library_01_amina:
     $ renpy.block_rollback()
     pause 0.5
-
+    sh_i neutral "(She's been handling this better than I thought...{w=0.5} I can feel her tension but she's managed to keep a level head.)"
+    sh_i smile "(She's got the psychological profile that Human Resources just loves.{w=0.3} Who knows, they may send some scouts her way after they read my report.)"
     pause 1.0
 
 label exp_taisho_1f_library_01_bookshelves:
     $ renpy.block_rollback()
     pause 0.5
-
+    sh_i neutral "(Hm...{w=0.5} It's quite sparsely stocked, for a library this big...)"
+    sh_i frown "(From how the wood is worn down and warped, though, I can tell that it used to house many more tomes...{w=0.5} They've been removed, then?)"
+    sh_i surprise "(I guess that they were particularly unique or antique...{w=0.5} You don't want to leave items like that in the open, when you turn a place like this into a meeting venue.)"
+    sh_i smile "(Which means I can turn the leftover ones in kindle without too much remorse.)"
     if exp_taisho_1f_library_01_bookshelves == False:
         $ exp_taisho_1f_library_01_bookshelves = True
         $ taisho_1f_library_explore_01 += 1
@@ -128,7 +133,12 @@ label exp_taisho_1f_library_01_bookshelves:
 label exp_taisho_1f_library_01_window:
     $ renpy.block_rollback()
     pause 0.5
-
+    sh_i neutral "(Security shutters, just like all the other ones...{w=0.5} Except the one in the corridor.)"
+    sh_i frown "(Which makes me wonder, why?{w=0.3} Is it because the window in there doesn't have one, or was it excluded on purpose?{w=0.3} And why?)"
+    sh_i surprise "(I can see no reason why that'd be the case...{w=0.5} Except maybe...{w=0.5} Giving us a space where {nw}"
+    play sound "audio/sfx/gui_hint.ogg"
+    extend "{b}we wouldn't need to use the flashlight I found{/b}?"
+    sh_i frown "(.{w=0.3}.{w=0.3}.{w=0.5}I had heard of the concept of gamification, but this is ridiculous.)"
     if exp_taisho_1f_library_01_window == False:
         $ exp_taisho_1f_library_01_window = True
         $ taisho_1f_library_explore_01 += 1
