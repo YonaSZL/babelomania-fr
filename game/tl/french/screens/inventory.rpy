@@ -56,29 +56,17 @@ translate french strings:
 
 # TODO: Translation updated at 2024-09-22 15:11
 
+translate french strings:
+
     # game/screens/inventory.rpy:15
     old "Smartwatch"
     new "Smartwatch"
 
 # TODO: Translation updated at 2024-09-22 16:23
 
+translate french strings:
+
     # game/screens/inventory.rpy:130
     old "It's a Smartwatch I got from Gaspard. It connects wirelessly to a phone."
     new "C'est un Smartwatch que j'ai eu de Gaspard. Il se connecte sans fil à un téléphone."
-
-# TODO: Translation updated at 2024-09-22 15:11
-
-translate french strings:
-
-    # game/screens/inventory.rpy:15
-    old "Smartwatch"
-    new ""
-
-# TODO: Translation updated at 2024-09-22 16:23
-
-translate french strings:
-
-    # game/screens/inventory.rpy:130
-    old "It's a Smartwatch I got from Gaspard. It connects wirelessly to a phone."
-    new ""
 

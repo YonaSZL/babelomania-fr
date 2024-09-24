@@ -58,6 +58,7 @@ image side francesco darko = LayeredImageProxy("Francesco_por", Transform(matrix
 define ga = Character(_("Gaspard Faucigny"), what_prefix='\"', what_suffix='\"', image="gaspard", ctc="ctc_blink", ctc_position="nestled")
 define ga_x = Character(_("?????"), what_prefix='\"', what_suffix='\"', image="gaspard", ctc="ctc_blink", ctc_position="nestled")
 define ga_n = Character(_("Gaspard Faucigny"), what_suffix='\"', image="gaspard", ctc="ctc_blink", ctc_position="nestled")
+define ga_i = Character(_("Gaspard Faucigny"), what_prefix='{i}', image="gaspard", ctc="ctc_blink", ctc_position="nestled")
 define ga_st = Character(_("Gaspard Faucigny"), what_prefix='{u}\"', what_suffix='\"', image="gaspard", ctc="ctc_blink", ctc_position="nestled")
 image side gaspard = LayeredImageProxy("Gaspard_por")
 image side gaspard nulla = Null()

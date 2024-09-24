@@ -14,12 +14,10 @@ screen taisho_1f_library_explore_01():
 
     viewport:
         draggable True
-        mousewheel False
-        edgescroll(75,75)
-        xinitial 0.5
-        scrollbars None
-        arrowkeys None
-        pagekeys None
+        yinitial 0.5 xinitial 0.5
+        child_size (2880, 1080)
+        edgescroll(150,200)
+        xsize config.screen_width ysize config.screen_height
 
         add "taisho_1f_library_base"
 
@@ -27,55 +25,55 @@ screen taisho_1f_library_explore_01():
             sensitive "taisho_1f_library_explore_01_sensitive"
             idle "Gaspard frown"
             hover "Gaspard frown"
-            xpos 111
-            ypos 111
+            xpos 207
+            ypos 577
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_confirm.ogg"
             action Jump("exp_taisho_1f_library_01_gaspard")
             tooltip _("Gaspard")
             at transform:
-                zoom 0.14
+                zoom 0.33
             
         imagebutton:
             sensitive "taisho_1f_library_explore_01_sensitive"
             idle "Amina neutral"
             hover "Amina neutral"
-            xpos 111
-            ypos 111
+            xpos 1301
+            ypos 520
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_confirm.ogg"
             action Jump("exp_taisho_1f_library_01_amina")
             tooltip _("Amina")
             at transform:
-                zoom 0.14
+                zoom 0.2
         
         button:
-            pos(993,454)
-            xysize(128,297)
+            pos(1724,414)
+            xysize(509,297)
             background None
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_confirm.ogg"
             action Jump("exp_taisho_1f_library_01_bookshelves")
             tooltip _("Bookshelves")
         button:
-            pos(993,454)
-            xysize(128,297)
+            pos(2654,341)
+            xysize(226,551)
             background None
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_confirm.ogg"
             action Jump("exp_taisho_1f_library_01_window")
             tooltip _("Window")
         button:
-            pos(993,454)
-            xysize(128,297)
+            pos(1898,707)
+            xysize(83,45)
             background None
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_confirm.ogg"
             action Jump("exp_taisho_1f_library_01_laptop")
             tooltip _("Laptop")
         button:
-            pos(993,454)
-            xysize(128,297)
+            pos(2453,257)
+            xysize(130,236)
             background None
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_confirm.ogg"
@@ -83,8 +81,8 @@ screen taisho_1f_library_explore_01():
             tooltip _("Painting")
         if taisho_1f_library_explore_01 == 4:
             button:
-                pos(993,454)
-                xysize(128,297)
+                pos(2326,560)
+                xysize(232,129)
                 background None
                 hover_sound "audio/sfx/gui_hover.ogg"
                 activate_sound "audio/sfx/gui_confirm.ogg"
