@@ -16,7 +16,7 @@ translate french exp_bar_corr_window_a6f6fc44:
 translate french exp_bar_corr_window_726e4884:
 
     # sh_i surprise "(Wait, {b}tempered glass{/b}?{w=0.5} Why would they need to have tempered glass windows, here?)"
-    sh_i surprise "(Attendez, du {b}verre trempé{/b} ? Pourquoi auraient-ils besoin de fenêtres en verre trempé, ici ?)"
+    sh_i surprise "(Attendez, du {b}verre trempé{/b} ?{w=0.5} Pourquoi auraient-ils besoin de fenêtres en verre trempé, ici ?)"
 
 # game/scripts/exp/exp_bar_corr.rpy:13
 translate french exp_bar_corr_window_b829d778:
@@ -70,7 +70,7 @@ translate french exp_bar_corr_doors_d9eff879:
 translate french exp_bar_corr_doors_0842c4ff:
 
     # sh_i frown "(Ugh, and it's currently in use, I can smell it even from here...{w=0.5} What an awful habit.)"
-    sh_i frown "(Ugh, et il est en cours d'utilisation, je peux le sentir même d'ici...{w=0.5} Quelle horrible habitude...)"
+    sh_i frown "(Ugh, et il est en cours d'utilisation, je peux le sentir même d'ici...{w=0.5} Quelle horrible habitude.)"
 
 # game/scripts/exp/exp_bar_corr.rpy:32
 translate french exp_bar_corr_doors_532aef3e:
@@ -118,7 +118,7 @@ translate french exp_bar_corr_reception_6bd4b82b:
 translate french exp_bar_corr_up_22d75ca5:
 
     # sh_i neutral "(Stairs leading up to the upper floors, hm?{w=0.3} Wonder what kind of rooms are up there...{w=0.5} The reception room's dome reaches high enough, so I guess there must be a walkway?)"
-    sh_i neutral "(Les escaliers menant aux étages supérieurs, hm ?{w=0.3} Je me demande quel genre de pièces il y a là-haut...{w=0.5} Le dôme de la salle de réception est assez haut, alors je suppose qu'il doit y avoir une passerelle...)"
+    sh_i neutral "(Les escaliers menant aux étages supérieurs, hm ?{w=0.3} Je me demande quel genre de pièces il y a là-haut...{w=0.5} Le dôme de la salle de réception est assez haut, alors je suppose qu'il doit y avoir une passerelle ?)"
 
 # game/scripts/exp/exp_bar_corr.rpy:50
 translate french exp_bar_corr_up_acefb1f9:
@@ -180,7 +180,7 @@ translate french exp_bar_corr_smoke_10366336:
 translate french exp_bar_corr_up_db83afc8:
 
     # sh_i neutral "(Stairs leading to the upper floors, hm?{w=0.3} Wonder what kind of rooms are up there...{w=0.5} The reception room's dome reaches high enough, so I guess there must be a walkway?)"
-    sh_i neutral "(Les escaliers menant aux étages supérieurs, hm ?{w=0.3} Je me demande quel genre de pièces il y a là-haut...{w=0.5} Le dôme de la salle de réception est assez haut, alors je suppose qu'il doit y avoir une passerelle...)"
+    sh_i neutral "(Les escaliers menant aux étages supérieurs, hm ?{w=0.3} Je me demande quel genre de pièces il y a là-haut...{w=0.5} Le dôme de la salle de réception est assez haut, alors je suppose qu'il doit y avoir une passerelle ?)"
 
 # game/scripts/exp/exp_bar_corr.rpy:96
 translate french exp_bar_corr_up_b470e055:
@@ -236,7 +236,7 @@ translate french exp_bar_corr_reception_64740b90:
 translate french exp_bar_corr_reception_e3d91d1f:
 
     # sh_i neutral "(Not that I can blame him, it is his wedding...{w=0.5} But even in an already divided group of people, I can't fit in either way.{w=0.3} It's like high school all over again.)"
-    sh_i neutral "(Je ne peux pas lui en vouloir, c'est son mariage...{w=0.5} Même dans un groupe de personnes déjà divisé, je n'arrive pas à m'intégrer...{w=0.5} C'est comme si le lycée recommençait.)"
+    sh_i neutral "(Je ne peux pas lui en vouloir, c'est son mariage...{w=0.5} Même dans un groupe de personnes déjà divisé, je n'arrive pas à m'intégrer.{w=0.5} C'est comme si le lycée recommençait.)"
 
 # TODO: Translation updated at 2024-09-15 17:31
 
