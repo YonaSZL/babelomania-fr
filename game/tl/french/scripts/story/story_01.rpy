@@ -4,7 +4,7 @@
 translate french story_01_awakening_b2a2b494:
 
     # sh surprise sweat ".{w=0.3}.{w=0.3}.{w=0.5}where...?"
-    sh surprise sweat ""
+    sh surprise sweat ".{w=0.3}.{w=0.3}.{w=0.5} Où... ?"
 
 # TODO: Translation updated at 2024-09-19 21:30
 
@@ -12,43 +12,43 @@ translate french story_01_awakening_b2a2b494:
 translate french story_01_there_were_three_c028a303:
 
     # sh_i neutral "(Alright, then.{w=0.3} I should leave, now.)"
-    sh_i neutral ""
+    sh_i neutral "(Très bien, alors.{w=0.3} Je devrais partir, maintenant.)"
 
 # game/scripts/story/story_01.rpy:35
 translate french story_01_there_were_three_4494509f:
 
     # sh_i nulla "(Nothing else of interest that I can see, in this room.{w=0.3} Seems like a small study...{w=0.5} Or meeting room.)"
-    sh_i nulla ""
+    sh_i nulla "(Rien d'autre d'intéressant que je puisse voir, dans cette pièce.{w=0.3} On dirait un petit bureau...{w=0.5} Ou une salle de réunion.)"
 
 # game/scripts/story/story_01.rpy:37
 translate french story_01_there_were_three_d8f99fc5:
 
     # sh_i nulla "(Hopefully, the rest of the building isn't as sturdily locked down as the win-)"
-    sh_i nulla ""
+    sh_i nulla "(J'espère que le reste du bâtiment n'est pas aussi solidement verrouillé que les fenêt-)"
 
 # game/scripts/story/story_01.rpy:46
 translate french story_01_there_were_three_81ff2264:
 
     # sh_i nulla "(The doorknob...{w=0.5} Someone's trying to open the door!)"
-    sh_i nulla ""
+    sh_i nulla "(La poignée de porte...{w=0.5} Quelqu'un essaie d'ouvrir la porte !)"
 
 # game/scripts/story/story_01.rpy:48
 translate french story_01_there_were_three_d7c9257b:
 
     # sh_i nulla "(Thank goodness!{w=0.3} It means that there's other people around that-)"
-    sh_i nulla ""
+    sh_i nulla "(Dieu merci !{w=0.3} Cela signifie qu'il y a d'autres personnes dans le coi-)"
 
 # game/scripts/story/story_01.rpy:52
 translate french story_01_there_were_three_877d77e4:
 
     # sh_i nulla "(Wait...{w=0.5} {nw}"
-    sh_i nulla ""
+    sh_i nulla "(Attendez...{w=0.5} {nw}"
 
 # game/scripts/story/story_01.rpy:54
 translate french story_01_there_were_three_fb58ed71:
 
     # extend "{b}trying{/b} to open the door?)"
-    extend ""
+    extend "{b}essaie{/b} d'ouvrir la porte ?)"
 
 # TODO: Translation updated at 2024-09-20 23:06
 
@@ -56,157 +56,157 @@ translate french story_01_there_were_three_fb58ed71:
 translate french story_01_door_opens_2cfdd14d:
 
     # sh_i nulla "(That doesn't sound good at all...{w=0.5} Maybe I'm being paranoid, but I'd rather get out of here on my own terms.)"
-    sh_i nulla ""
+    sh_i nulla "(Ça n'a pas l'air bon du tout...{w=0.5} Je suis peut-être paranoïaque, mais je préfèrerais sortir d'ici de moi-même.)"
 
 # game/scripts/story/story_01.rpy:75
 translate french story_01_door_opens_aea5d9b2:
 
     # sh_i frown "(I'll hide and be silent, wait for whoever it is to go away.)"
-    sh_i frown ""
+    sh_i frown "(Je vais me cacher et me taire, j'attendrai que la personne s'en aille.)"
 
 # game/scripts/story/story_01.rpy:83
 translate french story_01_door_opens_ffe7ed58:
 
     # sh_i angry "(Ugh, they're persistent...!{w=0.3} But the door seems reinforced.{w=0.3} They'll need to give up, eventually...)"
-    sh_i angry ""
+    sh_i angry "(Ugh, ils sont persistants... !{w=0.3} Mais la porte semble renforcée.{w=0.3} Ils devront abandonner, éventuellement...)"
 
 # game/scripts/story/story_01.rpy:85
 translate french story_01_door_opens_6e060318:
 
     # sh_i neutral "(.{w=0.3}.{w=0.3}.{w=0.5}did they give up?)"
-    sh_i neutral ""
+    sh_i neutral "(.{w=0.3}.{w=0.3}.{w=0.5} Ont-ils abandonné ?)"
 
 # game/scripts/story/story_01.rpy:92
 translate french story_01_door_opens_28cd648c:
 
     # sh_i shock sweat "(What...?!)"
-    sh_i shock sweat ""
+    sh_i shock sweat "(Quoi... ?!)"
 
 # game/scripts/story/story_01.rpy:97
 translate french story_01_door_opens_c0cfe651:
 
     # sh_i frown sweat "(One...{w=0.5} Two.{w=0.3} Two sets of steps.)"
-    sh_i frown sweat ""
+    sh_i frown sweat "(Un...{w=0.5} Deux.{w=0.3} Deux séries de pas.)"
 
 # game/scripts/story/story_01.rpy:98
 translate french story_01_door_opens_16eca874:
 
     # am_x darko surprise "(<...shoulder?>)"
-    am_x darko surprise ""
+    am_x darko surprise "(<...épaule ?>)"
 
 # game/scripts/story/story_01.rpy:99
 translate french story_01_door_opens_ffffa5e3:
 
     # ga_x darko angry "<I'm fine!{w=0.3} Mind your own business!>"
-    ga_x darko angry ""
+    ga_x darko angry "<Je vais bien ! {w=0.3} Occupe-toi de tes affaires !>"
 
 # game/scripts/story/story_01.rpy:100
 translate french story_01_door_opens_be66d193:
 
     # am_x darko angry "<Why are you being such an asshole?!{w=0.3} I was trying to help!>"
-    am_x darko angry ""
+    am_x darko angry "<Pourquoi joues-tu au con ?!{w=0.3} J'essayais de t'aider !>"
 
 # game/scripts/story/story_01.rpy:101
 translate french story_01_door_opens_9ca8a711:
 
     # sh_i surprise "(They're...{w=0.5} Arguing?{w=0.3} In French?{w=0.5} Wait, I think...{w=0.3} Are they...?)"
-    sh_i surprise ""
+    sh_i surprise "(Ils se...{w=0.5} Disputent ?{w=0.3} En français ?{w=0.5} Attends, je crois que...{w=0.3} Sont-ils... ?)"
 
 # game/scripts/story/story_01.rpy:110
 translate french story_01_door_opens_6179508a:
 
     # sh_i surprise "(Gaspard and Amina!)"
-    sh_i surprise ""
+    sh_i surprise "(Gaspard et Amina !)"
 
 # game/scripts/story/story_01.rpy:111
 translate french story_01_door_opens_50ae7d68:
 
     # ga nulla "<I didn't need your help.>"
-    ga nulla ""
+    ga nulla "<Je n'avais pas besoin de ton aide.>"
 
 # game/scripts/story/story_01.rpy:113
 translate french story_01_door_opens_2edb6298:
 
     # am nulla "<The way you're holding your shoulder begs to differ.{w=0.3} You've been acting crazy ever since we woke up!>"
-    am nulla ""
+    am nulla "<La façon dont tu tiens ton épaule me dit le contraire.{w=0.3} Tu agis comme un fou depuis que nous nous sommes réveillés !>"
 
 # game/scripts/story/story_01.rpy:115
 translate french story_01_door_opens_f0aa259c:
 
     # ga nulla "<Oh, I'm sorry me if the situation we're in is getting to me...>"
-    ga nulla ""
+    ga nulla "<Oh, désolé si la situation dans laquelle nous nous trouvons me monte à la tête...>"
 
 # game/scripts/story/story_01.rpy:117
 translate french story_01_door_opens_88412d8d:
 
     # am nulla "<It's exactly because the situation we're in is weird that we need to keep a level head...{w=0.5} Just running around opening random doors won't do us any good.{w=0.3} We need to think.>"
-    am nulla ""
+    am nulla "<C'est justement parce que la situation dans laquelle nous nous trouvons est bizarre que nous devons garder la tête froide...{w=0.5} Courir partout en ouvrant des portes au hasard ne nous fera aucun bien.{w=0.3} Nous devons réfléchir.>"
 
 # game/scripts/story/story_01.rpy:119
 translate french story_01_door_opens_3d1bab61:
 
     # ga nulla "<What is there to think about?!{w=0.3} It's clear we've been kidnapped!>"
-    ga nulla ""
+    ga nulla "<À quoi bon réfléchir ?!{w=0.3} Il est clair que nous avons été kidnappés !>"
 
 # game/scripts/story/story_01.rpy:121
 translate french story_01_door_opens_c64193cc:
 
     # am nulla "<What kind of kidnapper would leave us unrestrained in a room we can open?{w=0.3} And with a {nw}"
-    am nulla ""
+    am nulla "<Quel genre de kidnappeur nous laisserait en liberté dans une pièce que nous pouvons ouvrir ?{w=0.3} Et avec un {nw}"
 
 # game/scripts/story/story_01.rpy:123
 translate french story_01_door_opens_fde92d53:
 
     # extend "{b}code that allows us to open another door{/b}?!>"
-    extend ""
+    extend "{b}code qui nous permet d'ouvrir une autre porte{/b} ?!>"
 
 # game/scripts/story/story_01.rpy:124
 translate french story_01_door_opens_727a6389:
 
     # sh neutral ".{w=0.3}.{w=0.3}.{w=0.5}and why would they kidnap me, too?"
-    sh neutral ""
+    sh neutral ".{w=0.3}.{w=0.3}.{w=0.5} Et pourquoi m'enlèveraient-ils aussi ?"
 
 # game/scripts/story/story_01.rpy:133
 translate french story_01_door_opens_0cb175e3:
 
     # sh nulla "I don't come from any kind of money, old or new."
-    sh nulla ""
+    sh nulla "Je ne viens d'aucune sorte d'argent, ancien ou nouveau."
 
 # game/scripts/story/story_01.rpy:134
 translate french story_01_door_opens_cef0915a:
 
     # am nulla "Shigeo Arata...!{w=0.5} <Sur le Coran de la Mecque!>"
-    am nulla ""
+    am nulla "Shigeo Arata... !{w=0.5} <Sur le Coran de la Mecque !>"
 
 # game/scripts/story/story_01.rpy:136
 translate french story_01_door_opens_dbb3a7d1:
 
     # ga nulla "<What the fuck is wrong with you?!{w=0.3} You scared the shit out of me!>"
-    ga nulla ""
+    ga nulla "<Qu'est-ce qui ne va pas avec toi ?!{w=0.3} Tu m'as foutu une trouille d'enfer !>"
 
 # game/scripts/story/story_01.rpy:137
 translate french story_01_door_opens_98a6febb:
 
     # sh nulla "Apologies.{w=0.3} I was waiting to see who came through that door...{w=0.5} And how they would choose to act."
-    sh nulla ""
+    sh nulla "Mes excuses.{w=0.3} J'étais en train d'attendre de voir qui allé franchir cette porte...{w=0.5} Et comment ils choisiraient d'agir."
 
 # game/scripts/story/story_01.rpy:139
 translate french story_01_door_opens_5e941e28:
 
     # sh nulla "As you aptly put, this is a very weird situation...{w=0.5} And I agree with Amina that at this moment, it'd be better to collect our thoughts for a few minutes."
-    sh nulla ""
+    sh nulla "Comme tu le dis si bien, c'est une situation très étrange...{w=0.5} Et je suis d'accord avec Amina sur le fait qu'en ce moment, il serait préférable de rassembler nos pensées pendant quelques minutes."
 
 # game/scripts/story/story_01.rpy:145
 translate french story_01_door_opens_b59086a9:
 
     # am nulla "Also gives me time to get my heart-rate down."
-    am nulla ""
+    am nulla "Donnez-moi également le temps de faire redescendre mon rythme cardiaque."
 
 # game/scripts/story/story_01.rpy:146
 translate french story_01_door_opens_ad7ceece:
 
     # ga nulla "<Tsk.{w=0.3} Whatever.>"
-    ga nulla ""
+    ga nulla "<Tsk.{w=0.3} Peu importe.>"
 
 # TODO: Translation updated at 2024-09-21 16:11
 
@@ -214,31 +214,31 @@ translate french story_01_door_opens_ad7ceece:
 translate french story_01_door_opens_0ad7e43f:
 
     # sh_i angry "(Ugh, they're persistent...!{w=0.3} But the door seems reinforced.)"
-    sh_i angry ""
+    sh_i angry "(Ugh, ils sont persistants... !{w=0.3} Mais la porte semble renforcée.)"
 
 # game/scripts/story/story_01.rpy:104
 translate french story_01_door_opens_7d420ac6:
 
     # am_x darko surprise "<...shoulder?>"
-    am_x darko surprise ""
+    am_x darko surprise "<...épaule ?>"
 
 # game/scripts/story/story_01.rpy:105
 translate french story_01_door_opens_87c85de4:
 
     # ga_x darko angry sweat "<I'm fine!{w=0.3} Mind your own business!>"
-    ga_x darko angry sweat ""
+    ga_x darko angry sweat "<Je vais bien ! {w=0.3} Occupe-toi de tes affaires !>"
 
 # game/scripts/story/story_01.rpy:121
 translate french story_01_door_opens_798246ff:
 
     # ga nulla "<Oh, I'm sorry if the situation we're in is getting to me...>"
-    ga nulla ""
+    ga nulla "<Oh, désolé si la situation dans laquelle nous nous trouvons me monte à la tête...>"
 
 # game/scripts/story/story_01.rpy:130
 translate french story_01_door_opens_a4e0066d:
 
     # sh neutral -sweat ".{w=0.3}.{w=0.3}.{w=0.5}and why would they kidnap me, too?"
-    sh neutral -sweat ""
+    sh neutral -sweat ".{w=0.3}.{w=0.3}.{w=0.5} Et pourquoi m'enlèveraient-ils aussi ?"
 
 # TODO: Translation updated at 2024-09-21 22:08
 
@@ -246,163 +246,163 @@ translate french story_01_door_opens_a4e0066d:
 translate french story_01_taisho_5f686328:
 
     # sh neutral "We've stood still long enough...{w=0.5} We should move."
-    sh neutral ""
+    sh neutral "Nous sommes restés immobiles assez longtemps...{w=0.5} Nous devrions bouger."
 
 # game/scripts/story/story_01.rpy:187
 translate french story_01_taisho_333dbbf3:
 
     # sh nulla "Can you tell me what time is it?{w=0.3} Also, do you have anything on you to draw a map?"
-    sh nulla ""
+    sh nulla "Pouvez-vous me dire quelle heure il est ?{w=0.3} De plus, avez-vous quelque chose sur vous pour dessiner une carte ?"
 
 # game/scripts/story/story_01.rpy:189
 translate french story_01_taisho_6f692dd1:
 
     # am nulla "[dis_hours]:[dis_minutes]...{w=0.5} And I could make one with a Sketch App on my phone?"
-    am nulla ""
+    am nulla "[dis_hours]:[dis_minutes]...{w=0.5} Et je pourrais en faire une avec Sketch App sur mon téléphone ?"
 
 # game/scripts/story/story_01.rpy:191
 translate french story_01_taisho_8c1768bc:
 
     # sh nulla "It's going to be inaccessible if the battery runs out...{w=0.5} But it will do until we find something to write."
-    sh nulla ""
+    sh nulla "Elle sera inaccessible si la batterie s'épuise...{w=0.5} Mais elle fera l'affaire jusqu'à ce que nous trouvions quelque chose pour écrire."
 
 # game/scripts/story/story_01.rpy:193
 translate french story_01_taisho_b2cf9141:
 
     # ga nulla "<Hey hey hey, wait a damn minute!{w=0.3} Who the hell put you in charge?!>"
-    ga nulla ""
+    ga nulla "<Hey hey hey, attends une minute !{w=0.3} Qui t'a mis aux commandes ?!>"
 
 # game/scripts/story/story_01.rpy:196
 translate french story_01_taisho_fe6b6eaa:
 
     # sh nulla "Nobody, I guess...{w=0.5} So, what do you suggest we should do?"
-    sh nulla ""
+    sh nulla "Personne, je suppose...{w=0.5} Alors, que nous conseilles-tu de faire ?"
 
 # game/scripts/story/story_01.rpy:199
 translate french story_01_taisho_a94150ad:
 
     # ga nulla "<We...{w=0.5} We should check the other doors in the corridor.{w=0.3} See if we can find a way out.{w=0.3} Yes.>"
-    ga nulla ""
+    ga nulla "<Nous...{w=0.5} Nous devrions vérifier les autres portes du couloir.{w=0.3} Voir si nous pouvons trouver une sortie.{w=0.3} Oui.>"
 
 # game/scripts/story/story_01.rpy:202
 translate french story_01_taisho_b9120810:
 
     # sh nulla "Very well.{w=0.3} Let's do that, then."
-    sh nulla ""
+    sh nulla "Très bien.{w=0.3} Faisons ça, alors."
 
 # game/scripts/story/story_01.rpy:203
 translate french story_01_taisho_8dbf8941:
 
     # ga nulla "<.{w=0.3}.{w=0.3}.{w=0.5}fucking...>"
-    ga nulla ""
+    ga nulla "<.{w=0.3}.{w=0.3}.{w=0.5} Merde...>"
 
 # game/scripts/story/story_01.rpy:208
 translate french story_01_taisho_664df09e:
 
     # am nulla "Thank you for being patient with him...{w=0.5} He's usually not this bad."
-    am nulla ""
+    am nulla "Merci d'avoir été patient avec lui...{w=0.5} Il n'est pas aussi mauvais généralement."
 
 # game/scripts/story/story_01.rpy:210
 translate french story_01_taisho_0eab138e:
 
     # sh nulla "One doesn't usually find themselves in such a situation.{w=0.3} It's alright, I'm not taking it personally.{w=0.3} He obviously needs to feel in control to be at ease...{w=0.5} I will accomodate."
-    sh nulla ""
+    sh nulla "On ne se retrouve pas habituellement dans une telle situation.{w=0.3} Ce n'est pas grave, je ne le prends pas personnellement.{w=0.3} Il a évidemment besoin de se sentir en contrôle pour être à l'aise...{w=0.5} Je vais m'adapter."
 
 # game/scripts/story/story_01.rpy:212
 translate french story_01_taisho_303c2c8c:
 
     # am nulla "Could you elaborate further on what you meant?{w=0.3} About this not just being a ransom situation?"
-    am nulla ""
+    am nulla "Peux-tu développer davantage ce que tu voulais dire ?{w=0.3} Qu'il ne s'agit pas simplement d'une situation de rançon ?"
 
 # game/scripts/story/story_01.rpy:216
 translate french story_01_taisho_588a01ef:
 
     # sh nulla "We've been out for little more than an hour.{w=0.3} If it was about ransom, they would have taken us somewhere far away and isolated, instead we're still at the château...{w=0.5} And that's without adding in the detail that I'm not really worth anything, monetarily."
-    sh nulla ""
+    sh nulla "Nous sommes là depuis un peu plus d'une heure.{w=0.3} S'il s'agissait d'une rançon, ils nous auraient emmenés dans un endroit éloigné et isolé, au lieu de cela nous sommes toujours au château...{w=0.5} Et c'est sans ajouter le détail que je ne vaux vraiment rien, monétairement."
 
 # game/scripts/story/story_01.rpy:218
 translate french story_01_taisho_82fddb95:
 
     # sh nulla "Also, there's matter with my phone and the doors...{w=0.5} Earlier, I thought they had placed me in such a room for protection, but now I fear that this is something much more elaborate and sinister."
-    sh nulla ""
+    sh nulla "Il y a aussi le problème de mon téléphone et des portes...{w=0.5} Auparavant, je pensais qu'ils m'avaient placé dans une telle pièce pour me protéger, mais maintenant je crains que ce soit quelque chose de beaucoup plus élaboré et sinistre."
 
 # game/scripts/story/story_01.rpy:220
 translate french story_01_taisho_f65f870c:
 
     # sh nulla "I don't know exactly what, yet...{w=0.5} But we should take into account that {nw}"
-    sh nulla ""
+    sh nulla "Je ne sais pas exactement quoi, encore...{w=0.5} Mais nous devrions prendre en compte que {nw}"
 
 # game/scripts/story/story_01.rpy:222
 translate french story_01_taisho_26b54d54:
 
     # extend "{b}our captors may be observing us right now{/b}."
-    extend ""
+    extend "{b}nos ravisseurs nous observent peut-être en ce moment même{/b}."
 
 # game/scripts/story/story_01.rpy:227
 translate french story_01_taisho_8a666dc0:
 
     # am nulla "You...{w=0.5} You're serious, aren't you?{w=0.3} But more than that..."
-    am nulla ""
+    am nulla "Tu...{w=0.5} Tu es sérieux, n'est-ce pas ?{w=0.3} Mais plus que ça..."
 
 # game/scripts/story/story_01.rpy:229
 translate french story_01_taisho_3ea5645f:
 
     # am nulla "You seem to be...{w=0.5} Unbelievably calm, despite the circumstances."
-    am nulla ""
+    am nulla "Tu sembles être...{w=0.5} Incroyablement calme, malgré les circonstances."
 
 # game/scripts/story/story_01.rpy:231
 translate french story_01_taisho_7412fe05:
 
     # sh nulla "Oh, I'm the right amount of nervous, believe me...{w=0.5} But, in a weird way, such a situation is actually more calming for me."
-    sh nulla ""
+    sh nulla "Oh, je suis assez nerveux, crois-moi...{w=0.5} Mais, d'une manière étrange, une telle situation est en fait plus apaisante pour moi."
 
 # game/scripts/story/story_01.rpy:233
 translate french story_01_taisho_6d25e07c:
 
     # sh nulla "I'm used to dealing with stuff like this on the job...{w=0.5} Although, never this directly."
-    sh nulla ""
+    sh nulla "J'ai l'habitude de gérer ce genre de choses au travail...{w=0.5} Bien que, jamais aussi directement."
 
 # game/scripts/story/story_01.rpy:234
 translate french story_01_taisho_a0e2e4f2:
 
     # am nulla "Right, what you 'do for a living'...{w=0.5} And that would be?"
-    am nulla ""
+    am nulla "Bien, ce que tu fais dans la vie...{w=0.5} Et c'est ?"
 
 # game/scripts/story/story_01.rpy:237
 translate french story_01_taisho_b71f8304:
 
     # sh nulla "I'm with {nw}"
-    sh nulla ""
+    sh nulla "Je travaille avec {nw}"
 
 # game/scripts/story/story_01.rpy:239
 translate french story_01_taisho_fbbd0918:
 
     # extend "{b}Europol{/b}.{w=0.5} I'm a {b}behavioral analyst and criminal profiler{/b}."
-    extend ""
+    extend "{b}Europol{/b}.{w=0.5} Je suis {b}analyste comportemental et profileur criminel{/b}."
 
 # game/scripts/story/story_01.rpy:261
 translate french story_01_taisho_corridor_d50c9115:
 
     # sh surprise "The light coming in from outside is strong enough...{w=0.5} Saves us some battery."
-    sh surprise ""
+    sh surprise "La lumière qui vient de l'extérieur est assez forte...{w=0.5} Cela nous permettra d'économiser de la batterie."
 
 # game/scripts/story/story_01.rpy:262
 translate french story_01_taisho_corridor_b4350b6b:
 
     # am nulla "The window is not shuttered, unlike those in the rooms...{w=0.5} But it's still locked."
-    am nulla ""
+    am nulla "La fenêtre n'a pas les volets fermés, contrairement à celles des pièces...{w=0.5} Mais elle est quand même verrouillée."
 
 # game/scripts/story/story_01.rpy:263
 translate french story_01_taisho_corridor_6c142867:
 
     # sh frown "Also, it's made of tempered glass...{w=0.5} No chance of breaking through that bare handed."
-    sh frown ""
+    sh frown "De plus, elle est en verre trempé...{w=0.5} Aucune chance de la percer à mains nues."
 
 # game/scripts/story/story_01.rpy:264
 translate french story_01_taisho_corridor_455dac3a:
 
     # sh neutral "Well, let's look around and see what our options are."
-    sh neutral ""
+    sh neutral "Eh bien, regardons autour de nous et voyons quelles sont nos options."
 
 # TODO: Translation updated at 2024-09-22 15:11
 
@@ -410,13 +410,13 @@ translate french story_01_taisho_corridor_455dac3a:
 translate french story_01_door_opens_c1a07500:
 
     # am nulla "<It's exactly because the situation we're in is weird that we need to keep a level head...{w=0.5} Just running around ramming random doors won't do us any good.{w=0.3} We need to think.>"
-    am nulla ""
+    am nulla "<C'est justement parce que la situation dans laquelle nous nous trouvons est bizarre que nous devons garder la tête froide...{w=0.5} Courir partout en ouvrant des portes au hasard ne nous fera aucun bien.{w=0.3} Nous devons réfléchir.>"
 
 # game/scripts/story/story_01.rpy:231
 translate french story_01_taisho_9f8a54b7:
 
     # sh nulla "Oh, I'm the right amount of nervous, believe me.{w=0.3} You should've seen before I found the flashlight...{w=0.5} But, in a weird way, such a situation is actually more calming for me."
-    sh nulla ""
+    sh nulla "Oh, je suis assez nerveux, crois-moi.{w=0.3} Tu aurais dû voir avant que je trouve la lampe de poche...{w=0.5} Mais, d'une manière étrange, une telle situation est en fait plus apaisante pour moi."
 
 # TODO: Translation updated at 2024-09-23 23:14
 
@@ -424,184 +424,184 @@ translate french story_01_taisho_9f8a54b7:
 translate french story_01_taisho_side_meet_efa75df8:
 
     # sh neutral ".{w=0.3}.{w=0.3}.{w=0.5}no one's here."
-    sh neutral ""
+    sh neutral ".{w=0.3}.{w=0.3}.{w=0.5} Il n'y a personne ici."
 
 # game/scripts/story/story_01.rpy:289
 translate french story_01_taisho_side_meet_a72977b3:
 
     # ga frown "<Also:{w=0.3} another dead end.>"
-    ga frown ""
+    ga frown "<Aussi :{w=0.3} une autre impasse.>"
 
 # game/scripts/story/story_01.rpy:290
 translate french story_01_taisho_side_meet_db4e7e07:
 
     # am surprise "Or is it?{w=0.3} Look."
-    am surprise ""
+    am surprise "Est ce vraiment le cas ?{w=0.3} Regarde."
 
 # game/scripts/story/story_01.rpy:294
 translate french story_01_taisho_side_meet_66ac3cfc:
 
     # am surprise "Another locked door...{w=0.5} Shigeo, what's the code you used?"
-    am surprise ""
+    am surprise "Une autre porte verrouillée...{w=0.5} Shigeo, quel est le code que tu as utilisé ?"
 
 # game/scripts/story/story_01.rpy:295
 translate french story_01_taisho_side_meet_d0c408c8:
 
     # sh neutral "19261225."
-    sh neutral ""
+    sh neutral "19261225."
 
 # game/scripts/story/story_01.rpy:297
 translate french story_01_taisho_side_meet_5d301f82:
 
     # am neutral "Alright.{w=0.3} I'm going to try both."
-    am neutral ""
+    am neutral "Très bien.{w=0.3} Je vais essayer les deux."
 
 # game/scripts/story/story_01.rpy:307
 translate french story_01_taisho_side_meet_fc874a88:
 
     # am sad "Ugh, would've been too easy, I guess...{w=0.5} Any ideas?"
-    am sad ""
+    am sad "Ugh, ça aurait été trop facile, je suppose...{w=0.5} Des idées ?"
 
 # game/scripts/story/story_01.rpy:308
 translate french story_01_taisho_side_meet_a36a0362:
 
     # ga frown "<Ugh, this is ridiculous!{w=0.3} Why are we even in here?!{w=0.3} We should be trying to open the door to the stairwell!>"
-    ga frown ""
+    ga frown "<Ugh, c'est ridicule !{w=0.3} Pourquoi sommes-nous ici ?!{w=0.3} Nous devrions essayer d'ouvrir la porte de la cage d'escalier !>"
 
 # game/scripts/story/story_01.rpy:309
 translate french story_01_taisho_side_meet_3e27d687:
 
     # sh neutral "We currently lack the means to.{w=0.3} We need to-"
-    sh neutral ""
+    sh neutral "Nous manquons actuellement de moyens pour le faire.{w=0.3} Nous devons-"
 
 # game/scripts/story/story_01.rpy:312
 translate french story_01_taisho_side_meet_03b439e8:
 
     # ga angry "<Then the window!{w=0.3} This one, or the one in the corridor!>"
-    ga angry ""
+    ga angry "<Alors, la fenêtre !{w=0.3} Celle-ci, ou celle du couloir !>"
 
 # game/scripts/story/story_01.rpy:316
 translate french story_01_taisho_side_meet_82f55a5e:
 
     # ga angry "<Let's try and break open one of {i}these{/i} fucking things, already!{w=0.3} Let's do SOMETHING!>"
-    ga angry ""
+    ga angry "<Essayons d'ouvrir une de {i}ces{/i} putains de choses, déjà !{w=0.3} Faisons QUELQUE CHOSE !>"
 
 # game/scripts/story/story_01.rpy:317
 translate french story_01_taisho_side_meet_a94e0d9e:
 
     # am surprise "Gaspard...!"
-    am surprise ""
+    am surprise "Gaspard... !"
 
 # game/scripts/story/story_01.rpy:318
 translate french story_01_taisho_side_meet_4ea69bb4:
 
     # sh neutral "I understand your frustration, but-"
-    sh neutral ""
+    sh neutral "Je comprends ta frustration, mais-"
 
 # game/scripts/story/story_01.rpy:320
 translate french story_01_taisho_side_meet_79c64c4b:
 
     # ga angry "<Do you?!{w=0.3} Do you really?!{w=0.3} You seem to be taking this quite IN STRIDE!>"
-    ga angry ""
+    ga angry "<Et toi ?!{w=0.3} Vraiment ?!{w=0.3} Tu sembles prendre ça plutôt À LA LÉGÈRE !>"
 
 # game/scripts/story/story_01.rpy:321
 translate french story_01_taisho_side_meet_27264ee3:
 
     # sh surprise "...!"
-    sh surprise ""
+    sh surprise "... !"
 
 # game/scripts/story/story_01.rpy:323
 translate french story_01_taisho_side_meet_8a3b518a:
 
     # ga angry sweat "<All calm and collected, while I'm losing my fucking mind!{w=0.3} Locked in this REVOLTING building, made to solve FUCKING riddles?!{w=0.3} How dare!{w=0.3} HOW DARE?!>"
-    ga angry sweat ""
+    ga angry sweat "<Tout calme et serein, alors que je perds la boule !{w=0.3} Enfermé dans ce bâtiment RÉVOLTANT, obligé de résoudre des PUTAIN d'énigmes ?!{w=0.3} Comment oses-tu !{w=0.3} COMMENT OSES-TU ?!>"
 
 # game/scripts/story/story_01.rpy:326
 translate french story_01_taisho_side_meet_32c5246e:
 
     # am surprise sweat "Gaspard, please calm down!{w=0.3} What's wrong with you?!"
-    am surprise sweat ""
+    am surprise sweat "Gaspard, s'il te plaît, calme-toi !{w=0.3} Qu'est-ce qui ne va pas avec toi ?!"
 
 # game/scripts/story/story_01.rpy:330
 translate french story_01_taisho_side_meet_219c51a8:
 
     # ga angry "<What's wrong?!{w=0.3} WHAT'S WRONG?!>"
-    ga angry ""
+    ga angry "<Qu'est-ce qui ne va pas ?!{w=0.3} QU'EST-CE QUI NE VA PAS ?!>"
 
 # game/scripts/story/story_01.rpy:335
 translate french story_01_taisho_side_meet_d24b1fb0:
 
     # ga surprise "<What's...{w=0.5} What's wrong.{w=0.3}.{w=0.3}.{w=0.3}?{w=0.5} I...>"
-    ga surprise ""
+    ga surprise "<Qu'est-ce qui ne va pas ?{w=0.5} Qu'est-ce qui ne va pas.{w=0.3}.{w=0.3}.{w=0.3} ?{w=0.5} Je...>"
 
 # game/scripts/story/story_01.rpy:337
 translate french story_01_taisho_side_meet_2160c050:
 
     # am sad sweat "I've never seen you this upset...{w=0.5} Are you feeling alright?"
-    am sad sweat ""
+    am sad sweat "Je ne t'ai jamais vu aussi bouleversé...{w=0.5} Tu te sens bien ?"
 
 # game/scripts/story/story_01.rpy:341
 translate french story_01_taisho_side_meet_75252558:
 
     # ga frown "I...{w=0.5} I feel a little hot, actually, I...{w=0.5} And I'm thirsty."
-    ga frown ""
+    ga frown "Je...{w=0.5} J'ai un peu chaud, en fait, je...{w=0.5} Et j'ai soif."
 
 # game/scripts/story/story_01.rpy:342
 translate french story_01_taisho_side_meet_cb2078b2:
 
     # sh neutral sweat ".{w=0.3}.{w=0.3}.{w=0.5}let's take a small break.{w=0.3} Amina, please assist him.{w=0.3} I will take a look around."
-    sh neutral sweat ""
+    sh neutral sweat ".{w=0.3}.{w=0.3}.{w=0.5} Prenons une petite pause.{w=0.3} Amina, aide-le s'il te plaît.{w=0.3} Je vais jeter un œil autour."
 
 # game/scripts/story/story_01.rpy:343
 translate french story_01_taisho_side_meet_b9dee754:
 
     # am sad -sweat "Thanks...{w=0.5} <Gaspard, why don't you lay down?>"
-    am sad -sweat ""
+    am sad -sweat "Merci...{w=0.5} <Gaspard, pourquoi ne t'allonges-tu pas ?>"
 
 # game/scripts/story/story_01.rpy:351
 translate french story_01_taisho_side_meet_edf4a1df:
 
     # sh_i nulla "(The stress must be getting to him...{w=0.5} Did they know that he doesn't like the building?{w=0.3} And of his temper?{w=0.3} Is that why they put him in here?)"
-    sh_i nulla ""
+    sh_i nulla "(Le stress doit le gagner...{w=0.5} Savaient-ils qu'il n'aimait pas le bâtiment ?{w=0.3} Et son caractère ?{w=0.3} C'est pour ça qu'ils l'ont mis ici ?)"
 
 # game/scripts/story/story_01.rpy:353
 translate french story_01_taisho_side_meet_84e20177:
 
     # sh_i nulla "(I wouldn't put it past whoever's doing this.{w=0.5} The fact that we are allowed to walk around this building, able to guess our way to opening the doors...{w=0.5} This isn't a kidnapping, this is {nw}"
-    sh_i nulla ""
+    sh_i nulla "(Je ne serais pas surpris que quiconque fasse ça.{w=0.5} Le fait que nous soyons autorisés à nous promener dans ce bâtiment, capables de deviner comment ouvrir les portes...{w=0.5} Ce n'est pas un enlèvement, c'est {nw}"
 
 # game/scripts/story/story_01.rpy:355
 translate french story_01_taisho_side_meet_5773c096:
 
     # extend "{b}some kind of game or test{/b}...{w=0.5} I have no doubt that we're being observed, now.)"
-    extend ""
+    extend "{b}une sorte de jeu ou de test{/b}...{w=0.5} Je n'ai aucun doute que nous sommes observés, maintenant.)"
 
 # game/scripts/story/story_01.rpy:357
 translate french story_01_taisho_side_meet_31f73105:
 
     # sh_i nulla "(I should keep this to myself, for now.{w=0.3} Let's just hope they don't introduce any new variables before I figure out the rules or a way out of this building...)"
-    sh_i nulla ""
+    sh_i nulla "(Je devrais garder ça pour moi, pour l'instant.{w=0.3} Espérons juste qu'ils n'introduisent pas de nouvelles variables avant que je découvre les règles ou un moyen de sortir de ce bâtiment...)"
 
 # game/scripts/story/story_01.rpy:384
 translate french story_01_taisho_side_meet_572d23dc:
 
     # ga frown sweat "<That water was disgusting.>"
-    ga frown sweat ""
+    ga frown sweat "<Cette eau était dégoûtante.>"
 
 # game/scripts/story/story_01.rpy:385
 translate french story_01_taisho_side_meet_5cc2b49d:
 
     # am neutral "<Just be glad it wasn't stagnant.{w=0.3} It did come from a flower vase, after all.>"
-    am neutral ""
+    am neutral "<Sois content qu'elle ne soit pas stagnante.{w=0.3} Elle vient d'un vase à fleurs, après tout.>"
 
 # game/scripts/story/story_01.rpy:386
 translate french story_01_taisho_side_meet_27681a3c:
 
     # ga surprise "<With fake flowers...?{w=0.5} Why?>"
-    ga surprise ""
+    ga surprise "<Avec de fausses fleurs...?{w=0.5} Pourquoi ?>"
 
 # game/scripts/story/story_01.rpy:387
 translate french story_01_taisho_side_meet_16b18e5e:
 
     # am smile "<I don't know.{w=0.3} Authenticity?>"
-    am smile ""
+    am smile "<Je ne sais pas.{w=0.3} L'authenticité ?>"
