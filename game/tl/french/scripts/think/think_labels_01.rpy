@@ -72,7 +72,7 @@ translate french strings:
 translate french think_01_trap_2df29929:
 
     # sh_i nulla "(A door easily opened from inside but not outside...{w=0.5} Unless this is a special room that can only be opened from outside?{w=0.3} Which just so happens to look like a meeting room?{w=0.3} That's...{w=0.5} Unlikely.)"
-    sh_i nulla "(Une porte qui s'ouvre facilement de l'intérieur mais pas de l'extérieur...{w=0.5} A moins qu'il ne s'agisse d'une pièce spéciale qui ne peut être ouverte que de l'extérieur ?{w=0.3} Il se trouve qu'elle ressemble à une salle de réunion ?{w=0.3} C'est...{w=0.5} Peu probable.)"
+    sh_i nulla "(Une porte qui s'ouvre facilement de l'intérieur mais pas de l'extérieur...{w=0.5} À moins qu'il ne s'agisse d'une pièce spéciale qui ne peut être ouverte que de l'extérieur ?{w=0.3} Il se trouve qu'elle ressemble à une salle de réunion ?{w=0.3} C'est...{w=0.5} Peu probable.)"
 
 # game/scripts/think/think_labels_01.rpy:51
 translate french think_01_protect_5d4b7c9f:
