@@ -164,7 +164,7 @@ translate french strings:
 
     # game/script.rpy:50
     old "Professor Habiki"
-    new "Professor Habiki"
+    new "Professeur Habiki"
 
     # game/script.rpy:59
     old "Academic Invitee"
