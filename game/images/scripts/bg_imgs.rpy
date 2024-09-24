@@ -89,3 +89,12 @@ layeredimage taisho_1f_tabitha:
     group top:
         attribute top_dark default:
             "darkness_layer"
+
+image taisho_1f_library_base = "images/bgs/taisho/taisho_1f_library.jpg"
+layeredimage taisho_1f_library:
+    group bottom:
+        attribute base default:
+            "taisho_1f_library_base"
+    group top:
+        attribute top_dark default:
+            "darkness_layers"
