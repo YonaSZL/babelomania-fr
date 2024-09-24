@@ -10,7 +10,7 @@ translate french gaspmina_01_shigeo_70186b5e:
 translate french gaspmina_01_shigeo_a30b4288:
 
     # sh neutral -sweat "I wasn't exactly {i}doing{/i} anything, other than looking around.{w=0.3} I woke up in here not long ago, in complete darkness."
-    sh neutral -sweat "Je pas {i}faisais{/i} pas exactement quelque chose, à part regarder autour de moi.{w=0.3} Je me suis réveillé ici il n'y a pas longtemps, dans le noir complet."
+    sh neutral -sweat "Je ne {i}faisais{/i} pas exactement quelque chose, à part regarder autour de moi.{w=0.3} Je me suis réveillé ici il n'y a pas longtemps, dans le noir complet."
 
 # game/scripts/conv/gaspard_amina_convs.rpy:91
 translate french gaspmina_01_shigeo_0e117604:
