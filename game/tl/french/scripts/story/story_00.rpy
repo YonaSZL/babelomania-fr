@@ -150,7 +150,7 @@ translate french story_00_invitation_b1002e10:
 translate french story_00_invitation_b99a5ed7:
 
     # tb_n "<And let me tell you, the attention to detail of monsieur Du Bois went far beyond just architecture!>"
-    tb_n "<Et laissez-moi vous dire que le souci du détail de Monsieur Du Bois est allé bien au-delà de l'architecture !>"
+    tb_n "<Et laissez-moi vous dire que le souci du détail de Monsieur Du Bois est allé bien au-delà de la simple architecture !>"
 
 # game/scripts/story/story_00.rpy:139
 translate french story_00_invitation_de4a6b33:
@@ -168,7 +168,7 @@ translate french story_00_invitation_b2407151:
 translate french story_00_invitation_7982d1b4:
 
     # tb_n2 "<Indeed?{w=0.5} To be honest, I don't exactly approve of a lot of the placements.>"
-    tb_n2 "<Indeed ?{w=0.5} Pour être honnête, je n'approuve pas vraiment beaucoup des aménagements.>"
+    tb_n2 "<Vraiment ?{w=0.5} Pour être honnête, je n'approuve pas vraiment beaucoup des aménagements.>"
 
 # game/scripts/story/story_00.rpy:142
 translate french story_00_invitation_f1c8088e:
@@ -210,7 +210,7 @@ translate french story_00_invitation_a2d54f03:
 translate french story_00_invitation_8cfb68dd:
 
     # tb_n2 "<What do you mean, monsieur {b}Arata{/b}?>"
-    tb_n2 "<Que voulez-vous dire, Monsieur {b}Arata{/b}?>"
+    tb_n2 "<Que voulez-vous dire, Monsieur {b}Arata{/b} ?>"
 
 # game/scripts/story/story_00.rpy:154
 translate french story_00_invitation_3ab8968f:
@@ -432,7 +432,7 @@ translate french story_00_bathroom_encounters_68d24269:
 translate french story_00_bathroom_encounters_913c1df8:
 
     # sh_i neutral sweat "(.{w=0.3}.{w=0.3}.{w=0.5}that painting really is something else, isn't it?)"
-    sh_i neutral sweat "(.{w=0.3}.{w=0.3}.{w=0.5}ce tableau est vraiment quelque chose d'autre, n'est-ce pas ?)"
+    sh_i neutral sweat "(.{w=0.3}.{w=0.3}.{w=0.5} Ce tableau est vraiment quelque chose d'autre, n'est-ce pas ?)"
 
 # game/scripts/story/story_00.rpy:299
 translate french story_00_bathroom_encounters_6d8ef3fe:
@@ -678,7 +678,7 @@ translate french story_00_bathroom_return_84d8955c:
 translate french story_00_bathroom_return_36a7eb82:
 
     # sh shock "...!"
-    sh shock "...!"
+    sh shock "... !"
 
 # game/scripts/story/story_00.rpy:390
 translate french story_00_bathroom_return_c10e8908:
@@ -768,7 +768,7 @@ translate french story_00_bathroom_return_39abbc12:
 translate french story_00_bathroom_return_69a6679a:
 
     # ha_x nulla "The drive to the château was quite long and tiring...{w=0.5} Hence the need to indulge in my little vice.{w=0.3} But I fear that I could not persuade Tabitha to fully close the door."
-    ha_x nulla "Mais le trajet jusqu'au château a été assez long et fatigant...{w=0.5} D'où la nécessité de me livrer à mon petit vice.{w=0.3} Mais je crains de ne pas avoir pu persuader Tabatha de fermer complètement la porte."
+    ha_x nulla "Mais le trajet jusqu'au château a été assez long et fatigant...{w=0.5} D'où la nécessité de me livrer à mon petit vice.{w=0.3} Mais je crains de ne pas avoir pu persuader Tabitha de fermer complètement la porte."
 
 # game/scripts/story/story_00.rpy:439
 translate french story_00_bathroom_return_2cdf5812:
@@ -810,7 +810,7 @@ translate french story_00_bathroom_return_594ddcb1:
 translate french story_00_bathroom_return_e854791a:
 
     # sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}how can you tell?"
-    sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}comment le savez-vous ?"
+    sh nulla ".{w=0.3}.{w=0.3}.{w=0.5} Comment le savez-vous ?"
 
 # game/scripts/story/story_00.rpy:456
 translate french story_00_bathroom_return_8c68de93:
@@ -884,7 +884,7 @@ translate french story_00_bathroom_return_f98477c1:
 translate french story_00_bathroom_return_cfe6349c:
 
     # sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}you know, considering that your bucket of bolts almost attacked me, I'd think an apology would be a better introduction than veiled insults."
-    sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}vous savez, étant donné que votre seau de boulons a failli m'attaquer, je pense que des excuses seraient une meilleure introduction que des insultes voilées."
+    sh nulla ".{w=0.3}.{w=0.3}.{w=0.5} Vous savez, étant donné que votre seau de boulons a failli m'attaquer, je pense que des excuses seraient une meilleure introduction que des insultes voilées."
 
 # game/scripts/story/story_00.rpy:416
 translate french story_00_bathroom_return_40551126:
@@ -1004,7 +1004,7 @@ translate french story_00_meet_gaspard_75611b23:
 translate french story_00_meet_gaspard_9ab0c4d0:
 
     # ga_x nulla "<Apologies for calling out to you so suddenly but, I believe we ran into each other earlier?>"
-    ga_x nulla "<Désolé de vous avoir appelé si soudainement mais je crois qu'on s'est croisés plus tôt ?>"
+    ga_x nulla "<Désolé de vous avoir appelé si soudainement mais je crois qu'on s'est croisé plus tôt ?>"
 
 # game/scripts/story/story_00.rpy:493
 translate french story_00_meet_gaspard_089e42f1:
@@ -1022,7 +1022,7 @@ translate french story_00_meet_gaspard_5a0a987b:
 translate french story_00_meet_gaspard_91c45b23:
 
     # ga_x nulla "<I came across as quite rude, I believe, not returning your greeting.{w=0.3} I just wasn't expecting anyone to come through the door at the precise moment.>"
-    ga_x nulla "<Je me suis montré assez impoli, je crois, en ne vous rendant pas votre salut.{w=0.3} Je ne m'attendais simplement pas à ce que quelqu'un franchisse la porte au moment précis.>"
+    ga_x nulla "<Je me suis montré assez impoli, je crois, en ne vous rendant pas votre salut.{w=0.3} Je ne m'attendais simplement pas à ce que quelqu'un franchisse la porte à ce moment précis.>"
 
 # game/scripts/story/story_00.rpy:497
 translate french story_00_meet_gaspard_467466f6:
@@ -1090,7 +1090,7 @@ translate french story_00_invitation_0ab620a9:
 translate french story_00_invitation_9566c415:
 
     # tb_n "<Indeed...{w=0.5} You have to remember, though, that the family turned the estate from museum to source of profit in 2025.{w=0.3} Afterwards, god only knows who had a hand in reshaping it and moving things around.>"
-    tb_n "<En effet...{w=0.5} Vous devez vous rappeler, cependant, que la famille a transformé le domaine de musée à source de profit en 2025.{w=0.3} Après cela, Dieu seul sait qui a eu la main pour le remodeler et déplacer les choses.>"
+    tb_n "<En effet...{w=0.5} Vous devez vous rappeler, cependant, que la famille a transformé le domaine de musée en source de profit, en 2025.{w=0.3} Après cela, Dieu seul sait qui a eu la main pour le remodeler et déplacer les choses.>"
 
 # game/scripts/story/story_00.rpy:144
 translate french story_00_invitation_45e26784:
@@ -1344,7 +1344,7 @@ translate french story_00_meet_gaspard_3b36690d:
 translate french story_00_meet_gaspard_14c5206e:
 
     # sh_i smile "(Also, the groom will eventually need to go back to his seat.{w=0.3} This guy looks to be around my same age, so a new acquaintance wouldn't hurt.)"
-    sh_i smile "(De plus, ille marié devra éventuellement retourner à sa place.{w=0.3} Ce type semble avoir à peu près le même âge que moi, donc une nouvelle connaissance ne ferait pas de mal.)"
+    sh_i smile "(De plus, le marié devra éventuellement retourner à sa place.{w=0.3} Ce type semble avoir à peu près le même âge que moi, donc une nouvelle connaissance ne ferait pas de mal.)"
 
 # game/scripts/story/story_00.rpy:526
 translate french story_00_meet_gaspard_1c5096ce:
@@ -1454,7 +1454,7 @@ translate french story_00_meet_amina_8e5c1904:
 translate french story_00_meet_amina_9ac7c712:
 
     # am nulla ".{w=0.3}.{w=0.3}.{w=0.5}there are no more free seats."
-    am nulla ".{w=0.3}.{w=0.3}.{w=0.5}il n'y a plus de place."
+    am nulla ".{w=0.3}.{w=0.3}.{w=0.5} Il n'y a plus de place."
 
 # game/scripts/story/story_00.rpy:582
 translate french story_00_meet_amina_a1f186a4:
@@ -1502,7 +1502,7 @@ translate french story_00_meet_amina_e789a115:
 translate french story_00_meet_amina_8ea2d8d3:
 
     # sh_i nulla "(It's changed...{w=0.5} It carries something else.{w=0.3} So much else, compared to when we last met...{w=0.5} Yet, the timbre and cadence are...{w=0.5} Unmistakable, even through the filter of French.)"
-    sh_i nulla "(Elle a changée...{w=0.5} Elle porte autre chose.{w=0.3} Tellement d'autres choses, comparé à la dernière fois que nous nous sommes rencontrés...{w=0.5} Pourtant, le timbre et la cadence sont...{w=0.5} Indubitables, même à travers le filtre du français.)"
+    sh_i nulla "(Elle a changé...{w=0.5} Elle porte autre chose.{w=0.3} Tellement d'autres choses, comparé à la dernière fois que nous nous sommes rencontrés...{w=0.5} Pourtant, le timbre et la cadence sont...{w=0.5} Indubitables, même à travers le filtre du français.)"
 
 # game/scripts/story/story_00.rpy:612
 translate french story_00_meet_amina_b2d2a9b3:
@@ -1658,7 +1658,7 @@ translate french story_00_meet_amina_cf4b504f:
 translate french story_00_meet_amina_47e353b4:
 
     # sh nulla "Choice?{w=0.5} What choice?{w=0.3} Are you talking about inviting me?"
-    sh nulla "Choix ?{w=0.5} Quel choix ?{w=0.3} Tu parles de m'avoir inviter ?"
+    sh nulla "Choix ?{w=0.5} Quel choix ?{w=0.3} Tu parles de m'avoir invité ?"
 
 # game/scripts/story/story_00.rpy:678
 translate french story_00_meet_amina_821223af:
@@ -1718,7 +1718,7 @@ translate french story_00_meet_amina_6d0d0d4b:
 translate french story_00_meet_amina_def53087:
 
     # sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}fine, but...{w=0.5} Weren't you supposed to show me to my table?"
-    sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}d'accord, mais...{w=0.5} Tu n'étais pas censé me montrer ma table ?"
+    sh nulla ".{w=0.3}.{w=0.3}.{w=0.5} D'accord, mais...{w=0.5} Tu n'étais pas censé me montrer ma table ?"
 
 # game/scripts/story/story_00.rpy:695
 translate french story_00_meet_amina_5c8c2a21:
@@ -1748,7 +1748,7 @@ translate french story_00_meet_amina_aca2309f:
 translate french story_00_meet_amina_a9d98dfd:
 
     # sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}also, I see Amina sitting there?{w=0.3} You could've just pointed her out?"
-    sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}aussi, je vois Amina assise là ?{w=0.3} Tu aurais pu simplement la montrer du doigt ?"
+    sh nulla ".{w=0.3}.{w=0.3}.{w=0.5} Aussi, je vois Amina assise là ?{w=0.3} Tu aurais pu simplement la montrer du doigt ?"
 
 # game/scripts/story/story_00.rpy:705
 translate french story_00_meet_amina_5c8f5c40:
@@ -1858,7 +1858,7 @@ translate french story_00_meet_amina_1f7b9c50:
 translate french story_00_meet_amina_854912d0:
 
     # ha neutral ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha?"
-    ha neutral ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha ?"
+    ha neutral ".{w=0.3}.{w=0.3}.{w=0.5} Tabitha ?"
 
 # game/scripts/story/story_00.rpy:760
 translate french story_00_meet_amina_589f90f9:
@@ -1898,5 +1898,5 @@ translate french story_00_invitation_0201c8e5:
 translate french story_00_meet_amina_8c37d57a:
 
     # ha neutral traglasses ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha?"
-    ha neutral traglasses ".{w=0.3}.{w=0.3}.{w=0.5}Tabitha ?"
+    ha neutral traglasses ".{w=0.3}.{w=0.3}.{w=0.5} Tabitha ?"
 
