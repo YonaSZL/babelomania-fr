@@ -1,5 +1,6 @@
 default taisho_1f_library_explore_01_sensitive = True
 default taisho_1f_library_explore_01 = 0
+default taisho_1f_library_explore_timer = False
 
 default exp_taisho_1f_library_01_bookshelves = False
 default exp_taisho_1f_library_01_window = False
@@ -81,8 +82,6 @@ screen taisho_1f_library_explore_01():
             action Jump("exp_taisho_1f_library_01_painting")
             tooltip _("Painting")
         if taisho_1f_library_explore_01 == 4:
-            timer 60.0 action Play("sound2", "audio/se/fist_slam.ogg")
-            timer 120.0 action Play("sound2", "audio/se/fabric_tearing.ogg")
             button:
                 pos(993,454)
                 xysize(128,297)
@@ -91,6 +90,9 @@ screen taisho_1f_library_explore_01():
                 activate_sound "audio/sfx/gui_confirm.ogg"
                 action Jump("exp_taisho_1f_library_01_bonsai")
                 tooltip _("Bonsai")
+        if taisho_1f_library_explore_timer:
+            timer 60.0 action Play("sound2", "audio/se/fist_slam.ogg")
+            timer 120.0 action Play("sound2", "audio/se/fabric_tearing.ogg")
     
     add "darkness_layers"
 
@@ -147,7 +149,10 @@ label exp_taisho_1f_library_01_window:
 label exp_taisho_1f_library_01_laptop:
     $ renpy.block_rollback()
     pause 0.5
-
+    sh_i shock "(A laptop...?!{w=0.3} Then maybe...)"
+    pause 1.5
+    sh_i frown "(Darn it.{w=0.3} It's an old one, the charger is not an USB-C.)"
+    sh_i surprise "(Still...{w=0.5} It gives me thought.{w=0.3} I should try and see if it turns on, later.)"
     if exp_taisho_1f_library_01_laptop == False:
         $ exp_taisho_1f_library_01_laptop = True
         $ taisho_1f_library_explore_01 += 1
@@ -156,7 +161,12 @@ label exp_taisho_1f_library_01_laptop:
 label exp_taisho_1f_library_01_painting:
     $ renpy.block_rollback()
     pause 0.5
-
+    sh_i surprise "(That's a nice Ukiyo-E painting...{w=0.5} I think I've actually seen the image on a book, before.{w=0.3} Although, the way it reflects the light...?)"
+    play sound4 "audio/se/steps_wood_slow.ogg"
+    pause 2.0
+    sh_i frown "(Yup, a plastic copy.{w=0.5} Not surprising, if Du Bois actually had the original in his possession, I doubt his descendants would just leave it hanging around.)"
+    sh_i neutral "(It gives off a weird feeling, not going to lie...{w=0.5} Like the entire estate has been sanitized, in some way.{w=0.3} Deprived of its personality.)"
+    sh_i frown "(.{w=0.3}.{w=0.3}.{w=0.5}maybe this is all the work of some kind of Du Bois truther who wanted to bring the 'real' château back, who knows.)"
     if exp_taisho_1f_library_01_painting == False:
         $ exp_taisho_1f_library_01_painting = True
         $ taisho_1f_library_explore_01 += 1
@@ -165,7 +175,26 @@ label exp_taisho_1f_library_01_painting:
 label exp_taisho_1f_library_01_bonsai:
     $ renpy.block_rollback()
     pause 0.5
-
+    stop music fadeout 3.5
+    sh_i surprise "(.{w=0.3}.{w=0.3}.{w=0.5}a {nw}"
+    play sound4 "audio/sfx/gui_hint.ogg"
+    extend "{b}bonsai{/b}..."
+    pause 1.0
+    show Shigeo surprise at sh_big:
+        xalign 0.5
+    with dissolve
+    sh_i nulla "(It's been years since I've seen one...{w=0.5} It looks well taken care of.)"
+    pause 1.0
+    show Shigeo sad with dissolve
+    pause 0.5
+    sh_i nulla "(Mom used to keep one similar to this in our living room...{w=0.5} Back in our house in Italy.{w=0.3} The display pot has the same shape and colour.)"
+    show Shigeo neutral
+    sh_i nulla "(Back when she and dad still loved each other...{w=0.5} Back when we were still a family.{w=0.5} Before...)"
+    pause 1.0
+    show Shigeo sad with dissolve
+    pause 0.5
+    sh_i nulla "(Francesco...{w=0.5} I hope you're alright.{w=0.3} If we)"
+    $ taisho_1f_library_explore_timer = True
     if exp_taisho_1f_library_01_bonsai == False:
         $ exp_taisho_1f_library_01_bonsai = True
         $ taisho_1f_library_explore_01 += 1
