@@ -4,5 +4,5 @@ translate french strings:
 
     # game/screens/history_screen.rpy:63
     old "The dialogue history is empty."
-    new ""
+    new "L'historique des dialogues est vide."
 
