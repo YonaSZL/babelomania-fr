@@ -4,7 +4,7 @@ translate french strings:
 
     # game/scripts/codex/locations/scr_chateau_dubois.rpy:2
     old "Chateau de Bois-le-Dumont"
-    new "Château de Bois-le-Dumont"
+    new "Chateau de Bois-le-Dumont"
 
     # game/scripts/codex/locations/scr_chateau_dubois.rpy:4
     old "One of the most renown among France's 45.000 châteaux, the history of this estate is as fragmented as its current configuration is bizarre. It started as a vanity project from a member of pre-revolutionary aristocracy, in a bid to emulate the pomp of King Louis the XIV's Palace of Versailles. Unfortunately, the French Revolution would put an end to the project and the September Massacres would put an end to his lineage."
