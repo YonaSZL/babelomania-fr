@@ -1908,3 +1908,11 @@ translate french story_00_meet_amina_cf9f4c61:
     # fr_x darko neutral "<Counterorder, Amina.{w=0.3} I will show him to your table myself in a couple minutes.>"
     fr_x darko neutral ""
 
+# TODO: Translation updated at 2024-09-25 22:27
+
+# game/scripts/story/story_00.rpy:232
+translate french story_00_bathroom_break_7d6826a6:
+
+    # extend "{b}Francesco{/b} from childhood.{w=0.3} He was my best friend, truth tell.)"
+    extend ""
+

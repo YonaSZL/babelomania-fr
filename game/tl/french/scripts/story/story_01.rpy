@@ -1334,3 +1334,11 @@ translate french taisho_1f_library_gaspard_face_271e444b:
     # sh surprise sweat "...what?"
     sh surprise sweat ""
 
+# TODO: Translation updated at 2024-09-25 22:27
+
+# game/scripts/story/story_01.rpy:218
+translate french story_01_taisho_b5301ddf:
+
+    # sh nulla "Also, there's the matter with my phone and the doors...{w=0.5} Earlier, I thought they had placed me in such a room for protection, but now I fear that this is something much more elaborate and sinister."
+    sh nulla ""
+

@@ -174,7 +174,7 @@ label habiki_01_wedding:
     show Habiki traglasses frown
     ha nulla ".{w=0.3}.{w=0.3}.{w=0.5}not exactly wrong, just...{w=1.0} Nevermind."
     show Habiki neutral sunglasses
-    ha nulla "Nothing of importance.{w=0.3} You're just the first person I met from Francesco's life before college."
+    ha nulla "Nothing of importance.{w=0.3} You're just the first person I meet from Francesco's life before college."
     sh surprise "Oh...{w=0.5} Yeah, to be honest, his invite was a surprise.{w=0.3} I didn't even know he had gotten married."
     ha nulla "I see...{w=0.5} Well, no time like the present to reconnect, don't you think?"
     show Habiki smile

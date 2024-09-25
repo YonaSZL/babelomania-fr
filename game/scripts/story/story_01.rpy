@@ -215,7 +215,7 @@ label story_01_taisho:
     pause 0.5
     sh nulla "We've been out for little more than an hour.{w=0.3} If it was about ransom, they would have taken us somewhere far away and isolated, instead we're still at the château...{w=0.5} And that's without adding in the detail that I'm not really worth anything, monetarily."
     show Amina neutral
-    sh nulla "Also, there's matter with my phone and the doors...{w=0.5} Earlier, I thought they had placed me in such a room for protection, but now I fear that this is something much more elaborate and sinister."
+    sh nulla "Also, there's the matter with my phone and the doors...{w=0.5} Earlier, I thought they had placed me in such a room for protection, but now I fear that this is something much more elaborate and sinister."
     show Shigeo neutral
     sh nulla "I don't know exactly what, yet...{w=0.5} But we should take into account that {nw}"
     play sound4 "audio/sfx/gui_spook.ogg"
