@@ -2050,5 +2050,5 @@ translate french story_00_meet_amina_8c37d57a:
 translate french story_00_meet_amina_cf9f4c61:
 
     # fr_x darko neutral "<Counterorder, Amina.{w=0.3} I will show him to your table myself in a couple minutes.>"
-    fr_x darko neutral ""
+    fr_x darko neutral "<Contre-ordre, Amina.{w=0.3} Je vais lui montrer la table moi-même dans quelques minutes.>"
 
