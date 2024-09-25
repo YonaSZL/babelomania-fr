@@ -556,7 +556,7 @@ translate french gaspmina_01_phone_57c7087e:
 translate french gaspmina_01_phone_f3ff0914:
 
     # ga nulla "<They way you were talking made it sound like...{w=0.5} We've just been kidnapped for ransom, no?{w=0.3} And you probably lost your phone while they were moving you.>"
-    ga nulla "<La façon dont tu parlez donnait l'impression que...{w=0.5} Nous venons d'être kidnappés contre une rançon, non ?{w=0.3} Et tu as probablement perdu ton téléphone pendant qu'ils te déplaçaient.>"
+    ga nulla "<La façon dont tu parles donnait l'impression que...{w=0.5} Nous venons d'être kidnappés contre une rançon, non ?{w=0.3} Et tu as probablement perdu ton téléphone pendant qu'ils te déplaçaient.>"
 
 # game/scripts/conv/gaspard_amina_convs.rpy:254
 translate french gaspmina_01_phone_bfe5a91a:
