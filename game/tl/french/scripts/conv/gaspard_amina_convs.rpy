@@ -370,7 +370,7 @@ translate french gaspmina_01_phone_5f1449ad:
 translate french gaspmina_01_phone_a731137c:
 
     # am nulla "We...{w=0.5} We both do.{w=0.3} We used the flashlight function to look around the room...{w=0.3} You mean you don't?"
-    am nulla "Nous...{w=0.5} Nous l'avons tous les deux.{w=0.3} Nous avons utilisé la fonction lampe de poche pour regarder autour de la pièce...{w=0.3} Tu veux dire que tu ne l'as pas ?"
+    am nulla "Nous...{w=0.5} Nous l'avons tous les deux.{w=0.3} Nous avons utilisé la fonction lampe-torche pour regarder autour de la pièce...{w=0.3} Tu veux dire que tu ne l'as pas ?"
 
 # game/scripts/conv/gaspard_amina_convs.rpy:214
 translate french gaspmina_01_phone_3e0a9807:
