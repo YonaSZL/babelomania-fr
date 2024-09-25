@@ -416,7 +416,7 @@ translate french story_01_door_opens_c1a07500:
 translate french story_01_taisho_9f8a54b7:
 
     # sh nulla "Oh, I'm the right amount of nervous, believe me.{w=0.3} You should've seen before I found the flashlight...{w=0.5} But, in a weird way, such a situation is actually more calming for me."
-    sh nulla "Oh, je suis assez nerveux, crois-moi.{w=0.3} Tu aurais dû voir avant que je trouve la lampe de poche...{w=0.5} Mais, d'une manière étrange, une telle situation est en fait plus apaisante pour moi."
+    sh nulla "Oh, je suis assez nerveux, crois-moi.{w=0.3} Tu aurais dû voir avant que je trouve la lampe-torche...{w=0.5} Mais, d'une manière étrange, une telle situation est en fait plus apaisante pour moi."
 
 # TODO: Translation updated at 2024-09-23 23:14
 
