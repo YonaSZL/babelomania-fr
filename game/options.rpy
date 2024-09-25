@@ -70,6 +70,9 @@ define config.sample_sound = "audio/sfx/gui_hint.ogg"
 
 define config.main_menu_music = "audio/bgm/babelomania.ogg"
 
+## Extra Layers
+define config.layers = ['bg', 'under', 'master', 'transient', 'screens', 'overlay']
+
 
 ## Transitions #################################################################
 ##

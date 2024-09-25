@@ -18,3 +18,11 @@ translate french strings:
     old "The Taishō era was characterized by political and intellectual fervor, also due to the influence of Western Culture which was exemplified in the architecture and fashion of the time. The period saw protests and fights for ideals like universal male suffrage, worker's rights and social welfare but also political repression of left-leaning movements and high profile assassinations, like that of Prime Minister Hara Takashi. Also of note was the Great Kantō Earthquake of 1923."
     new "L'Ère Taishō fut caractérisée par une ferveur politique et intellectuelle, également due à l'influence de la culture occidentale qui se manifesta dans l'architecture et la mode de l'époque. Cette période vit des manifestations et des combats pour des idéaux tels que le suffrage universel masculin, les droits des travailleurs et la protection sociale, mais aussi une répression politique des mouvements de gauche et des assassinats de grande envergure, comme celui du Premier ministre Hara Takashi. Le grand tremblement de terre de Kantō de 1923 fut également à noter."
 
+# TODO: Translation updated at 2024-09-25 01:30
+
+translate french strings:
+
+    # game/scripts/codex/events/scr_taisho.rpy:6
+    old "A short period due to the health problems of the Emperor, it is remembered as a transitionary period between the chaotic Meiji period and the more militaristic first part of the Shōwa era, which would see the country veer towards totalitarianism and ultranationalism."
+    new ""
+

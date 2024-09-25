@@ -74,7 +74,7 @@ screen about():
                 label _("{size=35}PRODUCER, DIRECTOR") yalign 0.5
                 text "{a=https://nicanjil.carrd.co/}\"Meinos Kaen\"{/a}" xoffset 15 yalign 0.5
             vbox:
-                label ("{size=35}PROGRAMMERS") yalign 0.5
+                label _("{size=35}PROGRAMMERS") yalign 0.5
                 text "\"Meinos Kaen\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}BACKGROUND ARTISTS") yalign 0.5
@@ -123,7 +123,7 @@ screen about():
                 text "The Wonderful JPDE Supporters on {a=https://www.patreon.com/JPDE}Patreon{/a} and {a=https://ko-fi.com/jpde}Ko-Fi{/a}" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}ADDITIONAL SOUND EFFECTS") yalign 0.5
-                text "{a=https://ellr.itch.io/}Ellr{/a}, {a=https://ateliermagicae.itch.io/}Atelier Magicae{/a}, Dev Tones, {a=https://nox-sound-design.itch.io/}Nox_Sound_Design{/a}, {a=https://www.gamedevmarket.net/member/shashirajproductions}SHASHIRAJproductions{/a}" xoffset 15 yalign 0.5
+                text "{a=https://ellr.itch.io/}Ellr{/a}, {a=https://ateliermagicae.itch.io/}Atelier Magicae{/a}, {a=https://rcptones.gumroad.com/l/dev_tones}rcptones{/a}, {a=https://nox-sound-design.itch.io/}Nox_Sound_Design{/a}, {a=https://www.gamedevmarket.net/member/shashirajproductions}SHASHIRAJproductions{/a}" xoffset 15 yalign 0.5
                 text "{a=https://www.joelsteudlermusic.com/}Joel Steudler{/a}, {a=https://wowsound.itch.io/}W.O.W. Sound{/a}" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}ADDITIONAL MUSIC") yalign 0.5

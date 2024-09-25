@@ -57,6 +57,8 @@ image gaspard_turn_02 = "images/cgs/chapter_00/gaspard/gaspard_turn_02.jpg"
 image gaspard_turn_03 = "images/cgs/chapter_00/gaspard/gaspard_turn_03.jpg"
 image gaspard_turn_04 = "images/cgs/chapter_00/gaspard/gaspard_turn_04.jpg"
 
+image gaspard_focus_01 = "images/cgs/chapter_00/gaspard/gaspard_focus_01.jpg"
+image gaspard_focus_02 = "images/cgs/chapter_00/gaspard/gaspard_focus_02.jpg"
 image gaspard_rip = "images/cgs/chapter_00/gaspard/gaspard_rip.jpg"
 image gaspard_tear = ConditionSwitch(
     "persistent.gore == True", "images/cgs/chapter_00/gaspard/gaspard_tear.jpg",

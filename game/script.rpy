@@ -58,6 +58,7 @@ image side francesco darko = LayeredImageProxy("Francesco_por", Transform(matrix
 define ga = Character(_("Gaspard Faucigny"), what_prefix='\"', what_suffix='\"', image="gaspard", ctc="ctc_blink", ctc_position="nestled")
 define ga_x = Character(_("?????"), what_prefix='\"', what_suffix='\"', image="gaspard", ctc="ctc_blink", ctc_position="nestled")
 define ga_n = Character(_("Gaspard Faucigny"), what_suffix='\"', image="gaspard", ctc="ctc_blink", ctc_position="nestled")
+define ga_i = Character(_("Gaspard Faucigny"), what_prefix='{i}', image="gaspard", ctc="ctc_blink", ctc_position="nestled")
 define ga_st = Character(_("Gaspard Faucigny"), what_prefix='{u}\"', what_suffix='\"', image="gaspard", ctc="ctc_blink", ctc_position="nestled")
 image side gaspard = LayeredImageProxy("Gaspard_por")
 image side gaspard nulla = Null()
@@ -79,6 +80,8 @@ define tb_n2 = Character(_("Fashionable Invitee"), what_prefix='\"', what_suffix
 ##User Defined Transitions
 
 define flash = Fade(0.1, 0.0, 0.5, color="#fff")
+define blood = Fade(0.1, 0.0, 0.1, color="#8A0707")
+define bloodo = Fade(0.1, 3.0, 3.0, color="#8A0707")
 
 define Reveal = Dissolve(2.0, alpha=False, time_warp=None)
 define Reveal3 = Dissolve(3.0, alpha=False, time_warp=None)
