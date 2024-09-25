@@ -20,9 +20,7 @@ translate french strings:
 
 # TODO: Translation updated at 2024-09-25 01:30
 
-translate french strings:
-
     # game/scripts/codex/events/scr_taisho.rpy:6
     old "A short period due to the health problems of the Emperor, it is remembered as a transitionary period between the chaotic Meiji period and the more militaristic first part of the Shōwa era, which would see the country veer towards totalitarianism and ultranationalism."
-    new ""
+   new "Une période courte due aux problèmes de santé de l'Empereur Yoshihito, elle est considérée comme une période de transition entre l'Ère chaotique Meiji et la première partie plus militariste de l'Ère Shōwa, qui verra le pays s'orienter vers le totalitarisme et l'ultranationalisme."
 
