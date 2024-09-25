@@ -178,7 +178,7 @@ translate french exp_taisho_1f_study_01_flashlight_fc6871d3:
 translate french exp_taisho_1f_study_01_flashlight_bd4aebd2:
 
     # sh_i neutral "(A {b}flashlight{/b}!{w=0.3} What are even the chances?!)"
-    sh_i neutral "(Une {b}lampe de poche{/b} !{w=0.3} Quelles étaient les chances ?!)"
+    sh_i neutral "(Une {b}lampe-torche{/b} !{w=0.3} Quelles étaient les chances ?!)"
 
 # game/scripts/exp/exp_taisho_1f_study.rpy:115
 translate french exp_taisho_1f_study_01_flashlight_9a5536e9:
@@ -202,13 +202,13 @@ translate french exp_taisho_1f_study_01_flashlight_1249067f:
 translate french exp_taisho_1f_study_01_flashlight_a7a874ca:
 
     # extend "{b}find a charger{/b}, no matter what it's powering, I can recharge it.)"
-    extend "{b}trouve un chargeur{/b}, peu importe ce qu'il alimente, je peux recharger la lampe.)"
+    extend "{b}trouve un chargeur{/b}, peu importe ce qu'il alimente, je peux recharger la lampe-torche.)"
 
 # game/scripts/exp/exp_taisho_1f_study.rpy:123
 translate french exp_taisho_1f_study_01_flashlight_f3000f69:
 
     # sh_i neutral "(Maybe the flashlight's own charger may be around here?{w=0.3} Would make sense.)"
-    sh_i neutral "(Peut-être que le chargeur de la lampe de poche est par ici ? {w=0.3} Ça ferait sens.)"
+    sh_i neutral "(Peut-être que le chargeur de la lampe-torche est par ici ? {w=0.3} Ça ferait sens.)"
 
 translate french strings:
 
@@ -320,7 +320,7 @@ translate french exp_taisho_1f_study_02_scrolls_75940fdd:
 translate french exp_taisho_1f_study_02_scrolls_6fb7e869:
 
     # sh_i neutral "(Also, no trace of a charger for the flashlight.{w=0.3} Pity.)"
-    sh_i neutral "(Aussi, pas de traces du chargeur de la lampe de poche.{w=0.3} Dommage.)"
+    sh_i neutral "(Aussi, pas de traces du chargeur de la lampe-torche.{w=0.3} Dommage.)"
 
 # game/scripts/exp/exp_taisho_1f_study.rpy:207
 translate french exp_taisho_1f_study_02_door_7b6a4872:
@@ -346,6 +346,16 @@ translate french exp_taisho_1f_study_02_door_8b7e5c59:
     # sh_i neutral "(I can't see a plug, nor anything else I can use to try and check though...{w=0.3} I'll need to leave, then.)"
     sh_i neutral "(Je ne vois pas de prise, ni rien d'autre que je puisse utiliser pour essayer de vérifier pourtant...{w=0.3} Je vais devoir partir, alors.)"
 
+# TODO: Translation updated at 2024-09-19 22:54
+
+# game/scripts/exp/exp_taisho_1f_study.rpy:118
+translate french exp_taisho_1f_study_01_flashlight_3e702ccd:
+
+    # sh_i surprise "(A {b}flashlight{/b}!{w=0.3} What are even the chances?!)"
+    sh_i surprise "(Une {b}lampe-torche{/b} !{w=0.3} Quelles étaient les chances ?!)"
+
+# TODO: Translation updated at 2024-09-20 23:06
+
 translate french strings:
 
     # game/scripts/exp/exp_taisho_1f_study.rpy:119
@@ -355,18 +365,6 @@ translate french strings:
     # game/scripts/exp/exp_taisho_1f_study.rpy:191
     old "Codex Updated."
     new "Codex mis à jour."
-
-# TODO: Translation updated at 2024-09-19 22:54
-
-# game/scripts/exp/exp_taisho_1f_study.rpy:118
-translate french exp_taisho_1f_study_01_flashlight_3e702ccd:
-
-    # sh_i surprise "(A {b}flashlight{/b}!{w=0.3} What are even the chances?!)"
-    sh_i surprise "(Une {b}lampe de poche{/b} !{w=0.3} Quelles étaient les chances ?!)"
-
-# TODO: Translation updated at 2024-09-20 23:06
-
-translate french strings:
 
     # game/scripts/exp/exp_taisho_1f_study.rpy:151
     old "Hanging Scrolls"
@@ -388,7 +386,7 @@ translate french exp_taisho_1f_need_flashlight_d4f6f175:
 translate french exp_taisho_1f_need_flashlight_f230e188:
 
     # extend "{b}use the flashlight{/b}.)"
-    extend "{b}utiliser la lampe de poche{/b}.)"
+    extend "{b}utiliser la lampe-torche{/b}.)"
 
 # game/scripts/exp/exp_taisho_1f_study.rpy:214
 translate french exp_taisho_1f_study_02_scrolls_3fa0e390:
