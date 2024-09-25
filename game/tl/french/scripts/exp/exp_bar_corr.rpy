@@ -162,7 +162,7 @@ translate french exp_bar_corr_smoke_0c852823:
 translate french exp_bar_corr_smoke_7ac93ef3:
 
     # extend "{b}Smoking Room{/b}, correct?)"
-    extend "{b}fumoir{/b}, n'est-ce pas ?)"
+    extend "{b}Fumoir{/b}, n'est-ce pas ?)"
 
 # game/scripts/exp/exp_bar_corr.rpy:70
 translate french exp_bar_corr_smoke_2df45f79:
