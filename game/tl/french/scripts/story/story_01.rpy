@@ -768,7 +768,7 @@ translate french story_01_taisho_side_meet_f68cb204:
 translate french story_01_taisho_side_meet_273b515b:
 
     # am nulla "<Moron.>"
-    am nulla ""
+    am nulla "<Idiot.>"
 
 # game/scripts/story/story_01.rpy:452
 translate french story_01_taisho_side_meet_91c49716:
@@ -852,7 +852,7 @@ translate french story_01_taisho_side_meet_e66e0d6f:
 translate french story_01_taisho_side_meet_b0970d1d:
 
     # am nulla "An emergency?"
-    am nulla ""
+    am nulla "Une urgence ?"
 
 # game/scripts/story/story_01.rpy:495
 translate french story_01_taisho_side_meet_711f55da:
@@ -1038,7 +1038,7 @@ translate french story_01_taisho_side_meet_b24ede17:
 translate french story_01_taisho_side_meet_56c1654c:
 
     # ga nulla "<1st of September 1923.>"
-    ga nulla ""
+    ga nulla "<1er Septembre 1923.>"
 
 # game/scripts/story/story_01.rpy:558
 translate french story_01_taisho_side_meet_353e272e:
@@ -1164,7 +1164,7 @@ translate french story_01_gaspard_gone_79db9153:
 translate french story_01_gaspard_gone_666e44fc:
 
     # am nulla "GASPARD!{w=0.3} GAS-{nw}"
-    am nulla "GASPARD!{w=0.3} GAS-{nw}"
+    am nulla "GASPARD !{w=0.3} GAS- {nw}"
 
 # game/scripts/story/story_01.rpy:659
 translate french story_01_gaspard_gone_4222175f:
@@ -1176,49 +1176,49 @@ translate french story_01_gaspard_gone_4222175f:
 translate french story_01_gaspard_found_14c4f222:
 
     # am surprise sweat "Gaspard?!{w=0.3} <Ya Allah, are you hurt?!>"
-    am surprise sweat ""
+    am surprise sweat "Gaspard ?!{w=0.3} <Ya Allah, es-tu blessé ?!>"
 
 # game/scripts/story/story_01.rpy:677
 translate french story_01_gaspard_found_f99ab50d:
 
     # sh_i surprise sweat "(.{w=0.3}.{w=0.3}.{w=0.5}what...?)"
-    sh_i surprise sweat ""
+    sh_i surprise sweat "(.{w=0.3}.{w=0.3}.{w=0.5} Quoi... ?)"
 
 # game/scripts/story/story_01.rpy:678
 translate french story_01_gaspard_found_89f2a5b9:
 
     # am sad sweat "<Gaspard, answer me!{w=0.3} Are you->{nw}"
-    am sad sweat ""
+    am sad sweat "<Gaspard, réponds-moi !{w=0.3} Es-tu- >{nw}"
 
 # game/scripts/story/story_01.rpy:681
 translate french story_01_gaspard_found_6d9eea14:
 
     # sh shock sweat "Stop!{w=0.3} Don't get close to him!"
-    sh shock sweat ""
+    sh shock sweat "Stop !{w=0.3} Ne t'approche pas de lui !"
 
 # game/scripts/story/story_01.rpy:684
 translate french story_01_gaspard_found_664cedee:
 
     # am shock sweat "...!{w=0.3} But Gaspard...?!"
-    am shock sweat ""
+    am shock sweat "... !{w=0.3} Mais, Gaspard... ?!"
 
 # game/scripts/story/story_01.rpy:686
 translate french story_01_gaspard_found_ff813045:
 
     # sh angry sweat "STAY BACK, I SAID!"
-    sh angry sweat ""
+    sh angry sweat "RECULE, J'AI DIT !"
 
 # game/scripts/story/story_01.rpy:687
 translate french story_01_gaspard_found_92d3ab32:
 
     # am shock sweat "But...{w=0.5} But why?!"
-    am shock sweat ""
+    am shock sweat "Mais...{w=0.5} Mais, pourquoi ?!"
 
 # game/scripts/story/story_01.rpy:691
 translate french story_01_gaspard_found_7fe06d89:
 
     # sh frown sweat ".{w=0.3}.{w=0.3}.{w=0.5}something's wrong."
-    sh frown sweat ""
+    sh frown sweat ".{w=0.3}.{w=0.3}.{w=0.5} Un truc cloche."
 
 # game/scripts/story/story_01.rpy:701
 translate french taisho_1f_library_gaspard_face_d610c9c6:
@@ -1230,25 +1230,25 @@ translate french taisho_1f_library_gaspard_face_d610c9c6:
 translate french taisho_1f_library_gaspard_face_b6e8232e:
 
     # am nulla "G-{w=0.15}GASPARD?!"
-    am nulla "G-{w=0.15}GASPARD ?!"
+    am nulla "G- {w=0.15}GASPARD ?!"
 
 # game/scripts/story/story_01.rpy:740
 translate french taisho_1f_library_gaspard_face_e561da86:
 
     # sh nulla "AMINA, RUN!"
-    sh nulla ""
+    sh nulla "AMINA, COURS !"
 
 # game/scripts/story/story_01.rpy:749
 translate french taisho_1f_library_gaspard_face_1b49a3e0:
 
     # sh_i angry sweat "(What is happening?!{w=0.3} WHAT THE FUCK DID JUST HAPPEN?!)"
-    sh_i angry sweat ""
+    sh_i angry sweat "(Qu'est ce qu'il se passe ?!{w=0.3} QU'EST CE QUI SE PASSE PUTAIN ?!)"
 
 # game/scripts/story/story_01.rpy:752
 translate french taisho_1f_library_gaspard_face_60866c3b:
 
     # am shock sweat "SHIGEO, WATCH-!"
-    am shock sweat ""
+    am shock sweat "SHIGEO, ATTENT- !"
 
 # game/scripts/story/story_01.rpy:753
 translate french taisho_1f_library_gaspard_face_0501cd29:
@@ -1272,19 +1272,19 @@ translate french taisho_1f_library_gaspard_face_1e8ea06f:
 translate french taisho_1f_library_gaspard_face_98cc29bb:
 
     # sh_i pain sweat "(Fast...{w=0.5} So fast...{w=0.5} I didn't...)"
-    sh_i pain sweat ""
+    sh_i pain sweat "(Rapide...{w=0.5} Trop rapide...{w=0.5} Je n'ai pas pu...)"
 
 # game/scripts/story/story_01.rpy:765
 translate french taisho_1f_library_gaspard_face_0e14c211:
 
     # am angry sweat "L-{w=0.15}Leave him alone!{w=0.3} GASPARD, STOP!"
-    am angry sweat ""
+    am angry sweat "L- {w=0.15} Laisse-le tranquille !{w=0.3} GASPARD, ARRÊTE !"
 
 # game/scripts/story/story_01.rpy:766
 translate french taisho_1f_library_gaspard_face_dff79779:
 
     # sh pain sweat "Amina, no...{w=0.5} Run...{w=0.5} While he's...!"
-    sh pain sweat ""
+    sh pain sweat "Amina, non...{w=0.5} Cours...{w=0.5} Pendant qu'il... !"
 
 # game/scripts/story/story_01.rpy:768
 translate french taisho_1f_library_gaspard_face_c59c558d:
@@ -1296,7 +1296,7 @@ translate french taisho_1f_library_gaspard_face_c59c558d:
 translate french taisho_1f_library_gaspard_face_8d08eca7:
 
     # sh angry sweat "FUCKING...!{w=0.3} BASTARD...!"
-    sh angry sweat ""
+    sh angry sweat "PUTAIN... !{w=0.3} D'ENFOIRÉ... !"
 
 # game/scripts/story/story_01.rpy:772
 translate french taisho_1f_library_gaspard_face_35292562:
@@ -1308,29 +1308,29 @@ translate french taisho_1f_library_gaspard_face_35292562:
 translate french taisho_1f_library_gaspard_face_b92ce927:
 
     # sh_i pain sweat "(Vision...{w=0.5} Swimming...!{w=0.3} He got me good...)"
-    sh_i pain sweat ""
+    sh_i pain sweat "(Ma vision...{w=0.5} S'embrume... !{w=0.3} Il m'a bien eu...)"
 
 # game/scripts/story/story_01.rpy:783
 translate french taisho_1f_library_gaspard_face_1383559f:
 
     # sh_i pain sweat "(No...{w=0.5} NononononoNONOGET UP!{w=0.3} MOVE!{w=0.3} THINK!)"
-    sh_i pain sweat ""
+    sh_i pain sweat "(Non...{w=0.5} NononononoNONONLÈVE-TOI !{w=0.3} BOUGE !{w=0.3} RÉFLÉCHIS !)"
 
 # game/scripts/story/story_01.rpy:785
 translate french taisho_1f_library_gaspard_face_bf84a002:
 
     # sh_i angry sweat "(OPEN YOUR FUCKING EYES!{w=0.3} FIGHT!{w=0.3} GET UP!)"
-    sh_i angry sweat ""
+    sh_i angry sweat "(OUVRE TES PUTAINS D'YEUX !{w=0.3} BATS-TOI !{w=0.3} LÈVE-TOI !)"
 
 # game/scripts/story/story_01.rpy:789
 translate french taisho_1f_library_gaspard_face_99e63812:
 
     # sh_i angry sweat "\"GET UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUP...!!!\""
-    sh_i angry sweat ""
+    sh_i angry sweat "\"LÈVEEEEEEEE-TOIIIIIIIIIIIIIIIIII... !!!\""
 
 # game/scripts/story/story_01.rpy:796
 translate french taisho_1f_library_gaspard_face_271e444b:
 
     # sh surprise sweat "...what?"
-    sh surprise sweat ""
+    sh surprise sweat "... Quoi ?"
 
