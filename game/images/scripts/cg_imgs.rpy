@@ -8,7 +8,7 @@ image babelomania_logo = At("gui/babelomania_logo.png", glow_outline(4, "#951B14
 
 image intro_disclaimer = "images/cgs/intro/intro_disclaimer.jpg"
 
-image intro_babel = At("images/cgs/intro/intro_babel.png", redStatic)
+image intro_babel = "images/cgs/intro/intro_babel.png"
 
 image intro_hand_A = "images/cgs/intro/intro_hand_A.jpg"
 
@@ -20,7 +20,7 @@ image intro_tabitha = "images/cgs/intro/intro_tabitha.jpg"
 
 image intro_tabitha_side = "images/cgs/intro/intro_tabitha_side.jpg"
 
-image intro_reach_base = At("images/cgs/intro/intro_reach.jpg", Static)
+image intro_reach_base = "images/cgs/intro/intro_reach.jpg"
 
 image intro_reach:
     "intro_reach_base"
