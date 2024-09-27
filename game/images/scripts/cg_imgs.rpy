@@ -36,7 +36,7 @@ image intro_phone_c = "images/cgs/intro/intro_phone_c.jpg"
 
 image tabitha_grab = "images/cgs/chapter_00/tabitha_grab.jpg"
 image bathroom_painting = "images/cgs/chapter_00/bathroom_painting.jpg"
-image bathroom_painting_glitch_base = At("images/cgs/chapter_00/bathroom_painting.jpg", Static)
+image bathroom_painting_glitch_base = "images/cgs/chapter_00/bathroom_painting_glitch_base.jpg"
 image bathroom_painting_glitch:
     "bathroom_painting_glitch_base"
     alpha 0.0
