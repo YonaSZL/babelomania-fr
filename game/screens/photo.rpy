@@ -10,7 +10,7 @@ screen photo(var, val, lab):
     button:
         xysize(185,185) align(1.0, 0.5) xoffset -110
         background "gui/phone/button.png"
-        #hover_background At("gui/phone/button.png",outline_transform(6, "#876a3392",4.0))
+        #hover_background At("gui/phone/button.png",outline_transform(6, "#876a3392"))
 
         at phone_button
 

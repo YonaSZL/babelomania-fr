@@ -57,7 +57,7 @@ screen inventory():
                     button:
                         add "gui/inventory/cell.png"
                         idle_foreground i.img
-                        hover_foreground  At(i.img, outline_transform(2, "#876a33", 4.0))
+                        hover_foreground i.img
                         hover_sound "audio/sfx/gui_hover.ogg"
                         activate_sound "audio/sfx/gui_item.ogg"
                         action CaptureFocus(i.drop)

@@ -34,7 +34,7 @@ screen overlay_stats():
                 background "gui/stats/cm_bg.png"
                 
                 idle_foreground "gui/stats/test.png"##add the face image 
-                hover_foreground At("gui/stats/test.png", outline_transform(2, "#876a33", 4.0))
+                hover_foreground "gui/stats/test.png"
                 action NullAction()
         if gaspard_cmp:
             button:
@@ -47,22 +47,23 @@ screen overlay_stats():
             add "gui/stats/avatar_bg.png"
             if briefcase_carry:
                 idle_foreground "gui/stats/case.png"
-                hover_foreground At("gui/stats/case.png", outline_transform(2, "#876a33", 4.0))
+                hover_foreground "gui/stats/case.png"
             else:
                 idle_foreground "gui/stats/inventory.png"
-                hover_foreground At("gui/stats/inventory.png", outline_transform(2, "#876a33", 4.0))
+                hover_foreground "gui/stats/inventory.png"
             xysize(230,230) xalign 1.0 offset(-50, 30)
             focus_mask True
             action Show("inventory")
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_inventory.ogg"
+            tooltip "Inventory"
 
     vbox:
         spacing 10 offset(15,30)
         if time_menu:
             button:
                 idle_background "gui/stats/time_bg.png"
-                hover_background At("gui/stats/time_bg.png", outline_transform(2, "#876a33", 4.0))
+                hover_background "gui/stats/time_bg.png"
                 xysize(395, 77)
                 text "[dis_hours]:[dis_minutes]" align(0.5, 0.5) yoffset 4 textalign 0.5 color '#bfaa8f' font "gui/font/Klotee.ttf"
                 add "gui/stats/signal.png" yalign 0.5 xoffset 50
@@ -86,6 +87,16 @@ screen overlay_stats():
                 right_bar "gui/stats/empty.png"
                 left_bar "gui/stats/stat_2.png"
                 value AnimatedValue(value=stat2, range=100, delay=1.0)
+    
+    $ tooltip = GetTooltip()
+
+    nearrect:
+        focus "tooltip"
+        prefer_top True
+
+        frame:
+            xalign 0.5
+            text "[tooltip]"
 
 
 init python:

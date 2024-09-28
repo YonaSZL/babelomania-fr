@@ -800,16 +800,16 @@ label taisho_1f_library_gaspard_face:
     pause 3.0
     scene gaspard_rip with Reveal5
     pause 3.0
-    scene gaspard_focus_01 with glitch_load
+    scene gaspard_focus_01
     pause 1.5
-    scene gaspard_focus_02 with glitch_load
+    scene gaspard_focus_02
     pause 0.5
-    scene gaspard_rip with glitch_load
-    pause 0.1
-    scene gaspard_focus_01 with glitch_load
-    pause 0.1
-    scene gaspard_focus_02 with glitch_load
-    pause 0.1
+    scene gaspard_rip
+    pause 0.3
+    scene gaspard_focus_01
+    pause 0.3
+    scene gaspard_focus_02
+    pause 0.3
     scene gaspard_tear with bloodo
     pause 5.0
     scene black with Reveal5
@@ -817,7 +817,10 @@ label taisho_1f_library_gaspard_face:
     scene main_menu_bg_logo with Reveal3
     pause 1.0
     scene thank_you_for_playing with Reveal3
-    pause 7.0
+    pause 3.0
+    call screen thank_you_screen()
+
+label return_from_thanks:
     stop music fadeout 4.5
     scene black with Reveal5
     jump splashscreen
