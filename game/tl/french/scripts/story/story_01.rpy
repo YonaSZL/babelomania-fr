@@ -612,157 +612,157 @@ translate french story_01_taisho_side_meet_16b18e5e:
 translate french story_01_taisho_side_meet_752565b3:
 
     # ga neutral "<Heh.{w=0.3} Of all the wasted effort on appearances...>"
-    ga neutral ""
+    ga neutral "<Heh.{w=0.3} De tous les efforts gaspillés pour les apparences...>"
 
 # game/scripts/story/story_01.rpy:390
 translate french story_01_taisho_side_meet_ece37320:
 
     # am smile "<What's that expression in English...?{w=0.5}> 'Game recognizes game'."
-    am smile ""
+    am smile "<C'est quoi l'expression en anglais... ? {w=0.5}> 'Game recognizes game'."
 
 # game/scripts/story/story_01.rpy:400
 translate french story_01_taisho_side_meet_0aa32b71:
 
     # am nulla "<And to be clear...{w=0.5} I'm not talking about you only.>"
-    am nulla ""
+    am nulla "<Et pour être clair...{w=0.5} Je ne parle pas que de toi.>"
 
 # game/scripts/story/story_01.rpy:401
 translate french story_01_taisho_side_meet_a5a47a01:
 
     # ga nulla "<Hm.{w=0.3} Finally ready to admit it out loud, then?>"
-    ga nulla ""
+    ga nulla "<Hm.{w=0.3} Enfin prête à l'admettre à voix haute, alors ?>"
 
 # game/scripts/story/story_01.rpy:403
 translate french story_01_taisho_side_meet_a97ae0e3:
 
     # am nulla "<Very vague...{w=0.5} There's a lot of 'it' we've been holding back on.>"
-    am nulla ""
+    am nulla "<Très vague...{w=0.5} Il y a beaucoup de 'ce truc' que nous avons retenu.>"
 
 # game/scripts/story/story_01.rpy:405
 translate french story_01_taisho_side_meet_6b1a53ee:
 
     # ga nulla "<Fair...{w=0.5} I was mainly talking about the fact that you've been dating me to keep daddy happy.>"
-    ga nulla ""
+    ga nulla "<Bien sûr...{w=0.5} Je parlais surtout du fait que tu sors avec moi pour faire plaisir à papa.>"
 
 # game/scripts/story/story_01.rpy:407
 translate french story_01_taisho_side_meet_da94f24a:
 
     # am nulla "<Maybe so...{w=0.5} Are you ready to admit that you've been dating me just to piss off yours?>"
-    am nulla ""
+    am nulla "<Peut-être...{w=0.5} Es-tu prêt à admettre que tu sors avec moi juste pour faire chier le tien ?>"
 
 # game/scripts/story/story_01.rpy:410
 translate french story_01_taisho_side_meet_4231a472:
 
     # ga nulla "<It's not the only reason.>"
-    ga nulla ""
+    ga nulla "<Ce n'est pas la seule raison.>"
 
 # game/scripts/story/story_01.rpy:412
 translate french story_01_taisho_side_meet_d1e21dc1:
 
     # am nulla "<Oh, isn't it?{w=0.5} What else is there, then?>"
-    am nulla ""
+    am nulla "<Oh, ce n'est pas le cas ?{w=0.5} Qu'est-ce qu'il y a d'autre, alors ?>"
 
 # game/scripts/story/story_01.rpy:414
 translate french story_01_taisho_side_meet_39ee5ff7:
 
     # ga nulla "<I'll admit that the subtle twitch of my father's brow the first time I brought you to a family function was...{w=0.5} Titillating.>"
-    ga nulla ""
+    ga nulla "<J'admets que le froncement subtil des sourcils de mon père la première fois que je t'ai emmené à une réunion de famille était...{w=0.5} Titillant.>"
 
 # game/scripts/story/story_01.rpy:416
 translate french story_01_taisho_side_meet_5427c130:
 
     # ga nulla "<But you're much more than just a stone in the water.{w=0.3} You're crazy smart, Amina.{w=0.3} You're ambitious.{w=0.3} You'll go far and you're a connection worth having, no matter the type.>"
-    ga nulla ""
+    ga nulla "<Mais tu es bien plus qu'un caillou dans l'eau.{w=0.3} Tu es incroyablement intelligente, Amina.{w=0.3} Tu es ambitieuse.{w=0.3} Tu iras loin et tu es une connexion qui vaut la peine d'être entretenue, quel que soit le type.>"
 
 # game/scripts/story/story_01.rpy:419
 translate french story_01_taisho_side_meet_b7d38570:
 
     # am nulla "<Gaspard, saying that you've been dating me for my potential is not exactly...{w=0.5} Nice.>"
-    am nulla ""
+    am nulla "<Gaspard, dire que tu sors avec moi pour mon potentiel n'est pas exactement...{w=0.5} Sympa.>"
 
 # game/scripts/story/story_01.rpy:421
 translate french story_01_taisho_side_meet_b6432076:
 
     # ga nulla "<Oh, come off it.{w=0.3} The benefit of making your family fit in certain circles by reflection is also potential.{w=0.3} That's what you've been seeking.>"
-    ga nulla ""
+    ga nulla "<Oh, arrête.{w=0.3} L'avantage de faire entrer ta famille dans certains cercles par répercussion est aussi un atout.{w=0.3} C'est ce que tu cherchais.>"
 
 # game/scripts/story/story_01.rpy:423
 translate french story_01_taisho_side_meet_64db560b:
 
     # am nulla "<Fine.{w=0.3} But I've been loyal throughout everything, nonetheless.{w=0.3} Don't think I didn't notice you and that bridesmaid just so happened to come back one after the other.{w=0.3} Don't think I never noticed the others.>"
-    am nulla ""
+    am nulla "<Certes.{w=0.3} Mais j'ai été loyal à travers tout, néanmoins.{w=0.3} Ne crois pas que je n'ai pas remarqué que toi et cette demoiselle d'honneur reveniez tous les deux l'un après l'autre.{w=0.3} Ne crois pas que je n'ai pas remarqué les autres.>"
 
 # game/scripts/story/story_01.rpy:425
 translate french story_01_taisho_side_meet_f19f1de3:
 
     # ga nulla "<Really, now?{w=0.3} May I remind you that emotional affairs count, too?>"
-    ga nulla ""
+    ga nulla "<Vraiment, hein ?{w=0.3} Puis-je te rappeler que les liaisons émotionnelles comptent aussi ?"
 
 # game/scripts/story/story_01.rpy:428
 translate french story_01_taisho_side_meet_d991ef8b:
 
     # am nulla "<We both went into this relationship already checked out, didn't we?>"
-    am nulla ""
+    am nulla "<Nous sommes tous les deux partis dans cette relation en ayant déjà tout prévu, n'est-ce pas ?"
 
 # game/scripts/story/story_01.rpy:430
 translate french story_01_taisho_side_meet_7c0a6180:
 
     # ga nulla "<Things that happen when all you do is think about the next step in the plan...{w=0.5} That's the thing that brought us together in the first place, isn't it?>"
-    ga nulla ""
+    ga nulla "<Ce qui arrive quand on ne fait que penser à la prochaine étape du plan...{w=0.5} C'est ce qui nous a réunis au départ, n'est-ce pas ?>"
 
 # game/scripts/story/story_01.rpy:432
 translate french story_01_taisho_side_meet_ebfd8e58:
 
     # ga nulla "<A spasmodic need to finally, one day, have complete control over everything about ourselves and around ourselves...{w=0.5} That doesn't really leave a lot of space to consider someone else an equal.>"
-    ga nulla ""
+    ga nulla "<Un besoin spasmodique d'avoir enfin, un jour, un contrôle total sur tout ce qui nous concerne et nous entoure...{w=0.5} Cela ne laisse pas beaucoup d'espace pour considérer quelqu'un d'autre comme un égal.>"
 
 # game/scripts/story/story_01.rpy:433
 translate french story_01_taisho_side_meet_0cd134d7:
 
     # am nulla "<.{w=0.3}.{w=0.3}.{w=0.5}we can talk more about this when we're out of this situation.{w=0.3} For what it matters, Gaspard?{w=0.5} I don't think you're a {i}total{/i} ass.>"
-    am nulla ""
+    am nulla "<.{w=0.3}.{w=0.3}.{w=0.5}Nous pourrons en reparler lorsque nous serons sortis de cette situation.{w=0.3} Pour ce que ça compte, Gaspard ?{w=0.5} Je ne pense pas que tu sois {i}entièrement{/i} un connard.>"
 
 # game/scripts/story/story_01.rpy:435
 translate french story_01_taisho_side_meet_6c75143c:
 
     # am nulla "<Are you feeling better, now?>"
-    am nulla ""
+    am nulla "<Tu te sens mieux, maintenant ?>"
 
 # game/scripts/story/story_01.rpy:437
 translate french story_01_taisho_side_meet_daf8096d:
 
     # ga nulla "<Oh, such praise...{w=0.5} And yeah, I'm feeling better.{w=0.3} Just a little ringing in my ears but the water helped.>"
-    ga nulla ""
+    ga nulla "<Oh, quel éloge...{w=0.5} Et oui, je me sens mieux.{w=0.3} J'ai juste un petit bourdonnement dans les oreilles mais l'eau m'a aidé.>"
 
 # game/scripts/story/story_01.rpy:439
 translate french story_01_taisho_side_meet_7b44f62f:
 
     # ga nulla "<We should go see if the Italian has managed to figure a way out of here...>"
-    ga nulla ""
+    ga nulla "<Nous devrions aller voir si l'Italien a réussi à trouver un moyen de sortir d'ici...>"
 
 # game/scripts/story/story_01.rpy:440
 translate french story_01_taisho_side_meet_5185e717:
 
     # am nulla "<I have a feeling you don't like Shigeo that much...{w=0.5} But you're the one who invited him to our table.>"
-    am nulla ""
+    am nulla "<J'ai l'impression que tu n'aimes pas beaucoup Shigeo...{w=0.5} Mais c'est toi qui l'as invité à notre table.>"
 
 # game/scripts/story/story_01.rpy:442
 translate french story_01_taisho_side_meet_2d45e27d:
 
     # ga nulla "<Oh, that?{w=0.3} That's because he saw me and, most likely, the bridesmaid leaving the bathrooms.{w=0.3} Keep your liabilities close, know what I mean?>"
-    ga nulla ""
+    ga nulla "Oh, ça ?{w=0.3} C'est parce qu'il m'a vu, et sans doute aussi la demoiselle d'honneur, quitter les toilettes.{w=0.3} Garde tes ennemis près de toi, tu vois ce que je veux dire ?>"
 
 # game/scripts/story/story_01.rpy:445
 translate french story_01_taisho_side_meet_e856c1ae:
 
     # ga nulla "<And it's not that I don't like him, it's just...{w=0.5} I knew everyone at this wedding, and if I didn't, I knew {i}of{/i} them...{w=0.5} But this guy is a complete unknown.>"
-    ga nulla ""
+    ga nulla "<Et ce n'est pas que je ne l'aime pas, c'est juste que...{w=0.5} Je connaissais tout le monde à ce mariage, et si je ne les connaissais pas, je savais {i}qui{/i} ils étaient...{w=0.5} Mais ce type est un parfait inconnu.>"
 
 # game/scripts/story/story_01.rpy:447
 translate french story_01_taisho_side_meet_f68cb204:
 
     # ga nulla "<Not exactly a calming presence for a control freak, wouldn't you say?>"
-    ga nulla ""
+    ga nulla "<Pas vraiment une présence apaisante pour un maniaque du contrôle, n'est-ce pas ?>"
 
 # game/scripts/story/story_01.rpy:449
 translate french story_01_taisho_side_meet_273b515b:
@@ -774,79 +774,79 @@ translate french story_01_taisho_side_meet_273b515b:
 translate french story_01_taisho_side_meet_91c49716:
 
     # ga nulla "<And, Amina...{w=0.5} For what it's worth?{w=0.3} I'm sorry.{w=0.3} And thank you.>"
-    ga nulla ""
+    ga nulla "<Et, Amina...{w=0.5} Pour ce que ça vaut ?{w=0.3} Je suis désolé.{w=0.3} Et merci.>"
 
 # game/scripts/story/story_01.rpy:454
 translate french story_01_taisho_side_meet_e9544e52:
 
     # am nulla "<.{w=0.3}.{w=0.3}.{w=0.5}I'm sorry too.{w=0.3} Let me help you up.>"
-    am nulla ""
+    am nulla "<.{w=0.3}.{w=0.3}.{w=0.5}Je suis désolée aussi.{w=0.3} Laisse-moi t'aider à te lever.>"
 
 # game/scripts/story/story_01.rpy:456
 translate french story_01_taisho_side_meet_e50c9c72:
 
     # sh neutral "<How is he?>"
-    sh neutral ""
+    sh neutral "<Comment va-t-il ?>"
 
 # game/scripts/story/story_01.rpy:464
 translate french story_01_taisho_side_meet_126c6cfa:
 
     # am nulla "Better.{w=0.3} Have you made any progress?"
-    am nulla ""
+    am nulla "Mieux.{w=0.3} As-tu fait des progrès ?"
 
 # game/scripts/story/story_01.rpy:465
 translate french story_01_taisho_side_meet_e85d8d68:
 
     # sh neutral "Sort of...{w=0.5} I have a {nw}"
-    sh neutral ""
+    sh neutral "En quelque sorte...{w=0.5} J'ai un {nw}"
 
 # game/scripts/story/story_01.rpy:467
 translate french story_01_taisho_side_meet_6fe05d39:
 
     # extend "{b}plan{/b}, actually."
-    extend ""
+    extend "{b}plan{/b}, en fait."
 
 # game/scripts/story/story_01.rpy:481
 translate french story_01_taisho_side_meet_e799d15e:
 
     # am nulla "A plan, you say?{w=0.3} For what?"
-    am nulla ""
+    am nulla "Un plan, tu dis ?{w=0.3} Pour quoi ?"
 
 # game/scripts/story/story_01.rpy:482
 translate french story_01_taisho_side_meet_aa8fd01a:
 
     # sh nulla "To open the door to the stairwell."
-    sh nulla ""
+    sh nulla "Pour ouvrir la porte de la cage d'escalier."
 
 # game/scripts/story/story_01.rpy:484
 translate french story_01_taisho_side_meet_7d1307a2:
 
     # ga nulla "<Wait, really?!{w=0.3} Finally, what is it?!>"
-    ga nulla ""
+    ga nulla "<Attends, sérieusement ?!{w=0.3} Enfin, qu'est-ce que c'est ?!>"
 
 # game/scripts/story/story_01.rpy:485
 translate french story_01_taisho_side_meet_6ee817d0:
 
     # sh nulla "I'd like to explain my reasoning first, as the proposal involves some risk.{w=0.3} Can I?"
-    sh nulla ""
+    sh nulla "J'aimerais d'abord expliquer mon raisonnement, car la proposition comporte des risques.{w=0.3} Puis-je ?"
 
 # game/scripts/story/story_01.rpy:487
 translate french story_01_taisho_side_meet_4d9dffda:
 
     # ga nulla "<Ugh...{w=0.5} Fine, whatever.{w=0.3} Proceed.>"
-    ga nulla ""
+    ga nulla "<Ugh...{w=0.5} D'accord, peu importe.{w=0.3} Vas-y.>"
 
 # game/scripts/story/story_01.rpy:489
 translate french story_01_taisho_side_meet_2d76eb74:
 
     # sh nulla "Thank you.{w=0.3} So, the door in question while magnetically sealed like the ones to the rooms, doesn't have a keypad.{w=0.3} It's locked and unlocked remotely."
-    sh nulla ""
+    sh nulla "Merci.{w=0.3} Donc, la porte en question, bien que scellée magnétiquement comme celles des chambres, n'a pas de clavier.{w=0.3} Elle est verrouillée et déverrouillée à distance."
 
 # game/scripts/story/story_01.rpy:491
 translate french story_01_taisho_side_meet_e66e0d6f:
 
     # sh nulla "Which means that to open it, we need to override that lock...{w=0.5} By creating an emergency."
-    sh nulla ""
+    sh nulla "Ce qui veut dire que pour l'ouvrir, nous devons passer outre la serrure...{w=0.5} En créant une situation d'urgence."
 
 # game/scripts/story/story_01.rpy:493
 translate french story_01_taisho_side_meet_b0970d1d:
@@ -858,181 +858,181 @@ translate french story_01_taisho_side_meet_b0970d1d:
 translate french story_01_taisho_side_meet_711f55da:
 
     # sh nulla "Yes.{w=0.3} Building regulations state that doors to stairwells can be lockable as long as they're set to {nw}"
-    sh nulla ""
+    sh nulla "Oui.{w=0.3} Les règles de construction stipulent que les portes des cages d'escaliers peuvent être verrouillées à condition qu'elles soient réglées sur {nw}"
 
 # game/scripts/story/story_01.rpy:497
 translate french story_01_taisho_side_meet_09d5ad18:
 
     # extend "{b}unlock automatically in case of a fire{/b}."
-    extend ""
+    extend "{b}se déverrouiller automatiquement en cas d'incendie{/b}."
 
 # game/scripts/story/story_01.rpy:499
 translate french story_01_taisho_side_meet_d9a88b2f:
 
     # ga nulla "<So that's how it works...{w=0.5} Wait, you mean you want to start a fire?!>"
-    ga nulla ""
+    ga nulla "<C'est donc comme ça que ça marche...{w=0.5} Attends, tu veux dire que tu veux allumer un feu ?!>"
 
 # game/scripts/story/story_01.rpy:501
 translate french story_01_taisho_side_meet_ef82f82e:
 
     # sh nulla "Just one small enough to be picked up by a smoke detector.{w=0.3} But still, with the windows being sealed...{w=0.5} It is a risk."
-    sh nulla ""
+    sh nulla "Juste un assez petit pour être détecté par un détecteur de fumée.{w=0.3} Mais quand même, avec les fenêtres qui sont scellées...{w=0.5} C'est un risque."
 
 # game/scripts/story/story_01.rpy:503
 translate french story_01_taisho_side_meet_e24d0195:
 
     # sh nulla "So, it's not something I can decide on my own.{w=0.3} If you think it's too dangerous, I will keep looking for a different solution."
-    sh nulla ""
+    sh nulla "Donc, ce n'est pas quelque chose que je peux décider seul.{w=0.3} Si tu penses que c'est trop dangereux, je continuerai à chercher une autre solution."
 
 # game/scripts/story/story_01.rpy:504
 translate french story_01_taisho_side_meet_c9193c2f:
 
     # am nulla ".{w=0.3}.{w=0.3}.{w=0.5}do you even have something to start a fire?"
-    am nulla ""
+    am nulla ".{w=0.3}.{w=0.3}.{w=0.5} As-tu au moins quelque chose pour faire un feu ?"
 
 # game/scripts/story/story_01.rpy:505
 translate french story_01_taisho_side_meet_e175d299:
 
     # sh nulla "Not currently.{w=0.3} But I'm pretty sure we're going to find something we can use in the next room."
-    sh nulla ""
+    sh nulla "Pas pour le moment.{w=0.3} Mais je suis presque sûr que nous allons trouver quelque chose que nous pouvons utiliser dans la pièce suivante."
 
 # game/scripts/story/story_01.rpy:506
 translate french story_01_taisho_side_meet_7c8721f3:
 
     # ga nulla "<And what makes you so sure?>"
-    ga nulla ""
+    ga nulla "<Et qu'est-ce qui te permet d'en être si sûr ?>"
 
 # game/scripts/story/story_01.rpy:509
 translate french story_01_taisho_side_meet_170320f8:
 
     # sh nulla "The very specific codes, which related to the building...{w=0.5} The note in your pocket, which opened the room where I was...{w=0.5} The remotely controlled door.{w=0.3} This is not a kidnapping, this is a {i}game{/i}."
-    sh nulla ""
+    sh nulla "Les codes très spécifiques, qui se rapportaient au bâtiment...{w=0.5} La note dans ta poche, qui a ouvert la pièce où je me trouvais...{w=0.5} La porte télécommandée.{w=0.3} Ce n'est pas un enlèvement, c'est un {i}jeu{/i}."
 
 # game/scripts/story/story_01.rpy:512
 translate french story_01_taisho_side_meet_997d9721:
 
     # ga nulla "<What are you...?!>"
-    ga nulla ""
+    ga nulla "<Qu'est-ce que tu... ?!>"
 
 # game/scripts/story/story_01.rpy:513
 translate french story_01_taisho_side_meet_220d8f00:
 
     # sh nulla "I mentioned this to Amina earlier.{w=0.3} I'm a profiler with Europol, my job is to...{w=0.5} Let's say make mental identikits of criminals.{w=0.3} I can see a pattern, here."
-    sh nulla ""
+    sh nulla "J'en ai parlé à Amina tout à l'heure.{w=0.3} Je suis un profileur d'Europol, mon travail consiste à...{w=0.5} Disons faire des profils mentaux de criminels.{w=0.3} Je peux voir un modèle, ici."
 
 # game/scripts/story/story_01.rpy:515
 translate french story_01_taisho_side_meet_ca15dc6a:
 
     # sh nulla "We've been absconded, but at the same time we've been given the tools to get out of it...{w=0.5} A half-japanese person and someone with knowledge of Japanese history in a Taishō inspired building?{w=0.3} This is not a coincidence."
-    sh nulla ""
+    sh nulla "On nous a caché la vérité, mais en même temps, on nous a donné les outils pour nous en sortir...{w=0.5} Une personne à moitié japonaise et quelqu'un qui connaît l'histoire du Japon dans un bâtiment inspiré du Taishō ?{w=0.3} Ce n'est pas une coïncidence."
 
 # game/scripts/story/story_01.rpy:516
 translate french story_01_taisho_side_meet_77f574a6:
 
     # ga nulla "<You mean...{w=0.5} You're telling me that all of this...?>"
-    ga nulla ""
+    ga nulla "<Tu veux dire...{w=0.5} Tu es en train de me dire que tout ceci... ?>"
 
 # game/scripts/story/story_01.rpy:520
 translate french story_01_taisho_side_meet_5b5e6adf:
 
     # ga nulla "<It was {i}planned?!{/i}{w=0.3} Someone has been looking me up AND PLANNED TO DO THIS TO ME?!>"
-    ga nulla ""
+    ga nulla "<C'était {i}planifié ?!{/i}{w=0.3} Quelqu'un m'a observé ET A PLANIFIÉ DE ME FAIRE ÇA ?!>"
 
 # game/scripts/story/story_01.rpy:522
 translate french story_01_taisho_side_meet_fbc4a5d3:
 
     # sh nulla "To us...{w=0.5} And now I can't help but wonder what has happened to the other attendees."
-    sh nulla ""
+    sh nulla "À nous...{w=0.5} Et maintenant, je ne peux m'empêcher de me demander ce qui est arrivé aux autres participants."
 
 # game/scripts/story/story_01.rpy:523
 translate french story_01_taisho_side_meet_9f008d23:
 
     # am nulla "And that led you to think there may be something to start a fire in the next room because...?"
-    am nulla ""
+    am nulla "Et cela t'a amené à penser qu'il y avait peut-être quelque chose pour mettre le feu dans la pièce d'à côté parce que... ?"
 
 # game/scripts/story/story_01.rpy:525
 translate french story_01_taisho_side_meet_b5bb4327:
 
     # sh nulla "Because I believe it's the solution to this particular puzzle.{w=0.3} So far we've been given a fair chance to solve them, so...{w=0.5} It seems only logical."
-    sh nulla ""
+    sh nulla "Parce que je crois que c'est la solution à cette énigme particulière.{w=0.3} Jusqu'à présent, on nous a donné une bonne chance de les résoudre, alors...{w=0.5} Cela semble tout à fait logique."
 
 # game/scripts/story/story_01.rpy:527
 translate french story_01_taisho_side_meet_f7e95e60:
 
     # ga nulla "<So you're trusting in the logic of a madman?{w=0.3} That's your big plan?>"
-    ga nulla ""
+    ga nulla "<Donc, tu te fies à la logique d'un fou ?{w=0.3} C'est ça ton grand plan ?>"
 
 # game/scripts/story/story_01.rpy:528
 translate french story_01_taisho_side_meet_bc0da856:
 
     # sh nulla "It's the only one I have right now...{w=0.5} But as I said, we won't proceed unless we're all in agreement."
-    sh nulla ""
+    sh nulla "C'est le seul que j'ai pour l'instant...{w=0.5} Mais comme je l'ai dit, nous n'irons pas plus loin si nous ne sommes pas tous d'accord."
 
 # game/scripts/story/story_01.rpy:531
 translate french story_01_taisho_side_meet_68f34925:
 
     # am nulla "What about we postpone the discussion?{w=0.3} Let's get in that room and, if we can find something to start a fire, then we can discuss if to actually do it."
-    am nulla ""
+    am nulla "Et si on reportait la discussion ?{w=0.3} Entrons dans cette pièce et, si nous trouvons de quoi allumer un feu, nous pourrons discuter de la possibilité de le faire."
 
 # game/scripts/story/story_01.rpy:532
 translate french story_01_taisho_side_meet_7abe3a98:
 
     # sh nulla "Fine by me.{w=0.3} I still need to figure out the code, anyway.{w=0.3} I was trying other significant Taishō dates but so far, nothing's worked."
-    sh nulla ""
+    sh nulla "Je suis d'accord.{w=0.3} Je dois encore comprendre le code, de toute façon.{w=0.3} J'ai essayé d'autres dates importantes du Taishō, mais jusqu'à présent, rien n'a fonctionné."
 
 # game/scripts/story/story_01.rpy:533
 translate french story_01_taisho_side_meet_0396bf99:
 
     # ga nulla ".{w=0.3}.{w=0.3}.{w=0.5}which ones have you used?"
-    ga nulla ""
+    ga nulla ".{w=0.3}.{w=0.3}.{w=0.5} Quelles sont celles que tu as utilisées ?"
 
 # game/scripts/story/story_01.rpy:535
 translate french story_01_taisho_side_meet_64dce3b1:
 
     # sh nulla "Hmm, the assassination of Prime Minister Hara...{w=0.5} And the appointment of the Emperor's son as regent, but I'm not sure I got the day well."
-    sh nulla ""
+    sh nulla "Hmm, l'assassinat du premier ministre Hara...{w=0.5} Et la nomination du fils de l'Empereur comme régent, mais je ne suis pas sûr d'avoir bien saisi la journée."
 
 # game/scripts/story/story_01.rpy:537
 translate french story_01_taisho_side_meet_83924c87:
 
     # ga nulla "<Hmph, wouldn't matter anyway.{w=0.3} You're way off mark.{w=0.3} Isn't it obvious what date you're supposed to use?>"
-    ga nulla ""
+    ga nulla "<Hmph, ça n'aurait pas d'importance de toute façon.{w=0.3} Tu es loin du compte.{w=0.3} N'est-ce pas évident de savoir quelle date tu es censé utiliser ?>"
 
 # game/scripts/story/story_01.rpy:541
 translate french story_01_taisho_side_meet_99f7c5a9:
 
     # sh nulla "Uhm...{w=0.5} No, not really.{w=0.3} What do you mean?"
-    sh nulla ""
+    sh nulla "Uhm...{w=0.5} Non, pas vraiment.{w=0.3} Que veux-tu dire ?"
 
 # game/scripts/story/story_01.rpy:543
 translate french story_01_taisho_side_meet_657db778:
 
     # ga nulla "<Let's say you're right and there's something to start a fire, in the next room...{w=0.5} Going off that logic, the date would need be related to fire too.>"
-    ga nulla ""
+    ga nulla "<Disons que tu as raison et qu'il y a quelque chose pour allumer un feu dans la pièce d'à côté...{w=0.5} Si l'on suit cette logique, la date devrait également être liée au feu.>"
 
 # game/scripts/story/story_01.rpy:545
 translate french story_01_taisho_side_meet_65412b5d:
 
     # ga nulla "<It just so happens that, during the {nw}"
-    ga nulla ""
+    ga nulla "<Il se trouve que, durant le {nw}"
 
 # game/scripts/story/story_01.rpy:547
 translate french story_01_taisho_side_meet_e2d0030c:
 
     # extend "{b}Great Kantō earthquake{/b}, the single greatest loss of life was caused by a {i}fire whirl{/i} which incinerated more than 30.000 people.>"
-    extend ""
+    extend "{b}Grand tremblement de terre de Kantō{/b}, la plus grande perte de vie a été causée par un {i}tourbillon de feu{/i} qui a incinéré plus de 30.000 personnes.>"
 
 # game/scripts/story/story_01.rpy:553
 translate french story_01_taisho_side_meet_d575c53b:
 
     # am nulla "<Ya Allah!>{w=0.3} Poor people!"
-    am nulla ""
+    am nulla "<Ya Allah !>{w=0.3} Pauvres gens !"
 
 # game/scripts/story/story_01.rpy:554
 translate french story_01_taisho_side_meet_b24ede17:
 
     # sh nulla "A fire whirl...{w=0.5} Of course!"
-    sh nulla ""
+    sh nulla "Un tourbillon de feu...{w=0.5} Bien sûr !"
 
 # game/scripts/story/story_01.rpy:556
 translate french story_01_taisho_side_meet_56c1654c:
@@ -1044,7 +1044,7 @@ translate french story_01_taisho_side_meet_56c1654c:
 translate french story_01_taisho_side_meet_353e272e:
 
     # sh nulla "Which means the code is..."
-    sh nulla ""
+    sh nulla "Ce qui veut dire que le code est..."
 
 # game/scripts/story/story_01.rpy:564
 translate french story_01_taisho_side_meet_9fcc3009:
@@ -1056,79 +1056,79 @@ translate french story_01_taisho_side_meet_9fcc3009:
 translate french story_01_taisho_side_meet_8769b1e5:
 
     # sh smile "It worked!{w=0.3} Great deduction, Gaspard!"
-    sh smile ""
+    sh smile "Ça a marché !{w=0.3} Bonne déduction, Gaspard !"
 
 # game/scripts/story/story_01.rpy:572
 translate french story_01_taisho_side_meet_3aac8358:
 
     # ga nulla "<Oh, I didn't do much...{w=0.5} General knowledge, really.>"
-    ga nulla ""
+    ga nulla "<Oh, je n'ai pas fait grand chose...{w=0.5} De la culture générale, vraiment.>"
 
 # game/scripts/story/story_01.rpy:574
 translate french story_01_taisho_side_meet_105730f4:
 
     # am nulla "<Heh...{w=0.5} Again, you're not a {i}total{/i} ass.{w=0.3} Good job.>"
-    am nulla ""
+    am nulla "<Heh...{w=0.5} Encore une fois, tu n'es pas {i}entièrement{/i} con.{w=0.3} Bon travail.>"
 
 # game/scripts/story/story_01.rpy:576
 translate french story_01_taisho_side_meet_71256991:
 
     # ga nulla "<.{w=0.3}.{w=0.3}.{w=0.5}thanks.>"
-    ga nulla ""
+    ga nulla "<.{w=0.3}.{w=0.3}.{w=0.5} Merci.>"
 
 # game/scripts/story/story_01.rpy:583
 translate french story_01_taisho_side_meet_e77da9d6:
 
     # ga_i nulla "(Ugh, the ringing is getting stronger...{w=0.5} I think it's my blood pressure.{w=0.5} I need to stop getting that worked up.)"
-    ga_i nulla ""
+    ga_i nulla "(Ugh, la sonnerie devient plus forte...{w=0.5} Je pense que c'est ma tension artérielle.{w=0.5} Il faut que j'arrête de m'énerver comme ça.)"
 
 # game/scripts/story/story_01.rpy:585
 translate french story_01_taisho_side_meet_5c6d735b:
 
     # ga_i nulla "(And that water didn't do the trick at all...{w=0.5} I'm absolutely parched!{w=0.3} Let's hope there's...{w=0.5} Something...)"
-    ga_i nulla ""
+    ga_i nulla "(Et l'eau n'a pas du tout fait l'affaire...{w=0.5} Je suis absolument assoiffé !{w=0.3} Espérons qu'il y a...{w=0.5} Quelque chose...)"
 
 # game/scripts/story/story_01.rpy:591
 translate french story_01_taisho_side_meet_67f36272:
 
     # ga_i angry sweat "(Something to {b}sate my thirst...!{/b})"
-    ga_i angry sweat ""
+    ga_i angry sweat "(Quelque chose pour {b}étancher ma soif... !{/b})"
 
 # game/scripts/story/story_01.rpy:606
 translate french story_01_library_26938b69:
 
     # sh neutral "A big library...{w=0.5} With a twin door on the other side."
-    sh neutral ""
+    sh neutral "Une grande bibliothèque...{w=0.5} Avec une porte jumelle de l'autre côté."
 
 # game/scripts/story/story_01.rpy:607
 translate french story_01_library_36f666df:
 
     # am surprise "Must lead to the other room we couldn't open."
-    am surprise ""
+    am surprise "Cela doit mener à l'autre pièce que nous n'avons pas pu ouvrir."
 
 # game/scripts/story/story_01.rpy:608
 translate french story_01_library_9a38dee8:
 
     # ga frown "<Hmm...{w=0.5} Makes sense...>"
-    ga frown ""
+    ga frown "<Hmm...{w=0.5} C'est logique...>"
 
 # game/scripts/story/story_01.rpy:609
 translate french story_01_library_f37b6fb1:
 
     # sh neutral "Let's look around, then.{w=0.3} Gaspard, Amina, you can search the left side.{w=0.3} I will take the other half of the room."
-    sh neutral ""
+    sh neutral "Jetons un coup d'oeil, alors.{w=0.3} Gaspard, Amina, cherchez du côté gauche.{w=0.3} Je m'occupe de l'autre moitié de la pièce."
 
 # game/scripts/story/story_01.rpy:610
 translate french story_01_library_29dae07e:
 
     # am neutral "Understood.{w=0.3} Gaspard, mind taking the corner library?{w=0.3} Your smartphone has a stronger flash than mine."
-    am neutral ""
+    am neutral "Compris.{w=0.3} Gaspard, tu peux prendre le coin bibliothèque ?{w=0.3} Ton smartphone a un flash plus puissant que le mien."
 
 # game/scripts/story/story_01.rpy:611
 translate french story_01_library_9bca8b5e:
 
     # ga frown sweat "<Corner...{w=0.5} Sure.{w=0.3} Sure.>"
-    ga frown sweat ""
+    ga frown sweat "<Coin...{w=0.5} Bien sûr.{w=0.3} Sûr.>"
 
 # game/scripts/story/story_01.rpy:625
 translate french story_01_gaspard_gone_d53ec122:
@@ -1140,25 +1140,25 @@ translate french story_01_gaspard_gone_d53ec122:
 translate french story_01_gaspard_gone_3e28ca62:
 
     # sh surprise sweat "Where...?!{w=0.3} Gaspard!"
-    sh surprise sweat ""
+    sh surprise sweat "Où... ?!{w=0.3} Gaspard !"
 
 # game/scripts/story/story_01.rpy:639
 translate french story_01_gaspard_gone_021cbbb2:
 
     # am nulla "He's...{w=0.5} He's {i}gone{/i}?!{w=0.3} How can he be gone?!"
-    am nulla ""
+    am nulla "Il est...{w=0.5} Il est {i}parti{/i} ?!{w=0.3} Comment peut-il être parti ?!"
 
 # game/scripts/story/story_01.rpy:640
 translate french story_01_gaspard_gone_726805cb:
 
     # sh nulla "I...{w=0.5} I didn't notice...{w=0.5} Did you-?!"
-    sh nulla ""
+    sh nulla "Je...{w=0.5} Je n'ai pas remarqué...{w=0.5} Tu as- ?!"
 
 # game/scripts/story/story_01.rpy:641
 translate french story_01_gaspard_gone_79db9153:
 
     # am nulla "No!{w=0.3} I was looking around the room and...?!{w=0.3} Where is he?!"
-    am nulla ""
+    am nulla "Non !{w=0.3} Je regardais dans la pièce et... ?!{w=0.3} Où est-il ?!"
 
 # game/scripts/story/story_01.rpy:644
 translate french story_01_gaspard_gone_666e44fc:
@@ -1340,5 +1340,5 @@ translate french taisho_1f_library_gaspard_face_271e444b:
 translate french story_01_taisho_b5301ddf:
 
     # sh nulla "Also, there's the matter with my phone and the doors...{w=0.5} Earlier, I thought they had placed me in such a room for protection, but now I fear that this is something much more elaborate and sinister."
-    sh nulla ""
+    sh nulla "Il y a aussi le problème de mon téléphone et des portes...{w=0.5} Auparavant, je pensais qu'ils m'avaient placé dans une telle pièce pour me protéger, mais maintenant je crains que ce soit quelque chose de beaucoup plus élaboré et sinistre."
 
