@@ -2058,5 +2058,5 @@ translate french story_00_meet_amina_cf9f4c61:
 translate french story_00_bathroom_break_7d6826a6:
 
     # extend "{b}Francesco{/b} from childhood.{w=0.3} He was my best friend, truth tell.)"
-    extend ""
+    extend "{b}Francesco{/b} de l'enfance.{w=0.3} C'était mon meilleur ami, à vrai dire.)"
 
