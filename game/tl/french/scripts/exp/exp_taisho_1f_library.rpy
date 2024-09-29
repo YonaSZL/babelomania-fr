@@ -154,13 +154,13 @@ translate french exp_taisho_1f_library_01_bonsai_18e48953:
 translate french exp_taisho_1f_library_01_bonsai_a4c32dcd:
 
     # sh_i surprise "(.{w=0.3}.{w=0.3}.{w=0.5}a {nw}"
-    sh_i surprise ""
+    sh_i surprise "(.{w=0.3}.{w=0.3}.{w=0.5} Un {nw}"
 
 # game/scripts/exp/exp_taisho_1f_library.rpy:338
 translate french exp_taisho_1f_library_01_bonsai_f77c4c53:
 
     # extend "{b}bonsai{/b}...)"
-    extend ""
+    extend "{b}bonsai{/b}...)"
 
 # game/scripts/exp/exp_taisho_1f_library.rpy:341
 translate french exp_taisho_1f_library_01_bonsai_3418e445:
@@ -226,7 +226,7 @@ translate french exp_taisho_1f_library_01_bonsai_e12d6c03:
 translate french exp_taisho_1f_library_01_bonsai_6124a560:
 
     # sh surprise "Gaspard?"
-    sh surprise ""
+    sh surprise "Gaspard ?"
 
 # game/scripts/exp/exp_taisho_1f_library.rpy:418
 translate french taisho_1f_library_gaspard_arm_d93dbc96:
@@ -256,17 +256,17 @@ translate french strings:
 
     # game/scripts/exp/exp_taisho_1f_library.rpy:126
     old "Bookshelves"
-    new ""
+    new "Bibliothèque"
 
     # game/scripts/exp/exp_taisho_1f_library.rpy:150
     old "Laptop"
-    new ""
+    new "Ordinateur portable"
 
     # game/scripts/exp/exp_taisho_1f_library.rpy:162
     old "Painting"
-    new ""
+    new "Peinture"
 
     # game/scripts/exp/exp_taisho_1f_library.rpy:175
     old "Bonsai"
-    new ""
+    new "Bonsai"
 
