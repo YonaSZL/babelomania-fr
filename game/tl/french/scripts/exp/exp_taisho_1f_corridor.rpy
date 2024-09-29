@@ -174,28 +174,6 @@ translate french exp_taisho_1f_corridor_01_shigeo_wake_dce30bca:
     # sh neutral "This is a test button."
     sh neutral ""
 
-translate french strings:
-
-    # game/scripts/exp/exp_taisho_1f_corridor.rpy:29
-    old "Amina"
-    new ""
-
-    # game/scripts/exp/exp_taisho_1f_corridor.rpy:37
-    old "Meeting Room #4"
-    new ""
-
-    # game/scripts/exp/exp_taisho_1f_corridor.rpy:45
-    old "Meeting Room #3"
-    new ""
-
-    # game/scripts/exp/exp_taisho_1f_corridor.rpy:53
-    old "Meeting Room #2"
-    new ""
-
-    # game/scripts/exp/exp_taisho_1f_corridor.rpy:103
-    old "Received Door Code Note."
-    new ""
-
 # TODO: Translation updated at 2024-09-22 15:11
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:68
@@ -437,20 +415,6 @@ translate french exp_taisho_1f_corridor_01_taisho_note_1420c1b2:
 
     # sh_i frown "(.{w=0.3}.{w=0.3}.{w=0.5}it's a longshot, but...{w=0.5} Maybe the codes for the other doors...?)"
     sh_i frown ""
-
-translate french strings:
-
-    # game/scripts/exp/exp_taisho_1f_corridor.rpy:97
-    old "Leave him alone."
-    new ""
-
-    # game/scripts/exp/exp_taisho_1f_corridor.rpy:97
-    old "Try and change the subject."
-    new ""
-
-    # game/scripts/exp/exp_taisho_1f_corridor.rpy:157
-    old "Received Smartwatch."
-    new ""
 
 # TODO: Translation updated at 2024-09-22 16:23
 
@@ -712,14 +676,46 @@ translate french exp_taisho_1f_corridor_01_side_meet_146700fc:
 
 translate french strings:
 
+    # game/scripts/exp/exp_taisho_1f_corridor.rpy:29
+    old "Amina"
+    new "Amina"
+
+    # game/scripts/exp/exp_taisho_1f_corridor.rpy:37
+    old "Meeting Room #4"
+    new "Salle de réunion #4"
+
+    # game/scripts/exp/exp_taisho_1f_corridor.rpy:45
+    old "Meeting Room #3"
+    new "Salle de réunion #3"
+
+    # game/scripts/exp/exp_taisho_1f_corridor.rpy:53
+    old "Meeting Room #2"
+    new "Salle de réunion #2"
+
+    # game/scripts/exp/exp_taisho_1f_corridor.rpy:103
+    old "Received Door Code Note."
+    new "Note du code de la porte reçue."
+
+    # game/scripts/exp/exp_taisho_1f_corridor.rpy:97
+    old "Leave him alone."
+    new "Le laisser tranquille."
+
+    # game/scripts/exp/exp_taisho_1f_corridor.rpy:97
+    old "Try and change the subject."
+    new "Essayer de changer de sujet."
+
+    # game/scripts/exp/exp_taisho_1f_corridor.rpy:157
+    old "Received Smartwatch."
+    new "Smartwatch reçu."
+
     # game/scripts/exp/exp_taisho_1f_corridor.rpy:147
     old "Codex Updated"
-    new ""
+    new "Codex mis à jour"
 
     # game/scripts/exp/exp_taisho_1f_corridor.rpy:260
     old "Let's go in."
-    new ""
+    new "Y aller."
 
     # game/scripts/exp/exp_taisho_1f_corridor.rpy:260
     old "Not quite yet."
-    new ""
+    new "Pas encore."
