@@ -414,5 +414,5 @@ translate french exp_taisho_1f_study_02_scrolls_c9a62014:
 translate french exp_taisho_1f_study_02_scrolls_27916023:
 
     # extend "{b}Taishō Building{/b}.{w=0.3} We were going to spend the night in here, weren't we?)"
-    extend ""
+    extend "{b}bâtiment Taishō{/b}.{w=0.3} Nous allions passer la nuit ici, n'est-ce pas ?)"
 
