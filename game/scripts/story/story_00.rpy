@@ -229,7 +229,7 @@ label story_00_bathroom_break:
     sh_i sad "(And only the groom.)"
     sh_i neutral "(I know {nw}"
     play sound "audio/sfx/gui_hint.ogg"
-    extend "{b}Francesco{/b} from high school.{w=0.3} He was my best friend, truth tell.)"
+    extend "{b}Francesco{/b} from childhood.{w=0.3} He was my best friend, truth tell.)"
     pause 1.0
     scene bar_corr_recep with Reveal3
     pause 1.5

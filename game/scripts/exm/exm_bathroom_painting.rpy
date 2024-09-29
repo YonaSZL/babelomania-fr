@@ -61,7 +61,7 @@ label exm_bathroom_painting_signature:
     play sound "audio/sfx/gui_hint.ogg"
     extend "{b}ruined{/b}.)"
     sh_i frown "(Is that where the signature of the author was?{w=0.5} It's all blurred and ruined, I can barely make out half of the date...)"
-    sh_i neutral "(19...{w=0.5} Well, at least I know it was made in the previou century, so that's something...?)"
+    sh_i neutral "(19...{w=0.5} Well, at least I know it was made in the previous century, so that's something...?)"
     pause 1.0
     if exm_bathroom_painting_signature == False:
         $ exm_bathroom_painting_signature = True

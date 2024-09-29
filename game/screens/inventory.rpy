@@ -55,9 +55,9 @@ screen inventory():
                 xspacing 20 yspacing 10
                 for i in inventory:
                     button:
-                        add "gui/inventory/cell.png"
-                        idle_foreground i.img
-                        hover_foreground  At(i.img, outline_transform(2, "#876a33", 4.0))
+                        idle_background "gui/inventory/cell.png"
+                        hover_background "gui/inventory/cell_hover.png"
+                        add i.img
                         hover_sound "audio/sfx/gui_hover.ogg"
                         activate_sound "audio/sfx/gui_item.ogg"
                         action CaptureFocus(i.drop)

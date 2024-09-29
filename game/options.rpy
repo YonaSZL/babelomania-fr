@@ -42,7 +42,7 @@ define config.save_directory = "babelomania-1725385568"
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "1.03"
 
 ## Custom Mouse Icon
 define config.mouse = {"default":[ ("gui/cursor.png", 1, 1) ] }
@@ -149,9 +149,9 @@ define config.allow_underfull_grids = True
 
 ## Default volume % for the various volume sliders https://www.renpy.org/doc/
 ## html/preferences.html#audio-channel-defaults
-define config.default_music_volume = 0.5
-define config.default_sfx_volume = 0.5
-define config.default_voice_volume = 0.5
+define config.default_music_volume = 0.9
+define config.default_sfx_volume = 0.9
+define config.default_voice_volume = 0.9
 
 ## Optional; this reverts the behaviour of the volume sliders back to pre-8.1,
 ## so muting the game shows the volume sliders all at 0

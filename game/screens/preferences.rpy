@@ -137,11 +137,11 @@ screen preferences():
                     textbutton _("Censored") action SetVariable("persistent.gore", False) hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
 
 
-                vbox:
-                    style_prefix "radio"
-                    label _("Language")
-                    textbutton _("English") action NullAction() hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
-                    textbutton _("French") action NullAction() hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
+                #vbox:
+                #    style_prefix "radio"
+                #    label _("Language")
+                #    textbutton _("English") action NullAction() hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
+                #    textbutton _("French") action NullAction() hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
 
 
 

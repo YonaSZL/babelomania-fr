@@ -162,11 +162,11 @@ label exp_taisho_1f_corridor_01_gaspard:
                 if exp_taisho_1f_corridor_01_gaspard == False:
                     play sound4 "audio/sfx/gui_slots_confirm.ogg"
                     show screen notify(_("Received Smartwatch."))
-                    hide it_smartwatch with dissolve
                     $ inventory.append(item_smartwatch)
                     $ exp_taisho_1f_corridor_01_gaspard = True
                     $ taisho_1f_corridor_explore_01 += 1
                     $ time_menu = True
+                hide it_smartwatch with dissolve
                 show Shigeo smile
                 sh smile "I see...{w=0.5} Much appreciated, Gaspard."
                 show Gaspard frown

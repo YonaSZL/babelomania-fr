@@ -19,7 +19,7 @@ screen language():
         button:
             xysize(343,755)
             idle_background "gui/language/english.png"
-            hover_background At("gui/language/english.png", outline_transform(2, "#342209", 4.0))
+            hover_background "gui/language/english.png"
             label _("English")
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_slots_confirm.ogg"
@@ -29,7 +29,7 @@ screen language():
         button:
             xysize(343,755)
             idle_background "gui/language/french.png"
-            hover_background At("gui/language/french.png", outline_transform(2, "#342209", 4.0))
+            hover_background "gui/language/french.png"
             label _("Francais")
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_slots_confirm.ogg"
