@@ -422,73 +422,73 @@ translate french exp_taisho_1f_corridor_01_taisho_note_1420c1b2:
 translate french exp_taisho_1f_corridor_01_gaspard_aa4c5530:
 
     # sh neutral "Which means it's locked remotely...{w=0.5} Which implies the existence of some kind of {nw}"
-    sh neutral ""
+    sh neutral "Ce qui signifie qu'elle est verrouillée à distance...{w=0.5} Ce qui veut dire qu'il y a une sorte de {nw}"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:80
 translate french exp_taisho_1f_corridor_01_gaspard_c1feb45b:
 
     # extend "{b}control room{/b} somewhere...{w=0.5} That's probably where the estate's security usually resides."
-    extend ""
+    extend "{b}salle de contrôle{/b} quelque part...{w=0.5} C'est probablement là que réside habituellement la sécurité du domaine."
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:96
 translate french exp_taisho_1f_corridor_01_gaspard_1e7eae18:
 
     # sh_i surprise "(He's getting increasingly frustrated...{w=0.5} I fear he might injure himself further.)"
-    sh_i surprise ""
+    sh_i surprise "(Il semble s'énerver de plus en plus...{w=0.5} Je crains qu'il ne se blesse davantage.)"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:107
 translate french exp_taisho_1f_corridor_01_gaspard_40b8e35c:
 
     # sh_i surprise "(Let's see, let's think back...{w=0.5} Oh, he seemed to have an opinion on this building before we even came in here, didn't he?)"
-    sh_i surprise ""
+    sh_i surprise "(Voyons, réfléchissons...{w=0.5} Oh, il semblait avoir une opinion sur ce bâtiment avant même que nous n'entrions ici, n'est-ce pas ?)"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:113
 translate french exp_taisho_1f_corridor_01_gaspard_5b92be34:
 
     # ga frown -sweat "<I looked up some stuff about Abelard Du Bois, you know?{w=0.3} The guy was an absolute weirdo.{w=0.3} On one hand, great patriot, on the other he seemed to have a fascination with...{w=0.5} Other countries.>"
-    ga frown -sweat ""
+    ga frown -sweat "<J'ai cherché des trucs sur Abelard Du Bois, tu vois ?{w=0.3} Ce type était un vrai cinglé.{w=0.3} D'un côté, grand patriote, de l'autre il semblait avoir une fascination pour...{w=0.5} Les autres pays.>"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:119
 translate french exp_taisho_1f_corridor_01_gaspard_60993e1e:
 
     # ga frown "<It's not just the architecture, it's just...{w=0.5} He invested I don't know how much money in replicating a weird style from an era that lasted a measly fourteen years?{w=0.3} If he was doing it for grandeur, why not choose {i}Meiji{/i}?>"
-    ga frown ""
+    ga frown "<Ce n'est pas seulement l'architecture, c'est juste...{w=0.5} Il a investi je ne sais combien d'argent dans la reproduction d'un style bizarre d'une époque qui n'a duré que quatorze ans ?{w=0.3} S'il le faisait pour la grandeur, pourquoi ne pas choisir {i}Meiji{/i} ?>"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:127
 translate french exp_taisho_1f_corridor_01_gaspard_39014036:
 
     # ga laugh "<And that includes their history.{w=0.5} Amazing how they still to this day name their historic eras after their emperors, despite them now being ceremonial figureheads...{w=0.5} Guess they really can't quit the kowtowing habit.>"
-    ga laugh ""
+    ga laugh "<Et cela inclut leur histoire.{w=0.5} Je trouve assez exotique qu'ils continuent à nommer leurs époques historiques d'après leurs Empereurs, bien que ceux-ci ne soient plus que des figures de proue cérémonielles...{w=0.5} Je suppose qu'ils n'arrivent vraiment pas à se débarrasser de cette habitude."
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:144
 translate french exp_taisho_1f_corridor_01_gaspard_27e1f4a2:
 
     # sh frown ".{w=0.3}.{w=0.3}.{w=0.5}could it be...?"
-    sh frown ""
+    sh frown ".{w=0.3}.{w=0.3}.{w=0.5} Se pourrait-il que ?"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:156
 translate french exp_taisho_1f_corridor_01_gaspard_134eab13:
 
     # ga frown "<An absolutely horrid purchase.{w=0.3} It'll teach me to follow trends...{w=0.5} The wristband is itchy and plasticky and it's been bothering me all evening.>"
-    ga frown ""
+    ga frown "<Un achat absolument horrible.{w=0.3} Cela m'apprendra à suivre les tendances...{w=0.5} Le bracelet me démange et est en plastique, il m'a gêné toute la soirée.>"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:158
 translate french exp_taisho_1f_corridor_01_gaspard_bbd07f94:
 
     # ga neutral "<You seemed to be quite lost without your phone...{w=0.5} With this, you can at least tell the time.>"
-    ga neutral ""
+    ga neutral "<Tu avais l'air bien perdue sans ton téléphone...{w=0.5} Avec ça, tu peux au moins lire l'heure.>"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:168
 translate french exp_taisho_1f_corridor_01_gaspard_3fdded09:
 
     # sh smile "I see...{w=0.5} Much appreciated, Gaspard."
-    sh smile ""
+    sh smile "Je vois...{w=0.5} J'apprécie beaucoup, Gaspard."
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:170
 translate french exp_taisho_1f_corridor_01_gaspard_84c1c476:
 
     # ga frown "<Think nothing of it.{w=0.3} Now, is there like a panel or something movable...?{w=0.5} Or do we need to crack the wall?>"
-    ga frown ""
+    ga frown "<Ne t'en fais pas.{w=0.3} Maintenant, est-ce qu'il y a un panneau ou quelque chose de mobile... ?{w=0.5} Ou devons-nous fissurer le mur ?>"
 
 # TODO: Translation updated at 2024-09-22 18:11
 
@@ -496,85 +496,85 @@ translate french exp_taisho_1f_corridor_01_gaspard_84c1c476:
 translate french exp_taisho_1f_corridor_01_side_meet_c8cd229d:
 
     # sh_i neutral "(This door looks identical to the other ones, in make...{w=0.5} And just like the other ones, it requires a code.)"
-    sh_i neutral ""
+    sh_i neutral "(Cette porte semble identique aux autres, dans sa forme...{w=0.5} Et comme les autres, elle nécessite un code.)"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:257
 translate french exp_taisho_1f_corridor_01_side_meet_d62d72ed:
 
     # sh_i frown "(I should ask Amina if she's tried opening this one yet.{w=0.3} Maybe ask her for the code they found.)"
-    sh_i frown ""
+    sh_i frown "(Je devrais demander à Amina si elle a déjà essayé d'ouvrir celle-ci.{w=0.3} Peut-être lui demander le code qu'ils ont trouvé.)"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:261
 translate french exp_taisho_1f_corridor_01_side_meet_b515c3a3:
 
     # sh_i frown "(I should take a look at the note Amina found, try the code.)"
-    sh_i frown ""
+    sh_i frown "(Je devrais jeter un coup d'oeil à la note qu'Amina a trouvée, pour essayer le code.)"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:264
 translate french exp_taisho_1f_corridor_01_side_meet_62f8500c:
 
     # sh_i frown "(Let's see if the code I got off Amina's note works.)"
-    sh_i frown ""
+    sh_i frown "(Voyons si le code que j'ai trouvé sur la note d'Amina fonctionne.)"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:269
 translate french exp_taisho_1f_corridor_01_side_meet_22de6c37:
 
     # sh_i frown "(No dice...{w=0.5} Is there any way I can try and guess it?)"
-    sh_i frown ""
+    sh_i frown "(Pas de chance...{w=0.5} Y a-t-il un moyen de le deviner ?)"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:271
 translate french exp_taisho_1f_corridor_01_side_meet_c1a3b7da:
 
     # sh_i neutral "(I should talk to Amina and Gaspard, see if they have any ideas or information.)"
-    sh_i neutral ""
+    sh_i neutral "(Je devrais parler à Amina et Gaspard, voir s'ils ont des idées ou des informations.)"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:282
 translate french exp_taisho_1f_corridor_01_gamina_wake_bcc77c62:
 
     # sh neutral "Amina, is this the room where you and Gaspard woke up?"
-    sh neutral ""
+    sh neutral "Amina, est-ce la pièce où Gaspard et toi vous êtes réveillés ?"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:284
 translate french exp_taisho_1f_corridor_01_gamina_wake_d876155e:
 
     # am nulla "Yes.{w=0.3} As I mentioned earlier, the code which we used for your door doesn't work for that one."
-    am nulla ""
+    am nulla "Oui.{w=0.3} Comme je l'ai dit plus tôt, le code que nous avons utilisé pour ta porte ne fonctionne pas pour celle-ci."
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:285
 translate french exp_taisho_1f_corridor_01_gamina_wake_3331fac9:
 
     # sh neutral "Fair.{w=0.3} Did you take a good look around before you left?"
-    sh neutral ""
+    sh neutral "Très juste.{w=0.3} Avez-vous bien regardé avant de partir ?"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:287
 translate french exp_taisho_1f_corridor_01_gamina_wake_dda58206:
 
     # am nulla "I want to say yes, but...{w=0.5} I wouldn't call it a thorough inspection, exactly."
-    am nulla ""
+    am nulla "J'ai envie de dire oui, mais...{w=0.5} Je n'appellerais pas ça une inspection approfondie, non plus."
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:288
 translate french exp_taisho_1f_corridor_01_gamina_wake_77c365a4:
 
     # sh neutral "I see..."
-    sh neutral ""
+    sh neutral "Je vois..."
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:289
 translate french exp_taisho_1f_corridor_01_gamina_wake_bf252c28:
 
     # sh_i neutral "(So if there's an opportunity to go back in there, we should.)"
-    sh_i neutral ""
+    sh_i neutral "(Donc, si nous avons l'occasion d'y retourner, nous devrions le faire.)"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:300
 translate french exp_taisho_1f_corridor_01_shigeo_wake_93fe4ae1:
 
     # sh_i neutral "(This is the room where I woke up...)"
-    sh_i neutral ""
+    sh_i neutral "(C'est la pièce où je me suis réveillé...)"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:301
 translate french exp_taisho_1f_corridor_01_shigeo_wake_42695009:
 
     # sh_i frown "(No reason to go back in there, at the moment...{w=0.5} And there's nothing helpful about the door, either.)"
-    sh_i frown ""
+    sh_i frown "(Il n'y a aucune raison d'y retourner, pour le moment...{w=0.5} Et la porte n'a rien d'utile non plus.)"
 
 # TODO: Translation updated at 2024-09-23 20:49
 
@@ -582,97 +582,97 @@ translate french exp_taisho_1f_corridor_01_shigeo_wake_42695009:
 translate french exp_taisho_1f_corridor_01_side_meet_2aee5a96:
 
     # sh_i neutral "(This is the door I've unlocked...{w=0.5} We can go in whenever we're ready.)"
-    sh_i neutral ""
+    sh_i neutral "(C'est la porte que j'ai déverrouillée...{w=0.5} Nous pourrons entrer quand nous serons prêts.)"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:261
 translate french exp_taisho_1f_corridor_01_side_meet_169a2d6e:
 
     # sh_i frown "(Should we go in?)" nointeract
-    sh_i frown "" nointeract
+    sh_i frown "(Devons-nous entrer ?)" nointeract
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:281
 translate french exp_taisho_1f_corridor_01_side_meet_daa275f0:
 
     # sh_i frown "(Alright...{w=0.5} I think I have a good idea of what the password might be.{w=0.3} Speaking with Gaspard made me realize that the password they found was {nw}"
-    sh_i frown ""
+    sh_i frown "(Très bien...{w=0.5} Je pense avoir une bonne idée de ce que pourrait être le mot de passe.{w=0.3} En parlant avec Gaspard, j'ai compris que le mot de passe qu'ils ont trouvé était {nw}"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:283
 translate french exp_taisho_1f_corridor_01_side_meet_54ecd1fc:
 
     # extend "{b}the official starting date of the Taishō era{/b}...{w=0.5} Written in the international standard format.)"
-    extend ""
+    extend "{b}la date officielle du début de l'ère Taishō{/b}...{w=0.5} Écrit dans le format standard international.)"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:285
 translate french exp_taisho_1f_corridor_01_side_meet_e7dbdc38:
 
     # sh_i neutral "(Going by that logic, maybe the password for this other door would be another {i}similarly relevant date...{/i}?)"
-    sh_i neutral ""
+    sh_i neutral "(En suivant cette logique, peut-être que le mot de passe pour cette autre porte serait une autre {i}date tout aussi pertinente...{/i} ?"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:295
 translate french exp_taisho_1f_corridor_01_side_meet_e81f7128:
 
     # sh smile "Yes!"
-    sh smile ""
+    sh smile "Oui !"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:298
 translate french exp_taisho_1f_corridor_01_side_meet_26317cf2:
 
     # am nulla "What was that?{w=0.3} Did I hear a door unlock?"
-    am nulla ""
+    am nulla "Qu'est-ce que c'était ?{w=0.3} Ai-je entendu une porte se déverrouiller ?"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:299
 translate french exp_taisho_1f_corridor_01_side_meet_df0db6ab:
 
     # sh smile "You did.{w=0.3} We can go in."
-    sh smile ""
+    sh smile "C'est le cas.{w=0.3} Nous pouvons entrer."
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:300
 translate french exp_taisho_1f_corridor_01_side_meet_812c7f14:
 
     # ga surprise "<How did you guess the code...?>"
-    ga surprise ""
+    ga surprise "<Comment as-tu deviné le code... ?>"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:302
 translate french exp_taisho_1f_corridor_01_side_meet_962ef13d:
 
     # sh neutral "It appears that the codes are not randomly generated but specific references to the Taisho period...{w=0.5} This door's code was the official end date of the era."
-    sh neutral ""
+    sh neutral "Il semble que les codes ne soient pas générés au hasard mais qu'ils soient des références spécifiques à la période Taishō...{w=0.5} Le code de cette porte était la date officielle de la fin de l'Ère."
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:303
 translate french exp_taisho_1f_corridor_01_side_meet_e18674ec:
 
     # am nulla "For real...?{w=0.5} Oddly specific."
-    am nulla ""
+    am nulla "Pour de vrai... ?{w=0.5} Curieusement spécifique."
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:305
 translate french exp_taisho_1f_corridor_01_side_meet_5d9257f0:
 
     # ga neutral "<Hmph.{w=0.3} You're lucky I have an interest in the subject, then.{w=0.3} You're welcome.>"
-    ga neutral ""
+    ga neutral "<Hmph.{w=0.3} Tu as de la chance que je m'intéresse au sujet, alors.{w=0.3} De rien.>"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:306
 translate french exp_taisho_1f_corridor_01_side_meet_a5daa832:
 
     # sh neutral ".{w=0.3}.{w=0.3}.{w=0.5}sure.{w=0.5} Thank you."
-    sh neutral ""
+    sh neutral ".{w=0.3}.{w=0.3}.{w=0.5} Si tu le dis.{w=0.5} Merci."
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:308
 translate french exp_taisho_1f_corridor_01_side_meet_b7ec4b45:
 
     # sh frown "We can go in whenever you're ready.{w=0.3} I'll be in front."
-    sh frown ""
+    sh frown "Nous pouvons entrer quand vous êtes prêts.{w=0.3} Je serai devant."
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:320
 translate french exp_taisho_1f_corridor_01_side_meet_31f82ff6:
 
     # sh_i frown "(Darn it.{w=0.3} What did I get wrong?)"
-    sh_i frown ""
+    sh_i frown "(Mince.{w=0.3} Qu'est-ce que j'ai fait de travers ?)"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:322
 translate french exp_taisho_1f_corridor_01_side_meet_146700fc:
 
     # sh_i neutral "(I'm pretty sure it must be the end date of the Taishō era, which was...?)"
-    sh_i neutral ""
+    sh_i neutral "(Je suis presque sûr que c'est la date de fin de l'ère Taishō, qui était... ?)"
 
 translate french strings:
 
