@@ -68,6 +68,8 @@ screen overlay_stats():
                 text "[dis_hours]:[dis_minutes]" align(0.5, 0.5) yoffset 4 textalign 0.5 color '#bfaa8f' font "gui/font/Klotee.ttf"
                 add "gui/stats/signal.png" yalign 0.5 xoffset 50
                 if codex_active == True:
+                    add "gui/stats/codex_icon.png" yalign 0.5 xalign 1.0 xoffset -50
+
                     hover_sound "audio/sfx/gui_hover.ogg"
                     activate_sound "audio/sfx/gui_codex.ogg"
                     action ShowMenu("codex_main")
@@ -87,7 +89,7 @@ screen overlay_stats():
                 right_bar "gui/stats/empty.png"
                 left_bar "gui/stats/stat_2.png"
                 value AnimatedValue(value=stat2, range=100, delay=1.0)
-    
+                
     $ tooltip = GetTooltip()
 
     nearrect:
