@@ -720,7 +720,7 @@ translate french story_01_taisho_side_meet_ebfd8e58:
 translate french story_01_taisho_side_meet_0cd134d7:
 
     # am nulla "<.{w=0.3}.{w=0.3}.{w=0.5}we can talk more about this when we're out of this situation.{w=0.3} For what it matters, Gaspard?{w=0.5} I don't think you're a {i}total{/i} ass.>"
-    am nulla "<.{w=0.3}.{w=0.3}.{w=0.5}Nous pourrons en reparler lorsque nous serons sortis de cette situation.{w=0.3} Pour ce que ça compte, Gaspard ?{w=0.5} Je ne pense pas que tu sois {i}entièrement{/i} un connard.>"
+    am nulla "<.{w=0.3}.{w=0.3}.{w=0.5} Nous pourrons en reparler lorsque nous serons sortis de cette situation.{w=0.3} Pour ce que ça compte, Gaspard ?{w=0.5} Je ne pense pas que tu sois {i}entièrement{/i} un connard.>"
 
 # game/scripts/story/story_01.rpy:435
 translate french story_01_taisho_side_meet_6c75143c:
@@ -780,7 +780,7 @@ translate french story_01_taisho_side_meet_91c49716:
 translate french story_01_taisho_side_meet_e9544e52:
 
     # am nulla "<.{w=0.3}.{w=0.3}.{w=0.5}I'm sorry too.{w=0.3} Let me help you up.>"
-    am nulla "<.{w=0.3}.{w=0.3}.{w=0.5}Je suis désolée aussi.{w=0.3} Laisse-moi t'aider à te lever.>"
+    am nulla "<.{w=0.3}.{w=0.3}.{w=0.5} Je suis désolée aussi.{w=0.3} Laisse-moi t'aider à te lever.>"
 
 # game/scripts/story/story_01.rpy:456
 translate french story_01_taisho_side_meet_e50c9c72:
