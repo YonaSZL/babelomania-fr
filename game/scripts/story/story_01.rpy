@@ -818,6 +818,7 @@ label taisho_1f_library_gaspard_face:
     pause 1.0
     scene thank_you_for_playing with Reveal3
     pause 3.0
+    $ persistent.vertical_clear = True
     call screen thank_you_screen()
 
 label return_from_thanks:
