@@ -4,7 +4,7 @@ translate french strings:
 
     # game/scripts/codex/events/scr_taisho.rpy:2
     old "Taisho Era of Japan"
-    new "Ere Taishō du Japon"
+    new "Ère Taishō du Japon"
 
     # game/scripts/codex/events/scr_taisho.rpy:4
     old "The Taishō Era of Japanese history is the period that goes from the 30th of July 1912 to the 25th of December 1926, coinciding with the reign of Yoshihito, 123rd Emperor of Japan."
@@ -22,5 +22,5 @@ translate french strings:
 
     # game/scripts/codex/events/scr_taisho.rpy:6
     old "A short period due to the health problems of the Emperor, it is remembered as a transitionary period between the chaotic Meiji period and the more militaristic first part of the Shōwa era, which would see the country veer towards totalitarianism and ultranationalism."
-   new "Une période courte due aux problèmes de santé de l'Empereur Yoshihito, elle est considérée comme une période de transition entre l'Ère chaotique Meiji et la première partie plus militariste de l'Ère Shōwa, qui verra le pays s'orienter vers le totalitarisme et l'ultranationalisme."
+    new "Une période courte due aux problèmes de santé de l'Empereur Yoshihito, elle est considérée comme une période de transition entre l'Ère chaotique Meiji et la première partie plus militariste de l'Ère Shōwa, qui verra le pays s'orienter vers le totalitarisme et l'ultranationalisme."
 
