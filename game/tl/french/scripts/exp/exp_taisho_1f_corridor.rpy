@@ -82,7 +82,7 @@ translate french exp_taisho_1f_corridor_01_amina_5874eccd:
 translate french exp_taisho_1f_corridor_01_amina_7fa82f85:
 
     # am nulla "Are you going to try and open the last one?"
-    am nulla "Tu vas essayer d'ouvrir la derniere ?"
+    am nulla "Tu vas essayer d'ouvrir la dernière ?"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:110
 translate french exp_taisho_1f_corridor_01_amina_3e396e69:
