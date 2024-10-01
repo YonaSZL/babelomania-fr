@@ -98,7 +98,7 @@ define glitch_load15 = ImageDissolve("gui/transitions/glitch.jpg", 1.5, 32)
 define glitch_unload15 = ImageDissolve("gui/transitions/glitch.jpg", 1.5, 32, reverse=True)
 
 ##Default Variables
-
+default persistent.vertical_clear = False
 default persistent.gore = True
 default tooltip = "None"
 default mouse_pos = None
