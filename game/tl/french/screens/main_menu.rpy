@@ -1,16 +1,16 @@
-﻿# TODO: Translation updated at 2024-09-08 21:09
+﻿# TODO: Translation updated at 2024-10-01 20:40
 
 translate french strings:
 
-    # game/screens/main_menu.rpy:27
+    # game/screens/main_menu.rpy:25
     old "Start"
-    new "Commencer"
+    new ""
 
-    # game/screens/main_menu.rpy:39
+    # game/screens/main_menu.rpy:37
     old "Extra"
-    new "Extra"
+    new ""
 
-    # game/screens/main_menu.rpy:43
+    # game/screens/main_menu.rpy:41
     old "Quit"
-    new "Quitter"
+    new ""
 
