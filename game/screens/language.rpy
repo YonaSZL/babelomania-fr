@@ -23,7 +23,7 @@ screen language():
             label _("English")
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_slots_confirm.ogg"
-            action [Language(None), gui.SetPreference("font", ""interface_font", "gui/font/Klotee.ttf""), Function(renpy.transition, dissolve), SetVariable("persistent.firstopen", True), Return()] ##+ add the language change action
+            action [Language(None), gui.SetPreference("interface_font", "gui/font/Klotee.ttf"), Function(renpy.transition, dissolve), SetVariable("persistent.firstopen", True), Return()] ##+ add the language change action
         
 
         button:
@@ -33,7 +33,7 @@ screen language():
             label _("Francais")
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_slots_confirm.ogg"
-            action [Language("french"), gui.SetPreference("font", ""interface_font", "gui/font/ColabThi.otf""), Function(renpy.transition, dissolve), Return()] ##+ add the language change action
+            action [Language("french"), gui.SetPreference("interface_font", "gui/font/ColabThi.otf"), Function(renpy.transition, dissolve), Return()] ##+ add the language change action
 
 
 style language_label:
