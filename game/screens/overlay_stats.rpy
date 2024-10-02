@@ -65,7 +65,7 @@ screen overlay_stats():
                 idle_background "gui/stats/time_bg.png"
                 hover_background "gui/stats/time_bg.png"
                 xysize(395, 77)
-                text "[dis_hours]:[dis_minutes]" align(0.5, 0.5) yoffset 4 textalign 0.5 color '#bfaa8f' font "gui/font/Klotee.ttf"
+                text "[dis_hours]:[dis_minutes]" align(0.5, 0.5) yoffset 4 textalign 0.5 color '#bfaa8f' font gui.interface_text_font
                 add "gui/stats/signal.png" yalign 0.5 xoffset 50
                 if codex_active == True:
                     add "gui/stats/codex_icon.png" yalign 0.5 xalign 1.0 xoffset -50

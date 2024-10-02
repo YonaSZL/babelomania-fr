@@ -128,7 +128,7 @@ style cat_text:
     idle_color '#bfaa8f'
     hover_color "#951b14"
     align(0.5, 0.5) yoffset 3
-    font "gui/font/Klotee.ttf"
+    font gui.interface_text_font
 style cat_vscrollbar:
     xoffset -400
 style entry_text:
