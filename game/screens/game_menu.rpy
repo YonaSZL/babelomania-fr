@@ -63,7 +63,7 @@ screen main_nav():
 
     $ tooltip = GetTooltip()
     if tooltip:
-        text "[tooltip]" font "gui/font/Sok Brubah.ttf" color u"#4b2913" size 40 xanchor .5 offset(205, 50)
+        text "[tooltip]" font gui.name_text_font color u"#4b2913" size 40 xanchor .5 offset(205, 50)
 
 screen game_menu(title):
 

@@ -21,7 +21,7 @@ screen inventory():
     add "gui/inventory/bg.png"
 
     ###Title and close button
-    label _("Inventory") text_font "gui/font/Sok Brubah.ttf" text_color "#951b14" text_size 42 xalign 0.5 ypos 199 
+    label _("Inventory") text_font gui.name_text_font text_color "#951b14" text_size 42 xalign 0.5 ypos 199 
     textbutton _("Close") action Hide("inventory"):
         text_font gui.interface_text_font 
         text_size 38 
