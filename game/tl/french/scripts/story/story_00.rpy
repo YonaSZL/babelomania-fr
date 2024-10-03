@@ -144,7 +144,7 @@ translate french story_00_invitation_76b2fe88_1:
 translate french story_00_invitation_557df6ec:
 
     # sh_xi darko frown "(I should've just sent a card...{w=0.5} This is killing me.)"
-    sh_xi nulla "(J'aurais dû envoyer une carte...{w=0.5} Ça me mine.)"
+    sh_xi darko frown "(J'aurais dû envoyer une carte...{w=0.5} Ça me mine.)"
 
 # game/scripts/story/story_00.rpy:139
 translate french story_00_invitation_b99a5ed7:
