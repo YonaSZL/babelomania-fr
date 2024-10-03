@@ -344,4 +344,4 @@ translate french strings:
 
     # game/scripts/exp/exp_taisho_1f_study.rpy:218
     old "Codex Updated."
-    new "Codex mis à jour"
+    new "Codex mis à jour."
