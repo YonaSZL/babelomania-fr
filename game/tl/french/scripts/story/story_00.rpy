@@ -468,7 +468,7 @@ translate french story_00_bathroom_return_35f9e883:
 translate french story_00_bathroom_return_ceef4c49:
 
     # sh_i surprise "(Hmm?{w=0.5} What's that sm-)"
-    sh_i surprise "(Hmm ?{w=0.5} C'est quoi cette od-)"
+    sh_i surprise "(Hmm ?{w=0.5} C'est quoi cette od- )"
 
 # game/scripts/story/story_00.rpy:345
 translate french story_00_bathroom_return_f6fd28d1:
@@ -486,7 +486,7 @@ translate french story_00_bathroom_return_8000d72a:
 translate french story_00_bathroom_return_fd1c8581:
 
     # sh_i nulla "(Let's close the door before the stench seeps in my clo-)"
-    sh_i nulla "(Fermons la porte avant que la puanteur ne s'infiltre dans mon espac-)"
+    sh_i nulla "(Fermons la porte avant que la puanteur ne s'infiltre dans mon espac- )"
 
 # game/scripts/story/story_00.rpy:369
 translate french story_00_bathroom_return_83853235:
@@ -756,7 +756,7 @@ translate french story_00_meet_gaspard_c3285e33:
 translate french story_00_meet_gaspard_2f84b70c:
 
     # sh_i laugh "(Oh, I'm going to give him so much shit for 'by the way'-ing me about his-)"
-    sh_i laugh "(Oh, je vais tellement lui en vouloir pour m'avoir dit 'au fait' à propos de son-)"
+    sh_i laugh "(Oh, je vais tellement lui en vouloir pour m'avoir dit 'au fait' à propos de son- )"
 
 # game/scripts/story/story_00.rpy:506
 translate french story_00_meet_gaspard_2b72896d:
@@ -990,7 +990,7 @@ translate french story_00_meet_amina_4ffe9c73:
 translate french story_00_meet_amina_cf9f4c61:
 
     # fr_x darko neutral "<Counterorder, Amina.{w=0.3} I will show him to your table myself in a couple minutes.>"
-    fr_x darko smile "<Contre-ordre, Amina.{w=0.3} Je vais lui montrer la table moi-même dans quelques minutes.>"
+    fr_x darko neutral "<Contre-ordre, Amina.{w=0.3} Je vais lui montrer la table moi-même dans quelques minutes.>"
 
 # game/scripts/story/story_00.rpy:600
 translate french story_00_meet_amina_e789a115:
