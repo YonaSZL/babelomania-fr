@@ -154,7 +154,7 @@ translate french gaspmina_01_gaspardamina_4ebe8e5d:
 translate french gaspmina_01_gaspardamina_f947c382:
 
     # ga nulla "<Ugh, speak French already!{w=0.3} What's the matter with you?>"
-    ga nulla "<Ugh, parles juste français !{w=0.3} Qu'est-ce qui ne va pas avec toi ?>"
+    ga nulla "<Ugh, parle juste français !{w=0.3} Qu'est-ce qui ne va pas avec toi ?>"
 
 # game/scripts/conv/gaspard_amina_convs.rpy:137
 translate french gaspmina_01_gaspardamina_fbf385d3:
