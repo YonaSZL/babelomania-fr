@@ -4,5 +4,5 @@ translate french strings:
 
     # game/options.rpy:17
     old "BABELOMANIA"
-    new ""
+    new "BABELOMANIA"
 
