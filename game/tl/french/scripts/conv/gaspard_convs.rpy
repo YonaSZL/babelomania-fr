@@ -40,7 +40,7 @@ translate french gaspard_01_gaspard_7094832f:
 translate french gaspard_01_gaspard_8a234e3b:
 
     # sh neutral "<Is there a problem with that?>"
-    sh surprise "<Il y a-t-il un problème avec ça ?>"
+    sh neutral "<Il y a-t-il un problème avec ça ?>"
 
 # game/scripts/conv/gaspard_convs.rpy:90
 translate french gaspard_01_gaspard_beb9caa0:
