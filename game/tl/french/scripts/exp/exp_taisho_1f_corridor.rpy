@@ -100,7 +100,7 @@ translate french exp_taisho_1f_corridor_01_gaspard_ac7d7af6:
 translate french exp_taisho_1f_corridor_01_gaspard_018c8b4e:
 
     # ga surprise "<Hmmm?{w=0.5} Oh, yeah, don't get me {i}started{/i}.{w=0.3} The Taishō, of all things.>"
-    ga surprise "<Hmmm ?{w=0.5} Oh, ouais, ne m'en {i}parles{/i} pas.{w=0.3} Le Taishō, de toutes les choses."
+    ga surprise "<Hmmm ?{w=0.5} Oh, ouais, ne m'en {i}parle{/i} pas.{w=0.3} Le Taishō, de toutes les choses."
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:113
 translate french exp_taisho_1f_corridor_01_gaspard_5b92be34:
