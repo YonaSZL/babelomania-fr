@@ -64,7 +64,7 @@ translate french think_01_protect_5d4b7c9f:
 translate french think_01_protect_3d8435af:
 
     # sh_i nulla "(So it's not the same person and...{w=0.5} If the door can be opened from my side...{w=0.5} {nw}"
-    sh_i nulla "(Donc ce n'est pas la même personne et...{w=0.5} Si la porte peut être ouverte de mon côté...{w=0.5} Ils m'ont mis ici pour me cacher !)"
+    sh_i nulla "(Donc ce n'est pas la même personne et...{w=0.5} Si la porte peut être ouverte de mon côté...{w=0.5} {nw}"
 
 # game/scripts/think/think_labels_01.rpy:59
 translate french think_01_protect_8f5d7dc1:
