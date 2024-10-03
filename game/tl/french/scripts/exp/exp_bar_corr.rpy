@@ -178,7 +178,7 @@ translate french strings:
 
     # game/scripts/exp/exp_bar_corr.rpy:108
     old "Let's go."
-    new "Allons-y"
+    new "Allons-y."
 
     # game/scripts/exp/exp_bar_corr.rpy:108
     old "Actually..."
