@@ -4,13 +4,13 @@
 translate french story_00_invitation_b3ce931d:
 
     # d "From: Delphine & Francesco{nw}"
-    d "De : Delphine & Francesco{nw}"
+    d "De : Delphine & Francesco {nw}"
 
 # game/scripts/story/story_00.rpy:68
 translate french story_00_invitation_0cac2824:
 
     # d "Date: Fri, 30 Apr 20XX at 19:46{nw}"
-    d "Date : Ven, 30 Avr 20XX à 19:46{nw}"
+    d "Date : Ven, 30 Avr 20XX à 19:46 {nw}"
 
 # game/scripts/story/story_00.rpy:68
 translate french story_00_invitation_5cdc6d34:
@@ -58,13 +58,13 @@ translate french story_00_invitation_76b2fe88:
 translate french story_00_invitation_b3ce931d_1:
 
     # d "From: Delphine & Francesco{nw}"
-    d "De : Delphine & Francesco{nw}"
+    d "De : Delphine & Francesco {nw}"
 
 # game/scripts/story/story_00.rpy:90
 translate french story_00_invitation_964c2dd6:
 
     # d "Date: Wed, 19 Jan 20XX at 19:46{nw}"
-    d "Date : Mer, 19 Jan 20XX à 19:46{nw}"
+    d "Date : Mer, 19 Jan 20XX à 19:46 {nw}"
 
 # game/scripts/story/story_00.rpy:90
 translate french story_00_invitation_73cd3f9f:
@@ -120,13 +120,13 @@ translate french story_00_invitation_eecd1573:
 translate french story_00_invitation_82a4fc17:
 
     # d "Warm regards,{nw}"
-    d "Meilleurs vœux,{nw}"
+    d "Meilleurs vœux, {nw}"
 
 # game/scripts/story/story_00.rpy:111
 translate french story_00_invitation_d844ba12:
 
     # d "Delphine & Francesco{nw}"
-    d "Delphine & Francesco{nw}"
+    d "Delphine & Francesco {nw}"
 
 # game/scripts/story/story_00.rpy:111
 translate french story_00_invitation_592394ca:
