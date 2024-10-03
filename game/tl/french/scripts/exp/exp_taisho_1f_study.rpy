@@ -184,7 +184,7 @@ translate french exp_taisho_1f_study_01_flashlight_fc6871d3:
 translate french exp_taisho_1f_study_01_flashlight_3e702ccd:
 
     # sh_i surprise "(A {b}flashlight{/b}!{w=0.3} What are even the chances?!)"
-    sh_i neutral "(Une {b}lampe-torche{/b} !{w=0.3} Quelles étaient les chances ?!)"
+    sh_i surprise "(Une {b}lampe-torche{/b} !{w=0.3} Quelles étaient les chances ?!)"
 
 # game/scripts/exp/exp_taisho_1f_study.rpy:119
 translate french exp_taisho_1f_study_01_flashlight_9a5536e9:
