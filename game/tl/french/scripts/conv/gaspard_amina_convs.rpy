@@ -124,7 +124,7 @@ translate french gaspmina_01_gaspardamina_7ff399cb:
 translate french gaspmina_01_gaspardamina_0ee48c83:
 
     # sh frown "Which means that the power failure is concentrated...{w=0.5} Maybe something happened to the transformer, or they messed with the eletrical panel."
-    sh frown "Ce qui signifie que la panne de courant est centrale...{w=0.5} Peut-être qu'il est arrivé quelque chose au transformateur, ou qu'ils ont joué avec le panneau életrique."
+    sh frown "Ce qui signifie que la panne de courant est centrale...{w=0.5} Peut-être qu'il est arrivé quelque chose au transformateur, ou qu'ils ont joué avec le panneau életique."
 
 # game/scripts/conv/gaspard_amina_convs.rpy:131
 translate french gaspmina_01_gaspardamina_836f1489:
