@@ -222,7 +222,7 @@ translate french story_00_invitation_8cfb68dd:
 translate french story_00_invitation_3ab8968f:
 
     # sh nulla "<Well, if you see something that creepy while entering the toilets you->"
-    sh nulla "<Eh bien, si vous voyez quelque chose d'aussi effrayant en entrant dans les toilettes, vous->"
+    sh nulla "<Eh bien, si vous voyez quelque chose d'aussi effrayant en entrant dans les toilettes, vous- >"
 
 # game/scripts/story/story_00.rpy:163
 translate french story_00_invitation_bbde346a:
@@ -438,7 +438,7 @@ translate french story_00_bathroom_encounters_913c1df8:
 translate french story_00_bathroom_encounters_d06a177c:
 
     # sh_i neutral -sweat "(Looking at it up close, it feels even more out of place...{w=0.5} No matter what excuses I make up.)"
-    sh_i neutral "(En le regardant de près, il semble encore plus faire tâche...{w=0.5} Peu importe les excuses que je peux lui inventer.)"
+    sh_i neutral -sweat "(En le regardant de près, il semble encore plus faire tâche...{w=0.5} Peu importe les excuses que je peux lui inventer.)"
 
 # game/scripts/story/story_00.rpy:311
 translate french story_00_bathroom_encounters_385dfa0c:
