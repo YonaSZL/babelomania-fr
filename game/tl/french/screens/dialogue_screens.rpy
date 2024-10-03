@@ -1,20 +1,20 @@
-# TODO: Translation updated at 2024-09-08 21:09
+﻿# TODO: Translation updated at 2024-10-01 20:40
 
 translate french strings:
 
     # game/screens/dialogue_screens.rpy:92
     old "Back"
-    new "Retour"
+    new ""
 
     # game/screens/dialogue_screens.rpy:93
     old "Skip"
-    new "Passer"
+    new ""
 
     # game/screens/dialogue_screens.rpy:94
     old "Auto"
-    new "Auto"
+    new ""
 
     # game/screens/dialogue_screens.rpy:95
     old "Menu"
-    new "Menu"
+    new ""
 

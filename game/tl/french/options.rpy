@@ -1,8 +1,8 @@
-﻿# TODO: Translation updated at 2024-09-08 21:09
+﻿# TODO: Translation updated at 2024-10-01 20:40
 
 translate french strings:
 
     # game/options.rpy:17
     old "BABELOMANIA"
-    new "BABELOMANIA"
+    new ""
 
