@@ -148,7 +148,7 @@ translate french exp_taisho_1f_corridor_01_gaspard_05feac70:
 translate french exp_taisho_1f_corridor_01_gaspard_39014036:
 
     # ga laugh "<And that includes their history.{w=0.5} Amazing how they still to this day name their historic eras after their emperors, despite them now being ceremonial figureheads...{w=0.5} Guess they really can't quit the kowtowing habit.>"
-    ga neutral "<Et cela inclut leur histoire.{w=0.5} Je trouve assez exotique qu'ils continuent à nommer leurs époques historiques d'après leurs Empereurs, bien que ceux-ci ne soient plus que des figures de proue cérémonielles...{w=0.5} Je suppose qu'ils n'arrivent vraiment pas à se débarrasser de cette habitude."
+    ga laugh "<Et cela inclut leur histoire.{w=0.5} Je trouve assez exotique qu'ils continuent à nommer leurs époques historiques d'après leurs Empereurs, bien que ceux-ci ne soient plus que des figures de proue cérémonielles...{w=0.5} Je suppose qu'ils n'arrivent vraiment pas à se débarrasser de cette habitude."
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:130
 translate french exp_taisho_1f_corridor_01_gaspard_d15553af:
