@@ -22,7 +22,7 @@ translate french story_01_there_were_three_4494509f:
 translate french story_01_there_were_three_d8f99fc5:
 
     # sh_i nulla "(Hopefully, the rest of the building isn't as sturdily locked down as the win-)"
-    sh_i nulla "(J'espère que le reste du bâtiment n'est pas aussi solidement verrouillé que les fenêt-)"
+    sh_i nulla "(J'espère que le reste du bâtiment n'est pas aussi solidement verrouillé que les fenêt- )"
 
 # game/scripts/story/story_01.rpy:47
 translate french story_01_there_were_three_81ff2264:
@@ -34,7 +34,7 @@ translate french story_01_there_were_three_81ff2264:
 translate french story_01_there_were_three_d7c9257b:
 
     # sh_i nulla "(Thank goodness!{w=0.3} It means that there's other people around that-)"
-    sh_i nulla "(Dieu merci !{w=0.3} Cela signifie qu'il y a d'autres personnes dans le coi-)"
+    sh_i nulla "(Dieu merci !{w=0.3} Cela signifie qu'il y a d'autres personnes dans le coi- )"
 
 # game/scripts/story/story_01.rpy:53
 translate french story_01_there_were_three_877d77e4:
@@ -460,7 +460,7 @@ translate french story_01_taisho_side_meet_27264ee3:
 translate french story_01_taisho_side_meet_8a3b518a:
 
     # ga angry sweat "<All calm and collected, while I'm losing my fucking mind!{w=0.3} Locked in this REVOLTING building, made to solve FUCKING riddles?!{w=0.3} How dare!{w=0.3} HOW DARE?!>"
-    ga angry sweat "<Tout calme et serein, alors que je perds la boule !{w=0.3} Enfermé dans ce bâtiment RÉVOLTANT, obligé de résoudre des PUTAIN d'énigmes ?!{w=0.3} Comment oses-tu !{w=0.3} COMMENT OSES-TU ?!>"
+    ga angry sweat "<Tout calme et serein, alors que je perds la boule !{w=0.3} Enfermé dans ce bâtiment RÉVOLTANT, obligé de résoudre des PUTAINS d'énigmes ?!{w=0.3} Comment oses-tu !{w=0.3} COMMENT OSES-TU ?!>"
 
 # game/scripts/story/story_01.rpy:326
 translate french story_01_taisho_side_meet_32c5246e:
