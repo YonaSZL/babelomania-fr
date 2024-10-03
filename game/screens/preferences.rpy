@@ -140,8 +140,8 @@ screen preferences():
                 #vbox:
                 #    style_prefix "radio"
                 #    label _("Language")
-                #    textbutton _("English") action NullAction() hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
-                #    textbutton _("French") action NullAction() hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
+                #    textbutton _("English") action [Language(None), gui.SetPreference("interface_font", "gui/font/Klotee.ttf")] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
+                #    textbutton _("French") action [Language("french"), gui.SetPreference("interface_font", "gui/font/ColabThi.otf")] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
 
 
 

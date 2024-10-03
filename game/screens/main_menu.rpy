@@ -43,7 +43,7 @@ screen main_menu():
 
 
 style main_button_text:
-    font "gui/font/Sok Brubah.ttf"
+    font gui.name_text_font
     yalign 1.0
 
 style sub_button_text:

@@ -21,9 +21,9 @@ screen inventory():
     add "gui/inventory/bg.png"
 
     ###Title and close button
-    label _("Inventory") text_font "gui/font/Sok Brubah.ttf" text_color "#951b14" text_size 42 xalign 0.5 ypos 199 
+    label _("Inventory") text_font gui.name_text_font text_color "#951b14" text_size 42 xalign 0.5 ypos 199 
     textbutton _("Close") action Hide("inventory"):
-        text_font "gui/font/Klotee.ttf" 
+        text_font gui.interface_text_font 
         text_size 38 
         xalign 0.5 ypos 658
         text_hover_color '#bfaa8f'
@@ -62,7 +62,7 @@ screen inventory():
                         activate_sound "audio/sfx/gui_item.ogg"
                         action CaptureFocus(i.drop)
     else:
-        text _("Inventory empty") align(0.5, 0.5) yoffset -100 size 40 font "gui/font/Klotee.ttf" color '#bfaa8f'
+        text _("Inventory empty") align(0.5, 0.5) yoffset -100 size 40 font gui.interface_text_font color '#bfaa8f'
 
 
 

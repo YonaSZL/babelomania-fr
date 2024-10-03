@@ -148,7 +148,7 @@ style page_label_text:
     layout "subtitle"
     idle_color u"#4f331d"
     hover_color '#bfaa8f'
-    font "gui/font/Sok Brubah.ttf"
+    font gui.name_text_font
 
 style slot_grid:
     xalign 0.5
