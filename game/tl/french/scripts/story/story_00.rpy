@@ -396,7 +396,7 @@ translate french story_00_bathroom_break_99bee8d3:
 translate french story_00_bathroom_encounters_0c944cb1:
 
     # sh nulla "Woah!{w=0.3} Excuse me!"
-    sh nulla "Woah !"{w=0.3} Excusez-moi !"
+    sh nulla "Woah !{w=0.3} Excusez-moi !"
 
 # game/scripts/story/story_00.rpy:268
 translate french story_00_bathroom_encounters_47613799:

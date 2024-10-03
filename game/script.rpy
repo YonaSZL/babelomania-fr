@@ -168,7 +168,7 @@ init -1:
 label splashscreen:
     scene black
     pause 1.5
-    #call screen language with dissolve
+    call screen language with dissolve
     scene black
     pause 1.5
     scene intro_00 with dissolve
