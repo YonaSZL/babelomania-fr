@@ -82,9 +82,17 @@ translate french strings:
 
     # game/screens/preferences.rpy:142
     old "Language"
-    new "Language"
+    new "Langue"
 
     # game/screens/preferences.rpy:144
     old "French"
-    new "French"
+    new "Francais"
+
+# TODO: Translation updated at 2024-10-04 22:29
+
+translate french strings:
+
+    # game/screens/preferences.rpy:143
+    old "English{#}"
+    new "Anglais"
 
