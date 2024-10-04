@@ -27,7 +27,7 @@ screen habiki_conv_01:
             vbox:
                 spacing 20
                 button:
-                    text _("Professor Habiki")
+                    text _("Professor Habiki{#}")
                     at btn_slide
 
                     ## you can put a simple variable/renpy.seen_label here to determine which bg is shown
@@ -55,7 +55,7 @@ screen habiki_conv_01:
 
 
                 button:
-                    text _("The Wedding")
+                    text _("The Wedding{#}")
                     at btn_slide
                     if habiki_01_wedding:
                         background "gui/talkie/button.png"

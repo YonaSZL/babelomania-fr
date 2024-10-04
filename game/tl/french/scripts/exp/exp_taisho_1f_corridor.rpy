@@ -100,7 +100,7 @@ translate french exp_taisho_1f_corridor_01_gaspard_ac7d7af6:
 translate french exp_taisho_1f_corridor_01_gaspard_018c8b4e:
 
     # ga surprise "<Hmmm?{w=0.5} Oh, yeah, don't get me {i}started{/i}.{w=0.3} The Taishō, of all things.>"
-    ga surprise "<Hmmm ?{w=0.5} Oh, ouais, ne m'en {i}parle{/i} pas.{w=0.3} Le Taishō, de toutes les choses."
+    ga surprise "<Hmmm ?{w=0.5} Oh, ouais, ne m'en {i}parle{/i} pas.{w=0.3} Le Taishō, de toutes les choses.>"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:113
 translate french exp_taisho_1f_corridor_01_gaspard_5b92be34:
@@ -112,7 +112,7 @@ translate french exp_taisho_1f_corridor_01_gaspard_5b92be34:
 translate french exp_taisho_1f_corridor_01_gaspard_6bb32ab3:
 
     # ga surprise "<Which is not unheard of but, the periods he decided to take inspiration from are...{w=0.5} Peculiar.{w=0.3} I mean, the Taishō era of all things?!>"
-    ga surprise "<Ce qui n'est pas inédit mais, les périodes dont il a décidé de s'inspirer sont...{w=0.5} Particulières.{w=0.3} Je veux dire, l'ère Taishō de toutes les choses ?!"
+    ga surprise "<Ce qui n'est pas inédit mais, les périodes dont il a décidé de s'inspirer sont...{w=0.5} Particulières.{w=0.3} Je veux dire, l'ère Taishō de toutes les choses ?!>"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:117
 translate french exp_taisho_1f_corridor_01_gaspard_a41cc868:
@@ -148,7 +148,7 @@ translate french exp_taisho_1f_corridor_01_gaspard_05feac70:
 translate french exp_taisho_1f_corridor_01_gaspard_39014036:
 
     # ga laugh "<And that includes their history.{w=0.5} Amazing how they still to this day name their historic eras after their emperors, despite them now being ceremonial figureheads...{w=0.5} Guess they really can't quit the kowtowing habit.>"
-    ga laugh "<Et cela inclut leur histoire.{w=0.5} Je trouve assez exotique qu'ils continuent à nommer leurs époques historiques d'après leurs Empereurs, bien que ceux-ci ne soient plus que des figures de proue cérémonielles...{w=0.5} Je suppose qu'ils n'arrivent vraiment pas à se débarrasser de cette habitude."
+    ga laugh "<Et cela inclut leur histoire.{w=0.5} Je trouve assez exotique qu'ils continuent à nommer leurs époques historiques d'après leurs Empereurs, bien que ceux-ci ne soient plus que des figures de proue cérémonielles...{w=0.5} Je suppose qu'ils n'arrivent vraiment pas à se débarrasser de cette habitude.>"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:130
 translate french exp_taisho_1f_corridor_01_gaspard_d15553af:
@@ -184,7 +184,7 @@ translate french exp_taisho_1f_corridor_01_gaspard_4506d59c:
 translate french exp_taisho_1f_corridor_01_gaspard_06f28569:
 
     # ga surprise "<What...?{w=0.5} Yeah, those are the years.>"
-    ga surprise "Quoi... ?{w=0.5} Oui, ce sont les années.>"
+    ga surprise "<Quoi... ?{w=0.5} Oui, ce sont les années.>"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:144
 translate french exp_taisho_1f_corridor_01_gaspard_27e1f4a2:

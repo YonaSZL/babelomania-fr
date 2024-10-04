@@ -19,21 +19,21 @@ screen language():
         button:
             xysize(343,755)
             idle_background "gui/language/english.png"
-            hover_background "gui/language/english.png"
+            hover_background "gui/language/english_gl.png"
             label _("English")
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_slots_confirm.ogg"
-            action [Language(None), gui.SetPreference("name_text_font", "gui/font/Sok Brubah.ttf"), gui.SetPreference("interface_font", "gui/font/Klotee.ttf"), Function(renpy.transition, dissolve), SetVariable("persistent.firstopen", True), Return()] ##+ add the language change action
+            action [Language(None), SetVariable("language_switcher", "English"), gui.SetPreference("name_text_font", "gui/font/Sok Brubah.ttf"), gui.SetPreference("interface_font", "gui/font/Klotee.ttf"), Function(renpy.transition, dissolve), SetVariable("persistent.firstopen", True), Return()] ##+ add the language change action
         
 
         button:
             xysize(343,755)
             idle_background "gui/language/french.png"
-            hover_background "gui/language/french.png"
+            hover_background "gui/language/french_gl.png"
             label _("Francais")
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_slots_confirm.ogg"
-            action [Language("french"), gui.SetPreference("name_text_font", "gui/font/CreditValley.ttf"), gui.SetPreference("interface_font", "gui/font/ColabThi.otf"), Function(renpy.transition, dissolve), Return()] ##+ add the language change action
+            action [Language("french"), SetVariable("language_switcher", "French"), gui.SetPreference("name_text_font", "gui/font/CreditValley.ttf"), gui.SetPreference("interface_font", "gui/font/ColabThi.otf"), Function(renpy.transition, dissolve), Return()] ##+ add the language change action
 
 
 style language_label:

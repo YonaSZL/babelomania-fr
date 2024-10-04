@@ -6,9 +6,13 @@ image white = "gui/transitions/white.jpg"
 
 image babelomania_logo = At("gui/babelomania_logo.png", glow_outline(4, "#951B14"))
 
-image intro_disclaimer = "images/cgs/intro/intro_disclaimer.jpg"
+image intro_disclaimer = ConditionSwitch(
+    "language_switcher == 'English'", "images/cgs/intro/intro_disclaimer.jpg",
+    "language_switcher == 'French'", "images/cgs/intro/intro_disclaimer_fr.jpg")
 
-image intro_babel = "images/cgs/intro/intro_babel.png"
+image intro_babel = ConditionSwitch(
+    "language_switcher == 'English'", "images/cgs/intro/intro_babel.png",
+    "language_switcher == 'French'", "images/cgs/intro/intro_babel_fr.png")
 
 image intro_hand_A = "images/cgs/intro/intro_hand_A.jpg"
 

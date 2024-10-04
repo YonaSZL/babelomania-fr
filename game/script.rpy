@@ -107,7 +107,7 @@ default current_location = "None"
 default dark_environ = False
 default briefcase_carry = False
 default numeric_puzzle_input = "None"
-
+default language_switcher = "English"
 #Defining Music Channels
 init python:
     renpy.music.register_channel("LoNoise", "sfx",)

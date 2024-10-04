@@ -4,11 +4,11 @@ translate french strings:
 
     # game/screens/save_load.rpy:22
     old "Save"
-    new "Sauvegarder"
+    new "{size=16}Sauvegarder"
 
     # game/screens/save_load.rpy:31
     old "Load"
-    new "Charger"
+    new "{size=16}Charger"
 
     # game/screens/save_load.rpy:78
     old "{#file_time}%a, %b %d %Y, %H:%M"

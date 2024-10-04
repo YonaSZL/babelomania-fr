@@ -394,7 +394,7 @@ translate french story_01_taisho_side_meet_66ac3cfc:
 translate french story_01_taisho_side_meet_d0c408c8:
 
     # sh neutral "19261225."
-    sh neutral "19261225"
+    sh neutral "19261225."
 
 # game/scripts/story/story_01.rpy:297
 translate french story_01_taisho_side_meet_5d301f82:
@@ -694,7 +694,7 @@ translate french story_01_taisho_side_meet_5185e717:
 translate french story_01_taisho_side_meet_2d45e27d:
 
     # ga nulla "<Oh, that?{w=0.3} That's because he saw me and, most likely, the bridesmaid leaving the bathrooms.{w=0.3} Keep your liabilities close, know what I mean?>"
-    ga nulla "Oh, ça ?{w=0.3} C'est parce qu'il m'a vu, et sans doute aussi la demoiselle d'honneur, quitter les toilettes.{w=0.3} Garde tes ennemis près de toi, tu vois ce que je veux dire ?>"
+    ga nulla "<Oh, ça ?{w=0.3} C'est parce qu'il m'a vu, et sans doute aussi la demoiselle d'honneur, quitter les toilettes.{w=0.3} Garde tes ennemis près de toi, tu vois ce que je veux dire ?>"
 
 # game/scripts/story/story_01.rpy:445
 translate french story_01_taisho_side_meet_e856c1ae:
