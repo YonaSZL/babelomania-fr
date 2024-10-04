@@ -209,7 +209,7 @@ screen taisho_1f_library_explore_01():
 
         frame:
             xalign 0.5
-            text "[tooltip]"
+            text "[tooltip!t]"
 
 label exp_taisho_1f_library_01_gaspard:
     $ taisho_1f_library_explore_01_sensitive = False
@@ -410,7 +410,7 @@ screen taisho_1f_library_gaspard_scare():
 
         frame:
             xalign 0.5
-            text "[tooltip]"
+            text "[tooltip!t]"
 
 label taisho_1f_library_gaspard_arm:
     $ renpy.block_rollback()

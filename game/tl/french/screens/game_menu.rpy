@@ -12,7 +12,7 @@ translate french strings:
 
     # game/screens/game_menu.rpy:38
     old "History"
-    new "Historique"
+    new "Hist."
 
     # game/screens/game_menu.rpy:49
     old "About"

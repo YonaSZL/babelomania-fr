@@ -28,7 +28,7 @@ screen taisho_1f_study_explore_01():
 
         frame:
             xalign 0.5
-            text "[tooltip]"
+            text "[tooltip!t]"
 
 label exp_taisho_1f_study_01_couch:
     $ renpy.block_rollback()
@@ -164,7 +164,7 @@ screen taisho_1f_study_explore_02():
 
         frame:
             xalign 0.5
-            text "[tooltip]"
+            text "[tooltip!t]"
 
 label exp_taisho_1f_need_flashlight:
     scene taisho_1f_study

@@ -4,7 +4,7 @@ translate french strings:
 
     # game/screens/main_menu.rpy:25
     old "Start"
-    new "Commencer"
+    new "Start"
 
     # game/screens/main_menu.rpy:37
     old "Extra"

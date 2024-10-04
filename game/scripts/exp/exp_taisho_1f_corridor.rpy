@@ -60,7 +60,7 @@ screen taisho_1f_corridor_explore_01():
 
         frame:
             xalign 0.5
-            text "[tooltip]"
+            text "[tooltip!t]"
 
 label exp_taisho_1f_corridor_01_gaspard:
     $ renpy.block_rollback()

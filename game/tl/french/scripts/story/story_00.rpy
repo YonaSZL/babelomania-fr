@@ -210,7 +210,7 @@ translate french story_00_invitation_d3a83a5a:
 translate french story_00_invitation_a2d54f03:
 
     # tb_n "<Huh?{w=0.5} To help?>"
-    tb_n "<Huh ? {w=0.5} Pour aider ?"
+    tb_n "<Huh ? {w=0.5} Pour aider ?>"
 
 # game/scripts/story/story_00.rpy:156
 translate french story_00_invitation_8cfb68dd:
@@ -282,7 +282,7 @@ translate french story_00_relaxation_9acda12a:
 translate french story_00_relaxation_c04e3ef4:
 
     # sh nulla "<And if you get lost in such thoughts, it helps you relax...{w=0.5} And being relaxed is important in this situation, no?>"
-    sh nulla "<Et si vous vous perdez dans de telles pensées, cela vous aide à vous détendre...{w=0.5} Et être détendu est important dans cette situation, non ?"
+    sh nulla "<Et si vous vous perdez dans de telles pensées, cela vous aide à vous détendre...{w=0.5} Et être détendu est important dans cette situation, non ?>"
 
 # game/scripts/story/story_00.rpy:198
 translate french story_00_relaxation_1e89591f:
@@ -342,7 +342,7 @@ translate french story_00_bathroom_break_b7fac7c2:
 translate french story_00_bathroom_break_d65091f0:
 
     # tb_n2 "<He is.{w=0.3} Wonder why he's sitting with us, then?>"
-    tb_n2 "<Il l'est.{w=0.3} Je me demande pourquoi il est assis avec nous, alors ?"
+    tb_n2 "<Il l'est.{w=0.3} Je me demande pourquoi il est assis avec nous, alors ?>"
 
 # game/scripts/story/story_00.rpy:228
 translate french story_00_bathroom_break_9036de7c:

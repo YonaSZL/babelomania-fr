@@ -22,7 +22,7 @@ screen bathroom_painting_examine():
 
         frame:
             xalign 0.5
-            text "[tooltip]"
+            text "[tooltip!t]"
 
 label exm_bathroom_painting_subject:
     $ renpy.block_rollback()

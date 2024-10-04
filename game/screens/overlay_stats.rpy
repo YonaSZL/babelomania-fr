@@ -98,7 +98,7 @@ screen overlay_stats():
 
         frame:
             xalign 0.5
-            text "[tooltip]"
+            text "[tooltip!t]"
 
 
 init python:

@@ -59,7 +59,7 @@ screen preferences():
                         action InvertSelected(Preference("transitions", "toggle"))
                         hover_sound "audio/sfx/gui_hover.ogg"
                         activate_sound "audio/sfx/gui_confirm.ogg"
-
+            if Language == None:
                 vbox:
                     style_prefix "check"
                     label _("Font")

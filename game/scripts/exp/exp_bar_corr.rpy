@@ -26,7 +26,7 @@ screen exp_bar_corr():
 
         frame:
             xalign 0.5
-            text "[tooltip]"
+            text "[tooltip!t]"
 
 label exp_bar_corr_window:
     $ renpy.block_rollback()
