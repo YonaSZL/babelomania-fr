@@ -76,4 +76,15 @@ translate french strings:
 
     # game/screens/preferences.rpy:137
     old "Censored"
-    new "Censuré"
+    new "Censuré"# TODO: Translation updated at 2024-10-04 22:26
+
+translate french strings:
+
+    # game/screens/preferences.rpy:142
+    old "Language"
+    new "Language"
+
+    # game/screens/preferences.rpy:144
+    old "French"
+    new "French"
+

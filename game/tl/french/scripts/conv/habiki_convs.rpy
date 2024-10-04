@@ -316,4 +316,15 @@ translate french strings:
 
     # game/scripts/conv/habiki_convs.rpy:46
     old "The Android"
-    new "L'Androïde"
+    new "L'Androïde"# TODO: Translation updated at 2024-10-04 22:26
+
+translate french strings:
+
+    # game/scripts/conv/habiki_convs.rpy:30
+    old "Professor Habiki{#}"
+    new "Professeur Habiki"
+
+    # game/scripts/conv/habiki_convs.rpy:58
+    old "The Wedding{#}"
+    new "Le Mariage"
+
