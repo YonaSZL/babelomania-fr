@@ -90,6 +90,7 @@ screen overlay_stats():
                     text _("DRAINING") align(0.5, 0.5) size 22 outlines([(1, "#181112", 0, 0)]) #color u"C69C6D"
                 else:
                     text _("STAND BY") align(0.5, 0.5) size 22 outlines([(1, "#181112", 0, 0)]) #color u"C69C6D"
+                add "gui/stats/flash.png" xoffset -20 yalign 0.5
         if stat2_show:
             bar:
                 xysize(353,38) xalign 0.5
