@@ -13,16 +13,6 @@ screen bathroom_painting_examine():
         hotspot (0, 0, 300, 130) action Jump("exm_bathroom_painting_signature") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Handwriting")#SIGNATURE
         if bathroom_painting_examine == 3:
             hotspot (1645, 922, 275, 158) action Jump("exm_bathroom_painting_return") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Return")#RETURN
-    
-    $ tooltip = GetTooltip()
-
-    nearrect:
-        focus "tooltip"
-        prefer_top True
-
-        frame:
-            xalign 0.5
-            text "[tooltip!t]"
 
 label exm_bathroom_painting_subject:
     $ renpy.block_rollback()

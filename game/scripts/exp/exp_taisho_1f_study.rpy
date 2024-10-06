@@ -20,16 +20,6 @@ screen taisho_1f_study_explore_01():
             if taisho_1f_study_explore_01 == 3 and exp_taisho_1f_study_01_flashlight == False:
                 hotspot (1377, 630, 111, 76) action Jump("exp_taisho_1f_study_01_flashlight") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#FLASHLIGHT
 
-    $ tooltip = GetTooltip()
-
-    nearrect:
-        focus "tooltip"
-        prefer_top True
-
-        frame:
-            xalign 0.5
-            text "[tooltip!t]"
-
 label exp_taisho_1f_study_01_couch:
     $ renpy.block_rollback()
     pause 0.5
@@ -155,16 +145,6 @@ screen taisho_1f_study_explore_02():
             hotspot (326, 352, 451, 497) action Jump("exp_taisho_1f_need_flashlight") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#WINDOW
             hotspot (1212, 457, 291, 227) action Jump("exp_taisho_1f_need_flashlight") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#SCROLLS
             hotspot (1762, 327, 158, 589) action Jump("exp_taisho_1f_need_flashlight") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Darkness")#DOOR
-
-    $ tooltip = GetTooltip()
-
-    nearrect:
-        focus "tooltip"
-        prefer_top True
-
-        frame:
-            xalign 0.5
-            text "[tooltip!t]"
 
 label exp_taisho_1f_need_flashlight:
     scene taisho_1f_study

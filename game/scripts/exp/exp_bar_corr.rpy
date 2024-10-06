@@ -18,16 +18,6 @@ screen exp_bar_corr():
         if exp_bar_corr_01 == 5:
             hotspot (1361, 577, 152, 115) action Jump("exp_bar_corr_down") hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" tooltip _("Stairs Down")#STAIRS DOWN
     
-    $ tooltip = GetTooltip()
-    nearrect:
-        focus "tooltip"
-        prefer_top True
-        frame:
-            background Frame("gui/button/choice_idle_background.png", 60, 33, 60, 33, tile=False)
-            padding (140, 15, 140, 15)
-            xalign 0.5 yalign 0.5
-            text "[tooltip!t]" font gui.name_text_font
-
 label exp_bar_corr_window:
     $ renpy.block_rollback()
     pause 0.5

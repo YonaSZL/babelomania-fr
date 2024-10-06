@@ -201,16 +201,6 @@ screen taisho_1f_library_explore_01():
 
     add "darkness_layers"
 
-    $ tooltip = GetTooltip()
-
-    nearrect:
-        focus "tooltip"
-        prefer_top True
-
-        frame:
-            xalign 0.5
-            text "[tooltip!t]"
-
 label exp_taisho_1f_library_01_gaspard:
     $ taisho_1f_library_explore_01_sensitive = False
     $ renpy.block_rollback()
@@ -401,16 +391,6 @@ screen taisho_1f_library_gaspard_scare():
             activate_sound "audio/sfx/gui_confirm.ogg"
             action Jump("taisho_1f_library_gaspard_face")
             tooltip _("?????")
-
-    $ tooltip = GetTooltip()
-
-    nearrect:
-        focus "tooltip"
-        prefer_top True
-
-        frame:
-            xalign 0.5
-            text "[tooltip!t]"
 
 label taisho_1f_library_gaspard_arm:
     $ renpy.block_rollback()

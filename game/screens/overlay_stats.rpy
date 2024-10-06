@@ -47,16 +47,15 @@ screen overlay_stats():
             add "gui/stats/avatar_bg.png"
             if briefcase_carry:
                 idle_foreground "gui/stats/case.png"
-                hover_foreground "gui/stats/case.png"
+                hover_foreground "gui/stats/case_hv.png"
             else:
                 idle_foreground "gui/stats/inventory.png"
-                hover_foreground "gui/stats/inventory.png"
+                hover_foreground "gui/stats/inventory_hv.png"
             xysize(230,230) xalign 1.0 offset(-50, 30)
             focus_mask True
             action Show("inventory")
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_inventory.ogg"
-            tooltip "Inventory"
 
     vbox:
         spacing 10 offset(15,30)
@@ -70,15 +69,15 @@ screen overlay_stats():
                 if codex_active == True:
                     add "gui/stats/codex_icon.png" yalign 0.5 xalign 1.0 xoffset -50
                 action NullAction()
-        if codex_active == True:
-            button:
-                idle_background "gui/stats/time_bg.png"
-                hover_background At("gui/stats/time_bg.png", outline_transform(2, "#876a33", 4.0))
-                xysize(395, 77)
-                text "OPEN CODEX" align(0.5, 0.5) yoffset 4 textalign 0.5 color '#bfaa8f' font gui.interface_text_font
-                hover_sound "audio/sfx/gui_hover.ogg"
-                activate_sound "audio/sfx/gui_codex.ogg"
-                action ShowMenu("codex_main")
+            if codex_active == True:
+                button:
+                    idle_background "gui/stats/time_bg.png"
+                    hover_background At("gui/stats/time_bg.png", outline_transform(2, "#876a33", 4.0))
+                    xysize(395, 77)
+                    text _("OPEN CODEX") align(0.5, 0.5) yoffset 4 textalign 0.5 color '#bfaa8f' font gui.interface_text_font
+                    hover_sound "audio/sfx/gui_hover.ogg"
+                    activate_sound "audio/sfx/gui_codex.ogg"
+                    action ShowMenu("codex_main")
 
         if stat1_show:
             button:
@@ -88,9 +87,9 @@ screen overlay_stats():
                     left_bar "gui/stats/stat_1.png"
                     value AnimatedValue(value=stat1, range=100, delay=1.0)
                 if flashlight_consume:
-                    text "DRAINING" align(0.5, 0.5) size 22 outlines([(1, "#181112", 0, 0)]) #color u"C69C6D"
+                    text _("DRAINING") align(0.5, 0.5) size 22 outlines([(1, "#181112", 0, 0)]) #color u"C69C6D"
                 else:
-                    text "STANDBY" align(0.5, 0.5) size 22 outlines([(1, "#181112", 0, 0)]) #color u"C69C6D"
+                    text _("STAND BY") align(0.5, 0.5) size 22 outlines([(1, "#181112", 0, 0)]) #color u"C69C6D"
         if stat2_show:
             bar:
                 xysize(353,38) xalign 0.5
@@ -105,8 +104,11 @@ screen overlay_stats():
         prefer_top True
 
         frame:
-            xalign 0.5
-            text "[tooltip!t]"
+            background Frame("gui/button/choice_idle_background.png", 60, 33, 60, 33, tile=False)
+            padding (140, 15, 140, 15)
+            xalign 0.5 yoffset 9
+            text "[tooltip!t]" font gui.name_text_font color '#bfaa8f'
+
 
 
 init python:

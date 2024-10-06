@@ -52,16 +52,6 @@ screen taisho_1f_corridor_explore_01():
         action Jump("exp_taisho_1f_corridor_01_shigeo_wake")
         tooltip _("Meeting Room #2")#SHIGEO WAKE ROOM
 
-    $ tooltip = GetTooltip()
-
-    nearrect:
-        focus "tooltip"
-        prefer_top True
-
-        frame:
-            xalign 0.5
-            text "[tooltip!t]"
-
 label exp_taisho_1f_corridor_01_gaspard:
     $ renpy.block_rollback()
     pause 0.5
