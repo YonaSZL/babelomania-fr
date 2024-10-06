@@ -56,14 +56,50 @@ screen main_nav():
             xysize(120,120)
             add "gui/gm/nav_btn.png"
             add "gui/gm/extra.png" at button_fade
-            action NullAction()
+            action [SetVariable("nav", "extra"), Function(renpy.transition, dissolve),Function(renpy.restart_interaction)]
             tooltip _("Extras")
-            hover_sound "audio/sfx/gui_hover.ogg"
-            activate_sound "audio/sfx/gui_confirm.ogg"
 
     $ tooltip = GetTooltip()
     if tooltip:
         text "[tooltip!t]" font gui.name_text_font color u"#4b2913" size 40 xanchor .5 offset(205, 50)
+
+screen extra_nav():
+
+    vbox:
+        yalign 0.5 xpos 142 spacing 50
+
+        button:
+            xysize(120,120)
+            add "gui/gm/nav_btn.png"
+            add "gui/gm/gallery.png" at button_fade
+            action ShowMenu("gallery")
+            tooltip _("Gallery")
+
+        button:
+            xysize(120,120)
+            add "gui/gm/nav_btn.png"
+            add "gui/gm/music.png" at button_fade
+            action ShowMenu("music_room3", my_room)
+            tooltip _("Music")
+
+
+
+        ###This will bring up a second set of menu in place of this one with
+        ### the gallery, music room etc.
+        button:
+            xysize(120,120)
+            add "gui/gm/nav_btn.png"
+            add "gui/gm/extra.png" at button_fade
+            action [SetVariable("nav", "main"), Function(renpy.transition, dissolve),Function(renpy.restart_interaction)]
+            tooltip _("Return")
+
+
+    $ tooltip = GetTooltip()
+    if tooltip:
+        text "[tooltip!t]" font gui.name_text_font color u"#4b2913" size 40 xanchor .5 offset(205, 50)
+
+
+default nav = "main"
 
 screen game_menu(title):
 
