@@ -140,8 +140,8 @@ screen taisho_1f_library_explore_01():
                     tooltip _("?????")
             button:
                 sensitive "taisho_1f_library_explore_01_sensitive"
-                pos(1898,707)
-                xysize(83,45)
+                pos(1868,697)
+                xysize(123,65)
                 background None
                 hover_sound "audio/sfx/gui_hover.ogg"
                 activate_sound "audio/sfx/gui_confirm.ogg"
