@@ -34,7 +34,7 @@ screen main_menu():
         ###You can comment these out for now
         ###Here to show layout once gallery is added
         text "♦" size 20 yalign 0.5
-        textbutton _("Extra") action [SetVariable("nav", "extra"), ShowMenu("gallery")] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"
+        textbutton _("Extra") action [SetVariable("nav", "extra"), ShowMenu("gallery")] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg" sensitive persistent.vertical_clear
         ####
 
         text "♦" size 20 yalign 0.5

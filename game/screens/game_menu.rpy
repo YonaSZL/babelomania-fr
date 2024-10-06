@@ -55,6 +55,7 @@ screen main_nav():
         button:
             xysize(120,120)
             add "gui/gm/nav_btn.png"
+            sensitive persistent.vertical_clear
             add "gui/gm/extra.png" at button_fade
             action [SetVariable("nav", "extra"), Function(renpy.transition, dissolve),Function(renpy.restart_interaction)]
             tooltip _("Extras")
