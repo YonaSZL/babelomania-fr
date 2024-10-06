@@ -69,20 +69,28 @@ screen overlay_stats():
                 add "gui/stats/signal.png" yalign 0.5 xoffset 50
                 if codex_active == True:
                     add "gui/stats/codex_icon.png" yalign 0.5 xalign 1.0 xoffset -50
-
-                    hover_sound "audio/sfx/gui_hover.ogg"
-                    activate_sound "audio/sfx/gui_codex.ogg"
-                    action ShowMenu("codex_main")
-                else:
-                    action NullAction()
+                action NullAction()
+        if codex_active == True:
+            button:
+                idle_background "gui/stats/time_bg.png"
+                hover_background At("gui/stats/time_bg.png", outline_transform(2, "#876a33", 4.0))
+                xysize(395, 77)
+                text "OPEN CODEX" align(0.5, 0.5) yoffset 4 textalign 0.5 color '#bfaa8f' font gui.interface_text_font
+                hover_sound "audio/sfx/gui_hover.ogg"
+                activate_sound "audio/sfx/gui_codex.ogg"
+                action ShowMenu("codex_main")
 
         if stat1_show:
-            bar:
+            button:
                 xysize(353,38) xalign 0.5
-                right_bar "gui/stats/empty.png"
-                left_bar "gui/stats/stat_1.png"
-                value AnimatedValue(value=stat1, range=100, delay=1.0)
-
+                bar:
+                    right_bar "gui/stats/empty.png"
+                    left_bar "gui/stats/stat_1.png"
+                    value AnimatedValue(value=stat1, range=100, delay=1.0)
+                if flashlight_consume:
+                    text "DRAINING" align(0.5, 0.5) size 22 outlines([(1, "#181112", 0, 0)]) #color u"C69C6D"
+                else:
+                    text "STANDBY" align(0.5, 0.5) size 22 outlines([(1, "#181112", 0, 0)]) #color u"C69C6D"
         if stat2_show:
             bar:
                 xysize(353,38) xalign 0.5
