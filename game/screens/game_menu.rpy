@@ -91,7 +91,7 @@ screen extra_nav():
             add "gui/gm/nav_btn.png"
             add "gui/gm/extra.png" at button_fade
             action [SetVariable("nav", "main"), Function(renpy.transition, dissolve),Function(renpy.restart_interaction)]
-            tooltip _("Return")
+            tooltip _("Main")
 
 
     $ tooltip = GetTooltip()
@@ -106,7 +106,7 @@ screen game_menu(title):
     #style_prefix "game_menu"
 
     if main_menu:
-        add "main_menu_background"
+        add "main_menu_bg"
     add "gui/gm/bg.png"
 
     if nav == "main":
