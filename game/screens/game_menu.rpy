@@ -106,15 +106,13 @@ screen game_menu(title):
     #style_prefix "game_menu"
 
     if main_menu:
-        add "main_menu_bg"
+        add "main_menu_background"
     add "gui/gm/bg.png"
 
-    use main_nav
-
-    
-   
-
-    
+    if nav == "main":
+        use main_nav
+    else:
+        use extra_nav 
 
     button:
         xysize(66,66) pos(1754,189)
