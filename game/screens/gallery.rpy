@@ -163,8 +163,8 @@ screen gal_3():
             xoffset 40
 
 
-            add g.make_button("intro_09", Transform("bathroom_painting", xysize=gallery_thumb_size))
-            add g.make_button("story_01_01", Transform("gui/test_cg.png", xysize=gallery_thumb_size))
+            add g.make_button("intro_09", Transform("intro_phone_c", xysize=gallery_thumb_size))
+            add g.make_button("story_01_01", Transform("bathroom_painting", xysize=gallery_thumb_size))
             add g.make_button("story_01_02", Transform("tabitha_grab", xysize=gallery_thumb_size))
             add g.make_button("story_01_03", Transform("gaspard_turn_00", xysize=gallery_thumb_size))
 
