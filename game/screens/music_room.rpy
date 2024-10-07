@@ -11,74 +11,74 @@ init python:
 
 
     my_room.add(
-        name=_("Adeste Fideles Waltz"),
-        path="audio/test_Adeste Fideles Waltz.mp3",
-        artist="Kevin MacLeod",
+        name=_("Babelomania - Main Theme"),
+        path="audio/bgm/babelomania.ogg",
+        artist="OddTillTheEnd",
         art="gui/music_room/MyGameOST.png",
-        unlock_condition="persistent.good_end",
+        unlock_condition="True",
     )
 
 
     my_room.add(
-        name=_("Drums of the Deep"),
-        path="audio/test_Drums of the Deep.mp3",
-        artist="Kevin MacLeod",
+        name=_("Sanity Glitch"),
+        path="audio/bgm/sanity_glitch.ogg",
+        artist="Nailik",
         art="gui/music_room/MyGameOST.png",
         unlock_condition="True",
     )
 
     my_room.add(
-        name=_("Frogs Legs Rag"),
-        path="audio/test_Frogs Legs Rag.mp3",
-        artist="Kevin MacLeod",
+        name=_("Sins, Not Tragedies"),
+        path="audio/bgm/sins_not_tragedies.ogg",
+        artist="OddTillTheEnd",
         art="gui/music_room/MyGameOST.png",
         unlock_condition="True",
     )
 
     my_room.add(
-        name=_("Grand Dark Waltz Moderato"),
-        path="audio/test_Grand Dark Waltz Moderato.mp3",
-        artist="Kevin MacLeod",
+        name=_("Saferoom"),
+        path="audio/bgm/saferoom.ogg",
+        artist="Ayato Sound Create",
         art="gui/music_room/MyGameOST.png",
         unlock_condition="True",
     )
 
     my_room.add(
-        name=_("Lord of the Land"),
-        path="audio/test_Lord of the Land.mp3",
-        artist="Kevin MacLeod",
+        name=_("Uncanny"),
+        path="audio/bgm/uncanny.ogg",
+        artist="Ayato Sound Create",
         art="gui/music_room/MyGameOST.png",
         unlock_condition="True",
     )
 
     my_room.add(
-        name=_("Magic Escape Room"),
-        path="audio/test_Magic Escape Room.mp3",
-        artist="Kevin MacLeod",
+        name=_("Echo of Mountains"),
+        path="audio/bgm/echo_of_mountains.ogg",
+        artist="W.O.W. Sounds",
         art="gui/music_room/MyGameOST.png",
         unlock_condition="True",
     )
 
     my_room.add(
-        name=_("Master of the Feast"),
-        path="audio/test_Master of the Feast.mp3",
-        artist="Kevin MacLeod",
+        name=_("Francesco"),
+        path="audio/bgm/francesco.ogg",
+        artist="W.O.W. Sounds",
         art="gui/music_room/MyGameOST.png",
         unlock_condition="True",
     )
 
     my_room.add(
-        name=_("Sergios Magic Dustbin"),
-        path="audio/test_Sergios Magic Dustbin.mp3",
-        artist="Kevin MacLeod",
+        name=_("Shadows Whisper"),
+        path="audio/bgm/shadows_whisper.ogg",
+        artist="Nailik",
         art="gui/music_room/MyGameOST.png",
         unlock_condition="True",
     )
 
     my_room.add(
-        name=_("Teller of the Tales"),
-        path="audio/test_Teller of the Tales.mp3",
-        artist="Kevin MacLeod",
+        name=_("Shadows Breathe"),
+        path="audio/bgm/shadows_breathe.ogg",
+        artist="Nailik",
         art="gui/music_room/MyGameOST.png",
         unlock_condition="True",
     )
