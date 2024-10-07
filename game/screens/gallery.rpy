@@ -23,8 +23,66 @@ init python:
 
     g.button("cg4")
     g.unlock_image("test")
+    ##Actual Images
+    g.button("intro_01")
+    g.unlock_image("intro_hand_A")
 
+    g.button("intro_02")
+    g.unlock_image("intro_corpse")
 
+    g.button("intro_03")
+    g.unlock_image("intro_hand_B")
+
+    g.button("intro_04")
+    g.unlock_image("intro_tabitha")
+
+    g.button("intro_05")
+    g.unlock_image("intro_tabitha_side")
+
+    g.button("intro_06")
+    g.unlock_image("intro_reach")
+
+    g.button("intro_07")
+    g.unlock_image("intro_phone_a")
+
+    g.button("intro_08")
+    g.unlock_image("intro_phone_b")
+
+    g.button("intro_09")
+    g.unlock_image("intro_phone_c")
+
+    g.button("story_01_01")
+    g.unlock_image("bathroom_painting")
+
+    g.button("story_01_02")
+    g.unlock_image("tabitha_grab")
+
+    g.button("story_01_03")
+    g.unlock_image("gaspard_turn_00")
+
+    g.button("story_01_04")
+    g.unlock_image("gaspard_turn_01")
+
+    g.button("story_01_05")
+    g.unlock_image("gaspard_turn_02")
+
+    g.button("story_01_06")
+    g.unlock_image("gaspard_turn_03")
+
+    g.button("story_01_07")
+    g.unlock_image("gaspard_turn_04")
+
+    g.button("story_01_08")
+    g.unlock_image("gaspard_focus_01")
+
+    g.button("story_01_09")
+    g.unlock_image("gaspard_focus_02")
+
+    g.button("story_01_10")
+    g.unlock_image("gaspard_rip")
+
+    g.button("story_01_11")
+    g.unlock_image("gaspard_tear")
 
 ###Test CG
 image test = "gui/test_cg.png"
@@ -73,10 +131,10 @@ screen gal_1():
             xoffset 40
 
 
-            add g.make_button("cg1", Transform("gui/test_cg.png", xysize=gallery_thumb_size))
-            add g.make_button("cg2", Transform("gui/test_cg.png", xysize=gallery_thumb_size))
-            add g.make_button("cg3", Transform("gui/test_cg.png", xysize=gallery_thumb_size))
-            add g.make_button("cg4", Transform("gui/test_cg.png", xysize=gallery_thumb_size))
+            add g.make_button("intro_01", Transform("intro_hand_A", xysize=gallery_thumb_size))
+            add g.make_button("intro_02", Transform("intro_reach", xysize=gallery_thumb_size))
+            add g.make_button("intro_03", Transform("intro_hand_B", xysize=gallery_thumb_size))
+            add g.make_button("intro_04", Transform("intro_tabitha", xysize=gallery_thumb_size))
 
 
 screen gal_2():
@@ -89,10 +147,10 @@ screen gal_2():
             xoffset 40
 
 
-            add g.make_button("cg1", Transform("gui/test_cg.png", xysize=gallery_thumb_size))
-            add g.make_button("cg2", Transform("gui/test_cg.png", xysize=gallery_thumb_size))
-            add g.make_button("cg3", Transform("gui/test_cg.png", xysize=gallery_thumb_size))
-            add g.make_button("cg4", Transform("gui/test_cg.png", xysize=gallery_thumb_size))
+            add g.make_button("intro_05", Transform("intro_tabitha_side", xysize=gallery_thumb_size))
+            add g.make_button("intro_06", Transform("intro_reach", xysize=gallery_thumb_size))
+            add g.make_button("intro_07", Transform("intro_phone_a", xysize=gallery_thumb_size))
+            add g.make_button("intro_08", Transform("intro_phone_b", xysize=gallery_thumb_size))
 
 
 screen gal_3():
@@ -105,10 +163,10 @@ screen gal_3():
             xoffset 40
 
 
-            add g.make_button("cg1", Transform("gui/test_cg.png", xysize=gallery_thumb_size))
-            add g.make_button("cg2", Transform("gui/test_cg.png", xysize=gallery_thumb_size))
-            add g.make_button("cg3", Transform("gui/test_cg.png", xysize=gallery_thumb_size))
-            add g.make_button("cg4", Transform("gui/test_cg.png", xysize=gallery_thumb_size))
+            add g.make_button("intro_09", Transform("bathroom_painting", xysize=gallery_thumb_size))
+            add g.make_button("story_01_01", Transform("gui/test_cg.png", xysize=gallery_thumb_size))
+            add g.make_button("story_01_02", Transform("tabitha_grab", xysize=gallery_thumb_size))
+            add g.make_button("story_01_03", Transform("gaspard_turn_00", xysize=gallery_thumb_size))
 
 
 screen gal_4():
@@ -121,10 +179,10 @@ screen gal_4():
             xoffset 40
 
 
-            add g.make_button("cg1", Transform("gui/test_cg.png", xysize=gallery_thumb_size))
-            add g.make_button("cg2", Transform("gui/test_cg.png", xysize=gallery_thumb_size))
-            add g.make_button("cg3", Transform("gui/test_cg.png", xysize=gallery_thumb_size))
-            add g.make_button("cg4", Transform("gui/test_cg.png", xysize=gallery_thumb_size))
+            add g.make_button("story_01_04", Transform("gaspard_turn_01", xysize=gallery_thumb_size))
+            add g.make_button("story_01_05", Transform("gaspard_turn_02", xysize=gallery_thumb_size))
+            add g.make_button("story_01_06", Transform("gaspard_turn_03", xysize=gallery_thumb_size))
+            add g.make_button("story_01_07", Transform("gaspard_turn_04", xysize=gallery_thumb_size))
 
 
 screen gal_5():
@@ -137,7 +195,7 @@ screen gal_5():
             xoffset 40
 
 
-            add g.make_button("cg1", Transform("gui/test_cg.png", xysize=gallery_thumb_size))
-            add g.make_button("cg2", Transform("gui/test_cg.png", xysize=gallery_thumb_size))
-            add g.make_button("cg3", Transform("gui/test_cg.png", xysize=gallery_thumb_size))
-            add g.make_button("cg4", Transform("gui/test_cg.png", xysize=gallery_thumb_size))
+            add g.make_button("story_01_08", Transform("gaspard_focus_01", xysize=gallery_thumb_size))
+            add g.make_button("story_01_09", Transform("gaspard_focus_02", xysize=gallery_thumb_size))
+            add g.make_button("story_01_10", Transform("gaspard_rip", xysize=gallery_thumb_size))
+            add g.make_button("story_01_11", Transform("gaspard_tear", xysize=gallery_thumb_size))
