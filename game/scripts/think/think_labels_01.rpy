@@ -15,7 +15,7 @@ label think_01_comein:
     sh_i nulla "(The real question is, why haven't they come in yet?)"
     pause 1.0
     $ renpy.block_rollback()
-    jump think_01_door
+    jump think_01_door_think
 
 label think_01_locked:
     play sound4 "audio/sfx/gui_hint.ogg"
@@ -27,7 +27,7 @@ label think_01_locked:
     sh_i nulla "(So, whoever put me in here...{w=0.5} Put me in a room with security shutters...{w=0.5} And a door that can be easily opened from the inside, but is locked from the outside.{w=0.5} Because...)"
     pause 1.0
     $ renpy.block_rollback()
-    jump think_01_room
+    jump think_01_room_think
 
 menu think_01_room:
     sh_i frown "(Why did they put me in a room {b}locked from the outside{/b}?)"
@@ -47,7 +47,7 @@ label think_01_trap:
     show Shigeo frown with dissolve
     pause 1.0
     $ renpy.block_rollback()
-    jump think_01_room
+    jump think_01_room_think
 
 label think_01_protect:
     $ renpy.block_rollback()
@@ -60,3 +60,9 @@ label think_01_protect:
     pause 1.0
     $ renpy.block_rollback()
     jump story_01_door_opens
+
+label think_01_door_think:
+    call screen think(_("Why are they {b}trying{/b} to open the door?"), _("Because they want to come in."), "think_01_comein", _("Because the door is locked."), "think_01_locked", "Bone", "Bone", "Bone", "Bone")
+
+label think_01_room_think:
+    call screen think(_("Why did they put me in a room {b}locked from the outside{/b}?"), _("Because they wanted to trap me."), "think_01_trap", _("Because they wanted to protect me."), "think_01_protect", "None", "None", "None", "None")

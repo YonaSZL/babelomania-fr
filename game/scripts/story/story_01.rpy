@@ -64,7 +64,7 @@ label story_01_there_were_three:
     with Reveal3
     pause 1.5
     $ renpy.block_rollback()
-    jump think_01_door
+    jump think_01_door_think
 
 label story_01_door_opens:
     $ renpy.block_rollback()
