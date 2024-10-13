@@ -1,12 +1,3 @@
-menu think_01_door:
-    sh_i surprise "(Why are they {b}trying{/b} to open the door?)"
-
-    "Because they want to come in.":
-        jump think_01_comein
-
-    "Because the door is locked.":
-        jump think_01_locked
-
 label think_01_comein:
     play sound4 "audio/sfx/gui_slots_confirm.ogg"
     $ renpy.block_rollback()
@@ -28,15 +19,6 @@ label think_01_locked:
     pause 1.0
     $ renpy.block_rollback()
     jump think_01_room_think
-
-menu think_01_room:
-    sh_i frown "(Why did they put me in a room {b}locked from the outside{/b}?)"
-
-    "Because they wanted to trap me.":
-        jump think_01_trap
-
-    "Because they wanted to protect me.":
-        jump think_01_protect
     
 label think_01_trap:
     play sound4 "audio/sfx/gui_slots_confirm.ogg"
