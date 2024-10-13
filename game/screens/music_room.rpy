@@ -4,7 +4,7 @@
 init python:
     my_room = ExtendedMusicRoom(channel='music', fadeout=2.0, fadein=1.0,
         loop=True, single_track=False, shuffle=True, stop_action=None,
-        alphabetical=True)
+        alphabetical=False)
 
     
     my_room.default_art = "gui/music_room/MyGameOST.png"
@@ -36,8 +36,8 @@ init python:
     )
 
     my_room.add(
-        name=_("Saferoom"),
-        path="audio/bgm/saferoom.ogg",
+        name=_("Safehouse"),
+        path="audio/bgm/safehouse.ogg",
         artist="Ayato Sound Create",
         art="gui/music_room/MyGameOST.png",
         unlock_condition="True",

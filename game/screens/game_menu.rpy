@@ -59,6 +59,8 @@ screen main_nav():
             add "gui/gm/extra.png" at button_fade
             action [SetVariable("nav", "extra"), Function(renpy.transition, dissolve),Function(renpy.restart_interaction)]
             tooltip _("Extras")
+            hover_sound "audio/sfx/gui_hover.ogg"
+            activate_sound "audio/sfx/gui_confirm.ogg"
 
     $ tooltip = GetTooltip()
     if tooltip:
@@ -75,6 +77,8 @@ screen extra_nav():
             add "gui/gm/gallery.png" at button_fade
             action ShowMenu("gallery")
             tooltip _("Gallery")
+            hover_sound "audio/sfx/gui_hover.ogg"
+            activate_sound "audio/sfx/gui_confirm.ogg"
 
         button:
             xysize(120,120)
@@ -82,7 +86,8 @@ screen extra_nav():
             add "gui/gm/music.png" at button_fade
             action ShowMenu("music_room3", my_room)
             tooltip _("Music")
-
+            hover_sound "audio/sfx/gui_hover.ogg"
+            activate_sound "audio/sfx/gui_confirm.ogg"
 
 
         ###This will bring up a second set of menu in place of this one with
@@ -93,6 +98,8 @@ screen extra_nav():
             add "gui/gm/extra.png" at button_fade
             action [SetVariable("nav", "main"), Function(renpy.transition, dissolve),Function(renpy.restart_interaction)]
             tooltip _("Main")
+            hover_sound "audio/sfx/gui_hover.ogg"
+            activate_sound "audio/sfx/gui_confirm.ogg"
 
 
     $ tooltip = GetTooltip()
