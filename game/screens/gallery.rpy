@@ -103,8 +103,8 @@ screen gallery():
         idle "gui/button/dec.png"
         hover "gui/button/dec.png"
 
-        hotspot(757, 868, 54, 35) action FilePagePrevious() focus_mask None
-        hotspot(1130, 868, 66, 35) action FilePageNext() focus_mask None
+        hotspot(757, 868, 54, 35) action FilePagePrevious() focus_mask None hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"
+        hotspot(1130, 868, 66, 35) action FilePageNext() focus_mask None hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"
         ## Buttons to access other pages.
     vbox:
         style_prefix "page"
@@ -112,7 +112,7 @@ screen gallery():
 
             ###This will make 5 buttons
             for page in range(1, 6):
-                textbutton "[page]" action SetVariable("gallery_page", page)
+                textbutton "[page]" action SetVariable("gallery_page", page) hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"
 
             add "gui/button/dec_small.png" offset(10,9)
 
@@ -132,10 +132,28 @@ screen gal_1():
 
 
             add g.make_button("intro_01", Transform("intro_hand_A", xysize=gallery_thumb_size))
-            add g.make_button("intro_02", Transform("intro_reach", xysize=gallery_thumb_size))
+            add g.make_button("intro_02", Transform("intro_corpse", xysize=gallery_thumb_size))
             add g.make_button("intro_03", Transform("intro_hand_B", xysize=gallery_thumb_size))
-            add g.make_button("intro_04", Transform("intro_tabitha", xysize=gallery_thumb_size))
+            if renpy.seen_image("intro_tabitha"):
+                button:
+                    xysize(400,225)
+                    background Transform("intro_tabitha", crop=(0,0,1920,1080), xysize=gallery_thumb_size)
+                    idle_foreground Transform("gui/gallery/border.png", xysize=gallery_thumb_size)
+                    hover_foreground Transform("gui/gallery/border_h.png", xysize=gallery_thumb_size)
+                    action Show("intro_tabitha_viewport")
+            else:
+                add g.make_button("intro_04", Transform("intro_tabitha", xysize=gallery_thumb_size))
 
+screen intro_tabitha_viewport():
+    modal True
+    button:
+        xysize(1920,1080)
+        viewport:
+            xysize(1920,1080)
+            pos(0, 0)
+            draggable True
+            add "intro_tabitha"
+        action Hide("intro_tabitha_viewport")
 
 screen gal_2():
 
@@ -147,11 +165,44 @@ screen gal_2():
             xoffset 40
 
 
-            add g.make_button("intro_05", Transform("intro_tabitha_side", xysize=gallery_thumb_size))
-            add g.make_button("intro_06", Transform("intro_reach", xysize=gallery_thumb_size))
+            if renpy.seen_image("intro_tabitha_side"):
+                button:
+                    xysize(400,225)
+                    background Transform("intro_tabitha_side", crop=(0,0,1920,1080), xysize=gallery_thumb_size)
+                    idle_foreground Transform("gui/gallery/border.png", xysize=gallery_thumb_size)
+                    hover_foreground Transform("gui/gallery/border_h.png", xysize=gallery_thumb_size)
+                    action Show("intro_tabitha_side_viewport")
+            else:
+                add g.make_button("intro_05", Transform("intro_tabitha_side", xysize=gallery_thumb_size))
+            if renpy.seen_image("intro_reach"):
+                button:
+                    xysize(400,225)
+                    background Transform("intro_reach_base", crop=(0,0,1920,1080), xysize=gallery_thumb_size)
+                    idle_foreground Transform("gui/gallery/border.png", xysize=gallery_thumb_size)
+                    hover_foreground Transform("gui/gallery/border_h.png", xysize=gallery_thumb_size)
+                    action Show("intro_reach_base_viewport")
+            else:
+                add g.make_button("intro_06", Transform("intro_reach", xysize=gallery_thumb_size))
             add g.make_button("intro_07", Transform("intro_phone_a", xysize=gallery_thumb_size))
             add g.make_button("intro_08", Transform("intro_phone_b", xysize=gallery_thumb_size))
 
+screen intro_tabitha_side_viewport():
+    modal True
+    button:
+        xysize(1920,1080)
+        viewport:
+            xysize(1920,1080)
+            pos(0, 0)
+            draggable True
+            add "intro_tabitha_side"
+        action Hide("intro_tabitha_side_viewport")
+
+screen intro_reach_base_viewport():
+    modal True
+    button:
+        xysize(1920,1080)
+        add "intro_reach_base"
+        action Hide("intro_reach_base_viewport")
 
 screen gal_3():
 
@@ -165,9 +216,27 @@ screen gal_3():
 
             add g.make_button("intro_09", Transform("intro_phone_c", xysize=gallery_thumb_size))
             add g.make_button("story_01_01", Transform("bathroom_painting", xysize=gallery_thumb_size))
-            add g.make_button("story_01_02", Transform("tabitha_grab", xysize=gallery_thumb_size))
+            if renpy.seen_image("tabitha_grab"):
+                button:
+                    xysize(400,225)
+                    background Transform("tabitha_grab", crop=(880,0,1920,1080), xysize=gallery_thumb_size)
+                    idle_foreground Transform("gui/gallery/border.png", xysize=gallery_thumb_size)
+                    hover_foreground Transform("gui/gallery/border_h.png", xysize=gallery_thumb_size)
+                    action Show("tabitha_grab_viewport")
+            else:
+                add g.make_button("story_01_02", Transform("tabitha_grab", xysize=gallery_thumb_size))
             add g.make_button("story_01_03", Transform("gaspard_turn_00", xysize=gallery_thumb_size))
 
+screen tabitha_grab_viewport():
+    modal True
+    button:
+        xysize(1920,1080)
+        viewport:
+            xysize(1920,1080)
+            pos(0, 0)
+            draggable True
+            add "tabitha_grab"
+        action Hide("tabitha_grab_viewport")
 
 screen gal_4():
 

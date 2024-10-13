@@ -6,8 +6,6 @@ screen think(question, op_1_text, op_1_lab, op_2_text, op_2_lab, op_3_text, op_3
         text question size 45 color '#bfaa8f'
         at hover
 
-
-
     grid 2 2:
         align (0.5, 0.5) xspacing 500 yspacing 200 yoffset -100 xoffset -50
         button:
