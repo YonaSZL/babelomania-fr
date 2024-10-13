@@ -701,7 +701,7 @@ label taisho_1f_library_gaspard_face:
     sh frown sweat ".{w=0.3}.{w=0.3}.{w=0.5}Gaspard?"
     pause 2.0
     play sound "audio/se/glitch_short.ogg"
-    scene gaspard_turn_00
+    scene gaspard_turn_00_glitch
     show dark_flashlight
     with glitch_load
     pause 1.5
@@ -718,7 +718,7 @@ label taisho_1f_library_gaspard_face:
     show dark_flashlight
     with dissolve
     pause 3.0
-    play sound4 "audio/se/gaspard_voice.ogg"
+    play sound4 "audio/se/glitch_charge.ogg"
     scene gaspard_turn_04
     show dark_flashlight
     with quick_dissolve
@@ -747,7 +747,7 @@ label taisho_1f_library_gaspard_face:
     show taisho_1f_library_base:
         linear 2.0 xalign 0.5
     sh_i angry sweat "(What is happening?!{w=0.3} WHAT THE FUCK DID JUST HAPPEN?!)"
-    play sound4 "audio/se/gaspard_voice.ogg"
+    play sound4 "audio/se/glitch_attack.ogg"
     pause 0.5
     am shock sweat "SHIGEO, WATCH-!"
     sh surprise sweat "...!"
@@ -761,12 +761,12 @@ label taisho_1f_library_gaspard_face:
     sh shock sweat "UUUUUGH!!"
     am shock sweat "AAAAAAAAAAAH!!!"
     sh_i pain sweat "(Fast...{w=0.5} So fast...{w=0.5} I didn't...)"
-    play sound2 "audio/se/gaspard_voice.ogg"
+    play sound2 "audio/se/glitch_attack.ogg"
     am angry sweat "L-{w=0.15}Leave him alone!{w=0.3} GASPARD, STOP!"
     sh pain sweat "Amina, no...{w=0.5} Run...{w=0.5} While he's...!"
     play sound "audio/se/door_fist.ogg"
-    am pain sweat "AAAAAAH!{nw}"
-    play sound2 "audio/se/glass_smash.ogg"
+    am pain sweat "AAAAAAH!{w=0.5}{nw}"
+    play sound2 "audio/se/crash_wood.ogg"
     pause 1.0
     sh angry sweat "FUCKING...!{w=0.3} BASTARD...!"
     sh pain sweat "Ugh...!"
@@ -785,7 +785,7 @@ label taisho_1f_library_gaspard_face:
     sh_i angry sweat "(OPEN YOUR FUCKING EYES!{w=0.3} FIGHT!{w=0.3} GET UP!)"
     pause 1.5
     scene gaspard_focus_01 with Reveal3
-    play sound2 "audio/se/gaspard_voice.ogg"
+    play sound2 "audio/se/glitch_hurt.ogg"
     sh_i angry sweat "\"GET UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUP...!!!\""
     pause 1.0
     stop music fadeout 0.3

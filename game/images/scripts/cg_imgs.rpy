@@ -56,6 +56,22 @@ image bathroom_painting_glitch_2:
     linear 0.2 alpha 0.0
 
 image gaspard_turn_00 = "images/cgs/chapter_00/gaspard/gaspard_turn_00.jpg"
+image gaspard_turn_00_b = "images/cgs/chapter_00/gaspard/gaspard_turn_00_b.jpg"
+image gaspard_turn_00_glitch:
+    "gaspard_turn_00"
+    pause 0.05
+    "gaspard_turn_00_b"
+    pause 0.05
+    "gaspard_turn_00"
+    pause 0.05
+    "gaspard_turn_00_b"
+    pause 0.05
+    "gaspard_turn_00"
+    pause 0.05
+    "gaspard_turn_00_b"
+    pause 0.05
+    "gaspard_turn_00"
+
 image gaspard_turn_01 = "images/cgs/chapter_00/gaspard/gaspard_turn_01.jpg"
 image gaspard_turn_02 = "images/cgs/chapter_00/gaspard/gaspard_turn_02.jpg"
 image gaspard_turn_03 = "images/cgs/chapter_00/gaspard/gaspard_turn_03.jpg"

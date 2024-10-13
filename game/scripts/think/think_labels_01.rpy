@@ -62,7 +62,7 @@ label think_01_protect:
     jump story_01_door_opens
 
 label think_01_door_think:
-    call screen think(_("Why are they {b}trying{/b} to open the door?"), _("Because they want to come in."), "think_01_comein", _("Because the door is locked."), "think_01_locked", "Bone", "Bone", "Bone", "Bone")
+    call screen think(_("Why are they {b}trying{/b} to open the door?"), _("Because they want to come in."), "think_01_comein", _("Because the door is locked."), "think_01_locked", "None", "None", "None", "None")
 
 label think_01_room_think:
     call screen think(_("Why did they put me in a room {b}locked from the outside{/b}?"), _("Because they wanted to trap me."), "think_01_trap", _("Because they wanted to protect me."), "think_01_protect", "None", "None", "None", "None")
