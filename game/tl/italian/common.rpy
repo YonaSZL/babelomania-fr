@@ -4,163 +4,163 @@ translate italian strings:
 
     # renpy/common/00accessibility.rpy:28
     old "Self-voicing disabled."
-    new ""
+    new "Auto-Voce Disattivato."
 
     # renpy/common/00accessibility.rpy:29
     old "Clipboard voicing enabled. "
-    new ""
+    new "Voce Clipboard Attivato."
 
     # renpy/common/00accessibility.rpy:30
     old "Self-voicing enabled. "
-    new ""
+    new "Auto-Voce Attivato."
 
     # renpy/common/00accessibility.rpy:32
     old "bar"
-    new ""
+    new "barra"
 
     # renpy/common/00accessibility.rpy:33
     old "selected"
-    new ""
+    new "selezionato"
 
     # renpy/common/00accessibility.rpy:34
     old "viewport"
-    new ""
+    new "viewport"
 
     # renpy/common/00accessibility.rpy:35
     old "horizontal scroll"
-    new ""
+    new "scroll orizzontale"
 
     # renpy/common/00accessibility.rpy:36
     old "vertical scroll"
-    new ""
+    new "scroll verticale"
 
     # renpy/common/00accessibility.rpy:37
     old "activate"
-    new ""
+    new "attivare"
 
     # renpy/common/00accessibility.rpy:38
     old "deactivate"
-    new ""
+    new "disattivare"
 
     # renpy/common/00accessibility.rpy:39
     old "increase"
-    new ""
+    new "aumentare"
 
     # renpy/common/00accessibility.rpy:40
     old "decrease"
-    new ""
+    new "diminuire"
 
     # renpy/common/00accessibility.rpy:121
     old "Accessibility Menu. Use up and down arrows to navigate, and enter to activate buttons and bars."
-    new ""
+    new "Menu Accessibilità. Usare le frecce su e giù per navigare, ed Invio per attivare bottoni e barre."
 
     # renpy/common/00accessibility.rpy:140
     old "Font Override"
-    new ""
+    new "Font Override"
 
     # renpy/common/00accessibility.rpy:144
     old "Default"
-    new ""
+    new "Default"
 
     # renpy/common/00accessibility.rpy:148
     old "DejaVu Sans"
-    new ""
+    new "DejaVu Sans"
 
     # renpy/common/00accessibility.rpy:152
     old "Opendyslexic"
-    new ""
+    new "Opendyslexic"
 
     # renpy/common/00accessibility.rpy:158
     old "Text Size Scaling"
-    new ""
+    new "Scaling Dimensioni Testo"
 
     # renpy/common/00accessibility.rpy:164
     old "Reset"
-    new ""
+    new "Reset"
 
     # renpy/common/00accessibility.rpy:170
     old "Line Spacing Scaling"
-    new ""
+    new "Scaling Spazio Interlinea"
 
     # renpy/common/00accessibility.rpy:182
     old "High Contrast Text"
-    new ""
+    new "Testo ad Alto Contrasto"
 
     # renpy/common/00accessibility.rpy:184
     old "Enable"
-    new ""
+    new "Attiva"
 
     # renpy/common/00accessibility.rpy:188
     old "Disable"
-    new ""
+    new "Disattiva"
 
     # renpy/common/00accessibility.rpy:195
     old "Self-Voicing"
-    new ""
+    new "Auto-Voce"
 
     # renpy/common/00accessibility.rpy:198
     old "Self-voicing support is limited when using a touch screen."
-    new ""
+    new "L'Auto-Voce è limitato mentre si utilizza un touch screen."
 
     # renpy/common/00accessibility.rpy:202
     old "Off"
-    new ""
+    new "Off"
 
     # renpy/common/00accessibility.rpy:206
     old "Text-to-speech"
-    new ""
+    new "Text-to-speech"
 
     # renpy/common/00accessibility.rpy:210
     old "Clipboard"
-    new ""
+    new "Clipboard"
 
     # renpy/common/00accessibility.rpy:214
     old "Debug"
-    new ""
+    new "Debug"
 
     # renpy/common/00accessibility.rpy:220
     old "Voice Volume"
-    new ""
+    new "Volume Voce"
 
     # renpy/common/00accessibility.rpy:228
     old "Self-Voicing Volume Drop"
-    new ""
+    new "Abbassamento Volume Auto-Voce"
 
     # renpy/common/00accessibility.rpy:237
     old "The options on this menu are intended to improve accessibility. They may not work with all games, and some combinations of options may render the game unplayable. This is not an issue with the game or engine. For the best results when changing fonts, try to keep the text size the same as it originally was."
-    new ""
+    new "Le opzioni di questo menu sono intese per migliorare l'accessibilità. Potrebbero non essere compatibili con alcuni giochi, e potrebbero renderli non-giocabili. Trattasi non di un problema col gioco o la engine. Per risultati migliori nel cambiare font, cercate di mantenere le stesse dimensioni."
 
     # renpy/common/00accessibility.rpy:242
     old "Return"
-    new ""
+    new "Indietro"
 
     # renpy/common/00action_file.rpy:26
     old "{#weekday}Monday"
-    new ""
+    new "{#weekday}Lunedì"
 
     # renpy/common/00action_file.rpy:26
     old "{#weekday}Tuesday"
-    new ""
+    new "{#weekday}Martedì"
 
     # renpy/common/00action_file.rpy:26
     old "{#weekday}Wednesday"
-    new ""
+    new "{#weekday}Mercoledì"
 
     # renpy/common/00action_file.rpy:26
     old "{#weekday}Thursday"
-    new ""
+    new "{#weekday}Giovedì"
 
     # renpy/common/00action_file.rpy:26
     old "{#weekday}Friday"
-    new ""
+    new "{#weekday}Venerdì"
 
     # renpy/common/00action_file.rpy:26
     old "{#weekday}Saturday"
-    new ""
+    new "{#weekday}Sabato"
 
     # renpy/common/00action_file.rpy:26
     old "{#weekday}Sunday"
-    new ""
+    new "{#weekday}Domenica"
 
     # renpy/common/00action_file.rpy:37
     old "{#weekday_short}Mon"
