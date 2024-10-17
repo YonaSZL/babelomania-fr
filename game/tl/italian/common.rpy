@@ -468,79 +468,79 @@ translate italian strings:
 
     # renpy/common/00director.rpy:1845
     old "Customize director.audio_channels to add more channels."
-    new ""
+    new "Modificare director.audio_channels per aggiungere altri Channel."
 
     # renpy/common/00director.rpy:1857
     old "Audio Filename:"
-    new ""
+    new "Audio Filename:"
 
     # renpy/common/00gui.rpy:448
     old "Are you sure?"
-    new ""
+    new "Sei sicuro?"
 
     # renpy/common/00gui.rpy:449
     old "Are you sure you want to delete this save?"
-    new ""
+    new "Vuoi davvero cancellare questo salvataggio?"
 
     # renpy/common/00gui.rpy:450
     old "Are you sure you want to overwrite your save?"
-    new ""
+    new "Vuoi davvero sovrascrivere questo salvataggio?"
 
     # renpy/common/00gui.rpy:451
     old "Loading will lose unsaved progress.\nAre you sure you want to do this?"
-    new ""
+    new "Caricando perderai i progressi non salvati.\nSei sicuro?"
 
     # renpy/common/00gui.rpy:452
     old "Are you sure you want to quit?"
-    new ""
+    new "Sei sicuro di voler uscire?"
 
     # renpy/common/00gui.rpy:453
     old "Are you sure you want to return to the main menu?\nThis will lose unsaved progress."
-    new ""
+    new "Vuoi davvero tornare al menu principale?\nI progressi non salvati andranno persi."
 
     # renpy/common/00gui.rpy:454
     old "Are you sure you want to continue where you left off?"
-    new ""
+    new "Sei sicuro di voler continuare da dove avevi lasciato?"
 
     # renpy/common/00gui.rpy:455
     old "Are you sure you want to end the replay?"
-    new ""
+    new "Vuoi davvero terminare il replay?"
 
     # renpy/common/00gui.rpy:456
     old "Are you sure you want to begin skipping?"
-    new ""
+    new "Vuoi davvero attivare lo Skipping?"
 
     # renpy/common/00gui.rpy:457
     old "Are you sure you want to skip to the next choice?"
-    new ""
+    new "Sicuro di voler avanzare alla prossima scelta?"
 
     # renpy/common/00gui.rpy:458
     old "Are you sure you want to skip unseen dialogue to the next choice?"
-    new ""
+    new "Sei sicuro di voler superare testi non letti fino alla prossima scelta?"
 
     # renpy/common/00gui.rpy:459
     old "This save was created on a different device. Maliciously constructed save files can harm your computer. Do you trust this save's creator and everyone who could have changed the file?"
-    new ""
+    new "Questo salvataggio è stato creato su un altro dispositivo. Files creati in malafede possono danneggiare il tuo computer. Conosci il creatore del file e chiunque altro possa averlo modificato?"
 
     # renpy/common/00gui.rpy:460
     old "Do you trust the device the save was created on? You should only choose yes if you are the device's sole user."
-    new ""
+    new "Conosci il dispositivo su cui è stato creato il salvataggio? Scegli di si solo se sei l'unico utente del dispositivo."
 
     # renpy/common/00keymap.rpy:328
     old "Failed to save screenshot as %s."
-    new ""
+    new "Impossibile salvare Screenshot come %s."
 
     # renpy/common/00keymap.rpy:349
     old "Saved screenshot as %s."
-    new ""
+    new "Screenshot salvato come %s."
 
     # renpy/common/00library.rpy:248
     old "Skip Mode"
-    new ""
+    new "Skip Mode"
 
     # renpy/common/00library.rpy:335
     old "This program contains free software under a number of licenses, including the MIT License and GNU Lesser General Public License. A complete list of software, including links to full source code, can be found {a=https://www.renpy.org/l/license}here{/a}."
-    new ""
+    new "Questo programma contiene software gratuito sotto varie licenze, inclusa la MIT License e la GNU Lesser General Public License. Una lista completa dei software, inclusi link al codice sorgente, si può trovare {a=https://www.renpy.org/l/license}qui{/a}."
 
     # renpy/common/00preferences.rpy:288
     old "display"
