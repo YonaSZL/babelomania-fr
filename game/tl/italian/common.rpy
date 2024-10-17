@@ -428,7 +428,7 @@ translate italian strings:
 
     # renpy/common/00director.rpy:1752
     old "Click to toggle attribute, right click to toggle negative attribute."
-    new "Clicca per cambiare Attribute, click col destro per cambiare in Attribute negativo."
+    new "Fare click per cambiare Attribute, fare click col destro per cambiare in Attribute negativo."
 
     # renpy/common/00director.rpy:1764
     old "Transforms:"
@@ -436,35 +436,35 @@ translate italian strings:
 
     # renpy/common/00director.rpy:1775
     old "Click to set transform, right click to add to transform list."
-    new ""
+    new "Fare click per scegliere il Transform, fare click col destro per aggiungere alla lista dei Transform."
 
     # renpy/common/00director.rpy:1776
     old "Customize director.transforms to add more transforms."
-    new ""
+    new "Modificare director.transforms per aggiungere altri Transform."
 
     # renpy/common/00director.rpy:1788
     old "Behind:"
-    new ""
+    new "Behind:"
 
     # renpy/common/00director.rpy:1799
     old "Click to set, right click to add to behind list."
-    new ""
+    new "Fare click per scegliere, fare click col destro per aggiungere alla lista dei Behind."
 
     # renpy/common/00director.rpy:1811
     old "Transition:"
-    new ""
+    new "Transition:"
 
     # renpy/common/00director.rpy:1821
     old "Click to set."
-    new ""
+    new "Fare click per scegliere."
 
     # renpy/common/00director.rpy:1822
     old "Customize director.transitions to add more transitions."
-    new ""
+    new "Modificare director.transitions per aggiungere altri Transition."
 
     # renpy/common/00director.rpy:1834
     old "Channel:"
-    new ""
+    new "Channel:"
 
     # renpy/common/00director.rpy:1845
     old "Customize director.audio_channels to add more channels."
