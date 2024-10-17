@@ -164,275 +164,275 @@ translate italian strings:
 
     # renpy/common/00action_file.rpy:37
     old "{#weekday_short}Mon"
-    new ""
+    new "{#weekday_short}Lun"
 
     # renpy/common/00action_file.rpy:37
     old "{#weekday_short}Tue"
-    new ""
+    new "{#weekday_short}Mar"
 
     # renpy/common/00action_file.rpy:37
     old "{#weekday_short}Wed"
-    new ""
+    new "{#weekday_short}Mer"
 
     # renpy/common/00action_file.rpy:37
     old "{#weekday_short}Thu"
-    new ""
+    new "{#weekday_short}Gio"
 
     # renpy/common/00action_file.rpy:37
     old "{#weekday_short}Fri"
-    new ""
+    new "{#weekday_short}Ven"
 
     # renpy/common/00action_file.rpy:37
     old "{#weekday_short}Sat"
-    new ""
+    new "{#weekday_short}Sab"
 
     # renpy/common/00action_file.rpy:37
     old "{#weekday_short}Sun"
-    new ""
+    new "{#weekday_short}Dom"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}January"
-    new ""
+    new "{#month}Gennaio"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}February"
-    new ""
+    new "{#month}Febbraio"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}March"
-    new ""
+    new "{#month}Marzo"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}April"
-    new ""
+    new "{#month}Aprile"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}May"
-    new ""
+    new "{#month}Maggio"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}June"
-    new ""
+    new "{#month}Giugno"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}July"
-    new ""
+    new "{#month}Luglio"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}August"
-    new ""
+    new "{#month}Agosto"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}September"
-    new ""
+    new "{#month}Settembre"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}October"
-    new ""
+    new "{#month}Ottobre"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}November"
-    new ""
+    new "{#month}Novembre"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}December"
-    new ""
+    new "{#month}Dicembre"
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}Jan"
-    new ""
+    new "{#month_short}Gen"
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}Feb"
-    new ""
+    new "{#month_short}Feb"
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}Mar"
-    new ""
+    new "{#month_short}Mar"
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}Apr"
-    new ""
+    new "{#month_short}Apr"
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}May"
-    new ""
+    new "{#month_short}Mag"
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}Jun"
-    new ""
+    new "{#month_short}Giu"
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}Jul"
-    new ""
+    new "{#month_short}Lug"
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}Aug"
-    new ""
+    new "{#month_short}Ago"
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}Sep"
-    new ""
+    new "{#month_short}Set"
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}Oct"
-    new ""
+    new "{#month_short}Ott"
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}Nov"
-    new ""
+    new "{#month_short}Nov"
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}Dec"
-    new ""
+    new "{#month_short}Dic"
 
     # renpy/common/00action_file.rpy:258
     old "%b %d, %H:%M"
-    new ""
+    new "%b %d, %H:%M"
 
     # renpy/common/00action_file.rpy:395
     old "Save slot %s: [text]"
-    new ""
+    new "Salva slot %s: [text]"
 
     # renpy/common/00action_file.rpy:480
     old "Load slot %s: [text]"
-    new ""
+    new "Carica slot %s: [text]"
 
     # renpy/common/00action_file.rpy:533
     old "Delete slot [text]"
-    new ""
+    new "Cancella slot %s: [text]"
 
     # renpy/common/00action_file.rpy:612
     old "File page auto"
-    new ""
+    new "File pagina auto"
 
     # renpy/common/00action_file.rpy:614
     old "File page quick"
-    new ""
+    new "File pagina quick"
 
     # renpy/common/00action_file.rpy:616
     old "File page [text]"
-    new ""
+    new "File pagina [text]"
 
     # renpy/common/00action_file.rpy:674
     old "Page {}"
-    new ""
+    new "Pagina {}"
 
     # renpy/common/00action_file.rpy:674
     old "Automatic saves"
-    new ""
+    new "Salvataggi Automatici"
 
     # renpy/common/00action_file.rpy:674
     old "Quick saves"
-    new ""
+    new "Quick Save"
 
     # renpy/common/00action_file.rpy:815
     old "Next file page."
-    new ""
+    new "Prossima pagina."
 
     # renpy/common/00action_file.rpy:887
     old "Previous file page."
-    new ""
+    new "Pagina precedente."
 
     # renpy/common/00action_file.rpy:948
     old "Quick save complete."
-    new ""
+    new "Quick Save Completato."
 
     # renpy/common/00action_file.rpy:963
     old "Quick save."
-    new ""
+    new "Quick Save."
 
     # renpy/common/00action_file.rpy:982
     old "Quick load."
-    new ""
+    new "Quick Load."
 
     # renpy/common/00action_other.rpy:383
     old "Language [text]"
-    new ""
+    new "Lingua [text]"
 
     # renpy/common/00action_other.rpy:748
     old "Open [text] directory."
-    new ""
+    new "Apri Directory [text]"
 
     # renpy/common/00director.rpy:712
     old "The interactive director is not enabled here."
-    new ""
+    new "Il direttore interattivo non funziona qui."
 
     # renpy/common/00director.rpy:1511
     old "⬆"
-    new ""
+    new "⬆"
 
     # renpy/common/00director.rpy:1517
     old "⬇"
-    new ""
+    new "⬇"
 
     # renpy/common/00director.rpy:1581
     old "Done"
-    new ""
+    new "Fatto"
 
     # renpy/common/00director.rpy:1591
     old "(statement)"
-    new ""
+    new "(statement)"
 
     # renpy/common/00director.rpy:1592
     old "(tag)"
-    new ""
+    new "(tag)"
 
     # renpy/common/00director.rpy:1593
     old "(attributes)"
-    new ""
+    new "(attributes)"
 
     # renpy/common/00director.rpy:1594
     old "(transform)"
-    new ""
+    new "(transform)"
 
     # renpy/common/00director.rpy:1619
     old "(transition)"
-    new ""
+    new "(transition)"
 
     # renpy/common/00director.rpy:1631
     old "(channel)"
-    new ""
+    new "(channel)"
 
     # renpy/common/00director.rpy:1632
     old "(filename)"
-    new ""
+    new "(filename)"
 
     # renpy/common/00director.rpy:1661
     old "Change"
-    new ""
+    new "Cambia"
 
     # renpy/common/00director.rpy:1663
     old "Add"
-    new ""
+    new "Aggiungi"
 
     # renpy/common/00director.rpy:1666
     old "Cancel"
-    new ""
+    new "Cancella"
 
     # renpy/common/00director.rpy:1669
     old "Remove"
-    new ""
+    new "Rimuovi"
 
     # renpy/common/00director.rpy:1704
     old "Statement:"
-    new ""
+    new "Statement:"
 
     # renpy/common/00director.rpy:1725
     old "Tag:"
-    new ""
+    new "Tag:"
 
     # renpy/common/00director.rpy:1741
     old "Attributes:"
-    new ""
+    new "Attributes:"
 
     # renpy/common/00director.rpy:1752
     old "Click to toggle attribute, right click to toggle negative attribute."
-    new ""
+    new "Clicca per cambiare Attribute, click col destro per cambiare in Attribute negativo."
 
     # renpy/common/00director.rpy:1764
     old "Transforms:"
-    new ""
+    new "Transforms:"
 
     # renpy/common/00director.rpy:1775
     old "Click to set transform, right click to add to transform list."
