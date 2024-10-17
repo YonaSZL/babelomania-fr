@@ -776,43 +776,43 @@ translate italian strings:
 
     # renpy/common/00preferences.rpy:699
     old "Clipboard voicing enabled. Press 'shift+C' to disable."
-    new ""
+    new "Voce Clipboard attivato. Fare 'shift+C' per disattivare."
 
     # renpy/common/00preferences.rpy:701
     old "Self-voicing would say \"[renpy.display.tts.last]\". Press 'alt+shift+V' to disable."
-    new ""
+    new "Auto-Voce direbbe \"[renpy.display.tts.last]\". Fare 'alt+shift+V' per disattivare."
 
     # renpy/common/00preferences.rpy:703
     old "Self-voicing enabled. Press 'v' to disable."
-    new ""
+    new "Auto-Voce attivato. fare 'v' per disattivare."
 
     # renpy/common/00speechbubble.rpy:416
     old "Speech Bubble Editor"
-    new ""
+    new "Editor Speech Bubble"
 
     # renpy/common/00speechbubble.rpy:421
     old "(hide)"
-    new ""
+    new "(hide)"
 
     # renpy/common/00speechbubble.rpy:432
     old "(clear retained bubbles)"
-    new ""
+    new "(clear retained bubbles)"
 
     # renpy/common/00sync.rpy:70
     old "Sync downloaded."
-    new ""
+    new "Sync downloaded."
 
     # renpy/common/00sync.rpy:193
     old "Could not connect to the Ren'Py Sync server."
-    new ""
+    new "Impossibile connettersi al server Sync di Ren'Py."
 
     # renpy/common/00sync.rpy:195
     old "The Ren'Py Sync server timed out."
-    new ""
+    new "The Ren'Py Sync server timed out."
 
     # renpy/common/00sync.rpy:197
     old "An unknown error occurred while connecting to the Ren'Py Sync server."
-    new ""
+    new "Si è presentato Un errore sconosciuto nel tentativo di connettersi al server Sync di Ren'Py."
 
     # renpy/common/00sync.rpy:213
     old "The Ren'Py Sync server does not have a copy of this sync. The sync ID may be invalid, or it may have timed out."
