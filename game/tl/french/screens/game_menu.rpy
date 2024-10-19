@@ -4,33 +4,33 @@ translate french strings:
 
     # game/screens/game_menu.rpy:20
     old "Data"
-    new ""
+    new "Données"
 
     # game/screens/game_menu.rpy:29
     old "Options"
-    new ""
+    new "Options"
 
     # game/screens/game_menu.rpy:38
     old "History"
-    new ""
+    new "Hist."
 
     # game/screens/game_menu.rpy:49
     old "About"
-    new ""
+    new "À propos"
 
     # game/screens/game_menu.rpy:61
     old "Extras"
-    new ""
+    new "Extras"
 
     # game/screens/game_menu.rpy:79
     old "Gallery"
-    new ""
+    new "Galerie"
 
     # game/screens/game_menu.rpy:88
     old "Music"
-    new ""
+    new "Musique"
 
     # game/screens/game_menu.rpy:100
     old "Main"
-    new ""
+    new "Principal"
 

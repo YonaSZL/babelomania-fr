@@ -4,13 +4,13 @@ translate french strings:
 
     # game/screens/overlay_stats.rpy:77
     old "OPEN CODEX"
-    new ""
+    new "OUVRIR CODEX"
 
     # game/screens/overlay_stats.rpy:90
     old "DRAINING"
-    new ""
+    new "DRAINAGE"
 
     # game/screens/overlay_stats.rpy:92
     old "STAND BY"
-    new ""
+    new "À L'ARRÊT"
 
