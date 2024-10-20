@@ -4,7 +4,7 @@ translate french strings:
 
     # game/scripts/codex/events/scr_taisho.rpy:2
     old "Taisho Era of Japan"
-    new "Ère Taishō du Japon"
+    new "Ère Taisho du Japon"
 
     # game/scripts/codex/events/scr_taisho.rpy:4
     old "The Taishō Era of Japanese history is the period that goes from the 30th of July 1912 to the 25th of December 1926, coinciding with the reign of Yoshihito, 123rd Emperor of Japan."
