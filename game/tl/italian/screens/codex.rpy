@@ -4,17 +4,17 @@ translate italian strings:
 
     # game/screens/codex.rpy:69
     old "People"
-    new ""
+    new "Persone"
 
     # game/screens/codex.rpy:77
     old "Events"
-    new ""
+    new "Eventi"
 
     # game/screens/codex.rpy:85
     old "Locations"
-    new ""
+    new "Luoghi"
 
     # game/screens/codex.rpy:93
     old "Items"
-    new ""
+    new "Oggetti"
 

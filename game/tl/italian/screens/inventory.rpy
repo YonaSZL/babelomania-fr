@@ -4,7 +4,7 @@ translate italian strings:
 
     # game/screens/inventory.rpy:13
     old "Flashlight"
-    new ""
+    new "Torcia"
 
     # game/screens/inventory.rpy:14
     old "Door Code Note"

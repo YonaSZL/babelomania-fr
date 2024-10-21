@@ -4,5 +4,5 @@ translate italian strings:
 
     # game/screens/history_screen.rpy:63
     old "The dialogue history is empty."
-    new ""
+    new "La cronologia è vuota."
 
