@@ -816,99 +816,99 @@ translate italian strings:
 
     # renpy/common/00sync.rpy:213
     old "The Ren'Py Sync server does not have a copy of this sync. The sync ID may be invalid, or it may have timed out."
-    new ""
+    new "Il server Sync di Ren'Py non possiede una copia di questo sync. L'ID potrebbe essere invalido, o potrebbe avere esaurito il tempo."
 
     # renpy/common/00sync.rpy:316
     old "Please enter the sync ID you generated.\nNever enter a sync ID you didn't create yourself."
-    new ""
+    new "Immettere il Sync ID da te generato.\nMai inserire un sync ID non creato da te."
 
     # renpy/common/00sync.rpy:335
     old "The sync ID is not in the correct format."
-    new ""
+    new "Il sync ID non è nel formato corretto."
 
     # renpy/common/00sync.rpy:355
     old "The sync could not be decrypted."
-    new ""
+    new "Non è stato possibile decriptare il sync."
 
     # renpy/common/00sync.rpy:378
     old "The sync belongs to a different game."
-    new ""
+    new "Il sync appartiene ad un gioco diverso."
 
     # renpy/common/00sync.rpy:383
     old "The sync contains a file with an invalid name."
-    new ""
+    new "Il sync contiene un file con un nome non valido."
 
     # renpy/common/00sync.rpy:443
     old "This will upload your saves to the {a=https://sync.renpy.org}Ren'Py Sync Server{/a}.\nDo you want to continue?"
-    new ""
+    new "Questo invierà i tuoi salvataggi al {a=https://sync.renpy.org}Ren'Py Sync Server{/a}.\nVuoi procedere?"
 
     # renpy/common/00sync.rpy:451
     old "Yes"
-    new ""
+    new "Si"
 
     # renpy/common/00sync.rpy:452
     old "No"
-    new ""
+    new "No"
 
     # renpy/common/00sync.rpy:475
     old "Enter Sync ID"
-    new ""
+    new "Immettere Sync ID"
 
     # renpy/common/00sync.rpy:486
     old "This will contact the {a=https://sync.renpy.org}Ren'Py Sync Server{/a}."
-    new ""
+    new "Questo contatterà il {a=https://sync.renpy.org}Ren'Py Sync Server{/a}."
 
     # renpy/common/00sync.rpy:516
     old "Sync Success"
-    new ""
+    new "Sync Riuscito"
 
     # renpy/common/00sync.rpy:519
     old "The Sync ID is:"
-    new ""
+    new "Il Sync ID è:"
 
     # renpy/common/00sync.rpy:525
     old "You can use this ID to download your save on another device.\nThis sync will expire in an hour.\nRen'Py Sync is supported by {a=https://www.renpy.org/sponsors.html}Ren'Py's Sponsors{/a}."
-    new ""
+    new "Puoi utilizzare questo ID per scaricare il tuo salvataggio su un altro dispositivo.\nIl Sync scadrà in un ora.\nRen'Py Sync è supportato dagli {a=https://www.renpy.org/sponsors.html}Sponsors di Ren'Py{/a}."
 
     # renpy/common/00sync.rpy:529
     old "Continue"
-    new ""
+    new "Continua"
 
     # renpy/common/00sync.rpy:554
     old "Sync Error"
-    new ""
+    new "Errore Sync"
 
     # renpy/common/00translation.rpy:63
     old "Translation identifier: [identifier]"
-    new ""
+    new "Translation identifier: [identifier]"
 
     # renpy/common/00translation.rpy:84
     old " translates [tl.filename]:[tl.linenumber]"
-    new ""
+    new " translates [tl.filename]:[tl.linenumber]"
 
     # renpy/common/00translation.rpy:101
     old "\n{color=#fff}Copied to clipboard.{/color}"
-    new ""
+    new "\n{color=#fff}Copied to clipboard.{/color}"
 
     # renpy/common/00iap.rpy:231
     old "Contacting App Store\nPlease Wait..."
-    new ""
+    new "Contattando l'App Store.\nAttendere..."
 
     # renpy/common/00updater.rpy:505
     old "No update methods found."
-    new ""
+    new "Nessun metodo di Update trovato."
 
     # renpy/common/00updater.rpy:552
     old "Could not download file list: "
-    new ""
+    new "Download della lista di file non riuscito: "
 
     # renpy/common/00updater.rpy:555
     old "File list digest does not match."
-    new ""
+    new "Sommario lista di file non corrisponde."
 
     # renpy/common/00updater.rpy:765
     old "An error is being simulated."
-    new ""
+    new "Un errore sta venendo simulato."
 
     # renpy/common/00updater.rpy:953
     old "Either this project does not support updating, or the update status file was deleted."
