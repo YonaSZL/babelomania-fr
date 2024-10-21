@@ -4,97 +4,97 @@
 translate italian start_036fc9c0:
 
     # d "{b}WARNING{/b}\n"
-    d ""
+    d "{b}ATTENZIONE{/b}\n"
 
 # game/script.rpy:210
 translate italian start_1aad2f4b:
 
     # d "Due to some of the Themes and Events depicted in this Fictional Story, it is intended for consumption from a Mature Audience, where Mature stands for: having reached a stage of mental or emotional development characteristic of an adult.\n"
-    d ""
+    d "A causa dei Temi ed Eventi contenuti in questa Opera di Finzione, la fruizione è destinata ad un Pubblico Maturo, dove si intende per Maturo: aver raggiunto un livello di crescita mentale od emozionale tipica di un adulto.\n"
 
 # game/script.rpy:210
 translate italian start_0124420b:
 
     # d "This game contains elements that may be disturbing or triggering to some players, including but not limited to:{nw}"
-    d ""
+    d "Questo gioco contiene elementi che potrebbero disturbare od essere motivo di triggering per alcuni, inclusi ma non limitati a:{nw}"
 
 # game/script.rpy:210
 translate italian start_dde17c2e:
 
     # d "Blood{nw}"
-    d ""
+    d "Sangue"
 
 # game/script.rpy:210
 translate italian start_4adb3d0a:
 
     # d "Gore{nw}"
-    d ""
+    d "Spargimento di Sangue{nw}"
 
 # game/script.rpy:210
 translate italian start_a91cd60a:
 
     # d "Violence{nw}"
-    d ""
+    d "Violenza{nw}"
 
 # game/script.rpy:210
 translate italian start_7862712f:
 
     # d "Intense fear{nw}"
-    d ""
+    d "Paura intensa{nw}"
 
 # game/script.rpy:210
 translate italian start_0c70d851:
 
     # d "Jump scares{nw}"
-    d ""
+    d "Spaventi{nw}"
 
 # game/script.rpy:210
 translate italian start_83626a42:
 
     # d "Explicit language{nw}"
-    d ""
+    d "Linguaggio esplicito{nw}"
 
 # game/script.rpy:210
 translate italian start_20c4148f:
 
     # d "Death{nw}"
-    d ""
+    d "Morte{nw}"
 
 # game/script.rpy:210
 translate italian start_32368ec2:
 
     # d "Trauma{nw}"
-    d ""
+    d "Trauma{nw}"
 
 # game/script.rpy:210
 translate italian start_7e9869ad:
 
     # d "PTSD{nw}"
-    d ""
+    d "DSPT{nw}"
 
 # game/script.rpy:210
 translate italian start_5eeb50b1:
 
     # d "Panic Attacks{nw}"
-    d ""
+    d "Attacchi di Panico{nw}"
 
 # game/script.rpy:210
 translate italian start_3b0387b0:
 
     # d "Prejudice{nw}"
-    d ""
+    d "Pregiudizio"
 
 # game/script.rpy:210
 translate italian start_b237508b:
 
     # d "Xenophobia{nw}"
-    d ""
+    d "Xenofobia{nw}"
 
 # game/script.rpy:210
 translate italian start_a0581277:
 
     # d "Player discretion is advised."
-    d ""
+    d "Si consiglia la fruizione ad un pubblico adulto."
 
 # game/script.rpy:241
 translate italian start_76b2fe88:
@@ -106,61 +106,61 @@ translate italian strings:
 
     # game/script.rpy:20
     old "Shigeo Arata"
-    new ""
+    new "Shigeo Arata"
 
     # game/script.rpy:21
     old "?????"
-    new ""
+    new "?????"
 
     # game/script.rpy:31
     old "Tabitha"
-    new ""
+    new "Tabitha"
 
     # game/script.rpy:40
     old "Amina Abbas"
-    new ""
+    new "Amina Abbas"
 
     # game/script.rpy:49
     old "Francesco Colombo"
-    new ""
+    new "Francesco Colombo"
 
     # game/script.rpy:58
     old "Gaspard Faucigny"
-    new ""
+    new "Gaspard Faucigny"
 
     # game/script.rpy:68
     old "Professor Habiki"
-    new ""
+    new "Professor Habiki"
 
     # game/script.rpy:77
     old "Academic Invitee"
-    new ""
+    new "Astante Accademico"
 
     # game/script.rpy:78
     old "Fashionable Invitee"
-    new ""
+    new "Astante alla Moda"
 
     # game/script.rpy:243
     old "Do you understand?"
-    new ""
+    new "Hai compreso?"
 
     # game/script.rpy:243
     old "Yes."
-    new ""
+    new "Si."
 
     # game/script.rpy:243
     old "No."
-    new ""
+    new "No."
 
     # game/script.rpy:252
     old "What level of gore would you prefer? (This setting can be changed at any time from the OPTIONS menu.)"
-    new ""
+    new "Che livello di violenza preferisci? (Questo setting può essere cambiato nelle OPZIONI in qualunque momento.)"
 
     # game/script.rpy:252
     old "Full gore."
-    new ""
+    new "Violenza piena."
 
     # game/script.rpy:252
     old "Censored gore."
-    new ""
+    new "Violenza censurata."
 
