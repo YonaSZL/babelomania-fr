@@ -4,13 +4,13 @@ translate italian strings:
 
     # game/screens/overlay_stats.rpy:77
     old "OPEN CODEX"
-    new ""
+    new "APRI CODEX"
 
     # game/screens/overlay_stats.rpy:90
     old "DRAINING"
-    new ""
+    new "CONSUMA"
 
     # game/screens/overlay_stats.rpy:92
     old "STAND BY"
-    new ""
+    new "STAND BY"
 

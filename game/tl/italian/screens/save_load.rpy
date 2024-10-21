@@ -4,17 +4,17 @@ translate italian strings:
 
     # game/screens/save_load.rpy:22
     old "Save"
-    new ""
+    new "Salva"
 
     # game/screens/save_load.rpy:31
     old "Load"
-    new ""
+    new "Carica"
 
     # game/screens/save_load.rpy:78
     old "{#file_time}%a, %b %d %Y, %H:%M"
-    new ""
+    new "{#file_time}%a, %b %d %Y, %H:%M"
 
     # game/screens/save_load.rpy:78
     old "empty slot"
-    new ""
+    new "slot vuoto"
 

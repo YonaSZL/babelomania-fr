@@ -158,7 +158,7 @@ translate italian strings:
 
     # game/script.rpy:252
     old "Full gore."
-    new "Violenza piena."
+    new "Violenza integrale."
 
     # game/script.rpy:252
     old "Censored gore."

@@ -4,9 +4,9 @@ translate italian strings:
 
     # game/screens/popup_screens.rpy:28
     old "Confirm"
-    new ""
+    new "Confermare"
 
     # game/screens/popup_screens.rpy:85
     old "Skipping"
-    new ""
+    new "Skipping"
 

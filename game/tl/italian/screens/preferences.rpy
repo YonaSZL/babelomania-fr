@@ -4,89 +4,89 @@ translate italian strings:
 
     # game/screens/preferences.rpy:15
     old "Preferences"
-    new ""
+    new "Preferenze"
 
     # game/screens/preferences.rpy:34
     old "Display"
-    new ""
+    new "Display"
 
     # game/screens/preferences.rpy:35
     old "Window"
-    new ""
+    new "Finestra"
 
     # game/screens/preferences.rpy:42
     old "Fullscreen"
-    new ""
+    new "Schermo Intero"
 
     # game/screens/preferences.rpy:50
     old "Unseen Text"
-    new ""
+    new "Testo Non Letto"
 
     # game/screens/preferences.rpy:54
     old "After Choices"
-    new ""
+    new "Dopo Scelte"
 
     # game/screens/preferences.rpy:58
     old "Transitions"
-    new ""
+    new "Transizioni"
 
     # game/screens/preferences.rpy:65
     old "Font"
-    new ""
+    new "Font"
 
     # game/screens/preferences.rpy:66
     old "Serif"
-    new ""
+    new "Serif"
 
     # game/screens/preferences.rpy:70
     old "Sans Serif"
-    new ""
+    new "Sans Serif"
 
     # game/screens/preferences.rpy:91
     old "Text Speed"
-    new ""
+    new "Velocità Testo"
 
     # game/screens/preferences.rpy:94
     old "Auto-Forward Time"
-    new ""
+    new "Intervallo Avanti Automatico"
 
     # game/screens/preferences.rpy:100
     old "Music Volume"
-    new ""
+    new "Volume Musica"
 
     # game/screens/preferences.rpy:105
     old "Sound Volume"
-    new ""
+    new "Volume Suono"
 
     # game/screens/preferences.rpy:109
     old "Test"
-    new ""
+    new "Test"
 
     # game/screens/preferences.rpy:121
     old "Mute All"
-    new ""
+    new "Muto Tutti"
 
     # game/screens/preferences.rpy:135
     old "Gore"
-    new ""
+    new "Violenza"
 
     # game/screens/preferences.rpy:136
     old "Full"
-    new ""
+    new "Integrale"
 
     # game/screens/preferences.rpy:137
     old "Censored"
-    new ""
+    new "Censurata"
 
     # game/screens/preferences.rpy:142
     old "Language"
-    new ""
+    new "Lingua"
 
     # game/screens/preferences.rpy:143
     old "English{#}"
-    new ""
+    new "Inglese{#}"
 
     # game/screens/preferences.rpy:144
     old "French"
-    new ""
+    new "Francese"
 
