@@ -1096,103 +1096,103 @@ translate italian strings:
 
     # renpy/common/00gltest.rpy:208
     old "Changes will take effect the next time this program is run."
-    new ""
+    new "Cambiamenti si paleseranno alla prossima attivazione del programma."
 
     # renpy/common/00gltest.rpy:244
     old "Performance Warning"
-    new ""
+    new "Performance Warning"
 
     # renpy/common/00gltest.rpy:249
     old "This computer is using software rendering."
-    new ""
+    new "Questo computer sta utilizzando software rendering."
 
     # renpy/common/00gltest.rpy:251
     old "This game requires use of GL2 that can't be initialised."
-    new ""
+    new "Questo gioco richiede un utilizzo di GL2 che non può essere avviato."
 
     # renpy/common/00gltest.rpy:253
     old "This computer has a problem displaying graphics: [problem]."
-    new ""
+    new "Questo computer ha un problema con la visualizzazione di grafiche: [problem]."
 
     # renpy/common/00gltest.rpy:257
     old "Its graphics drivers may be out of date or not operating correctly. This can lead to slow or incorrect graphics display."
-    new ""
+    new "I graphics drivers potrebbero essere obsoleti o non operare correcttament. Questo può portare a visualizzazioni lente od incorrette."
 
     # renpy/common/00gltest.rpy:261
     old "The {a=edit:1:log.txt}log.txt{/a} file may contain information to help you determine what is wrong with your computer."
-    new ""
+    new "Il file {a=edit:1:log.txt}log.txt{/a} potrebbe contenere informazioni utili a determinare il problema con il tuo computer."
 
     # renpy/common/00gltest.rpy:266
     old "More details on how to fix this can be found in the {a=[url]}documentation{/a}."
-    new ""
+    new "La {a=[url]}documentation{/a} contiene ulteriori dettagli su come risolvere il problema."
 
     # renpy/common/00gltest.rpy:271
     old "Continue, Show this warning again"
-    new ""
+    new "Continua, Mostra di nuovo"
 
     # renpy/common/00gltest.rpy:275
     old "Continue, Don't show warning again"
-    new ""
+    new "Continua, Non mostrare più"
 
     # renpy/common/00gltest.rpy:283
     old "Change render options"
-    new ""
+    new "Cambia Opzioni Render"
 
     # renpy/common/00gamepad.rpy:33
     old "Select Gamepad to Calibrate"
-    new ""
+    new "Scegli il Gamepad da Calibrare"
 
     # renpy/common/00gamepad.rpy:36
     old "No Gamepads Available"
-    new ""
+    new "Nessun Gamepad Disponibile"
 
     # renpy/common/00gamepad.rpy:56
     old "Calibrating [name] ([i]/[total])"
-    new ""
+    new "Calibrando [name] ([i]/[total])"
 
     # renpy/common/00gamepad.rpy:60
     old "Press or move the '[control!s]' [kind]."
-    new ""
+    new "Premere o muovere '[control!s]' [kind]."
 
     # renpy/common/00gamepad.rpy:70
     old "Skip (A)"
-    new ""
+    new "Skip (A)"
 
     # renpy/common/00gamepad.rpy:73
     old "Back (B)"
-    new ""
+    new "Back (B)"
 
     # renpy/common/_errorhandling.rpym:677
     old "Open"
-    new ""
+    new "Open"
 
     # renpy/common/_errorhandling.rpym:679
     old "Opens the traceback.txt file in a text editor."
-    new ""
+    new "Apre il file traceback.txt in un editor di testo."
 
     # renpy/common/_errorhandling.rpym:681
     old "Copy BBCode"
-    new ""
+    new "Copia BBCode"
 
     # renpy/common/_errorhandling.rpym:683
     old "Copies the traceback.txt file to the clipboard as BBcode for forums like https://lemmasoft.renai.us/."
-    new ""
+    new "Copia il file traceback.txt nella clipboard come BBcode per forums come https://lemmasoft.renai.us/."
 
     # renpy/common/_errorhandling.rpym:685
     old "Copy Markdown"
-    new ""
+    new "Copia Markdown"
 
     # renpy/common/_errorhandling.rpym:687
     old "Copies the traceback.txt file to the clipboard as Markdown for Discord."
-    new ""
+    new "Copia il file traceback.txt nella clipboard come Markdown per Discord."
 
     # renpy/common/_errorhandling.rpym:719
     old "An exception has occurred."
-    new ""
+    new "An exception has occurred."
 
     # renpy/common/_errorhandling.rpym:742
     old "Rollback"
-    new ""
+    new "Rollback"
 
     # renpy/common/_errorhandling.rpym:744
     old "Attempts a roll back to a prior time, allowing you to save or choose a different choice."
