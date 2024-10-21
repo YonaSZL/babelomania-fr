@@ -1196,41 +1196,41 @@ translate italian strings:
 
     # renpy/common/_errorhandling.rpym:744
     old "Attempts a roll back to a prior time, allowing you to save or choose a different choice."
-    new ""
+    new "Tenta un roll back ad un istante precedente, consentendoti di salvare o scegliere diversamente."
 
     # renpy/common/_errorhandling.rpym:747
     old "Ignore"
-    new ""
+    new "Ignora"
 
     # renpy/common/_errorhandling.rpym:751
     old "Ignores the exception, allowing you to continue."
-    new ""
+    new "Ignora l'eccezione, consentendoti di continuare."
 
     # renpy/common/_errorhandling.rpym:753
     old "Ignores the exception, allowing you to continue. This often leads to additional errors."
-    new ""
+    new "Ignora l'eccezione, consentendoti di continuare. Spesso conduce ad ulteriori errori."
 
     # renpy/common/_errorhandling.rpym:757
     old "Reload"
-    new ""
+    new "Reload"
 
     # renpy/common/_errorhandling.rpym:759
     old "Reloads the game from disk, saving and restoring game state if possible."
-    new ""
+    new "Ricarica il gioco dal disco, salvando e ripristinando lo stago del gioco se possibile."
 
     # renpy/common/_errorhandling.rpym:762
     old "Console"
-    new ""
+    new "Console"
 
     # renpy/common/_errorhandling.rpym:764
     old "Opens a console to allow debugging the problem."
-    new ""
+    new "Apre una console per consentire il debug del problema."
 
     # renpy/common/_errorhandling.rpym:777
     old "Quits the game."
-    new ""
+    new "Esce dal gioco."
 
     # renpy/common/_errorhandling.rpym:799
     old "Parsing the script failed."
-    new ""
+    new "Parsing the script failed."
 
