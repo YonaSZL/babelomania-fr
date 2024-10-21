@@ -4,123 +4,123 @@ translate italian strings:
 
     # game/screens/other_screens.rpy:12
     old "EasyRenPyGui is made by {a=https://github.com/shawna-p}Feniks{/a} {a=https://feniksdev.com/}@feniksdev.com{/a}"
-    new ""
+    new "EasyRenPyGui è ad opera di {a=https://github.com/shawna-p}Feniks{/a} {a=https://feniksdev.com/}@feniksdev.com{/a}"
 
     # game/screens/other_screens.rpy:65
     old "Version [config.version!t]\n"
-    new ""
+    new "Versione [config.version!t]\n"
 
     # game/screens/other_screens.rpy:70
     old "{size=35}CREDITS\n"
-    new ""
+    new "{size=35}CREDITS\n"
 
     # game/screens/other_screens.rpy:74
     old "{size=35}PRODUCER, DIRECTOR"
-    new ""
+    new "{size=35}PRODUTTORE, REGIA"
 
     # game/screens/other_screens.rpy:77
     old "{size=35}PROGRAMMERS"
-    new ""
+    new "{size=35}PROGRAMMATORI"
 
     # game/screens/other_screens.rpy:80
     old "{size=35}BACKGROUND ARTISTS"
-    new ""
+    new "{size=35}ARTISTI SFONDI"
 
     # game/screens/other_screens.rpy:83
     old "{size=35}CHARACTER SPRITE ARTIST"
-    new ""
+    new "{size=35}ARTISTI SPRITES PERSONAGGI"
 
     # game/screens/other_screens.rpy:86
     old "{size=35}CG ILLUSTRATORS"
-    new ""
+    new "{size=35}ILLUSTRATORI"
 
     # game/screens/other_screens.rpy:89
     old "{size=35}ENVIRONMENT CONCEPT ARTIST"
-    new ""
+    new "{size=35}CONCEPT ARTIST AMBIENTAZIONI"
 
     # game/screens/other_screens.rpy:92
     old "{size=35}CHARACTER CONCEPT ARTIST"
-    new ""
+    new "{size=35}CONCEPT ARTIST PERSONAGGI"
 
     # game/screens/other_screens.rpy:95
     old "{size=35}GUI ARTIST, PROGRAMMER"
-    new ""
+    new "{size=35}DESIGN, PROGRAMMAZIONE INTERFACCIA"
 
     # game/screens/other_screens.rpy:98
     old "{size=35}LOGO ARTIST"
-    new ""
+    new "{size=35}ARTISTA LOGO"
 
     # game/screens/other_screens.rpy:101
     old "{size=35}COMPOSERS"
-    new ""
+    new "{size=35}COMPOSITORI"
 
     # game/screens/other_screens.rpy:104
     old "{size=35}AUDIO EDITOR"
-    new ""
+    new "{size=35}AUDIO EDITOR"
 
     # game/screens/other_screens.rpy:107
     old "{size=35}3D MODELLER"
-    new ""
+    new "{size=35}MODELLISTA 3D"
 
     # game/screens/other_screens.rpy:110
     old "{size=35}PLOT, SCRIPT WRITER"
-    new ""
+    new "{size=35}TRAMA, SCENEGGIATURA"
 
     # game/screens/other_screens.rpy:113
     old "{size=35}STORY CONSULTANTS"
-    new ""
+    new "{size=35}CONSULENTI STORIA"
 
     # game/screens/other_screens.rpy:116
     old "{size=35}FRENCH TRANSLATORS"
-    new ""
+    new "{size=35}LOCALIZZAZIONE FRANCESE"
 
     # game/screens/other_screens.rpy:119
     old "{size=35}IMAGE EDITING"
-    new ""
+    new "{size=35}EDITING IMMAGINI"
 
     # game/screens/other_screens.rpy:122
     old "{size=35}THE REAL MVPS"
-    new ""
+    new "{size=35}THE REAL MVPS"
 
     # game/screens/other_screens.rpy:125
     old "{size=35}ADDITIONAL SOUND EFFECTS"
-    new ""
+    new "{size=35}ALTRI SUONI"
 
     # game/screens/other_screens.rpy:129
     old "{size=35}ADDITIONAL MUSIC"
-    new ""
+    new "{size=35}ALTRA MUSICA"
 
     # game/screens/other_screens.rpy:132
     old "{size=35}ADDITIONAL CODE"
-    new ""
+    new "{size=35}ALTRO CODICE"
 
     # game/screens/other_screens.rpy:135
     old "{size=35}ADDITIONAL IMAGES"
-    new ""
+    new "{size=35}ALTRE IMMAGINI"
 
     # game/screens/other_screens.rpy:138
     old "Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]"
-    new ""
+    new "Realizzato con {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]"
 
     # game/screens/other_screens.rpy:163
     old "Help"
-    new ""
+    new "Aiuto"
 
     # game/screens/other_screens.rpy:188
     old "Keyboard"
-    new ""
+    new "Tastiera"
 
     # game/screens/other_screens.rpy:189
     old "Mouse"
-    new ""
+    new "Mouse"
 
     # game/screens/other_screens.rpy:192
     old "Gamepad"
-    new ""
+    new "Gamepad"
 
     # game/screens/other_screens.rpy:198
     old "Enter"
-    new ""
+    new "Invio"
 
     # game/screens/other_screens.rpy:199
     old "Advances dialogue and activates the interface."

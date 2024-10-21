@@ -4,9 +4,8 @@ translate italian strings:
 
     # game/screens/language.rpy:23
     old "English"
-    new ""
+    new "Inglese"
 
     # game/screens/language.rpy:33
     old "Francais"
-    new ""
-
+    new "Francese"
