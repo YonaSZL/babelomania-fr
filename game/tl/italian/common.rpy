@@ -912,187 +912,187 @@ translate italian strings:
 
     # renpy/common/00updater.rpy:953
     old "Either this project does not support updating, or the update status file was deleted."
-    new ""
+    new "Questo progetto non supporta l'aggiornamento, o il file status dell'aggiornamento è stato cancellato."
 
     # renpy/common/00updater.rpy:967
     old "This account does not have permission to perform an update."
-    new ""
+    new "Questo account non è autorizzato ad effettuare un aggiornamento."
 
     # renpy/common/00updater.rpy:970
     old "This account does not have permission to write the update log."
-    new ""
+    new "Questo account non ha i permessi per creare un update log."
 
     # renpy/common/00updater.rpy:1050
     old "Could not verify update signature."
-    new ""
+    new "Impossibile verificare la firma dell'update."
 
     # renpy/common/00updater.rpy:1373
     old "The update file was not downloaded."
-    new ""
+    new "Il file update non è stato scaricato."
 
     # renpy/common/00updater.rpy:1391
     old "The update file does not have the correct digest - it may have been corrupted."
-    new ""
+    new "Il file update non ha il sommario corretto - potrebbe essere corrotto."
 
     # renpy/common/00updater.rpy:1541
     old "While unpacking {}, unknown type {}."
-    new ""
+    new "Spachettando {}, tipo sconosciuto {}."
 
     # renpy/common/00updater.rpy:2022
     old "Updater"
-    new ""
+    new "Updater"
 
     # renpy/common/00updater.rpy:2029
     old "An error has occured:"
-    new ""
+    new "Si è verificato un errore:"
 
     # renpy/common/00updater.rpy:2031
     old "Checking for updates."
-    new ""
+    new "Checking for updates."
 
     # renpy/common/00updater.rpy:2033
     old "This program is up to date."
-    new ""
+    new "This program is up to date."
 
     # renpy/common/00updater.rpy:2035
     old "[u.version] is available. Do you want to install it?"
-    new ""
+    new "La versione [u.version] è disponibile. Vuoi installarla?"
 
     # renpy/common/00updater.rpy:2037
     old "Preparing to download the updates."
-    new ""
+    new "Preparing to download the updates."
 
     # renpy/common/00updater.rpy:2039
     old "Downloading the updates."
-    new ""
+    new "Downloading the updates."
 
     # renpy/common/00updater.rpy:2041
     old "Unpacking the updates."
-    new ""
+    new "Unpacking the updates."
 
     # renpy/common/00updater.rpy:2043
     old "Finishing up."
-    new ""
+    new "Finishing up."
 
     # renpy/common/00updater.rpy:2045
     old "The updates have been installed. The program will restart."
-    new ""
+    new "Gli aggiornamenti sono stati installati. Il programma verrà riavviato."
 
     # renpy/common/00updater.rpy:2047
     old "The updates have been installed."
-    new ""
+    new "Gli aggiornamenti sono stati installati."
 
     # renpy/common/00updater.rpy:2049
     old "The updates were cancelled."
-    new ""
+    new "Gli aggiornamenti sono stati cancellati."
 
     # renpy/common/00updater.rpy:2064
     old "Proceed"
-    new ""
+    new "Procedere"
 
     # renpy/common/00updater.rpy:2080
     old "Preparing to download the game data."
-    new ""
+    new "Preparing to download the game data."
 
     # renpy/common/00updater.rpy:2082
     old "Downloading the game data."
-    new ""
+    new "Downloading the game data."
 
     # renpy/common/00updater.rpy:2084
     old "The game data has been downloaded."
-    new ""
+    new "The game data has been downloaded."
 
     # renpy/common/00updater.rpy:2086
     old "An error occured when trying to download game data:"
-    new ""
+    new "Si è verificato un errore nello scaricare i dati di gioco:"
 
     # renpy/common/00updater.rpy:2091
     old "This game cannot be run until the game data has been downloaded."
-    new ""
+    new "Questo gioco non può funzionare prima di aver scaricato i dati di gioco."
 
     # renpy/common/00updater.rpy:2098
     old "Retry"
-    new ""
+    new "Riprova"
 
     # renpy/common/00gallery.rpy:627
     old "Image [index] of [count] locked."
-    new ""
+    new "Immagine [index] di [count] bloccata."
 
     # renpy/common/00gallery.rpy:647
     old "prev"
-    new ""
+    new "prev"
 
     # renpy/common/00gallery.rpy:648
     old "next"
-    new ""
+    new "next"
 
     # renpy/common/00gallery.rpy:649
     old "slideshow"
-    new ""
+    new "slideshow"
 
     # renpy/common/00gallery.rpy:650
     old "return"
-    new ""
+    new "return"
 
     # renpy/common/00gltest.rpy:90
     old "Renderer"
-    new ""
+    new "Renderer"
 
     # renpy/common/00gltest.rpy:94
     old "Automatically Choose"
-    new ""
+    new "Scegli Automatico"
 
     # renpy/common/00gltest.rpy:101
     old "Force GL Renderer"
-    new ""
+    new "Force GL Renderer"
 
     # renpy/common/00gltest.rpy:106
     old "Force ANGLE Renderer"
-    new ""
+    new "Force ANGLE Renderer"
 
     # renpy/common/00gltest.rpy:111
     old "Force GLES Renderer"
-    new ""
+    new "Force GLES Renderer"
 
     # renpy/common/00gltest.rpy:117
     old "Force GL2 Renderer"
-    new ""
+    new "Force GL2 Renderer"
 
     # renpy/common/00gltest.rpy:122
     old "Force ANGLE2 Renderer"
-    new ""
+    new "Force ANGLE2 Renderer"
 
     # renpy/common/00gltest.rpy:127
     old "Force GLES2 Renderer"
-    new ""
+    new "Force GLES2 Renderer"
 
     # renpy/common/00gltest.rpy:137
     old "Enable (No Blocklist)"
-    new ""
+    new "Enable (No Blocklist)"
 
     # renpy/common/00gltest.rpy:160
     old "Powersave"
-    new ""
+    new "Powersave"
 
     # renpy/common/00gltest.rpy:174
     old "Framerate"
-    new ""
+    new "Framerate"
 
     # renpy/common/00gltest.rpy:178
     old "Screen"
-    new ""
+    new "Screen"
 
     # renpy/common/00gltest.rpy:182
     old "60"
-    new ""
+    new "60"
 
     # renpy/common/00gltest.rpy:186
     old "30"
-    new ""
+    new "30"
 
     # renpy/common/00gltest.rpy:192
     old "Tearing"
-    new ""
+    new "Tearing"
 
     # renpy/common/00gltest.rpy:208
     old "Changes will take effect the next time this program is run."
