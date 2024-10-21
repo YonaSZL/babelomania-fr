@@ -4,49 +4,49 @@
 translate italian story_00_invitation_b3ce931d:
 
     # d "From: Delphine & Francesco{nw}"
-    d ""
+    d "Da: Delphine & Francesco{nw}"
 
 # game/scripts/story/story_00.rpy:68
 translate italian story_00_invitation_0cac2824:
 
     # d "Date: Fri, 30 Apr 20XX at 19:46{nw}"
-    d ""
+    d "Data: Ven, 30 Apr 20XX alle 19:46{nw}"
 
 # game/scripts/story/story_00.rpy:68
 translate italian story_00_invitation_5cdc6d34:
 
     # d "Subject: We're getting married!\n"
-    d ""
+    d "Soggetto: Ci Sposiamo!\n"
 
 # game/scripts/story/story_00.rpy:76
 translate italian story_00_invitation_e098e419:
 
     # d "Dearest {b}Shigeo{/b},\n"
-    d ""
+    d "Carissimo {b}Shigeo{/b},\n"
 
 # game/scripts/story/story_00.rpy:76
 translate italian story_00_invitation_1dd8cfbd:
 
     # d "We're getting married (again!), and you're cordially invited.\n"
-    d ""
+    d "Stiamo per convolare a nozze (di nuovo!), e sei cordialmente invitato!\n"
 
 # game/scripts/story/story_00.rpy:76
 translate italian story_00_invitation_1eed7024:
 
     # d "After tying the knot in the presence of our parents and siblings on Saturday, 11th April 20XX, we couldn't wait to celebrate with all our friends and family. We hope you can join us!\n"
-    d ""
+    d "Dopo esserci sposati davanti ai nostri genitori e fratelli Sabato, 11 di Aprile 20xx, non vedevamo l'ora di replicare coi nostri amici ed altri parenti. Speriamo tu possa partecipare!\n"
 
 # game/scripts/story/story_00.rpy:76
 translate italian story_00_invitation_6a79a6b1:
 
     # d "Check out our wedding website and app to RSVP and find more information.\n"
-    d ""
+    d "Usa il link che troverai di sotto per confermare e trovare altre informazioni.\n"
 
 # game/scripts/story/story_00.rpy:76
 translate italian story_00_invitation_676cfc13:
 
     # d "{b}Saturday, 14 May 20XX{/b}"
-    d ""
+    d "{b}Sabato, 14 Maggio 20XX{/b}"
 
 # game/scripts/story/story_00.rpy:87
 translate italian story_00_invitation_76b2fe88:
@@ -58,49 +58,49 @@ translate italian story_00_invitation_76b2fe88:
 translate italian story_00_invitation_b3ce931d_1:
 
     # d "From: Delphine & Francesco{nw}"
-    d ""
+    d "Da: Delphine & Francesco{nw}"
 
 # game/scripts/story/story_00.rpy:90
 translate italian story_00_invitation_964c2dd6:
 
     # d "Date: Wed, 19 Jan 20XX at 19:46{nw}"
-    d ""
+    d "Data: Mer, 19 Gen 20xx alle 19:46{nw}"
 
 # game/scripts/story/story_00.rpy:90
 translate italian story_00_invitation_73cd3f9f:
 
     # d "Subject: Important Information about the Venue.\n"
-    d ""
+    d "Soggetto: Importanti Informazioni sul Luogo\n"
 
 # game/scripts/story/story_00.rpy:90
 translate italian story_00_invitation_a7b4979d:
 
     # d "Dearest Shigeo,\n"
-    d ""
+    d "Carissimo Shigeo,\n"
 
 # game/scripts/story/story_00.rpy:90
 translate italian story_00_invitation_8a194413:
 
     # d "As the countdown to our wedding day continues, we are thrilled to share some essential information to ensure your stay in France is comfortable and convenient. Below are the details regarding the accommodations for our special day on May 14th.\n"
-    d ""
+    d "Il conto alla rovescia prosegue, e siamo lieti di condividere con te informazioni essenziali per assicurarci che il tuo soggiorno in Francia sia comfortevole e conveniente. Di sotto troverai dettagli riguardanti la struttura che ospiterà il nostro giorno speciale.\n"
 
 # game/scripts/story/story_00.rpy:90
 translate italian story_00_invitation_f49a4b49:
 
     # d "Location:"
-    d ""
+    d "Luogo:"
 
 # game/scripts/story/story_00.rpy:104
 translate italian story_00_invitation_c199113b:
 
     # d "The {b}Château de Bois-le-Dumont{/b} is unique even among the many beautiful châteaux that populate France. It originated as an eighteenth century vanity project from an aristocrat, left unfinished in the wake of the revolution. After decades of abandon, it was eventually purchased by the eccentric {b}Abelard Du Bois{/b}, who over the following decades shaped it into the château as it is today.\n"
-    d ""
+    d "Lo {b}Château de Bois-le-Dumont{/b} è unico anche tra i molti stupendi châteaux che popolano la Francia. In origine un progetto personalistico di un aristocratico, lasciato incompleto a causa della rivoluzione. Dopo decenni di abbandono, venne eventualmente rilevato dall'eccentrico {b}Abelard Du Bois{/b}, che lo trasformò nelle decadi successive nello château che conosciamo oggi.\n"
 
 # game/scripts/story/story_00.rpy:104
 translate italian story_00_invitation_0201c8e5:
 
     # d "The ceremony and reception will take place in the {b}Baroque Building{/b}, while the guests will be accomodated in the {b}Taishō Building{/b}.\n"
-    d ""
+    d "La cerimonia ed il ricevimento si svolgeranno nel {b}Palazzo Barocco{/b}, mentre il pernottamento avverrà nel {b}Palazzo Taishō{/b}.\n"
 
 # game/scripts/story/story_00.rpy:110
 translate italian story_00_invitation_ca8741bb:
@@ -108,31 +108,31 @@ translate italian story_00_invitation_ca8741bb:
     # nvl clear
     # d "Directions to the Venue:"
     nvl clear
-    d ""
+    d "Come Arrivare:"
 
 # game/scripts/story/story_00.rpy:111
 translate italian story_00_invitation_eecd1573:
 
     # d "Please use the link below to find some useful information on how to reach the château. Shuttles are going to be organized at specific times for guests. If you'd rather arrange for your own personal transportation, please let us know.\n"
-    d ""
+    d "Si prega di usare il link qui di sotto per avere informazioni utili per raggiungere lo château. Si prevede un numero limitato di navette per gli ospiti. Se preferisci organizzarti altrimenti, ti preghiamo di comunicarcelo.\n"
 
 # game/scripts/story/story_00.rpy:111
 translate italian story_00_invitation_82a4fc17:
 
     # d "Warm regards,{nw}"
-    d ""
+    d "Cordiali Saluti,{nw}"
 
 # game/scripts/story/story_00.rpy:111
 translate italian story_00_invitation_d844ba12:
 
     # d "Delphine & Francesco{nw}"
-    d ""
+    d "Delphine & Francesco{nw}"
 
 # game/scripts/story/story_00.rpy:111
 translate italian story_00_invitation_592394ca:
 
     # d "P.S. If language is a barrier, please contact Delphine for assistance in French."
-    d ""
+    d "P.S. In caso di difficoltà col Francese, si prega di contattare Delphine per un aiuto."
 
 # game/scripts/story/story_00.rpy:123
 translate italian story_00_invitation_76b2fe88_1:
