@@ -144,103 +144,103 @@ translate italian story_00_invitation_76b2fe88_1:
 translate italian story_00_invitation_557df6ec:
 
     # sh_xi darko frown "(I should've just sent a card...{w=0.5} This is killing me.)"
-    sh_xi darko frown ""
+    sh_xi darko frown "(Avrei fatto meglio a mandare un biglietto...{w=0.5} Sto per sentirmi male.)"
 
 # game/scripts/story/story_00.rpy:139
 translate italian story_00_invitation_b99a5ed7:
 
     # tb_n "<And let me tell you, the attention to detail of monsieur Du Bois went far beyond just architecture!>"
-    tb_n ""
+    tb_n "<E lasciate che ve lo dica, l'attenzione al dettaglio di monsieur Du Bois andava ben oltre l'architettura!>"
 
 # game/scripts/story/story_00.rpy:140
 translate italian story_00_invitation_007062fe:
 
     # sh_xi darko neutral "(I can recognize the name of the original owner, something about architecture...{w=0.5} <Au-delà>?{w=0.3} He went beyond architecture, I guess?)"
-    sh_xi darko neutral ""
+    sh_xi darko neutral "(Riconosco il nome del vecchio proprietario, qualcosa sull'architettura...{w=0.5} <Au-delà>?{w=0.3} È andato oltre l'architettura, in qualche modo?)"
 
 # game/scripts/story/story_00.rpy:141
 translate italian story_00_invitation_ed33af00:
 
     # tb_n "<You will find, spread throughout the estate, different pieces of art collected over the course of his travels.{w=0.3} Or specially commissioned to complement specific rooms of the complex!>"
-    tb_n ""
+    tb_n "<Sparsi per la tenuta, si possono trovare vari reperti ed opere collezionati nel corso dei suoi viaggi.{w=0.3} O commissionati apposta, per complementare alcune stanze in particolare!>"
 
 # game/scripts/story/story_00.rpy:142
 translate italian story_00_invitation_0ab620a9:
 
     # tb_n2 "<Indeed?{w=0.5} To be honest, I don't exactly approve of a lot of the placements.{w=0.3} Like in the toilets downstairs?>"
-    tb_n2 ""
+    tb_n2 "<Davvero?{w=0.5} Ad essere sincero, non approvo di molti delle decisioni in termini di luogo...{w=0.3} Come nei bagni al piano di sotto?>"
 
 # game/scripts/story/story_00.rpy:143
 translate italian story_00_invitation_b31e05d8:
 
     # sh_xi darko surprise "(Now they're talking about the toilet of all things?{w=0.3} The place of the toilets??)"
-    sh_xi darko surprise ""
+    sh_xi darko surprise "(Ora si sono messi a parlare addirittura dei bagni?{w=0.3} Il posto dei bagni?)"
 
 # game/scripts/story/story_00.rpy:144
 translate italian story_00_invitation_9566c415:
 
     # tb_n "<Indeed...{w=0.5} You have to remember, though, that the family turned the estate from museum to source of profit in 2025.{w=0.3} Afterwards, god only knows who had a hand in reshaping it and moving things around.>"
-    tb_n ""
+    tb_n "<Vero, vero...{w=0.5} Bisogna tenere presente, tuttavia, che la famiglia ha trasformato la tenuta da museo a fonte di profitto nel 2025.{w=0.3} Dopodiché, Dio solo sa chi ha messo mano sulla planimetria e la disposizione.>"
 
 # game/scripts/story/story_00.rpy:145
 translate italian story_00_invitation_45e26784:
 
     # tb_n2 "<Ah, yes.{w=0.3} That would explain that monstrosity in the bathrooms!>"
-    tb_n2 ""
+    tb_n2 "<Ah, ecco.{w=0.3} Spiegherebbe quella mostruoisutà nei bagni!>"
 
 # game/scripts/story/story_00.rpy:146
 translate italian story_00_invitation_abe6c394:
 
     # sh_xi darko smile "(Oh, finally!{w=0.3} They're definitely talking about {nw}"
-    sh_xi darko smile ""
+    sh_xi darko smile "(Ah, eccoci!{w=0.3} Stanno sicuramente parlando di {nw}"
 
 # game/scripts/story/story_00.rpy:148
 translate italian story_00_invitation_68d4b417:
 
     # extend "{b}that painting{/b}!{w=0.3} And I guess how out of place it is?)"
-    extend ""
+    extend "{b}quel dipinto{/b}!{w=0.3}Ed immagino di quanto sia fuori posto?)"
 
 # game/scripts/story/story_00.rpy:149
 translate italian story_00_invitation_d3a83a5a:
 
     # sh_x darko surprise "Uhm...{w=0.5} <At first I thought it had been put there to help.>"
-    sh_x darko surprise ""
+    sh_x darko surprise "Uhm...{w=0.5} <All'inizio, pensavo fosse per aiutare.>"
 
 # game/scripts/story/story_00.rpy:150
 translate italian story_00_invitation_a2d54f03:
 
     # tb_n "<Huh?{w=0.5} To help?>"
-    tb_n ""
+    tb_n "<Huh?{w=0.5} Aiutare?>"
 
 # game/scripts/story/story_00.rpy:156
 translate italian story_00_invitation_8cfb68dd:
 
     # tb_n2 "<What do you mean, monsieur {b}Arata{/b}?>"
-    tb_n2 ""
+    tb_n2 "<In che senso, monsieur {b}Arata{/b}?>"
 
 # game/scripts/story/story_00.rpy:158
 translate italian story_00_invitation_3ab8968f:
 
     # sh nulla "<Well, if you see something that creepy while entering the toilets you->"
-    sh nulla ""
+    sh nulla "<Bé, vedere qualcosa di così sinistro entrando andando alla toilette->"
 
 # game/scripts/story/story_00.rpy:163
 translate italian story_00_invitation_bbde346a:
 
     # sh_i nulla "(Aw, crap!{w=0.3} There's no such thing as scared shitless in French!{w=0.3} They say that you have a 'blue fear'!)"
-    sh_i nulla ""
+    sh_i nulla "(Oh, merda!{w=0.3} L'espressione 'farsela sotto' non esiste, in Francese!{w=0.3} Dicono 'ho una paura blu'!)"
 
 # game/scripts/story/story_00.rpy:164
 translate italian story_00_invitation_5e0879dc:
 
     # tb_n "<Yes, yes, the subject matter is quite fascinatingly grotesque...{w=0.5} So?>"
-    tb_n ""
+    tb_n "<Sì, sì, il soggetto è fascinosamente grottesco...{w=0.5} E dunque?>"
 
 # game/scripts/story/story_00.rpy:165
 translate italian story_00_invitation_18349c84:
 
     # sh_i nulla "(Damn it, Shigeo...{w=0.3} Think, think, think!{w=0.3} Bullshit your way out of this one, already!)"
-    sh_i nulla ""
+    sh_i nulla "(Dannazione, Shigeo...{w=0.3} Pensa, pensa, pensa!{w=0.3} Trova una via fuori da questa figuraccia, insomma!)"
 
 # game/scripts/story/story_00.rpy:181
 translate italian story_00_concentration_f27e8e25:
