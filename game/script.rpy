@@ -77,6 +77,15 @@ image side habiki darko = LayeredImageProxy("Habiki_por", Transform(matrixcolor=
 define tb_n = Character(_("Academic Invitee"), what_prefix='\"', what_suffix='\"', ctc="ctc_blink", ctc_position="nestled")
 define tb_n2 = Character(_("Fashionable Invitee"), what_prefix='\"', what_suffix='\"', ctc="ctc_blink", ctc_position="nestled")
 
+##Delphine
+define de = Character(_("Delphine Colombo"), what_prefix='\"', what_suffix='\"', image="delphine", ctc="ctc_blink", ctc_position="nestled")
+define de_x = Character(_("?????"), what_prefix='\"', what_suffix='\"', image="delphine", ctc="ctc_blink", ctc_position="nestled")
+define de_n = Character(_("Delphine Colombo"), what_suffix='\"', image="delphine", ctc="ctc_blink", ctc_position="nestled")
+define de_st = Character(_("Delphine Colombo"), what_prefix='{u}\"', what_suffix='\"', image="delphine", ctc="ctc_blink", ctc_position="nestled")
+image side delphine = LayeredImageProxy("Delphine_por")
+image side delphine nulla = Null()
+image side delphine darko = LayeredImageProxy("Delphine_por", Transform(matrixcolor=TintMatrix(Color("#000", alpha=0.85))))
+
 ##User Defined Transitions
 
 define flash = Fade(0.1, 0.0, 0.5, color="#fff")
