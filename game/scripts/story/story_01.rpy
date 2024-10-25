@@ -794,6 +794,35 @@ label taisho_1f_library_gaspard_face:
     scene gaspard_focus_02
     pause 1.5
     sh surprise sweat "...what?"
+    ta r_neutral "Hostile restrained."
+    pause 1.0
+    scene gaspard_rip with Reveal2
+    pause 1.5
+    play sound2 "audio/se/glitch_attack.ogg"
+    ta surprise "Now neutralizing..."
+    sh surprise sweat "You...{w=0.5} The Android?!{w=0.3} What-"
+    play sound4 "audio/se/body_rip.ogg"
+    pause 0.1
+    play sound2 "audio/se/glitch_hurt.ogg"
+    pause 0.5
+    scene gaspard_rip with blood
+    pause 0.5
+    sh surprise "...!"
+    play sound2 "audio/se/glitch_hurt.ogg"
+    pause 0.5
+    play sound4 "audio/se/body_tear.ogg"
+    pause 0.3
+    scene gaspard_tear with bloodo
+    pause 2.0
+    scene black
+    sh_i shock sweat "\"{b}AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHH...!!!\""
+    pause 1.5
+    $ quick_menu = False
+    $ time_menu = False
+    $ renpy.block_rollback()
+    jump story_02_delphine
+
+label demo_ending:
     $ renpy.block_rollback()
     $ quick_menu = False
     play music "audio/bgm/babelomania.ogg"
