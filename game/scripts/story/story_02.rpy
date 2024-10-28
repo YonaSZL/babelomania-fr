@@ -41,6 +41,6 @@ label story_02_delphine:
     pause 1.0
     de_x sad gown "{cps=10}Hmmmmmmmmm..."
     pause 2.0
-    play sound "audio/bgm/"
+    play sound4 "audio/em/em_shock.ogg"
     show screen emote("surprise",0.17,0.5)
     de_x shock "...!"
