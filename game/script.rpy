@@ -49,6 +49,7 @@ image side amina darko = LayeredImageProxy("Amina_por", Transform(matrixcolor=Ti
 define fr = Character(_("Francesco Colombo"), what_prefix='\"', what_suffix='\"', image="francesco", ctc="ctc_blink", ctc_position="nestled")
 define fr_x = Character(_("?????"), what_prefix='\"', what_suffix='\"', image="francesco", ctc="ctc_blink", ctc_position="nestled")
 define fr_n = Character(_("Francesco Colombo"), what_suffix='\"', image="francesco", ctc="ctc_blink", ctc_position="nestled")
+define fr_xst = Character(_("?????"), what_prefix='{u}\"', what_suffix='\"', image="francesco", ctc="ctc_blink", ctc_position="nestled")
 define fr_st = Character(_("Francesco Colombo"), what_prefix='{u}\"', what_suffix='\"', image="francesco", ctc="ctc_blink", ctc_position="nestled")
 image side francesco = LayeredImageProxy("Francesco_por")
 image side francesco nulla = Null()

@@ -110,3 +110,6 @@ layeredimage Francesco_por:
     group accessories_3:
         attribute sweatdrop:
             "francesco_por_acc_sweatdrop"
+    group accessories_4:
+        attribute cyber:
+            "francesco_por_acc_cyber"
