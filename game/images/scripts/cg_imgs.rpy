@@ -36,7 +36,7 @@ image intro_phone_a = "images/cgs/intro/intro_phone_a.jpg"
 image intro_phone_b = "images/cgs/intro/intro_phone_b.jpg"
 image intro_phone_c = "images/cgs/intro/intro_phone_c.jpg"
 
-#Chapter 00
+#Chapter 01
 
 image tabitha_grab = "images/cgs/chapter_00/tabitha_grab.jpg"
 image bathroom_painting = "images/cgs/chapter_00/bathroom_painting.jpg"
@@ -84,3 +84,22 @@ image gaspard_tear = ConditionSwitch(
     "persistent.gore == True", "images/cgs/chapter_00/gaspard/gaspard_tear.jpg",
     "persistent.gore == False", "images/cgs/chapter_00/gaspard/gaspard_tear_censor.jpg"
 ) 
+
+#Chapter 02
+
+image francesco_flashback = "images/cgs/chapter_00/gaspard/francesco_flashback.jpg"
+image francesco_flashback_b = "images/cgs/chapter_00/gaspard/francesco_flashback_b.jpg"
+image francesco_flashback_glitch:
+    "francesco_flashback"
+    pause 0.05
+    "francesco_flashback_b"
+    pause 0.05
+    "francesco_flashback"
+    pause 0.05
+    "francesco_flashback_b"
+    pause 0.05
+    "francesco_flashback"
+    pause 0.05
+    "francesco_flashback_b"
+    pause 0.05
+    "francesco_flashback"
