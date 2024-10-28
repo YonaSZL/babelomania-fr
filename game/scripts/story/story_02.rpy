@@ -23,7 +23,8 @@ label story_02_delphine:
     de_x neutral darko "<I'm still confused, Francesco...{w=0.5} Even more so, now.{w=0.3} If you grieve them and the time lost so much...>"
     de_x surprise darko "<Why have you {nw}"
     play sound4 "audio/sfx/gui_spook.ogg"
-    extend "{b}never visit their graves{/b}?>"
+    stop music fadeout 3.5
+    extend "{b}never visited their graves{/b}?>"
     pause 1.5
     fr sad "<.{w=0.3}.{w=0.3}.{w=0.5}because...>"
     pause 1.5
@@ -34,4 +35,12 @@ label story_02_delphine:
     scene black
     pause 1.5
     $ renpy.block_rollback()
-    
+    play music "<from 13.74>audio/bgm/safehouse_muted.ogg" fadein 1.0
+    pause 1.5
+    scene lvl3_wellness_dim with Reveal2
+    pause 1.0
+    de_x sad gown "{cps=10}Hmmmmmmmmm..."
+    pause 2.0
+    play sound "audio/bgm/"
+    show screen emote("surprise",0.17,0.5)
+    de_x shock "...!"
