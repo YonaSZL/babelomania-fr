@@ -43,4 +43,23 @@ label story_02_delphine:
     pause 2.0
     play sound4 "audio/em/em_impact.ogg"
     show screen emote("surprise",0.17,0.5)
-    de_x shock sweat "...!"
+    de_x shock gown sweat "...!"
+    play sound "audio/se/whoosh_heavy.ogg"
+    pause 1.5
+    show Delphine shock sweat gown with Reveal2:
+        xalign 0.5
+    at de_big
+    pause 1.5
+    de_x nulla "(.{w=0.3}.{w=0.3}.{w=0.5}where the hell is this?)"
+    show Delphine surprise
+    de_x nulla "(What happened to the wedding?{w=0.3} What happened to everyone?{w=0.3} I...{w=0.5} Did I pass out?)"
+    show Delphine neutral
+    de_x nulla "(Last thing I remember, we...{w=0.5} We were about to watch our wedding video, and then...?{w=0.5} Then what?)"
+    pause 1.5
+    show Delphine frown with dissolve
+    pause 0.5
+    de_x nulla "(Could this be...?{w=0.5} And on {nw}"
+    play sound4 "audio/sfx/gui_solved.ogg"
+    extend "{b}my wedding{/b}, of all days?)"
+    show Delphine angry
+    de nulla "<Shit.{w=0.5} Just when the most dangerous thing I have on me are high heels.>"
