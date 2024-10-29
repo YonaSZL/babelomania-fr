@@ -39,8 +39,8 @@ label story_02_delphine:
     pause 1.5
     scene lvl3_wellness_dim with Reveal2
     pause 1.0
-    de_x sad gown "{cps=10}Hmmmmmmmmm..."
+    de_x cloudy gown "{cps=10}Hmmmmmmmmm..."
     pause 2.0
-    play sound4 "audio/em/em_shock.ogg"
+    play sound4 "audio/em/em_impact.ogg"
     show screen emote("surprise",0.17,0.5)
-    de_x shock "...!"
+    de_x shock sweat "...!"

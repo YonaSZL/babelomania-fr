@@ -75,6 +75,7 @@ image delphine_por_exp_laugh = "images/chs/delphine/por/exp_laugh.png"
 image delphine_por_exp_angry = "images/chs/delphine/por/exp_angry.png"
 image delphine_por_exp_fear = "images/chs/delphine/por/exp_fear.png"
 image delphine_por_exp_pain = "images/chs/delphine/por/exp_pain.png"
+image delphine_por_exp_cloudy = "images/chs/delphine/por/exp_cloudy.png"
 
 layeredimage Delphine_por:
     group body:
@@ -104,6 +105,8 @@ layeredimage Delphine_por:
             "delphine_por_exp_fear"
         attribute pain:
             "delphine_por_exp_pain"
+        attribute cloudy:
+            "delphine_por_exp_cloudy"
     group accessories:
         attribute blush:
             "delphine_por_acc_blush"
