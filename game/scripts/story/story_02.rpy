@@ -62,4 +62,4 @@ label story_02_delphine:
     play sound4 "audio/sfx/gui_solved.ogg"
     extend "{b}my wedding{/b}, of all days?)"
     show Delphine angry
-    de nulla "<Shit.{w=0.5} Just when the most dangerous thing I have on me are high heels.>"
+    de nulla "<Shit.{w=0.5} Just when the most dangerous things I have on me are high heels.>"
