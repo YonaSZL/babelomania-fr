@@ -56,10 +56,21 @@ label story_02_delphine:
     show Delphine neutral
     de_x nulla "(Last thing I remember, we...{w=0.5} We were about to watch our wedding video, and then...?{w=0.5} Then what?)"
     pause 1.5
-    show Delphine frown with dissolve
+    show Delphine shock with dissolve
     pause 0.5
     de_x nulla "(Could this be...?{w=0.5} And on {nw}"
     play sound4 "audio/sfx/gui_solved.ogg"
     extend "{b}my wedding{/b}, of all days?)"
-    show Delphine angry
-    de nulla "<Shit.{w=0.5} Just when the most dangerous things I have on me are high heels.>"
+    show Delphine surprise
+    de nulla "<Shit...!{w=0.5} Just when the most dangerous things I have on me are high heels.>"
+    show Delphine shock
+    de nulla "<And if I'm here, what happened to dad?{w=0.3} Francesco?{w=0.3} Everyone...!>"
+    pause 1.0
+    show Delphine frown with dissolve
+    de nulla "(Okay, Delphine...{w=0.5} One thing at the time.{w=0.3} Breathe.{w=0.3} First thing you need to do is understand your surroundings.)"
+    pause 1.0
+    scene lvl3_wellness_dim with dissolve
+    pause 0.5
+    de surprise "(Otherwise known as:{w=0.15} where the heck am I?)"
+    pause 1.0
+    
