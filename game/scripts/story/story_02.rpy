@@ -64,13 +64,14 @@ label story_02_delphine:
     show Delphine surprise
     de nulla "<Shit...!{w=0.5} Just when the most dangerous things I have on me are high heels.>"
     show Delphine shock
-    de nulla "<And if I'm here, what happened to dad?{w=0.3} Francesco?{w=0.3} Everyone...!>"
+    de nulla "<And if I'm here, what happened to dad?{w=0.3} Francesco?!{w=0.3} Everyone...!>"
     pause 1.0
     show Delphine frown with dissolve
-    de nulla "(Okay, Delphine...{w=0.5} One thing at the time.{w=0.3} Breathe.{w=0.3} First thing you need to do is understand your surroundings.)"
+    de nulla "(One thing at the time, Delphine.{w=0.3} Breathe.{w=0.3} First thing you need to do is understand your surroundings.)"
     pause 1.0
     scene lvl3_wellness_dim with dissolve
     pause 0.5
     de surprise "(Otherwise known as:{w=0.15} where the heck am I?)"
     pause 1.0
-    
+    $ renpy.block_rollback()
+    call screen lvl3_wellness_explore_01
