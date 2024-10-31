@@ -39,7 +39,24 @@ screen lvl3_wellness_explore_01():
 label exp_lvl3_wellness_01_shelves:
     $ renpy.block_rollback()
     pause 0.5
-    de_i neutral "(Fake plants, a bunch of self-help books)"
+    de_i neutral "(Fake plants, a bunch of self-help books, a little narrative...{w=0.5} And they're all absolutely immaculate.)"
+    de_i frown "(Guess whoever staffs this place isn't in the habit of reading...{w=0.5} Or maybe they don't like the selection.{w=0.3} Can't blame them, I sure at hell don't, either.)"
+    de_i surprise "(Although...{w=0.5} The {nw}"
+    play sound4 "audio/sfx/gui_hint.ogg"
+    extend "{b}languages{/b} make me think...{w=0.5} What is this?)"
+    pause 1.0
+    show Delphine frown with dissolve:
+        xalign 0.5
+    at de_big
+    de_i nulla "(There's books in French and English, but also...{w=0.5} Japanese?{w=0.3} And these few with titles in cyrillic...)"
+    play sound3 "audio/se/object_grab.ogg"
+    pause 1.0
+    show Delphine surprise with dissolve
+    pause 1.5
+    show Delphine angry with Reveal
+    pause 1.5
+    play sound4 "audio/sfx/gui_spook.ogg"
+    de nulla "<{b}Russian{/b}...>"
     if exp_lvl3_wellness_01_shelves == False:
         $ exp_lvl3_wellness_01_shelves = True
         $ lvl3_wellness_explore_01 += 1
@@ -50,10 +67,11 @@ label exp_lvl3_wellness_01_fridge:
     $ renpy.block_rollback()
     pause 0.5
     de_i surprise sweat "(Nooo, nononononono...{w=0.5} Okay, let's...{w=0.5} Check myself real quick, here.)"
-    play sound "audio/sfx/cloth_rustle.ogg"
+    play sound "audio/se/cloth_rustle.ogg"
     pause 0.2
-    show Delphine surprise sweat at de_med:
+    show Delphine surprise sweat with dissolve:
         xalign 0.5
+    at de_med
     pause 0.5
     de_i nulla "(Okay, the...{w=0.5} My dress is intact and so is everything else.{w=0.3} I don't feel pain or bruises anywhere...{w=0.5} Slowly...)"
     pause 1.5
