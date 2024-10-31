@@ -53,10 +53,19 @@ label exp_lvl3_wellness_01_shelves:
     pause 1.0
     show Delphine surprise with dissolve
     pause 1.5
-    show Delphine angry with Reveal
+    show Delphine frown with Reveal
     pause 1.5
     play sound4 "audio/sfx/gui_spook.ogg"
     de nulla "<{b}Russian{/b}...>"
+    show Delphine angry
+    de nulla "<I knew it...{w=0.5} Mom was right, she always was.>"
+    show Delphine surprise
+    de nulla "<But why target me at my wedding?{w=0.3} Is it because the château is isolated?{w=0.3} How long have they been planning this?{w=0.3} And...>"
+    pause 1.0
+    show Delphine angry with Reveal
+    de_i nulla "(If they touched {i}one hair{/i} on dad or Francesco...)"
+    pause 1.0
+    scene lvl3_wellness_dim with dissolve
     if exp_lvl3_wellness_01_shelves == False:
         $ exp_lvl3_wellness_01_shelves = True
         $ lvl3_wellness_explore_01 += 1
