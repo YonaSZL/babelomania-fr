@@ -89,6 +89,9 @@ image side delphine = LayeredImageProxy("Delphine_por")
 image side delphine nulla = Null()
 image side delphine darko = LayeredImageProxy("Delphine_por", Transform(matrixcolor=TintMatrix(Color("#000", alpha=0.85))))
 
+##Minor Characters2
+define inter = Character(_("Intercom"), what_prefix='{u}\"', what_suffix='\"', ctc="ctc_blink", ctc_position="nestled")
+
 ##User Defined Transitions
 
 define flash = Fade(0.1, 0.0, 0.5, color="#fff")
