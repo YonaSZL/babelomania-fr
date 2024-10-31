@@ -75,3 +75,6 @@ label story_02_delphine:
     pause 1.0
     $ renpy.block_rollback()
     call screen lvl3_wellness_explore_01
+
+label story_02_wellness_done:
+    

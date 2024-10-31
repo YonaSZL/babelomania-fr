@@ -70,6 +70,8 @@ label exp_lvl3_wellness_01_shelves:
         $ exp_lvl3_wellness_01_shelves = True
         $ lvl3_wellness_explore_01 += 1
     pause 1.0
+    if lvl3_wellness_explore_01 == 3:
+        jump 
     call screen lvl3_wellness_explore_01
 
 label exp_lvl3_wellness_01_fridge:
