@@ -35,7 +35,7 @@ label story_02_delphine:
     scene black
     pause 1.5
     $ renpy.block_rollback()
-    play music "<from 13.74>audio/bgm/safehouse_muted.ogg" fadein 1.0
+    play music "<from 13.74>audio/bgm/sanctuary_muted.ogg" fadein 1.0
     pause 1.5
     scene lvl3_wellness_dim with Reveal2
     pause 1.0
@@ -50,15 +50,15 @@ label story_02_delphine:
         xalign 0.5
     at de_big
     pause 1.5
-    de_x nulla "(.{w=0.3}.{w=0.3}.{w=0.5}where the hell is this?)"
+    de_xi nulla "(.{w=0.3}.{w=0.3}.{w=0.5}where the hell is this?)"
     show Delphine surprise
-    de_x nulla "(What happened to the wedding?{w=0.3} What happened to everyone?{w=0.3} I...{w=0.5} Did I pass out?)"
+    de_xi nulla "(What happened to the wedding?{w=0.3} What happened to everyone?{w=0.3} I...{w=0.5} Did I pass out?)"
     show Delphine neutral
-    de_x nulla "(Last thing I remember, we...{w=0.5} We were about to watch our wedding video, and then...?{w=0.5} Then what?)"
+    de_xi nulla "(Last thing I remember, we...{w=0.5} We were about to watch our wedding video, and then...?{w=0.5} Then what?)"
     pause 1.5
     show Delphine shock with dissolve
     pause 0.5
-    de_x nulla "(Could this be...?{w=0.5} And on {nw}"
+    de_xi nulla "(Could this be...?{w=0.5} And on {nw}"
     play sound4 "audio/sfx/gui_solved.ogg"
     extend "{b}my wedding{/b}, of all days?)"
     show Delphine surprise
@@ -67,11 +67,11 @@ label story_02_delphine:
     de nulla "<And if I'm here, what happened to dad?{w=0.3} Francesco?!{w=0.3} Everyone...!>"
     pause 1.0
     show Delphine frown with dissolve
-    de nulla "(One thing at the time, Delphine.{w=0.3} Breathe.{w=0.3} First thing you need to do is understand your surroundings.)"
+    de_i nulla "(One thing at the time, Delphine.{w=0.3} Breathe.{w=0.3} First thing you need to do is understand your surroundings.)"
     pause 1.0
     scene lvl3_wellness_dim with dissolve
     pause 0.5
-    de surprise "(Otherwise known as:{w=0.15} where the heck am I?)"
+    de_i surprise "(Otherwise known as:{w=0.15} where the heck am I?)"
     pause 1.0
     $ renpy.block_rollback()
     call screen lvl3_wellness_explore_01

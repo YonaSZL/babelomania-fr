@@ -81,6 +81,8 @@ define tb_n2 = Character(_("Fashionable Invitee"), what_prefix='\"', what_suffix
 ##Delphine
 define de = Character(_("Delphine Colombo"), what_prefix='\"', what_suffix='\"', image="delphine", ctc="ctc_blink", ctc_position="nestled")
 define de_x = Character(_("?????"), what_prefix='\"', what_suffix='\"', image="delphine", ctc="ctc_blink", ctc_position="nestled")
+define de_xi = Character(_("?????"), what_prefix='{i}', image="delphine", ctc="ctc_blink", ctc_position="nestled")
+define de_i = Character(_("Delphine Colombo"), what_prefix='{i}', image="delphine", ctc="ctc_blink", ctc_position="nestled")
 define de_n = Character(_("Delphine Colombo"), what_suffix='\"', image="delphine", ctc="ctc_blink", ctc_position="nestled")
 define de_st = Character(_("Delphine Colombo"), what_prefix='{u}\"', what_suffix='\"', image="delphine", ctc="ctc_blink", ctc_position="nestled")
 image side delphine = LayeredImageProxy("Delphine_por")
