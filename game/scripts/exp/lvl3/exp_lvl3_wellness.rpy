@@ -45,9 +45,9 @@ label exp_lvl3_wellness_01_shelves:
     play sound4 "audio/sfx/gui_hint.ogg"
     extend "{b}languages{/b} make me think...{w=0.5} What is this?)"
     pause 1.0
-    show Delphine frown with dissolve:
+    show Delphine frown at de_big:
         xalign 0.5
-    at de_big
+    with dissolve
     de_i nulla "(There's books in French and English, but also...{w=0.5} Japanese?{w=0.3} And these few with titles in cyrillic...)"
     play sound3 "audio/se/object_grab.ogg"
     pause 1.0
@@ -71,7 +71,7 @@ label exp_lvl3_wellness_01_shelves:
         $ lvl3_wellness_explore_01 += 1
     pause 1.0
     if lvl3_wellness_explore_01 == 3:
-        jump 
+        jump story_02_wellness_done
     call screen lvl3_wellness_explore_01
 
 label exp_lvl3_wellness_01_fridge:
@@ -80,9 +80,9 @@ label exp_lvl3_wellness_01_fridge:
     de_i surprise sweat "(Nooo, nononononono...{w=0.5} Okay, let's...{w=0.5} Check myself real quick, here.)"
     play sound "audio/se/cloth_rustle.ogg"
     pause 0.2
-    show Delphine surprise sweat with dissolve:
+    show Delphine surprise sweat at de_med:
         xalign 0.5
-    at de_med
+    with dissolve
     pause 0.5
     de_i nulla "(Okay, the...{w=0.5} My dress is intact and so is everything else.{w=0.3} I don't feel pain or bruises anywhere...{w=0.5} Slowly...)"
     pause 1.5

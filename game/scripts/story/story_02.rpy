@@ -46,9 +46,9 @@ label story_02_delphine:
     de_x shock gown sweat "...!"
     play sound "audio/se/whoosh_heavy.ogg"
     pause 1.5
-    show Delphine shock sweat gown with Reveal2:
+    show Delphine shock sweat gown at de_big:
         xalign 0.5
-    at de_big
+    with Reveal2
     pause 1.5
     de_xi nulla "(.{w=0.3}.{w=0.3}.{w=0.5}where the hell is this?)"
     show Delphine surprise
@@ -62,7 +62,7 @@ label story_02_delphine:
     play sound4 "audio/sfx/gui_solved.ogg"
     extend "{b}my wedding{/b}, of all days?)"
     show Delphine surprise
-    de nulla "<Shit...!{w=0.5} Just when the most dangerous things I have on me are high heels.>"
+    de nulla "<Triastsia...!{w=0.5} Just when the most dangerous things I have on me are high heels.>"
     show Delphine shock
     de nulla "<And if I'm here, what happened to dad?{w=0.3} Francesco?!{w=0.3} Everyone...!>"
     pause 1.0
@@ -80,9 +80,9 @@ label story_02_wellness_done:
     $ renpy.block_rollback()
     de_i frown "(No clock anywhere...{w=0.5} There's no way of knowing how long I was out.)"
     pause 0.5
-    show Delphine frown with dissolve:
+    show Delphine frown at de_big:
         xalign 0.5
-    at de_big
+    with dissolve
     pause 0.5
     de_i neutral "(Time to leave.{w=0.3} How do I open this door...?)"
     pause 1.0
@@ -92,14 +92,13 @@ label story_02_wellness_done:
     scene lvl3_wellness_bright
     play sound4 "audio/em/em_shock.ogg"
     show screen emote("surprise",0.5,0.05)
-    show Delphine shock sweat:
+    show Delphine shock sweat at de_big:
         xalign 0.5
-    at de_big
     pause 0.8
     inter "<Thank you for deciding to rest with {b}Flambas Welness Rooms{/b}.{w=0.3} Your allotted relaxation time has expired.>"
     show Delphine surprise
     inter "<The door will be opening up shortly.{w=0.3} We wish you a pleasant continuation of your standard work day.>"
-    de nulla "<SHIT, that scared the hell out of me...{w=0.5} Wait, Flambas?>"
+    de nulla "<That scared the hell out of me...{w=0.5} Wait, Flambas?>"
     pause 1.0
     show Delphine shock with Reveal
     de nulla "<That's...{w=0.5} That's {nw}"
