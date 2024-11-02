@@ -132,7 +132,7 @@ label exp_taisho_1f_corridor_01_gaspard:
                 ga surprise "<What...?{w=0.5} Yeah, those are the years.>"
                 show Shigeo frown
                 sh frown ".{w=0.3}.{w=0.3}.{w=0.5}could it be...?"
-                $ c_events.append(c_taisho)
+                $ shigeo_events.append(c_taisho)
                 play sound4 "audio/sfx/gui_slots_confirm.ogg"
                 show screen notify(_("Codex Updated"))
                 ga surprise "<Could it be what?{w=0.5} Ah, whatever, I don't really care.>"
@@ -152,7 +152,7 @@ label exp_taisho_1f_corridor_01_gaspard:
                 if exp_taisho_1f_corridor_01_gaspard == False:
                     play sound4 "audio/sfx/gui_slots_confirm.ogg"
                     show screen notify(_("Received Smartwatch."))
-                    $ inventory.append(item_smartwatch)
+                    $ shigeo_inventory.append(item_smartwatch)
                     $ exp_taisho_1f_corridor_01_gaspard = True
                     $ taisho_1f_corridor_explore_01 += 1
                     $ time_menu = True
@@ -201,7 +201,7 @@ label exp_taisho_1f_corridor_01_amina:
     play sound4 "audio/sfx/gui_slots_confirm.ogg"
     show screen notify(_("Received Door Code Note."))
     if exp_taisho_1f_corridor_01_amina == False:
-        $ inventory.append(item_taisho_note)
+        $ shigeo_inventory.append(item_taisho_note)
         $ exp_taisho_1f_corridor_01_amina = True
         $ taisho_1f_corridor_explore_01 += 1
     show Amina neutral

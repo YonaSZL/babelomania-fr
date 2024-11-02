@@ -8,11 +8,16 @@ init python:
 
     test_entry = Entry("Test title", "stuff", False)
 
-
-default c_people = []
-default c_events = []
-default c_locations = []
-default c_items = []
+#SHIGEO CATEGORIES
+default shigeo_people = []
+default shigeo_events = []
+default shigeo_locations = []
+default shigeo_items = []
+#DELPHINE CATEGORIES
+default delphine_people = []
+default delphine_events = []
+default delphine_locations = []
+default delphine_items = []
 
 default c_chateau_dubois = Entry("Chateau de Bois-le-Dumont", "scr_chateau_dubois", False)
 default c_chateau_dubois_taisho = False
@@ -35,8 +40,6 @@ screen codex_main():
         activate_sound "audio/sfx/gui_codex_close.ogg"
         action Return()
 
-
-
     if current_entry:
         viewport:
             xysize(1000,514) pos(572,282) scrollbars "vertical" mousewheel True draggable True
@@ -49,14 +52,19 @@ screen codex_main():
     on 'show' action Show("categories")
     on 'hide' action SetVariable("current_entry", None)
             
-
-
-
-
-
-
 screen categories():
     
+    if current_char == "shigeo":
+        $ c_people = shigeo_people
+        $ c_events = shigeo_events
+        $ c_locations = shigeo_locations
+        $ c_items = shigeo_items
+    else:
+        $ c_people = delphine_people
+        $ c_events = delphine_events
+        $ c_locations = delphine_locations
+        $ c_items = delphine_items
+
     viewport:
         style_prefix "cat"
         yalign 0.5 xpos 141 ysize 400 xsize 380 scrollbars "vertical" mousewheel True draggable True

@@ -106,7 +106,7 @@ label story_00_invitation:
 
     The ceremony and reception will take place in the {b}Baroque Building{/b}, while the guests will be accomodated in the {b}Taishō Building{/b}.\n
     """
-    $ c_locations.append(c_chateau_dubois)
+    $ shigeo_locations.append(c_chateau_dubois)
     nvl clear
     d """
     Directions to the Venue:
@@ -325,7 +325,7 @@ label story_00_bathroom_return:
     with dissolve
     play sound4 "audio/sfx/gui_slots_confirm.ogg"
     show screen notify(_("Codex Unlocked"))
-    $ c_items.append(c_babel_painting)
+    $ shigeo_items.append(c_babel_painting)
     $ codex_active = True
     pause 0.5
     sh_i nulla "(Well, that was a good way to waste a few minutes and distract myself...{w=0.5} And now I have something to occupy myself further, if need be.)"

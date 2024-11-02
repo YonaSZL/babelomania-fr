@@ -14,7 +14,9 @@ default item_flashlight = Item(_("Flashlight"), "gui/inventory/flashlight.png", 
 default item_taisho_note = Item(_("Door Code Note"), "gui/inventory/taisho_note.png", "taisho_note_drop")
 default item_smartwatch = Item(_("Smartwatch"), "gui/inventory/smartwatch.png", "smartwatch_drop")
 
-default inventory = [item_flashlight]
+default inventory = []
+default shigeo_inventory = [item_flashlight]
+default delphine_inventory = [test_item]
 screen inventory():
 
     modal True
@@ -32,12 +34,15 @@ screen inventory():
         hover_sound "audio/sfx/gui_hover.ogg"
         activate_sound "audio/sfx/gui_inventory.ogg"
 
-
-    ##Calculating how man rows are needed
-    if len(inventory) % 4 != 0:
-        $ grid_horizontal = int((len(inventory) / 4)) + 1
+    if current_char == "shigeo":
+        $ char_inv = shigeo_inventory
     else:
-        $ grid_horizontal = len(inventory) / 4
+        $ char_inv = delphine_inventory
+    ##Calculating how man rows are needed
+    if len(char_inv) % 4 != 0:
+        $ grid_horizontal = int((len(char_inv) / 4)) + 1
+    else:
+        $ grid_horizontal = len(char_inv) / 4
 
 
     #Double checking row number calc
@@ -45,7 +50,7 @@ screen inventory():
     #    text "[grid_horizontal]"
 
     ##The item grid
-    if len(inventory) != 0:
+    if len(char_inv) != 0:
         viewport:
             scrollbars "vertical" mousewheel True draggable True
             pos(616,287) xysize(700,317)
@@ -53,7 +58,7 @@ screen inventory():
 
             grid 4 grid_horizontal:
                 xspacing 20 yspacing 10
-                for i in inventory:
+                for i in char_inv:
                     button:
                         idle_background "gui/inventory/cell.png"
                         hover_background "gui/inventory/cell_hover.png"

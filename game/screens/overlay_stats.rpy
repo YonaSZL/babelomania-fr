@@ -78,25 +78,53 @@ screen overlay_stats():
                     hover_sound "audio/sfx/gui_hover.ogg"
                     activate_sound "audio/sfx/gui_codex.ogg"
                     action ShowMenu("codex_main")
+        if current_char == "shigeo":#SHIGEO BARS
+            if stat1_show:
+                button:
+                    xysize(353,38) xalign 0.5
+                    bar:
+                        right_bar "gui/stats/empty.png"
+                        left_bar "gui/stats/stat_1.png"
+                        value AnimatedValue(value=stat1, range=100, delay=1.0)
+                    if flashlight_consume:
+                        text _("DRAINING") align(0.5, 0.5) size 22 outlines([(1, "#181112", 0, 0)]) #color u"C69C6D"
+                    else:
+                        text _("STAND BY") align(0.5, 0.5) size 22 outlines([(1, "#181112", 0, 0)]) #color u"C69C6D"
+                    add "gui/stats/flash.png" xoffset -20 yalign 0.5
+            if stat2_show:
+                button:
+                    xysize(353,38) xalign 0.5 yoffset 20
+                    bar:
+                        right_bar "gui/stats/empty.png"
+                        left_bar "gui/stats/stat_2.png"
+                        value AnimatedValue(value=stat1, range=100, delay=1.0)
+                    text "STAND-BY" align(0.5, 0.5) size 22 outlines([(1, "#181112", 0, 0)]) #color u"C69C6D"
 
-        if stat1_show:
-            button:
-                xysize(353,38) xalign 0.5
-                bar:
-                    right_bar "gui/stats/empty.png"
-                    left_bar "gui/stats/stat_1.png"
-                    value AnimatedValue(value=stat1, range=100, delay=1.0)
-                if flashlight_consume:
-                    text _("DRAINING") align(0.5, 0.5) size 22 outlines([(1, "#181112", 0, 0)]) #color u"C69C6D"
-                else:
-                    text _("STAND BY") align(0.5, 0.5) size 22 outlines([(1, "#181112", 0, 0)]) #color u"C69C6D"
-                add "gui/stats/flash.png" xoffset -20 yalign 0.5
-        if stat2_show:
-            bar:
-                xysize(353,38) xalign 0.5
-                right_bar "gui/stats/empty.png"
-                left_bar "gui/stats/stat_2.png"
-                value AnimatedValue(value=stat2, range=100, delay=1.0)
+                    add "gui/stats/tab.png" xoffset -20 yalign 0.5
+        else:#DELPHINE BARS
+            if stat1_show:
+                button:
+                    xysize(353,38) xalign 0.5 yoffset 10
+                    bar:
+                        right_bar "gui/stats/empty.png"
+                        left_bar "gui/stats/stat_2.png"
+                        value AnimatedValue(value=stat1, range=100, delay=1.0)
+                    text "SAFE" align(0.5, 0.5) size 22 outlines([(1, "#181112", 0, 0)]) #color u"C69C6D"
+
+                    add "gui/stats/health.png" xoffset -20 yalign 0.5
+
+            if stat2_show:
+                button:
+                    xysize(353,38) xalign 0.5 yoffset 20
+                    bar:
+                        right_bar "gui/stats/empty.png"
+                        left_bar "gui/stats/stat_1.png"
+                        
+                        value AnimatedValue(value=5, range=12, delay=1.0)
+                    add "gui/stats/segment.png"
+                    #text "STAND-BY" align(0.5, 0.5) size 22 outlines([(1, "#181112", 0, 0)]) #color u"C69C6D"
+
+                    add "gui/stats/ammo.png" xoffset -20 yalign 0.5 
                 
     $ tooltip = GetTooltip()
 
