@@ -275,7 +275,7 @@ label story_00_bathroom_encounters:
     pause 0.5
     $ move_time(0,3)
     pause 1.0
-    play music "audio/bgm/safehouse.ogg"
+    play music "audio/bgm/sanctuary.ogg"
     pause 1.0
     scene bar_bathroom with Reveal3
     pause 1.0

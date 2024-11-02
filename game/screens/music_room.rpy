@@ -37,7 +37,7 @@ init python:
 
     my_room.add(
         name=_("Safehouse"),
-        path="audio/bgm/safehouse.ogg",
+        path="audio/bgm/sanctuary.ogg",
         artist="Ayato Sound Create",
         art="gui/music_room/MyGameOST.png",
         unlock_condition="True",
