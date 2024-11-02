@@ -49,7 +49,7 @@ label exp_lvl3_wellness_01_shelves:
         xalign 0.5
     with dissolve
     de_i nulla "(There's books in French and English, but also...{w=0.5} Japanese?{w=0.3} And these few with titles in cyrillic...)"
-    play sound3 "audio/se/object_grab.ogg"
+    play sound3 "audio/sfx/item_use.ogg"
     pause 1.0
     show Delphine surprise with dissolve
     pause 1.5
@@ -78,7 +78,7 @@ label exp_lvl3_wellness_01_fridge:
     $ renpy.block_rollback()
     pause 0.5
     de_i surprise sweat "(Nooo, nononononono...{w=0.5} Okay, let's...{w=0.5} Check myself real quick, here.)"
-    play sound "audio/se/cloth_rustle.ogg"
+    play sound "audio/se/clothes_rustle.ogg"
     pause 0.2
     show Delphine surprise sweat at de_med:
         xalign 0.5
@@ -91,12 +91,16 @@ label exp_lvl3_wellness_01_fridge:
     de_i nulla "(Alright, it...{w=0.5} It seems that nothing was done to me while I was out cold.{w=0.3} I just feel very thirsty.)"
     show Delphine surprise
     de_i nulla "(This fridge seems on...{w=0.5} I hope there's some bottled water or something, inside.)"
-    play sound4 "audio/sfx/fridge_open.ogg"
+    play sound4 "audio/se/door_fridge_open.ogg"
     pause 0.5
     show Delphine smile with dissolve
     de nulla "Ugh, Perrier...{w=0.5} Better than nothing, I guess."
+    $ stat3_show = True
     hide Delphine with dissolve
-    play sound4 "audio/sfx/bottle_fizz.ogg"
+    play sound4 "audio/se/food_soda.ogg"
+    pause 1.0
+    if exp_lvl3_wellness_01_fridge == False:
+        $ stat3 += 25
     pause 0.5
     de_i laugh "(Huuuuuff, that hit the spot...{w=0.5} I'm feeling better already.)"
     de_i surprise "(Also, if they have Perrier in stock, at the very least {nw}"

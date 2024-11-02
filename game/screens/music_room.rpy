@@ -54,7 +54,7 @@ init python:
     my_room.add(
         name=_("Echo of Mountains"),
         path="audio/bgm/echo_of_mountains.ogg",
-        artist="W.O.W. Sounds",
+        artist="W.O.W. Sound",
         art="gui/music_room/MyGameOST.png",
         unlock_condition="True",
     )
@@ -62,7 +62,7 @@ init python:
     my_room.add(
         name=_("Francesco"),
         path="audio/bgm/francesco.ogg",
-        artist="W.O.W. Sounds",
+        artist="W.O.W. Sound",
         art="gui/music_room/MyGameOST.png",
         unlock_condition="True",
     )

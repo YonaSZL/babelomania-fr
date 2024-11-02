@@ -1,6 +1,6 @@
 default stat1 = 50 #Flashlight Charge
 default stat2 = 50
-default stat3 = 75
+default stat3 = 50
 default stat4 = 6
 
 default stat1_show = True #Flashlight Charge
