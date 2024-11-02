@@ -14,7 +14,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("BABELOMANIA")
+define config.name = _("BABELOMANIA - EARLY ACCESS")
 
 ## A short name for the game used for executables and directories in the built
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
@@ -42,7 +42,7 @@ define config.save_directory = "babelomania-1725385568"
 
 ## The version of the game.
 
-define config.version = "1.05"
+define config.version = "1.07"
 
 ## Custom Mouse Icon
 define config.mouse = {"default":[ ("gui/cursor.png", 1, 1) ] }

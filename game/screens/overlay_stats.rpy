@@ -1,18 +1,45 @@
 default stat1 = 50 #Flashlight Charge
-default stat2 = 80
+default stat2 = 50
+default stat3 = 75
+default stat4 = 6
 
+default stat1_show = True #Flashlight Charge
+default stat2_show = True
+default stat3_show = True
+default stat4_show = False
 
 default inventory_show = True
 default time_menu = True
-default stat1_show = True #Flashlight Charge
-default stat2_show = True
+
 default codex_active = False
+
 default flashlight_use = False
 default flashlight_consume = False
 default flashlight_allowed = True
 
 default amina_cmp = False
 default gaspard_cmp = False
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 screen overlay_stats():
     
@@ -97,30 +124,30 @@ screen overlay_stats():
                     bar:
                         right_bar "gui/stats/empty.png"
                         left_bar "gui/stats/stat_2.png"
-                        value AnimatedValue(value=stat1, range=100, delay=1.0)
+                        value AnimatedValue(value=stat2, range=100, delay=1.0)
                     text "STAND-BY" align(0.5, 0.5) size 22 outlines([(1, "#181112", 0, 0)]) #color u"C69C6D"
 
                     add "gui/stats/tab.png" xoffset -20 yalign 0.5
         else:#DELPHINE BARS
-            if stat1_show:
+            if stat3_show:
                 button:
                     xysize(353,38) xalign 0.5 yoffset 10
                     bar:
                         right_bar "gui/stats/empty.png"
                         left_bar "gui/stats/stat_2.png"
-                        value AnimatedValue(value=stat1, range=100, delay=1.0)
+                        value AnimatedValue(value=stat3, range=100, delay=1.0)
                     text "SAFE" align(0.5, 0.5) size 22 outlines([(1, "#181112", 0, 0)]) #color u"C69C6D"
 
                     add "gui/stats/health.png" xoffset -20 yalign 0.5
 
-            if stat2_show:
+            if stat4_show:
                 button:
                     xysize(353,38) xalign 0.5 yoffset 20
                     bar:
                         right_bar "gui/stats/empty.png"
                         left_bar "gui/stats/stat_1.png"
                         
-                        value AnimatedValue(value=5, range=12, delay=1.0)
+                        value AnimatedValue(value=stat4, range=12, delay=1.0)
                     add "gui/stats/segment.png"
                     #text "STAND-BY" align(0.5, 0.5) size 22 outlines([(1, "#181112", 0, 0)]) #color u"C69C6D"
 
