@@ -39,6 +39,18 @@ screen lvl3_corridor_explore_01():
 label exp_lvl3_corridor_01_doors:
     $ renpy.block_rollback()
     pause 0.5
+    de_i surprise "(These are...{w=0.5} Some impressively heavy duty doors.)"
+    pause 0.5
+    show Delphine surprise at de_med:
+        xalign 0.5
+    with dissolve
+    pause 0.5
+    play sound "audio/se/thud_metal.ogg"
+    queue sound "audio/se/thud_metal.ogg"
+    pause 0.5
+    de_i nulla "(This is the kind of door I've only seen used in bulkheads on ships...{w=0.5} Or submarines.{w=0.3} Certainly not in any office building.)"
+    show Delphine smile
+    de_i nulla "(Goodness, the salaries must be {i}terrible{/i} around here...{w=0.5} And the workers quite the frequenters of the corporate gym.)"
     
     if exp_lvl3_corridor_01_doors == False:
         $ exp_lvl3_corridor_01_doors = True
