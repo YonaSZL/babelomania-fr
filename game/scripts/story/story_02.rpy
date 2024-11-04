@@ -126,4 +126,5 @@ label story_02_lvl3:
     de nulla "<Why go through all that trouble to kidnap me only to leave me unguarded?>"
     pause 1.5
     scene lvl3_corridor with dissolve
-    
+    pause 1.0
+    call screen 
