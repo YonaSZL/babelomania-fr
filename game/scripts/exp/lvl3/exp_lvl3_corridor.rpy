@@ -1,7 +1,7 @@
 default lvl3_corridor_explore_01 = 0
-default exp_lvl3_corridor_01_shelves = False
-default exp_lvl3_corridor_01_fridge = False
-default exp_lvl3_corridor_01_bed = False
+default exp_lvl3_corridor_01_doors = False
+default exp_lvl3_corridor_01_elevators = False
+default exp_lvl3_corridor_01_meeting = False
 
 screen lvl3_corridor_explore_01():
 
@@ -13,8 +13,8 @@ screen lvl3_corridor_explore_01():
         background None
         hover_sound "audio/sfx/gui_hover.ogg"
         activate_sound "audio/sfx/gui_confirm.ogg"
-        action Jump("exp_lvl3_corridor_01_bed")
-        tooltip _("Cot")
+        action Jump("exp_lvl3_corridor_01_doors")
+        tooltip _("Doors")
 
     if exp_lvl3_corridor_01_bed:
         button:
@@ -23,8 +23,8 @@ screen lvl3_corridor_explore_01():
             background None
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_confirm.ogg"
-            action Jump("exp_lvl3_corridor_01_fridge")
-            tooltip _("Fridge")
+            action Jump("exp_lvl3_corridor_01_elevators")
+            tooltip _("Elevators")
     
     if exp_lvl3_corridor_01_fridge:
         button:
@@ -33,5 +33,15 @@ screen lvl3_corridor_explore_01():
             background None
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_confirm.ogg"
-            action Jump("exp_lvl3_corridor_01_shelves")
-            tooltip _("Shelves")
+            action Jump("exp_lvl3_corridor_01_meeting")
+            tooltip _("Meeting")
+
+label exp_lvl3_corridor_01_doors:
+    $ renpy.block_rollback()
+    pause 0.5
+    
+    if exp_lvl3_corridor_01_doors == False:
+        $ exp_lvl3_corridor_01_doors = True
+        $ lvl3_corridor_explore_01 += 1
+    pause 1.0
+    call screen lvl3_wellness_explore_01
