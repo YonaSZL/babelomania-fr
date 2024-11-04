@@ -9,14 +9,15 @@ label story_02_delphine:
     play music "audio/bgm/francesco.ogg" fadein 1.5
     pause 1.5
     de_x neutral darko "<...don't understand...{w=0.5} Don't you ever miss them...?{w=0.3} I miss my mother every day.>"
-    fr sad darko "<I do...{w=0.5} But more than that, I grieve for the time that was taken from us.>"
+    de_x frown darko "<She was far from a perfect mom, believe me...{w=0.5} But still.>"
+    fr sad darko "<I do miss them...{w=0.5} But more than that, I grieve for the time that was taken from us.>"
     pause 1.0
     scene francesco_flashback with Reveal2
     pause 1.5
     fr sad "<I never got the opportunity to know them...{w=0.5} Properly get to know them.{w=0.3} I was so young, and all I knew of them was what kind of parents they were.>"
-    de_x surprise darko "<Were they not good parents?>"
-    fr sad "<They were amazing.{w=0.3} But being a parent was only part of who they were.>"
-    fr surprise "<I never got the chance to mature, become their equal.{w=0.3} To measure up against who they were, to develop my own convictions and ideals.{w=0.3} Clash against theirs.>"
+    de_x surprise darko "<Were they that bad?{w=0.3} And here I am always trauma-dumping about my mom.>"
+    fr sad "<No, they were amazing...{w=0.3} But being a parent was only part of who they were.>"
+    fr surprise "<I never got the chance to mature and become their equal.{w=0.3} To measure up against who they were, to develop my own convictions and ideals.{w=0.3} Clash against theirs.>"
     fr neutral "<The discussions about music, food, and politics.{w=0.5} Who to go out with, who to marry, names for grandchildren, furniture, clothes...{w=0.5} All those little things that most take for granted.>"
     fr sad "<I never got the chance to really know my parents as people...{w=0.5} That chance, that opportunity, was taken from us.{w=0.3} And it left a hole that shall never be filled.>"
     pause 2.0
