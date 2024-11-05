@@ -53,26 +53,25 @@ label story_02_delphine:
     pause 1.5
     de_xi nulla "(.{w=0.3}.{w=0.3}.{w=0.5}where the eff is this?)"
     show Delphine surprise
-    de_xi nulla "(This isn't the wedding...{w=0.5} Not the reception room and it doesn't even look like the same building, either!{w=0.3} I...{w=0.5} Did I pass out?)"
+    de_xi nulla "(This isn't the reception room...{w=0.5} It doesn't even look like the same building!{w=0.3} I...{w=0.5} Did I pass out?)"
     show Delphine neutral
     de_xi nulla "(Last thing I remember, we were about to watch our wedding video, and then...?{w=0.5} Then what?)"
     pause 1.5
     show Delphine shock with dissolve
     pause 0.5
-    de_xi nulla "(Could this be...?{w=0.5} And on {nw}"
-    play sound4 "audio/sfx/gui_solved.ogg"
-    extend "{b}my wedding{/b}, of all days?)"
+    de_xi nulla "(I'm drawing a complete blank...{w=0.5} Triastsia, this isn't normal.{w=0.3} How did I get here?{w=0.3} How did I pass out?!)"
     show Delphine surprise
-    de nulla "<Triastsia...!{w=0.5} Just when the most dangerous things I have on me are high heels.>"
-    show Delphine shock
-    de nulla "<And if I'm here, what happened to dad?{w=0.3} Francesco?!{w=0.3} Everyone...!>"
-    pause 1.0
-    show Delphine frown with dissolve
-    de_i nulla "(One thing at the time, Delphine.{w=0.3} Breathe.{w=0.3} First thing you need to do is understand your surroundings.)"
+    de_xi "(And if I'm here, what happened to dad?{w=0.3} Francesco?!{w=0.3} Everyone...!)"
+    pause 1.5
+    show Delphine frown with Reveal
+    pause 0.5
+    de_xi nulla "(Alright, {nw}"
+    play sound4 "audio/sfx/gui_solved.ogg"
+    extend "{b}Delphine{/b}?{w=0.3} Sweet cheeks?{w=0.3} I'm gonna need you to calm down.{w=0.3} Breathe.{w=0.3} Be a bit more like mom, for a little bit.{w=0.3} You can go back to cover girl in the wondrous high heels later.)"
     pause 1.0
     scene lvl3_wellness_dim with dissolve
     pause 0.5
-    de_i surprise "(Otherwise known as:{w=0.15} where the heck am I?)"
+    de_i surprise "(First thing you need to do is understand your surroundings.{w=0.3} Otherwise known as:{w=0.15} where the heck am I?)"
     pause 1.0
     $ renpy.block_rollback()
     call screen lvl3_wellness_explore_01
