@@ -67,11 +67,11 @@ label story_02_delphine:
     pause 0.5
     de_xi nulla "(Alright, {nw}"
     play sound4 "audio/sfx/gui_solved.ogg"
-    extend "{b}Delphine{/b}?{w=0.3} Sweet cheeks?{w=0.3} I'm gonna need you to calm down.{w=0.3} Breathe.{w=0.3} Be a bit more like mom, for a little bit.{w=0.3} You can go back to cover girl in the wondrous high heels later.)"
+    extend "{b}Delphine{/b}?{w=0.3} Queen?{w=0.3} I'm gonna need you to calm down.{w=0.3} Breathe.{w=0.3} Be a bit more like mom, for a little bit.{w=0.3} You can go back to cover of World Bride in the gorgeous heels later.)"
     pause 1.0
     scene lvl3_wellness_dim with dissolve
     pause 0.5
-    de_i surprise "(First thing you need to do is understand your surroundings.{w=0.3} Otherwise known as:{w=0.15} where the heck am I?)"
+    de_i surprise "(First thing needs doing is understanding your surroundings.{w=0.3} Otherwise known as:{w=0.15} where the heck am I?)"
     pause 1.0
     $ renpy.block_rollback()
     call screen lvl3_wellness_explore_01
