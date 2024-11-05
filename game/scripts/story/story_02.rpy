@@ -122,9 +122,9 @@ label story_02_lvl3:
     show Delphine neutral
     de nulla "<I guess they just lease their technology...{w=0.5} That confirms I'm still in France, then, considering what Francesco told me about company policy.>"
     show Delphine frown
-    de nulla "<Anyway, the...{w=0.5} The door just opened on its own and...{w=0.5} No one is here?{w=0.3} Hello?>"
+    de nulla "<Anyway, the door just opened on its own and now...{w=0.5} No one is here?{w=0.3} He-{w=0.15}lloooo?>"
     show Delphine surprise
-    de nulla "<They roipnol me or something, stash me in the Atlas Sharted room and then leave me to my own devices?!{w=0.3} What kind of schizo kidnapping is this?!>"
+    de nulla "<They roipnol me or some shit, stash me in the Atlas Sharted room and then leave me to my own devices?!{w=0.3} What kind of schizo kidnapping is this?!>"
     pause 1.5
     scene lvl3_corridor with dissolve
     de frown "<Ugh, whatever.{w=0.3} Let's find the exit.>"
