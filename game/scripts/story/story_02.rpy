@@ -21,7 +21,7 @@ label story_02_delphine:
     fr neutral "<The discussions about music, food, and politics.{w=0.5} Who to go out with, who to marry, names for grandchildren, furniture, clothes...{w=0.5} All those little things that most take for granted.>"
     fr sad "<I never got the chance to really know my parents as people...{w=0.5} That chance, that opportunity, was taken from us.{w=0.3} And it left a hole that shall never be filled.>"
     pause 2.0
-    de_x neutral darko "<I'm still confused, Francesco...{w=0.5} Even more so, now.{w=0.3} If you grieve them and the time lost so much...>"
+    de_x neutral darko "<I'm still confused, Francesco...{w=0.5} Even more so, now.{w=0.3} If you grieve them like that...>"
     de_x surprise darko "<Why have you {nw}"
     play sound4 "audio/sfx/gui_spook.ogg"
     stop music fadeout 3.5
@@ -51,11 +51,11 @@ label story_02_delphine:
         xalign 0.5
     with Reveal2
     pause 1.5
-    de_xi nulla "(.{w=0.3}.{w=0.3}.{w=0.5}where the hell is this?)"
+    de_xi nulla "(.{w=0.3}.{w=0.3}.{w=0.5}where the eff is this?)"
     show Delphine surprise
-    de_xi nulla "(What happened to the wedding?{w=0.3} What happened to everyone?{w=0.3} I...{w=0.5} Did I pass out?)"
+    de_xi nulla "(This isn't the wedding...{w=0.5} Not the reception room and it doesn't even look like the same building, either!{w=0.3} I...{w=0.5} Did I pass out?)"
     show Delphine neutral
-    de_xi nulla "(Last thing I remember, we...{w=0.5} We were about to watch our wedding video, and then...?{w=0.5} Then what?)"
+    de_xi nulla "(Last thing I remember, we were about to watch our wedding video, and then...?{w=0.5} Then what?)"
     pause 1.5
     show Delphine shock with dissolve
     pause 0.5
