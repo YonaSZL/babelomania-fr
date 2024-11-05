@@ -78,13 +78,13 @@ label story_02_delphine:
 
 label story_02_wellness_done:
     $ renpy.block_rollback()
-    de_i frown "(No clock anywhere...{w=0.5} There's no way of knowing how long I was out.)"
+    de_i frown "(Anyway, I see no clock...{w=0.5} No way of knowing how long I was out, then.{w=0.3} And nothing else of interest I can see.)"
     pause 0.5
     show Delphine frown at de_big:
         xalign 0.5
     with dissolve
     pause 0.5
-    de_i neutral "(Time to leave.{w=0.3} How do I open this door...?)"
+    de_i neutral "(Time to quit this emofest.{w=0.3} But how do I open this door...?)"
     pause 1.0
     stop music fadeout 0.3
     play sound "audio/se/jingle_flambas.ogg"
@@ -95,15 +95,15 @@ label story_02_wellness_done:
     show Delphine shock sweat at de_big:
         xalign 0.5
     pause 0.8
-    inter "<Thank you for deciding to rest with {b}Flambas Welness Rooms{/b}.{w=0.3} Your allotted relaxation time has expired.>"
+    inter "Thank you for deciding to rest with {b}Flambas Welness Rooms{/b}.{w=0.3} Your allotted relaxation time has expired."
     show Delphine surprise
-    inter "<The door will be opening up shortly.{w=0.3} We wish you a pleasant continuation of your standard work day.>"
-    de nulla "<That scared the hell out of me...{w=0.5} Wait, Flambas?>"
+    inter "The door will be opening up shortly.{w=0.3} We wish you a pleasant continuation of your standard work day."
+    de nulla "<OT KURVA, that scared the hell out of me...!{w=0.5} Wait, Flambas?>"
     pause 1.0
     show Delphine shock with Reveal
     de nulla "<That's...{w=0.5} That's {nw}"
     play sound4 "audio/sfx/gui_spook.ogg"
-    extend "{b}Francesco's workplace{/b}!>"
+    extend "{b}Francesco's workplace{/b}...>"
     play music "audio/bgm/flambas_lvl3.ogg"
     pause 1.5
     scene black with Reveal3
@@ -120,11 +120,13 @@ label story_02_lvl3:
     with de_mid
     de nulla "<I visited him at work, before...{w=0.5} The architecture is completely different, here.>"
     show Delphine neutral
-    de nulla "<I guess this facility place just uses their technology...{w=0.5} Still, that confirms I'm still in France, considering what Francesco told me about their policies.>"
-    de nulla "<It feels quiet...{w=0.5} Empty, even.{w=0.3} But that makes no sense.>"
+    de nulla "<I guess they just lease their technology...{w=0.5} That confirms I'm still in France, then, considering what Francesco told me about company policy.>"
+    show Delphine frown
+    de nulla "<Anyway, the...{w=0.5} The door just opened on its own and...{w=0.5} No one is here?{w=0.3} Hello?>"
     show Delphine surprise
-    de nulla "<Why go through all that trouble to kidnap me only to leave me unguarded?>"
+    de nulla "<They roipnol me or something, stash me in the Atlas Shrugged room and then leave me to my own devices?!{w=0.3} What kind of schizo kidnapping is this?!>"
     pause 1.5
     scene lvl3_corridor with dissolve
+    de frown "<Ugh, whatever.{w=0.3} Let's find the exit.>"
     pause 1.0
     call screen 
