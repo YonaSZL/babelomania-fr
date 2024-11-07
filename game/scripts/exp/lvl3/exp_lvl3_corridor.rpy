@@ -63,6 +63,8 @@ label exp_lvl3_corridor_01_doors:
     de nulla "<.{w=0.3}.{w=0.3}.{w=0.5}either way, it hasn't automatically opened at my passage.{w=0.3} Like an alloy boor.>"
     show Delphine neutral
     de nulla "<I don't see a keyhole or anything like that...{w=0.5} What am I missing?>"
+    pause 1.0
+    scene lvl3_corridor with dissolve
     if exp_lvl3_corridor_01_doors == False:
         $ exp_lvl3_corridor_01_doors = True
         $ lvl3_corridor_explore_01 += 1
@@ -82,10 +84,41 @@ label exp_lvl3_corridor_01_elevators:
     pause 0.5
     play sound4 "audio/em/em_surprise.ogg"
     show screen emote("surprise",0.17,0.5)
-    de_i shock "<...!{w=0.3} SERIOUSLY?!>"
+    de shock "<...!{w=0.3} SERIOUSLY?!>"
     play sound2 "audio/se/door_elevator.ogg"
     pause 0.5
-    scene elevator_closed
+    scene elevator_closed with Reveal
+    pause 1.5
+    de shock "<It cannot be...{w=0.5} It cannot be that easy!{w=0.3} None of this makes sense!>"
+    pause 0.5
+    show Delphine shock at de_med:
+        xalign 0.5
+    with dissolve
+    de nulla "<I feel like I'm in a fever dream...{w=0.5} Maybe I am?{w=0.3} Am I still asleep?>"
+    pause 1.0
+    show Delphine frown
+    de nulla "<Ugh, get real, Delphine.{w=0.3} No dream or nightmare of yours would ever contain Perrier.>"
+    show Delphine neutral
+    de nulla "<There's something else going on, obviously...{w=0.5} Something weird.{w=0.3} And even though you can freely access this elevator...>"
+    pause 0.5
+    scene elevator_panel with Reveal
+    pause 0.5
+    de neutral "<You're still missing the keys to the executive toilets.>"
+    de_i neutral "(Literally, maybe...{w=0.5} There's a panel which I assume serves for scanning {nw}"
+    play sound4 "audio/sfx/gui_hint.ogg"
+    extend "{b}keycards{/b}...{w=0.5} And one single floor, instead, necessitates a physical key.)"
+    de_i frown "(A signel P...{w=0.5} Parking, maybe?{w=0.3} The other floor names, though...{w=0.5} Lab, security, archive...)"
+    de_i surprise "(I'm...{w=0.5} Wait, so this is some kind of {nw})"
+    play sound4 "audio/sfx/gui_spook.ogg"
+    extend "{b}research facility{/b}?)"
+    pause 1.5
+    de_i frown sweat "(This is getting creepier and creepier...{w=0.5} Anyway.)"
+    play sound "audio/se/elevator_button.ogg"
+    de_i neutral "(As I thought, without a keycard, this elevator is dead.{w=0.3} I need to find one.)"
+    de_i frown "(Except, the area seems completely bereft of people who may be carrying one...{w=0.5} And even then, am I really sure I want to run into one?)"
+    pause 1.0
+    play sound2 "audio/se/door_elevator.ogg"
+    scene lvl3_corridor with dissolve
     if exp_lvl3_corridor_01_elevators == False:
         $ exp_lvl3_corridor_01_elevators = True
         $ lvl3_corridor_explore_01 += 1

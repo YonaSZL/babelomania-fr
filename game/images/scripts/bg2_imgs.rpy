@@ -9,3 +9,4 @@ image lvl3_corridor_dark = "images/bgs/lab/lvl3/lvl3_corridor_dark.jpg"
 
 image elevator_closed = "images/bgs/lab/elevator_closed.jpg"
 image elevator_open = "images/bgs/lab/elevator_open.jpg"
+image elevator_panel = "images/bgs/lab/elevator_panel.jpg"
