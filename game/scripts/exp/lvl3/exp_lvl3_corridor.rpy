@@ -35,15 +35,16 @@ screen lvl3_corridor_explore_01():
         activate_sound "audio/sfx/gui_confirm.ogg"
         action Jump("exp_lvl3_corridor_01_meeting_closed")
         tooltip _("Meeting Room")
-    
-    button:
-        pos(993,454)
-        xysize(128,297)
-        background None
-        hover_sound "audio/sfx/gui_hover.ogg"
-        activate_sound "audio/sfx/gui_confirm.ogg"
-        action Jump("exp_lvl3_corridor_01_cargo")
-        tooltip _("Cargo Lift")
+
+    if exp_lvl3_corridor_01_elevators:
+        button:
+            pos(993,454)
+            xysize(128,297)
+            background None
+            hover_sound "audio/sfx/gui_hover.ogg"
+            activate_sound "audio/sfx/gui_confirm.ogg"
+            action Jump("exp_lvl3_corridor_01_cargo")
+            tooltip _("Cargo Lift")
 
     if lvl3_corridor_explore_01 >= 3:
         button:
@@ -161,19 +162,6 @@ label exp_lvl3_corridor_01_meeting_closed:
         if exp_lvl3_corridor_01_meeting_closed == False:
             $ exp_lvl3_corridor_01_meeting_closed = True
             $ lvl3_corridor_explore_01 += 1
-        
-    pause 1.0
-    call screen lvl3_wellness_explore_01
-
-label exp_lvl3_corridor_01_meeting_open:
-    $ renpy.block_rollback()
-    pause 0.5
-    de_i surprise "(These are...{w=0.5} Some impressively heavy duty doors.)"
-    pause 0.5
-
-    if exp_lvl3_corridor_01_meeting_closed == False:
-        $ exp_lvl3_corridor_01_meeting_closed = True
-        $ lvl3_corridor_explore_01 += 1
     pause 1.0
     call screen lvl3_wellness_explore_01
 
@@ -185,6 +173,19 @@ label exp_lvl3_corridor_01_cargo:
 
     if exp_lvl3_corridor_01_cargo == False:
         $ exp_lvl3_corridor_01_cargo = True
+        $ lvl3_corridor_explore_01 += 1
+    pause 1.0
+    call screen lvl3_wellness_explore_01
+
+
+label exp_lvl3_corridor_01_meeting_open:
+    $ renpy.block_rollback()
+    pause 0.5
+    de_i surprise "(These are...{w=0.5} Some impressively heavy duty doors.)"
+    pause 0.5
+
+    if exp_lvl3_corridor_01_meeting_closed == False:
+        $ exp_lvl3_corridor_01_meeting_closed = True
         $ lvl3_corridor_explore_01 += 1
     pause 1.0
     call screen lvl3_wellness_explore_01
