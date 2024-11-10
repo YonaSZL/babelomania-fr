@@ -152,7 +152,7 @@ label exp_lvl3_corridor_01_meeting_closed:
     de_i frown "(Always found this style a little creepy...{w=0.5} I keep thinking of what it would feel like to look down and see someone perving on people's ankles.{w=0.3} Eugh.)"
     if exp_lvl3_corridor_01_elevators:
         de_i neutral "(Still...{w=0.5} Neither the doors nor the elevators are opening right now, and my best bet is finding a keycard...{w=0.5} Nothing else for it.)"
-        show 
+        #show 
         play sound3 "audio/se/doorknob_rattle.ogg"
         pause 1.0
         play sound3 "audio/se/doorknob_rattle.ogg"

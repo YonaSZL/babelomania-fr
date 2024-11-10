@@ -88,6 +88,13 @@ screen extra_nav():
             tooltip _("Music")
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_confirm.ogg"
+        
+        button:
+            xysize(120,120)
+            add "gui/gm/nav_btn.png"
+            add "gui/gm/codex.png" at button_fade
+            action [ShowMenu("global_codex"), Show("global_categories")]
+            tooltip "Codex"
 
 
         ###This will bring up a second set of menu in place of this one with

@@ -1,12 +1,13 @@
 
 init python:
     class Entry:
-        def __init__(self, title, scr, locked):
+        def __init__(self, title, scr, locked, owner):
             self.title = title
             self.scr = scr
             self.locked = locked
+            self.owner = owner
 
-    test_entry = Entry("Test title", "stuff", False)
+    test_entry = Entry("Test title", "stuff", False, "Delphine")
 
 #SHIGEO CATEGORIES
 default shigeo_people = []
@@ -14,16 +15,16 @@ default shigeo_events = []
 default shigeo_locations = []
 default shigeo_items = []
 #DELPHINE CATEGORIES
-default delphine_people = []
-default delphine_events = []
-default delphine_locations = []
-default delphine_items = []
+default delphine_people = [test_entry]
+default delphine_events = [test_entry]
+default delphine_locations = [test_entry]
+default delphine_items = [test_entry]
 
-default c_chateau_dubois = Entry("Chateau de Bois-le-Dumont", "scr_chateau_dubois", False)
+default c_chateau_dubois = Entry("Chateau de Bois-le-Dumont", "scr_chateau_dubois", False, "Shigeo")
 default c_chateau_dubois_taisho = False
 
-default c_taisho = Entry("Taisho Era of Japan", "scr_taisho", False)
-default c_babel_painting = Entry("Painting of Babel", "scr_babel_painting", False)
+default c_taisho = Entry("Taisho Era of Japan", "scr_taisho", False, "Shigeo")
+default c_babel_painting = Entry("Painting of Babel", "scr_babel_painting", False, "Shigeo")
 
 default current_entry = None
 screen codex_main():
