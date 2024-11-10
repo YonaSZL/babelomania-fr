@@ -75,7 +75,7 @@ screen extra_nav():
             xysize(120,120)
             add "gui/gm/nav_btn.png"
             add "gui/gm/gallery.png" at button_fade
-            action ShowMenu("gallery")
+            action [ShowMenu("gallery"), Hide("global_categories", dissolve) , Hide("global_entries", dissolve)]
             tooltip _("Gallery")
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_confirm.ogg"
@@ -84,7 +84,7 @@ screen extra_nav():
             xysize(120,120)
             add "gui/gm/nav_btn.png"
             add "gui/gm/music.png" at button_fade
-            action ShowMenu("music_room3", my_room)
+            action [ShowMenu("music_room3", my_room), Hide("global_categories", dissolve) , Hide("global_entries", dissolve)]
             tooltip _("Music")
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_confirm.ogg"
@@ -139,7 +139,7 @@ screen game_menu(title):
     button:
         xysize(66,66) pos(1750,820)
         add "gui/gm/return.png" at button_fade
-        action Return()
+        action [Hide("global_categories", dissolve) , Hide("global_entries", dissolve), Return()]
         hover_sound "audio/sfx/gui_hover.ogg"
         activate_sound "audio/sfx/gui_return.ogg"
 
