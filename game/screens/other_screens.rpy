@@ -72,13 +72,13 @@ screen about():
             xoffset 15 yoffset -20 spacing 20
             vbox:
                 label _("{size=35}PRODUCER, DIRECTOR") yalign 0.5
-                text "{a=https://meinoskaen.bsky.app}\"Meinos Kaen\"{/a}" xoffset 15 yalign 0.5
+                text "{a=https://meinoskaen.bsky.social}\"Meinos Kaen\"{/a}" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}PROGRAMMERS") yalign 0.5
                 text "\"Meinos Kaen\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}BACKGROUND ARTISTS") yalign 0.5
-                text "{a=https://x.com/ReinaTensei}\"Reina\"{/a}, \"Fuura Xen\"" xoffset 15 yalign 0.5
+                text "{a=https://reinalol.bsky.social}\"Reina\"{/a}, \"Fuura Xen\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}CHARACTER SPRITE ARTIST") yalign 0.5
                 text "{a=https://nicanjil.carrd.co/}\"NicAnjil\"{/a}" xoffset 15 yalign 0.5
@@ -93,7 +93,7 @@ screen about():
                 text "{a=https://halebob.artstation.com/}\"Halebob\"{/a}" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}GUI ARTIST, PROGRAMMER") yalign 0.5
-                text "\"Skolaztika\"" xoffset 15 yalign 0.5
+                text "{a=https://skolaztika.bsky.social}\"Skolaztika\"{/a}" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}LOGO ARTIST") yalign 0.5
                 text "{a=https://johanmeow.carrd.co/}\"Johan Meow\"{/a}, \"Meinos Kaen\"" xoffset 15 yalign 0.5
