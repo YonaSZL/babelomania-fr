@@ -1,10 +1,10 @@
 default lvl3_corridor_explore_01 = 0
 default exp_lvl3_corridor_01_doors = False
 default exp_lvl3_corridor_01_elevators = False
+default exp_lvl3_corridor_01_blood = False
 default exp_lvl3_corridor_01_meeting_closed = False
-default exp_lvl3_corridor_01_cargo = False
-default exp_lvl3_corridor_01_meeting_open = False
 
+#Add blood seeping under the door after going into the elevators
 screen lvl3_corridor_explore_01():
 
     tag exploration
@@ -27,6 +27,19 @@ screen lvl3_corridor_explore_01():
         action Jump("exp_lvl3_corridor_01_elevators")
         tooltip _("Elevators")
     
+    if exp_lvl3_corridor_01_elevators:
+        button:
+            pos(993,454)
+            xysize(128,297)
+            background None
+            hover_sound "audio/sfx/gui_hover.ogg"
+            activate_sound "audio/sfx/gui_confirm.ogg"
+            action Jump("exp_lvl3_corridor_01_blood")
+            if exp_lvl3_corridor_01_blood:
+                tooltip _("Blood")
+            else:
+                tooltip _("?????")
+    
     button:
         pos(993,454)
         xysize(128,297)
@@ -36,17 +49,7 @@ screen lvl3_corridor_explore_01():
         action Jump("exp_lvl3_corridor_01_meeting_closed")
         tooltip _("Meeting Room")
 
-    if exp_lvl3_corridor_01_elevators:
-        button:
-            pos(993,454)
-            xysize(128,297)
-            background None
-            hover_sound "audio/sfx/gui_hover.ogg"
-            activate_sound "audio/sfx/gui_confirm.ogg"
-            action Jump("exp_lvl3_corridor_01_cargo")
-            tooltip _("Cargo Lift")
-
-    if lvl3_corridor_explore_01 >= 3:
+    if lvl3_corridor_explore_01 == 4:
         button:
             pos(993,454)
             xysize(128,297)
@@ -132,60 +135,87 @@ label exp_lvl3_corridor_01_elevators:
     play sound4 "audio/sfx/gui_spook.ogg"
     extend "{b}research facility{/b}?)"
     pause 1.5
-    de_i frown sweat "(This is getting creepier and creepier...{w=0.5} Anyway.)"
+    de_i frown sweat "(This is getting creepier and creepier...{w=0.5} Anyway, that would explain the big elevator too.{w=0.3} It's for transporting cargo, then.)"
     play sound "audio/se/elevator_button.ogg"
     de_i neutral "(As I thought, without a keycard, this elevator is dead.{w=0.3} I need to find one.)"
     de_i frown "(Except, the area seems completely bereft of people who may be carrying one...{w=0.5} And even then, am I really sure I want to run into one?)"
     pause 1.0
-    play sound2 "audio/se/door_elevator.ogg"
-    scene lvl3_corridor with dissolve
     if exp_lvl3_corridor_01_elevators == False:
         $ exp_lvl3_corridor_01_elevators = True
         $ lvl3_corridor_explore_01 += 1
+    play sound2 "audio/se/door_elevator.ogg"
+    scene black with dissolve
+    pause 1.0
+    scene lvl3_corridor with dissolve
+    pause 1.0
+    call screen lvl3_wellness_explore_01
+
+label exp_lvl3_corridor_01_blood:
+    $ renpy.block_rollback()
+    pause 0.5
+    if exp_lvl3_corridor_01_blood == False:
+        de_i neutral "(Hmmm...?{w=0.3} Something is seeping through underneath the door.{w=0.3} Is that...?)"
+        pause 1.0
+        stop music fadeout 3.5
+        pause 0.5
+        de surprise "<No...{w=0.5} Wait.>"
+        pause 0.5
+        show Delphine shock with dissolve:
+            xalign 0.5
+        pause 0.5
+        de nulla "<Wait...{w=0.5} Waitwaitwaitwait.{w=0.3} That's...{w=0.5} That's {nw}"
+        play sound4 "audio/sfx/gui_spook.ogg"
+        de nulla "{b}blood{/b}?"
+        play music "audio/bgm/shadows_whisper.ogg"
+        pause 1.0
+        show Delphine shock sweat with dissolve
+        de nulla "<Blood...{w=0.5} Blood seeping underneath a security door...{w=0.5} In a research facility...{w=0.5} Fresh smelling blood.{w=0.3} I...>"
+        show Delphine neutral
+        de nulla "<I...{w=0.5} I need to find an exit.{w=0.3} I need to find a damn keycard!{w=0.3} I need to get out of here!>"
+        pause 1.0
+        scene lvl3_corridor with dissolve
+        if exp_lvl3_corridor_01_blood == False:
+            $ exp_lvl3_corridor_01_blood = True
+            $ lvl3_corridor_explore_01 += 1
+    else:
+        de_i shock sweat "(The more I look at it, the more gruesome images pop in my head!{w=0.5} This started out annoying, became creepy and now...)"
+        de_i frown sweat "(And just when the most dangerous thing I have on me are high heels.)"
     pause 1.0
     call screen lvl3_wellness_explore_01
 
 label exp_lvl3_corridor_01_meeting_closed:
     $ renpy.block_rollback()
     pause 0.5
-    de_i neutral "(A corporate meeting room...{w=0.5} With obscuring glass.{w=0.3} You can't really tell what's going on on the inside, but you can tell if people are using it.)"
-    de_i frown "(Always found this style a little creepy...{w=0.5} I keep thinking of what it would feel like to look down and see someone perving on people's ankles.{w=0.3} Eugh.)"
-    if exp_lvl3_corridor_01_elevators:
-        de_i neutral "(Still...{w=0.5} Neither the doors nor the elevators are opening right now, and my best bet is finding a keycard...{w=0.5} Nothing else for it.)"
-        #show 
+    if exp_lvl3_corridor_01_blood:
+        de_i frown sweat "(The elevators aren't working, the wellness room is fucking useless...!{w=0.5} Meeting room, then?!)"
         play sound3 "audio/se/doorknob_rattle.ogg"
         pause 1.0
         play sound3 "audio/se/doorknob_rattle.ogg"
         pause 0.3
-        de_i frown "(Chort.{w=0.3} Of course.)"
-        de_i neutral "(There better be something I can open around here...)"
+        de_i angry sweat "(Chort!{w=0.3} Of course.{w=0.3} Of course!)"
+        de_i frown sweat "(There must be something I can open around here...!!!)"
         if exp_lvl3_corridor_01_meeting_closed == False:
             $ exp_lvl3_corridor_01_meeting_closed = True
             $ lvl3_corridor_explore_01 += 1
+    else:
+        de_i neutral "(A corporate meeting room with obscuring glass.{w=0.3} You can't really tell what's going on on the inside, but you can tell if people are using it.)"
+        de_i frown "(Always found this style a little creepy...{w=0.5} I keep thinking of what it would feel like to look down and see someone perving on people's ankles.{w=0.3} Eugh.)"
     pause 1.0
     call screen lvl3_wellness_explore_01
-
-label exp_lvl3_corridor_01_cargo:
-    $ renpy.block_rollback()
-    pause 0.5
-    de_i surprise "(These are...{w=0.5} Some impressively heavy duty doors.)"
-    pause 0.5
-
-    if exp_lvl3_corridor_01_cargo == False:
-        $ exp_lvl3_corridor_01_cargo = True
-        $ lvl3_corridor_explore_01 += 1
-    pause 1.0
-    call screen lvl3_wellness_explore_01
-
 
 label exp_lvl3_corridor_01_meeting_open:
     $ renpy.block_rollback()
     pause 0.5
-    de_i surprise "(These are...{w=0.5} Some impressively heavy duty doors.)"
-    pause 0.5
-
-    if exp_lvl3_corridor_01_meeting_closed == False:
-        $ exp_lvl3_corridor_01_meeting_closed = True
-        $ lvl3_corridor_explore_01 += 1
+    de_i frown sweat "(Meeting room number two...!{w=0.3} Come on!)"
+    play sound2 "audio/se/doorknob_rattle.ogg"
     pause 1.0
+    play sound2 "audio/se/door_unlock.ogg"
+    de_i shock sweat "(Some luck, finally!{w=0.3} There better be a keycard inside here!)"
+    pause 1.0
+    play sound3 "audio/se/door_creak.ogg"
+    scene black with dissolve
+    pause 1.0
+    scene lvl3_meeting with Reveal
+    pause 1.5
+    
     call screen lvl3_wellness_explore_01
