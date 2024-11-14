@@ -217,5 +217,8 @@ label exp_lvl3_corridor_01_meeting_open:
     pause 1.0
     scene lvl3_meeting with Reveal
     pause 1.5
-    
-    call screen lvl3_wellness_explore_01
+    de_i neutral sweat "(Alright...{w=0.5} Okay, there's plenty of spots to search through.{w=0.3} Let's calm down, Delphine.)"
+    de_i frown sweat "(You're still in control, here.{w=0.3} You managed to throw Gretchen a successful bridal shower, there's nothing you can't do after that.)"
+    de_i neutral -sweat "(Do this methodically but swiftly.{w=0.3} Let's take a look around.)"
+    pause 1.0
+    call screen lvl3_meeting_examine_01
