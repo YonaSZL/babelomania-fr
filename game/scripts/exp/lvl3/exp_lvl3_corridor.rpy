@@ -160,8 +160,9 @@ label exp_lvl3_corridor_01_blood:
         pause 0.5
         de surprise "<No...{w=0.5} Wait.>"
         pause 0.5
-        show Delphine shock with dissolve:
+        show Delphine shock at de_big:
             xalign 0.5
+        with dissolve
         pause 0.5
         de nulla "<Wait...{w=0.5} Waitwaitwaitwait.{w=0.3} That's...{w=0.5} That's {nw}"
         play sound4 "audio/sfx/gui_spook.ogg"

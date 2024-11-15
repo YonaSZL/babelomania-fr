@@ -87,8 +87,8 @@ image gaspard_tear = ConditionSwitch(
 
 #Chapter 02
 
-image francesco_flashback = "images/cgs/chapter_00/gaspard/francesco_flashback.jpg"
-image francesco_flashback_b = "images/cgs/chapter_00/gaspard/francesco_flashback_b.jpg"
+image francesco_flashback = "images/cgs/chapter_02/gaspard/francesco_flashback.jpg"
+image francesco_flashback_b = "images/cgs/chapter_02/gaspard/francesco_flashback_b.jpg"
 image francesco_flashback_glitch:
     "francesco_flashback"
     pause 0.05
@@ -103,3 +103,6 @@ image francesco_flashback_glitch:
     "francesco_flashback_b"
     pause 0.05
     "francesco_flashback"
+
+image open_folder = "images/cgs/chapter_02/open_folder.jpg"
+image closed_folder = "images/cgs/chapter_02/closed_folder.jpg"
