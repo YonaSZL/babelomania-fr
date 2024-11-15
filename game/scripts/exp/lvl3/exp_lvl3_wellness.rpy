@@ -8,8 +8,8 @@ screen lvl3_wellness_explore_01():
     tag exploration
 
     button:
-        pos(993,454)
-        xysize(128,297)
+        pos(546,664)
+        xysize(388,416)
         background None
         hover_sound "audio/sfx/gui_hover.ogg"
         activate_sound "audio/sfx/gui_confirm.ogg"
@@ -18,8 +18,8 @@ screen lvl3_wellness_explore_01():
 
     if exp_lvl3_wellness_01_bed:
         button:
-            pos(993,454)
-            xysize(128,297)
+            pos(960,465)
+            xysize(274,461)
             background None
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_confirm.ogg"
@@ -28,8 +28,8 @@ screen lvl3_wellness_explore_01():
     
     if exp_lvl3_wellness_01_fridge:
         button:
-            pos(993,454)
-            xysize(128,297)
+            pos(1493,294)
+            xysize(427,613)
             background None
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_confirm.ogg"
@@ -58,7 +58,7 @@ label exp_lvl3_wellness_01_shelves:
     pause 1.0
     show Delphine surprise
     de nulla "<This...{w=0.5} This can't be what I think it is, is it?{w=0.5} It can't be that mom...>"
-    pause 1.0
+    pause 1.5
     show Delphine frown with dissolve
     de nulla "<No.{w=0.3} No, hold your horses, Delphine.{w=0.3} Let's not go down that road, you've seen where it led {i}her{/i}.>"
     show Delphine neutral
@@ -83,9 +83,9 @@ label exp_lvl3_wellness_01_shelves:
 label exp_lvl3_wellness_01_fridge:
     $ renpy.block_rollback()
     pause 0.5
-    de_i surprise sweat "(Nooo, nononononono...{w=0.5} Okay, let's...{w=0.5} Check myself up real quick, here.)"
+    de_i surprise sweat "(Nooo, nononononono...{w=0.5} Okay, let's...{w=0.5} Check real quick, here.)"
     play sound "audio/se/clothes_rustle.ogg"
-    pause 0.2
+    pause 1.0
     show Delphine surprise sweat at de_med:
         xalign 0.5
     with dissolve
@@ -93,12 +93,12 @@ label exp_lvl3_wellness_01_fridge:
     de_i nulla "(Okay, the...{w=0.5} Dress is intact, and so is everything else.{w=0.3} No pain or bruises anywhere, only discomfort in the shoulder because I slept on that eyesore...{w=0.5} Slowly, now.)"
     pause 1.5
     show Delphine neutral with dissolve
-    pause 0.5
-    de_i nulla "(Alright, it...{w=0.5} It seems that nothing was done to me while I was out cold.{w=0.3} Just, shit, I'm thirsty.)"
+    pause 1.0
+    de_i nulla "(Alright, it...{w=0.5} It seems nothing was done to me while I was out cold.{w=0.3} Just, shit, I'm thirsty.)"
     show Delphine surprise
     de_i nulla "(This fridge seems on...{w=0.5} Hope there's some bottled water or something, inside.)"
     play sound4 "audio/se/door_fridge_open.ogg"
-    pause 0.5
+    pause 1.5
     show Delphine disgust with dissolve
     de nulla "<Ugh, {nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
@@ -116,6 +116,7 @@ label exp_lvl3_wellness_01_fridge:
     extend "{b}I'm still in France{/b}...{w=0.5} But being the decently sized country we are, that's not exactly helpful.)"
     de_i frown "(Although, now that I look more closely at this fridge...{w=0.5} It's quite hi-tech, isn't it?)"
     de_i neutral "(Can't think of many big corporations who'd spend this much on furniture.{w=0.5} But they also wouldn't be in the business of kidnapping random brides.)"
+    pause 1.5
     de_i frown "(.{w=0.3}.{w=0.3}.{w=0.5}except I'm no random bride, am I?)"
     if exp_lvl3_wellness_01_fridge == False:
         $ exp_lvl3_wellness_01_fridge = True
@@ -127,14 +128,15 @@ label exp_lvl3_wellness_01_bed:
     $ renpy.block_rollback()
     pause 0.5
     de_i neutral "(They were nice enough to not just drop me on the floor, but...{w=0.5} What even is this thing?)"
-    de_i frown "(I have no idea why would anyone choose to lay down on it, leave alone nap...{w=0.5} Ugh, that's why the soreness under my shoulderblade, isn't it?)"
-    de_i surprise "(And then there's this music in the background...{w=0.5} And speaking of, I can hear nothing coming in from the outside.)"
+    de_i frown "(I have no idea why anyone would choose to lay down on it, let alone nap...{w=0.5} Ugh, it's the reason why my shoulderblade's sore, isn't it?)"
+    de_i surprise "(Then there's this music in the background...{w=0.5} And I don't hear nothing coming in from outside.)"
     pause 1.5
     de_i frown "(Ugh, I think I got it.{w=0.3} This is a {nw}"
     play sound4 "audio/sfx/gui_spook.ogg"
     extend "{b}corporate wellness room{/b}, isn't it?)"
-    de_i neutral "(I remember seeing a couple at the HQ of dad's.{w=0.5} Made for the office drones to isolate themselves from the outside, inch away from the edge enough to not go postal...{w=0.5} but it still tells you not to overstay your welcome.)"
-    de_i frown "(Which means I'm no longer at the château but in some random office building...?{w=0.3} What kind of moronic-)"
+    de_i neutral "(I remember seeing a couple at dad's HQ.{w=0.5} For the office drones to isolate themselves from the outside, and go one more day without shooting up the place...{w=0.5} but it still tells you not to overstay your welcome.)"
+    de_i frown "(So I'm no longer at the château but in some random office building...?{w=0.3} What kind of moronic-)"
+    pause 1.5
     show screen emote("surprise",0.17,0.5)
     play sound "audio/em/em_surprise.ogg"
     de surprise sweat "<Wait a minute...!{w=0.3} There's no such buildings for miles, in any direction from the château!>"

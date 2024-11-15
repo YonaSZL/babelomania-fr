@@ -80,7 +80,7 @@ label story_02_delphine:
 label story_02_wellness_done:
     $ renpy.block_rollback()
     de_i frown "(Anyway, I see no clock...{w=0.5} No way of knowing how long I was out, then.{w=0.3} And nothing else of interest I can see.)"
-    pause 0.5
+    pause 1.0
     show Delphine frown at de_big:
         xalign 0.5
     with dissolve
