@@ -56,13 +56,16 @@ label exm_lvl3_meeting_01_stationary:
         xalign 0.5 yalign 0.4
     pause 1.0
     de_i surprise "(The symbol on this folder, and the others like it...{w=0.5} This is the logo of Flambas.)"
-    de_i frown "(I recognize it from the objects Francesco would bring home every now and then...{w=0.5} They love their branding.)"
+    de_i frown "(I recognize it from the objects Francesco would bring home every now and then.{w=0.3} They love their branding.)"
     de_i surprise "(So, this is not just someone else using some of their technology...{w=0.5} This place, whatever it is, belongs to them.)"
-    de_i frown sweat "(What does a bio-engineering company need a place like this for?{w=0.3} And why was I brought here?)"
-    play sound4 "audio/sfx/gui_slots_confirm.ogg"
-    show screen notify(_("Inventory Unlocked."))
-    $ inventory_show = True
+    de_i frown sweat "(What does a {nw}"
+    play sound4 "audio/sfx/gui_spook.ogg"
+    extend "{b}bio-engineering{b} company need a place like this for?{w=0.3} And why was I brought here?)"
+    de_i surprise "(There's some papers left in this folder...{w=0.5} Maybe?)"
     if exm_lvl3_meeting_01_stationary == False:
+        play sound4 "audio/sfx/gui_slots_confirm.ogg"
+        show screen notify(_("Inventory Unlocked."))
+        $ inventory_show = True
         $ exm_lvl3_meeting_01_stationary = True
         $ lvl3_meeting_examine_01 += 1
     pause 1.0
