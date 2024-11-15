@@ -788,6 +788,7 @@ label taisho_1f_library_gaspard_face:
     play sound2 "audio/se/glitch_hurt.ogg"
     sh_i angry sweat "\"GET UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUP...!!!\""
     pause 1.0
+    $ inventory_show = False
     stop music fadeout 0.3
     pause 0.5
     play sound "audio/sfx/gui_hint.ogg"

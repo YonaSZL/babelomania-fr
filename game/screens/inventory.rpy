@@ -134,6 +134,21 @@ screen inventory():
                 has vbox
 
                 textbutton _("Inspect") action [ ClearFocus("smartwatch_drop"), Show("notify", None, _("It's a Smartwatch I got from Gaspard. It connects wirelessly to a phone.")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
+    
+    if GetFocusRect("flambas_folder_drop"):
+        dismiss action ClearFocus("flambas_folder_drop")
+        nearrect:
+            focus "flambas_folder_drop"
+            frame:
+                style_prefix "dropdown"
+                #modal True
+
+                has vbox
+
+                if flambas_folder_inspected:
+                    textbutton _("Inspect") action [ ClearFocus("flambas_folder_drop"), Show("notify", None, _("A folder with the Flambas logo. Then this place is...?")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
+                else:
+                    textbutton _("Inspect") action [ ClearFocus("flambas_folder_drop"), Hide("inventory"), Jump("flambas_folder_reveal") ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
 
 style dropdown_vbox:
     spacing -5
