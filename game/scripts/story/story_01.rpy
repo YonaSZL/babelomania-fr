@@ -794,29 +794,31 @@ label taisho_1f_library_gaspard_face:
     play sound "audio/sfx/gui_hint.ogg"
     scene gaspard_focus_02
     pause 1.5
-    sh surprise sweat "...what?"
+    sh surprise sweat ".{w=0.3}.{w=0.3}.{w=0.5}what?"
+    play sound4 "audio/se/heartbeat.ogg"
     ta r_neutral "Hostile restrained."
     pause 1.0
-    scene gaspard_rip with Reveal2
+    scene gaspard_rip with Reveal3
     pause 1.5
-    play sound2 "audio/se/glitch_attack.ogg"
-    ta surprise "Now neutralizing..."
-    sh surprise sweat "You...{w=0.5} The Android?!{w=0.3} What-"
+    ta r_neutral "Now neutralizing..."
+    play LoNoise "audio/bgs/heartbeat_loop.ogg"
+    sh surprise sweat "The Android?!{w=0.3} What-"
     play sound4 "audio/se/body_rip.ogg"
     pause 0.1
+    play sound2 "audio/se/glitch_attack.ogg"
+    scene gaspard_rip with blood
+    pause 1.0
+    sh shock sweat "...!"
     play sound2 "audio/se/glitch_hurt.ogg"
-    pause 0.5
     scene gaspard_rip with blood
     pause 0.5
-    sh surprise "...!"
-    play sound2 "audio/se/glitch_hurt.ogg"
-    pause 0.5
     play sound4 "audio/se/body_tear.ogg"
-    pause 0.3
-    scene gaspard_tear with bloodo
+    pause 1.0
+    stop LoNoise fadeout 3.5
+    scene gaspard_tear with bloody
     pause 2.0
     scene black
-    sh_i shock sweat "\"{b}AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHH...!!!\""
+    sh_i shock sweat "\"{b}AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHH...!!!\""
     pause 1.5
     $ quick_menu = False
     $ time_menu = False

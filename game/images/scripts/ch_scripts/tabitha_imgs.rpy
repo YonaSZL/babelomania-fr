@@ -68,12 +68,12 @@ image tabitha_por_exp_surprise = "images/chs/tabitha/por/exp_surprise.png"
 image tabitha_por_exp_bow = "images/chs/tabitha/por/exp_bow.png"
 image tabitha_por_exp_frown = "images/chs/tabitha/por/exp_frown.png"
 
-image tabitha_por_exp_r_neutral = "images/chs/tabitha/por/red/exp_neutral.png"
-image tabitha_por_exp_r_smile = "images/chs/tabitha/por/red/exp_smile.png"
-image tabitha_por_exp_r_sigh = "images/chs/tabitha/por/red/exp_sigh.png"
-image tabitha_por_exp_r_surprise = "images/chs/tabitha/por/red/exp_surprise.png"
-image tabitha_por_exp_r_angry = "images/chs/tabitha/por/red/exp_angry.png"
-image tabitha_por_exp_r_frown = "images/chs/tabitha/por/red/exp_frown.png"
+image tabitha_por_exp_r_neutral = "images/chs/tabitha/por/red/exp_r_neutral.png"
+image tabitha_por_exp_r_smile = "images/chs/tabitha/por/red/exp_r_smile.png"
+image tabitha_por_exp_r_sigh = "images/chs/tabitha/por/red/exp_r_sigh.png"
+image tabitha_por_exp_r_surprise = "images/chs/tabitha/por/red/exp_r_surprise.png"
+image tabitha_por_exp_r_angry = "images/chs/tabitha/por/red/exp_r_angry.png"
+image tabitha_por_exp_r_frown = "images/chs/tabitha/por/red/exp_r_frown.png"
 
 layeredimage Tabitha_por:
     group body:

@@ -96,6 +96,7 @@ define inter = Character(_("Intercom"), what_prefix='{u}\"', what_suffix='\"', c
 
 define flash = Fade(0.1, 0.0, 0.5, color="#fff")
 define blood = Fade(0.1, 0.0, 0.1, color="#8A0707")
+define bloody = Fade(0.1, 1.5, 3.0, color="#8A0707")
 define bloodo = Fade(0.1, 3.0, 3.0, color="#8A0707")
 
 define Reveal = Dissolve(2.0, alpha=False, time_warp=None)

@@ -1,5 +1,6 @@
 #Chapter Titlecards
 image title_01 = "gui/titlecards/ch_01.jpg"
+image title_02 = "gui/titlecards/ch_02.jpg"
 
 #Intro Sequence
 image white = "gui/transitions/white.jpg"
@@ -87,8 +88,8 @@ image gaspard_tear = ConditionSwitch(
 
 #Chapter 02
 
-image francesco_flashback = "images/cgs/chapter_02/gaspard/francesco_flashback.jpg"
-image francesco_flashback_b = "images/cgs/chapter_02/gaspard/francesco_flashback_b.jpg"
+image francesco_flashback = "images/cgs/chapter_02/francesco_flashback.jpg"
+image francesco_flashback_b = "images/cgs/chapter_02/francesco_flashback_b.jpg"
 image francesco_flashback_glitch:
     "francesco_flashback"
     pause 0.05
