@@ -12,3 +12,9 @@ label flambas_folder_reveal:
     de_i surprise "(A bunch of newspaper clippings...{w=0.5} In Japanese?)"
     de_i frown "(Well, not exactly, they're printouts of newspaper clippings but still...{w=0.5} What?{w=0.3} Ugh, now I wish I took Francesco up on his lessons.)"
     
+
+label fudo_clipping_japanese:
+
+    d """
+
+    """
