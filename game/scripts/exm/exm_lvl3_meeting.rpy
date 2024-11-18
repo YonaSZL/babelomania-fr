@@ -61,7 +61,7 @@ label exm_lvl3_meeting_01_stationary:
     pause 1.0
     call screen lvl3_wellness_explore_01
 
-label exm_lvl3_meeting_01_stationary:
+label exm_lvl3_meeting_01_furniture:
     $ renpy.block_rollback()
     pause 0.5
     de_i frown "(More folders.{w=0.3} Pencils, pens...{w=0.5} Nothing that looks like a keycard.)"

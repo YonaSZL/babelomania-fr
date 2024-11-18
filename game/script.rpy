@@ -195,25 +195,19 @@ label splashscreen:
     pause 1.5
     call screen language with dissolve
     scene black
+    pause 2.0
+    scene intro_00 with Reveal3
+    pause 2.75
+    scene intro_01 with Reveal3
     pause 1.5
-    scene intro_00 with dissolve
-    pause 2.5
-    scene black with Reveal3
-    pause 0.5
-    scene intro_01 with dissolve
-    pause 1.0
     play music "audio/bgm/babelomania.ogg"
     pause 1.5
-    scene black with Reveal3
-    pause 0.5
-    scene intro_02 with dissolve
+    scene intro_02 with Reveal3
     pause 3.0
+    scene intro_03 with Reveal3
+    pause 2.75
     scene black with Reveal3
-    pause 0.5
-    scene intro_03 with dissolve
-    pause 2.5
-    scene black with Reveal3
-    pause 0.5
+    pause 1.0
     scene main_menu_bg with Reveal3
     pause 3.0
     play sound "audio/sfx/gui_slots_confirm.ogg"
