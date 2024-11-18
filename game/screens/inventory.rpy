@@ -146,7 +146,7 @@ screen inventory():
                 has vbox
 
                 if flambas_folder_inspected:
-                    textbutton _("Inspect") action [ ClearFocus("flambas_folder_drop"), Show("notify", None, _("A folder with the Flambas logo. Then this place is...?")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
+                    textbutton _("Inspect") action [ ClearFocus("flambas_folder_drop"), Show("notify", None, _("A folder with the Flambas logo. It contained an unreadable article.")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
                 else:
                     textbutton _("Inspect") action [ ClearFocus("flambas_folder_drop"), Hide("inventory"), Jump("flambas_folder_reveal") ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
 
