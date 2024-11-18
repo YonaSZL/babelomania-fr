@@ -26,16 +26,6 @@ screen lvl3_meeting_examine_01():
             activate_sound "audio/sfx/gui_confirm.ogg"
             action Jump("exm_lvl3_meeting_01_furniture")
             tooltip _("Furniture")
-        
-        if lvl3_meeting_examine_01 == 3:
-            button:
-                pos(993,454)
-                xysize(128,297)
-                background None
-                hover_sound "audio/sfx/gui_hover.ogg"
-                activate_sound "audio/sfx/gui_confirm.ogg"
-                action Jump("exm_lvl3_meeting_01_body")
-                tooltip _("Floor")
 
 label exm_lvl3_meeting_01_stationary:
     $ renpy.block_rollback()
@@ -67,6 +57,41 @@ label exm_lvl3_meeting_01_stationary:
         show screen notify(_("Inventory Unlocked."))
         $ inventory_show = True
         $ exm_lvl3_meeting_01_stationary = True
+        $ lvl3_meeting_examine_01 += 1
+    pause 1.0
+    call screen lvl3_wellness_explore_01
+
+label exm_lvl3_meeting_01_stationary:
+    $ renpy.block_rollback()
+    pause 0.5
+    de_i frown "(More folders.{w=0.3} Pencils, pens...{w=0.5} Nothing that looks like a keycard.)"
+    de_i neutral "(Let's see on the inside.{w=0.3} Nothing else for it...)"
+    pause 0.5
+    scene black with dissolve
+    play sound3 "audio/se/paper_shuffle.ogg"
+    pause 1.5
+    play sound2 "audio/se/paper_shuffle.ogg"
+    pause 1.0
+    play sound4 "audio/se/paper_shuffle.ogg"
+    de frown sweat "<Shit...{w=0.5} Shit shit shit I'm out of options, am I not?>"
+    pause 0.5
+    scene lvl3_meeting
+    show Delphine frown sweat at de_med:
+        xalign 0.5
+    with dissolve
+    pause 0.5
+    de nulla "<Nothing...{w=0.5} Nothing, nothing, NOTHING!{w=0.3} There's nothing useful, here!{w=0.3} Just ugly stationary, empty folders and more stupid Perrier!>"
+    show Delphine angry
+    de nulla "<AND WHY IS THERE STILL NO CLOCKS AROUND HERE?!{w=0.3} I->"
+    play sound4 "audio/se/lab_lights_off.ogg"
+    pause 0.3
+    play sound4 "audio/em/em_shock.ogg"
+    show screen emote("surprise",0.5,0.05)
+    show Delphine shock
+    pause 0.5
+    de nulla "<TRIASTSIA!{W=0.3} What now?!>"
+    if exm_lvl3_meeting_01_furniture == False:
+        $ exm_lvl3_meeting_01_furniture = True
         $ lvl3_meeting_examine_01 += 1
     pause 1.0
     call screen lvl3_wellness_explore_01

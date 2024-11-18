@@ -29,4 +29,4 @@ label flambas_folder_reveal:
         $ flambas_folder_inspected = True
         $ lvl3_meeting_examine_01 += 1
     pause 1.0
-    call screen 
+    call screen lvl3_meeting_examine_01
