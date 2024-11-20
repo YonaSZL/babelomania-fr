@@ -80,6 +80,7 @@ label exm_lvl3_meeting_01_furniture:
         xalign 0.5
     with dissolve
     pause 0.5
+    stop music fadeout 1.5
     de nulla "<Nothing...{w=0.5} Nothing, nothing, NOTHING!{w=0.3} There's nothing useful, here!{w=0.3} Just ugly stationary, empty folders and more stupid Perrier!>"
     show Delphine angry
     de nulla "<AND WHY IS THERE STILL NO CLOCKS AROUND HERE?!{w=0.3} I->"
@@ -90,8 +91,22 @@ label exm_lvl3_meeting_01_furniture:
     show Delphine shock
     pause 0.5
     de nulla "<TRIASTSIA!{W=0.3} What now?!>"
+    play sound "audio/se/jingle_flambas.ogg"
+    inter "Warning.{w=0.3} This facility is now in emergency evacuation mode."
+    show Delphine surprise
+    inter "Please proceed to the nearest elevators.{w=0.3} Flambas thanks you for entrusting us with your safety."
+    de nulla "<Emergency evacuation mode...?{w=0.3} What is HAPPENING, HERE?!>"
+    show Delphine shock
+    de nulla "<Maybe that unlocked the elevators?{w=0.3} Maybe I don't need a keycard anymore...?>"
+    play music "audio/bgm/shadows_breathe.ogg"
+    pause 1.0
+    show Delphine fear with dissolve
+    de nulla "<Please let it be so...!>"
+    pause 0.5
+    play sound "audio/se/door_slide.ogg"
+    scene black with dissolve
     if exm_lvl3_meeting_01_furniture == False:
         $ exm_lvl3_meeting_01_furniture = True
         $ lvl3_meeting_examine_01 += 1
     pause 1.0
-    call screen lvl3_wellness_explore_01
+    call screen story_02_yokai

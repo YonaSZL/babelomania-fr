@@ -801,7 +801,7 @@ label taisho_1f_library_gaspard_face:
     scene gaspard_rip with Reveal3
     pause 1.5
     ta r_neutral "Now neutralizing..."
-    play LoNoise "audio/bgs/heartbeat_loop.ogg"
+    play LoNoise "audio/bgs/heartbeat_loop.ogg" fadein 0.1
     sh surprise sweat "The Android?!{w=0.3} What-"
     play sound4 "audio/se/body_rip.ogg"
     pause 0.1

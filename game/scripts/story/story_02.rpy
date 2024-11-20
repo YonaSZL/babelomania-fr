@@ -131,3 +131,38 @@ label story_02_lvl3:
     de frown "<Ugh, whatever.{w=0.3} Let's find the exit.>"
     pause 1.0
     call screen lvl3_corridor_explore_01
+
+label story_02_yokai:
+    scene base_lvl3_corridor_dark with Reveal
+    pause 1.5
+    show Delphine fear at de_big:
+        xalign 0.5
+    with dissolve
+    pause 0.5
+    de_i nulla "(Please work...{w=0.5} Please let me get out of here-{nw})"
+    stop music fadeout 0.2
+    play sound3 "audio/se/gun_muffled.ogg"
+    pause 0.2
+    show screen emote("surprise",0.5,0.5)
+    show Delphine surprise
+    pause 1.5
+    de nulla "<.{w=0.3}.{w=0.3}.{w=0.5}a {nw}"
+    play sound4 "sound/sfx/gui_spook.ogg"
+    extend "{b}gunshot{/b}?"
+    pause 1.0
+    play sound3 "audio/se/body_slam_muffled.ogg"
+    play LoNoise "audio/bgs/heartbeat_loop.ogg" fadein 0.1
+    show Delphine fear sweat:
+        linear 0.1 xalign 0.4
+    pause 1.0
+    play sound3 "audio/se/body_slam_muffled.ogg"
+    play sound4 "audio/se/dripping_gore_muffled.ogg"
+    de_i nulla "(What...{w=0.5} What is...?!)"
+    play sound3 "audio/se/fudo_steps_muffled.ogg"
+    pause 1.5
+    stop LoNoise fadeout 3.5
+    play sound "audio/se/door_scifi.ogg"
+    pause 1.5
+    show Delphine shock with Reveal
+    pause 1.5
+    

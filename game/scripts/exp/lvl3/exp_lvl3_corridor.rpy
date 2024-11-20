@@ -213,7 +213,7 @@ label exp_lvl3_corridor_01_meeting_open:
     play sound2 "audio/se/door_unlock.ogg"
     de_i shock sweat "(Some luck, finally!{w=0.3} There better be a keycard inside here!)"
     pause 1.0
-    play sound3 "audio/se/door_creak.ogg"
+    play sound3 "audio/se/door_slide.ogg"
     scene black with dissolve
     pause 1.0
     scene lvl3_meeting with Reveal
