@@ -175,4 +175,6 @@ label story_02_yokai:
     scene fudo_appears_03
     play music "audio/bgm/fudo_myoo.ogg"
     pause 3.0
+    scene fudo_appears_04 with Reveal3
+    pause 3.0
     
