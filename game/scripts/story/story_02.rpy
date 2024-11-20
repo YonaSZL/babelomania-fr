@@ -165,4 +165,14 @@ label story_02_yokai:
     pause 1.5
     show Delphine shock with Reveal
     pause 1.5
+    play sound "audio/em/impact.ogg"
+    scene fudo_appears_01
+    pause 1.5
+    play sound "audio/em/impact.ogg"
+    scene fudo_appears_02
+    pause 1.5
+    play sound "audio/em/impact.ogg"
+    scene fudo_appears_03
+    play music "audio/bgm/fudo_myoo.ogg"
+    pause 3.0
     
