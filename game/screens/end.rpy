@@ -10,7 +10,8 @@ screen ending():
             background Solid(u"#ffffff") at end_bg
         label "Main Menu" text_size 70 align(0.5, 0.5) at end_text2
         label "Main Menu" text_size 70 text_color u"#ffffff" align(0.5, 0.5) at end_text1
-
+        hover_sound "audio/sfx/gui_hover.ogg"
+        activate_sound "audio/sfx/gui_codex.ogg"
         action MainMenu()
 
 
@@ -18,13 +19,17 @@ screen ending():
         align(0.5, 1.0) yoffset 50 xoffset 170 spacing 700
         button:
             xysize(358,314) anchor(0.5, 0.5)
-            add "gui/ending/patreon.png" 
+            add "gui/ending/patreon.png"
+            hover_sound "audio/sfx/gui_hover.ogg"
+            activate_sound "audio/sfx/gui_codex.ogg" 
             action NullAction()
             at socfloat(0.1, 5.0)
         
         button:
             xysize(358,314) anchor(0.5, 0.5)
             add "gui/ending/itch.png"
+            hover_sound "audio/sfx/gui_hover.ogg"
+            activate_sound "audio/sfx/gui_codex.ogg"
             action NullAction()
             at socfloat(0.3, 4.5)
 
