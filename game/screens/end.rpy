@@ -22,7 +22,7 @@ screen ending():
             add "gui/ending/patreon.png"
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_codex.ogg" 
-            action NullAction()
+            action OpenURL("https://www.patreon.com/JPDE")
             at socfloat(0.1, 5.0)
         
         button:
@@ -30,7 +30,7 @@ screen ending():
             add "gui/ending/itch.png"
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_codex.ogg"
-            action NullAction()
+            action OpenURL("https://jpde.itch.io/babelomania/rate")
             at socfloat(0.3, 4.5)
 
 transform end_bg():
