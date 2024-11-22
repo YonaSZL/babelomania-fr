@@ -846,12 +846,8 @@ label demo_ending:
     pause 5.0
     scene black with Reveal5
     pause 2.0
-    scene main_menu_bg_logo with Reveal3
-    pause 1.0
-    scene thank_you_for_playing with Reveal3
-    pause 3.0
     $ persistent.vertical_clear = True
-    call screen thank_you_screen()
+    call screen ending() with Reveal3
 
 label return_from_thanks:
     stop music fadeout 4.5
