@@ -62,9 +62,7 @@ label exp_lvl3_wellness_01_shelves:
     show Delphine frown with dissolve
     de nulla "<No.{w=0.3} No, hold your horses, Delphine.{w=0.3} Let's not go down that road, you've seen where it led {i}her{/i}.>"
     show Delphine neutral
-    de nulla "<Russians were employed and lived in the rest of the world {i}before{/i} the war.{w=0.3} Even more so now, after the {nw}"
-    play sound4 "audio/sfx/gui_hint.ogg"
-    extend "{b}collapse of the Federation{/b}.{w=0.3} This means nothing.>"
+    de nulla "<Russians were employed and lived in the rest of the world {i}before{/i} the war.{w=0.3} Even more so now.{w=0.3} This means nothing.>"
     show Delphine surprise -sweat
     de nulla "<Granted, there's foul at play here, but...{w=0.3} It doesn't mean they're after you specifically.{w=0.3} There was a whole party at the château, wasn't there?{w=0.3} And...>"
     pause 1.5

@@ -15,10 +15,10 @@ default shigeo_events = []
 default shigeo_locations = []
 default shigeo_items = []
 #DELPHINE CATEGORIES
-default delphine_people = [test_entry]
-default delphine_events = [test_entry]
-default delphine_locations = [test_entry]
-default delphine_items = [test_entry]
+default delphine_people = []
+default delphine_events = []
+default delphine_locations = []
+default delphine_items = []
 
 default c_chateau_dubois = Entry("Chateau de Bois-le-Dumont", "scr_chateau_dubois", False, "Shigeo")
 default c_chateau_dubois_taisho = False

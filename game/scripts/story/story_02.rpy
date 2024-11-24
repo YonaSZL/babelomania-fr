@@ -61,7 +61,7 @@ label story_02_delphine:
     pause 1.5
     show Delphine shock with dissolve
     pause 0.5
-    de_xi nulla "(I'm drawing a complete blank...{w=0.5} Triastsia, this isn't normal.{w=0.3} How did I get here?{w=0.3} How did I pass out?!)"
+    de_xi nulla "(I'm drawing a complete blank...{w=0.5} How did I get here?{w=0.3} How did I pass out?!)"
     show Delphine surprise
     de_xi "(And if I'm here, what happened to dad?{w=0.3} Francesco?!{w=0.3} Everyone...!)"
     pause 1.5
