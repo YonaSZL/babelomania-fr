@@ -691,11 +691,11 @@ label story_01_gaspard_found:
     sh frown sweat ".{w=0.3}.{w=0.3}.{w=0.5}something's wrong."
     pause 1.5
     call screen taisho_1f_library_gaspard_scare
-
 label taisho_1f_library_gaspard_face:
     $ renpy.block_rollback()
     $ inventory_show = False
     $ time_menu = False
+    $ codex_active = False
     $ stat1_show = False
     pause 1.5
     sh frown sweat ".{w=0.3}.{w=0.3}.{w=0.5}Gaspard?"
@@ -822,6 +822,7 @@ label taisho_1f_library_gaspard_face:
     pause 1.5
     $ quick_menu = False
     $ time_menu = False
+    $ codex_active = False
     $ renpy.block_rollback()
     jump story_02_delphine
 

@@ -109,14 +109,17 @@ label exp_lvl3_wellness_01_fridge:
     hide Delphine with dissolve
     play sound4 "audio/se/food_soda.ogg"
     $ delphine_items.append(c_perrier)
-    pause 1.0
+    pause 1.5
+    play sound "audio/se/heartbeat.ogg"
     if exp_lvl3_wellness_01_fridge == False:
         $ stat3 += 25
-    pause 0.5
     de_i smile "(Huuuuuff, still hit the spot...{w=0.5} And the ceremony's done with, anyway, I can afford not fitting in the dress anymore.)"
     de_i surprise "(Also, if they have Perrier in stock, at the very least {nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
     extend "{b}I'm still in France{/b}...{w=0.5} But being the decently sized country we are, that's not exactly helpful.)"
+    play sound4 "audio/sfx/gui_slots_confirm.ogg"
+    show screen notify(_("Codex Unlocked"))
+    $ codex_active = True
     de_i frown "(Although, now that I look more closely at this fridge...{w=0.5} It's quite hi-tech, isn't it?)"
     de_i neutral "(Can't think of many big corporations who'd spend this much on furniture.{w=0.5} But they also wouldn't be in the business of kidnapping random brides.)"
     pause 1.5

@@ -96,15 +96,15 @@ screen overlay_stats():
                 if codex_active == True:
                     add "gui/stats/codex_icon.png" yalign 0.5 xalign 1.0 xoffset -50
                 action NullAction()
-            if codex_active == True:
-                button:
-                    idle_background "gui/stats/time_bg.png"
-                    hover_background At("gui/stats/time_bg.png", outline_transform(2, "#876a33", 4.0))
-                    xysize(395, 77)
-                    text _("OPEN CODEX") align(0.5, 0.5) yoffset 4 textalign 0.5 color '#bfaa8f' font gui.interface_text_font
-                    hover_sound "audio/sfx/gui_hover.ogg"
-                    activate_sound "audio/sfx/gui_codex.ogg"
-                    action ShowMenu("codex_main")
+        if codex_active == True:
+            button:
+                idle_background "gui/stats/time_bg.png"
+                hover_background At("gui/stats/time_bg.png", outline_transform(2, "#876a33", 4.0))
+                xysize(395, 77)
+                text _("OPEN CODEX") align(0.5, 0.5) yoffset 4 textalign 0.5 color '#bfaa8f' font gui.interface_text_font
+                hover_sound "audio/sfx/gui_hover.ogg"
+                activate_sound "audio/sfx/gui_codex.ogg"
+                action ShowMenu("codex_main")
         if current_char == "shigeo":#SHIGEO BARS
             if stat1_show:
                 button:
@@ -132,6 +132,8 @@ screen overlay_stats():
             if stat3_show:
                 button:
                     xysize(353,38) xalign 0.5 yoffset 10
+                    if codex_active == False:
+                        xoffset 20
                     bar:
                         right_bar "gui/stats/empty.png"
                         left_bar "gui/stats/stat_2.png"
