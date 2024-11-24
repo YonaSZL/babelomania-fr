@@ -4,9 +4,9 @@ default stat3 = 50
 default stat4 = 6
 
 default stat1_show = True #Flashlight Charge
-default stat2_show = True
-default stat3_show = False
-default stat4_show = False
+default stat2_show = False #Tabitha Charge
+default stat3_show = False #Delphine Health
+default stat4_show = False #Delphine Ammo
 
 default inventory_show = True
 default time_menu = True
