@@ -83,7 +83,7 @@ label exp_lvl3_corridor_01_doors:
     de_i nulla "({b}What exactly{/b} are these in place for?)"
     pause 1.5
     show Delphine frown with dissolve
-    de nulla "<.{w=0.3}.{w=0.3}.{w=0.5}either way, it hasn't automatically opened at my passage.{w=0.3} Like an alloy boor.>"
+    de nulla "<.{w=0.3}.{w=0.3}.{w=0.5}either way, it hasn't automatically opened at my passage.{w=0.3} Like an alloy boor, same as its twin behind my back.>"
     show Delphine neutral
     de nulla "<I don't see a keyhole or anything like that...{w=0.5} What am I missing?>"
     pause 1.0
