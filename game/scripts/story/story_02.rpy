@@ -105,7 +105,7 @@ label story_02_wellness_done:
     show Delphine shock with Reveal
     de nulla "<That's...{w=0.5} That's {nw}"
     play sound4 "audio/sfx/gui_spook.ogg"
-    extend "{b}Francesco's workplace{/b}...>"
+    extend "{b}Francesco's employer{/b}...>"
     play music "audio/bgm/flambas_lvl3.ogg"
     pause 1.5
     scene black with Reveal3
@@ -114,22 +114,24 @@ label story_02_wellness_done:
 label story_02_lvl3:
     $ renpy.block_rollback()
     scene lvl3_corridor with Reveal3
-    pause 2.0
+    pause 2.5
     de surprise "<.{w=0.3}.{w=0.3}.{w=0.5}no.{w=0.5} It's not the same building.>"
-    pause 0.5
-    show Delphine surprise with dissolve:
+    pause 1.0
+    show Delphine surprise at de_med:
         xalign 0.5
-    with de_mid
+    with dissolve
     de nulla "<I visited him at work, before...{w=0.5} The architecture is completely different, here.>"
     show Delphine neutral
-    de nulla "<I guess they just lease their technology...{w=0.5} That confirms I'm still in France, then, considering what Francesco told me about company policy.>"
+    de nulla "<It was just their leased technology, then...{w=0.5} That confirms I'm still in France, though, considering what Francesco told me about company policy.>"
     show Delphine frown
     de nulla "<Anyway, the door just opened on its own and now...{w=0.5} No one is here?{w=0.3} He-{w=0.15}lloooo?>"
     show Delphine surprise
     de nulla "<They roipnol me or some shit, stash me in the Atlas Sharted room and then leave me to my own devices?!{w=0.3} What kind of schizo kidnapping is this?!>"
     pause 1.5
+    show Delphine frown
+    pause 1.0
     scene lvl3_corridor with dissolve
-    de frown "<Ugh, whatever.{w=0.3} Let's find the exit.>"
+    de frown "<Whatever.{w=0.3} Let's find the exit.>"
     pause 1.0
     call screen lvl3_corridor_explore_01
 

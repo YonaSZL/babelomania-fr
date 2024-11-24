@@ -10,7 +10,7 @@ layeredimage lvl3_corridor:
         attribute base default:
             "base_lvl3_corridor"
     if exp_lvl3_corridor_01_elevators:
-        "images/bgs/lab/lvl3/lvl3_corridor_blood.jpg"
+        "images/bgs/lab/lvl3/lvl3_corridor_blood.png"
 
 image lvl3_meeting = "images/bgs/lab/lvl3/lvl3_meeting.jpg"
 image lvl3_meeting_dark = "images/bgs/lab/lvl3/lvl3_meeting_dark.jpg"

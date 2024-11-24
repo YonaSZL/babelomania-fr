@@ -10,8 +10,8 @@ screen lvl3_corridor_explore_01():
     tag exploration
 
     button:
-        pos(993,454)
-        xysize(128,297)
+        pos(771,448)
+        xysize(384,274)
         background None
         hover_sound "audio/sfx/gui_hover.ogg"
         activate_sound "audio/sfx/gui_confirm.ogg"
@@ -19,8 +19,8 @@ screen lvl3_corridor_explore_01():
         tooltip _("Doors")
 
     button:
-        pos(993,454)
-        xysize(128,297)
+        pos(0,258)
+        xysize(340,735)
         background None
         hover_sound "audio/sfx/gui_hover.ogg"
         activate_sound "audio/sfx/gui_confirm.ogg"
@@ -29,8 +29,8 @@ screen lvl3_corridor_explore_01():
     
     if exp_lvl3_corridor_01_elevators:
         button:
-            pos(993,454)
-            xysize(128,297)
+            pos(943,724)
+            xysize(125,43)
             background None
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_confirm.ogg"
@@ -41,8 +41,8 @@ screen lvl3_corridor_explore_01():
                 tooltip _("?????")
     
     button:
-        pos(993,454)
-        xysize(128,297)
+        pos(1274,424)
+        xysize(38,350)
         background None
         hover_sound "audio/sfx/gui_hover.ogg"
         activate_sound "audio/sfx/gui_confirm.ogg"
@@ -51,8 +51,8 @@ screen lvl3_corridor_explore_01():
 
     if lvl3_corridor_explore_01 == 4:
         button:
-            pos(993,454)
-            xysize(128,297)
+            pos(1274,574)
+            xysize(38,350)
             background None
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_confirm.ogg"
@@ -71,18 +71,18 @@ label exp_lvl3_corridor_01_doors:
     play sound "audio/se/thud_metal.ogg"
     queue sound "audio/se/thud_metal.ogg"
     pause 0.5
-    de_i nulla "(And the walls, too...{w=0.5} It's like the bulkheads on ships or submarines.)"
+    de_i nulla "(And the walls, too...{w=0.5} It's like the bulkheads on ships, or submarines.)"
     show Delphine smile
     de_i nulla "(Salaries must be {i}terrible{/i} around here...{w=0.5} And the corporate gym quite good.{w=0.3} But, seriously.)"
     show Delphine surprise
-    de_i nulla "(Unless I was asleep for two days, I am most certainly am not at sea.{w=0.3} Also, my stomach would violently revolt like that time in Tonga.)"
+    de_i nulla "(Unless I was asleep for two days, I am most certainly not at sea.{w=0.3} My stomach would revolt quite violently.{w=0.3} Like that time in Tonga.)"
     show Delphine frown
     de_i nulla "(So what kind of business needs this kind of door?{w=0.3} They're only good for two things, keeping stuff out and keeping stuff in...{w=0.5} And if it's not water.)"
     show Delphine neutral
     play sound4 "audio/sfx/gui_spook.ogg"
     de_i nulla "({b}What exactly{/b} are these in place for?)"
     pause 1.5
-    show Delphine frown
+    show Delphine frown with dissolve
     de nulla "<.{w=0.3}.{w=0.3}.{w=0.5}either way, it hasn't automatically opened at my passage.{w=0.3} Like an alloy boor.>"
     show Delphine neutral
     de nulla "<I don't see a keyhole or anything like that...{w=0.5} What am I missing?>"
@@ -92,7 +92,7 @@ label exp_lvl3_corridor_01_doors:
         $ exp_lvl3_corridor_01_doors = True
         $ lvl3_corridor_explore_01 += 1
     pause 1.0
-    call screen lvl3_wellness_explore_01
+    call screen lvl3_corridor_explore_01
 
 label exp_lvl3_corridor_01_elevators:
     $ renpy.block_rollback()
@@ -148,7 +148,7 @@ label exp_lvl3_corridor_01_elevators:
     pause 1.0
     scene lvl3_corridor with dissolve
     pause 1.0
-    call screen lvl3_wellness_explore_01
+    call screen lvl3_corridor_explore_01
 
 label exp_lvl3_corridor_01_blood:
     $ renpy.block_rollback()
@@ -182,7 +182,7 @@ label exp_lvl3_corridor_01_blood:
         de_i shock sweat "(The more I look at it, the more gruesome images pop in my head!{w=0.5} This started out annoying, became creepy and now...)"
         de_i frown sweat "(And just when the most dangerous thing I have on me are high heels.)"
     pause 1.0
-    call screen lvl3_wellness_explore_01
+    call screen lvl3_corridor_explore_01
 
 label exp_lvl3_corridor_01_meeting_closed:
     $ renpy.block_rollback()
@@ -202,7 +202,7 @@ label exp_lvl3_corridor_01_meeting_closed:
         de_i neutral "(A corporate meeting room with obscuring glass.{w=0.3} You can't really tell what's going on on the inside, but you can tell if people are using it.)"
         de_i frown "(Always found this style a little creepy...{w=0.5} I keep thinking of what it would feel like to look down and see someone perving on people's ankles.{w=0.3} Eugh.)"
     pause 1.0
-    call screen lvl3_wellness_explore_01
+    call screen lvl3_corridor_explore_01
 
 label exp_lvl3_corridor_01_meeting_open:
     $ renpy.block_rollback()

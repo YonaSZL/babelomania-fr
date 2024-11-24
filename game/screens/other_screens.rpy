@@ -127,7 +127,7 @@ screen about():
                 text "{a=https://www.joelsteudlermusic.com/}Joel Steudler{/a}, {a=https://wowsound.itch.io/}W.O.W. Sound{/a}" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}ADDITIONAL MUSIC") yalign 0.5
-                text "{a=https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG32138.html}Ayato Sound Create{/a}" xoffset 15 yalign 0.5
+                text "{a=https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG32138.html}Ayato Sound Create{/a}, {a=https://sazamekidori.com/}Sazameki Street{/a}" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}ADDITIONAL CODE") yalign 0.5
                 text "{a=https://feniksdev.com}Feniks{/a}, {a=https://remort-studios.itch.io/}Nai @ MakeVisualNovels{/a}" xoffset 15 yalign 0.5
