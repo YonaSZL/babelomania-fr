@@ -103,9 +103,12 @@ label exp_lvl3_wellness_01_fridge:
     de nulla "<Ugh, {nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
     extend "{b}Perrier{/b}.{w=0.5} Someone will pay for this carbonated affront.>"
+    play sound "audio/sfx/gui_return.ogg"
     $ stat3_show = True
+    pause 1.0
     hide Delphine with dissolve
     play sound4 "audio/se/food_soda.ogg"
+    $ delphine_items.append(c_perrier)
     pause 1.0
     if exp_lvl3_wellness_01_fridge == False:
         $ stat3 += 25

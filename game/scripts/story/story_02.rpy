@@ -1,5 +1,6 @@
 label story_02_delphine:
     $ renpy.block_rollback()
+    $ current_char = "delphine"
     pause 1.5
     scene title_02 with Reveal
     pause 3.0

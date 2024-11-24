@@ -5,8 +5,8 @@ default stat4 = 6
 
 default stat1_show = True #Flashlight Charge
 default stat2_show = True
-default stat3_show = True
-default stat4_show = True
+default stat3_show = False
+default stat4_show = False
 
 default inventory_show = True
 default time_menu = True
@@ -128,7 +128,7 @@ screen overlay_stats():
                     text "STAND-BY" align(0.5, 0.5) size 22 outlines([(1, "#181112", 0, 0)]) #color u"C69C6D"
 
                     add "gui/stats/tab.png" xoffset -20 yalign 0.5
-        else:#DELPHINE BARS
+        elif current_char == "delphine":#DELPHINE BARS
             if stat3_show:
                 button:
                     xysize(353,38) xalign 0.5 yoffset 10

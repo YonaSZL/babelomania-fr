@@ -847,7 +847,7 @@ label demo_ending:
     scene black with Reveal5
     pause 2.0
     $ persistent.vertical_clear = True
-    call screen ending() with Reveal3
+    call screen ending with Reveal3
 
 label return_from_thanks:
     stop music fadeout 4.5
