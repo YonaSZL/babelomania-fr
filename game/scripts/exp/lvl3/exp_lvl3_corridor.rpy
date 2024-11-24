@@ -29,8 +29,8 @@ screen lvl3_corridor_explore_01():
     
     if exp_lvl3_corridor_01_elevators:
         button:
-            pos(943,724)
-            xysize(125,43)
+            pos(932,707)
+            xysize(145,62)
             background None
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_confirm.ogg"
@@ -51,7 +51,7 @@ screen lvl3_corridor_explore_01():
 
     if lvl3_corridor_explore_01 == 4:
         button:
-            pos(1274,574)
+            pos(574,424)
             xysize(38,350)
             background None
             hover_sound "audio/sfx/gui_hover.ogg"
@@ -97,8 +97,7 @@ label exp_lvl3_corridor_01_doors:
 label exp_lvl3_corridor_01_elevators:
     $ renpy.block_rollback()
     pause 0.5
-    de_i neutral "(A set of three elevators...{w=0.5} And a bigger single one on the other side of the corridor.)"
-    de_i surprise "(I figure one is for people, the other for cargo...{w=0.5} Huh.)"
+    de_i neutral "(A set of two standard elevators...{w=0.5} And a bigger single one on the other side of the corridor...{w=0.5} Huh.)"
     de_i frown "(No floor buttons on the outside, just up and down...)"
     pause 1.0
     play sound2 "audio/se/button_elevator.ogg"
@@ -109,7 +108,7 @@ label exp_lvl3_corridor_01_elevators:
     show screen emote("surprise",0.17,0.5)
     de shock "<...!{w=0.3} SERIOUSLY?!>"
     play sound2 "audio/se/door_elevator.ogg"
-    pause 0.5
+    pause 1.0
     scene elevator_closed with Reveal
     pause 1.5
     de shock "<It cannot be...{w=0.5} It cannot be that easy!{w=0.3} None of this makes sense!>"
@@ -130,15 +129,19 @@ label exp_lvl3_corridor_01_elevators:
     de_i neutral "(Literally, maybe...{w=0.5} There's a panel which I assume serves for scanning {nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
     extend "{b}keycards{/b}...{w=0.5} And one single floor, instead, necessitates a physical key.)"
-    de_i frown "(A signel P...{w=0.5} Parking, maybe?{w=0.3} The other floor names, though...{w=0.5} Lab, security, archive...)"
-    de_i surprise "(I'm...{w=0.5} Wait, so this is some kind of {nw})"
+    de_i frown "(A single P...{w=0.5} Parking, maybe?{w=0.3} The other floor names, though...{w=0.5} Lab, security, archive...)"
+    de_i surprise "(I'm...{w=0.5} Wait, so this is some kind of {nw}"
     play sound4 "audio/sfx/gui_spook.ogg"
     extend "{b}research facility{/b}?)"
     pause 1.5
     de_i frown sweat "(This is getting creepier and creepier...{w=0.5} Anyway, that would explain the big elevator too.{w=0.3} It's for transporting cargo, then.)"
-    play sound "audio/se/elevator_button.ogg"
-    de_i neutral "(As I thought, without a keycard, this elevator is dead.{w=0.3} I need to find one.)"
-    de_i frown "(Except, the area seems completely bereft of people who may be carrying one...{w=0.5} And even then, am I really sure I want to run into one?)"
+    play sound "audio/se/button_elevator.ogg"
+    pause 2.0
+    play sound4 "audio/se/button_elevator.ogg"
+    pause 0.5
+    play sound2 "audio/se/button_elevator.ogg"
+    de_i neutral "(Anyway, as I thought, without a keycard, this elevator is dead.{w=0.3} I need to find one.)"
+    de_i frown "(Except, the area seems completely bereft of people who may be carrying them...{w=0.5} And even then, do I really want to run into someone who works here?)"
     pause 1.0
     if exp_lvl3_corridor_01_elevators == False:
         $ exp_lvl3_corridor_01_elevators = True
@@ -154,25 +157,30 @@ label exp_lvl3_corridor_01_blood:
     $ renpy.block_rollback()
     pause 0.5
     if exp_lvl3_corridor_01_blood == False:
-        de_i neutral "(Hmmm...?{w=0.3} Something is seeping through underneath the door.{w=0.3} Is that...?)"
+        de_i neutral "(Hmmm...?{w=0.3} Something is seeping through from underneath the doors.)"
+        de_i smile "(So much for heavy duty sealing.{w=0.3} Someone's in budget has been skimming-)"
         pause 1.0
         stop music fadeout 3.5
-        pause 0.5
-        de surprise "<No...{w=0.5} Wait.>"
-        pause 0.5
-        show Delphine shock at de_big:
+        pause 1.5
+        de surprise "<Wait.>"
+        pause 1.
+        show Delphine surprise at de_big:
             xalign 0.5
         with dissolve
         pause 0.5
-        de nulla "<Wait...{w=0.5} Waitwaitwaitwait.{w=0.3} That's...{w=0.5} That's {nw}"
+        de nulla "<Wait...{w=0.5} Waitwaitwaitwait.>"
+        show Delphine shock
+        de nulla "That's...{w=0.5} That's {nw}"
         play sound4 "audio/sfx/gui_spook.ogg"
-        de nulla "{b}blood{/b}?"
+        extend "{b}blood{/b}?!"
         play music "audio/bgm/shadows_whisper.ogg"
-        pause 1.0
+        pause 1.5
         show Delphine shock sweat with dissolve
-        de nulla "<Blood...{w=0.5} Blood seeping underneath a security door...{w=0.5} In a research facility...{w=0.5} Fresh smelling blood.{w=0.3} I...>"
-        show Delphine neutral
-        de nulla "<I...{w=0.5} I need to find an exit.{w=0.3} I need to find a damn keycard!{w=0.3} I need to get out of here!>"
+        pause 0.5
+        de nulla "<Blood...{w=0.5} Fresh smelling blood.{w=0.5} What...{w=0.5} What kind of research facility is this?{w=0.3} And why isn't the door dooring?!{w=0.3} This...!>"
+        pause 1.5
+        show Delphine frown
+        de nulla "<I need to find an exit.{w=0.3} I need to find a damn keycard!{w=0.3} I need to get out of here!>"
         pause 1.0
         scene lvl3_corridor with dissolve
         if exp_lvl3_corridor_01_blood == False:
