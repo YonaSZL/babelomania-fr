@@ -36,30 +36,37 @@ label exm_lvl3_meeting_01_stationary:
     scene black with dissolve
     pause 0.5
     play sound "audio/se/box_open.ogg"
-    pause 1.0
+    pause 3.0
     play sound4 "audio/se/paper_shuffle.ogg"
+    pause 1.5
+    de_i frown "(It was a longshot...)"
     pause 0.5
-    de_i frown "(It was a longshot...{w=0.5} Although.)"
-    pause 0.5
+    scene lvl3_meeting with Reveal
+    pause 1.0
+    de_i neutral "(.{w=0.3}.{w=0.3}.{w=0.5}This is...)"
     play sound "audio/sfx/gui_item_get.ogg"
     show it_flambas_folder with dissolve:
         xalign 0.5 yalign 0.4
     pause 1.0
     de_i surprise "(The symbol on this folder, and the others like it...{w=0.5} This is the logo of Flambas.)"
-    de_i frown "(I recognize it from the objects Francesco would bring home every now and then.{w=0.3} They love their branding.)"
+    de_i frown "(I recognize it from the objects Francesco would bring home every now and then.{w=0.3} They sure love their branding, from what I remember.)"
     de_i surprise "(So, this is not just someone else using some of their technology...{w=0.5} This place, whatever it is, belongs to them.)"
-    de_i frown sweat "(What does a {nw}"
+    de_i frown sweat "(What the hell does a {nw}"
     play sound4 "audio/sfx/gui_spook.ogg"
-    extend "{b}bio-engineering{b} company need a place like this for?{w=0.3} And why was I brought here?)"
-    de_i surprise "(There's some papers left in this folder...{w=0.5} Maybe?)"
+    extend "{b}bio-engineering{/b} want with me?{w=0.3} And Francesco...)"
+    de_i surprise "(He had seemed...{w=0.5} A little distant, lately.{w=0.3} I thought it was pre-nuptial jitters but, maybe...?)"
+    pause 1.5
+    de_i neutral "(.{w=0.3}.{w=0.3}.{w=0.5}there's some papers left in this folder.)"
     if exm_lvl3_meeting_01_stationary == False:
         play sound4 "audio/sfx/gui_slots_confirm.ogg"
         show screen notify(_("Inventory Unlocked."))
+        $ delphine_inventory.append(item_flambas_folder)
         $ inventory_show = True
         $ exm_lvl3_meeting_01_stationary = True
         $ lvl3_meeting_examine_01 += 1
+    scene lvl3_meeting with dissolve
     pause 1.0
-    call screen lvl3_wellness_explore_01
+    call screen lvl3_meeting_examine_01
 
 label exm_lvl3_meeting_01_furniture:
     $ renpy.block_rollback()
@@ -87,11 +94,13 @@ label exm_lvl3_meeting_01_furniture:
     play sound "audio/se/lights_off.ogg"
     pause 0.3
     play sound4 "audio/em/em_shock.ogg"
+    scene lvl3_meeting_dark
     show screen emote("surprise",0.5,0.05)
-    show Delphine shock
+    show Delphine shock sweat at de_med:
+        xalign 0.5
     pause 0.5
-    de nulla "<TRIASTSIA!{W=0.3} What now?!>"
-    play sound "audio/se/jingle_flambas.ogg"
+    de nulla "<TRIASTSIA!{w=0.3} What now?!>"
+    play sound "audio/se/jingle_flambas_distort.ogg"
     inter "Warning.{w=0.3} This facility is now in emergency evacuation mode."
     show Delphine surprise
     inter "Please proceed to the nearest elevators.{w=0.3} Flambas thanks you for entrusting us with your safety."

@@ -16,7 +16,7 @@ default item_smartwatch = Item(_("Smartwatch"), "gui/inventory/smartwatch.png", 
 
 default inventory = []
 default shigeo_inventory = [item_flashlight]
-default delphine_inventory = [test_item]
+default delphine_inventory = []
 screen inventory():
 
     modal True

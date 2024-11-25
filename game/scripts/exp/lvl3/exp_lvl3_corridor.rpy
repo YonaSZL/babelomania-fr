@@ -220,12 +220,10 @@ label exp_lvl3_corridor_01_meeting_open:
     $ renpy.block_rollback()
     pause 0.5
     de_i frown sweat "(Meeting room number two...!{w=0.3} Come on!)"
-    play sound2 "audio/se/doorknob_rattle.ogg"
+    play sound2 "audio/se/door_slide.ogg"
     pause 1.0
-    play sound2 "audio/se/door_unlock.ogg"
     de_i shock sweat "(Some luck, finally!{w=0.3} There better be a keycard inside here!)"
     pause 1.0
-    play sound3 "audio/se/door_slide.ogg"
     scene black with dissolve
     pause 1.0
     scene lvl3_meeting with Reveal
