@@ -9,8 +9,8 @@ screen lvl3_meeting_examine_01():
     tag examination
 
     button:
-        pos(993,454)
-        xysize(128,297)
+        pos(315,367)
+        xysize(255,432)
         background None
         hover_sound "audio/sfx/gui_hover.ogg"
         activate_sound "audio/sfx/gui_confirm.ogg"
@@ -19,8 +19,8 @@ screen lvl3_meeting_examine_01():
     
     if exm_lvl3_meeting_01_stationary:
         button:
-            pos(993,454)
-            xysize(128,297)
+            pos(645,619)
+            xysize(1259,388)
             background None
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_confirm.ogg"
