@@ -17,7 +17,7 @@ screen lvl3_meeting_examine_01():
         action Jump("exm_lvl3_meeting_01_stationary")
         tooltip _("Stationary")
     
-    if exm_lvl3_meeting_01_stationary:
+    if flambas_folder_inspected:
         button:
             pos(645,619)
             xysize(1259,388)
@@ -73,7 +73,7 @@ label exm_lvl3_meeting_01_furniture:
     play sound2 "audio/se/paper_shuffle.ogg"
     pause 1.0
     play sound4 "audio/se/paper_shuffle.ogg"
-    de frown sweat "<Shit...{w=0.5} Shit shit shit I'm out of options, am I not?>"
+    de frown sweat "<Shit...{w=0.5} Shit shit shit!>"
     pause 0.5
     scene lvl3_meeting
     show Delphine frown sweat at de_med:
@@ -84,7 +84,7 @@ label exm_lvl3_meeting_01_furniture:
     de nulla "<Nothing...{w=0.5} Nothing, nothing, NOTHING!{w=0.3} There's nothing useful, here!{w=0.3} Just ugly stationary, empty folders and more stupid Perrier!>"
     show Delphine angry
     de nulla "<AND WHY IS THERE STILL NO CLOCKS AROUND HERE?!{w=0.3} I->"
-    play sound4 "audio/se/lab_lights_off.ogg"
+    play sound "audio/se/lights_off.ogg"
     pause 0.3
     play sound4 "audio/em/em_shock.ogg"
     show screen emote("surprise",0.5,0.05)
