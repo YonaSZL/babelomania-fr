@@ -204,8 +204,9 @@ label exp_lvl3_corridor_01_meeting_closed:
         de_i angry "(Chort!{w=0.3} Of course.{w=0.3} Of course!)"
         play sound3 "audio/se/door_slam.ogg"
         de angry sweat "<UGH!{w=0.3} Shit, my hand...!>"
+        play sound4 "audio/sfx/hp_down.ogg"
         $ stat3 -=5
-        de_i frown sweat "(There must be something I can open around here...!!!)"
+        de_i frown sweat "(There must be something...{w=0.5} Something I can open around here...!!!)"
         if exp_lvl3_corridor_01_meeting_closed == False:
             $ exp_lvl3_corridor_01_meeting_closed = True
             $ lvl3_corridor_explore_01 += 1
