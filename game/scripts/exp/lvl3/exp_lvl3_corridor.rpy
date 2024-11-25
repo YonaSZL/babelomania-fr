@@ -202,6 +202,7 @@ label exp_lvl3_corridor_01_meeting_closed:
         play sound3 "audio/se/doorknob_rattle.ogg"
         pause 0.3
         de_i angry sweat "(Chort!{w=0.3} Of course.{w=0.3} Of course!)"
+        play sound3 "audio/se/door_slam.ogg"
         de_i frown sweat "(There must be something I can open around here...!!!)"
         if exp_lvl3_corridor_01_meeting_closed == False:
             $ exp_lvl3_corridor_01_meeting_closed = True
