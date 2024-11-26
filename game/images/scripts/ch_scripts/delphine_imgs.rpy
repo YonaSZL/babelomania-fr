@@ -71,6 +71,15 @@ image delphine_por_acc_blush = "images/chs/delphine/por/acc_blush.png"
 image delphine_por_acc_sweat = "images/chs/delphine/por/acc_sweat.png"
 image delphine_por_acc_sweatdrop = "images/chs/delphine/por/acc_sweatdrop.png"
 
+image delphine_por_clothes_ruined = "images/chs/delphine/por/clothes_ruined.png"
+image delphine_por_clothes_gown = "images/chs/delphine/por/clothes_gown.png"
+image delphine_por_clothes_action = "images/chs/delphine/por/clothes_action.png"
+image delphine_por_clothes = ConditionSwitch(
+    "delphine_clothes_state == 'Base'", "delphine_por_clothes_gown",
+    "delphine_clothes_state == 'Ruined'", "delphine_por_clothes_ruined",
+    "delphine_clothes_state == 'Action'", "delphine_por_clothes_action",
+)
+
 image delphine_por_exp_neutral = "images/chs/delphine/por/exp_neutral.png"
 image delphine_por_exp_smile = "images/chs/delphine/por/exp_smile.png"
 image delphine_por_exp_shock = "images/chs/delphine/por/exp_shock.png"
@@ -89,7 +98,7 @@ layeredimage Delphine_por:
             "delphine_por_body_base"
     group clothes:
         attribute c_full default:
-            "delphine_por_clothes_full"
+            "delphine_por_clothes"
     group face:
         attribute neutral default:
             "delphine_por_exp_neutral"
