@@ -136,7 +136,7 @@ label story_02_lvl3:
     call screen lvl3_corridor_explore_01
 
 label story_02_yokai:
-    scene base_lvl3_corridor_dark with Reveal
+    scene lvl3_corridor_dark with Reveal
     pause 1.5
     show Delphine fear at de_big:
         xalign 0.5
@@ -153,21 +153,24 @@ label story_02_yokai:
     play sound4 "sound/sfx/gui_spook.ogg"
     extend "{b}gunshot{/b}?"
     pause 1.0
-    play sound3 "audio/se/body_slam_muffled.ogg"
+    play sound3 "audio/se/body_slash_muffled.ogg"
     play LoNoise "audio/bgs/heartbeat_loop.ogg" fadein 0.1
-    show Delphine fear sweat:
+    show Delphine fear sweat with dissolve:
         linear 0.1 xalign 0.4
-    pause 1.0
-    play sound3 "audio/se/body_slam_muffled.ogg"
+    pause 1.5
+    play sound3 "audio/se/body_slash_muffled.ogg"
+    pause 0.5
     play sound4 "audio/se/dripping_gore_muffled.ogg"
-    de_i nulla "(What...{w=0.5} What is...?!)"
+    pause 1.0
+    de_i nulla "(And now what...{w=0.5} What is...?!)"
     play sound3 "audio/se/fudo_steps_muffled.ogg"
     pause 1.5
     stop LoNoise fadeout 3.5
     play sound "audio/se/door_scifi.ogg"
+    pause 0.5
+    scene blood with Reveal
     pause 1.5
-    show Delphine shock with Reveal
-    pause 1.5
+    play music "audio/bgm/fudo_myoo.ogg"
     play sound "audio/em/impact.ogg"
     scene fudo_appears_01
     pause 1.5
@@ -176,8 +179,15 @@ label story_02_yokai:
     pause 1.5
     play sound "audio/em/impact.ogg"
     scene fudo_appears_03
-    play music "audio/bgm/fudo_myoo.ogg"
     pause 3.0
     scene fudo_appears_04 with Reveal3
     pause 3.0
+    de_i fear sweat "{cps=10}Aaah...{w=0.5} Aaaaaaah...!!!"
+    pause 0.5
+    play sound "audio/se/throw_heavy.ogg"
+    pause 0.3
+    play sound4 "audio/se/bounce_gore.ogg"
+    play sound3 "audio/se/bounce_item.ogg"
+    scene lvl3_corridor_dark
+    show lvl3_dead_scientist
     

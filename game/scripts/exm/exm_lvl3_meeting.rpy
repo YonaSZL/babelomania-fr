@@ -104,9 +104,9 @@ label exm_lvl3_meeting_01_furniture:
     inter "Warning.{w=0.3} This facility is now in emergency evacuation mode."
     show Delphine surprise
     inter "Please proceed to the nearest elevators.{w=0.3} Flambas thanks you for entrusting us with your safety."
-    de nulla "<Emergency evacuation mode...?{w=0.3} What is HAPPENING, HERE?!>"
+    de nulla "<Emergency evacuation mode...?{w=0.3} What is HAPPENING HERE?!>"
     show Delphine shock
-    de nulla "<Maybe that unlocked the elevators?{w=0.3} Maybe I don't need a keycard anymore...?>"
+    de nulla "<But maybe that unlocked the elevators?{w=0.3} Maybe I don't need a keycard anymore...?>"
     play music "audio/bgm/shadows_breathe.ogg"
     pause 1.0
     show Delphine fear with dissolve

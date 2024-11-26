@@ -1,3 +1,4 @@
+#Delphine Badeaux. Gullible now, originally from Warrior.
 
 image delphine_body_base = "images/chs/delphine/body_base.png"
 image delphine_clothes_full = "images/chs/delphine/clothes_full.png"
