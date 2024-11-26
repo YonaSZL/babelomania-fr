@@ -196,4 +196,4 @@ label story_02_yokai:
     show lvl3_disruptor with dissolve
     de_n scream sweat "<NO!{w=0.3} NONONONONONONOOOOOOO!!!>(THIS ISN'T HAPPENING!{w=0.3} THIS CANNOT BE HAPPENING!)"
     de_i fear "(DAD!{w=0.3} MOM!{w=0.3} FRANCESCO!{w=0.3} ANYONE-)"
-    
+    mi_nst static 

@@ -22,6 +22,7 @@ image fudo_acc_burn = ConditionSwitch(
     "fudo_shot_distance == 2", "fudo_acc_burn_2",
     "fudo_shot_distance == 3", "fudo_acc_burn_3"
 )
+image fudo_acc_smoke = "images/chs/fudo/acc_smoke.png"
 
 layeredimage Fudo:
     group body:
@@ -34,5 +35,7 @@ layeredimage Fudo:
         "fudo_acc_blood"
     attribute burn default:
         "fudo_acc_burn"
+    attribute smoke default:
+        "fudo_acc_smoke"
     
     #at character_sprites_fudo
