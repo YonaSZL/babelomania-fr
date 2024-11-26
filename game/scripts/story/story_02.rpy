@@ -191,9 +191,43 @@ label story_02_yokai:
     scene lvl3_corridor_dark
     show lvl3_dead_scientist
     show Fudo:
-        xalign 0.5 yalign 0.5 zoom 0.25
+        xalign 0.5 yalign 0.25 zoom 0.25
     de scream sweat "<AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!!!>"
     show lvl3_disruptor with dissolve
     de_n scream sweat "<NO!{w=0.3} NONONONONONONOOOOOOO!!!>(THIS ISN'T HAPPENING!{w=0.3} THIS CANNOT BE HAPPENING!)"
     de_i fear "(DAD!{w=0.3} MOM!{w=0.3} FRANCESCO!{w=0.3} ANYONE-)"
-    mi_nst static 
+    play sound2 "audio/se/static_short.ogg"
+    mi_nst static "<.{w=0.3}.{w=0.3}.{w=0.5}e gun!>"
+    play sound4 "audio/se/gui_hint.ogg"
+    de surprise sweat "<...what?>"
+    play sound2 "audio/se/static_short.ogg"
+    mi_nst static "<Grab the {b}Disruptor{/b} and shoot it!{w=0.3} DO YOU WANT TO DIE?!>"
+    pause 0.5
+    hide Fudo with dissolve
+    pause 0.5
+    de angry "<SHIT!{w=0.3} SHIT SHIT SHIT SHIT SHIT!>"
+    play sound3 "audio/se/item_grab.ogg"
+    show it_disruptor with dissolve:
+        xalign 0.5 yalign 0.4
+    pause 0.5
+    play sound4 "audio/sfx/gui_slots_confirm.ogg"
+    show screen notify(_("Inventory Unlocked."))
+    $ delphine_inventory.append(item_disruptor)
+    show Fudo:
+        xalign 0.5 yalign 0.5 zoom 0.5
+    with dissolve
+    de fear sweat "<Stay back!{w=0.3} Stay back or I'll->"
+    mi_nst static "<JUST SHOOT IT!{w=0.3} You don't get it?!{w=0.3} {b}It's not human!{/b}>"
+    show Fudo:
+        xalign 0.5 yalign 0.7 zoom 0.65
+    with dissolve
+    mi_nst static "<It doesn't care for your warnings!{w=0.3} It doesn't care for your pleas!{w=0.3} It doesn't care for your fear!>"
+    pause 0.5
+    hide Fudo with dissolve
+    pause 1.0
+    show Fudo with Reveal:
+        yoffset 123
+    pause 0.5
+    mi_nst static "<All it wants to do is {b}erase your existence{/b}!>"
+    pause 1.5
+    

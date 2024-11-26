@@ -1,4 +1,6 @@
-#Mira Badeaux. Gullible now, originally from Warrior.
+#Mira 'Zurawski' which is actually 'Zhuravskiy'. Mira is Peace, the Surname is Peace, her dead name is Miro.
+#Parents, Russian. Her? Transgender. Age 33.
+
 default mira_clothes_state = "Base"
 
 image mira_body_base = "images/chs/mira/body_base.png"
