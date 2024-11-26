@@ -136,6 +136,7 @@ label story_02_lvl3:
     call screen lvl3_corridor_explore_01
 
 label story_02_yokai:
+    $ renpy.block_rollback()
     scene lvl3_corridor_dark with Reveal
     pause 1.5
     show Delphine fear at de_big:
@@ -236,6 +237,7 @@ label story_02_yokai:
     #call screen shooti_shot
 
 label story_02_elevator_escape:
+    $ renpy.block_rollback()
     play sound4 "audio/em/em_impact.ogg"
     play LoNoise2 "audio/bgs/fudo_steam.ogg"
     scene lvl3_corridor_dark
@@ -261,12 +263,51 @@ label story_02_elevator_escape:
     play sound "audio/se/elevator_ding.ogg"
     pause 0.5
     play sound "audio/se/elevator_door.ogg"
-    scene elevator_closed with dissolve
+    scene elevator_closed_dark with dissolve
     pause 1.0
-    scene elevator_panel with dissolve
+    scene elevator_panel_dark with dissolve
     de shock sweat "<I don't have a keycard...>"
     mi_nst static "<It doesn't matter, the emergency lockdown overrides it.{w=0.3} Come to me on the {nw}"
     play sound4 "audio/se/gui_hint.ogg"
     extend "{b}Archives{/b} level."
     pause 1.5
     call screen elevator_panel
+
+label story_02_happyday:
+    $ renpy.block_rollback()
+    play sound4 "audio/se/button_elevator.ogg"
+    pause 0.5
+    play sound "audio/se/elevator_start.ogg"
+    play LoNoise "audio/bgs/elevator_running.ogg" fadein 0.5
+    pause 1.0
+    scene elevator_closed_dark with dissolve
+    pause 1.0
+    mi_nst static "<Good job.{w=0.3} I'll meet you there.>"
+    pause 0.5
+    show Delphine surprise sweat at de_med:
+        xalign 0.5
+    with dissolve
+    pause 0.5
+    de nulla ".{w=0.3}.{w=0.3}.{w=0.5}what's your name?"
+    mi_st static "<I'm {b}Mira{/b}...{w=0.5} And you?>"
+    de nulla "<Delphine...{w=0.5} Thank you, Mira.>"
+    mi_st static "<You're welcome...{w=0.5} Hey, was it like, your wedding or something, today?>"
+    pause 1.0
+    show Delphine neutral with dissolve
+    pause 1.0
+    de nulla "<Yes.>"
+    pause 1.5
+    mi_st static "<I'm sorry.>"
+    play sound "audio/se/glitch_short.ogg"
+    pause 2.5
+    show Delphine sad with dissolve
+    de_n nulla "*sniffle*{w=0.3}\"U-{w=0.15}Ugh...\"*hic*"
+    pause 1.0
+    play sound "audio/se/clothes_shuffle.ogg"
+    hide Delphine with dissolve
+    pause 1.5
+    de sad "NnnnnnaaaaaaaaaaaaaAAAAAAAAAAAAAH...!!!"
+    pause 2.0
+    stop LoNoise fadeout 3.5
+    scene black with Reveal3
+    pause 2.0
