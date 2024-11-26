@@ -66,7 +66,6 @@ layeredimage Delphine:
 
 #Portrait Images
 image delphine_por_body_base = "images/chs/delphine/por/body_base.png"
-image delphine_por_clothes_full = "images/chs/delphine/por/clothes_full.png"
 image delphine_por_acc_blush = "images/chs/delphine/por/acc_blush.png"
 image delphine_por_acc_sweat = "images/chs/delphine/por/acc_sweat.png"
 image delphine_por_acc_sweatdrop = "images/chs/delphine/por/acc_sweatdrop.png"
