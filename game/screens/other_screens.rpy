@@ -123,8 +123,8 @@ screen about():
                 text "The Wonderful JPDE Supporters on {a=https://www.patreon.com/JPDE}Patreon{/a} and {a=https://ko-fi.com/jpde}Ko-Fi{/a}" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}ADDITIONAL SOUND EFFECTS") yalign 0.5
-                text "{a=https://ellr.itch.io/}Ellr{/a}, {a=https://ateliermagicae.itch.io/}Atelier Magicae{/a}, {a=https://rcptones.gumroad.com/l/dev_tones}rcptones{/a}, {a=https://nox-sound-design.itch.io/}Nox_Sound_Design{/a}, {a=https://www.gamedevmarket.net/member/shashirajproductions}SHASHIRAJproductions{/a}" xoffset 15 yalign 0.5
-                text "{a=https://www.joelsteudlermusic.com/}Joel Steudler{/a}, {a=https://wowsound.itch.io/}W.O.W. Sound{/a}, {a=https://dreams-circle.itch.io/}Dreams Circle{/a}" xoffset 15 yalign 0.5
+                text """{a=https://ellr.itch.io/}Ellr{/a}, {a=https://ateliermagicae.itch.io/}Atelier Magicae{/a}, {a=https://rcptones.gumroad.com/l/dev_tones}rcptones{/a}, {a=https://nox-sound-design.itch.io/}Nox_Sound_Design{/a}, {a=https://www.gamedevmarket.net/member/shashirajproductions}SHASHIRAJproductions{/a},
+                {a=https://www.joelsteudlermusic.com/}Joel Steudler{/a}, {a=https://wowsound.itch.io/}W.O.W. Sound{/a}, {a=https://dreams-circle.itch.io/}Dreams Circle{/a}, {a=https://epicstockmedia.com/}EPICSTOCKMEDIA{/a}""" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}ADDITIONAL MUSIC") yalign 0.5
                 text "{a=https://www.dlsite.com/maniax/circle/profile/=/maker_id/RG32138.html}Ayato Sound Create{/a}, {a=https://sazamekidori.com/}Sazameki Street{/a}" xoffset 15 yalign 0.5

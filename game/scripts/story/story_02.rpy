@@ -143,42 +143,42 @@ label story_02_yokai:
         xalign 0.5
     with dissolve
     pause 0.5
-    de_i nulla "(Please work...{w=0.5} Please let me get out of here-{nw})"
+    de_i nulla "(Please work...{w=0.5} Please let me get out of here-)"
     stop music fadeout 0.2
-    play sound3 "audio/se/gun_muffled.ogg"
+    play sound3 "audio/se/disruptor_muffled.ogg"
     pause 0.2
-    show screen emote("surprise",0.5,0.5)
+    show screen emote("surprise",0.5,0.15)
     show Delphine surprise
     pause 1.5
-    de nulla "<.{w=0.3}.{w=0.3}.{w=0.5}a {nw}"
-    play sound4 "sound/sfx/gui_spook.ogg"
-    extend "{b}gunshot{/b}?"
+    de nulla "<.{w=0.3}.{w=0.3}.{w=0.5}a {b}gunshot{/b}?"
     pause 1.0
     play sound3 "audio/se/body_slash_muffled.ogg"
+    pause 0.5
     play LoNoise "audio/bgs/heartbeat_loop.ogg" fadein 0.1
     show Delphine fear sweat with dissolve:
         linear 0.1 xalign 0.4
-    pause 1.5
-    play sound3 "audio/se/body_slash_muffled.ogg"
+    pause 1.0
+    play sound2 "audio/se/body_slash_muffled.ogg"
     pause 0.5
-    play sound4 "audio/se/dripping_gore_muffled.ogg"
+    play sound4 "audio/se/blood_splatter_muffled.ogg"
     pause 1.0
     de_i nulla "(And now what...{w=0.5} What is...?!)"
     play sound3 "audio/se/fudo_steps_muffled.ogg"
-    pause 1.5
+    pause 2.0
     stop LoNoise fadeout 3.5
+    pause 1.5
     play sound "audio/se/door_scifi.ogg"
     pause 0.5
     scene blood with Reveal
-    pause 1.5
     play music "audio/bgm/fudo_myoo.ogg"
-    play sound "audio/em/impact.ogg"
+    pause 1.5
+    play sound "audio/em/em_gong.ogg"
     scene fudo_appears_01
     pause 1.5
-    play sound "audio/em/impact.ogg"
+    play sound "audio/em/em_gong.ogg"
     scene fudo_appears_02
     pause 1.5
-    play sound "audio/em/impact.ogg"
+    play sound "audio/em/em_gong.ogg"
     scene fudo_appears_03
     pause 3.0
     scene fudo_appears_04 with Reveal3
@@ -195,14 +195,14 @@ label story_02_yokai:
         xalign 0.5 yalign 0.25 zoom 0.25
     de scream sweat "<AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!!!>"
     show lvl3_disruptor with dissolve
-    de_n scream sweat "<NO!{w=0.3} NONONONONONONOOOOOOO!!!>(THIS ISN'T HAPPENING!{w=0.3} THIS CANNOT BE HAPPENING!)"
+    de_n scream sweat "\"<NO!{w=0.3} NONONONONONONOOOOOOO!!!>\"{i}(THIS ISN'T HAPPENING!{w=0.3} THIS CANNOT BE HAPPENING!){/i}"
     de_i fear "(DAD!{w=0.3} MOM!{w=0.3} FRANCESCO!{w=0.3} ANYONE-)"
     play sound2 "audio/se/static_short.ogg"
     mi_nst static "<.{w=0.3}.{w=0.3}.{w=0.5}e gun!>"
     play sound4 "audio/se/gui_hint.ogg"
     de surprise sweat "<...what?>"
     play sound2 "audio/se/static_short.ogg"
-    mi_nst static "<Grab the {b}Disruptor{/b} and shoot it!{w=0.3} DO YOU WANT TO DIE?!>"
+    mi_nst static "<Grab the {b}Disruptor{/b} and shoot it!{w=0.3} OR DO YOU WANT TO DIE?!>"
     pause 0.5
     hide Fudo with dissolve
     pause 0.5

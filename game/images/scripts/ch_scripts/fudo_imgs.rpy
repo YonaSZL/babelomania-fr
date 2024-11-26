@@ -3,12 +3,13 @@ default fudo_shot_distance = 0
 default fudo_damage_distance = 3
 
 image fudo_body_base = "images/chs/fudo/body_base.png"
+image fudo_none = "images/chs/fudo/none.png"
 image fudo_clothes_full = "images/chs/fudo/clothes_full.png"
 image fudo_acc_blood_1 = "images/chs/fudo/acc_blood_1.png"
 image fudo_acc_blood_2 = "images/chs/fudo/acc_blood_2.png"
 image fudo_acc_blood_3 = "images/chs/fudo/acc_blood_3.png"
 image fudo_acc_blood = ConditionSwitch(
-    "fudo_damage_distance == 0", None,
+    "fudo_damage_distance == 0", "fudo_none",
     "fudo_damage_distance == 1", "fudo_acc_blood_1",
     "fudo_damage_distance == 2", "fudo_acc_blood_2",
     "fudo_damage_distance == 3", "fudo_acc_blood_3"
@@ -17,7 +18,7 @@ image fudo_acc_burn_1 = "images/chs/fudo/acc_burn_1.png"
 image fudo_acc_burn_2 = "images/chs/fudo/acc_burn_2.png"
 image fudo_acc_burn_3 = "images/chs/fudo/acc_burn_3.png"
 image fudo_acc_burn = ConditionSwitch(
-    "fudo_shot_distance == 0", None,
+    "fudo_shot_distance == 0", "fudo_none",
     "fudo_shot_distance == 1", "fudo_acc_burn_1",
     "fudo_shot_distance == 2", "fudo_acc_burn_2",
     "fudo_shot_distance == 3", "fudo_acc_burn_3"

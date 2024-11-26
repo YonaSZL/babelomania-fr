@@ -118,4 +118,4 @@ label exm_lvl3_meeting_01_furniture:
         $ exm_lvl3_meeting_01_furniture = True
         $ lvl3_meeting_examine_01 += 1
     pause 1.0
-    call screen story_02_yokai
+    jump story_02_yokai
