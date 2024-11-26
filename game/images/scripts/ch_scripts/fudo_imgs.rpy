@@ -35,7 +35,7 @@ layeredimage Fudo:
         "fudo_acc_blood"
     attribute burn default:
         "fudo_acc_burn"
-    attribute smoke default:
+    attribute smoke:
         "fudo_acc_smoke"
     
     #at character_sprites_fudo

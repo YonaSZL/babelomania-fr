@@ -150,6 +150,18 @@ screen inventory():
                 else:
                     textbutton _("Inspect") action [ ClearFocus("flambas_folder_drop"), Hide("inventory"), Jump("flambas_folder_reveal") ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
 
+    if GetFocusRect("disruptor_drop"):
+        dismiss action ClearFocus("disruptor_drop")
+        nearrect:
+            focus "disruptor_drop"
+            frame:
+                style_prefix "dropdown"
+                #modal True
+
+                has vbox
+
+                textbutton _("Inspect") action [ ClearFocus("disruptor_drop"), Show("notify", None, _("It's the weapon I got on the third floor. Looks like an old revolver with some sci-fi thrown in.")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
+
 style dropdown_vbox:
     spacing -5
 style dropdown_button:

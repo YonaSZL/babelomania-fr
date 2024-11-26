@@ -229,5 +229,44 @@ label story_02_yokai:
         yoffset 123
     pause 0.5
     mi_nst static "<All it wants to do is {b}erase your existence{/b}!>"
+    pause 1.0
+    play sound4 "audio/sfx/gui_slots_confirm.ogg"
+    $ stat4_show = True
+    pause 1.0
+    #call screen shooti_shot
+
+label story_02_elevator_escape:
+    play sound4 "audio/em/em_impact.ogg"
+    play LoNoise2 "audio/bgs/fudo_steam.ogg"
+    scene lvl3_corridor_dark
+    show lvl3_dead_scientist
+    show Fudo smoke:
+        xalign 0.5 yalign 0.5 zoom 0.5
+    with flash
     pause 1.5
-    
+    play sound4 "audio/se/fudo_collapse.ogg"
+    hide Fudo with dissolve
+    stop music fadeout 3.5
+    pause 1.0
+    de surprise sweat "<Aaah...{w=0.5} Aaaah...{w=0.5} Aaaaah, I...{w=0.5} I...?!>"
+    mi_nst static "<You did not!{w=0.3} Get in the elevator before it gets back up!>"
+    show screen emote("surprise",0.95,0.5)
+    de shock sweat "<What?!>"
+    mi_nst static "<All you did was stun it!{w=0.3} {nw}"
+    play sound4 "audio/sfx/gui_spook.ogg"
+    extend "{b}Once it recovers, it will come after you again{/b}!{w=0.3} GET IN THE ELEVATOR, ALREADY!>"
+    de fear sweat "<Aaah...{w=0.5} Aaaaaaaaaaaaaaah!>"
+    play sound2 "audio/se/button_elevator.ogg"
+    pause 0.5
+    play sound "audio/se/elevator_ding.ogg"
+    pause 0.5
+    play sound "audio/se/elevator_door.ogg"
+    scene elevator_closed with dissolve
+    pause 1.0
+    scene elevator_panel with dissolve
+    de shock sweat "<I don't have a keycard...>"
+    mi_nst static "<It doesn't matter, the emergency lockdown overrides it.{w=0.3} Come to me on the {nw}"
+    play sound4 "audio/se/gui_hint.ogg"
+    extend "{b}Archives{/b} level."
+    pause 1.5
+    call screen elevator_panel
