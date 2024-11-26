@@ -23,7 +23,7 @@ image fudo_acc_burn = ConditionSwitch(
     "fudo_shot_distance == 3", "fudo_acc_burn_3"
 )
 
-layeredimage Habiki:
+layeredimage Fudo:
     group body:
         attribute base default:
             "fudo_body_base"

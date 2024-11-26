@@ -182,7 +182,7 @@ label story_02_yokai:
     pause 3.0
     scene fudo_appears_04 with Reveal3
     pause 3.0
-    de_i fear sweat "{cps=10}Aaah...{w=0.5} Aaaaaaah...!!!"
+    de fear sweat "{cps=10}<Aaah...{w=0.5} Aaaaaaah...!!!>"
     pause 0.5
     play sound "audio/se/throw_heavy.ogg"
     pause 0.3
@@ -190,4 +190,10 @@ label story_02_yokai:
     play sound3 "audio/se/bounce_item.ogg"
     scene lvl3_corridor_dark
     show lvl3_dead_scientist
+    show Fudo:
+        xalign 0.5 yalign 0.5 zoom 0.25
+    de scream sweat "<AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!!!>"
+    show lvl3_disruptor with dissolve
+    de_n scream sweat "<NO!{w=0.3} NONONONONONONOOOOOOO!!!>(THIS ISN'T HAPPENING!{w=0.3} THIS CANNOT BE HAPPENING!)"
+    de_i fear "(DAD!{w=0.3} MOM!{w=0.3} FRANCESCO!{w=0.3} ANYONE-)"
     
