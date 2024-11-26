@@ -1,8 +1,15 @@
 #Delphine Badeaux. Gullible now, originally from Warrior.
+default delphine_clothes_state = "Base"
 
 image delphine_body_base = "images/chs/delphine/body_base.png"
-image delphine_clothes_full = "images/chs/delphine/clothes_full.png"
+image delphine_clothes_ruined = "images/chs/delphine/clothes_ruined.png"
 image delphine_clothes_gown = "images/chs/delphine/clothes_gown.png"
+image delphine_clothes_action = "images/chs/delphine/clothes_action.png"
+image delphine_clothes = ConditionSwitch(
+    "delphine_clothes_state == 'Base'", "delphine_clothes_gown",
+    "delphine_clothes_state == 'Ruined'", "delphine_clothes_ruined",
+    "delphine_clothes_state == 'Action'", "delphine_clothes_action",
+)
 image delphine_acc_blush = "images/chs/delphine/acc_blush.png"
 image delphine_acc_sweat = "images/chs/delphine/acc_sweat.png"
 image delphine_acc_sweatdrop = "images/chs/delphine/acc_sweatdrop.png"
@@ -24,9 +31,7 @@ layeredimage Delphine:
             "delphine_body_base"
     group clothes:
         attribute c_full default:
-            "delphine_clothes_full"
-        attribute c_gown:
-            "delphine_clothes_gown"
+            "delphine_clothes"
     group face:
         attribute neutral default:
             "delphine_exp_neutral"

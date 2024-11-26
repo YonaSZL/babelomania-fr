@@ -89,6 +89,18 @@ image side delphine = LayeredImageProxy("Delphine_por")
 image side delphine nulla = Null()
 image side delphine darko = LayeredImageProxy("Delphine_por", Transform(matrixcolor=TintMatrix(Color("#000", alpha=0.85))))
 
+##Mira
+define de = Character(_("Mira Badeaux"), what_prefix='\"', what_suffix='\"', image="mira", ctc="ctc_blink", ctc_position="nestled")
+define de_x = Character(_("?????"), what_prefix='\"', what_suffix='\"', image="mira", ctc="ctc_blink", ctc_position="nestled")
+define de_xi = Character(_("?????"), what_prefix='{i}', image="mira", ctc="ctc_blink", ctc_position="nestled")
+define de_i = Character(_("Mira Badeaux"), what_prefix='{i}', image="mira", ctc="ctc_blink", ctc_position="nestled")
+define de_n = Character(_("Mira Badeaux"), what_suffix='\"', image="mira", ctc="ctc_blink", ctc_position="nestled")
+define de_st = Character(_("Mira Badeaux"), what_prefix='{u}\"', what_suffix='\"', image="mira", ctc="ctc_blink", ctc_position="nestled")
+define de_nst = Character(_("?????"), what_prefix='{u}\"', what_suffix='\"', image="mira", ctc="ctc_blink", ctc_position="nestled")
+image side mira = LayeredImageProxy("Mira_por")
+image side mira nulla = Null()
+image side mira darko = LayeredImageProxy("Mira_por", Transform(matrixcolor=TintMatrix(Color("#000", alpha=0.85))))
+
 ##Minor Characters2
 define inter = Character(_("Intercom"), what_prefix='{u}\"', what_suffix='\"', ctc="ctc_blink", ctc_position="nestled")
 
