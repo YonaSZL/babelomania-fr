@@ -306,8 +306,10 @@ label story_02_happyday:
     play sound "audio/se/clothes_shuffle.ogg"
     hide Delphine with dissolve
     pause 1.5
-    de sad "NnnnnnaaaaaaaaaaaaaAAAAAAAAAAAAAH...!!!"
+    de sad "WaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAH...!!!"
     pause 2.0
     stop LoNoise fadeout 3.5
     scene black with Reveal3
     pause 2.0
+    $ renpy.block_rollback()
+    jump story_03_android
