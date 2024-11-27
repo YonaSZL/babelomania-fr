@@ -7,6 +7,7 @@
 
 label story_03_android:
     $ renpy.block_rollback()
+    $ flashlight_consume = False
     $ shigeo_blood = "blood"
     $ amina_blood = "blood"
     $ current_char = "shigeo"
@@ -35,4 +36,3 @@ label story_03_android:
     ta r_neutral blood "<Arata-san.{w=0.3} I mean you no harm.{w=0.3} Please relax and allow me to inspect you for injuries.>"
     sh surprise blood sweat "<.{w=0.3}.{w=0.3}.{w=0.5}you...?>"
     play music "audio/bgm/measure_of_ningen.ogg"
-    
