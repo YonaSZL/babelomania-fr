@@ -13,3 +13,8 @@ label story_03_android:
     pause 3.0
     scene black with Reveal5
     pause 1.5
+    play music "audio/bgm/shadows_breathe.ogg"
+    sh_i shock sweat "\"{b}AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHH...!!!\""
+    pause 1.0
+    scene tabitha_hand with Reveal3
+    

@@ -107,3 +107,8 @@ image francesco_flashback_glitch:
 
 image open_folder = "images/cgs/chapter_02/open_folder.jpg"
 image closed_folder = "images/cgs/chapter_02/closed_folder.jpg"
+
+#Chapter 03
+
+image tabitha_hand = "images/cgs/chapter_03/tabitha_hand.jpg"
+image tabitha_face = "images/cgs/chapter_03/tabitha_face.jpg"
