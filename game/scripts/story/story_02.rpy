@@ -233,6 +233,7 @@ label story_02_yokai:
     pause 1.0
     play sound4 "audio/sfx/gui_slots_confirm.ogg"
     $ stat4_show = True
+    $ renpy.block_rollback()
     pause 1.0
     #call screen shooti_shot
 
