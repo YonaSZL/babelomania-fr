@@ -1,8 +1,9 @@
 #Name of the character is Amina bint Hassan ibn Abbas al-Bel
-
+default amina_blood = "None"
 
 image amina_body_base = "images/chs/amina/body_base.png"
 image amina_clothes_full = "images/chs/amina/clothes_full.png"
+image amina_clothes_blood = "images/chs/amina/clothes_blood.png"
 image amina_acc_blush = "images/chs/amina/acc_blush.png"
 image amina_acc_sweat = "images/chs/amina/acc_sweat.png"
 image amina_acc_sweatdrop = "images/chs/amina/acc_sweatdrop.png"
@@ -25,8 +26,12 @@ layeredimage Amina:
         attribute base default:
             "amina_body_base"
     group clothes:
-        attribute c_full default:
-            "amina_clothes_full"
+        if amina_blood == "None":
+            attribute c_full default:
+                "amina_clothes_full"
+        elif amina_blood == "blood":
+            attribute c_blood default:
+                "amina_clothes_blood"
     group face:
         attribute neutral default:
             "amina_exp_neutral"
@@ -67,6 +72,7 @@ layeredimage Amina:
 #Portrait Images
 image amina_por_body_base = "images/chs/amina/por/body_base.png"
 image amina_por_clothes_full = "images/chs/amina/por/clothes_full.png"
+image amina_por_clothes_blood = "images/chs/amina/por/clothes_blood.png"
 image amina_por_acc_blush = "images/chs/amina/por/acc_blush.png"
 image amina_por_acc_sweat = "images/chs/amina/por/acc_sweat.png"
 image amina_por_acc_sweatdrop = "images/chs/amina/por/acc_sweatdrop.png"
@@ -88,8 +94,12 @@ layeredimage Amina_por:
         attribute base default:
             "amina_por_body_base"
     group clothes:
-        attribute c_full default:
-            "amina_por_clothes_full"
+        if amina_blood == "None":
+            attribute c_full default:
+                "amina_por_clothes_full"
+        elif amina_blood == "blood":
+            attribute c_blood default:
+                "amina_por_clothes_blood"
     group face:
         attribute neutral default:
             "amina_por_exp_neutral"

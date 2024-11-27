@@ -7,6 +7,8 @@
 
 label story_03_android:
     $ renpy.block_rollback()
+    $ shigeo_blood = "blood"
+    $ amina_blood = "blood"
     $ current_char = "shigeo"
     pause 1.5
     scene title_03 with Reveal
