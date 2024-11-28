@@ -312,5 +312,8 @@ label story_02_happyday:
     stop LoNoise fadeout 3.5
     scene black with Reveal3
     pause 2.0
+    $ time_menu = False
+    $ codex_active = False
+    $ inventory_show = False
     $ renpy.block_rollback()
     jump story_03_android
