@@ -3,6 +3,10 @@ default shigeo_blood = "None"
 image shigeo_body_base = "images/chs/shigeo/body_base.png"
 image shigeo_clothes_full = "images/chs/shigeo/clothes_full.png"
 image shigeo_clothes_blood = "images/chs/shigeo/clothes_blood.png"
+image shigeo_clothes = ConditionSwitch(
+    "shigeo_blood == 'None'", "shigeo_clothes_full",
+    "shigeo_blood == 'blood'", "shigeo_clothes_blood"
+)
 image shigeo_clothes_half = "images/chs/shigeo/clothes_half.png"
 image shigeo_acc_blush = "images/chs/shigeo/acc_blush.png"
 image shigeo_acc_sweat = "images/chs/shigeo/acc_sweat.png"
@@ -26,10 +30,7 @@ layeredimage Shigeo:
             "shigeo_body_base"
     group clothes:
         attribute c_full default:
-            if shigeo_blood == "None":
-                "shigeo_clothes_full"
-            elif shigeo_blood == "blood":
-                "shigeo_clothes_blood"
+            "shigeo_clothes_full"
         attribute c_half:
             "shigeo_clothes_half"
     group face:
@@ -75,6 +76,11 @@ image shigeo_por_acc_blush = "images/chs/shigeo/por/acc_blush.png"
 image shigeo_por_acc_sweat = "images/chs/shigeo/por/acc_sweat.png"
 image shigeo_por_acc_sweatdrop = "images/chs/shigeo/por/acc_sweatdrop.png"
 
+image shigeo_por_clothes = ConditionSwitch(
+    "shigeo_blood == 'None'", "shigeo_por_clothes_full",
+    "shigeo_blood == 'blood'", "shigeo_por_clothes_blood"
+)
+
 image shigeo_por_exp_neutral = "images/chs/shigeo/por/exp_neutral.png"
 image shigeo_por_exp_smile = "images/chs/shigeo/por/exp_smile.png"
 image shigeo_por_exp_shock = "images/chs/shigeo/por/exp_shock.png"
@@ -92,10 +98,7 @@ layeredimage Shigeo_por:
             "shigeo_por_body_base"
     group clothes:
         attribute c_full default:
-            if shigeo_blood == "None":
-                "shigeo_por_clothes_full"
-            elif shigeo_blood == "blood":
-                "shigeo_por_clothes_blood"
+            "shigeo_por_clothes_full"
         attribute c_half:
             "shigeo_por_clothes_half"
     group face:

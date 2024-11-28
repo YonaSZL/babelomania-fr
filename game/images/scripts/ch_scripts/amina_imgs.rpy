@@ -4,6 +4,10 @@ default amina_blood = "None"
 image amina_body_base = "images/chs/amina/body_base.png"
 image amina_clothes_full = "images/chs/amina/clothes_full.png"
 image amina_clothes_blood = "images/chs/amina/clothes_blood.png"
+image amina_clothes = ConditionSwitch(
+    "amina_blood == 'None'", "amina_clothes_full",
+    "amina_blood == 'blood'", "amina_clothes_blood"
+)
 image amina_acc_blush = "images/chs/amina/acc_blush.png"
 image amina_acc_sweat = "images/chs/amina/acc_sweat.png"
 image amina_acc_sweatdrop = "images/chs/amina/acc_sweatdrop.png"
@@ -27,10 +31,7 @@ layeredimage Amina:
             "amina_body_base"
     group clothes:
         attribute c_full default:
-        if amina_blood == "None":
-            "amina_clothes_full"
-        elif amina_blood == "blood":
-            "amina_clothes_blood"
+            "amina_clothes"
     group face:
         attribute neutral default:
             "amina_exp_neutral"
@@ -77,6 +78,11 @@ image amina_por_acc_sweat = "images/chs/amina/por/acc_sweat.png"
 image amina_por_acc_sweatdrop = "images/chs/amina/por/acc_sweatdrop.png"
 image amina_por_acc_blood = "images/chs/amina/por/acc_blood.png"
 
+image amina_por_clothes = ConditionSwitch(
+    "amina_blood == 'None'", "amina_por_clothes_full",
+    "amina_blood == 'blood'", "amina_por_clothes_blood"
+)
+
 image amina_por_exp_neutral = "images/chs/amina/por/exp_neutral.png"
 image amina_por_exp_smile = "images/chs/amina/por/exp_smile.png"
 image amina_por_exp_shock = "images/chs/amina/por/exp_shock.png"
@@ -94,10 +100,7 @@ layeredimage Amina_por:
             "amina_por_body_base"
     group clothes:
         attribute c_full default:
-            if amina_blood == "None":
-                "amina_por_clothes_full"
-            elif amina_blood == "blood":
-                "amina_por_clothes_blood"
+            "amina_por_clothes"
     group face:
         attribute neutral default:
             "amina_por_exp_neutral"
