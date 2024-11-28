@@ -111,4 +111,18 @@ label story_03_android:
     scene black with dissolve
     $ move_time(0,7)
     pause 1.5
-    sh 
+    sh neutral c_half ".{w=0.3}.{w=0.3}.{w=0.5}pulse is steady.{w=0.3} Only light bruises from when Gaspard hit her...{w=0.5} Thank goodness."
+    ta smile "I'm happy to report that your injuries are also within the realm of acceptability, Mr Arata."
+    sh frown c_half "No.{w=0.3} You're not."
+    ta neutral "...?"
+    pause 1.0
+    scene taisho_1f_side_meet_base
+    show Shigeo frown c_half at sh_med:
+        xalign 0.35 yoffset 300
+    show Tabitha neutral at ta_med:
+        xalign 0.68
+    show darkness_layers
+    with dissolve
+    sh nulla "Happy.{w=0.3} You're not able to feel happiness, or concern, or anything like it...{w=0.5} You're a tin-can with legs."
+    ta nulla "That is correct.{w=0.3} My p"
+    185
