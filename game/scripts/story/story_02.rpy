@@ -326,6 +326,9 @@ label story_02_happyday:
     $ time_menu = False
     $ codex_active = False
     $ inventory_show = False
+    $ stat1_show = False
+    $ stat3_show = False
+    $ stat4_show = False
     pause 2.0
     stop LoNoise fadeout 3.5
     scene black with Reveal3

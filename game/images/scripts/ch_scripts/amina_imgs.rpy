@@ -12,10 +12,13 @@ image amina_acc_blush = "images/chs/amina/acc_blush.png"
 image amina_acc_sweat = "images/chs/amina/acc_sweat.png"
 image amina_acc_sweatdrop = "images/chs/amina/acc_sweatdrop.png"
 image amina_acc_light = "images/chs/amina/acc_light.png"
-image amina_acc_blood = "images/chs/amina/acc_blood.png"
-
+image amina_acc_blood_base = "images/chs/amina/acc_blood.png"
+image amina_acc_blood:
+    "amina_acc_blood_base"
+    blend "multiply"
 image amina_exp_neutral = "images/chs/amina/exp_neutral.png"
 image amina_exp_smile = "images/chs/amina/exp_smile.png"
+image amina_exp_cry = "images/chs/amina/exp_cry.png"
 image amina_exp_shock = "images/chs/amina/exp_shock.png"
 image amina_exp_surprise = "images/chs/amina/exp_surprise.png"
 image amina_exp_sad = "images/chs/amina/exp_sad.png"
@@ -39,6 +42,8 @@ layeredimage Amina:
             "amina_exp_smile"
         attribute shock:
             "amina_exp_shock"
+        attribute cry:
+            "amina_exp_cry"
         attribute surprise:
             "amina_exp_surprise"
         attribute sad:
@@ -76,7 +81,10 @@ image amina_por_clothes_blood = "images/chs/amina/por/clothes_blood.png"
 image amina_por_acc_blush = "images/chs/amina/por/acc_blush.png"
 image amina_por_acc_sweat = "images/chs/amina/por/acc_sweat.png"
 image amina_por_acc_sweatdrop = "images/chs/amina/por/acc_sweatdrop.png"
-image amina_por_acc_blood = "images/chs/amina/por/acc_blood.png"
+image amina_por_acc_blood_base = "images/chs/amina/por/acc_blood.png"
+image amina_por_acc_blood:
+    "amina_por_acc_blood_base"
+    blend "multiply"
 
 image amina_por_clothes = ConditionSwitch(
     "amina_blood == 'None'", "amina_por_clothes_full",
@@ -88,6 +96,7 @@ image amina_por_exp_smile = "images/chs/amina/por/exp_smile.png"
 image amina_por_exp_shock = "images/chs/amina/por/exp_shock.png"
 image amina_por_exp_surprise = "images/chs/amina/por/exp_surprise.png"
 image amina_por_exp_sad = "images/chs/amina/por/exp_sad.png"
+image amina_por_exp_cry = "images/chs/amina/por/exp_cry.png"
 image amina_por_exp_frown = "images/chs/amina/por/exp_frown.png"
 image amina_por_exp_laugh = "images/chs/amina/por/exp_laugh.png"
 image amina_por_exp_angry = "images/chs/amina/por/exp_angry.png"
@@ -108,6 +117,8 @@ layeredimage Amina_por:
             "amina_por_exp_smile"
         attribute shock:
             "amina_por_exp_shock"
+        attribute cry:
+            "amina_por_exp_cry"
         attribute surprise:
             "amina_por_exp_surprise"
         attribute sad:

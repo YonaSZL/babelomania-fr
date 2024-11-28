@@ -30,7 +30,7 @@ layeredimage Shigeo:
             "shigeo_body_base"
     group clothes:
         attribute c_full default:
-            "shigeo_clothes_full"
+            "shigeo_clothes"
         attribute c_half:
             "shigeo_clothes_half"
     group face:
@@ -98,7 +98,7 @@ layeredimage Shigeo_por:
             "shigeo_por_body_base"
     group clothes:
         attribute c_full default:
-            "shigeo_por_clothes_full"
+            "shigeo_por_clothes"
         attribute c_half:
             "shigeo_por_clothes_half"
     group face:

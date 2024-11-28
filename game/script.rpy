@@ -38,6 +38,7 @@ image side tabitha darko = LayeredImageProxy("Tabitha_por", Transform(matrixcolo
 
 ##Amina
 define am = Character(_("Amina Abbas"), what_prefix='\"', what_suffix='\"', image="amina", ctc="ctc_blink", ctc_position="nestled")
+define am_i = Character(_("Amina Abbas"), what_prefix='{i}', image="amina", ctc="ctc_blink", ctc_position="nestled")
 define am_x = Character(_("?????"), what_prefix='\"', what_suffix='\"', image="amina", ctc="ctc_blink", ctc_position="nestled")
 define am_n = Character(_("Amina Abbas"), what_suffix='\"', image="amina", ctc="ctc_blink", ctc_position="nestled")
 define am_st = Character(_("Amina Abbas"), what_prefix='{u}\"', what_suffix='\"', image="amina", ctc="ctc_blink", ctc_position="nestled")

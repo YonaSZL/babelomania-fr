@@ -2,7 +2,10 @@
 image tabitha_body_base = "images/chs/tabitha/body_base.png"
 image tabitha_clothes_full = "images/chs/tabitha/clothes_full.png"
 image tabitha_acc_brief = "images/chs/tabitha/acc_brief.png"
-image tabitha_acc_blood = "images/chs/tabitha/acc_blood.png"
+image tabitha_acc_blood_base = "images/chs/tabitha/acc_blood.png"
+image tabitha_acc_blood:
+    "tabitha_acc_blood_base"
+    blend "multiply"
 
 image tabitha_exp_neutral = "images/chs/tabitha/exp_neutral.png"
 image tabitha_exp_smile = "images/chs/tabitha/exp_smile.png"
@@ -63,7 +66,10 @@ layeredimage Tabitha:
 #Portrait Images
 image tabitha_por_body_base = "images/chs/tabitha/por/body_base.png"
 image tabitha_por_clothes_full = "images/chs/tabitha/por/clothes_full.png"
-image tabitha_por_acc_blood = "images/chs/tabitha/por/acc_blood.png"
+image tabitha_por_acc_blood_base = "images/chs/tabitha/por/acc_blood.png"
+image tabitha_por_acc_blood:
+    "tabitha_por_acc_blood_base"
+    blend "multiply"
 
 image tabitha_por_exp_neutral = "images/chs/tabitha/por/exp_neutral.png"
 image tabitha_por_exp_smile = "images/chs/tabitha/por/exp_smile.png"
