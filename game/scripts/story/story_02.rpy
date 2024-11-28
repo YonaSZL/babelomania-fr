@@ -170,7 +170,7 @@ label story_02_yokai:
     play sound "audio/se/door_scifi.ogg"
     pause 0.5
     scene blood with Reveal
-    play music "audio/bgm/fudo_myoo.ogg"
+    play music "<loop 4.019>audio/bgm/fudo_myoo.ogg"
     pause 1.5
     play sound "audio/em/em_gong.ogg"
     scene fudo_appears_01
@@ -188,9 +188,12 @@ label story_02_yokai:
     play sound "audio/se/throw_heavy.ogg"
     pause 0.3
     play sound4 "audio/se/bounce_gore.ogg"
-    play sound3 "audio/se/bounce_item.ogg"
+    pause 0.3
+    play sound3 "audio/se/item_drop.ogg"
+    pause 0.2
     scene lvl3_corridor_dark
     show lvl3_dead_scientist
+    show lvl3_disruptor
     show Fudo:
         xalign 0.5 yalign 0.25 zoom 0.25
     de scream sweat "<AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!!!>"
@@ -207,7 +210,7 @@ label story_02_yokai:
     hide Fudo with dissolve
     pause 0.5
     de angry "<SHIT!{w=0.3} SHIT SHIT SHIT SHIT SHIT!>"
-    play sound3 "audio/se/item_grab.ogg"
+    play sound3 "audio/sfx/gui_item_use.ogg"
     show it_disruptor with dissolve:
         xalign 0.5 yalign 0.4
     pause 0.5
@@ -240,7 +243,7 @@ label story_02_yokai:
 label story_02_elevator_escape:
     $ renpy.block_rollback()
     play sound4 "audio/em/em_impact.ogg"
-    play LoNoise2 "audio/bgs/fudo_steam.ogg"
+    play LoNoise2 "audio/bgs/fudo_steam.ogg" fadein 0.2
     scene lvl3_corridor_dark
     show lvl3_dead_scientist
     show Fudo smoke:
@@ -263,6 +266,7 @@ label story_02_elevator_escape:
     pause 0.5
     play sound "audio/se/elevator_ding.ogg"
     pause 0.5
+    stop LoNoise2 fadeout 0.5
     play sound "audio/se/elevator_door.ogg"
     scene elevator_closed_dark with dissolve
     pause 1.0
@@ -272,11 +276,10 @@ label story_02_elevator_escape:
     play sound4 "audio/se/gui_hint.ogg"
     extend "{b}Archives{/b} level."
     pause 1.5
-    call screen elevator_panel
+    call screen elevator_panel_01
 
 label story_02_happyday:
     $ renpy.block_rollback()
-    play sound4 "audio/se/button_elevator.ogg"
     pause 0.5
     play sound "audio/se/elevator_start.ogg"
     play LoNoise "audio/bgs/elevator_running.ogg" fadein 0.5
@@ -299,7 +302,7 @@ label story_02_happyday:
     de nulla "<Yes.>"
     pause 1.5
     mi_st static "<I'm sorry.>"
-    play sound "audio/se/glitch_short.ogg"
+    play sound "audio/se/static_short.ogg"
     pause 2.5
     show Delphine sad with dissolve
     de_n nulla "*sniffle*{w=0.3}\"U-{w=0.15}Ugh...\"*hic*"

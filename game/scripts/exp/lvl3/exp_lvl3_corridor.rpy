@@ -29,8 +29,8 @@ screen lvl3_corridor_explore_01():
     
     if exp_lvl3_corridor_01_elevators:
         button:
-            pos(932,707)
-            xysize(145,62)
+            pos(853,706)
+            xysize(139,55)
             background None
             hover_sound "audio/sfx/gui_hover.ogg"
             activate_sound "audio/sfx/gui_confirm.ogg"

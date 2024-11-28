@@ -108,6 +108,14 @@ image francesco_flashback_glitch:
 image open_folder = "images/cgs/chapter_02/open_folder.jpg"
 image closed_folder = "images/cgs/chapter_02/closed_folder.jpg"
 
+image lvl3_dead_scientist = "images/cgs/chapter_02/lvl3_dead_scientist.png"
+image lvl3_disruptor = "images/cgs/chapter_02/lvl3_disruptor.png"
+
+image fudo_appears_01 = "images/cgs/chapter_02/fudo_appears_01.jpg"
+image fudo_appears_02 = "images/cgs/chapter_02/fudo_appears_02.jpg"
+image fudo_appears_03 = "images/cgs/chapter_02/fudo_appears_03.jpg"
+image fudo_appears_04 = "images/cgs/chapter_02/fudo_appears_04.jpg"
+
 #Chapter 03
 
 image tabitha_hand = "images/cgs/chapter_03/tabitha_hand.jpg"
