@@ -137,6 +137,7 @@ default briefcase_carry = False
 default numeric_puzzle_input = "None"
 default language_switcher = "English"
 default current_char = "shigeo"
+default shigeo_nickname = "None"
 
 #Defining Music Channels
 init python:

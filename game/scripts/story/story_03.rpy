@@ -124,5 +124,38 @@ label story_03_android:
     show darkness_layers
     with dissolve
     sh nulla "Happy.{w=0.3} You're not able to feel happiness, or concern, or anything like it...{w=0.5} You're a tin-can with legs."
-    ta nulla "That is correct.{w=0.3} My p"
-    185
+    ta nulla "That is correct.{w=0.3} My positronic brain, while extremely sophisticated, does not possess the human capacity for emotion."
+    show Tabitha bow
+    ta nulla "It is, though, an integral part of the human experience and it influences it on many layers, up to and including colloquialism.{w=0.3} Professor Habiki deemed it necessary that I speak in a manner as close to human as feasible and legal."
+    play sound2 "audio/se/clothes_shuffle.ogg"
+    show Shigeo neutral:
+        easeout 3.5 yoffset 185
+    show Tabitha surprise
+    ta nulla "I do need to find some fault with the 'tin-can' descriptor.{w=0.3} My physical appearance is very much humanoid, after all."
+    show Shigeo frown
+    sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}did the professor not include the concept of insults and snide remarks in your extremely sophisticated brain?"
+    ta nulla "Oh, so that was meant to be derogatory?{w=0.5} I apologize."
+    show Tabitha bow
+    show Shigeo surprise
+    ta nulla "It is quite the creative area of human linguistic production, and depending on the culture it can hinge quite heavily on context.{w=0.3} I shall add it to my database, Mr Arata."
+    pause 1.0
+    show Shigeo pain with dissolve
+    sh_n nulla "*groan*{w=0.5}\"Just...{w=0.5} Nevermind.{w=0.3} And don't call me Mr Arata, that's my father."
+    show Tabitha neutral
+    ta nulla "Acknowledged.{w=0.3} Would you rather I address you as Arata-kun like the professor, then?"
+    show Shigeo frown
+    sh nulla "Absolutely {b}not{/b}.{w=0.3} Sheesh, hinging on cultural context indeed..."
+    show Shigeo neutral
+    sh nulla "Let's see, you can call me..."
+    pause 1.5
+
+menu arata_nicknaming:
+
+    sh nulla "You can call me..."
+
+    "Arata-sama.":
+
+    "Arata-dono.":
+
+    "Arata-san.":
+        
