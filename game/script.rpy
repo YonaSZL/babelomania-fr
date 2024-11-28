@@ -209,6 +209,13 @@ init -1:
         yoffset 185
         zoom 0.70
         transform_anchor True
+    transform fu_big:
+        yoffset 117
+        transform_anchor True
+    transform fu_med:
+        yoffset 175
+        zoom 0.70
+        transform_anchor True
 
 label splashscreen:
     scene black
