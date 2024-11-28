@@ -26,12 +26,11 @@ layeredimage Amina:
         attribute base default:
             "amina_body_base"
     group clothes:
+        attribute c_full default:
         if amina_blood == "None":
-            attribute c_full default:
-                "amina_clothes_full"
+            "amina_clothes_full"
         elif amina_blood == "blood":
-            attribute c_blood default:
-                "amina_clothes_blood"
+            "amina_clothes_blood"
     group face:
         attribute neutral default:
             "amina_exp_neutral"
@@ -94,11 +93,10 @@ layeredimage Amina_por:
         attribute base default:
             "amina_por_body_base"
     group clothes:
-        if amina_blood == "None":
-            attribute c_full default:
+        attribute c_full default:
+            if amina_blood == "None":
                 "amina_por_clothes_full"
-        elif amina_blood == "blood":
-            attribute c_blood default:
+            elif amina_blood == "blood":
                 "amina_por_clothes_blood"
     group face:
         attribute neutral default:

@@ -154,8 +154,8 @@ menu arata_nicknaming:
     sh nulla "You can call me..."
 
     "Arata-sama.":
-
+        "NOICE"
     "Arata-dono.":
-
+        "NOICE"
     "Arata-san.":
-        
+        "NOICE"

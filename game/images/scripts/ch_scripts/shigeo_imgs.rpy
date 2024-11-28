@@ -25,11 +25,10 @@ layeredimage Shigeo:
         attribute base default:
             "shigeo_body_base"
     group clothes:
-        if shigeo_blood == "None":
-            attribute c_full default:
+        attribute c_full default:
+            if shigeo_blood == "None":
                 "shigeo_clothes_full"
-        elif shigeo_blood == "blood":
-            attribute c_blood default:
+            elif shigeo_blood == "blood":
                 "shigeo_clothes_blood"
         attribute c_half:
             "shigeo_clothes_half"
@@ -92,11 +91,10 @@ layeredimage Shigeo_por:
         attribute base default:
             "shigeo_por_body_base"
     group clothes:
-        if shigeo_blood == "None":
-            attribute c_full default:
+        attribute c_full default:
+            if shigeo_blood == "None":
                 "shigeo_por_clothes_full"
-        elif shigeo_blood == "blood":
-            attribute c_blood default:
+            elif shigeo_blood == "blood":
                 "shigeo_por_clothes_blood"
         attribute c_half:
             "shigeo_por_clothes_half"
