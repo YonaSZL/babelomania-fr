@@ -50,11 +50,12 @@ label exm_lvl3_meeting_01_stationary:
     pause 1.0
     de_i surprise "(The symbol on this folder, and the others like it...{w=0.5} This is the logo of Flambas.)"
     de_i frown "(I recognize it from the objects Francesco would bring home every now and then.{w=0.3} They sure love their branding, from what I remember.)"
-    de_i surprise "(So, this is not just someone else using some of their technology...{w=0.5} This place, whatever it is, belongs to them.)"
+    de_i surprise "(So, this is not just someone else using some of their technology...{w=0.5} This place, whatever it is, belongs to the company.)"
     de_i frown sweat "(What the hell does a {nw}"
     play sound4 "audio/sfx/gui_spook.ogg"
-    extend "{b}bio-engineering{/b} want with me?{w=0.3} And Francesco...)"
-    de_i surprise "(He had seemed...{w=0.5} A little distant, lately.{w=0.3} I thought it was pre-nuptial jitters but, maybe...?)"
+    extend "{b}bio-engineering{/b} firm want with me?{w=0.3} And Francesco...)"
+    de_i surprise "(He had seemed...{w=0.5} A little distant, lately.{w=0.3} I thought it was pre-nuptial jitters, but maybe...?)"
+    de_i frown "(Is this why he invited that childhood friend of his?{w=0.3} I can't for the life of me recall his name, but Francesco said he was some kind of cop...)"
     pause 1.5
     de_i neutral "(.{w=0.3}.{w=0.3}.{w=0.5}there's some papers left in this folder.)"
     if exm_lvl3_meeting_01_stationary == False:

@@ -3,22 +3,22 @@
 
 default mira_clothes_state = "Base"
 
-image mira_body_base = "images/chs/mira/body_base.png"
-image mira_clothes_full = "images/chs/mira/clothes_full.png"
-image mira_acc_blush = "images/chs/mira/acc_blush.png"
-image mira_acc_sweat = "images/chs/mira/acc_sweat.png"
-image mira_acc_sweatdrop = "images/chs/mira/acc_sweatdrop.png"
+image mira_body_base = "images/chs/amina/body_base.png"
+image mira_clothes_full = "images/chs/amina/clothes_full.png"
+image mira_acc_blush = "images/chs/amina/acc_blush.png"
+image mira_acc_sweat = "images/chs/amina/acc_sweat.png"
+image mira_acc_sweatdrop = "images/chs/amina/acc_sweatdrop.png"
 
-image mira_exp_neutral = "images/chs/mira/exp_neutral.png"
-image mira_exp_smile = "images/chs/mira/exp_smile.png"
-image mira_exp_shock = "images/chs/mira/exp_shock.png"
-image mira_exp_surprise = "images/chs/mira/exp_surprise.png"
-image mira_exp_sad = "images/chs/mira/exp_sad.png"
-image mira_exp_frown = "images/chs/mira/exp_frown.png"
-image mira_exp_laugh = "images/chs/mira/exp_laugh.png"
-image mira_exp_angry = "images/chs/mira/exp_angry.png"
-image mira_exp_fear = "images/chs/mira/exp_fear.png"
-image mira_exp_pain = "images/chs/mira/exp_pain.png"
+image mira_exp_neutral = "images/chs/amina/exp_neutral.png"
+image mira_exp_smile = "images/chs/amina/exp_smile.png"
+image mira_exp_shock = "images/chs/amina/exp_shock.png"
+image mira_exp_surprise = "images/chs/amina/exp_surprise.png"
+image mira_exp_sad = "images/chs/amina/exp_sad.png"
+image mira_exp_frown = "images/chs/amina/exp_frown.png"
+image mira_exp_laugh = "images/chs/amina/exp_laugh.png"
+image mira_exp_angry = "images/chs/amina/exp_angry.png"
+image mira_exp_fear = "images/chs/amina/exp_fear.png"
+image mira_exp_pain = "images/chs/amina/exp_pain.png"
 
 layeredimage Mira:
     group body:
@@ -60,23 +60,24 @@ layeredimage Mira:
     #at character_sprites_mira
 
 #Portrait Images
-image mira_por_body_base = "images/chs/mira/por/body_base.png"
-image mira_por_clothes_full = "images/chs/mira/por/clothes_full.png"
-image mira_por_acc_blush = "images/chs/mira/por/acc_blush.png"
-image mira_por_acc_sweat = "images/chs/mira/por/acc_sweat.png"
-image mira_por_acc_sweatdrop = "images/chs/mira/por/acc_sweatdrop.png"
+image mira_por_body_base = "images/chs/amina/por/body_base.png"
+image mira_por_clothes_full = "images/chs/amina/por/clothes_full.png"
+image mira_por_acc_blush = "images/chs/amina/por/acc_blush.png"
+image mira_por_acc_sweat = "images/chs/amina/por/acc_sweat.png"
+image mira_por_acc_sweatdrop = "images/chs/amina/por/acc_sweatdrop.png"
 
-image mira_por_exp_neutral = "images/chs/mira/por/exp_neutral.png"
-image mira_por_exp_smile = "images/chs/mira/por/exp_smile.png"
-image mira_por_exp_shock = "images/chs/mira/por/exp_shock.png"
-image mira_por_exp_surprise = "images/chs/mira/por/exp_surprise.png"
-image mira_por_exp_sad = "images/chs/mira/por/exp_sad.png"
-image mira_por_exp_frown = "images/chs/mira/por/exp_frown.png"
-image mira_por_exp_laugh = "images/chs/mira/por/exp_laugh.png"
-image mira_por_exp_angry = "images/chs/mira/por/exp_angry.png"
-image mira_por_exp_fear = "images/chs/mira/por/exp_fear.png"
-image mira_por_exp_pain = "images/chs/mira/por/exp_pain.png"
-image mira_por_exp_cloudy = "images/chs/mira/por/exp_cloudy.png"
+image mira_por_exp_neutral = "images/chs/amina/por/exp_neutral.png"
+image mira_por_exp_smile = "images/chs/amina/por/exp_smile.png"
+image mira_por_exp_shock = "images/chs/amina/por/exp_shock.png"
+image mira_por_exp_surprise = "images/chs/amina/por/exp_surprise.png"
+image mira_por_exp_sad = "images/chs/amina/por/exp_sad.png"
+image mira_por_exp_frown = "images/chs/amina/por/exp_frown.png"
+image mira_por_exp_laugh = "images/chs/amina/por/exp_laugh.png"
+image mira_por_exp_angry = "images/chs/amina/por/exp_angry.png"
+image mira_por_exp_fear = "images/chs/amina/por/exp_fear.png"
+image mira_por_exp_pain = "images/chs/amina/por/exp_pain.png"
+image mira_por_exp_cloudy = "images/chs/amina/por/exp_cloudy.png"
+image mira_por_acc_static = "images/chs/mira/por/acc_static.png"
 
 layeredimage Mira_por:
     group body:
@@ -117,3 +118,5 @@ layeredimage Mira_por:
     group accessories_3:
         attribute sweatdrop:
             "mira_por_acc_sweatdrop"
+    attribute static:
+        "mira_por_acc_static"

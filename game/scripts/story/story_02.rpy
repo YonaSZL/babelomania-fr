@@ -149,14 +149,14 @@ label story_02_yokai:
     pause 0.2
     show screen emote("surprise",0.5,0.15)
     show Delphine surprise
-    pause 1.5
-    de nulla "<.{w=0.3}.{w=0.3}.{w=0.5}a {b}gunshot{/b}?"
+    pause 3.0
+    de nulla "{cps=15}<.{w=0.3}.{w=0.3}.{w=0.5}a {b}gunshot{/b}?>"
     pause 1.0
     play sound3 "audio/se/body_slash_muffled.ogg"
     pause 0.5
     play LoNoise "audio/bgs/heartbeat_loop.ogg" fadein 0.1
-    show Delphine fear sweat with dissolve:
-        linear 0.1 xalign 0.4
+    pause 1.0
+    show Delphine fear sweat with dissolve
     pause 1.0
     play sound2 "audio/se/body_slash_muffled.ogg"
     pause 0.5
@@ -171,7 +171,7 @@ label story_02_yokai:
     pause 0.5
     scene blood with Reveal
     play music "<loop 4.019>audio/bgm/fudo_myoo.ogg"
-    pause 1.5
+    pause 2.0
     play sound "audio/em/em_gong.ogg"
     scene fudo_appears_01
     pause 1.5
@@ -188,49 +188,56 @@ label story_02_yokai:
     play sound "audio/se/throw_heavy.ogg"
     pause 0.3
     play sound4 "audio/se/bounce_gore.ogg"
-    pause 0.3
-    play sound3 "audio/se/item_drop.ogg"
     pause 0.2
     scene lvl3_corridor_dark
     show lvl3_dead_scientist
-    show lvl3_disruptor
     show Fudo:
-        xalign 0.5 yalign 0.25 zoom 0.25
+        xalign 0.5 yalign 0.6 zoom 0.18
+    pause 1.5
     de scream sweat "<AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!!!>"
+    play sound3 "audio/se/item_drop.ogg"
+    pause 0.2
     show lvl3_disruptor with dissolve
+    pause 1.3
     de_n scream sweat "\"<NO!{w=0.3} NONONONONONONOOOOOOO!!!>\"{i}(THIS ISN'T HAPPENING!{w=0.3} THIS CANNOT BE HAPPENING!){/i}"
     de_i fear "(DAD!{w=0.3} MOM!{w=0.3} FRANCESCO!{w=0.3} ANYONE-)"
     play sound2 "audio/se/static_short.ogg"
     mi_nst static "<.{w=0.3}.{w=0.3}.{w=0.5}e gun!>"
-    play sound4 "audio/se/gui_hint.ogg"
-    de surprise sweat "<...what?>"
+    play sound4 "audio/sfx/gui_hint.ogg"
+    de surprise sweat "<!{w=0.3} ...what?>"
     play sound2 "audio/se/static_short.ogg"
     mi_nst static "<Grab the {b}Disruptor{/b} and shoot it!{w=0.3} OR DO YOU WANT TO DIE?!>"
     pause 0.5
     hide Fudo with dissolve
     pause 0.5
     de angry "<SHIT!{w=0.3} SHIT SHIT SHIT SHIT SHIT!>"
-    play sound3 "audio/sfx/gui_item_use.ogg"
-    show it_disruptor with dissolve:
+    play sound "audio/sfx/gui_item_use.ogg"
+    pause 0.5
+    hide lvl3_disruptor
+    show it_disruptor:
         xalign 0.5 yalign 0.4
+    with dissolve
     pause 0.5
     play sound4 "audio/sfx/gui_slots_confirm.ogg"
-    show screen notify(_("Inventory Unlocked."))
+    show screen notify(_("Received Disruptor."))
     $ delphine_inventory.append(item_disruptor)
-    show Fudo:
-        xalign 0.5 yalign 0.5 zoom 0.5
-    with dissolve
-    de fear sweat "<Stay back!{w=0.3} Stay back or I'll->"
-    mi_nst static "<JUST SHOOT IT!{w=0.3} You don't get it?!{w=0.3} {b}It's not human!{/b}>"
-    show Fudo:
-        xalign 0.5 yalign 0.7 zoom 0.65
-    with dissolve
-    mi_nst static "<It doesn't care for your warnings!{w=0.3} It doesn't care for your pleas!{w=0.3} It doesn't care for your fear!>"
+    pause 2.0
+    hide it_disruptor with dissolve
     pause 0.5
+    show Fudo:
+        xalign 0.5 yalign 0.65 zoom 0.3
+    with dissolve
+    pause 0.5
+    de fear sweat "<Stay back!{w=0.3} Stay back or I'll->"
+    mi_nst static "<JUST SHOOT IT!{w=0.3} Don't you get it?!{w=0.3} {nw}"
+    play sound4 "audio/sfx/gui_spook.ogg"
+    extend "{b}It's not human!{/b}>"
+    play sound4 "audio/se/fudo_steps.ogg"
     hide Fudo with dissolve
+    mi_nst static "<It doesn't care for your warnings!{w=0.3} It doesn't care for your pleas!{w=0.3} It doesn't care for your fear!>"
     pause 1.0
     show Fudo with Reveal:
-        yoffset 123
+        zoom 0.85 xalign 0.5 yoffset 70
     pause 0.5
     mi_nst static "<All it wants to do is {b}erase your existence{/b}!>"
     pause 1.0
@@ -256,7 +263,8 @@ label story_02_elevator_escape:
     pause 1.0
     de surprise sweat "<Aaah...{w=0.5} Aaaah...{w=0.5} Aaaaah, I...{w=0.5} I...?!>"
     mi_nst static "<You did not!{w=0.3} Get in the elevator before it gets back up!>"
-    show screen emote("surprise",0.95,0.5)
+    play sound4 "audio/em/em_surprise.ogg"
+    show screen emote("surprise",0.15,0.5)
     de shock sweat "<What?!>"
     mi_nst static "<All you did was stun it!{w=0.3} {nw}"
     play sound4 "audio/sfx/gui_spook.ogg"
@@ -266,15 +274,17 @@ label story_02_elevator_escape:
     pause 0.5
     play sound "audio/se/elevator_ding.ogg"
     pause 0.5
-    stop LoNoise2 fadeout 0.5
-    play sound "audio/se/elevator_door.ogg"
-    scene elevator_closed_dark with dissolve
-    pause 1.0
-    scene elevator_panel_dark with dissolve
+    play sound "audio/se/door_elevator.ogg"
+    scene elevator_closed_dark with Reveal
+    pause 0.5
+    stop LoNoise2 fadeout 5.5
+    pause 1.5
+    scene elevator_panel_dark with Reveal
+    pause 0.5
     de shock sweat "<I don't have a keycard...>"
-    mi_nst static "<It doesn't matter, the emergency lockdown overrides it.{w=0.3} Come to me on the {nw}"
-    play sound4 "audio/se/gui_hint.ogg"
-    extend "{b}Archives{/b} level."
+    mi_nst static "<It doesn't matter, evacuation mode overrides it.{w=0.3} Come to the {nw}"
+    play sound4 "audio/sfx/gui_hint.ogg"
+    extend "{b}Archives{/b} level, that's where I am.{w=0.3} It's safe."
     pause 1.5
     call screen elevator_panel_01
 
@@ -287,11 +297,11 @@ label story_02_happyday:
     scene elevator_closed_dark with dissolve
     pause 1.0
     mi_nst static "<Good job.{w=0.3} I'll meet you there.>"
-    pause 0.5
+    pause 1.5
     show Delphine surprise sweat at de_med:
         xalign 0.5
     with dissolve
-    pause 0.5
+    pause 1.0
     de nulla ".{w=0.3}.{w=0.3}.{w=0.5}what's your name?"
     mi_st static "<I'm {b}Mira{/b}...{w=0.5} And you?>"
     de nulla "<Delphine...{w=0.5} Thank you, Mira.>"
@@ -304,13 +314,14 @@ label story_02_happyday:
     mi_st static "<I'm sorry.>"
     play sound "audio/se/static_short.ogg"
     pause 2.5
-    show Delphine sad with dissolve
-    de_n nulla "*sniffle*{w=0.3}\"U-{w=0.15}Ugh...\"*hic*"
+    show Delphine sad with Reveal
     pause 1.0
-    play sound "audio/se/clothes_shuffle.ogg"
+    de_n nulla "{cps=10}*sniffle*{w=0.3}\"U-{w=0.15}Ugh...\"*hic*"
+    pause 1.0
+    play sound "audio/se/clothes_rustle.ogg"
     hide Delphine with dissolve
     pause 1.5
-    de sad "WaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAH...!!!"
+    de sad "{cps=15}WaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAH...!!!"
     pause 2.0
     stop LoNoise fadeout 3.5
     scene black with Reveal3

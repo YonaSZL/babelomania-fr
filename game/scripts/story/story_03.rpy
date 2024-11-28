@@ -63,7 +63,7 @@ label story_03_android:
     sh pain blood "<.{w=0.3}.{w=0.3}.{w=0.5}Gaspard...{w=0.5} Shit.{w=0.3} ShitshitSH-{nw}"
     am cry blood "{cps=10}Why...?"
     play sound "audio/em/em_shock.ogg"
-    show screen emote("surprise",0.95,0.5)
+    show screen emote("surprise",0.15,0.5)
     sh shock blood "...!{w=0.3} Amina!"
     show Amina blood cry:
         xalign 0.25

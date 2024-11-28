@@ -126,7 +126,7 @@ label exp_lvl3_corridor_01_elevators:
     scene elevator_panel with Reveal
     pause 0.5
     de neutral "<You're still missing the keys to the executive toilets.>"
-    de_i neutral "(Literally, maybe...{w=0.5} There's a panel which I assume serves for scanning {nw}"
+    de_i neutral "(Literally, maybe...{w=0.5} There's a panel which I assume is for scanning {nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
     extend "{b}keycards{/b}...{w=0.5} And one single floor, instead, necessitates a physical key.)"
     de_i frown "(A single P...{w=0.5} Parking, maybe?{w=0.3} The other floor names, though...{w=0.5} Lab, security, archive...)"
@@ -222,7 +222,7 @@ label exp_lvl3_corridor_01_meeting_open:
     de_i frown sweat "(Meeting room number two...!{w=0.3} Come on!)"
     play sound2 "audio/se/door_slide.ogg"
     pause 1.0
-    de_i shock sweat "(Some luck, finally!{w=0.3} There better be a keycard inside here!)"
+    de_i shock sweat "(Some luck, finally!{w=0.3} There better be a keycard in here!)"
     pause 1.0
     scene black with dissolve
     pause 1.0
