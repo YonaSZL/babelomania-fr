@@ -63,7 +63,7 @@ layeredimage Tabitha:
 #Portrait Images
 image tabitha_por_body_base = "images/chs/tabitha/por/body_base.png"
 image tabitha_por_clothes_full = "images/chs/tabitha/por/clothes_full.png"
-image tabitha_por_acc_blood = "images/chs/tabitha/por/red/acc_blood.png"
+image tabitha_por_acc_blood = "images/chs/tabitha/por/acc_blood.png"
 
 image tabitha_por_exp_neutral = "images/chs/tabitha/por/exp_neutral.png"
 image tabitha_por_exp_smile = "images/chs/tabitha/por/exp_smile.png"

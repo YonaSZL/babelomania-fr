@@ -322,12 +322,13 @@ label story_02_happyday:
     hide Delphine with dissolve
     pause 1.5
     de sad "{cps=15}WaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAH...!!!"
+    $ quick_menu = False
+    $ time_menu = False
+    $ codex_active = False
+    $ inventory_show = False
     pause 2.0
     stop LoNoise fadeout 3.5
     scene black with Reveal3
     pause 2.0
-    $ time_menu = False
-    $ codex_active = False
-    $ inventory_show = False
     $ renpy.block_rollback()
     jump story_03_android

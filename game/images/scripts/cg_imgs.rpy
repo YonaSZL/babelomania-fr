@@ -1,6 +1,7 @@
 #Chapter Titlecards
 image title_01 = "gui/titlecards/ch_01.jpg"
 image title_02 = "gui/titlecards/ch_02.jpg"
+image title_03 = "gui/titlecards/ch_03.jpg"
 
 #Intro Sequence
 image white = "gui/transitions/white.jpg"
