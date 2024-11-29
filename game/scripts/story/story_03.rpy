@@ -183,4 +183,19 @@ label story_03_aratanicknamed:
     play sound4 "audio/sfx/gui_hint.ogg"
     extend "{b}please feel free to address me at any time{/b}."
     $ tabitha_cmp = True
-    
+    pause 1.5
+    sh nulla "Will do...{w=0.5} And speaking of addressing, while we wait for Amina to recover."
+    show Shigeo frown
+    sh nulla "I have some questions for you, android."
+    show Tabitha bow
+    ta nulla "I shall do my best to answer them in a satisfactory manner, [sh_n]."
+    pause 1.0
+    scene taisho_1f_side_meet_base with dissolve
+    pause 0.5
+    show Tabitha neutral at ta_big:
+        xalign 0.5
+    with Reveal
+    pause 1.0
+    call screen tabitha_conv_01
+
+label story_03_uneasy_trio:

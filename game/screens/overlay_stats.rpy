@@ -62,6 +62,8 @@ screen overlay_stats():
 
                 idle_foreground "gui/stats/tabitha_id.png"##add the face image 
                 hover_foreground "gui/stats/tabitha_hv.png"
+                hover_sound "audio/sfx/gui_hover.ogg"
+                activate_sound "audio/sfx/gui_confirm.ogg"
                 if story_progress >= 1:
                     action Jump("conv_tabitha_exp")
                 else:
