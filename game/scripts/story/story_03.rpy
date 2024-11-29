@@ -150,7 +150,7 @@ label story_03_android:
     show Shigeo pain with dissolve
     sh_n nulla "*groan*{w=0.5}\"Just...{w=0.5} Nevermind.{w=0.3} And don't call me Mr Arata, that's my father."
     show Tabitha neutral
-    ta nulla "Acknowledged.{w=0.3} Would you rather I address you as Arata-kun like the professor, then?"
+    ta nulla "Acknowledged.{w=0.3} Would you rather I address you as Arata-kun like Professor Habiki, then?"
     show Shigeo frown
     sh nulla "Absolutely {b}not{/b}.{w=0.3} Sheesh, hinging on cultural context indeed..."
     show Shigeo neutral
@@ -161,9 +161,26 @@ menu arata_nicknaming:
 
     sh nulla "You can call me..."
 
-    "Arata-sama.":
-        "NOICE"
-    "Arata-dono.":
-        "NOICE"
-    "Arata-san.":
-        "NOICE"
+    "Arata-sama":
+        $ sh_n = "Arata-sama"
+        jump story_03_aratanicknamed
+    "Arata-dono":
+        $ sh_n = "Arata-dono"
+        jump story_03_aratanicknamed
+    "Arata-san":
+        $ sh_n = "Arata-san"
+        jump story_03_aratanicknamed
+    "Something else...":
+        $ sh_n = renpy.input(prompt="You can call me...", default='Arata-dono', length=10, copypaste=True)
+        jump story_03_aratanicknamed
+
+label story_03_aratanicknamed:
+    play sound4 "audio/sfx/gui_slots_confirm.ogg"
+    show Tabitha bow
+    ta nulla "Acknowledged.{w=0.3} I shall henceforth address you as [sh_n]."
+    show Tabitha neutral
+    ta nulla "If you ever change your mind, {nw}"
+    play sound4 "audio/sfx/gui_hint.ogg"
+    extend "{b}please feel free to address me at any time{/b}."
+    $ tabitha_cmp = True
+    

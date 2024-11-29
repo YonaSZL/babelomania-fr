@@ -18,7 +18,7 @@ default flashlight_consume = False
 default flashlight_allowed = True
 
 default amina_cmp = False
-default gaspard_cmp = False
+default tabitha_cmp = False
 
 
 
@@ -55,6 +55,17 @@ screen overlay_stats():
 
     vbox:
         xalign 1.0 offset(-103, 245)  spacing -10
+        if tabitha_cmp:
+            button:
+                xysize(125,125)
+                background "gui/stats/cm_bg.png"
+
+                idle_foreground "gui/stats/tabitha_id.png"##add the face image 
+                hover_foreground "gui/stats/tabitha_hv.png"
+                if story_progress >= 1:
+                    action Jump("conv_tabitha_exp")
+                else:
+                    action NullAction()
         if amina_cmp:
             button:
                 xysize(125,125)
@@ -62,11 +73,6 @@ screen overlay_stats():
                 
                 idle_foreground "gui/stats/test.png"##add the face image 
                 hover_foreground "gui/stats/test.png"
-                action NullAction()
-        if gaspard_cmp:
-            button:
-                xysize(125,125)
-                background "gui/stats/cm_bg.png"
                 action NullAction()
 
     if inventory_show:
