@@ -181,7 +181,7 @@ label story_03_aratanicknamed:
     show Tabitha neutral
     ta nulla "If you ever change your mind, {nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
-    extend "{b}please feel free to address me at any time{/b}."
+    extend "{b}please feel free to tell me so at any time{/b}."
     $ tabitha_cmp = True
     pause 1.5
     sh nulla "Will do...{w=0.5} And speaking of addressing, while we wait for Amina to recover."

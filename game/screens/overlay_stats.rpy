@@ -74,9 +74,14 @@ screen overlay_stats():
                     xysize(125,125)
                     background "gui/stats/cm_bg.png"
                     
-                    idle_foreground "gui/stats/test.png"##add the face image 
-                    hover_foreground "gui/stats/test.png"
-                    action NullAction()
+                    idle_foreground "gui/stats/amina_id.png"##add the face image 
+                    hover_foreground "gui/stats/amina_hv.png"
+                    hover_sound "audio/sfx/gui_hover.ogg"
+                    activate_sound "audio/sfx/gui_confirm.ogg"
+                    if story_progress >= 1:
+                        action Jump("conv_amina_exp")
+                    else:
+                        action NullAction()
 
     if inventory_show:
         button:
