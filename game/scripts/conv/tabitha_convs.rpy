@@ -189,7 +189,20 @@ label tabitha_01_gaspard:
 label tabitha_01_rules:
     $ renpy.block_rollback()
     pause 0.5
-    
+    sh neutral "You...{w=0.5} You're Professor Habiki's creation, correct?{w=0.3} Him and him alone?"
+    show Tabitha bow
+    ta nulla "Affirmative, [shn].{w=0.3} I am his personal project and, so far, the crowning achievement of his genius."
+    sh surprise "Meaning that he was the one who decided to...{w=0.5} Give you that kind of strength.{w=0.3} Which flies into the face of all international treaties about the creation of androids and proliferation of war machines."
+    show Tabitha neutral
+    sh frown sweat "Japan may be lax about shapes, but they're one of the most firm upholders of the ban on war androids...{w=0.5} Which means that he must have used his influence to register you with false information."
+    ta nulla "I cannot deny nor confirm such an hypothesis, [shn]."
+    sh neutral "And earlier, when you said that you didn't grab Amina before she hit the floor despite being closer to her than me...{w=0.5} I wasn't thinking clearly earlier, but that shouldn't be possible."
+    sh angry "All androids are to be built to international specifications...{w=0.5} Which includes the base imperatives of not harming humans and not letting harm come to humans.{w=0.3} You...{w=0.5} You don't have that?"
+    show Tabitha bow
+    ta nulla "I cannot deny nor confirm such an hypothesis, [shn]."
+    sh angry sweat ".{w=0.3}.{w=0.3}.{w=0.5}unbelievable.{w=0.3} Absolutely unbelievable."
+    show Tabitha neutral
+    ta nulla ""
     pause 1.0
     if tabitha_01_rules == False:
         $ tabitha_01_rules = True
