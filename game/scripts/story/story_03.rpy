@@ -27,7 +27,7 @@ label story_03_android:
     $ stat3_show = True
     $ stat4_show = True
     play music "audio/bgm/shadows_breathe.ogg"
-    sh shock blood sweat "\"{b}AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHH...!!!\""
+    sh_i shock blood sweat "\"{b}AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHH...!!!\""
     pause 1.0
     scene tabitha_hand with Reveal3
     pause 1.0
@@ -91,6 +91,7 @@ label story_03_android:
     am_i nulla "{cps=10}\"Why...{w=0.5} {b}Why did SHE...?!?!?!\"{/b}"
     pause 1.0
     show Amina cry
+    show Shigeo shock sweat
     play sound2 "audio/se/body_fall.ogg"
     hide Amina with dissolve
     show Shigeo shock sweat at sh_med:
@@ -117,31 +118,34 @@ label story_03_android:
     sh nulla "You'd better.{w=0.3} Gently, now."
     pause 1.0
     scene black with dissolve
+    pause 1.0
     $ move_time(0,7)
-    pause 1.5
+    pause 0.5
     sh neutral c_half ".{w=0.3}.{w=0.3}.{w=0.5}pulse is steady.{w=0.3} Only light bruises from when Gaspard hit her...{w=0.5} Thank goodness."
     ta smile blood "I'm happy to report that your injuries are also within the realm of acceptability, Mr Arata."
     sh frown c_half "No.{w=0.3} You're not."
     ta neutral blood "...?"
     pause 1.0
     scene taisho_1f_side_meet_base
+    show darkness_layer
     show Shigeo frown c_half at sh_med:
-        xalign 0.35 yoffset 300
+        xalign 0.35 yoffset 200
     show Tabitha blood neutral at ta_med:
         xalign 0.68
-    show darkness_layers
     with dissolve
+    pause 1.0
     sh nulla "Happy.{w=0.3} You're not able to feel happiness, or concern, or anything like it...{w=0.5} You're a tin-can with legs."
     ta nulla "That is correct.{w=0.3} My positronic brain, while extremely sophisticated, does not possess the human capacity for emotion."
     show Tabitha bow
+    play sound2 "audio/se/clothes_rustle.ogg"
+    hide Shigeo with dissolve
     ta nulla "It is, though, an integral part of the human experience and it influences it on many layers, up to and including colloquialism.{w=0.3} Professor Habiki deemed it necessary that I speak in a manner as close to human as feasible and legal."
-    play sound2 "audio/se/clothes_shuffle.ogg"
-    show Shigeo neutral:
-        easeout 3.5 yoffset 185
+    show Shigeo frown c_half at sh_med:
+        xalign 0.35
+    with dissolve
     show Tabitha surprise
-    ta nulla "I do need to find some fault with the 'tin-can' descriptor.{w=0.3} My physical appearance is very much humanoid, after all."
-    show Shigeo frown
-    sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}did the professor not include the concept of insults and snide remarks in your extremely sophisticated brain?"
+    ta nulla "I do happen to find some imprecision with the 'tin-can' descriptor, though.{w=0.3} My physical appearance is very much humanoid, after all."
+    sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}did the professor not include the concept of insults and snide remarks in your 'extremely sophisticated' brain?"
     ta nulla "Oh, so that was meant to be derogatory?{w=0.5} I apologize."
     show Tabitha bow
     show Shigeo surprise
@@ -155,47 +159,53 @@ label story_03_android:
     sh nulla "Absolutely {b}not{/b}.{w=0.3} Sheesh, hinging on cultural context indeed..."
     show Shigeo neutral
     sh nulla "Let's see, you can call me..."
-    pause 1.5
+    pause 0.5
 
 menu arata_nicknaming:
 
     sh nulla "You can call me..."
 
-    "Arata-sama":
-        $ sh_n = "Arata-sama"
+    "Arata-sama.":
+        $ shn = "Arata-sama"
         jump story_03_aratanicknamed
-    "Arata-dono":
-        $ sh_n = "Arata-dono"
+    "Arata-dono.":
+        $ shn = "Arata-dono"
         jump story_03_aratanicknamed
-    "Arata-san":
-        $ sh_n = "Arata-san"
+    "Arata-san.":
+        $ shn = "Arata-san"
         jump story_03_aratanicknamed
     "Something else...":
-        $ sh_n = renpy.input(prompt="You can call me...", default='Arata-dono', length=10, copypaste=True)
+        $ shn = renpy.input(prompt="You can call me...", default='Arata-dono', length=10, copypaste=True)
         jump story_03_aratanicknamed
 
 label story_03_aratanicknamed:
+    $ renpy.block_rollback()
     play sound4 "audio/sfx/gui_slots_confirm.ogg"
     show Tabitha bow
-    ta nulla "Acknowledged.{w=0.3} I shall henceforth address you as [sh_n]."
+    ta nulla "Acknowledged.{w=0.3} I shall henceforth address you as [shn]."
     show Tabitha neutral
     ta nulla "If you ever change your mind, {nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
     extend "{b}please feel free to tell me so at any time{/b}."
+    play sound4 "audio/sfx/gui_slots_confirm.ogg"
     $ tabitha_cmp = True
     pause 1.5
     sh nulla "Will do...{w=0.5} And speaking of addressing, while we wait for Amina to recover."
     show Shigeo frown
     sh nulla "I have some questions for you, android."
     show Tabitha bow
-    ta nulla "I shall do my best to answer them in a satisfactory manner, [sh_n]."
+    ta nulla "I shall do my best to answer them in a satisfactory manner, [shn]."
     pause 1.0
-    scene taisho_1f_side_meet_base with dissolve
+    scene taisho_1f_side_meet_base
+    show darkness_layer
+    with dissolve
     pause 0.5
     show Tabitha blood neutral at ta_big:
         xalign 0.5
     with Reveal
     pause 1.0
+    $ move_time(0,5)
+    $ renpy.block_rollback()
     call screen tabitha_conv_01
 
 label story_03_uneasy_trio:

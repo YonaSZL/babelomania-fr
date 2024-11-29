@@ -65,7 +65,7 @@ screen overlay_stats():
                     hover_foreground "gui/stats/tabitha_hv.png"
                     hover_sound "audio/sfx/gui_hover.ogg"
                     activate_sound "audio/sfx/gui_confirm.ogg"
-                    if story_progress >= 1:
+                    if story_progress >= 2:
                         action Jump("conv_tabitha_exp")
                     else:
                         action NullAction()
@@ -78,7 +78,7 @@ screen overlay_stats():
                     hover_foreground "gui/stats/amina_hv.png"
                     hover_sound "audio/sfx/gui_hover.ogg"
                     activate_sound "audio/sfx/gui_confirm.ogg"
-                    if story_progress >= 1:
+                    if story_progress >= 2:
                         action Jump("conv_amina_exp")
                     else:
                         action NullAction()
