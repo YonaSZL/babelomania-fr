@@ -199,3 +199,4 @@ label story_03_aratanicknamed:
     call screen tabitha_conv_01
 
 label story_03_uneasy_trio:
+    "OHNOES"
