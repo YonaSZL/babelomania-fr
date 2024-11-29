@@ -50,17 +50,6 @@ screen tabitha_conv_01:
                     action Jump("tabitha_01_gaspard")
                 if tabitha_01_gaspard:
                     button:
-                        text _("Tabitha's Directives")
-                        at btn_slide
-                        if tabitha_01_directive:
-                            background "gui/talkie/button.png"
-                        else:
-                            background "gui/talkie/button_empty.png"
-                        hover_sound "audio/sfx/gui_hover.ogg"
-                        activate_sound "audio/sfx/gui_confirm.ogg"
-                        action Jump("tabitha_01_directive")
-                if tabitha_01_directive:
-                    button:
                         text _("Tabitha's Programming")
                         at btn_slide
                         if tabitha_01_rules:
@@ -70,6 +59,17 @@ screen tabitha_conv_01:
                         hover_sound "audio/sfx/gui_hover.ogg"
                         activate_sound "audio/sfx/gui_confirm.ogg"
                         action Jump("tabitha_01_rules")
+                if tabitha_01_rules:
+                    button:
+                        text _("Tabitha's Directives")
+                        at btn_slide
+                        if tabitha_01_directive:
+                            background "gui/talkie/button.png"
+                        else:
+                            background "gui/talkie/button_empty.png"
+                        hover_sound "audio/sfx/gui_hover.ogg"
+                        activate_sound "audio/sfx/gui_confirm.ogg"
+                        action Jump("tabitha_01_directive")
                 
 
         ####Indicator if viewport is scrollable
@@ -153,11 +153,16 @@ label tabitha_01_gaspard:
     show Tabitha frown
     ta nulla "Whatever transpired between the beginning of my state of dormancy and my subsequent reboot caused me to arrive almost too late...{w=0.5} I mantain that it was the only safe course of action."
     sh surprise sweat "You...{w=0.5} You mean..."
-    sh shock sweat "That you tore Gaspard to shreds {nw}"
+    sh pain sweat "That you tore Gaspard to shreds {nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
     extend "{b}to save me{/b}?"
+    show Tabitha neutral
+    ta nulla "Affirmative.{w=0.3} Thankfully, I made it in time and the hostile proved himself to be only slightly more resistant than the average human."
     show Tabitha smile
-    ta nulla "Affirmative."
+    ta nulla "As for the how:{w=0.15} my chassis can exercise up to 1950 kilograms of pressure per centimeter squared.{w=0.3} Such a feat rests well within my parameters."
+    play sound4 "audio/em/em_shock.ogg"
+    show screen emote("surprise",0.15,0.5)
+    sh shock sweat "1950...!!!{w=0.5} "
     pause 1.0
     if tabitha_01_gaspard == False:
         $ tabitha_01_gaspard = True
