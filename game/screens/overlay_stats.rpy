@@ -55,27 +55,28 @@ screen overlay_stats():
 
     vbox:
         xalign 1.0 offset(-103, 245)  spacing -10
-        if tabitha_cmp:
-            button:
-                xysize(125,125)
-                background "gui/stats/cm_bg.png"
+        if current_char == "shigeo":
+            if tabitha_cmp:
+                button:
+                    xysize(125,125)
+                    background "gui/stats/cm_bg.png"
 
-                idle_foreground "gui/stats/tabitha_id.png"##add the face image 
-                hover_foreground "gui/stats/tabitha_hv.png"
-                hover_sound "audio/sfx/gui_hover.ogg"
-                activate_sound "audio/sfx/gui_confirm.ogg"
-                if story_progress >= 1:
-                    action Jump("conv_tabitha_exp")
-                else:
+                    idle_foreground "gui/stats/tabitha_id.png"##add the face image 
+                    hover_foreground "gui/stats/tabitha_hv.png"
+                    hover_sound "audio/sfx/gui_hover.ogg"
+                    activate_sound "audio/sfx/gui_confirm.ogg"
+                    if story_progress >= 1:
+                        action Jump("conv_tabitha_exp")
+                    else:
+                        action NullAction()
+            if amina_cmp:
+                button:
+                    xysize(125,125)
+                    background "gui/stats/cm_bg.png"
+                    
+                    idle_foreground "gui/stats/test.png"##add the face image 
+                    hover_foreground "gui/stats/test.png"
                     action NullAction()
-        if amina_cmp:
-            button:
-                xysize(125,125)
-                background "gui/stats/cm_bg.png"
-                
-                idle_foreground "gui/stats/test.png"##add the face image 
-                hover_foreground "gui/stats/test.png"
-                action NullAction()
 
     if inventory_show:
         button:
