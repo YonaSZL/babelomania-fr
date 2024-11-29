@@ -110,7 +110,22 @@ label tabitha_01_scenario:
     sh neutral "So you followed him to the upper floor.{w=0.3} What transpired afterwards?"
     pause 1.5
     show Tabitha surprise with dissolve
-    
+    ta nulla ".{w=0.3}.{w=0.3}.{w=0.5}{nw}"
+    play sound4 "audio/sfx/gui_hint.ogg"
+    extend "{b}Data not found{/b}."
+    play sound "audio/em/em_surprise.ogg"
+    show screen emote("surprise",0.15,0.5)
+    sh surprise "Eh?{w=0.3} What do you mean 'data not found'?"
+    show Tabitha frown
+    ta nulla "This is quite anomalous...{w=0.5} I don't seem to possess any data regarding the period of time inbetween the beginning of Professor Habiki's observations and my reboot in the adjacent room."
+    sh surprise "So you mean to tell me that you, too, don't have any memory of the last couple hours?!"
+    sh_i frown "(No, actually...{w=0.5} Her memory loss goes even further back.{w=0.3} When they went to the upper floor, I went back to the reception room.{w=0.3} I spoke to Gagspard, then Francesco and Amina, then only afterwards did the video happen...)"
+    sh_i neutral "(So whatever was done to this android was not the same thing that happened to us...{w=0.5} But it's highly likely they're correlated.)"
+    ta nulla "I apologize, [sh_n].{w=0.3} This is quite unbecoming."
+    sh neutral "Yeah, well...{w=0.5} Nothing you could have done about it.{w=0.3} We sure couldn't."
+    sh frown "And honestly...{w=0.5} I can think of other things far more unbecoming than that, android."
+    show Tabitha neutral
+    ta nulla "...?"
     pause 1.0
     if tabitha_01_scenario == False:
         $ tabitha_01_scenario = True
