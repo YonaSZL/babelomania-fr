@@ -120,14 +120,14 @@ label story_03_android:
     $ move_time(0,7)
     pause 1.5
     sh neutral c_half ".{w=0.3}.{w=0.3}.{w=0.5}pulse is steady.{w=0.3} Only light bruises from when Gaspard hit her...{w=0.5} Thank goodness."
-    ta smile "I'm happy to report that your injuries are also within the realm of acceptability, Mr Arata."
+    ta smile blood "I'm happy to report that your injuries are also within the realm of acceptability, Mr Arata."
     sh frown c_half "No.{w=0.3} You're not."
-    ta neutral "...?"
+    ta neutral blood "...?"
     pause 1.0
     scene taisho_1f_side_meet_base
     show Shigeo frown c_half at sh_med:
         xalign 0.35 yoffset 300
-    show Tabitha neutral at ta_med:
+    show Tabitha blood neutral at ta_med:
         xalign 0.68
     show darkness_layers
     with dissolve
@@ -192,7 +192,7 @@ label story_03_aratanicknamed:
     pause 1.0
     scene taisho_1f_side_meet_base with dissolve
     pause 0.5
-    show Tabitha neutral at ta_big:
+    show Tabitha blood neutral at ta_big:
         xalign 0.5
     with Reveal
     pause 1.0

@@ -3,8 +3,8 @@
 #Convo 01
 default tabitha_01_scenario = False #Do you know what's going on?
 default tabitha_01_gaspard = False #Why did you kill Gaspard?!
-default tabitha_01_rules = False #You don't have the three rules?!
 default tabitha_01_directive = False #You have the directive to protect me?!
+default tabitha_01_rules = False #You don't have the three rules?!
 default tabitha_conv_01 = 0
 
 screen tabitha_conv_01:
@@ -50,17 +50,6 @@ screen tabitha_conv_01:
                     action Jump("tabitha_01_gaspard")
                 if tabitha_01_gaspard:
                     button:
-                        text _("Tabitha's Programming")
-                        at btn_slide
-                        if tabitha_01_rules:
-                            background "gui/talkie/button.png"
-                        else:
-                            background "gui/talkie/button_empty.png"
-                        hover_sound "audio/sfx/gui_hover.ogg"
-                        activate_sound "audio/sfx/gui_confirm.ogg"
-                        action Jump("tabitha_01_rules")
-                if tabitha_01_rules:
-                    button:
                         text _("Tabitha's Directives")
                         at btn_slide
                         if tabitha_01_directive:
@@ -70,7 +59,18 @@ screen tabitha_conv_01:
                         hover_sound "audio/sfx/gui_hover.ogg"
                         activate_sound "audio/sfx/gui_confirm.ogg"
                         action Jump("tabitha_01_directive")
-
+                if tabitha_01_directive:
+                    button:
+                        text _("Tabitha's Programming")
+                        at btn_slide
+                        if tabitha_01_rules:
+                            background "gui/talkie/button.png"
+                        else:
+                            background "gui/talkie/button_empty.png"
+                        hover_sound "audio/sfx/gui_hover.ogg"
+                        activate_sound "audio/sfx/gui_confirm.ogg"
+                        action Jump("tabitha_01_rules")
+                
 
         ####Indicator if viewport is scrollable
         button:
@@ -135,7 +135,29 @@ label tabitha_01_scenario:
 label tabitha_01_gaspard:
     $ renpy.block_rollback()
     pause 0.5
-    
+    sh frown sweat "Why did you do that...?"
+    show Tabitha bow
+    ta nulla "Observation:{w=0.15} your query is unfortunately too vague for me to infer to its meaning, [sh_n].{w=0.3} I would request you to be more precise."
+    sh pain "Ugh!{w=0.3} Why...{w=0.5} Why did you...{w=0.5} Ugh, I can't even say it out loud."
+    pause 1.0
+    show Tabitha neutral
+    ta nulla ".{w=0.3}.{w=0.3}.{w=0.5}taking into consideration your state of mental distress, I hypothize that your query concerns my neutralization of the hostile."
+    sh pain "Yeah...{w=0.5} You neutralized him, alright."
+    sh angry "You ripped him apart like he was made of tissue paper without even a moment's hesitation...!{w=0.3} I had his guts rain on my chest!{w=0.3} I felt the impact of each and every single little bit of gore...{w=0.5} Why?!{w=0.3} How?!"
+    ta nulla "Queries acknowledged...{w=0.5} Why did I neutralize the hostile so:{w=0.15} after emergency analysis of the situation, I concluded that drastic and swift action was necessary."
+    show Tabitha surprise
+    ta nulla "The hostile's combat capabilities were a complete incognita.{w=0.3} Taking into account its closeness to [sh_n], and your brief period of incapacitation, I calculated that I had but milliseconds to act."
+    sh surprise "What...?"
+    show Tabitha neutral
+    ta nulla "As I mentioned earlier, your wellbeing currently rests among my prime directives."
+    show Tabitha frown
+    ta nulla "Whatever transpired between the beginning of my state of dormancy and my subsequent reboot caused me to arrive almost too late...{w=0.5} I mantain that it was the only safe course of action."
+    sh surprise sweat "You...{w=0.5} You mean..."
+    sh shock sweat "That you tore Gaspard to shreds {nw}"
+    play sound4 "audio/sfx/gui_hint.ogg"
+    extend "{b}to save me{/b}?"
+    show Tabitha smile
+    ta nulla "Affirmative."
     pause 1.0
     if tabitha_01_gaspard == False:
         $ tabitha_01_gaspard = True
