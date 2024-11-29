@@ -81,6 +81,35 @@ screen tabitha_conv_01:
 label tabitha_01_scenario:
     $ renpy.block_rollback()
     pause 0.5
+    sh c_half frown "You were at the reception...{w=0.5} Or at least in the same building as we were, the Baroque building.{w=0.3} Correct?"
+    ta nulla "Affirmative.{w=0.3} Afterwards, the Professor desired to observe the ceremony from the upper floors for a time."
+    sh surprise "He...{w=0.5} What?{w=0.3} Why would he want to do that?"
+    show Tabitha bow
+    ta nulla "That information is not in my possession.{w=0.3} The Professor rarely shares his inner world with others."
+    sh frown "Well...{w=0.5} If you had to guess?"
+    show Tabitha surprise
+    ta nulla "I do not possess sufficient data to create a predictive model with an accuracy higher than 67%, [sh_n].{w=0.3} Would it be acceptable?"
+    sh surprise "I...{w=0.5} Yeah?"
+    show Tabitha neutral
+    ta nulla "Acknowledged.{w=0.5} Considering the data about Professor Habiki's behavioral patterns, and cross-checking it with his recent actions:{w=0.15} he is what is commonly referred to as a 'people watcher'."
+    show Tabitha bow
+    ta nulla "He is in the habit of trying to observe individuals of interest hidden, as to not influence their actions with his presence.{w=0.3} I posit that it was yet another occurrence of this quirk of his."
+    sh neutral "Hm.{w=0.3} Sounds like a pretty solid analsys to me...{w=0.5} Why is the accuracy in the mid-ranges, then?"
+    show Tabitha neutral
+    ta nulla "Unfortunately, I am unable to correctly gauge who, among the attendees, was the object of his curiosity.{w=0.3} He made sure, in the days leading up to the event, to familiarize himself with the list of invitees, but he never betrayed any interest one way or the other."
+    show Tabitha surprise with with dissolve
+    ta nulla "With {nw}"
+    play sound4 "audio/sfx/gui_spook.ogg"
+    extend "{b}one exception{/b}...{w=0.5} You, [sh_n]."
+    sh surprise "Me...?"
+    show Tabitha smile
+    ta nulla "Affirmative.{w=0.3} He was, as the saying goes, tickled pink when interacting with you.{w=0.3} Your brief exchange left him quite amused."
+    show Tabitha neutral
+    ta nulla "It only amounts to correlation but there is a possibility that you may have joined the list of individuals to observe, despite his presence having been revealed to you."
+    sh frown ".{w=0.3}.{w=0.3}.{w=0.5}which leaves us with nothing to go on, in the end.{w=0.5} Anyway."
+    sh neutral "So you followed him to the upper floor.{w=0.3} What transpired afterwards?"
+    pause 1.5
+    show Tabitha surprise with dissolve
     
     pause 1.0
     if tabitha_01_scenario == False:
