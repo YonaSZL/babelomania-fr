@@ -12,7 +12,7 @@ default tabitha_conv_01 = 0
 screen tabitha_conv_01:
     add "gui/talkie/bottom.png" yalign 1.0
 
-    if tabitha_conv_01 == 4:
+    if tabitha_conv_01 == 6:
         textbutton _("Return") action Jump("story_03_uneasy_trio") align(1.0, 1.0) offset(-60,-10) text_size 60 hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
 
     vbox:
@@ -42,7 +42,7 @@ screen tabitha_conv_01:
                     action Jump("tabitha_01_scenario")
                 if tabitha_01_directive:
                     button:
-                        text _("Tabitha's Directives")
+                        text _("What Do You Want?")
                         at btn_slide
                         if tabitha_01_intention:
                             background "gui/talkie/button.png"
@@ -83,7 +83,7 @@ screen tabitha_conv_01:
                         hover_sound "audio/sfx/gui_hover.ogg"
                         activate_sound "audio/sfx/gui_confirm.ogg"
                         action Jump("tabitha_01_human")
-                if tabitha_01_rules:
+                if tabitha_01_human:
                     button:
                         text _("Tabitha's Directives")
                         at btn_slide
@@ -200,14 +200,14 @@ label tabitha_01_gaspard:
 label tabitha_01_rules:
     $ renpy.block_rollback()
     pause 0.5
-    sh neutral "You...{w=0.5} You're Professor Habiki's creation, correct?{w=0.3} Him and him alone?"
+    sh neutral -sweat "You...{w=0.5} You're Professor Habiki's creation, correct?{w=0.3} Him and him alone?"
     show Tabitha bow
-    ta nulla "Affirmative, [shn].{w=0.3} I am his personal project and, so far, the crowning achievement of his genius."
+    ta nulla "Affirmative, [shn].{w=0.3} I am his personal project and, quote on quote, 'the crowning achievement of his genius'."
     sh surprise "Meaning that he was the one who decided to...{w=0.5} Give you that kind of strength.{w=0.3} Which flies into the face of all international treaties about the creation of androids and proliferation of war machines."
     show Tabitha neutral
     sh frown sweat "Japan may be lax about shapes, but they're one of the most firm upholders of the ban on war androids...{w=0.5} Which means that he must have used his influence to register you with false information."
     ta nulla "I cannot deny nor confirm such an hypothesis, [shn]."
-    sh neutral "And earlier, when you said that you didn't grab Amina before she hit the floor despite being closer to her than me...{w=0.5} I wasn't thinking clearly earlier, but that shouldn't be possible."
+    sh neutral -sweat "And earlier, when you said that you didn't grab Amina before she hit the floor despite being closer to her than me...{w=0.5} I wasn't thinking clearly earlier, but that shouldn't be possible."
     sh angry "All androids are supposed to be built according to international specifications...{w=0.5} Which include the base imperatives of not harming humans and not letting harm come to humans.{w=0.3} You...{w=0.5} You don't have that?"
     show Tabitha bow
     ta nulla "I cannot deny nor confirm such an hypothesis, [shn]."
@@ -220,7 +220,7 @@ label tabitha_01_rules:
     show Tabitha smile
     ta nulla "You're quite welcome, [shn].{w=0.3} I must reiterate that I cannot deny nor confirm your hypothesis, though."
     pause 1.5
-    sh pain "Ugh, getting cross at you is useless...{w=0.5} And so is sarcasm."
+    sh pain -sweat"Ugh, getting cross at you is useless...{w=0.5} And so is sarcasm."
     show Tabitha surprise
     ta nulla "Oh, my apologies.{w=0.3} I'm not programmed for sarcasm."
     sh frown "Of course you're not...{w=0.5} Anyway, that explains it."
@@ -238,9 +238,9 @@ label tabitha_01_rules:
     ta nulla "I infer that, before the events that transpired in my absence, the hostile was classified as a human being.{w=0.3} But at the moment of neutralization..."
     show Tabitha neutral
     play sound4 "audio/sfx/gui_spook.ogg"
-    ta nulla "{b}The Hostile could not be considered a human being any longer{/b}."
-    pause 1.5
+    ta nulla "{b}The Hostile could no longer be considered a human being{/b}."
     play music "audio/bgm/shadows_whisper.ogg"
+    pause 1.5
     sh shock sweat ".{w=0.3}.{w=0.3}.{w=0.5}what?"
     pause 1.0
     if tabitha_01_rules == False:
@@ -251,7 +251,40 @@ label tabitha_01_rules:
 label tabitha_01_human:
     $ renpy.block_rollback()
     pause 0.5
-    
+    sh shock -sweat "What...{w=0.5} What are you talking about?{w=0.3} What do you mean he was no longer human?!"
+    sh pain "I...{w=0.5} I mean, there was definitely something wrong with him but...{w=0.5} What you're saying is...!{w=0.3} What proof do you have?!"
+    play sound4 "audio/sfx/gui_hint.ogg"
+    ta nulla "{b}Sound, [shn]{/b}."
+    sh surprise "Sound...?"
+    show Tabitha bow
+    ta nulla "Yes.{w=0.3} I am equipped with a number of state of the art sensors.{w=0.3} My auditory sensor is among those."
+    show Tabitha surprise
+    ta nulla "Prior to and while engaging the hostile, he produced a number of sounds.{w=0.3} Upon repeated analysis, I can conclude with 100\% accuracy that {b}no human body would be able to produce those kind of sounds{/b}."
+    play sound4 "audio/sfx/gui_shock.ogg"
+    sh shock sweat "You...!{w=0.3} That can't...!!!"
+    show Tabitha neutral
+    ta nulla "I must clarify that my conclusions are based on the information currently included in my database.{w=0.3} If [shn] is in possession of further relevant information about human biology, I would be happy to readjust my model."
+    sh shock ".{w=0.3}.{w=0.3}.{w=0.5}I..."
+    pause 1.0
+    show gaspard_turn_04:
+        MatrixColor SepiaMatrix(tint='#ffeec2', desat=(0.2126, 0.7152, 0.0722))
+    with Reveal
+    pause 1.0
+    play sound "audio/se/glitch_attack.ogg"
+    sh pain ".{w=0.3}.{w=0.3}.{w=0.5}shit...{w=0.5} You're right.{w=0.3} You're right!{w=0.3} He..."
+    sh angry "He transformed...{w=0.5} He underwent a horrible, {i}terrible{/i} mutation...!{w=0.5} But how?!{w=0.3} Why?!"
+    sh shock "And...{w=0.5} And is it going to happen to...?!"
+    show Tabitha surprise
+    ta surprise "Oh...{w=0.5} You believe such a drastic change may be a possibility for you as well, [shn]?"
+    pause 1.0
+    stop music fadeout 3.5
+    hide gaspard_turn_04 with dissolve
+    pause 0.5
+    sh pain "I have no idea.{w=0.5} I don't know what happened to him but a moment he was normal, and then the next..."
+    show Tabitha frown
+    ta nulla "Acknowledged...{w=0.5} Unacceptable by current parameters."
+    show Tabitha neutral
+    ta nulla "[shn].{w=0.3} I suggest we address this {i}immediately{/i}."
     pause 1.0
     if tabitha_01_human == False:
         $ tabitha_01_human = True
@@ -261,7 +294,15 @@ label tabitha_01_human:
 label tabitha_01_directive:
     $ renpy.block_rollback()
     pause 0.5
-    
+    sh surprise -sweat "Why do you even...{w=0.5} Oh, right, your..."
+    sh frown "You said that my safety is among your prime directives...{w=0.5} How?{w=0.3} Why?"
+    show Tabitha surprise
+    ta nulla ".{w=0.3}.{w=0.3}.{w=0.5}data not found."
+    sh neutral "Naturally...{w=0.5} You have no idea.{w=0.3} Alright, let's try and go through this logically."
+    show Tabitha neutral
+    sh frown "Question one:{w=0.15} was my safety among your prime directives before your...{w=0.5} Brief window of inactivity?"
+    ta nulla "Negative, [shn]."
+    sh neutral "Question two and three:{w=0.15} who currently has the authority to add prime directives to your programming?{w=0.3} And has that list changed from what iw"
     pause 1.0
     if tabitha_01_directive == False:
         $ tabitha_01_directive = True
