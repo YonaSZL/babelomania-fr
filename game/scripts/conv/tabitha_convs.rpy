@@ -5,6 +5,7 @@ default tabitha_01_scenario = False #Do you know what's going on?
 default tabitha_01_gaspard = False #Why did you kill Gaspard?!
 default tabitha_01_directive = False #You have the directive to protect me?!
 default tabitha_01_rules = False #You don't have the three rules?!
+default tabitha_01_human = False #What do you mean he wasn't human?!
 default tabitha_01_intention = False #What do you intend to do now?
 default tabitha_conv_01 = 0
 
@@ -73,6 +74,17 @@ screen tabitha_conv_01:
                         action Jump("tabitha_01_rules")
                 if tabitha_01_rules:
                     button:
+                        text _("No Longer Human")
+                        at btn_slide
+                        if tabitha_01_human:
+                            background "gui/talkie/button.png"
+                        else:
+                            background "gui/talkie/button_empty.png"
+                        hover_sound "audio/sfx/gui_hover.ogg"
+                        activate_sound "audio/sfx/gui_confirm.ogg"
+                        action Jump("tabitha_01_human")
+                if tabitha_01_rules:
+                    button:
                         text _("Tabitha's Directives")
                         at btn_slide
                         if tabitha_01_directive:
@@ -82,7 +94,6 @@ screen tabitha_conv_01:
                         hover_sound "audio/sfx/gui_hover.ogg"
                         activate_sound "audio/sfx/gui_confirm.ogg"
                         action Jump("tabitha_01_directive")
-                
 
         ####Indicator if viewport is scrollable
         button:
@@ -197,15 +208,53 @@ label tabitha_01_rules:
     sh frown sweat "Japan may be lax about shapes, but they're one of the most firm upholders of the ban on war androids...{w=0.5} Which means that he must have used his influence to register you with false information."
     ta nulla "I cannot deny nor confirm such an hypothesis, [shn]."
     sh neutral "And earlier, when you said that you didn't grab Amina before she hit the floor despite being closer to her than me...{w=0.5} I wasn't thinking clearly earlier, but that shouldn't be possible."
-    sh angry "All androids are to be built to international specifications...{w=0.5} Which includes the base imperatives of not harming humans and not letting harm come to humans.{w=0.3} You...{w=0.5} You don't have that?"
+    sh angry "All androids are supposed to be built according to international specifications...{w=0.5} Which include the base imperatives of not harming humans and not letting harm come to humans.{w=0.3} You...{w=0.5} You don't have that?"
     show Tabitha bow
     ta nulla "I cannot deny nor confirm such an hypothesis, [shn]."
-    sh angry sweat ".{w=0.3}.{w=0.3}.{w=0.5}unbelievable.{w=0.3} Absolutely unbelievable."
+    sh angry sweat ".{w=0.3}.{w=0.3}.{w=0.5}unbelievable.{w=0.3} Absolutely unbelievable...{w=0.5} You're a robot {nw}"
+    play sound4 "audio/sfx/gui_spook.ogg"
+    extend "{b}that can use violence against human beings{/b}...{w=0.5} And can allow harm to come to them if need be."
+    show Tabitha surprise
+    ta nulla "Observation:{w=0.15} any android with a failsafe against the latter while possessing no restrictions on the former would eventually fall into a perpetual feedback loop."
+    sh frown "Oh, thank you {i}so much{/i} for that.{w=0.3} That paints the whole thing into a new light."
+    show Tabitha smile
+    ta nulla "You're quite welcome, [shn].{w=0.3} I must reiterate that I cannot deny nor confirm your hypothesis, though."
+    pause 1.5
+    sh pain "Ugh, getting cross at you is useless...{w=0.5} And so is sarcasm."
+    show Tabitha surprise
+    ta nulla "Oh, my apologies.{w=0.3} I'm not programmed for sarcasm."
+    sh frown "Of course you're not...{w=0.5} Anyway, that explains it."
     show Tabitha neutral
-    ta nulla ""
+    sh neutral "You don't have any ingrained qualms against harming human beings...{w=0.5} That's how you could do what you did to poor Gaspard."
+    stop music fadeout 3.5
+    pause 1.5
+    show Tabitha surprise with dissolve
+    pause 0.5
+    ta nulla "Query:{w=0.15} [shn], when you use the name 'Gaspard' are you referring to the neutralized hostile?"
+    sh pain "Who else...?"
+    show Tabitha neutral
+    ta nulla "Acknowledged.{w=0.3} In that case, [shn], I must correct you."
+    show Tabitha bow
+    ta nulla "I infer that, before the events that transpired in my absence, the hostile was classified as a human being.{w=0.3} But at the moment of neutralization..."
+    show Tabitha neutral
+    play sound4 "audio/sfx/gui_spook.ogg"
+    ta nulla "{b}The Hostile could not be considered a human being any longer{/b}."
+    pause 1.5
+    play music "audio/bgm/shadows_whisper.ogg"
+    sh shock sweat ".{w=0.3}.{w=0.3}.{w=0.5}what?"
     pause 1.0
     if tabitha_01_rules == False:
         $ tabitha_01_rules = True
+        $ tabitha_conv_01 += 1
+    call screen tabitha_conv_01
+
+label tabitha_01_human:
+    $ renpy.block_rollback()
+    pause 0.5
+    
+    pause 1.0
+    if tabitha_01_human == False:
+        $ tabitha_01_human = True
         $ tabitha_conv_01 += 1
     call screen tabitha_conv_01
 
