@@ -6,13 +6,12 @@ default tabitha_01_gaspard = False #Why did you kill Gaspard?!
 default tabitha_01_directive = False #You have the directive to protect me?!
 default tabitha_01_rules = False #You don't have the three rules?!
 default tabitha_01_human = False #What do you mean he wasn't human?!
-default tabitha_01_intention = False #What do you intend to do now?
 default tabitha_conv_01 = 0
 
 screen tabitha_conv_01:
     add "gui/talkie/bottom.png" yalign 1.0
 
-    if tabitha_conv_01 == 6:
+    if tabitha_conv_01 == 5:
         textbutton _("Return") action Jump("story_03_uneasy_trio") align(1.0, 1.0) offset(-60,-10) text_size 60 hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
 
     vbox:
@@ -40,17 +39,6 @@ screen tabitha_conv_01:
                     hover_sound "audio/sfx/gui_hover.ogg"
                     activate_sound "audio/sfx/gui_confirm.ogg"
                     action Jump("tabitha_01_scenario")
-                if tabitha_01_directive:
-                    button:
-                        text _("What Do You Want?")
-                        at btn_slide
-                        if tabitha_01_intention:
-                            background "gui/talkie/button.png"
-                        else:
-                            background "gui/talkie/button_empty.png"
-                        hover_sound "audio/sfx/gui_hover.ogg"
-                        activate_sound "audio/sfx/gui_confirm.ogg"
-                        action Jump("tabitha_01_intention")
                 button:
                     text _("Gaspard...")
                     at btn_slide
@@ -302,7 +290,35 @@ label tabitha_01_directive:
     show Tabitha neutral
     sh frown "Question one:{w=0.15} was my safety among your prime directives before your...{w=0.5} Brief window of inactivity?"
     ta nulla "Negative, [shn]."
-    sh neutral "Question two and three:{w=0.15} who currently has the authority to add prime directives to your programming?{w=0.3} And has that list changed from what iw"
+    sh neutral "Question two and three:{w=0.15} who currently has the authority to add prime directives to your programming?{w=0.3} And has that access list changed from what it was before your window of inactivity?"
+    show Tabitha surprise
+    ta nulla "Answer to first query:{w=0.3} the only person with that level of authority is {nw}"
+    play sound4 "audio/sfx/gui_hint.ogg"
+    extend "{b}Professor Habiki{/b}.{w=0.3} Answer to second query:{w=0.15} the 'access list' has not been modified."
+    sh frown "I see...{w=0.5} Last question, is it possible that someone could have changed your prime directives without that level of access {i}and{/i} without leaving any trace?"
+    show Tabitha neutral
+    ta nulla "It is a possibility, [shn]."
+    sh surprise "Wait, it is?{w=0.3} But-"
+    sh frown "Oh, wait, right, too literal.{w=0.3} Okay, it's possible, but how probable is it?"
+    show Tabitha bow
+    ta nulla "The probability of such an event approximates to around 2.9777777777777\%, [shn]."
+    sh neutral "Does that same probability applies to the eventuality of someone other than Habiki altering your memory banks without leaving any trace?"
+    show Tabitha neutral
+    ta nulla "Affirmative, [shn]."
+    pause 1.5
+    play music "audio/bgm/measure_of_ningen.ogg"
+    sh neutral "Understood...{w=0.5} Could you please state the exact wording of your prime directive, android?"
+    ta nulla "Certainly.{w=0.3} Prime directive number two is phrased as follows:{w=0.15} this Android is tasked with safeguarding the continued physical integrity of Arata Shigeo, and to obey their orders insofar as they don't run contrary to the parameters of the directive itself or other directives."
+    sh_i frown "(Safeguarding my 'physical integrity'...{w=0.5} Very specific.)"
+    show Tabitha frown
+    ta nulla "Subsequently, [shn], I must stress the importance of addressing the matter of the mutation incognita immediately."
+    sh neutral ".{w=0.3}.{w=0.3}.{w=0.5}yeah...{w=0.5} Yeah, I agree."
+    sh frown sweat "And then, we're going to need to find a way out of here.{w=0.3} I'm gonna need you to-"
+    am sad c_half "{cps=10}Hmmm..."
+    show Tabitha surprise
+    play sound4 "audio/em/em_surprise.ogg"
+    show screen emote("surprise",0.15,0.5)
+    sh smile -sweat "Amina!"
     pause 1.0
     if tabitha_01_directive == False:
         $ tabitha_01_directive = True

@@ -104,7 +104,7 @@ label story_03_android:
     show Tabitha bow with dissolve
     ta nulla "The preservation of this woman's physical integrity is not among my directives.{w=0.3} {nw}"
     play sound "audio/sfx/gui_spook.ogg"
-    extend "{b}Your wellbeing, on the other hand, is{/b}."
+    extend "{b}Your physical integrity, on the other hand, is{/b}."
     pause 0.5
     show Shigeo surprise
     sh nulla "E...{w=0.5} Excuse me?{w=0.3} What does that even-"
