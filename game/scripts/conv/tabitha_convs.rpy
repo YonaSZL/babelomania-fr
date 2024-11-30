@@ -247,28 +247,31 @@ label tabitha_01_human:
     show Tabitha bow
     ta nulla "Yes.{w=0.3} I am equipped with a number of state of the art sensors.{w=0.3} My auditory sensor is among those."
     show Tabitha surprise
-    ta nulla "Prior to and while engaging the hostile, he produced a number of sounds.{w=0.3} Upon repeated analysis, I can conclude with 100\% accuracy that {b}no human body would be able to produce those kind of sounds{/b}."
+    ta nulla "Prior to and while engaging the hostile, he produced a number of sounds.{w=0.3} Upon repeated analysis, I can conclude with 100\% accuracy that {nw}"
+    play sound4 "audio/sfx/gui_solved.ogg"
+    extend "{b}no human body would be able to produce those sounds{/b}."
     play sound4 "audio/sfx/gui_shock.ogg"
     sh shock sweat "You...!{w=0.3} That can't...!!!"
     show Tabitha neutral
     ta nulla "I must clarify that my conclusions are based on the information currently included in my database.{w=0.3} If [shn] is in possession of further relevant information about human biology, I would be happy to readjust my model."
     sh shock ".{w=0.3}.{w=0.3}.{w=0.5}I..."
     pause 1.0
-    show gaspard_turn_04:
-        MatrixColor SepiaMatrix(tint='#ffeec2', desat=(0.2126, 0.7152, 0.0722))
+    show gaspard_turn_03:
+        matrixcolor SepiaMatrix()
     with Reveal
-    pause 1.0
+    pause 1.5
     play sound "audio/se/glitch_attack.ogg"
+    pause 0.5
     sh pain ".{w=0.3}.{w=0.3}.{w=0.5}shit...{w=0.5} You're right.{w=0.3} You're right!{w=0.3} He..."
     sh angry "He transformed...{w=0.5} He underwent a horrible, {i}terrible{/i} mutation...!{w=0.5} But how?!{w=0.3} Why?!"
     sh shock "And...{w=0.5} And is it going to happen to...?!"
     show Tabitha surprise
-    ta surprise "Oh...{w=0.5} You believe such a drastic change may be a possibility for you as well, [shn]?"
+    ta surprise blood "Oh...{w=0.5} You believe such a drastic change may be a possibility for you as well, [shn]?"
     pause 1.0
     stop music fadeout 3.5
-    hide gaspard_turn_04 with dissolve
+    hide gaspard_turn_03 with dissolve
     pause 0.5
-    sh pain "I have no idea.{w=0.5} I don't know what happened to him but a moment he was normal, and then the next..."
+    sh pain "I have no idea.{w=0.5} I don't know what happened to him or how, but one moment he was normal and the next..."
     show Tabitha frown
     ta nulla "Acknowledged...{w=0.5} Unacceptable by current parameters."
     show Tabitha neutral
@@ -290,7 +293,7 @@ label tabitha_01_directive:
     show Tabitha neutral
     sh frown "Question one:{w=0.15} was my safety among your prime directives before your...{w=0.5} Brief window of inactivity?"
     ta nulla "Negative, [shn]."
-    sh neutral "Question two and three:{w=0.15} who currently has the authority to add prime directives to your programming?{w=0.3} And has that access list changed from what it was before your window of inactivity?"
+    sh neutral "Questions two and three:{w=0.15} who currently has the authority to add prime directives to your programming?{w=0.3} And has that access list changed from what it was before your window of inactivity?"
     show Tabitha surprise
     ta nulla "Answer to first query:{w=0.3} the only person with that level of authority is {nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
@@ -299,19 +302,30 @@ label tabitha_01_directive:
     show Tabitha neutral
     ta nulla "It is a possibility, [shn]."
     sh surprise "Wait, it is?{w=0.3} But-"
-    sh frown "Oh, wait, right, too literal.{w=0.3} Okay, it's possible, but how probable is it?"
+    sh frown "Oh, wait, right, too literal.{w=0.3} Okay, it's possible, but how {i}probable{/i} is it?"
     show Tabitha bow
     ta nulla "The probability of such an event approximates to around 2.9777777777777\%, [shn]."
-    sh neutral "Does that same probability applies to the eventuality of someone other than Habiki altering your memory banks without leaving any trace?"
+    sh neutral "Does the same probability apply to the eventuality of someone other than Habiki altering your memory banks without leaving any trace?"
     show Tabitha neutral
     ta nulla "Affirmative, [shn]."
     pause 1.5
     play music "audio/bgm/measure_of_ningen.ogg"
     sh neutral "Understood...{w=0.5} Could you please state the exact wording of your prime directive, android?"
-    ta nulla "Certainly.{w=0.3} Prime directive number two is phrased as follows:{w=0.15} this Android is tasked with safeguarding the continued physical integrity of Arata Shigeo, and to obey their orders insofar as they don't run contrary to the parameters of the directive itself or other directives."
+    ta nulla "Certainly.{w=0.3} Prime directive number two is phrased as follows:{w=0.15} this Android is tasked with safeguarding the continued physical integrity of Arata Shigeo."
+    show Tabitha bow
+    ta nulla "This android is also to obey their orders insofar they don't run contrary to the parameters of the directive itself or other directives of equal or superior priority."
     sh_i frown "(Safeguarding my 'physical integrity'...{w=0.5} Very specific.)"
+    sh neutral "You said number two...{w=0.5} Is that the priority order?"
+    show Tabitha neutral
+    ta nulla "Affirmative, [shn]."
+    sh frown "What's prime directive number one, then?"
+    show Tabitha bow
+    play sound4 "audio/sfx/gui_hint.ogg"
+    ta nulla "{b}This android is to obey Professor Habiki{/b}."
+    pause 1.5
+    sh_i neutral "(Pretty high up on the scale...)"
     show Tabitha frown
-    ta nulla "Subsequently, [shn], I must stress the importance of addressing the matter of the mutation incognita immediately."
+    ta nulla "[shn], if I have answered your queries to satisfaction, I must stress the importance of addressing the matter of the mutation incognita immediately."
     sh neutral ".{w=0.3}.{w=0.3}.{w=0.5}yeah...{w=0.5} Yeah, I agree."
     sh frown sweat "And then, we're going to need to find a way out of here.{w=0.3} I'm gonna need you to-"
     am sad c_half "{cps=10}Hmmm..."
@@ -320,6 +334,7 @@ label tabitha_01_directive:
     show screen emote("surprise",0.15,0.5)
     sh smile -sweat "Amina!"
     pause 1.0
+    show Tabitha neutral
     if tabitha_01_directive == False:
         $ tabitha_01_directive = True
         $ tabitha_conv_01 += 1
