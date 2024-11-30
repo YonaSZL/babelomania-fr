@@ -209,4 +209,43 @@ label story_03_aratanicknamed:
     call screen tabitha_conv_01
 
 label story_03_uneasy_trio:
-    "OHNOES"
+    $ move_time(0,13)
+    $ renpy.block_rollback()
+    scene taisho_1f_side_meet_base
+    show darkness_layer
+    with dissolve
+    pause 1.0
+    show Shigeo smile c_half at sh_med:
+        xalign 0.55 yoffset 200
+    show Tabitha blood neutral at ta_med:
+        xalign 0.88
+    show Amina sad c_half at am_med:
+        xalign 0.29 yoffset 300 transform_anchor True rotate -5
+    with dissolve
+    sh nulla "Thank god...!{w=0.5} How do you feel?"
+    am nulla "I...{w=0.5} Fine, I think.{w=0.3} I must have passed out when..."
+    pause 1.0
+    show Amina fear sweat with Reveal
+    pause 0.5
+    show Amina fear sweat c_half at am_med:
+        easein 0.1 xalign 0.27 yoffset 300 transform_anchor True rotate -5
+    am nulla "Ah...!{w=0.3} AAAAAAH!{w=0.3} SHIGEO, SHE...!{w=0.3} THAT...?!"
+    show Shigeo shock
+    sh nulla "Amina, no, it's alright!{w=0.3} The android means no harm!"
+    pause 1.0
+    show Amina surprise
+    am nulla "A...{w=0.5} Android?"
+    show Tabitha bow
+    ta nulla "[shn], I must insist that we address-"
+    show Shigeo angry
+    sh nulla "WILL YOU SHUT UP ALREADY?!{w=0.3} You...!"
+    show Shigeo pain
+    show Amina shock
+    show Tabitha neutral
+    sh nulla "Ugh, wasted breath...{w=0.5} Android, listen."
+    show Shigeo frown
+    sh nulla "You are to obey all of my orders within reason, correct?"
+    ta nulla "Affirmative, [shn].{w=0.3} With one caveat."
+    show Tabitha surprise
+    ta "I NEED TO COOL DOWN, BITCH."
+    sh nulla "A"
