@@ -247,5 +247,15 @@ label story_03_uneasy_trio:
     sh nulla "You are to obey all of my orders within reason, correct?"
     ta nulla "Affirmative, [shn].{w=0.3} With one caveat."
     show Tabitha surprise
-    ta "I NEED TO COOL DOWN, BITCH."
-    sh nulla "A"
+    show Amina surprise
+    ta nulla "Exertions with a higher than average power output necessitate a period of {nw}"
+    play sound4 "audio/sfx/gui_slots_unlock.ogg"
+    $ stat2_show = True
+    extend "{b}cooldown for my servomotors{/b}.{w=0.3} Otherwise, overheating may cause me to become temporarily incapacitated."
+    show Tabitha bow
+    $ stat2 -= 25
+    ta nulla "I shall advise if the task you require from me would push me over the threshold."
+    sh nulla "I see...{w=0.5} Anyway, I need you to go back into the library."
+    show Shigeo neutral
+    sh nulla "I need you to...{w=0.5} Analyze the body.{w=0.3} Get as much information as possible as you can from it regarding the mutation...{w=0.5} Afterwards, I need you to collect the lighter from the cigar box near the bonsai, and enough flammable material to start a controlled fire.{w=0.3} Then, come back.{w=0.3} Am I clear?"
+    show Tabitha 
