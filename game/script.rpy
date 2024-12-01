@@ -17,7 +17,7 @@ define s = Character("Other Eileen", image="eileen", what_xoffset=35,ctc="ctc_bl
 image side eileen = "gui/side_image.png"
 
 ##Shigeo
-define sh = Character(_("Shigeo Arata"), what_prefix='\"', what_suffix='\"', image="shigeo", ctc="ctc_blink", ctc_position="nestled")
+define sh = Character(_("Shigeo Arata"), what_prefix='\"', what_suffix='\"', image="shigeo", ctc="ctc_blink", ctc_position="nestled", callback=shigeo_beep)
 define sh_x = Character(_("?????"), what_prefix='\"', what_suffix='\"', image="shigeo", ctc="ctc_blink", ctc_position="nestled")
 define sh_xi = Character(_("?????"), what_prefix='{i}', image="shigeo", ctc="ctc_blink", ctc_position="nestled")
 define sh_n = Character(_("Shigeo Arata"), what_suffix='\"', image="shigeo", ctc="ctc_blink", ctc_position="nestled")
@@ -221,7 +221,8 @@ init -1:
 label splashscreen:
     scene black
     pause 1.5
-    call screen language with dissolve
+    if persistent.firstopen == False:
+        call screen language with dissolve
     scene black
     pause 2.0
     scene intro_00 with Reveal3
