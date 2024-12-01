@@ -16,12 +16,12 @@ label story_02_delphine:
     pause 1.5
     scene francesco_flashback with Reveal3
     pause 1.5
-    fr sad "<I never got the opportunity to know them...{w=0.5} Properly get to know them.{w=0.3} I was so young, and all I knew of them was what kind of parents they were.>"
+    fr sad "<I never got the opportunity to actually {i}understand{/i} them.{w=0.3} I was so young, and all I knew was what kind of parents they were.>"
     de_x nulla "<Were they that bad?{w=0.3} And here I am always trauma-dumping about my mom.>"
-    fr sad "<No, they were amazing...{w=0.3} But being a parent was only part of who they were.>"
-    fr surprise "<I never got the chance to mature and become their equal.{w=0.3} To measure up against who they were, to develop my own convictions and ideals.{w=0.3} Clash against theirs.>"
+    fr sad "<No, they were amazing...{w=0.3} But being a parent is still only one aspect of a person.>"
+    fr surprise "<I never got the chance to mature and become their equal, to then discover the people under the surface...{w=0.3} To measure up, develop my own convictions and ideals.{w=0.3} Clash my insecurities and ambitions against theirs.>"
     fr neutral "<The discussions about music, food, and politics.{w=0.5} Who to go out with, who to marry, names for grandchildren, furniture, clothes...{w=0.5} All those little things that most take for granted.>"
-    fr sad "<I never got the chance to really know my parents as people...{w=0.5} That opportunity was taken from us.{w=0.3} And left a hole that shall never be filled.>"
+    fr sad "<I never got the chance to really know my parents as people...{w=0.5} And that left a hole that shall never be filled.>"
     pause 2.0
     de_x nulla "<I'm still confused, Francesco...{w=0.5} Even more so, now.{w=0.3} If you grieve them like that...>"
     de_x nulla "<Why have you {nw}"
@@ -42,7 +42,7 @@ label story_02_delphine:
     pause 3.0
     scene lvl3_wellness_dim with Reveal3
     pause 1.5
-    de_x cloudy "{cps=10}Hmmmmmmmmm..."
+    de_x cloudy "{cps=5}Hmmmmmmmmm..."
     pause 2.0
     play sound4 "audio/em/em_impact.ogg"
     show screen emote("surprise",0.17,0.5)
@@ -57,7 +57,7 @@ label story_02_delphine:
     show Delphine surprise
     de_xi nulla "(This isn't the reception room...{w=0.5} It doesn't even look like the same building!{w=0.3} I...{w=0.5} Did I pass out?)"
     show Delphine neutral
-    de_xi nulla "(Last thing I remember, we were about to watch our wedding video, and then...?{w=0.5} Then what?)"
+    de_xi nulla "(Last thing I remember, we were about to watch the wedding video, and then...?{w=0.5} Then what?)"
     pause 1.5
     show Delphine shock with dissolve
     pause 0.5
@@ -69,7 +69,7 @@ label story_02_delphine:
     pause 0.5
     de_xi nulla "(Alright, {nw}"
     play sound4 "audio/sfx/gui_solved.ogg"
-    extend "{b}Delphine{/b}?{w=0.3} Queen?{w=0.3} I'm gonna need you to calm down.{w=0.3} Breathe.{w=0.3} Be a bit more like mom, for a little bit.{w=0.3} You can go back to cover of World Bride in the gorgeous heels later.)"
+    extend "{b}Delphine{/b}?{w=0.3} Queen?{w=0.3} I'm gonna need you to calm down.{w=0.3} Breathe.{w=0.3} Be a bit more like mom, for a little bit.{w=0.3} You can go back to World Bride cover in a minute.)"
     pause 1.0
     scene lvl3_wellness_dim with dissolve
     pause 0.5
@@ -86,7 +86,7 @@ label story_02_wellness_done:
         xalign 0.5
     with dissolve
     pause 0.5
-    de_i neutral "(Time to quit this emofest.{w=0.3} But how do I open this door...?)"
+    de_i neutral "(Time to quit this blandfest.{w=0.3} But how do I open this door...?)"
     pause 1.0
     stop music fadeout 0.3
     play sound "audio/se/jingle_flambas.ogg"
@@ -122,16 +122,18 @@ label story_02_lvl3:
     with dissolve
     de nulla "<I visited him at work, before...{w=0.5} The architecture is completely different, here.>"
     show Delphine neutral
-    de nulla "<It was just their leased technology, then...{w=0.5} That confirms I'm still in France, though, considering what Francesco told me about company policy.>"
+    de nulla "<They just lease their tech, then...{w=0.5} Anyway, considering what Francesco told me about company policy we're deeeeeefinitely still in France.>"
+    pause 1.5
     show Delphine frown
-    de nulla "<Anyway, the door just opened on its own and now...{w=0.5} No one is here?{w=0.3} He-{w=0.15}lloooo?>"
+    de nulla "<I'm also completely alone?{w=0.5} He-{w=0.15}lloooo?{w=0.3} Kidnappers?{w=0.3} Captive in gorgeous heels here!>"
+    pause 1.5
     show Delphine surprise
-    de nulla "<They roipnol me or some shit, stash me in the Atlas Sharted room and then leave me to my own devices?!{w=0.3} What kind of schizo kidnapping is this?!>"
+    de nulla "<Are we {i}serious{/i}?{w=0.5} They roipnol me or something, stash me in the Atlas Sharted room, then leave me to my own devices?!{w=0.3} What kind of schizo kidnapping is this?!>"
     pause 1.5
     show Delphine frown
     pause 1.0
     scene lvl3_corridor with dissolve
-    de frown "<Whatever.{w=0.3} Let's find the exit.>"
+    de frown "<Whatever.{w=0.3} Let's find the exit.{w=0.3} See if I care.>"
     pause 1.0
     call screen lvl3_corridor_explore_01
 

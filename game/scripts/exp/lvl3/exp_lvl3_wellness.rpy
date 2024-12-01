@@ -48,7 +48,7 @@ label exp_lvl3_wellness_01_shelves:
     show Delphine frown at de_big:
         xalign 0.5
     with dissolve
-    de_i nulla "(There's books in French and English, but also...{w=0.5} Japanese?{w=0.3} And these few with titles in cyrillic...)"
+    de_i nulla "(There's books in French and English, but also...{w=0.5} Yeah, that's Japanese.{w=0.3} And these few with titles in cyrillic...?)"
     play sound3 "audio/sfx/item_use.ogg"
     pause 1.0
     show Delphine shock sweat with dissolve
@@ -64,7 +64,7 @@ label exp_lvl3_wellness_01_shelves:
     show Delphine neutral
     de nulla "<Russians were employed and lived in the rest of the world {i}before{/i} the war.{w=0.3} Even more so now.{w=0.3} This means nothing.>"
     show Delphine surprise -sweat
-    de nulla "<Granted, there's foul at play here, but...{w=0.3} It doesn't mean they're after you specifically.{w=0.3} There was a whole party at the château, wasn't there?{w=0.3} And...>"
+    de nulla "<Granted, there's definitely foul at play here, but...{w=0.3} It doesn't mean they're after you specifically.{w=0.3} There was a whole party at the château, wasn't there?{w=0.3} And...>"
     pause 1.5
     show Delphine angry with Reveal
     de_i nulla "(If they touched {i}one hair{/i} on dad or Francesco...)"
@@ -111,15 +111,15 @@ label exp_lvl3_wellness_01_fridge:
     play sound "audio/se/heartbeat.ogg"
     if exp_lvl3_wellness_01_fridge == False:
         $ stat3 += 25
-    de_i smile "(Huuuuuff, still hit the spot...{w=0.5} And the ceremony's done with, anyway, I can afford not fitting in the dress anymore.)"
-    de_i surprise "(Also, if they have Perrier in stock, at the very least {nw}"
+    de_i smile "(Huuuuuff, still hit the spot...{w=0.5} And the ceremony's done with, anyway, I can afford not fitting in the dress any longer.)"
+    de_i surprise "(If they have Perrier in stock, that could indicate {nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
     extend "{b}I'm still in France{/b}...{w=0.5} But being the decently sized country we are, that's not exactly helpful.)"
     play sound4 "audio/sfx/gui_slots_confirm.ogg"
     show screen notify(_("Codex Unlocked"))
     $ codex_active = True
     de_i frown "(Although, now that I look more closely at this fridge...{w=0.5} It's quite hi-tech, isn't it?)"
-    de_i neutral "(Can't think of many big corporations who'd spend this much on furniture.{w=0.5} But they also wouldn't be in the business of kidnapping random brides.)"
+    de_i neutral "(Can't think of many corpos who'd spend that pretty of a penny on furniture.{w=0.5} Even fewer in the business of kidnapping random brides.)"
     pause 1.5
     de_i frown "(.{w=0.3}.{w=0.3}.{w=0.5}except I'm no random bride, am I?)"
     if exp_lvl3_wellness_01_fridge == False:
