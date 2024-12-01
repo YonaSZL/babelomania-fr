@@ -131,10 +131,10 @@ label tabitha_01_scenario:
     ta nulla "This is quite anomalous...{w=0.5} I don't seem to possess any data regarding the period of time inbetween the beginning of Professor Habiki's observations and my reboot in the adjacent room."
     sh surprise "So you mean to tell me that you, too, don't have any memory of the last couple hours?!"
     sh_i frown "(No, actually...{w=0.5} Her memory loss goes even further back.{w=0.3} When they went to the upper floor, I went back to the reception room.{w=0.3} I spoke to Gaspard, then Amina and Francesco, then only afterwards did the video happen...)"
-    sh_i neutral "(So whatever was done to this android was not the same thing that happened to us...{w=0.5} But it's highly likely they're correlated.)"
+    sh_i neutral "(So whatever was done to this Android was not the same thing that happened to us...{w=0.5} But it's highly likely they're correlated.)"
     ta nulla "I apologize, [shn].{w=0.3} This is quite unbecoming."
     sh neutral "Yeah, well...{w=0.5} Nothing you could have done about it.{w=0.3} We sure couldn't."
-    sh frown "And honestly...{w=0.5} I can think of things far more unbecoming than that, android."
+    sh frown "And honestly...{w=0.5} I can think of things far more unbecoming than that, Android."
     show Tabitha neutral
     ta nulla "...?"
     pause 1.0
@@ -191,19 +191,19 @@ label tabitha_01_rules:
     sh neutral -sweat "You...{w=0.5} You're Professor Habiki's creation, correct?{w=0.3} Him and him alone?"
     show Tabitha bow
     ta nulla "Affirmative, [shn].{w=0.3} I am his personal project and, quote on quote, 'the crowning achievement of his genius'."
-    sh surprise "Meaning that he was the one who decided to...{w=0.5} Give you that kind of strength.{w=0.3} Which flies into the face of all international treaties about the creation of androids and proliferation of war machines."
+    sh surprise "Meaning that he was the one who decided to...{w=0.5} Give you that kind of strength.{w=0.3} Which flies into the face of all international treaties about the creation of Androids and proliferation of war machines."
     show Tabitha neutral
-    sh frown sweat "Japan may be lax about shapes, but they're one of the most firm upholders of the ban on war androids...{w=0.5} Which means that he must have used his influence to register you with false information."
+    sh frown sweat "Japan may be lax about shapes, but they're one of the most firm upholders of the ban on war Androids...{w=0.5} Which means that he must have used his influence to register you with false information."
     ta nulla "I cannot deny nor confirm such an hypothesis, [shn]."
     sh neutral -sweat "And earlier, when you said that you didn't grab Amina before she hit the floor despite being closer to her than me...{w=0.5} I wasn't thinking clearly earlier, but that shouldn't be possible."
-    sh angry "All androids are supposed to be built according to international specifications...{w=0.5} Which include the base imperatives of not harming humans and not letting harm come to humans.{w=0.3} You...{w=0.5} You don't have that?"
+    sh angry "All Androids are supposed to be built according to international specifications...{w=0.5} Which include the base imperatives of not harming humans and not letting harm come to humans.{w=0.3} You...{w=0.5} You don't have that?"
     show Tabitha bow
     ta nulla "I cannot deny nor confirm such an hypothesis, [shn]."
     sh angry sweat ".{w=0.3}.{w=0.3}.{w=0.5}unbelievable.{w=0.3} Absolutely unbelievable...{w=0.5} You're a robot {nw}"
     play sound4 "audio/sfx/gui_spook.ogg"
     extend "{b}that can use violence against human beings{/b}...{w=0.5} And can allow harm to come to them if need be."
     show Tabitha surprise
-    ta nulla "Observation:{w=0.15} any android with a failsafe against the latter while possessing no restrictions on the former would eventually fall into a perpetual feedback loop."
+    ta nulla "Observation:{w=0.15} any Android with a failsafe against the latter while possessing no restrictions on the former would eventually fall into a perpetual feedback loop."
     sh frown "Oh, thank you {i}so much{/i} for that.{w=0.3} That paints the whole thing into a new light."
     show Tabitha smile
     ta nulla "You're quite welcome, [shn].{w=0.3} I must reiterate that I cannot deny nor confirm your hypothesis, though."
@@ -310,10 +310,10 @@ label tabitha_01_directive:
     ta nulla "Affirmative, [shn]."
     pause 1.5
     play music "audio/bgm/measure_of_ningen.ogg"
-    sh neutral "Understood...{w=0.5} Could you please state the exact wording of your prime directive, android?"
+    sh neutral "Understood...{w=0.5} Could you please state the exact wording of your prime directive, Android?"
     ta nulla "Certainly.{w=0.3} Prime directive number two is phrased as follows:{w=0.15} this Android is tasked with safeguarding the continued physical integrity of Arata Shigeo."
     show Tabitha bow
-    ta nulla "This android is also to obey their orders insofar they don't run contrary to the parameters of the directive itself or other directives of equal or superior priority."
+    ta nulla "This Android is also to obey their orders insofar they don't run contrary to the parameters of the directive itself or other directives of equal or superior priority."
     sh_i frown "(Safeguarding my 'physical integrity'...{w=0.5} Very specific.)"
     sh neutral "You said number two...{w=0.5} Is that the priority order?"
     show Tabitha neutral
@@ -321,7 +321,7 @@ label tabitha_01_directive:
     sh frown "What's prime directive number one, then?"
     show Tabitha bow
     play sound4 "audio/sfx/gui_hint.ogg"
-    ta nulla "{b}This android is to obey Professor Habiki{/b}."
+    ta nulla "{b}This Android is to obey Professor Habiki{/b}."
     pause 1.5
     sh_i neutral "(Pretty high up on the scale...)"
     show Tabitha frown

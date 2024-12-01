@@ -192,7 +192,7 @@ label story_03_aratanicknamed:
     pause 1.5
     sh nulla "Will do...{w=0.5} And speaking of addressing, while we wait for Amina to recover."
     show Shigeo frown
-    sh nulla "I have some questions for you, android."
+    sh nulla "I have some questions for you, Android."
     show Tabitha bow
     ta nulla "I shall do my best to answer them in a satisfactory manner, [shn]."
     pause 1.0
@@ -231,7 +231,7 @@ label story_03_uneasy_trio:
         easein 0.1 xalign 0.27 yoffset 275 transform_anchor True rotate -5
     am nulla "Ah...!{w=0.3} AAAAAAH!{w=0.3} SHIGEO, SHE...!{w=0.3} THAT...?!"
     show Shigeo shock
-    sh nulla "Amina, no, it's alright!{w=0.3} The android means no harm!"
+    sh nulla "Amina, no, it's alright!{w=0.3} The Android means no harm!"
     pause 1.0
     show Amina surprise
     am nulla "A...{w=0.5} Android?"
