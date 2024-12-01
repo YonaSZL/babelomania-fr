@@ -105,7 +105,7 @@ label tabitha_01_scenario:
     ta nulla "Acknowledged.{w=0.5} Considering the data about Professor Habiki's behavioral patterns, and cross-checking it with his recent actions:{w=0.15} he is what is commonly referred to as a 'people watcher'."
     show Tabitha bow
     ta nulla "He is in the habit of trying to observe individuals of interest while hidden, as to not influence their actions with his presence.{w=0.3} I posit that it was yet another occurrence of this quirk of his."
-    sh neutral "Hm.{w=0.3} Sounds like a pretty solid analsys to me...{w=0.5} Why is the accuracy in the mid-ranges, then?"
+    sh neutral "Hm.{w=0.3} Sounds like a pretty solid analysis to me...{w=0.5} Why is the accuracy in the mid-ranges, then?"
     show Tabitha neutral
     ta nulla "Unfortunately, I am unable to correctly gauge who, among the attendees, was the object of his curiosity.{w=0.3} He made sure, in the days leading up to the event, to familiarize himself with the list of invitees, but he never betrayed any interest one way or the other."
     show Tabitha surprise with dissolve
@@ -123,7 +123,7 @@ label tabitha_01_scenario:
     show Tabitha surprise with dissolve
     ta nulla ".{w=0.3}.{w=0.3}.{w=0.5}{nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
-    extend "{b}Data not found{/b}."
+    extend "{b}data not found{/b}."
     play sound "audio/em/em_surprise.ogg"
     show screen emote("surprise",0.15,0.5)
     sh surprise "Eh?{w=0.3} What do you mean 'data not found'?"
@@ -154,15 +154,15 @@ label tabitha_01_gaspard:
     show Tabitha neutral
     ta nulla ".{w=0.3}.{w=0.3}.{w=0.5}taking into consideration your state of mental distress, I hypothesize that your query concerns my neutralization of the hostile."
     sh pain "Yeah...{w=0.5} You neutralized him, alright."
-    sh angry "You ripped him apart like he was made of tissue paper without even a moment's hesitation...{w=0.5} I had his guts rain on my chest!{w=0.3} I felt the impact of each and every single little bit of gore...{w=0.5} Why?!{w=0.3} How?!"
+    sh angry "You ripped him apart like he was made of tissue paper without even a moment's hesitation...{w=0.5} I had his guts rain on my chest!{w=0.3} I felt the impact of each and every little bit of gore...{w=0.5} Why?!{w=0.3} How?!"
     ta nulla "Queries acknowledged...{w=0.5} Why did I neutralize the hostile so:{w=0.15} after emergency analysis of the situation, I concluded that drastic and swift action was necessary."
     show Tabitha surprise
     ta nulla "The hostile's combat capabilities were a complete incognita.{w=0.3} Taking into account its closeness to [shn], and your brief period of incapacitation, I calculated that I had but milliseconds to act."
     sh surprise "What...?"
     show Tabitha neutral
-    ta nulla "As I mentioned earlier, your wellbeing currently rests among my prime directives."
+    ta nulla "As I mentioned earlier, your physical integrity currently rests among my prime directives."
     show Tabitha frown
-    ta nulla "Whatever transpired between the beginning of my state of dormancy and my subsequent reboot caused me to arrive almost too late...{w=0.5} I mantain that it was the only safe course of action."
+    ta nulla "Whatever transpired between the beginning of my state of dormancy and my subsequent reboot caused me to arrive almost too late...{w=0.5} I maintain that it was the only safe course of action."
     sh surprise sweat "You...{w=0.5} You mean..."
     sh pain sweat "That you tore Gaspard to shreds {nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
@@ -253,7 +253,7 @@ label tabitha_01_human:
     play sound4 "audio/sfx/gui_shock.ogg"
     sh shock sweat "You...!{w=0.3} That can't...!!!"
     show Tabitha neutral
-    ta nulla "I must clarify that my conclusions are based on the information currently included in my database.{w=0.3} If [shn] is in possession of further relevant information about human biology, I would be happy to readjust my model."
+    ta nulla "I must clarify that my conclusions are based on the information currently included in my database.{w=0.3} If [shn] is in possession of further relevant data concerning human biology, I would be happy to readjust my model."
     sh shock ".{w=0.3}.{w=0.3}.{w=0.5}I..."
     pause 1.0
     show gaspard_turn_03:
@@ -297,7 +297,7 @@ label tabitha_01_directive:
     show Tabitha surprise
     ta nulla "Answer to first query:{w=0.3} the only person with that level of authority is {nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
-    extend "{b}Professor Habiki{/b}.{w=0.3} Answer to second query:{w=0.15} the 'access list' has not been modified."
+    extend "{b}Professor Habiki{/b}.{w=0.3} Answer to second query:{w=0.15} the 'access list' has not been modified in the relevant time period."
     sh frown "I see...{w=0.5} Last question, is it possible that someone could have changed your prime directives without that level of access {i}and{/i} without leaving any trace?"
     show Tabitha neutral
     ta nulla "It is a possibility, [shn]."
@@ -313,7 +313,7 @@ label tabitha_01_directive:
     sh neutral "Understood...{w=0.5} Could you please state the exact wording of your prime directive, Android?"
     ta nulla "Certainly.{w=0.3} Prime directive number two is phrased as follows:{w=0.15} this Android is tasked with safeguarding the continued physical integrity of Arata Shigeo."
     show Tabitha bow
-    ta nulla "This Android is also to obey their orders insofar they don't run contrary to the parameters of the directive itself or other directives of equal or superior priority."
+    ta nulla "This Android is also to obey their orders insofar they don't run contrary to the parameters of the directive itself, or other directives of equal and/or superior priority."
     sh_i frown "(Safeguarding my 'physical integrity'...{w=0.5} Very specific.)"
     sh neutral "You said number two...{w=0.5} Is that the priority order?"
     show Tabitha neutral
