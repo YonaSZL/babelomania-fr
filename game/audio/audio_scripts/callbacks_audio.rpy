@@ -2,6 +2,7 @@
 default va_style = "None"
 default shigeo_sfx = "keys"
 default tabitha_sfx = "keys"
+default amina_sfx = "keys"
 default francesco_sfx = "keys"
 default delphine_sfx = "keys"
 default habiki_sfx = "keys"
@@ -12,8 +13,8 @@ default female_sfx = "keys"
 define shigeo_keys = ["audio/va/beeps/shigeo_type_a.ogg", "audio/va/beeps/shigeo_type_b.ogg", "audio/va/beeps/shigeo_type_c.ogg", "audio/va/beeps/shigeo_type_d.ogg"]
 define shigeo_pens = ["audio/va/beeps/shigeo_pen_a.ogg", "audio/va/beeps/shigeo_pen_b.ogg", "audio/va/beeps/shigeo_pen_c.ogg", "audio/va/beeps/shigeo_pen_d.ogg"]
 define shigeo_bips = ["audio/va/beeps/shigeo_beep_a.ogg"]
-default shigeo_sounds = []
-default francesco_sounds = []
+default shigeo_sounds = ["audio/va/beeps/shigeo_type_a.ogg", "audio/va/beeps/shigeo_type_b.ogg", "audio/va/beeps/shigeo_type_c.ogg", "audio/va/beeps/shigeo_type_d.ogg"]
+default francesco_sounds = ["audio/va/beeps/shigeo_type_a.ogg", "audio/va/beeps/shigeo_type_b.ogg", "audio/va/beeps/shigeo_type_c.ogg", "audio/va/beeps/shigeo_type_d.ogg"]
 
 init python:
     #Shigeo Beeps
@@ -59,9 +60,9 @@ init python:
 define habiki_keys = ["audio/va/beeps/habiki_type_a.ogg", "audio/va/beeps/habiki_type_b.ogg", "audio/va/beeps/habiki_type_c.ogg", "audio/va/beeps/habiki_type_d.ogg"]
 define habiki_pens = ["audio/va/beeps/habiki_pen_a.ogg", "audio/va/beeps/habiki_pen_b.ogg", "audio/va/beeps/habiki_pen_c.ogg", "audio/va/beeps/habiki_pen_d.ogg"]
 define habiki_bips = ["audio/va/beeps/habiki_beep_a.ogg"]
-default habiki_sounds = []
-default gaspard_sounds = []
-default male_sounds = []
+default habiki_sounds = ["audio/va/beeps/habiki_type_a.ogg", "audio/va/beeps/habiki_type_b.ogg", "audio/va/beeps/habiki_type_c.ogg", "audio/va/beeps/habiki_type_d.ogg"]
+default gaspard_sounds = ["audio/va/beeps/habiki_type_a.ogg", "audio/va/beeps/habiki_type_b.ogg", "audio/va/beeps/habiki_type_c.ogg", "audio/va/beeps/habiki_type_d.ogg"]
+default male_sounds = ["audio/va/beeps/habiki_type_a.ogg", "audio/va/beeps/habiki_type_b.ogg", "audio/va/beeps/habiki_type_c.ogg", "audio/va/beeps/habiki_type_d.ogg"]
 
 init python:
     #habiki Beeps
@@ -128,10 +129,10 @@ init python:
 define amina_keys = ["audio/va/beeps/amina_type_a.ogg", "audio/va/beeps/amina_type_b.ogg", "audio/va/beeps/amina_type_c.ogg", "audio/va/beeps/amina_type_d.ogg"]
 define amina_pens = ["audio/va/beeps/amina_pen_a.ogg", "audio/va/beeps/amina_pen_b.ogg", "audio/va/beeps/amina_pen_c.ogg", "audio/va/beeps/amina_pen_d.ogg"]
 define amina_bips = ["audio/va/beeps/amina_beep_a.ogg"]
-default amina_sounds = []
-default delphine_sounds = []
-default tabitha_sounds = []
-default female_sounds = []
+default amina_sounds = ["audio/va/beeps/amina_type_a.ogg", "audio/va/beeps/amina_type_b.ogg", "audio/va/beeps/amina_type_c.ogg", "audio/va/beeps/amina_type_d.ogg"]
+default delphine_sounds = ["audio/va/beeps/amina_type_a.ogg", "audio/va/beeps/amina_type_b.ogg", "audio/va/beeps/amina_type_c.ogg", "audio/va/beeps/amina_type_d.ogg"]
+default tabitha_sounds = ["audio/va/beeps/amina_type_a.ogg", "audio/va/beeps/amina_type_b.ogg", "audio/va/beeps/amina_type_c.ogg", "audio/va/beeps/amina_type_d.ogg"]
+default female_sounds = ["audio/va/beeps/amina_type_a.ogg", "audio/va/beeps/amina_type_b.ogg", "audio/va/beeps/amina_type_c.ogg", "audio/va/beeps/amina_type_d.ogg"]
 
 init python:
     #Amina Beeps
