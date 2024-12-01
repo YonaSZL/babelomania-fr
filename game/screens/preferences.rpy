@@ -108,8 +108,7 @@ screen preferences():
                             if config.sample_sound:
                                 textbutton _("Test") action Play("sound", config.sample_sound)
 
-
-                    if config.has_voice:
+                    if va_style == "tabitha":
                         label _("Voice Volume")
                         hbox:
                             bar value Preference("voice volume")
@@ -123,6 +122,7 @@ screen preferences():
                             action Preference("all mute", "toggle")
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
+
             ##divider frame
             frame:
                 background Solid(u"#4f331d")
@@ -143,7 +143,53 @@ screen preferences():
                     textbutton _("English{#}") action [Language(None), SetVariable("language_switcher", "English"), gui.SetPreference("interface_font", "gui/font/Klotee.ttf")] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
                     textbutton _("French") action [Language("french"), SetVariable("language_switcher", "French"), gui.SetPreference("interface_font", "gui/font/ColabThi.otf")] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_slots_confirm.ogg"
 
+            ##divider frame
+            frame:
+                background Solid(u"#4f331d")
+                xysize(500,3)
+                xoffset 200
 
+            vbox:
+                #box_wrap True
+                hbox:
+                    style_prefix "check"
+                    label _("VA Style")
+                    spacing 10
+                    textbutton _("None"):
+                        yoffset 5
+                        action SetVariable("va_style", "None")
+                        hover_sound "audio/sfx/gui_hover.ogg"
+                        activate_sound "audio/sfx/gui_confirm.ogg"
+                    textbutton _("Beeps"):
+                        yoffset 5
+                        action SetVariable("va_style", "beeps")
+                        hover_sound "audio/sfx/gui_hover.ogg"
+                        activate_sound "audio/sfx/gui_confirm.ogg"
+                    textbutton _("Tabitha"):
+                        yoffset 5
+                        action SetVariable("va_style", "tabitha")
+                        hover_sound "audio/sfx/gui_hover.ogg"
+                        activate_sound "audio/sfx/gui_confirm.ogg"
+                if va_style == "beeps":
+                    hbox:
+                        style_prefix "check"
+                        label _("Shigeo")
+                        spacing 10
+                        textbutton _("Key"):
+                            yoffset 5
+                            action Function(shigeo_define, shigeo_keys, shigeo_sounds)
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                        textbutton _("Pen"):
+                            yoffset 5
+                            action Function(shigeo_define, shigeo_pens, shigeo_sounds)
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                        textbutton _("Bip"):
+                            yoffset 5
+                            action Function(shigeo_define, shigeo_bips, shigeo_sounds)
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
 
 ### PREF
 style pref_label:
