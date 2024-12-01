@@ -149,7 +149,7 @@ init python:
     renpy.music.register_channel("sound3", "sfx", loop=False) #Pan Right Channel
     renpy.music.register_channel("sound4", "sfx", loop=False)
     renpy.music.register_channel("sound5", "sfx", loop=False)
-    renpy.music.register_channel("sound6", "sfx", loop=False)
+    renpy.music.register_channel("beeps", "sfx", loop=False)
     renpy.music.register_channel("sound7", "sfx", loop=False)
 
 init -1:
