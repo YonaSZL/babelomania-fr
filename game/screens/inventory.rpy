@@ -160,7 +160,7 @@ screen inventory():
 
                 has vbox
 
-                textbutton _("Inspect") action [ ClearFocus("disruptor_drop"), Show("notify", None, _("It's the weapon I got on the third floor. Looks like an old revolver with some sci-fi thrown in.")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
+                textbutton _("Inspect") action [ ClearFocus("disruptor_drop"), Show("notify", None, _("The Disruptor. Looks like an old revolver with some sci-fi thrown in.")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
 
 style dropdown_vbox:
     spacing -5

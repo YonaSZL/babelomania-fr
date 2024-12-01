@@ -4,7 +4,8 @@ image title_02 = "gui/titlecards/ch_02.jpg"
 image title_03 = "gui/titlecards/ch_03.jpg"
 
 #Intro Sequence
-image white = "gui/transitions/white.jpg"
+image white = Solid("#dddddd")
+image blood = Solid("#770001")
 
 image babelomania_logo = At("gui/babelomania_logo.png", glow_outline(4, "#951B14"))
 

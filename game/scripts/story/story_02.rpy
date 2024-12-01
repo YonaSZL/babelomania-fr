@@ -125,7 +125,7 @@ label story_02_lvl3:
     de nulla "<They just lease their tech, then...{w=0.5} Anyway, considering what Francesco told me about company policy we're deeeeeefinitely still in France.>"
     pause 1.5
     show Delphine frown
-    de nulla "<I'm also completely alone?{w=0.5} He-{w=0.15}lloooo?{w=0.3} Kidnappers?{w=0.3} Captive in gorgeous heels here!>"
+    de nulla "<I'm also completely alone?{w=0.5} He-{w=0.15}lloooo?{w=0.3} Kidnappers?{w=0.3} Stunning captive in gorgeous heels here!>"
     pause 1.5
     show Delphine surprise
     de nulla "<Are we {i}serious{/i}?{w=0.5} They roipnol me or something, stash me in the Atlas Sharted room, then leave me to my own devices?!{w=0.3} What kind of schizo kidnapping is this?!>"
@@ -150,7 +150,7 @@ label story_02_yokai:
     play sound3 "audio/se/disruptor_muffled.ogg"
     pause 0.2
     show screen emote("surprise",0.5,0.15)
-    show Delphine surprise
+    show Delphine shock
     pause 3.0
     de nulla "{cps=15}<.{w=0.3}.{w=0.3}.{w=0.5}a {b}gunshot{/b}?>"
     pause 1.0
@@ -164,11 +164,11 @@ label story_02_yokai:
     pause 0.5
     play sound4 "audio/se/blood_splatter_muffled.ogg"
     pause 1.0
-    de_i nulla "(And now what...{w=0.5} What is...?!)"
-    play sound3 "audio/se/fudo_steps_muffled.ogg"
-    pause 2.0
+    de_i nulla "(That...{w=0.5} What...?{w=0.3} WHAT IS...?!)"
     stop LoNoise fadeout 3.5
-    pause 1.5
+    pause 1.0
+    play sound3 "audio/se/fudo_steps_muffled.ogg"
+    pause 2.5
     play sound "audio/se/door_scifi.ogg"
     pause 0.5
     scene blood with Reveal
@@ -192,16 +192,18 @@ label story_02_yokai:
     play sound4 "audio/se/bounce_gore.ogg"
     pause 0.2
     scene lvl3_corridor_dark
+    pause 1.5
     show lvl3_dead_scientist
     show Fudo:
         xalign 0.5 yalign 0.6 zoom 0.18
+    with Reveal
     pause 1.5
-    de scream sweat "<AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!!!>"
+    de shock sweat "<AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH!!!>"
     play sound3 "audio/se/item_drop.ogg"
     pause 0.2
     show lvl3_disruptor with dissolve
     pause 1.3
-    de_n scream sweat "\"<NO!{w=0.3} NONONONONONONOOOOOOO!!!>\"{i}(THIS ISN'T HAPPENING!{w=0.3} THIS CANNOT BE HAPPENING!){/i}"
+    de_n shock sweat "\"<NO!{w=0.3} NONONONONONONOOOOOOO!!!>\"{i}(THIS ISN'T HAPPENING!{w=0.3} THIS CANNOT BE HAPPENING!){/i}"
     de_i fear "(DAD!{w=0.3} MOM!{w=0.3} FRANCESCO!{w=0.3} ANYONE-)"
     play sound2 "audio/se/static_short.ogg"
     mi_nst static "<.{w=0.3}.{w=0.3}.{w=0.5}e gun!>"
@@ -230,7 +232,7 @@ label story_02_yokai:
         xalign 0.5 yalign 0.65 zoom 0.3
     with dissolve
     pause 0.5
-    de fear sweat "<Stay back!{w=0.3} Stay back or I'll->"
+    de fear sweat "<Stay back!{w=0.3} STAY BACK OR I'LL->"
     mi_nst static "<JUST SHOOT IT!{w=0.3} Don't you get it?!{w=0.3} {nw}"
     play sound4 "audio/sfx/gui_spook.ogg"
     extend "{b}It's not human!{/b}>"
@@ -263,15 +265,15 @@ label story_02_elevator_escape:
     hide Fudo with dissolve
     stop music fadeout 3.5
     pause 1.0
-    de surprise sweat "<Aaah...{w=0.5} Aaaah...{w=0.5} Aaaaah, I...{w=0.5} I...?!>"
+    de shock sweat "<Aaah...{w=0.5} Aaaah...{w=0.5} Aaaaah, I...{w=0.5} I...?!>"
     mi_nst static "<You did not!{w=0.3} Get in the elevator before it gets back up!>"
-    play sound4 "audio/em/em_surprise.ogg"
-    show screen emote("surprise",0.15,0.5)
-    de shock sweat "<What?!>"
+    play sound4 "audio/em/em_question.ogg"
+    show screen emote("question",0.15,0.5)
+    de surprise sweat "<What?!>"
     mi_nst static "<All you did was stun it!{w=0.3} {nw}"
     play sound4 "audio/sfx/gui_spook.ogg"
-    extend "{b}Once it recovers, it will come after you again{/b}!{w=0.3} GET IN THE ELEVATOR, ALREADY!>"
-    de fear sweat "<Aaah...{w=0.5} Aaaaaaaaaaaaaaah!>"
+    extend "{b}Once it recovers, it will come after you again{/b}!{w=0.3} GET IN THE DAMN ELEVATOR, ALREADY!>"
+    de fear sweat "<Aaah...{w=0.5} Aaaaaaaaaaaaaaah!!!>"
     play sound2 "audio/se/button_elevator.ogg"
     pause 0.5
     play sound "audio/se/elevator_ding.ogg"
@@ -305,7 +307,8 @@ label story_02_happyday:
     with dissolve
     pause 1.0
     de nulla ".{w=0.3}.{w=0.3}.{w=0.5}what's your name?"
-    mi_st static "<I'm {b}Mira{/b}...{w=0.5} And you?>"
+    play sound4 "audio/sfx/gui_hint.ogg"
+    mi_st static "<{b}Mira{/b}.{w=0.3} Mira Zurawski.{w=0.5} And you?>"
     de nulla "<Delphine...{w=0.5} Thank you, Mira.>"
     mi_st static "<You're welcome...{w=0.5} Hey, was it like, your wedding or something, today?>"
     pause 1.0
@@ -323,7 +326,7 @@ label story_02_happyday:
     play sound "audio/se/clothes_rustle.ogg"
     hide Delphine with dissolve
     pause 1.5
-    de sad "{cps=15}WaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAH...!!!"
+    de nulla "{cps=15}WaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAH...!!!"
     $ quick_menu = False
     $ time_menu = False
     $ codex_active = False

@@ -40,7 +40,7 @@ label exp_lvl3_wellness_01_shelves:
     $ renpy.block_rollback()
     pause 0.5
     de_i neutral "(Fake plants, a bunch of self-help books, a small offer of narrative...{w=0.5} And they're all absolutely immaculate.)"
-    de_i smile "(Guess whoever staffs this place isn't in the habit of reading, or maybe they don't like the selection...{w=0.5} Well, I can't exactly disagree.{w=0.3} Atlas Shrugged?{w=0.3} Really?)"
+    de_i amused "(Guess whoever staffs this place isn't in the habit of reading, or maybe they don't like the selection...{w=0.5} Well, I can't exactly disagree.{w=0.3} Atlas Shrugged?{w=0.3} Really?)"
     de_i surprise "(Also...{w=0.5} The {nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
     extend "{b}languages{/b} give me pause, too.)"
@@ -100,7 +100,7 @@ label exp_lvl3_wellness_01_fridge:
     show Delphine disgust with dissolve
     de nulla "<Ugh, {nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
-    extend "{b}Perrier{/b}.{w=0.5} Someone will pay for this carbonated affront.>"
+    extend "{b}Berrier{/b}.{w=0.5} Someone will pay for this carbonated affront.>"
     play sound "audio/sfx/gui_return.ogg"
     $ stat3_show = True
     pause 1.0
@@ -112,7 +112,7 @@ label exp_lvl3_wellness_01_fridge:
     if exp_lvl3_wellness_01_fridge == False:
         $ stat3 += 25
     de_i smile "(Huuuuuff, still hit the spot...{w=0.5} And the ceremony's done with, anyway, I can afford not fitting in the dress any longer.)"
-    de_i surprise "(If they have Perrier in stock, that could indicate {nw}"
+    de_i surprise "(If they have Berrier in stock, that could indicate {nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
     extend "{b}I'm still in France{/b}...{w=0.5} But being the decently sized country we are, that's not exactly helpful.)"
     play sound4 "audio/sfx/gui_slots_confirm.ogg"

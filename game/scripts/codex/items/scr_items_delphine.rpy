@@ -1,7 +1,7 @@
 screen scr_perrier():
-    label _("Perrier")
+    label _("Berrier")
     add "images/cdx/its/002_perrier.png"
-    text """This is where info about Perrier water goes.
+    text """This is where info about Berrier water goes.
     """
 
 screen scr_newspaper_clippings():
