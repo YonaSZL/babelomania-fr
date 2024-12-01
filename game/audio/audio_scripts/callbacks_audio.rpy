@@ -102,6 +102,7 @@ define amina_pens = ["audio/va/beeps/amina_pen_a.ogg", "audio/va/beeps/amina_pen
 define amina_bips = ["audio/va/beeps/amina_beep_a.ogg"]
 default amina_sounds = []
 default delphine_sounds = []
+default tabitha_sounds = []
 
 init python:
     #Amina Beeps
@@ -140,6 +141,25 @@ init python:
         
             for i in range (50):
                 renpy.sound.queue(renpy.random.choice(delphine_sounds), channel='beeps')
+        
+        elif event == "slow_done" or event == "end":
+            renpy.sound.stop(channel='beeps', fadeout=0.1)
+    
+    def tabitha_define(voice_bundle, tabitha_sounds):
+        tabitha_sounds.clear()
+        tabitha_sounds.extend(voice_bundle)
+        return
+
+    def tabitha_beep(event, interact=True, **kwargs):
+        global va_style
+        if not interact:
+            return
+        if va_style != "beeps":
+            return
+        if event == "show":
+        
+            for i in range (50):
+                renpy.sound.queue(renpy.random.choice(tabitha_sounds), channel='beeps')
         
         elif event == "slow_done" or event == "end":
             renpy.sound.stop(channel='beeps', fadeout=0.1)
