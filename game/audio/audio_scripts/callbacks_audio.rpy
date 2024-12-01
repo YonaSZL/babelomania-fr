@@ -53,6 +53,7 @@ define habiki_pens = ["audio/va/beeps/habiki_pen_a.ogg", "audio/va/beeps/habiki_
 define habiki_bips = ["audio/va/beeps/habiki_beep_a.ogg"]
 default habiki_sounds = []
 default gaspard_sounds = []
+default male_sounds = []
 
 init python:
     #habiki Beeps
@@ -96,6 +97,25 @@ init python:
         
         elif event == "slow_done" or event == "end":
             renpy.sound.stop(channel='beeps', fadeout=0.1)
+    
+    def male_define(voice_bundle, male_sounds):
+        male_sounds.clear()
+        male_sounds.extend(voice_bundle)
+        return
+
+    def male_beep(event, interact=True, **kwargs):
+        global va_style
+        if not interact:
+            return
+        if va_style != "beeps":
+            return
+        if event == "show":
+        
+            for i in range (50):
+                renpy.sound.queue(renpy.random.choice(male_sounds), channel='beeps')
+        
+        elif event == "slow_done" or event == "end":
+            renpy.sound.stop(channel='beeps', fadeout=0.1)
 
 define amina_keys = ["audio/va/beeps/amina_type_a.ogg", "audio/va/beeps/amina_type_b.ogg", "audio/va/beeps/amina_type_c.ogg", "audio/va/beeps/amina_type_d.ogg"]
 define amina_pens = ["audio/va/beeps/amina_pen_a.ogg", "audio/va/beeps/amina_pen_b.ogg", "audio/va/beeps/amina_pen_c.ogg", "audio/va/beeps/amina_pen_d.ogg"]
@@ -103,6 +123,7 @@ define amina_bips = ["audio/va/beeps/amina_beep_a.ogg"]
 default amina_sounds = []
 default delphine_sounds = []
 default tabitha_sounds = []
+default female_sounds = []
 
 init python:
     #Amina Beeps
@@ -160,6 +181,25 @@ init python:
         
             for i in range (50):
                 renpy.sound.queue(renpy.random.choice(tabitha_sounds), channel='beeps')
+        
+        elif event == "slow_done" or event == "end":
+            renpy.sound.stop(channel='beeps', fadeout=0.1)
+    
+    def female_define(voice_bundle, female_sounds):
+        female_sounds.clear()
+        female_sounds.extend(voice_bundle)
+        return
+
+    def female_beep(event, interact=True, **kwargs):
+        global va_style
+        if not interact:
+            return
+        if va_style != "beeps":
+            return
+        if event == "show":
+        
+            for i in range (50):
+                renpy.sound.queue(renpy.random.choice(female_sounds), channel='beeps')
         
         elif event == "slow_done" or event == "end":
             renpy.sound.stop(channel='beeps', fadeout=0.1)

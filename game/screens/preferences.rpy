@@ -285,6 +285,44 @@ screen preferences():
                             action Function(amina_define, amina_bips, amina_sounds)
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
+                    hbox:
+                        style_prefix "check"
+                        label _("M.Sounds")
+                        spacing 10
+                        textbutton _("Key"):
+                            yoffset 5
+                            action Function(male_define, habiki_keys, male_sounds)
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                        textbutton _("Pen"):
+                            yoffset 5
+                            action Function(male_define, habiki_pens, male_sounds)
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                        textbutton _("Bip"):
+                            yoffset 5
+                            action Function(male_define, habiki_bips, male_sounds)
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                    hbox:
+                        style_prefix "check"
+                        label _("F.Sounds")
+                        spacing 10
+                        textbutton _("Key"):
+                            yoffset 5
+                            action Function(female_define, amina_keys, female_sounds)
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                        textbutton _("Pen"):
+                            yoffset 5
+                            action Function(female_define, amina_pens, female_sounds)
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                        textbutton _("Bip"):
+                            yoffset 5
+                            action Function(female_define, amina_bips, female_sounds)
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
 
 ### PREF
 style pref_label:
