@@ -1,5 +1,13 @@
 ##Functions that make beeps happen with certain characters.
 default va_style = "None"
+default shigeo_sfx = "keys"
+default tabitha_sfx = "keys"
+default francesco_sfx = "keys"
+default delphine_sfx = "keys"
+default habiki_sfx = "keys"
+default gaspard_sfx = "keys"
+default male_sfx = "keys"
+default female_sfx = "keys"
 
 define shigeo_keys = ["audio/va/beeps/shigeo_type_a.ogg", "audio/va/beeps/shigeo_type_b.ogg", "audio/va/beeps/shigeo_type_c.ogg", "audio/va/beeps/shigeo_type_d.ogg"]
 define shigeo_pens = ["audio/va/beeps/shigeo_pen_a.ogg", "audio/va/beeps/shigeo_pen_b.ogg", "audio/va/beeps/shigeo_pen_c.ogg", "audio/va/beeps/shigeo_pen_d.ogg"]
