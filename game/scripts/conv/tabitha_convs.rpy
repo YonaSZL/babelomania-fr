@@ -114,7 +114,7 @@ label tabitha_01_scenario:
     extend "{b}one exception{/b}...{w=0.5} You, [shn]."
     sh surprise "Me...?"
     show Tabitha smile
-    ta nulla "Affirmative.{w=0.3} He was, as the saying goes, tickled pink when interacting with you.{w=0.3} Your brief exchange left him quite amused."
+    ta nulla "Affirmative.{w=0.3} He was, as the saying goes, tickled pink while interacting with you.{w=0.3} Your brief exchange left him quite amused."
     show Tabitha neutral
     ta nulla "It only amounts to correlation but there is a possibility that you may have joined the list of individuals to observe, despite his presence having been revealed to you."
     sh frown ".{w=0.3}.{w=0.3}.{w=0.5}which leaves us with nothing to go on, in the end.{w=0.5} Anyway."
@@ -166,7 +166,7 @@ label tabitha_01_gaspard:
     sh surprise sweat "You...{w=0.5} You mean..."
     sh pain sweat "That you tore Gaspard to shreds {nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
-    extend "{b}to save me{/b}?"
+    extend "{b}to protect me{/b}?"
     show Tabitha neutral
     ta nulla "Affirmative.{w=0.3} Thankfully, I made it in time and the hostile proved himself to be only slightly more durable than the average human."
     show Tabitha smile
@@ -175,7 +175,7 @@ label tabitha_01_gaspard:
     show screen emote("surprise",0.15,0.5)
     sh shock sweat "1950...!!!{w=0.5} Why?!"
     show Tabitha neutral
-    ta nulla "It was deemed to be the highest output possible while still accounting for stress of the materials.{w=0.3} The calculations-"
+    ta nulla "It was deemed to be the highest output possible, accounting for stress resistance of the materials.{w=0.3} The calculations-"
     play sound4 "audio/em/em_impact.ogg"
     sh angry "THAT'S NOT WHAT I MEANT!{w=0.3} Why do you have that much strength to begin with?!{w=0.3} And..."
     sh surprise "Now that I think about it..."
@@ -325,7 +325,7 @@ label tabitha_01_directive:
     pause 1.5
     sh_i neutral "(Pretty high up on the scale...)"
     show Tabitha frown
-    ta nulla "[shn], if I have answered your queries to satisfaction, I must stress the importance of addressing the matter of the mutation incognita immediately."
+    ta nulla "[shn], if I have answered your queries to satisfaction, I must stress the importance of addressing the mutation incognita immediately."
     sh neutral ".{w=0.3}.{w=0.3}.{w=0.5}yeah...{w=0.5} Yeah, I agree."
     sh frown sweat "And then, we're going to need to find a way out of here.{w=0.3} I'm gonna need you to-"
     am sad c_half "{cps=10}Hmmm..."

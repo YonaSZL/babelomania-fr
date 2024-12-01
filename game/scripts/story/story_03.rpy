@@ -54,7 +54,7 @@ label story_03_android:
         xalign 0.5
     with Reveal3
     pause 1.5
-    sh surprise sweat "<That's...{w=0.5}{nw}"
+    sh surprise sweat "<That's... {w=0.5}{nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
     extend "{b}Hokkaidō-ben{/b}?>"
     ta nulla "<That is correct.{w=0.3} You have mentioned to Professor Habiki a matrilineage originating from Sapporo.>"
@@ -216,19 +216,22 @@ label story_03_uneasy_trio:
     with dissolve
     pause 1.0
     show Shigeo smile c_half at sh_med:
-        xalign 0.55 yoffset 200
+        xalign 0.55 yoffset 150
     show Tabitha blood neutral at ta_med:
         xalign 0.88
-    show Amina sad c_half at am_med:
-        xalign 0.29 yoffset 275 transform_anchor True rotate -5
     with dissolve
+    pause 0.5
+    show Amina sad c_half at am_med:
+        xalign 0.29 yoffset 205 transform_anchor True rotate -5
+    with Reveal
     sh nulla "Thank god...!{w=0.5} How do you feel?"
     am nulla "I...{w=0.5} Fine, I think.{w=0.3} I must have passed out when..."
     pause 1.0
-    show Amina fear sweat with Reveal
+    show Amina shock sweat with Reveal
     pause 0.5
-    show Amina fear sweat c_half at am_med:
-        easein 0.1 xalign 0.27 yoffset 275 transform_anchor True rotate -5
+    play sound4 "audio/se/whoosh_fast.ogg"
+    show Amina shock sweat c_half at am_med:
+        easein 0.1 xalign 0.21 yoffset 205 transform_anchor True rotate -5
     am nulla "Ah...!{w=0.3} AAAAAAH!{w=0.3} SHIGEO, SHE...!{w=0.3} THAT...?!"
     show Shigeo shock
     sh nulla "Amina, no, it's alright!{w=0.3} The Android means no harm!"
@@ -237,8 +240,10 @@ label story_03_uneasy_trio:
     am nulla "A...{w=0.5} Android?"
     show Tabitha bow
     ta nulla "[shn], I must insist that we address-"
+    play sound4 "audio/em/em_angry.ogg"
     show Shigeo angry
-    sh nulla "WILL YOU SHUT UP ALREADY?!{w=0.3} You...!"
+    show screen emote("angry",0.55,0.2)
+    sh nulla "WILL YOU {b}SHUT UP{/b} ALREADY?!{w=0.3} You...!"
     show Shigeo pain
     show Amina shock
     show Tabitha neutral
@@ -248,12 +253,13 @@ label story_03_uneasy_trio:
     ta nulla "Affirmative, [shn].{w=0.3} With one caveat."
     show Tabitha surprise
     show Amina surprise
-    ta nulla "Exertions with a higher than average power output necessitate a period of {nw}"
-    play sound4 "audio/sfx/gui_slots_unlock.ogg"
+    play sound4 "audio/sfx/gui_slots_confirm.ogg"
     $ stat2_show = True
+    ta nulla "Exertions with a higher than average power output necessitate a period of {nw}"
     extend "{b}cooldown for my servomotors{/b}.{w=0.3} Otherwise, overheating may cause me to become temporarily incapacitated."
     show Tabitha bow
     $ stat2 -= 25
+    play sound4 "audio/sfx/gui_hint.ogg"
     ta nulla "I shall advise if the task you require from me would push me over the threshold."
     sh nulla "I see...{w=0.5} Anyway, I need you to go back into the library."
     show Shigeo neutral
