@@ -190,6 +190,25 @@ screen preferences():
                             action Function(shigeo_define, shigeo_bips, shigeo_sounds)
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
+                    hbox:
+                        style_prefix "check"
+                        label _("Habiki")
+                        spacing 10
+                        textbutton _("Key"):
+                            yoffset 5
+                            action Function(shigeo_define, shigeo_keys, shigeo_sounds)
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                        textbutton _("Pen"):
+                            yoffset 5
+                            action Function(shigeo_define, shigeo_pens, shigeo_sounds)
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                        textbutton _("Bip"):
+                            yoffset 5
+                            action Function(shigeo_define, shigeo_bips, shigeo_sounds)
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
 
 ### PREF
 style pref_label:
