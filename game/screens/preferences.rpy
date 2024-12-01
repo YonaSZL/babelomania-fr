@@ -192,21 +192,97 @@ screen preferences():
                             activate_sound "audio/sfx/gui_confirm.ogg"
                     hbox:
                         style_prefix "check"
-                        label _("Habiki")
+                        label _("Tabitha")
                         spacing 10
                         textbutton _("Key"):
                             yoffset 5
-                            action Function(shigeo_define, shigeo_keys, shigeo_sounds)
+                            action Function(tabitha_define, amina_keys, tabitha_sounds)
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
                         textbutton _("Pen"):
                             yoffset 5
-                            action Function(shigeo_define, shigeo_pens, shigeo_sounds)
+                            action Function(tabitha_define, amina_pens, tabitha_sounds)
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
                         textbutton _("Bip"):
                             yoffset 5
-                            action Function(shigeo_define, shigeo_bips, shigeo_sounds)
+                            action Function(tabitha_define, amina_bips, tabitha_sounds)
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                    hbox:
+                        style_prefix "check"
+                        label _("Francesco")
+                        spacing 10
+                        textbutton _("Key"):
+                            yoffset 5
+                            action Function(francesco_define, shigeo_keys, francesco_sounds)
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                        textbutton _("Pen"):
+                            yoffset 5
+                            action Function(francesco_define, shigeo_pens, francesco_sounds)
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                        textbutton _("Bip"):
+                            yoffset 5
+                            action Function(francesco_define, shigeo_bips, francesco_sounds)
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                    hbox:
+                        style_prefix "check"
+                        label _("Habiki")
+                        spacing 10
+                        textbutton _("Key"):
+                            yoffset 5
+                            action Function(habiki_define, habiki_keys, habiki_sounds)
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                        textbutton _("Pen"):
+                            yoffset 5
+                            action Function(habiki_define, habiki_pens, habiki_sounds)
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                        textbutton _("Bip"):
+                            yoffset 5
+                            action Function(habiki_define, habiki_bips, habiki_sounds)
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                    hbox:
+                        style_prefix "check"
+                        label _("Gaspard")
+                        spacing 10
+                        textbutton _("Key"):
+                            yoffset 5
+                            action Function(gaspard_define, habiki_keys, gaspard_sounds)
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                        textbutton _("Pen"):
+                            yoffset 5
+                            action Function(gaspard_define, habiki_pens, gaspard_sounds)
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                        textbutton _("Bip"):
+                            yoffset 5
+                            action Function(gaspard_define, habiki_bips, gaspard_sounds)
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                    hbox:
+                        style_prefix "check"
+                        label _("Amina")
+                        spacing 10
+                        textbutton _("Key"):
+                            yoffset 5
+                            action Function(amina_define, amina_keys, amina_sounds)
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                        textbutton _("Pen"):
+                            yoffset 5
+                            action Function(amina_define, amina_pens, amina_sounds)
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                        textbutton _("Bip"):
+                            yoffset 5
+                            action Function(amina_define, amina_bips, amina_sounds)
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
 
