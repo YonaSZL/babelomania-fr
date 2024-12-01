@@ -197,11 +197,11 @@ init -1:
         zoom 0.70
         transform_anchor True
     transform de_big:
-        yoffset 123
+        yoffset 184
         transform_anchor True
     transform de_med:
-        yoffset 185
-        zoom 0.70
+        yoffset 230
+        zoom 0.74
         transform_anchor True
     transform mi_big:
         yoffset 123

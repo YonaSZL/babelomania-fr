@@ -21,13 +21,11 @@ init python:
         current_hours = current_hours + ins_hours
         if current_hours > 23:
             current_hours = current_hours - 24
-            current_day = current_day + 1
         current_minutes = current_minutes + ins_minutes
         if current_minutes > 59:
             current_minutes = current_minutes - 60
             current_hours = current_hours + 1
             if current_hours > 23:
                 current_hours = current_hours - 24
-                current_day = current_day + 1
         dis_hours = hours[current_hours]
         dis_minutes = minutes[current_minutes]

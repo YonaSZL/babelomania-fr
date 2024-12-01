@@ -220,7 +220,7 @@ label story_03_uneasy_trio:
     show Tabitha blood neutral at ta_med:
         xalign 0.88
     show Amina sad c_half at am_med:
-        xalign 0.29 yoffset 300 transform_anchor True rotate -5
+        xalign 0.29 yoffset 275 transform_anchor True rotate -5
     with dissolve
     sh nulla "Thank god...!{w=0.5} How do you feel?"
     am nulla "I...{w=0.5} Fine, I think.{w=0.3} I must have passed out when..."
@@ -228,7 +228,7 @@ label story_03_uneasy_trio:
     show Amina fear sweat with Reveal
     pause 0.5
     show Amina fear sweat c_half at am_med:
-        easein 0.1 xalign 0.27 yoffset 300 transform_anchor True rotate -5
+        easein 0.1 xalign 0.27 yoffset 275 transform_anchor True rotate -5
     am nulla "Ah...!{w=0.3} AAAAAAH!{w=0.3} SHIGEO, SHE...!{w=0.3} THAT...?!"
     show Shigeo shock
     sh nulla "Amina, no, it's alright!{w=0.3} The android means no harm!"
