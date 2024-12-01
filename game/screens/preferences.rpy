@@ -165,11 +165,11 @@ screen preferences():
                         action SetVariable("va_style", "beeps")
                         hover_sound "audio/sfx/gui_hover.ogg"
                         activate_sound "audio/sfx/gui_confirm.ogg"
-                    textbutton _("Tabitha"):
-                        yoffset 5
-                        action SetVariable("va_style", "tabitha")
-                        hover_sound "audio/sfx/gui_hover.ogg"
-                        activate_sound "audio/sfx/gui_confirm.ogg"
+                    #textbutton _("Tabitha"):
+                    #    yoffset 5
+                    #    action SetVariable("va_style", "tabitha")
+                    #    hover_sound "audio/sfx/gui_hover.ogg"
+                    #    activate_sound "audio/sfx/gui_confirm.ogg"
                 if va_style == "beeps":
                     hbox:
                         style_prefix "check"
