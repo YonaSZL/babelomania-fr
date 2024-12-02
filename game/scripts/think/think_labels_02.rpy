@@ -17,15 +17,18 @@ label think_02_sickness:
 label think_02_dehydration:
     play sound4 "audio/sfx/gui_hint.ogg"
     $ renpy.block_rollback()
-    sh -clothes surprise "Withering organs...{w=0.5} Doesn't that sounds like a possible consequence of {nw}"
-    play sound4 "audio/sfx/gui_solved.ogg"
-    extend "{b}dehydration{/b}?"
+    sh -clothes surprise "Withering organs...{w=0.5} Doesn't that sounds like a possible consequence of dehydration?"
     am -clothes shock "Dehy-{w=0.15}oh, no!"
     sh -clothes frown "Gaspard was...{w=0.5} Quite thirsty, right before the transformation, wasn't it?{w=0.3} What if it wasn't due to his nerves?"
     am -clothes sad "It was...{w=0.5} It was a symptom, wasn't it?{w=0.3} Whatever was happening to him was...{w=0.5} Using the water in his body!"
     ta smile "That is my opinion as well, [shn].{w=0.3} Upon inspection, even when accounting for the spillage that occurred during the neutralization process..."
     ta neutral "I've observed a marked absence of natural occurring bodily fluids, plus the aforementioned withering of the hostile's internal organs.{w=0.3} Which leads me to believe that, indeed, dehydration is a symptom of the drastic change."
-    ta surprise "Anomalously, though, I've also observed three organs which instead received a boost "
+    ta surprise "Simulteanously, however, I've observed two organs which were instead augmented in size and subsequent spread."
+    am -clothes shock "A boost in size...?{w=0.5} What the hell did this thing do to him?!"
+    sh -clothes neutral ".{w=0.3}.{w=0.3}.{w=0.5}would those be...?"
     pause 1.0
     $ renpy.block_rollback()
-    jump story_03_brainssss
+    jump think_02_growth_think
+
+label think_02_growth_think:
+    call screen think(_("Two of his organs were {b}reinforced{/b}...?"), _("Skin and lungs?"), "think_02_skin", _("Muscles and skin?"), "think_02_muscles", _("Muscles and nervous system?"), "think_02_nervous", "None", "None")
