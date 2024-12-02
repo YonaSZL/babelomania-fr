@@ -290,6 +290,7 @@ label story_03_uneasy_trio:
     sh nulla "Yes, she...{w=0.5} It!{w=0.3} The Android dispatched him to protect me.{w=0.3} I couldn't...{w=0.5} I couldn't do anything."
     pause 1.5
     show Amina neutral with dissolve
+    play music "audio/bgm/sad.ogg"
     am nulla "Shigeo, I think Gaspard was gone even before that happened."
     pause 0.5
     show Shigeo surprise
@@ -308,7 +309,7 @@ label story_03_uneasy_trio:
     am nulla "Who?{w=0.3} You mean...?!"
     show Shigeo frown
     sh nulla "I don't understand how it all comes together, or the reasons behind any of it, but there's no way this is all a coincidence."
-    show Shigeo surprise
+    show Shigeo surprise -sweat
     sh nulla "We've been trapped in someone's sick game or test, I'm sure of it...{w=0.5} And this transformation that happened to Gaspard, is just another challege for us to deal with."
     show Shigeo frown
     sh nulla "So that we'd start being wary of each other, on top of the environment."
@@ -322,4 +323,48 @@ label story_03_uneasy_trio:
     extend "{b}Mastermind{/b}...{w=0.5} I'm going to need your help."
     show Amina surprise
     am nulla "My help...?"
-    sh nulla "Think about it.{w=0.3} "
+    sh nulla "Think about it.{w=0.3} We're still at the château.{w=0.3} Not enough time elapsed for them to bring us anywhere else, and by that same coin..."
+    show Shigeo angry
+    sh nulla "There wasn't enough time for anyone to reach the facility, either.{w=0.5} The Mastermind, or whoever's observing and running this, {nw}"
+    play sound4 "audio/sfx/gui_hint.ogg"
+    extend "{b}was already at the château when we passed out{/b}."
+    play sound4 "audio/em/em_shock.ogg"
+    show screen emote("surprise",0.2,0.15)
+    show Amina shock
+    am nulla "...!!!{w=0.3} So it could be one of the invitees!"
+    show Shigeo frown
+    sh nulla "Or someone from the catering, or the estate security...{w=0.5} But the invitees would be more probable, I think."
+    show Shigeo neutral
+    sh nulla "Still, I don't know anyone who was here tonight other than Francesco...{w=0.5} That's why I need your help.{w=0.3} And, Amina?"
+    show Amina surprise
+    sh nulla "I swear to you, on everything I hold most sacred:{w=0.15} I will do {i}everything{/i} in my power to protect you and anyone else we may chance upon."
+    pause 1.5
+    show Amina smile with dissolve
+    pause 0.5
+    am nulla "Heh...{w=0.5} Hehehehe, you know...{w=0.5} It's funny."
+    show Shigeo surprise
+    sh nulla "What is?"
+    am nulla "I have some knowledge of a lot of people at the wedding but...{w=0.5} Not everyone.{w=0.3} And even then, nothing deep.{w=0.3} But Gaspard?"
+    pause 0.5
+    show Amina cry with dissolve
+    am nulla "Gaspard was a terrible busybody...{w=0.5} A control freak, who made it his mission in life to know angels and demons of anyone around him...{w=0.5} If he was still around, he would have been able to help you...{w=0.5} So much better than me."
+    pause 1.0
+    show Shigeo pain sweat with dissolve
+    pause 1.5
+    scene black with Reveal3
+    pause 1.5
+    $ move_time(0,13)
+    pause 1.0
+
+label story_03_reasoning:
+    $ renpy.block_rollback()
+    play music "audio/bgm/setting_sun.ogg"
+    pause 0.5
+    sh surprise "What do you have there, Android?"
+    ta neutral "I'm happy to share that I identified my "
+    play sound4 "audio/sfx/gui_hint.ogg"
+    extend "{b}briefcase{/b} in the room where I booted up, [shn].{w=0.3} Although it has been emptied of the objects I was carrying for Professor Habiki."
+    play sound4 "audio/sfx/gui_save_slots.ogg"
+    $ briefcase_carry = True
+    pause 1.0
+    
