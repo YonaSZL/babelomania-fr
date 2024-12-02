@@ -492,5 +492,4 @@ label story_03_brainssss:
     scene gaspard_turn_03 with Reveal
     pause 0.5
     am -clothes surprise "So you're telling me that...{w=0.5} This virus, or whatever it is, consumes all the water in your body...{w=0.5} While reinforcing your muscles and nerves?"
-    sh -clothes frown "Looks like it...{w=0.5} Which paints quite the time limit on the infected."
-    
+    sh -clothes frown "Looks like it...{w=0.5} Which paints quite the grim picture."
