@@ -258,8 +258,6 @@ label story_03_uneasy_trio:
     ta nulla "Exertions with a higher than average power output necessitate a period of {nw}"
     extend "{b}cooldown for my servomotors{/b}.{w=0.3} Otherwise, overheating may cause me to become temporarily incapacitated."
     show Tabitha bow
-    $ stat2 -= 25
-    play sound4 "audio/sfx/gui_hint.ogg"
     ta nulla "I shall advise if the task you require from me would push me over the threshold."
     sh nulla "I see...{w=0.5} Anyway, I need you to go back into the library."
     show Shigeo neutral
@@ -268,6 +266,8 @@ label story_03_uneasy_trio:
     ta nulla "Acknowledged.{w=0.3} I will be back shortly, [shn]."
     show Tabitha frown
     ta nulla "Please do try and avoid leaving the premises of this room in the meantime."
+    $ stat2 += 25
+    play sound4 "audio/sfx/hp_down.ogg"
     stop music fadeout 3.5
     pause 1.0
     play sound2 "audio/se/steps_wood_slow.ogg"
@@ -421,7 +421,7 @@ label story_03_reasoning:
     am nulla "I'm not lowering my guard.{w=0.3} But I'm not used to calling anything by 'it', it doesn't really exist in French.{w=0.3} It just gets confusing."
     show Amina neutral
     show Shigeo surprise
-    sh nulla "Oh, right...{w=0.5} Would it help if I also started referring to her by 'she'?"
+    sh nulla "Oh, right...{w=0.5} Would it help if I also started referring to it by 'she'?"
     show Amina smile
     am nulla "It would, yeah.{w=0.3} <Merci>, Shigeo."
     show Tabitha bow
@@ -442,6 +442,8 @@ label story_03_reasoning:
     ta nulla "The cleaning products I usually carry due to Professor Habiki's messy eating habits were left in my briefcase.{w=0.3} Inspection confirms that they were not tampered with."
     show Tabitha smile
     ta nulla "My make and programming allows me to subroutinize a number of less complex tasks.{w=0.3} To optimize time, I would clean and disinfect the clothes that have come in contact with the hostile's blood while I relay information."
+    show Tabitha neutral
+    ta nulla "I've taken the liberty of already cleaning my garments and chassis, as to avoid cross-contamination during the process."
     pause 1.0
     show Shigeo blush with dissolve
     sh nulla "Ehm...{w=0.5} That is efficient, I guess, but-"
@@ -492,4 +494,33 @@ label story_03_brainssss:
     scene gaspard_turn_03 with Reveal
     pause 0.5
     am -clothes surprise "So you're telling me that...{w=0.5} This virus, or whatever it is, consumes all the water in your body...{w=0.5} While reinforcing your muscles and nerves?"
-    sh -clothes frown "Looks like it...{w=0.5} Which paints quite the grim picture."
+    sh -clothes frown sweat "Looks like it...{w=0.5} Android, I imagine the state of the organs would be unsuitaible to sustain life?"
+    ta bow "Affirmative, [shn].{w=0.3} We can confidently consider the human named as Gaspard and the neutralized hostile as two separate entities."
+    ta neutral "The latter arose when the afflicting patogen, whatever its nature, repurposed the body of the deceased human into the being that attacked [shn]."
+    pause 1.0
+    am -clothes sweat sad "Two...{w=0.5} Two questions.{w=0.3} Did you...{w=0.5} Whatever its nature means that you couldn't...{w=0.5} See anything?{w=0.3} Do you even have that kind of equipment?"
+    ta frown "I am equipped with advanced ocular sensors, and Professor Habiki often employs them in his lab work.{w=0.3} I was perfectly equipped to complete [shn]'s request to satisfaction."
+    ta neutral "In my investigation, I couldn't find any trace of a possible culprit pathogen.{w=0.5} I hypothize that, considering the pattern of alteration, we may found some traces if we were to investigate the inside of the cranial area."
+    sh -clothes pain sweat ".{w=0.3}.{w=0.3}.{w=0.5}I'm going to have to ask you to abstain from that."
+    ta bow "A wise choice, [shn].{w=0.3} In an uncontrolled environment such as this, we wouldn't want to risk you being contaminated during examination."
+    sh -clothes frown sweat "Not the main reason why I asked but...{w=0.5} Sure, let's go with that."
+    am -clothes sweat fear "The brain, yeah...{w=0.5} That's my second question.{w=0.3} Shigeo, from the way you making it sound, it feels like whatever this thing is, it kills its victims and...{w=0.5} Reduces them to the basic function of a meatsuit that can move."
+    am -clothes sweat shock "If that is the case...{w=0.5} If it doesn't need any of the other organs nor fluids to exist...{w=0.5} Then {nw}"
+    stop music fadeout 3.5
+    play sound4 "audio/sfx/gui_spook.ogg"
+    extend "{b}wouldn't that imply...?{/b}"
+    pause 3.0
+    play sound "audio/em/em_impact.ogg"
+    show Shigeo -clothes shock sweat at sh_med:
+        xalign 0.6
+    sh nulla "{b}IT'S STILL ALIVE!{/b}{w=0.3} THAT THING IS STILL ALIVE?!"
+    ta neutral "I indeed registered some responses during my investigation, [shn]."
+    show Shigeo angry
+    sh nulla "WHY THE FUCK DIDN'T YOU LEAD WITH THAT?!"
+    ta neutral "Owing to its current state of physical integrity, it is unable to present any resistance.{w=0.3} Even in its full state, it has proven to be easily dispatchable."
+    ta bow "Consequentely, it is not an immediate threat.{w=0.3} The investigation into the nature of the pathogen and the decontamination of your garments were of higher priority."
+    am -clothes shock sweat "<Ya Allah!>{w=0.3} Please tell me you're done, Tabitha!"
+    play sound3 "audio/se/clothes_rustle.ogg"
+    ta smile "Quite.{w=0.3} The subroutined task has been completed within the expected time parameters."
+    sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}this is why I hate androids."
+    
