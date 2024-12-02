@@ -487,4 +487,5 @@ label story_03_reasoning:
     extend "{b}internal organs had withered{/b}."
     sh surprise "His organs had withered...?{w=0.5} Wait."
     pause 0.5
-    
+
+label story_03_brainssss:
