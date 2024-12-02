@@ -264,4 +264,62 @@ label story_03_uneasy_trio:
     sh nulla "I see...{w=0.5} Anyway, I need you to go back into the library."
     show Shigeo neutral
     sh nulla "I need you to...{w=0.5} Analyze the body.{w=0.3} Get as much information as possible as you can from it regarding the mutation...{w=0.5} Afterwards, I need you to collect the lighter from the cigar box near the bonsai, and enough flammable material to start a controlled fire.{w=0.3} Then, come back.{w=0.3} Am I clear?"
-    show Tabitha 
+    show Tabitha smile
+    ta nulla "Acknowledged.{w=0.3} I will be back shortly, [shn]."
+    show Tabitha frown
+    ta nulla "Please do try and avoid leaving the premises of this room in the meantime."
+    stop music fadeout 3.5
+    pause 1.0
+    play sound2 "audio/se/steps_wood_slow.ogg"
+    hide Tabitha with dissolve
+    pause 0.5
+    am nulla "What was that all about...?{w=0.3} Shigeo, what is that thing?"
+    show Shigeo frown
+    sh nulla "An advanced Android, the creation of one of the invitees.{w=0.3} Francesco's mentor, Professor Habiki."
+    am nulla "Habiki...{w=0.5} The name sounds familiar, but I'm pretty sure I did not see him nor that Android at the reception."
+    show Shigeo neutral
+    sh nulla "They weren't here from the beginning.{w=0.3} They arrived pretty late, and I ran into them by chance while going to the bathroom...{w=0.5} Anyway."
+    pause 1.0
+    show Shigeo sad with dissolve
+    pause 0.5
+    sh nulla "Amina, I...{w=0.5} I'm so sorry."
+    pause 1.0
+    show Amina sad with dissolve
+    am nulla ".{w=0.3}.{w=0.3}.{w=0.5}Gaspard, he...{w=0.5} He really is gone, isn't he?"
+    show Shigeo pain
+    sh nulla "Yes, she...{w=0.5} It!{w=0.3} The Android dispatched him to protect me.{w=0.3} I couldn't...{w=0.5} I couldn't do anything."
+    pause 1.5
+    show Amina neutral with dissolve
+    am nulla "Shigeo, I think Gaspard was gone even before that happened."
+    pause 0.5
+    show Shigeo surprise
+    sh nulla "Amina..."
+    am nulla "You stopped from getting closer to him, remember?{w=0.3} You had noticed something was wrong with him...{w=0.5} And..."
+    show Amina fear
+    am nulla "The way he moved...{w=0.5} Those sunken eyes, the growth on his body...{w=0.5} {i}That terrible sound he made...!{/i}"
+    show Shigeo neutral sweat
+    sh nulla "Yeah, the Android...{w=0.5} It confirmed that no human could produce such a sound."
+    show Shigeo pain
+    sh nulla "What does that to a person...?!{w=0.3} {i}Who{/i} does that?!"
+    pause 1.0
+    play sound4 "audio/em/em_surprise.ogg"
+    show screen emote("surprise",0.2,0.15)
+    show Amina surprise
+    am nulla "Who?{w=0.3} You mean...?!"
+    show Shigeo frown
+    sh nulla "I don't understand how it all comes together, or the reasons behind any of it, but there's no way this is all a coincidence."
+    show Shigeo surprise
+    sh nulla "We've been trapped in someone's sick game or test, I'm sure of it...{w=0.5} And this transformation that happened to Gaspard, is just another challege for us to deal with."
+    show Shigeo frown
+    sh nulla "So that we'd start being wary of each other, on top of the environment."
+    show Amina shock
+    am nulla "You mean that what happened to him could happen to us as well?!"
+    show Shigeo pain
+    sh nulla "I don't know...{w=0.5} I don't know.{w=0.3} We need more information.{w=0.3} We need to think."
+    show Shigeo neutral
+    sh nulla "We need to untangle the mystery, expose the reasons behind this and the identity of the {nw}"
+    play sound4 "audio/sfx/gui_spook.ogg"
+    extend "{b}Mastermind{/b}...{w=0.5} I'm going to need your help."
+    show Amina surprise
+    am nulla "My help...?"
+    sh nulla "Think about it.{w=0.3} "
