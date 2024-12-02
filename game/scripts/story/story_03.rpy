@@ -470,14 +470,14 @@ label story_03_reasoning:
     am sad -clothes ".{w=0.3}.{w=0.3}.{w=0.5}what happened to him exactly?"
     ta neutral "The hostile underwent a number of sweeping and irreversible changes.{w=0.3} The nature of these changes doesn't find precedent in the available data."
     pause 0.5
-    scene gaspard_turn_03 with Reveal
+    scene gaspard_turn_01 with Reveal
     pause 0.5
-    ta neutral "Change number one:{w=0.15} the epidermis of the hostile had transformed into an unidentified {nw}"
+    ta neutral "Change number one:{w=0.15} the skin of the hostile had transformed into an unidentified {nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
     extend "{b}carbon-based alloy{/b}."
     am shock "Carbon-based...?!{w=0.3} His skin has become some kind of metal?!"
     sh surprise "Which explains how he was able to gouge that table with his...{w=0.5} Claws."
-    ta smile "Affirmative.{w=0.3} The transformed epidermis had also been arranged and molded into a variety of shapes.{w=0.3} I observed a tendency to increase the edge of a human body's naturally sharp areas."
+    ta smile "Affirmative.{w=0.3} The transformed skin had also been arranged and molded into a variety of shapes.{w=0.3} I observed a tendency to increase the edge of a human body's naturally sharp areas."
     sh frown "Fingers, elbows, shoulders, toes...{w=0.5} What else?"
     pause 0.5
     scene gaspard_rip with Reveal
@@ -489,3 +489,8 @@ label story_03_reasoning:
     pause 0.5
 
 label story_03_brainssss:
+    scene gaspard_turn_03 with Reveal
+    pause 0.5
+    am -clothes surprise "So you're telling me that...{w=0.5} This virus, or whatever it is, consumes all the water in your body...{w=0.5} While reinforcing your muscles and nerves?"
+    sh -clothes frown "Looks like it...{w=0.5} Which paints quite the time limit on the infected."
+    
