@@ -171,8 +171,8 @@ label story_02_yokai:
     pause 2.5
     play sound "audio/se/door_scifi.ogg"
     pause 0.5
+    play music "<loop 3.720>audio/bgm/fudo_myoo.ogg"
     scene blood with Reveal
-    play music "<loop 4.019>audio/bgm/fudo_myoo.ogg"
     pause 2.0
     play sound "audio/em/em_gong.ogg"
     scene fudo_appears_01
