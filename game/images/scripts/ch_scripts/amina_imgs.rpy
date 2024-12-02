@@ -8,6 +8,7 @@ image amina_clothes = ConditionSwitch(
     "amina_blood == 'None'", "amina_clothes_full",
     "amina_blood == 'blood'", "amina_clothes_blood"
 )
+image amina_naked = "images/chs/amina/naked.png"
 image amina_clothes_half = "images/chs/amina/clothes_half.png"
 image amina_acc_blush = "images/chs/amina/acc_blush.png"
 image amina_acc_sweat = "images/chs/amina/acc_sweat.png"
@@ -38,6 +39,8 @@ layeredimage Amina:
             "amina_clothes"
         attribute c_half:
             "amina_clothes_half"
+        attribute naked:
+            "amina_naked"
     group face:
         attribute neutral default:
             "amina_exp_neutral"
@@ -81,6 +84,7 @@ layeredimage Amina:
 image amina_por_body_base = "images/chs/amina/por/body_base.png"
 image amina_por_clothes_full = "images/chs/amina/por/clothes_full.png"
 image amina_por_clothes_blood = "images/chs/amina/por/clothes_blood.png"
+image amina_por_naked = "images/chs/amina/por/naked.png"
 image amina_por_clothes_half = "images/chs/amina/por/clothes_half.png"
 image amina_por_acc_blush = "images/chs/amina/por/acc_blush.png"
 image amina_por_acc_sweat = "images/chs/amina/por/acc_sweat.png"
@@ -116,6 +120,8 @@ layeredimage Amina_por:
             "amina_por_clothes"
         attribute c_half:
             "amina_por_clothes_half"
+        attribute naked:
+            "amina_por_naked"
     group face:
         attribute neutral default:
             "amina_por_exp_neutral"

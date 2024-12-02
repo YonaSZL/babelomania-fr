@@ -116,3 +116,47 @@ transform textblur():
         easein 1.0 blur 2 alpha .5
     on hover:
         easein 1.0 blur 0 alpha 1
+
+init python:
+
+    def overlay_off():
+        global time_menu
+        global codex_active
+        global inventory_show
+        global stat1_show
+        global stat2_show
+        global stat3_show
+        global stat4_show
+        global tabitha_cmp
+        #global amina_cmp
+        time_menu = False
+        codex_active = False
+        inventory_show = False
+        stat1_show = False
+        stat2_show = False
+        stat3_show = False
+        stat4_show = False
+        tabitha_cmp = False
+        #amina_cmp = False
+        return
+    
+    def overlay_on():
+        global time_menu
+        global codex_active
+        global inventory_show
+        global stat1_show
+        global stat2_show
+        global stat3_show
+        global stat4_show
+        global tabitha_cmp
+        #global amina_cmp
+        time_menu = True
+        codex_active = True
+        inventory_show = True
+        stat1_show = True
+        stat2_show = True
+        stat3_show = True
+        stat4_show = True
+        tabitha_cmp = True
+        #amina_cmp = True
+        return

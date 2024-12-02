@@ -222,7 +222,7 @@ label story_03_uneasy_trio:
     with dissolve
     pause 0.5
     show Amina sad c_half at am_med:
-        xalign 0.29 yoffset 205 transform_anchor True rotate -5
+        xalign 0.29 yoffset 185 transform_anchor True rotate -5
     with Reveal
     sh nulla "Thank god...!{w=0.5} How do you feel?"
     am nulla "I...{w=0.5} Fine, I think.{w=0.3} I must have passed out when..."
@@ -231,7 +231,7 @@ label story_03_uneasy_trio:
     pause 0.5
     play sound4 "audio/se/whoosh_fast.ogg"
     show Amina shock sweat c_half at am_med:
-        easein 0.1 xalign 0.21 yoffset 205 transform_anchor True rotate -5
+        easein 0.1 xalign 0.21 yoffset 185 transform_anchor True rotate -5
     am nulla "Ah...!{w=0.3} AAAAAAH!{w=0.3} SHIGEO, SHE...!{w=0.3} THAT...?!"
     show Shigeo shock
     sh nulla "Amina, no, it's alright!{w=0.3} The Android means no harm!"
@@ -261,7 +261,9 @@ label story_03_uneasy_trio:
     ta nulla "I shall advise if the task you require from me would push me over the threshold."
     sh nulla "I see...{w=0.5} Anyway, I need you to go back into the library."
     show Shigeo neutral
-    sh nulla "I need you to...{w=0.5} Analyze the body.{w=0.3} Get as much information as possible as you can from it regarding the mutation...{w=0.5} Afterwards, I need you to collect the lighter from the cigar box near the bonsai, and enough flammable material to start a controlled fire.{w=0.3} Then, come back.{w=0.3} Am I clear?"
+    sh nulla "I need you to analyze the body.{w=0.3} Get as much information as possible from it regarding the mutation.{w=0.3} Afterwards..."
+    show Shigeo frown
+    sh nulla "I need you to collect the lighter from the cigar box near the bonsai, and enough flammable material to start a controlled fire.{w=0.3} Then, come back.{w=0.3} Am I clear?"
     show Tabitha smile
     ta nulla "Acknowledged.{w=0.3} I will be back shortly, [shn]."
     show Tabitha frown
@@ -274,7 +276,6 @@ label story_03_uneasy_trio:
     hide Tabitha with dissolve
     pause 0.5
     am nulla "What was that all about...?{w=0.3} Shigeo, what is that thing?"
-    show Shigeo frown
     sh nulla "An advanced Android, the creation of one of the invitees.{w=0.3} Francesco's mentor, Professor Habiki."
     am nulla "Habiki...{w=0.5} The name sounds familiar, but I'm pretty sure I did not see him nor that Android at the reception."
     show Shigeo neutral
@@ -289,14 +290,14 @@ label story_03_uneasy_trio:
     show Shigeo pain
     sh nulla "Yes, she...{w=0.5} It!{w=0.3} The Android dispatched him to protect me.{w=0.3} I couldn't...{w=0.5} I couldn't do anything."
     pause 1.5
-    show Amina neutral with dissolve
-    play music "audio/bgm/sad.ogg"
+    show Amina neutral -sweat with dissolve
+    play music "audio/bgm/lonely_piano.ogg"
     am nulla "Shigeo, I think Gaspard was gone even before that happened."
     pause 0.5
     show Shigeo surprise
     sh nulla "Amina..."
-    am nulla "You stopped from getting closer to him, remember?{w=0.3} You had noticed something was wrong with him...{w=0.5} And..."
-    show Amina fear
+    am nulla "You stopped me from getting closer to him, remember?{w=0.3} You had noticed something was wrong with him...{w=0.5} And..."
+    show Amina fear sweat
     am nulla "The way he moved...{w=0.5} Those sunken eyes, the growth on his body...{w=0.5} {i}That terrible sound he made...!{/i}"
     show Shigeo neutral sweat
     sh nulla "Yeah, the Android...{w=0.5} It confirmed that no human could produce such a sound."
@@ -304,13 +305,13 @@ label story_03_uneasy_trio:
     sh nulla "What does that to a person...?!{w=0.3} {i}Who{/i} does that?!"
     pause 1.0
     play sound4 "audio/em/em_surprise.ogg"
-    show screen emote("surprise",0.2,0.15)
+    show screen emote("surprise",0.4,0.39)
     show Amina surprise
     am nulla "Who?{w=0.3} You mean...?!"
     show Shigeo frown
-    sh nulla "I don't understand how it all comes together, or the reasons behind any of it, but there's no way this is all a coincidence."
+    sh nulla "I don't understand how it all comes together yet, nor the reasons behind any of it, but there's no way this is all a coincidence."
     show Shigeo surprise -sweat
-    sh nulla "We've been trapped in someone's sick game or test, I'm sure of it...{w=0.5} And this transformation that happened to Gaspard, is just another challege for us to deal with."
+    sh nulla "We've been trapped in someone's sick game or test, I'm sure of it...{w=0.5} And this transformation that happened to Gaspard is just another challenge for us to deal with."
     show Shigeo frown
     sh nulla "So that we'd start being wary of each other, on top of the environment."
     show Amina shock
@@ -325,11 +326,11 @@ label story_03_uneasy_trio:
     am nulla "My help...?"
     sh nulla "Think about it.{w=0.3} We're still at the château.{w=0.3} Not enough time elapsed for them to bring us anywhere else, and by that same coin..."
     show Shigeo angry
-    sh nulla "There wasn't enough time for anyone to reach the facility, either.{w=0.5} The Mastermind, or whoever's observing and running this, {nw}"
+    sh nulla "There wasn't enough time for anyone to reach the facility, either.{w=0.5} The Mastermind, or whoever's observing and running this for them, {nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
     extend "{b}was already at the château when we passed out{/b}."
     play sound4 "audio/em/em_shock.ogg"
-    show screen emote("surprise",0.2,0.15)
+    show screen emote("surprise",0.4,0.39)
     show Amina shock
     am nulla "...!!!{w=0.3} So it could be one of the invitees!"
     show Shigeo frown
@@ -337,7 +338,8 @@ label story_03_uneasy_trio:
     show Shigeo neutral
     sh nulla "Still, I don't know anyone who was here tonight other than Francesco...{w=0.5} That's why I need your help.{w=0.3} And, Amina?"
     show Amina surprise
-    sh nulla "I swear to you, on everything I hold most sacred:{w=0.15} I will do {i}everything{/i} in my power to protect you and anyone else we may chance upon."
+    show Shigeo angry
+    sh nulla "I swear to you, on what I hold most sacred:{w=0.15} I will do {i}everything{/i} in my power to protect you and anyone else we may chance upon."
     pause 1.5
     show Amina smile with dissolve
     pause 0.5
@@ -345,12 +347,14 @@ label story_03_uneasy_trio:
     show Shigeo surprise
     sh nulla "What is?"
     am nulla "I have some knowledge of a lot of people at the wedding but...{w=0.5} Not everyone.{w=0.3} And even then, nothing deep.{w=0.3} But Gaspard?"
+    pause 1.5
+    show Amina cry -sweat with dissolve
     pause 0.5
-    show Amina cry with dissolve
-    am nulla "Gaspard was a terrible busybody...{w=0.5} A control freak, who made it his mission in life to know angels and demons of anyone around him...{w=0.5} If he was still around, he would have been able to help you...{w=0.5} So much better than me."
+    am nulla "{cps=15}Gaspard was a terrible busybody...{w=0.5} A control freak, who made it his mission in life to know angels and demons of anyone around him...{w=0.5} If he was still here, he would have been able to help you...{w=0.5} So much better than me."
     pause 1.0
     show Shigeo pain sweat with dissolve
     pause 1.5
+    stop music fadeout 3.5
     scene black with Reveal3
     pause 1.5
     $ move_time(0,13)
@@ -359,12 +363,12 @@ label story_03_uneasy_trio:
 label story_03_reasoning:
     $ renpy.block_rollback()
     play music "audio/bgm/setting_sun.ogg"
-    pause 0.5
+    pause 1.0
     sh surprise "What do you have there, Android?"
-    ta neutral "I'm happy to share that I identified my "
+    ta neutral "I'm happy to share that I identified my {nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
     extend "{b}briefcase{/b} in the room where I booted up, [shn].{w=0.3} Although it has been emptied of most of the objects I was carrying for Professor Habiki."
-    play sound4 "audio/sfx/gui_save_slots.ogg"
+    play sound4 "audio/sfx/gui_slots_confirm.ogg"
     $ briefcase_carry = True
     $ flashlight_use = True
     pause 1.5
@@ -379,11 +383,11 @@ label story_03_reasoning:
     with Reveal
     ta nulla "Just as well, though.{w=0.3} I took the liberty of collecting some useful items alongside the ones you had expressely asked for, [shn]."
     play sound "audio/sfx/gui_inventory.ogg"
-    pause 0.5
+    pause 1.0
     show Shigeo surprise
     show Amina surprise
-    sh nulla "The stuff from the fridge...{w=0.5} Right, I forgot in the meantime."
-    am nulla "Also, that...{w=0.5} That phone?"
+    sh nulla "The stuff from the fridge...{w=0.5} Right, I forgot in the chaos."
+    am nulla "Also, that...{w=0.5} That {i}phone{/i}...?"
     show Tabitha neutral
     ta nulla "I found it in the pocket of a discarded jacket in a corner of the room.{w=0.3} I surmise that it must have once belonged to the neutralized hostile."
     pause 1.0
@@ -406,6 +410,7 @@ label story_03_reasoning:
     play sound4 "audio/sfx/gui_slots_confirm.ogg"
     show screen notify(_("Received Papers."))
     $ shigeo_inventory.append(item_papers)
+    show Shigeo frown
     sh nulla "Before we do anything else, my next order:{w=0.3} you shall protect Amina as you would me.{w=0.3} Understood?"
     show Tabitha neutral
     show Amina surprise
@@ -423,7 +428,7 @@ label story_03_reasoning:
     show Shigeo surprise
     sh nulla "Oh, right...{w=0.5} Would it help if I also started referring to it by 'she'?"
     show Amina smile
-    am nulla "It would, yeah.{w=0.3} <Merci>, Shigeo."
+    am nulla "It would, yeah.{w=0.3} <Merci, Shigeo>."
     show Tabitha bow
     ta nulla "Observation:{w=0.15} I'm ready to discuss the findings of my inspection at your leisure, [shn]."
     show Tabitha frown
@@ -434,7 +439,9 @@ label story_03_reasoning:
     show Tabitha neutral
     ta nulla "Thank you, [shn].{w=0.3} In the meantime, may I have your clothes?"
     pause 1.0
-    play sound4 "audio/em/em_surprise.ogg"
+    play sound4 "audio/em/em_question.ogg"
+    show screen emote("question",0.47,0.05)
+    show screen emote2("question",0.28,0.15)
     show Shigeo surprise
     show Amina surprise
     sh nulla "I beg your pardon...?"
@@ -452,75 +459,84 @@ label story_03_reasoning:
     play sound "audio/se/clothes_rustle.ogg"
     show Amina c_half with dissolve
     play sound4 "audio/em/em_blush.ogg"
-    show screen emote("blush",0.43,0.5)
+    show screen emote("blush",0.47,0.05)
     show Shigeo shock
     sh nulla "A-{w=0.15}AMINA!"
     show Amina surprise
     am nulla "What?{w=0.5} She's right, better if she does this while we talk.{w=0.3} If it's some kind of infection, we're strapped for time.{w=0.3} Don't be prudish, now, it's just our upper garments."
     pause 1.0
     show Shigeo frown with dissolve
-    sh_n nulla "\"Uhm, aah...{w=0.5}{cps=10}*mumblegrumble*\""
+    sh_n nulla "\"Uhm, aah...{w=0.5}{cps=10}*mumblegrumble*"
     pause 1.0
     scene black with dissolve
     play sound "audio/se/clothes_rustle.ogg"
     $ move_time(0,3)
     pause 0.5
-    sh -clothes frown blush "So, uhm, this report?"
+    sh naked frown blush "So, uhm, this report?"
     ta bow "Thank you for entrusting your clothes to me, [shn].{w=0.3} Now commencing report..."
-    ta neutral "An in-depth analysis of the neutralized hostile was easier than projected thanks to its present physical state.{w=0.3} Upon inspection, I found that its physical structure and overall anatomy resembled that of the human body 76.999998\%."
+    ta neutral "An in-depth analysis of the neutralized hostile was easier than projected thanks to its present physical state.{w=0.3} Upon inspection, I found that its physical structure and overall anatomy resemble that of the human body 76.999998\%."
     ta surprise "This was found to be in line with [shn]'s statement regarding the hostile being previously identifiable as the individual 'Gaspard'."
-    am sad -clothes ".{w=0.3}.{w=0.3}.{w=0.5}what happened to him exactly?"
+    am sad naked ".{w=0.3}.{w=0.3}.{w=0.5}what happened to him exactly?"
     ta neutral "The hostile underwent a number of sweeping and irreversible changes.{w=0.3} The nature of these changes doesn't find precedent in the available data."
     pause 0.5
-    scene gaspard_turn_01 with Reveal
+    scene gaspard_turn_00 with Reveal
     pause 0.5
     ta neutral "Change number one:{w=0.15} the skin of the hostile had transformed into an unidentified {nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
     extend "{b}carbon-based alloy{/b}."
-    am shock "Carbon-based...?!{w=0.3} His skin has become some kind of metal?!"
-    sh surprise "Which explains how he was able to gouge that table with his...{w=0.5} Claws."
+    am shock naked "Carbon-based...?!{w=0.3} His skin has become some kind of metal?!"
+    sh surprise naked "Which explains how he was able to gouge that table with his...{w=0.5} Claws."
     ta smile "Affirmative.{w=0.3} The transformed skin had also been arranged and molded into a variety of shapes.{w=0.3} I observed a tendency to increase the edge of a human body's naturally sharp areas."
-    sh frown "Fingers, elbows, shoulders, toes...{w=0.5} What else?"
-    pause 0.5
+    sh frown naked "Fingers, elbows, shoulders, toes...{w=0.5} What else?"
+    pause 1.0
     scene gaspard_rip with Reveal
     pause 0.5
     ta bow "Change number two:{w=0.15} upon inspection, I found that most of the hostile's {nw}"
     play sound4 "audio/sfx/gui_hint.ogg"
     extend "{b}internal organs had withered{/b}."
-    sh surprise "His organs had withered...?{w=0.5} Wait."
-    pause 0.5
+    sh surprise naked "His organs had withered...?{w=0.5} Wait."
+    pause 1.0
+    $ overlay_off()
+    jump think_02_organs_think
 
 label story_03_brainssss:
+    $ overlay_on()
     scene gaspard_turn_03 with Reveal
     pause 0.5
-    am -clothes surprise "So you're telling me that...{w=0.5} This virus, or whatever it is, consumes all the water in your body...{w=0.5} While reinforcing your muscles and nerves?"
-    sh -clothes frown sweat "Looks like it...{w=0.5} Android, I imagine the state of the organs would be unsuitaible to sustain life?"
+    am naked surprise "So you're telling me that...{w=0.5} This virus, or whatever it is, consumes all the water in your body...{w=0.5} While reinforcing your muscles and nerves?"
+    sh naked frown sweat "Looks like it...{w=0.5} Android, I imagine the state of the organs would be unsuitaible to sustain life?"
     ta bow "Affirmative, [shn].{w=0.3} We can confidently consider the human named as Gaspard and the neutralized hostile as two separate entities."
     ta neutral "The latter arose when the afflicting patogen, whatever its nature, repurposed the body of the deceased human into the being that attacked [shn]."
     pause 1.0
-    am -clothes sweat sad "Two...{w=0.5} Two questions.{w=0.3} Did you...{w=0.5} Whatever its nature means that you couldn't...{w=0.5} See anything?{w=0.3} Do you even have that kind of equipment?"
+    am naked sweat sad "Two...{w=0.5} Two questions.{w=0.3} Did you...{w=0.5} Whatever its nature means that you couldn't...{w=0.5} See anything?{w=0.3} Do you even have that kind of equipment?"
     ta frown "I am equipped with advanced ocular sensors, and Professor Habiki often employs them in his lab work.{w=0.3} I was perfectly equipped to complete [shn]'s request to satisfaction."
     ta neutral "In my investigation, I couldn't find any trace of a possible culprit pathogen.{w=0.5} I hypothize that, considering the pattern of alteration, we may found some traces if we were to investigate the inside of the cranial area."
-    sh -clothes pain sweat ".{w=0.3}.{w=0.3}.{w=0.5}I'm going to have to ask you to abstain from that."
+    sh naked pain sweat ".{w=0.3}.{w=0.3}.{w=0.5}I'm going to have to ask you to abstain from that."
     ta bow "A wise choice, [shn].{w=0.3} In an uncontrolled environment such as this, we wouldn't want to risk you being contaminated during examination."
-    sh -clothes frown sweat "Not the main reason why I asked but...{w=0.5} Sure, let's go with that."
-    am -clothes sweat fear "The brain, yeah...{w=0.5} That's my second question.{w=0.3} Shigeo, from the way you making it sound, it feels like whatever this thing is, it kills its victims and...{w=0.5} Reduces them to the basic function of a meatsuit that can move."
-    am -clothes sweat shock "If that is the case...{w=0.5} If it doesn't need any of the other organs nor fluids to exist...{w=0.5} Then {nw}"
+    sh naked frown sweat "Not the main reason why I asked but...{w=0.5} Sure, let's go with that."
+    am naked sweat fear "The brain, yeah...{w=0.5} That's my second question.{w=0.3} Shigeo, from the way you're making it sound, it feels like whatever this thing is, it kills its victims and...{w=0.5} Reduces them to the basic function of a meatsuit that can move."
+    am naked sweat shock "If that is the case...{w=0.5} If it doesn't need any of the other organs nor fluids to exist...{w=0.5} Then {nw}"
     stop music fadeout 3.5
     play sound4 "audio/sfx/gui_spook.ogg"
     extend "{b}wouldn't that imply...?{/b}"
     pause 3.0
+    scene taisho_1f_side_meet_base
+    show darkness_layer
     play sound "audio/em/em_impact.ogg"
-    show Shigeo -clothes shock sweat at sh_med:
-        xalign 0.6
+    show Shigeo naked shock sweat at sh_big:
+        xalign 0.5
     sh nulla "{b}IT'S STILL ALIVE!{/b}{w=0.3} THAT THING IS STILL ALIVE?!"
     ta neutral "I indeed registered some responses during my investigation, [shn]."
     show Shigeo angry
     sh nulla "WHY THE FUCK DIDN'T YOU LEAD WITH THAT?!"
     ta neutral "Owing to its current state of physical integrity, it is unable to present any resistance.{w=0.3} Even in its full state, it has proven to be easily dispatchable."
     ta bow "Consequentely, it is not an immediate threat.{w=0.3} The investigation into the nature of the pathogen and the decontamination of your garments were of higher priority."
-    am -clothes shock sweat "<Ya Allah!>{w=0.3} Please tell me you're done, Tabitha!"
+    am naked shock sweat "<Ya Allah!>{w=0.3} Please tell me you're done, Tabitha!"
     play sound3 "audio/se/clothes_rustle.ogg"
     ta smile "Quite.{w=0.3} The subroutined task has been completed within the expected time parameters."
+    show Shigeo frown
     sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}this is why I hate androids."
-    
+    pause 1.0
+    scene black with dissolve
+    $ amina_blood = "None"
+    $ shigeo_blood = "None"

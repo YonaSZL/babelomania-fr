@@ -161,6 +161,39 @@ screen inventory():
                 has vbox
 
                 textbutton _("Inspect") action [ ClearFocus("disruptor_drop"), Show("notify", None, _("The Disruptor. Looks like an old revolver with some sci-fi thrown in.")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
+    if GetFocusRect("smartphone_drop"):
+        dismiss action ClearFocus("smartphone_drop")
+        nearrect:
+            focus "smartphone_drop"
+            frame:
+                style_prefix "dropdown"
+                #modal True
+
+                has vbox
+
+                textbutton _("Inspect") action [ ClearFocus("smartphone_drop"), Show("notify", None, _("Gaspard's Smartphone. Tabita found it in his jacket... Damn it.")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
+    if GetFocusRect("lighter_drop"):
+        dismiss action ClearFocus("lighter_drop")
+        nearrect:
+            focus "lighter_drop"
+            frame:
+                style_prefix "dropdown"
+                #modal True
+
+                has vbox
+
+                textbutton _("Inspect") action [ ClearFocus("lighter_drop"), Show("notify", None, _("The lighter from the cigar box. What's this kind called...?")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
+    if GetFocusRect("papers_drop"):
+        dismiss action ClearFocus("papers_drop")
+        nearrect:
+            focus "papers_drop"
+            frame:
+                style_prefix "dropdown"
+                #modal True
+
+                has vbox
+
+                textbutton _("Inspect") action [ ClearFocus("papers_drop"), Show("notify", None, _("Tabitha ripped out a bunch of papers from random books.")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
 
 style dropdown_vbox:
     spacing -5

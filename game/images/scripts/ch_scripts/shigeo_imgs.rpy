@@ -7,6 +7,7 @@ image shigeo_clothes = ConditionSwitch(
     "shigeo_blood == 'None'", "shigeo_clothes_full",
     "shigeo_blood == 'blood'", "shigeo_clothes_blood"
 )
+image shigeo_naked = "images/chs/shigeo/naked.png"
 image shigeo_clothes_half = "images/chs/shigeo/clothes_half.png"
 image shigeo_acc_blush = "images/chs/shigeo/acc_blush.png"
 image shigeo_acc_sweat = "images/chs/shigeo/acc_sweat.png"
@@ -33,6 +34,8 @@ layeredimage Shigeo:
             "shigeo_clothes"
         attribute c_half:
             "shigeo_clothes_half"
+        attribute naked:
+            "shigeo_naked"
     group face:
         attribute neutral default:
             "shigeo_exp_neutral"
@@ -71,6 +74,7 @@ layeredimage Shigeo:
 image shigeo_por_body_base = "images/chs/shigeo/por/body_base.png"
 image shigeo_por_clothes_full = "images/chs/shigeo/por/clothes_full.png"
 image shigeo_por_clothes_blood = "images/chs/shigeo/por/clothes_blood.png"
+image shigeo_por_naked = "images/chs/shigeo/por/naked.png"
 image shigeo_por_clothes_half = "images/chs/shigeo/por/clothes_half.png"
 image shigeo_por_acc_blush = "images/chs/shigeo/por/acc_blush.png"
 image shigeo_por_acc_sweat = "images/chs/shigeo/por/acc_sweat.png"
@@ -101,6 +105,8 @@ layeredimage Shigeo_por:
             "shigeo_por_clothes"
         attribute c_half:
             "shigeo_por_clothes_half"
+        attribute naked:
+            "shigeo_por_naked"
     group face:
         attribute neutral default:
             "shigeo_por_exp_neutral"
