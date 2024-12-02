@@ -32,3 +32,27 @@ label think_02_dehydration:
 
 label think_02_growth_think:
     call screen think(_("Two of his organs were {b}reinforced{/b}...?"), _("Skin and lungs?"), "think_02_skin", _("Muscles and skin?"), "think_02_muscles", _("Muscles and nervous system?"), "think_02_nervous", "None", "None")
+
+label think_02_skin:
+    play sound4 "audio/sfx/gui_slots_confirm.ogg"
+    $ renpy.block_rollback()
+
+    pause 1.0
+    $ renpy.block_rollback()
+    jump think_02_growth_think
+
+label think_02_muscles:
+    play sound4 "audio/sfx/gui_slots_confirm.ogg"
+    $ renpy.block_rollback()
+
+    pause 1.0
+    $ renpy.block_rollback()
+    jump think_02_growth_think
+
+label think_02_nervous:
+    play sound4 "audio/sfx/gui_hint.ogg"
+    $ renpy.block_rollback()
+
+    pause 1.0
+    $ renpy.block_rollback()
+    jump think_02_growth_think
