@@ -427,4 +427,64 @@ label story_03_reasoning:
     show Tabitha bow
     ta nulla "Observation:{w=0.15} I'm ready to discuss the findings of my inspection at your leisure, [shn]."
     show Tabitha frown
-    ta nulla "But considering "
+    show Amina neutral
+    show Shigeo frown
+    ta nulla "But considering the need for timeliness on the mutation issue, I would suggest we address them {i}immediately{/i}."
+    sh nulla "Hmph.{w=0.3} Fair enough...{w=0.5} Proceed, then."
+    show Tabitha neutral
+    ta nulla "Thank you, [shn].{w=0.3} In the meantime, may I have your clothes?"
+    pause 1.0
+    play sound4 "audio/em/em_surprise.ogg"
+    show Shigeo surprise
+    show Amina surprise
+    sh nulla "I beg your pardon...?"
+    show Tabitha bow
+    ta nulla "The cleaning products I usually carry due to Professor Habiki's messy eating habits were left in my briefcase.{w=0.3} Inspection confirms that they were not tampered with."
+    show Tabitha smile
+    ta nulla "My make and programming allows me to subroutinize a number of less complex tasks.{w=0.3} To optimize time, I would clean and disinfect the clothes that have come in contact with the hostile's blood while I relay information."
+    pause 1.0
+    show Shigeo blush with dissolve
+    sh nulla "Ehm...{w=0.5} That is efficient, I guess, but-"
+    show Amina neutral
+    am nulla "Makes sense to me.{w=0.3} Here."
+    play sound "audio/se/clothes_rustle.ogg"
+    show Amina c_half with dissolve
+    play sound4 "audio/em/em_blush.ogg"
+    show screen emote("blush",0.43,0.5)
+    show Shigeo shock
+    sh nulla "A-{w=0.15}AMINA!"
+    show Amina surprise
+    am nulla "What?{w=0.5} She's right, better if she does this while we talk.{w=0.3} If it's some kind of infection, we're strapped for time.{w=0.3} Don't be prudish, now, it's just our upper garments."
+    pause 1.0
+    show Shigeo frown with dissolve
+    sh_n nulla "\"Uhm, aah...{w=0.5}{cps=10}*mumblegrumble*\""
+    pause 1.0
+    scene black with dissolve
+    play sound "audio/se/clothes_rustle.ogg"
+    $ move_time(0,3)
+    pause 0.5
+    sh -clothes frown blush "So, uhm, this report?"
+    ta bow "Thank you for entrusting your clothes to me, [shn].{w=0.3} Now commencing report..."
+    ta neutral "An in-depth analysis of the neutralized hostile was easier than projected thanks to its present physical state.{w=0.3} Upon inspection, I found that its physical structure and overall anatomy resembled that of the human body 76.999998\%."
+    ta surprise "This was found to be in line with [shn]'s statement regarding the hostile being previously identifiable as the individual 'Gaspard'."
+    am sad -clothes ".{w=0.3}.{w=0.3}.{w=0.5}what happened to him exactly?"
+    ta neutral "The hostile underwent a number of sweeping and irreversible changes.{w=0.3} The nature of these changes doesn't find precedent in the available data."
+    pause 0.5
+    scene gaspard_turn_03 with Reveal
+    pause 0.5
+    ta neutral "Change number one:{w=0.15} the epidermis of the hostile had transformed into an unidentified {nw}"
+    play sound4 "audio/sfx/gui_hint.ogg"
+    extend "{b}carbon-based alloy{/b}."
+    am shock "Carbon-based...?!{w=0.3} His skin has become some kind of metal?!"
+    sh surprise "Which explains how he was able to gouge that table with his...{w=0.5} Claws."
+    ta smile "Affirmative.{w=0.3} The transformed epidermis had also been arranged and molded into a variety of shapes.{w=0.3} I observed a tendency to increase the edge of a human body's naturally sharp areas."
+    sh frown "Fingers, elbows, shoulders, toes...{w=0.5} What else?"
+    pause 0.5
+    scene gaspard_rip with Reveal
+    pause 0.5
+    ta bow "Change number two:{w=0.15} upon inspection, I found that most of the hostile's {nw}"
+    play sound4 "audio/sfx/gui_hint.ogg"
+    extend "{b}internal organs had withered{/b}."
+    sh surprise "His organs had withered...?{w=0.5} Wait."
+    pause 0.5
+    
