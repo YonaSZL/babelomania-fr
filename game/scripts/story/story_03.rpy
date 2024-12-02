@@ -363,8 +363,68 @@ label story_03_reasoning:
     sh surprise "What do you have there, Android?"
     ta neutral "I'm happy to share that I identified my "
     play sound4 "audio/sfx/gui_hint.ogg"
-    extend "{b}briefcase{/b} in the room where I booted up, [shn].{w=0.3} Although it has been emptied of the objects I was carrying for Professor Habiki."
+    extend "{b}briefcase{/b} in the room where I booted up, [shn].{w=0.3} Although it has been emptied of most of the objects I was carrying for Professor Habiki."
     play sound4 "audio/sfx/gui_save_slots.ogg"
     $ briefcase_carry = True
+    $ flashlight_use = True
+    pause 1.5
+    scene taisho_1f_side_meet_base
+    show darkness_layer
+    show Amina neutral at am_med:
+        xalign 0.2
+    show Shigeo neutral at sh_med:
+        xalign 0.43
+    show Tabitha bow at ta_med:
+        xalign 0.72
+    with Reveal
+    ta nulla "Just as well, though.{w=0.3} I took the liberty of collecting some useful items alongside the ones you had expressely asked for, [shn]."
+    play sound "audio/sfx/gui_inventory.ogg"
+    pause 0.5
+    show Shigeo surprise
+    show Amina surprise
+    sh nulla "The stuff from the fridge...{w=0.5} Right, I forgot in the meantime."
+    am nulla "Also, that...{w=0.5} That phone?"
+    show Tabitha neutral
+    ta nulla "I found it in the pocket of a discarded jacket in a corner of the room.{w=0.3} I surmise that it must have once belonged to the neutralized hostile."
     pause 1.0
-    
+    show Shigeo pain
+    show Amina sad
+    pause 0.5
+    sh nulla "Amina, I'm sorry, we...{w=0.5} We could need it.{w=0.3} I have to ask your permission to..."
+    am nulla "It's...{w=0.5} It's alright.{w=0.3} If he kept notes on it, it might help us with your investigation, too.{w=0.3} I'll show you how to unlock it later."
+    play sound4 "audio/sfx/gui_slots_confirm.ogg"
+    show screen notify(_("Received Smartphone."))
+    $ shigeo_inventory.append(item_smartphone)
+    pause 1.0
+    show Tabitha bow
+    ta nulla "I shall keep hold of the items you asked me to acquire and everything else you may deem useful to carry, [shn].{w=0.3} Do not hesitate to rely on me."
+    play sound4 "audio/sfx/gui_slots_confirm.ogg"
+    show screen notify(_("Received Lighter."))
+    $ shigeo_inventory.append(item_lighter)
+    show Shigeo neutral
+    sh nulla "Oh, believe me I won't, Android.{w=0.3} And speaking of which."
+    play sound4 "audio/sfx/gui_slots_confirm.ogg"
+    show screen notify(_("Received Papers."))
+    $ shigeo_inventory.append(item_papers)
+    sh nulla "Before we do anything else, my next order:{w=0.3} you shall protect Amina as you would me.{w=0.3} Understood?"
+    show Tabitha neutral
+    show Amina surprise
+    ta nulla "Acknowledged, [shn].{w=0.3} I need to clarify though that the order shall still fall second to the prime directive of preserving your physical integrity, in case of emergency."
+    am nulla "Well, at least she's agreeable...{w=0.5} I mean it...?{w=0.3} Is agree...?"
+    show Amina frown
+    am nulla "Ugh, this is {i}so{/i} frustrating!{w=0.3} What's your name, Android?{w=0.3} Do you have one?"
+    show Shigeo surprise
+    ta nulla "Professor Habiki has given me the name Tabitha."
+    am nulla "Tabitha...{w=0.5} Sure.{w=0.3} Counting on you then, Tabitha."
+    show Shigeo frown
+    sh nulla "I would avoid getting too familiar with it, Amina.{w=0.3} Remember what I told you?"
+    am nulla "I'm not lowering my guard.{w=0.3} But I'm not used to calling anything by 'it', it doesn't really exist in French.{w=0.3} It just gets confusing."
+    show Amina neutral
+    show Shigeo surprise
+    sh nulla "Oh, right...{w=0.5} Would it help if I also started referring to her by 'she'?"
+    show Amina smile
+    am nulla "It would, yeah.{w=0.3} <Merci>, Shigeo."
+    show Tabitha bow
+    ta nulla "Observation:{w=0.15} I'm ready to discuss the findings of my inspection at your leisure, [shn]."
+    show Tabitha frown
+    ta nulla "But considering "
