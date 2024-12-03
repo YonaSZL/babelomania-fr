@@ -540,3 +540,7 @@ label story_03_brainssss:
     scene black with dissolve
     $ amina_blood = "None"
     $ shigeo_blood = "None"
+    play sound "audio/se/clothes_rustle.ogg"
+    $ move_time(0,19)
+    pause 0.5
+    
