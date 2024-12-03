@@ -157,17 +157,17 @@ screen preferences():
                     spacing 10
                     textbutton _("None"):
                         yoffset 5
-                        action SetVariable("va_style", "None")
+                        action SetVariable("persistent.va_style", "None")
                         hover_sound "audio/sfx/gui_hover.ogg"
                         activate_sound "audio/sfx/gui_confirm.ogg"
                     textbutton _("Beeps"):
                         yoffset 5
-                        action SetVariable("va_style", "beeps")
+                        action SetVariable("persistent.va_style", "beeps")
                         hover_sound "audio/sfx/gui_hover.ogg"
                         activate_sound "audio/sfx/gui_confirm.ogg"
                     #textbutton _("Tabitha"):
                     #    yoffset 5
-                    #    action SetVariable("va_style", "tabitha")
+                    #    action SetVariable("persistent.va_style", "tabitha")
                     #    hover_sound "audio/sfx/gui_hover.ogg"
                     #    activate_sound "audio/sfx/gui_confirm.ogg"
                 if va_style == "beeps":
@@ -177,17 +177,17 @@ screen preferences():
                         spacing 10
                         textbutton _("Key"):
                             yoffset 5
-                            action [SetVariable("shigeo_sfx", "keys"), Function(shigeo_define, shigeo_keys, shigeo_sounds)]
+                            action [SetVariable("persistent.shigeo_sfx", "keys"), Function(shigeo_define, shigeo_keys, shigeo_sounds)]
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
                         textbutton _("Pen"):
                             yoffset 5
-                            action [SetVariable("shigeo_sfx", "pens"), Function(shigeo_define, shigeo_pens, shigeo_sounds)]
+                            action [SetVariable("persistent.shigeo_sfx", "pens"), Function(shigeo_define, shigeo_pens, shigeo_sounds)]
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
                         textbutton _("Bip"):
                             yoffset 5
-                            action [SetVariable("shigeo_sfx", "bips"), Function(shigeo_define, shigeo_bips, shigeo_sounds)]
+                            action [SetVariable("persistent.shigeo_sfx", "bips"), Function(shigeo_define, shigeo_bips, shigeo_sounds)]
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
                     hbox:
@@ -196,17 +196,17 @@ screen preferences():
                         spacing 10
                         textbutton _("Key"):
                             yoffset 5
-                            action [SetVariable("tabitha_sfx", "keys"), Function(tabitha_define, amina_keys, tabitha_sounds)]
+                            action [SetVariable("persistent.tabitha_sfx", "keys"), Function(tabitha_define, amina_keys, tabitha_sounds)]
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
                         textbutton _("Pen"):
                             yoffset 5
-                            action [SetVariable("tabitha_sfx", "pens"), Function(tabitha_define, amina_pens, tabitha_sounds)]
+                            action [SetVariable("persistent.tabitha_sfx", "pens"), Function(tabitha_define, amina_pens, tabitha_sounds)]
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
                         textbutton _("Bip"):
                             yoffset 5
-                            action [SetVariable("tabitha_sfx", "bips"), Function(tabitha_define, amina_bips, tabitha_sounds)]
+                            action [SetVariable("persistent.tabitha_sfx", "bips"), Function(tabitha_define, amina_bips, tabitha_sounds)]
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
                     hbox:
@@ -215,17 +215,17 @@ screen preferences():
                         spacing 10
                         textbutton _("Key"):
                             yoffset 5
-                            action [SetVariable("francesco_sfx", "keys"), Function(francesco_define, shigeo_keys, francesco_sounds)]
+                            action [SetVariable("persistent.francesco_sfx", "keys"), Function(francesco_define, shigeo_keys, francesco_sounds)]
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
                         textbutton _("Pen"):
                             yoffset 5
-                            action [SetVariable("francesco_sfx", "pens"), Function(francesco_define, shigeo_pens, francesco_sounds)]
+                            action [SetVariable("persistent.francesco_sfx", "pens"), Function(francesco_define, shigeo_pens, francesco_sounds)]
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
                         textbutton _("Bip"):
                             yoffset 5
-                            action [SetVariable("francesco_sfx", "bips"), Function(francesco_define, shigeo_bips, francesco_sounds)]
+                            action [SetVariable("persistent.francesco_sfx", "bips"), Function(francesco_define, shigeo_bips, francesco_sounds)]
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
                     hbox:
@@ -234,17 +234,17 @@ screen preferences():
                         spacing 10
                         textbutton _("Key"):
                             yoffset 5
-                            action [SetVariable("habiki_sfx", "keys"), Function(habiki_define, habiki_keys, habiki_sounds)]
+                            action [SetVariable("persistent.habiki_sfx", "keys"), Function(habiki_define, habiki_keys, habiki_sounds)]
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
                         textbutton _("Pen"):
                             yoffset 5
-                            action [SetVariable("habiki_sfx", "pens"), Function(habiki_define, habiki_pens, habiki_sounds)]
+                            action [SetVariable("persistent.habiki_sfx", "pens"), Function(habiki_define, habiki_pens, habiki_sounds)]
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
                         textbutton _("Bip"):
                             yoffset 5
-                            action [SetVariable("habiki_sfx", "bips"), Function(habiki_define, habiki_bips, habiki_sounds)]
+                            action [SetVariable("persistent.habiki_sfx", "bips"), Function(habiki_define, habiki_bips, habiki_sounds)]
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
                     hbox:
@@ -253,17 +253,17 @@ screen preferences():
                         spacing 10
                         textbutton _("Key"):
                             yoffset 5
-                            action [SetVariable("gaspard_sfx", "keys"), Function(gaspard_define, habiki_keys, gaspard_sounds)]
+                            action [SetVariable("persistent.gaspard_sfx", "keys"), Function(gaspard_define, habiki_keys, gaspard_sounds)]
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
                         textbutton _("Pen"):
                             yoffset 5
-                            action [SetVariable("gaspard_sfx", "pens"), Function(gaspard_define, habiki_pens, gaspard_sounds)]
+                            action [SetVariable("persistent.gaspard_sfx", "pens"), Function(gaspard_define, habiki_pens, gaspard_sounds)]
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
                         textbutton _("Bip"):
                             yoffset 5
-                            action [SetVariable("gaspard_sfx", "bips"), Function(gaspard_define, habiki_bips, gaspard_sounds)]
+                            action [SetVariable("persistent.gaspard_sfx", "bips"), Function(gaspard_define, habiki_bips, gaspard_sounds)]
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
                     hbox:
@@ -272,17 +272,17 @@ screen preferences():
                         spacing 10
                         textbutton _("Key"):
                             yoffset 5
-                            action [SetVariable("amina_sfx", "keys"), Function(amina_define, amina_keys, amina_sounds)]
+                            action [SetVariable("persistent.amina_sfx", "keys"), Function(amina_define, amina_keys, amina_sounds)]
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
                         textbutton _("Pen"):
                             yoffset 5
-                            action [SetVariable("amina_sfx", "pens"), Function(amina_define, amina_pens, amina_sounds)]
+                            action [SetVariable("persistent.amina_sfx", "pens"), Function(amina_define, amina_pens, amina_sounds)]
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
                         textbutton _("Bip"):
                             yoffset 5
-                            action [SetVariable("amina_sfx", "bips"), Function(amina_define, amina_bips, amina_sounds)]
+                            action [SetVariable("persistent.amina_sfx", "bips"), Function(amina_define, amina_bips, amina_sounds)]
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
                     hbox:
@@ -291,17 +291,17 @@ screen preferences():
                         spacing 10
                         textbutton _("Key"):
                             yoffset 5
-                            action [SetVariable("male_sfx", "keys"), Function(male_define, habiki_keys, male_sounds)]
+                            action [SetVariable("persistent.male_sfx", "keys"), Function(male_define, habiki_keys, male_sounds)]
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
                         textbutton _("Pen"):
                             yoffset 5
-                            action [SetVariable("male_sfx", "pens"), Function(male_define, habiki_pens, male_sounds)]
+                            action [SetVariable("persistent.male_sfx", "pens"), Function(male_define, habiki_pens, male_sounds)]
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
                         textbutton _("Bip"):
                             yoffset 5
-                            action [SetVariable("male_sfx", "bips"), Function(male_define, habiki_bips, male_sounds)]
+                            action [SetVariable("persistent.male_sfx", "bips"), Function(male_define, habiki_bips, male_sounds)]
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
                     hbox:
@@ -310,17 +310,17 @@ screen preferences():
                         spacing 10
                         textbutton _("Key"):
                             yoffset 5
-                            action [SetVariable("female_sfx", "keys"), Function(female_define, amina_keys, female_sounds)]
+                            action [SetVariable("persistent.female_sfx", "keys"), Function(female_define, amina_keys, female_sounds)]
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
                         textbutton _("Pen"):
                             yoffset 5
-                            action [SetVariable("female_sfx", "pens"), Function(female_define, amina_pens, female_sounds)]
+                            action [SetVariable("persistent.female_sfx", "pens"), Function(female_define, amina_pens, female_sounds)]
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
                         textbutton _("Bip"):
                             yoffset 5
-                            action [SetVariable("female_sfx", "bips"), Function(female_define, amina_bips, female_sounds)]
+                            action [SetVariable("persistent.female_sfx", "bips"), Function(female_define, amina_bips, female_sounds)]
                             hover_sound "audio/sfx/gui_hover.ogg"
                             activate_sound "audio/sfx/gui_confirm.ogg"
 
