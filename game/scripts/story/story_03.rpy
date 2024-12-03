@@ -556,4 +556,20 @@ label story_03_brainssss:
 
 label story_03_fire_starter:
     $ renpy.block_rollback()
-    
+    scene taisho_1f_corridor
+    show pzl_papers:
+        xpos 207 ypos 577
+    pause 1.0
+    sh frown "Alright, be ready.{w=0.3} The moment the fire alarm goes on the door should unlock...{w=0.5} But I don't know for how long."
+    ta neutral "Worry not, [shn].{w=0.3} I shall keep it open as long as needed."
+    sh neutral "Hmm...{w=0.5} Here goes nothing."
+    play sound "audio/se/lighter.ogg"
+    pause 1.5
+    play sound5 "audio/se/fire_small.ogg"
+    scene taisho_1f_corridor
+    show pzl_papers_fire:
+        xpos 207 ypos 577
+    with dissolve
+    pause 0.5
+    play sound4 "audio/sfx/gui_solved.ogg"
+    pause 1.0

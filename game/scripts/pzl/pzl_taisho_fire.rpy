@@ -1,5 +1,6 @@
 default pzl_papers_used = False
-
+image pzl_papers = "images/pzl/pzl_papers.png"
+image pzl_papers_fire = "images/pzl/pzl_papers_fire.png"
 screen pzl_taisho_1f_fire():
 
     tag puzzle_screen
@@ -7,8 +8,8 @@ screen pzl_taisho_1f_fire():
     if pzl_papers_used == True:
         imagebutton:
             sensitive False
-            idle "images/pzl/pzl_papers.ogg"
-            idle "images/pzl/pzl_papers.ogg"
+            idle "pzl_papers"
+            hover "pzl_papers"
             xpos 207
             ypos 577
             action Show("notify", None, _("The papers are in place. Now I need to light them up."))
