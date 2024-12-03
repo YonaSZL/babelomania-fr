@@ -8,28 +8,29 @@ screen think(question, op_1_text, op_1_lab, op_2_text, op_2_lab, op_3_text, op_3
 
     grid 2 2:
         align (0.5, 0.5) xspacing 500 yspacing 200 yoffset -100 xoffset -50
-        button:
-            add "gui/think/btn.png"
-            hover_sound "audio/sfx/think_hover.ogg"
-            activate_sound "audio/sfx/think_choice.ogg"
-            text op_1_text align(0.5, 0.5) size 30 xsize 550 xoffset 50 textalign 0.5 color '#bfaa8f' at textblur
+        if op_1_text != "None":
+            button:
+                add "gui/think/btn.png"
+                hover_sound "audio/sfx/think_hover.ogg"
+                activate_sound "audio/sfx/think_choice.ogg"
+                text op_1_text align(0.5, 0.5) size 30 xsize 550 xoffset 50 textalign 0.5 color '#bfaa8f' at textblur
 
-            add "gui/think/fog.png" offset(-50, -50) zoom .8 blur 4.0 at fog1
-            add "gui/think/fog.png" offset(190, 50) zoom .7 blur 4.0 at fog2
+                add "gui/think/fog.png" offset(-50, -50) zoom .8 blur 4.0 at fog1
+                add "gui/think/fog.png" offset(190, 50) zoom .7 blur 4.0 at fog2
 
-            action Jump(op_1_lab)
+                action Jump(op_1_lab)
 
+        if op_2_text != "None":
+            button:
+                add "gui/think/btn.png"
+                hover_sound "audio/sfx/think_hover.ogg"
+                activate_sound "audio/sfx/think_choice.ogg"
+                text op_2_text align(0.5, 0.5) size 30 xsize 550 xoffset 50 textalign 0.5 color '#bfaa8f' at textblur
 
-        button:
-            add "gui/think/btn.png"
-            hover_sound "audio/sfx/think_hover.ogg"
-            activate_sound "audio/sfx/think_choice.ogg"
-            text op_2_text align(0.5, 0.5) size 30 xsize 550 xoffset 50 textalign 0.5 color '#bfaa8f' at textblur
+                add "gui/think/fog.png" offset(-50, -50) zoom .8 blur 4.0 at fog1
+                add "gui/think/fog.png" offset(190, 50) zoom .7 blur 4.0 at fog2
 
-            add "gui/think/fog.png" offset(-50, -50) zoom .8 blur 4.0 at fog1
-            add "gui/think/fog.png" offset(190, 50) zoom .7 blur 4.0 at fog2
-
-            action Jump(op_2_lab)
+                action Jump(op_2_lab)
 
         if op_3_text != "None":
             button:
