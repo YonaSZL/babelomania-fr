@@ -139,6 +139,7 @@ default numeric_puzzle_input = "None"
 default language_switcher = "English"
 default current_char = "shigeo"
 default shn = "None"
+default current_puzzle = "None"
 
 #Defining Music Channels
 init python:

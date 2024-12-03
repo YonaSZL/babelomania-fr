@@ -134,6 +134,7 @@ screen inventory():
                 has vbox
 
                 textbutton _("Inspect") action [ ClearFocus("smartwatch_drop"), Show("notify", None, _("It's a Smartwatch I got from Gaspard. It connects wirelessly to a phone.")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
+                textbutton _("Use") action [ ClearFocus("smartwatch_drop"), Show("notify", None, _("There's nothing I can do with this.")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_item_use.ogg"
     
     if GetFocusRect("flambas_folder_drop"):
         dismiss action ClearFocus("flambas_folder_drop")
@@ -149,7 +150,7 @@ screen inventory():
                     textbutton _("Inspect") action [ ClearFocus("flambas_folder_drop"), Show("notify", None, _("A folder with the Flambas logo. It contained an unreadable article.")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
                 else:
                     textbutton _("Inspect") action [ ClearFocus("flambas_folder_drop"), Hide("inventory"), Jump("flambas_folder_reveal") ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
-
+                textbutton _("Use") action [ ClearFocus("flambas_folder_drop"), Show("notify", None, _("Nothing I can do with this, right now...")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_item_use.ogg"
     if GetFocusRect("disruptor_drop"):
         dismiss action ClearFocus("disruptor_drop")
         nearrect:
@@ -161,6 +162,7 @@ screen inventory():
                 has vbox
 
                 textbutton _("Inspect") action [ ClearFocus("disruptor_drop"), Show("notify", None, _("The Disruptor. Looks like an old revolver with some sci-fi thrown in.")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
+                textbutton _("Use") action [ ClearFocus("disruptor_drop"), Show("notify", None, _("Nothing I can do with this, right now...")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_item_use.ogg"
     if GetFocusRect("smartphone_drop"):
         dismiss action ClearFocus("smartphone_drop")
         nearrect:
@@ -172,6 +174,7 @@ screen inventory():
                 has vbox
 
                 textbutton _("Inspect") action [ ClearFocus("smartphone_drop"), Show("notify", None, _("Gaspard's Smartphone. Tabita found it in his jacket... Damn it.")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
+                textbutton _("Use") action [ ClearFocus("smartphone_drop"), Show("notify", None, _("There's nothing I can do with this.")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_item_use.ogg"
     if GetFocusRect("lighter_drop"):
         dismiss action ClearFocus("lighter_drop")
         nearrect:
@@ -183,6 +186,11 @@ screen inventory():
                 has vbox
 
                 textbutton _("Inspect") action [ ClearFocus("lighter_drop"), Show("notify", None, _("The lighter from the cigar box. What's this kind called...?")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
+                if current_puzzle == "taisho_fire":
+                    if pzl_papers_used:
+                        textbutton _("Use") action [ ClearFocus("lighter_drop"), Hide("inventory"), Jump("story_03_fire_starter") ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_item_use.ogg"
+                else:
+                    textbutton _("Use") action [ ClearFocus("lighter_drop"), Show("notify", None, _("There's nothing I can do with this.")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_item_use.ogg"
     if GetFocusRect("papers_drop"):
         dismiss action ClearFocus("papers_drop")
         nearrect:
@@ -194,6 +202,10 @@ screen inventory():
                 has vbox
 
                 textbutton _("Inspect") action [ ClearFocus("papers_drop"), Show("notify", None, _("Tabitha ripped out a bunch of papers from random books.")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
+                if current_puzzle == "taisho_fire":
+                    textbutton _("Use") action [ ClearFocus("papers_drop"), Hide("inventory"), SetVariable("pzl_papers_used", True) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_item_use.ogg"
+                else:
+                    textbutton _("Use") action [ ClearFocus("papers_drop"), Show("notify", None, _("There's nothing I can do with this.")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_item_use.ogg"
 
 style dropdown_vbox:
     spacing -5

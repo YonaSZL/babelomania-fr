@@ -545,4 +545,15 @@ label story_03_brainssss:
     pause 0.5
     scene taisho_1f_corridor with Reveal
     pause 0.5
-    sh frown "Time to blow this joint."
+    sh frown "Time to get out of here."
+    am surprise "We're looking for a smoke detector, right?{w=0.3} I believe that's it."
+    sh surprise "Yup...{w=0.5} Alright, now I just need to {nw}"
+    play sound4 "audio/sfx/gui_hint.ogg"
+    extend "{b}set the papers in place{/b} and then {b}light them on fire{/b}."
+    pause 0.5
+    $ current_puzzle = "taisho_fire"
+    call screen pzl_taisho_1f_fire
+
+label story_03_fire_starter:
+    $ renpy.block_rollback()
+    
