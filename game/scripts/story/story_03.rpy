@@ -632,4 +632,4 @@ label story_03_fire_starter:
     $ renpy.block_rollback()
 
 label story_03_taisho_lower:
-    
+    $ renpy.block_rollback()
