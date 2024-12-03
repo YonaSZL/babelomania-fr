@@ -189,6 +189,8 @@ screen inventory():
                 if current_puzzle == "taisho_fire":
                     if pzl_papers_used:
                         textbutton _("Use") action [ ClearFocus("lighter_drop"), Hide("inventory"), Jump("story_03_fire_starter") ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_item_use.ogg"
+                    else:
+                        textbutton _("Use") action [ ClearFocus("lighter_drop"), Show("notify", None, _("There's nothing I can do with this.")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_item_use.ogg"
                 else:
                     textbutton _("Use") action [ ClearFocus("lighter_drop"), Show("notify", None, _("There's nothing I can do with this.")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_item_use.ogg"
     if GetFocusRect("papers_drop"):

@@ -557,9 +557,10 @@ label story_03_brainssss:
 
 label story_03_fire_starter:
     $ renpy.block_rollback()
+    $ current_puzzle = "None"
     scene taisho_1f_corridor
     show pzl_papers:
-        xpos 855 ypos 742
+        xpos 855 ypos 759
     pause 1.0
     sh frown "Alright, be ready.{w=0.3} The moment the fire alarm goes on the door should unlock...{w=0.5} But I don't know for how long."
     ta neutral "Worry not, [shn].{w=0.3} I shall keep it open as long as needed."
@@ -569,13 +570,13 @@ label story_03_fire_starter:
     play LoNoise "audio/bgs/fire_small.ogg" fadein 0.5
     scene taisho_1f_corridor
     show pzl_papers_fire:
-        xpos 207 ypos 577
+        xpos 855 ypos 724
     with dissolve
     pause 0.5
     play sound4 "audio/sfx/gui_solved.ogg"
     pause 1.0
     am smile "Flames took to them nicely.{w=0.3} Good selection."
-    ta bow "Of course.{w=0.3} I took care to select the most suitable kind of paper, from books that I would not expect [shn] to miss."
+    ta bow "Of course.{w=0.3} I took care to choose only the most suitable kind of paper, from books that I would not expect [shn] to mind the destruction of."
     show screen emote("question",0.15,0.5)
     play sound4 "audio/em/em_question.ogg"
     sh surprise "Excuse me?{w=0.3} How would you even know about something like-"
@@ -588,7 +589,7 @@ label story_03_fire_starter:
     with dissolve
     sh smile "Nevermind that!{w=0.3} It worked!"
     ta frown "Allow me, [shn]."
-    play sound "audio/se/whoosh_med.ogg"
+    play sound "audio/se/whoosh_medium.ogg"
     show Tabitha frown:
         zoom 0.24 xpos 500 ypos 380
     with dissolve

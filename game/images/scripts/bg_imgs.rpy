@@ -28,6 +28,10 @@ image intro_01 = "gui/main_menu/intro_01.jpg"
 image intro_02 = "gui/main_menu/intro_02.jpg"
 image intro_03 = "gui/main_menu/intro_03.jpg"
 
+#Env GUI
+image rain_overlay = Fixed(SnowBlossom("images/sfx/rain.png",50,xspeed=(1,10),yspeed=(200,300),start=0.2))
+image ash1 = Fixed(SnowBlossom("images/sfx/ash1.png", 50, xspeed=(10, 100), yspeed=(100, 300), start=3))
+
 ##Chateau BG
 
 image chateau_setting = "images/bgs/chateau/chateau_setting.jpg"
