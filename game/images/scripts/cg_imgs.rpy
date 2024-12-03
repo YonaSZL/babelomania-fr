@@ -122,3 +122,6 @@ image fudo_appears_04 = "images/cgs/chapter_02/fudo_appears_04.jpg"
 
 image tabitha_hand = "images/cgs/chapter_03/tabitha_hand.jpg"
 image tabitha_face = "images/cgs/chapter_03/tabitha_face.jpg"
+
+image gaspard_flex = "images/cgs/chapter_03/gaspard_flex.jpg"
+

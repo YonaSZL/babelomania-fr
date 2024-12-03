@@ -543,4 +543,6 @@ label story_03_brainssss:
     play sound "audio/se/clothes_rustle.ogg"
     $ move_time(0,19)
     pause 0.5
-    
+    scene taisho_1f_corridor with Reveal
+    pause 0.5
+    sh frown "Time to blow this joint."
