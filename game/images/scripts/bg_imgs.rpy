@@ -72,6 +72,7 @@ layeredimage taisho_1f_study:
             "darkness_layers"
 
 image taisho_1f_corridor = "images/bgs/taisho/1f_corridor.jpg"
+image taisho_1f_corridor_open = "images/bgs/taisho/1f_corridor_open.jpg"
 image taisho_1f_side_meet_base = "images/bgs/taisho/taisho_1f_side_meet.jpg"
 layeredimage taisho_1f_side_meet:
     group bottom:

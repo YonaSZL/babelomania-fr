@@ -530,7 +530,7 @@ label story_03_brainssss:
     show Shigeo angry
     sh nulla "WHY THE FUCK DIDN'T YOU LEAD WITH THAT?!"
     ta neutral "Owing to its current state of physical integrity, it is unable to present any resistance.{w=0.3} Even in its full state, it has proven to be easily dispatchable."
-    ta bow "Consequentely, it is not an immediate threat.{w=0.3} The investigation into the nature of the pathogen and the decontamination of your garments were of higher priority."
+    ta bow "Consequently, it is not an immediate threat.{w=0.3} The investigation into the nature of the pathogen and the decontamination of your garments were of higher priority."
     am naked shock sweat "<Ya Allah!>{w=0.3} Please tell me you're done, Tabitha!"
     play sound3 "audio/se/clothes_rustle.ogg"
     ta smile "Quite.{w=0.3} The subroutined task has been completed within the expected time parameters."
@@ -544,6 +544,7 @@ label story_03_brainssss:
     $ move_time(0,19)
     pause 0.5
     scene taisho_1f_corridor with Reveal
+    $ stat2 -= 5
     pause 0.5
     sh frown "Time to get out of here."
     am surprise "We're looking for a smoke detector, right?{w=0.3} I believe that's it."
@@ -558,7 +559,7 @@ label story_03_fire_starter:
     $ renpy.block_rollback()
     scene taisho_1f_corridor
     show pzl_papers:
-        xpos 207 ypos 577
+        xpos 855 ypos 742
     pause 1.0
     sh frown "Alright, be ready.{w=0.3} The moment the fire alarm goes on the door should unlock...{w=0.5} But I don't know for how long."
     ta neutral "Worry not, [shn].{w=0.3} I shall keep it open as long as needed."
