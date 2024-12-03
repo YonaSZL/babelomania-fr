@@ -590,19 +590,20 @@ label story_03_fire_starter:
     sh smile "Nevermind that!{w=0.3} It worked!"
     ta frown "Allow me, [shn]."
     play sound "audio/se/whoosh_medium.ogg"
-    show Tabitha frown:
-        zoom 0.24 xpos 500 ypos 380
+    pause 0.2
+    show Tabitha frown brief behind rain_overlay:
+        zoom 0.14 xpos 930 ypos 395
     with dissolve
     pause 0.5
     am surprise "She's quick on her feet, isn't she?{w=0.3} What is she made of?"
     sh frown ".{w=0.3}.{w=0.3}.{w=0.5}some kind of carbon alloy.{w=0.3} And I'm only half kidding, here."
     show Tabitha neutral
-    ta neutral "The coast is clear, [shn].{w=0.3} Please."
+    ta neutral "The stairwell is clear, [shn].{w=0.3} Please."
     sh neutral "You first, Amina."
     am neutral "Yes.{w=0.3} Thank you."
     pause 0.5
-    show Amina neutral:
-        zoom 0.24 xpos 500 ypos 440
+    show Amina neutral behind rain_overlay:
+        zoom 0.14 xpos 1015 ypos 445
     with dissolve
     pause 1.0
     show Amina sad with dissolve
@@ -614,24 +615,31 @@ label story_03_fire_starter:
     ta surprise "[shn]?"
     sh frown "I'm coming...{w=0.5} Just...{w=0.5} You barricated all the doors, right?"
     ta bow "Affirmative, [shn]."
-    sh_i frown "(.{w=0.3}.{w=0.3}.{w=0.5}don't take this the wrong way, Gaspard, but I hope I never see your mug again as long as I live.)"
+    sh_i frown sweat "(.{w=0.3}.{w=0.3}.{w=0.5}don't take this the wrong way, Gaspard, but I hope I never see your mug again as long as I live.)"
     pause 1.0
-    scene black with dissolve
+    scene black with Reveal
     pause 1.5
+    stop LoNoise2 fadeout 7.0
     scene taisho_1f_library_base
-    show darkness_layers
+    show darkness_layer
+    show rain_overlay
     with Reveal3
+    pause 3.0
+    show intro_corpse behind rain_overlay
+    with Reveal3
+    pause 3.0
+    play sound4 "audio/se/sting.ogg"
+    show gaspard_flex behind rain_overlay
     pause 1.5
-    scene intro_hand_A with Reveal3
-    pause 2.0
-    play sound4 "audio/se/stinger.ogg"
-    scene gaspard_flex
-    pause 1.5
+    stop LoNoise fadeout 0.5
     scene black
-    pause 1.5
-    stop LoNoise fadeout 3.5
-    stop LoNoise2 fadeout 3.5
+    pause 3.0
     $ renpy.block_rollback()
 
 label story_03_taisho_lower:
     $ renpy.block_rollback()
+    $ stat2 -= 1
+    $ move_time(0,2)
+    $ shigeo_inventory.remove(item_papers)
+    $ shigeo_inventory.remove(item_taisho_note)
+    "WELL THAT WAS FUCKING OMINOUS"

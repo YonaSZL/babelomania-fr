@@ -126,6 +126,8 @@ define glitch_unload_5 = ImageDissolve("gui/transitions/glitch.jpg", 0.5, 32, re
 define glitch_load15 = ImageDissolve("gui/transitions/glitch.jpg", 1.5, 32)
 define glitch_unload15 = ImageDissolve("gui/transitions/glitch.jpg", 1.5, 32, reverse=True)
 
+define in_tra = ImageDissolve("gui/transitions/005.jpg", 0.35, 32)
+
 ##Default Variables
 default persistent.vertical_clear = False
 default persistent.gore = True
