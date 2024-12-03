@@ -206,3 +206,19 @@ style dropdown_text:
 style dropdown_frame:
     xsize 153
 
+##Combine Actions
+default combinee_item_1 = "None"
+default combinee_item_2 = "None"
+
+init python:
+
+    def combine_one(item):
+        global combinee_item_1
+        combinee_item_1 = item.name
+        return
+
+    def combine_two(item):
+        global combinee_item_1
+        global combinee_item_2
+        combinee_item_2 = item.name
+        return
