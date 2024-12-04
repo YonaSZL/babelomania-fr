@@ -1,5 +1,5 @@
 #Conversation Screens with Tabitha
-
+##Convos for the Casting Call: story_03.rpy[29~65], THISFILE [93~139], story_03.rpy[403~451]
 #Convo 01
 default tabitha_01_scenario = False #Do you know what's going on?
 default tabitha_01_gaspard = False #Why did you kill Gaspard?!
