@@ -10,6 +10,6 @@ screen pzl_taisho_1f_fire():
             sensitive False
             idle "pzl_papers"
             hover "pzl_papers"
-            xpos 855
-            ypos 759
+            xpos 796
+            ypos 699
             action Show("notify", None, _("The papers are in place. Now I need to light them up."))
