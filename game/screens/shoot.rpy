@@ -1,4 +1,4 @@
-
+default disruptor_charge = 50
 
 
 
@@ -19,6 +19,17 @@ screen target2():
         foreground "gui/shoot/test.png" ##add monster image here
         action Hide("target2")
         at movearound(renpy.random.randint(2, 3)), time_flash(5.0)  ##add here when it should flash that it's going to disappear
+
+screen tutorial_target_1():
+    style_prefix "target"
+    button:
+        if disruptor_charge == 100:
+            action Hide("tutorial_target_1", glitch_unload)
+        else:
+            action NullAction()
+        hover_sound "audio/sfx/gun_hover.ogg"
+        activate_sound "audio/se/disruptor.ogg"
+        align(0.5,0.5)
 ###--------------------------------------
 
 
@@ -30,27 +41,26 @@ init python:
 
         return
         
+    def show_targets_tutorial_1():
+        renpy.show_screen("tutorial_target_1")
 
+        return
 
 screen shoot():
     timer 1.5 action [Function(renpy.restart_interaction)] repeat True
-
-
     ###janky resummon thing just to test it
     timer 6.5  action Function(show_targets)
-
     ###you can put a bg here if it's the same for every instance
     add "gui/shoot/darken.png"
-    
-
-    
     on "show" action Function(show_targets)
-
-
-   
     style_prefix "shoot"
     on "show" action Show("border")
 
+screen shoot_tutorial_1():
+    add "gui/shoot/darken.png"
+    on "show" action Function(show_targets_tutorial_1)
+    style_prefix "shoot"
+    on "show" action Show("border")
 
 screen border():
     zorder 100
@@ -63,10 +73,12 @@ screen border():
         button:
             xysize(296,72) background "gui/shoot/btn.png"
             text "Charge" align(0.5, 0.5) font gui.interface_text_font size 45 idle_color u"#bfaa8f" hover_color u"#951b14"
-            action NullAction()
+            hover_sound "audio/sfx/gun_hover.ogg"
+            activate_sound "audio/sfx/gui_confirm.ogg"
+            action SetVariable("disruptor_charge", disruptor_charge + 1)
 
         bar:
-            value 50
+            value disruptor_charge
             range 100
             xysize(640,72)
             left_bar "gui/shoot/bar_full.png" right_bar "gui/shoot/bar_empty.png"
