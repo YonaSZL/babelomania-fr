@@ -2,6 +2,7 @@ default disruptor_charge = 50
 default base_charge = 5
 default base_click_charge = 3
 default shoot_tip = "WATCH YOUR AMMO!"
+#GOTTA ADD 'WASTE AMMO' FUNCTION
 
 ##placeholder targets
 screen target1():
@@ -53,6 +54,18 @@ screen tutorial_target_3():
         activate_sound "audio/se/disruptor.ogg"
         align(0.5,0.5)
         at time_flash(3.0)  ##add here when it should flash that it's going to disappear
+screen tutorial_target_final():
+    style_prefix "target"
+    timer 6.0 action [Hide("tutorial_target_final", vpunch), SetVariable("stat3", stat3 - 20)]  ### + add health loss here
+    button:
+        if disruptor_charge >= 100:
+            action [Hide("tutorial_target_final", glitch_unload), SetVariable("disruptor_charge", 0), SetVariable("stat4", stat4 - 1)]
+        else:
+            action NullAction()
+        hover_sound "audio/sfx/gun_hover.ogg"
+        activate_sound "audio/se/disruptor.ogg"
+        align(0.5,0.5)
+        at time_flash(3.0)  ##add here when it should flash that it's going to disappear
 ###--------------------------------------
 
 
@@ -73,6 +86,10 @@ init python:
 
         return
     def show_targets_tutorial_3():
+        renpy.show_screen("tutorial_target_3")
+
+        return
+    def show_targets_tutorial_final():
         renpy.show_screen("tutorial_target_3")
 
         return
@@ -100,6 +117,13 @@ screen shoot_tutorial_2():
 screen shoot_tutorial_3():
     add "gui/shoot/darken.png"
     on "show" action Function(show_targets_tutorial_3)
+    style_prefix "shoot"
+    on "show" action Show("border")
+screen shoot_tutorial_final():
+    timer 2.0 action [Function(renpy.restart_interaction)] repeat True
+    timer 6.5  action Function(show_targets_tutorial_final)
+    add "gui/shoot/darken.png"
+    on "show" action Function(show_targets_tutorial_final)
     style_prefix "shoot"
     on "show" action Show("border")
 
