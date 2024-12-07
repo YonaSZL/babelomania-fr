@@ -54,7 +54,7 @@ screen tutorial_target_3():
         activate_sound "audio/se/disruptor.ogg"
         align(0.5,0.5)
         at time_flash(3.0)  ##add here when it should flash that it's going to disappear
-screen tutorial_target_final():
+screen tutorial_target_final(posx,posy):
     style_prefix "target"
     timer 6.0 action [Hide("tutorial_target_final", vpunch), SetVariable("stat3", stat3 - 20), Play("sound7", "audio/sfx/hp_down.ogg")]  ### + add health loss here
     button:
@@ -65,7 +65,7 @@ screen tutorial_target_final():
         hover_sound "audio/sfx/gun_hover.ogg"
         activate_sound "audio/se/disruptor.ogg"
         align(0.5,0.5)
-        at movearound(renpy.random.randint(6, 8)), time_flash(3.0)  ##add here when it should flash that it's going to disappear
+        at movearound_fix(renpy.random.randint(6, 8), posx, posy), time_flash(3.0)  ##add here when it should flash that it's going to disappear
 ###--------------------------------------
 
 
@@ -90,7 +90,9 @@ init python:
 
         return
     def show_targets_tutorial_final():
-        renpy.show_screen("tutorial_target_final")
+        posx = renpy.random.randint(0, config.screen_width - 500)
+        posy = renpy.random.randint(0, config.screen_height- 300)
+        renpy.show_screen("tutorial_target_final",posx,posy)
 
         return
 
@@ -170,6 +172,15 @@ screen border():
 
 transform movearound(speed):
     pos(renpy.random.randint(0, config.screen_width - 500), renpy.random.randint(0, config.screen_height- 300))
+    parallel:
+        linear speed pos(renpy.random.randint(0, config.screen_width - 500), renpy.random.randint(0, config.screen_height- 300))
+        linear speed pos(renpy.random.randint(0, config.screen_width - 500), renpy.random.randint(0, config.screen_height - 300))
+        repeat
+    parallel:
+        easein .4 zoom 1.0
+        easein .4 zoom renpy.random.random() + 0.3
+transform movearound_fix(speed,posx,posy):
+    pos(posx, posy)
     parallel:
         linear speed pos(renpy.random.randint(0, config.screen_width - 500), renpy.random.randint(0, config.screen_height- 300))
         linear speed pos(renpy.random.randint(0, config.screen_width - 500), renpy.random.randint(0, config.screen_height - 300))
