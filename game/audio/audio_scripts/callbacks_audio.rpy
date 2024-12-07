@@ -25,10 +25,10 @@ init python:
         return
 
     def shigeo_beep(event, interact=True, **kwargs):
-        global va_style
+        global persistent.va_style
         if not interact:
             return
-        if va_style != "beeps":
+        if persistent.va_style != "beeps":
             return
         if event == "show":
         
@@ -44,10 +44,10 @@ init python:
         return
 
     def francesco_beep(event, interact=True, **kwargs):
-        global va_style
+        global persistent.va_style
         if not interact:
             return
-        if va_style != "beeps":
+        if persistent.va_style != "beeps":
             return
         if event == "show":
         
@@ -73,10 +73,10 @@ init python:
         return
 
     def habiki_beep(event, interact=True, **kwargs):
-        global va_style
+        global persistent.va_style
         if not interact:
             return
-        if va_style != "beeps":
+        if persistent.va_style != "beeps":
             return
         if event == "show":
         
@@ -94,10 +94,10 @@ init python:
         return
 
     def gaspard_beep(event, interact=True, **kwargs):
-        global va_style
+        global persistent.va_style
         if not interact:
             return
-        if va_style != "beeps":
+        if persistent.va_style != "beeps":
             return
         if event == "show":
         
@@ -113,10 +113,10 @@ init python:
         return
 
     def male_beep(event, interact=True, **kwargs):
-        global va_style
+        global persistent.va_style
         if not interact:
             return
-        if va_style != "beeps":
+        if persistent.va_style != "beeps":
             return
         if event == "show":
         
@@ -143,10 +143,10 @@ init python:
         return
 
     def amina_beep(event, interact=True, **kwargs):
-        global va_style
+        global persistent.va_style
         if not interact:
             return
-        if va_style != "beeps":
+        if persistent.va_style != "beeps":
             return
         if event == "show":
         
@@ -162,10 +162,10 @@ init python:
         return
 
     def delphine_beep(event, interact=True, **kwargs):
-        global va_style
+        global persistent.va_style
         if not interact:
             return
-        if va_style != "beeps":
+        if persistent.va_style != "beeps":
             return
         if event == "show":
         
@@ -181,10 +181,10 @@ init python:
         return
 
     def tabitha_beep(event, interact=True, **kwargs):
-        global va_style
+        global persistent.va_style
         if not interact:
             return
-        if va_style != "beeps":
+        if persistent.va_style != "beeps":
             return
         if event == "show":
         
@@ -200,10 +200,10 @@ init python:
         return
 
     def female_beep(event, interact=True, **kwargs):
-        global va_style
+        global persistent.va_style
         if not interact:
             return
-        if va_style != "beeps":
+        if persistent.va_style != "beeps":
             return
         if event == "show":
         

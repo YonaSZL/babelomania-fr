@@ -108,7 +108,7 @@ screen preferences():
                             if config.sample_sound:
                                 textbutton _("Test") action Play("sound", config.sample_sound)
 
-                    if va_style == "tabitha":
+                    if persistent.va_style == "tabitha":
                         label _("Voice Volume")
                         hbox:
                             bar value Preference("voice volume")
@@ -170,7 +170,7 @@ screen preferences():
                     #    action SetVariable("persistent.va_style", "tabitha")
                     #    hover_sound "audio/sfx/gui_hover.ogg"
                     #    activate_sound "audio/sfx/gui_confirm.ogg"
-                if va_style == "beeps":
+                if persistent.va_style == "beeps":
                     hbox:
                         style_prefix "check"
                         label _("Shigeo")
