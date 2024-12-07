@@ -45,7 +45,10 @@ define config.save_directory = "babelomania-1725385568"
 define config.version = "1.07"
 
 ## Custom Mouse Icon
-define config.mouse = {"default":[ ("gui/cursor.png", 1, 1) ] }
+define config.mouse = {
+    "default": [ ("gui/cursor.png", 1, 1) ],
+    "shooty": [("gui/shoot/cursor.png", 115, 115)],
+    }
 
 ## Sounds and music ############################################################
 
