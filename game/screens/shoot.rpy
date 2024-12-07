@@ -120,7 +120,7 @@ screen shoot_tutorial_3():
     style_prefix "shoot"
     on "show" action Show("border")
 screen shoot_tutorial_final():
-    timer 2.0 action [Function(renpy.restart_interaction)] repeat True
+    timer 6.1 action [Function(renpy.restart_interaction)] repeat True
     timer 6.5  action Function(show_targets_tutorial_final) repeat True
     add "gui/shoot/darken.png"
     on "show" action Function(show_targets_tutorial_final)
@@ -131,7 +131,7 @@ screen border():
     zorder 100
     add "gui/shoot/bg.png"
 
-    timer 1.0 action SetVariable("disruptor_charge", disruptor_charge + base_charge) repeat True
+    #timer 1.0 action SetVariable("disruptor_charge", disruptor_charge + base_charge) repeat True
     ###charge stuff
     hbox:
         pos(813, 938) spacing 30
@@ -169,6 +169,7 @@ screen border():
 
 
 transform movearound(speed):
+    pos(renpy.random.randint(0, config.screen_width - 500), renpy.random.randint(0, config.screen_height- 300))
     parallel:
         linear speed pos(renpy.random.randint(0, config.screen_width - 500), renpy.random.randint(0, config.screen_height- 300))
         linear speed pos(renpy.random.randint(0, config.screen_width - 500), renpy.random.randint(0, config.screen_height - 300))
