@@ -1,7 +1,7 @@
 default disruptor_charge = 50
 default base_charge = 5
 default base_click_charge = 3
-
+default shoot_tip = "WATCH YOUR AMMO!"
 
 ##placeholder targets
 screen target1():
@@ -24,13 +24,35 @@ screen target2():
 screen tutorial_target_1():
     style_prefix "target"
     button:
-        if disruptor_charge == 100:
-            action Hide("tutorial_target_1", glitch_unload)
+        if disruptor_charge >= 100:
+            action [Hide("tutorial_target_1", glitch_unload), SetVariable("disruptor_charge", 0)]
         else:
             action NullAction()
         hover_sound "audio/sfx/gun_hover.ogg"
         activate_sound "audio/se/disruptor.ogg"
         align(0.5,0.5)
+screen tutorial_target_2():
+    style_prefix "target"
+    button:
+        if disruptor_charge >= 100:
+            action [Hide("tutorial_target_2", glitch_unload), SetVariable("disruptor_charge", 0)]
+        else:
+            action NullAction()
+        hover_sound "audio/sfx/gun_hover.ogg"
+        activate_sound "audio/se/disruptor.ogg"
+        align(0.5,0.5)
+        at time_flash(1.0)  ##add here when it should flash that it's going to disappear
+screen tutorial_target_3():
+    style_prefix "target"
+    button:
+        if disruptor_charge >= 100:
+            action [Hide("tutorial_target_3", glitch_unload), SetVariable("disruptor_charge", 0), SetVariable("stat4", stat4 - 1)]
+        else:
+            action NullAction()
+        hover_sound "audio/sfx/gun_hover.ogg"
+        activate_sound "audio/se/disruptor.ogg"
+        align(0.5,0.5)
+        at time_flash(3.0)  ##add here when it should flash that it's going to disappear
 ###--------------------------------------
 
 
@@ -44,6 +66,14 @@ init python:
         
     def show_targets_tutorial_1():
         renpy.show_screen("tutorial_target_1")
+
+        return
+    def show_targets_tutorial_2():
+        renpy.show_screen("tutorial_target_2")
+
+        return
+    def show_targets_tutorial_3():
+        renpy.show_screen("tutorial_target_3")
 
         return
 
@@ -62,6 +92,16 @@ screen shoot_tutorial_1():
     on "show" action Function(show_targets_tutorial_1)
     style_prefix "shoot"
     on "show" action Show("border")
+screen shoot_tutorial_2():
+    add "gui/shoot/darken.png"
+    on "show" action Function(show_targets_tutorial_2)
+    style_prefix "shoot"
+    on "show" action Show("border")
+screen shoot_tutorial_3():
+    add "gui/shoot/darken.png"
+    on "show" action Function(show_targets_tutorial_3)
+    style_prefix "shoot"
+    on "show" action Show("border")
 
 screen border():
     zorder 100
@@ -73,9 +113,9 @@ screen border():
         pos(813, 938) spacing 30
         button:
             xysize(296,72) background "gui/shoot/btn.png"
-            text "Charge" align(0.5, 0.5) font gui.interface_text_font size 45 idle_color u"#bfaa8f" hover_color u"#951b14"
+            text "CHARGE" align(0.5, 0.6) font gui.interface_text_font size 45 idle_color u"#bfaa8f" hover_color u"#951b14"
             hover_sound "audio/sfx/gun_hover.ogg"
-            activate_sound "audio/sfx/gui_confirm.ogg"
+            activate_sound "audio/sfx/gui_slots_confirm.ogg"
             action SetVariable("disruptor_charge", disruptor_charge + base_click_charge)
 
         bar:
@@ -90,10 +130,10 @@ screen border():
         yalign 1.0 offset(125, -25)
         hbox:
             spacing 25
-            add "gui/shoot/menu.png" yalign 0.5
-            text "MENU" font gui.name_text_font size 62 yalign 0.5 color "#91191b" yoffset 2
+            #add "gui/shoot/menu.png" yalign 0.5
+            text "[shoot_tip]" font gui.name_text_font size 62 yalign 0.5 color "#91191b" yoffset 2
         
-        action ShowMenu("save")
+        action NullAction()#ShowMenu("save")
         at  button_fade
 
 

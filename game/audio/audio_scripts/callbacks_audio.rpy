@@ -26,14 +26,15 @@ init python:
 
     def shigeo_beep(event, interact=True, **kwargs):
         global va_style
+        global shigeo_sounds
         if not interact:
             return
-        if va_style != "beeps":
+        if persistent.va_style != "beeps":
             return
         if event == "show":
         
             for i in range (50):
-                renpy.sound.queue(renpy.random.choice(shigeo_sounds), channel='beeps')
+                renpy.sound.queue(renpy.random.choice(persistent.shigeo_sounds), channel='beeps')
         
         elif event == "slow_done" or event == "end":
             renpy.sound.stop(channel='beeps', fadeout=0.1)
@@ -45,6 +46,7 @@ init python:
 
     def francesco_beep(event, interact=True, **kwargs):
         global va_style
+        global francesco_sounds
         if not interact:
             return
         if persistent.va_style != "beeps":
@@ -52,7 +54,7 @@ init python:
         if event == "show":
         
             for i in range (50):
-                renpy.sound.queue(renpy.random.choice(francesco_sounds), channel='beeps')
+                renpy.sound.queue(renpy.random.choice(persistent.francesco_sounds), channel='beeps')
         
         elif event == "slow_done" or event == "end":
             renpy.sound.stop(channel='beeps', fadeout=0.1)
@@ -74,6 +76,7 @@ init python:
 
     def habiki_beep(event, interact=True, **kwargs):
         global va_style
+        global habiki_sounds
         if not interact:
             return
         if persistent.va_style != "beeps":
@@ -81,7 +84,7 @@ init python:
         if event == "show":
         
             for i in range (50):
-                renpy.sound.queue(renpy.random.choice(habiki_sounds), channel='beeps')
+                renpy.sound.queue(renpy.random.choice(persistent.habiki_sounds), channel='beeps')
         
         elif event == "slow_done" or event == "end":
             renpy.sound.stop(channel='beeps', fadeout=0.1)
@@ -95,6 +98,7 @@ init python:
 
     def gaspard_beep(event, interact=True, **kwargs):
         global va_style
+        global gaspard_sounds
         if not interact:
             return
         if persistent.va_style != "beeps":
@@ -102,7 +106,7 @@ init python:
         if event == "show":
         
             for i in range (50):
-                renpy.sound.queue(renpy.random.choice(gaspard_sounds), channel='beeps')
+                renpy.sound.queue(renpy.random.choice(persistent.gaspard_sounds), channel='beeps')
         
         elif event == "slow_done" or event == "end":
             renpy.sound.stop(channel='beeps', fadeout=0.1)
@@ -114,6 +118,7 @@ init python:
 
     def male_beep(event, interact=True, **kwargs):
         global va_style
+        global male_sounds
         if not interact:
             return
         if persistent.va_style != "beeps":
@@ -121,7 +126,7 @@ init python:
         if event == "show":
         
             for i in range (50):
-                renpy.sound.queue(renpy.random.choice(male_sounds), channel='beeps')
+                renpy.sound.queue(renpy.random.choice(persistent.male_sounds), channel='beeps')
         
         elif event == "slow_done" or event == "end":
             renpy.sound.stop(channel='beeps', fadeout=0.1)
@@ -144,6 +149,7 @@ init python:
 
     def amina_beep(event, interact=True, **kwargs):
         global va_style
+        global amina_sounds
         if not interact:
             return
         if persistent.va_style != "beeps":
@@ -151,7 +157,7 @@ init python:
         if event == "show":
         
             for i in range (50):
-                renpy.sound.queue(renpy.random.choice(amina_sounds), channel='beeps')
+                renpy.sound.queue(renpy.random.choice(persistent.amina_sounds), channel='beeps')
         
         elif event == "slow_done" or event == "end":
             renpy.sound.stop(channel='beeps', fadeout=0.1)
@@ -163,6 +169,7 @@ init python:
 
     def delphine_beep(event, interact=True, **kwargs):
         global va_style
+        global delphine_sounds
         if not interact:
             return
         if persistent.va_style != "beeps":
@@ -170,7 +177,7 @@ init python:
         if event == "show":
         
             for i in range (50):
-                renpy.sound.queue(renpy.random.choice(delphine_sounds), channel='beeps')
+                renpy.sound.queue(renpy.random.choice(persistent.delphine_sounds), channel='beeps')
         
         elif event == "slow_done" or event == "end":
             renpy.sound.stop(channel='beeps', fadeout=0.1)
@@ -182,6 +189,7 @@ init python:
 
     def tabitha_beep(event, interact=True, **kwargs):
         global va_style
+        global tabitha_sounds
         if not interact:
             return
         if persistent.va_style != "beeps":
@@ -189,7 +197,7 @@ init python:
         if event == "show":
         
             for i in range (50):
-                renpy.sound.queue(renpy.random.choice(tabitha_sounds), channel='beeps')
+                renpy.sound.queue(renpy.random.choice(persistent.tabitha_sounds), channel='beeps')
         
         elif event == "slow_done" or event == "end":
             renpy.sound.stop(channel='beeps', fadeout=0.1)
@@ -201,6 +209,7 @@ init python:
 
     def female_beep(event, interact=True, **kwargs):
         global va_style
+        global female_sounds
         if not interact:
             return
         if persistent.va_style != "beeps":
@@ -208,7 +217,7 @@ init python:
         if event == "show":
         
             for i in range (50):
-                renpy.sound.queue(renpy.random.choice(female_sounds), channel='beeps')
+                renpy.sound.queue(renpy.random.choice(persistent.female_sounds), channel='beeps')
         
         elif event == "slow_done" or event == "end":
             renpy.sound.stop(channel='beeps', fadeout=0.1)
