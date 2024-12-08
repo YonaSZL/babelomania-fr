@@ -1,13 +1,15 @@
 default disruptor_charge = 50
 default base_charge = 5
 default base_click_charge = 3
+default accrued_click_charge = 0
 default shoot_tip = "AIM CAREFULLY!"
-default button_pos_1 = (None, None, None, None)
-default button_pos_2 = (None, None, None, None)
-default button_pos_3 = (None, None, None, None)
-default button_pos_4 = (None, None, None, None)
-default button_pos_5 = (None, None, None, None)
-default button_pos_6 = (None, None, None, None)
+
+default button_pos_1 = [renpy.random.randint(0, config.screen_width - 500), renpy.random.randint(0, config.screen_height- 300), None, None]
+default button_pos_2 = [None, None, None, None]
+default button_pos_3 = [None, None, None, None]
+default button_pos_4 = [None, None, None, None]
+default button_pos_5 = [None, None, None, None]
+default button_pos_6 = [None, None, None, None]
 #GOTTA ADD 'WASTE AMMO' FUNCTION
 
 ##placeholder targets
@@ -63,7 +65,6 @@ screen tutorial_target_3():
 screen tutorial_target_final(rando_pos):
     style_prefix "target"
     timer 6.0 action [Hide("tutorial_target_final", vpunch), SetVariable("stat3", stat3 - 20), Play("sound7", "audio/sfx/hp_down.ogg")]  ### + add health loss here
-    on "hide" action Function(get_current_button_pos, "tutorial_target_final", rando_pos)
     button:
         if disruptor_charge >= 100:
             action [Hide("tutorial_target_final", glitch_unload), SetVariable("disruptor_charge", 0), SetVariable("stat4", stat4 - 1)]
@@ -71,7 +72,7 @@ screen tutorial_target_final(rando_pos):
             action NullAction()
         hover_sound "audio/sfx/gun_hover.ogg"
         activate_sound "audio/se/disruptor.ogg"
-        at movearound_fix(renpy.random.randint(6, 8), rando_pos), time_flash(3.0)  ##add here when it should flash that it's going to disappear
+        at movearound_fix(renpy.random.randint(6, 8), renpy.focus_coordinates()), time_flash(3.0)  ##add here when it should flash that it's going to disappear
 ###--------------------------------------
 
 
@@ -98,10 +99,6 @@ init python:
         rando_pos[0] = renpy.random.randint(0, config.screen_width - 500)
         rando_pos[1] = renpy.random.randint(0, config.screen_height- 300)
         renpy.show_screen("tutorial_target_final",rando_pos)
-        return
-    
-    def get_current_button_pos(button, rando_pos):
-        rando_pos = renpy.focus_coordinates(button)
         return
 
 screen shoot():
@@ -141,7 +138,7 @@ screen border():
     zorder 100
     add "gui/shoot/bg.png"
 
-    #timer 1.0 action SetVariable("disruptor_charge", disruptor_charge + base_charge) repeat True
+    timer 1.0 action [SetVariable("disruptor_charge", disruptor_charge + base_charge + accrued_click_charge), SetVariable("accrued_click_charge", 0)] repeat True
     ###charge stuff
     hbox:
         pos(813, 938) spacing 30
@@ -150,7 +147,7 @@ screen border():
             text "CHARGE" align(0.5, 0.6) font gui.interface_text_font size 45 idle_color u"#bfaa8f" hover_color u"#951b14"
             hover_sound "audio/sfx/gun_hover.ogg"
             activate_sound "audio/sfx/gui_slots_confirm.ogg"
-            action SetVariable("disruptor_charge", disruptor_charge + base_click_charge)
+            action SetVariable("accrued_click_charge", accrued_click_charge + base_click_charge)
 
         bar:
             value disruptor_charge
