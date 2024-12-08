@@ -1,8 +1,8 @@
 default disruptor_charge = 50
 default base_charge = 5
 default base_click_charge = 3
-default accrued_click_charge = 0
 default shoot_tip = "AIM CAREFULLY!"
+default can_charge = True
 
 default button_pos_1 = [None, None, None, None]
 default button_pos_2 = [None, None, None, None]
@@ -78,7 +78,7 @@ screen tutorial_target_final(rando_pos):
     style_prefix "target"
     timer 6.0 action [Hide("tutorial_target_final", vpunch), SetVariable("stat3", stat3 - 20), Play("sound7", "audio/sfx/hp_down.ogg")]  ### + add health loss here
     if button_pos_1_start:
-        timer 0.1 action Function(register_new_pos, button_pos_1_next, renpy.focus_coordinates()) repeat True
+        timer 0.9 action Function(register_new_pos, button_pos_1_next, renpy.focus_coordinates()) repeat True
     else:
         timer 0.1 action [Function(register_new_pos, button_pos_1_next, renpy.focus_coordinates()), SetVariable("button_pos_1_start", True)] repeat True
     button:
@@ -182,7 +182,9 @@ screen border():
     zorder 100
     add "gui/shoot/bg.png"
 
-    #timer 1.0 action [SetVariable("disruptor_charge", disruptor_charge + base_charge + accrued_click_charge), SetVariable("accrued_click_charge", 0)] repeat True
+    if can_charge == False:
+        timer 0.3 action SetVariable("can_charge", True)   
+    timer 1.0 action [SetVariable("disruptor_charge", disruptor_charge + base_charge)] repeat True
     ###charge stuff
     hbox:
         pos(813, 938) spacing 30
@@ -191,7 +193,10 @@ screen border():
             text "CHARGE" align(0.5, 0.6) font gui.interface_text_font size 45 idle_color u"#bfaa8f" hover_color u"#951b14"
             hover_sound "audio/sfx/gun_hover.ogg"
             activate_sound "audio/sfx/gui_slots_confirm.ogg"
-            action NullAction()#SetVariable("accrued_click_charge", accrued_click_charge + base_click_charge)
+            if can_charge:
+                action SetVariable("disruptor_charge", disruptor_charge + base_click_charge)
+            else:
+                action NullAction()
 
         bar:
             value disruptor_charge
