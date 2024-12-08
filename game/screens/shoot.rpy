@@ -3,6 +3,9 @@ default base_charge = 5
 default base_click_charge = 3
 default shoot_tip = "AIM CAREFULLY!"
 default can_charge = True
+default target_shot = False
+
+default medium_random = [1.5,1.75,2.0,2.25,2.5,2.75,3.0]
 
 default button_pos_1 = [None, None, None, None]
 default button_pos_2 = [None, None, None, None]
@@ -83,15 +86,15 @@ screen tutorial_target_final(rando_pos):
         timer 0.1 action [Function(register_new_pos, button_pos_1_next, renpy.focus_coordinates()), SetVariable("button_pos_1_start", True)] repeat True
     button:
         if disruptor_charge >= 100:
-            action [Hide("tutorial_target_final", glitch_unload), SetVariable("disruptor_charge", 0), SetVariable("stat4", stat4 - 1)]
+            action [Hide("tutorial_target_final", glitch_unload), SetVariable("disruptor_charge", 0), SetVariable("stat4", stat4 - 1), SetVariable("target_shot", True)]
         else:
             action NullAction()
         hover_sound "audio/sfx/gun_hover.ogg"
         activate_sound "audio/se/disruptor.ogg"
         if button_pos_1_start:
-            at movearound_fix(renpy.random.randint(6, 8), button_pos_1_next), time_flash(3.0)  ##add here when it should flash that it's going to disappear
+            at movearound_fix(renpy.random.choice(medium_random), button_pos_1_next), time_flash(3.0)  ##add here when it should flash that it's going to disappear
         else:
-            at movearound_fix(renpy.random.randint(6, 8), rando_pos), time_flash(3.0)  ##add here when it should flash that it's going to disappear
+            at movearound_fix(renpy.random.choice(medium_random), rando_pos), time_flash(3.0)  ##add here when it should flash that it's going to disappear
 ###--------------------------------------
 
 
@@ -146,7 +149,7 @@ init python:
         return
 
 screen shoot():
-    timer 1.5 action [Function(renpy.restart_interaction)] repeat True
+    timer 6.0 action [Function(renpy.restart_interaction)] repeat True
     ###janky resummon thing just to test it
     timer 6.5  action Function(show_targets)
     ###you can put a bg here if it's the same for every instance
@@ -171,8 +174,11 @@ screen shoot_tutorial_3():
     style_prefix "shoot"
     on "show" action Show("border")
 screen shoot_tutorial_final():
-    timer 6.1 action Function(renpy.restart_interaction) repeat True
-    timer 6.5  action [SetVariable("button_pos_1_start", False), Function(randomize_starting_pos), Function(show_targets_tutorial_final, button_pos_1)] repeat True
+    timer 1.0 action Function(renpy.restart_interaction) repeat True
+    if target_shot:
+        timer 0.5  action [SetVariable("target_shot", False), SetVariable("button_pos_1_start", False), Function(randomize_starting_pos), Function(show_targets_tutorial_final, button_pos_1)] repeat True
+    else:
+        timer 6.5  action [SetVariable("button_pos_1_start", False), Function(randomize_starting_pos), Function(show_targets_tutorial_final, button_pos_1)] repeat True
     add "gui/shoot/darken.png"
     on "show" action Function(show_targets_tutorial_final, button_pos_1)
     style_prefix "shoot"
@@ -183,7 +189,7 @@ screen border():
     add "gui/shoot/bg.png"
 
     if can_charge == False:
-        timer 0.5 action SetVariable("can_charge", True)   
+        timer 0.66 action SetVariable("can_charge", True)   
     timer 1.0 action [SetVariable("disruptor_charge", disruptor_charge + base_charge)] repeat True
     ###charge stuff
     hbox:
