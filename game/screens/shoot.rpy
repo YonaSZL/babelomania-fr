@@ -66,6 +66,7 @@ screen tutorial_target_final(rando_pos):
     style_prefix "target"
     timer 6.0 action [Hide("tutorial_target_final", vpunch), SetVariable("stat3", stat3 - 20), Play("sound7", "audio/sfx/hp_down.ogg")]  ### + add health loss here
     button:
+        pos(rando_pos[0],rando_pos[1])
         if disruptor_charge >= 100:
             action [Hide("tutorial_target_final", glitch_unload), SetVariable("disruptor_charge", 0), SetVariable("stat4", stat4 - 1)]
         else:
@@ -96,8 +97,7 @@ init python:
         return
 
     def show_targets_tutorial_final(rando_pos):
-        rando_pos[0] = renpy.random.randint(0, config.screen_width - 500)
-        rando_pos[1] = renpy.random.randint(0, config.screen_height- 300)
+        print(str(rando_pos))
         renpy.show_screen("tutorial_target_final",rando_pos)
         return
 
@@ -108,12 +108,18 @@ init python:
         global button_pos_4
         global button_pos_5
         global button_pos_6
-        button_pos_1 = [renpy.random.randint(0, config.screen_width - 500), renpy.random.randint(0, config.screen_height- 300), None, None]
-        button_pos_2 = [renpy.random.randint(0, config.screen_width - 500), renpy.random.randint(0, config.screen_height- 300), None, None]
-        button_pos_3 = [renpy.random.randint(0, config.screen_width - 500), renpy.random.randint(0, config.screen_height- 300), None, None]
-        button_pos_4 = [renpy.random.randint(0, config.screen_width - 500), renpy.random.randint(0, config.screen_height- 300), None, None]
-        button_pos_5 = [renpy.random.randint(0, config.screen_width - 500), renpy.random.randint(0, config.screen_height- 300), None, None]
-        button_pos_6 = [renpy.random.randint(0, config.screen_width - 500), renpy.random.randint(0, config.screen_height- 300), None, None]
+        button_pos_1 = [(renpy.random.randint(0, config.screen_width - 500)), (renpy.random.randint(0, config.screen_height- 300)), None, None]
+        button_pos_2 = [(renpy.random.randint(0, config.screen_width - 500)), (renpy.random.randint(0, config.screen_height- 300)), None, None]
+        button_pos_3 = [(renpy.random.randint(0, config.screen_width - 500)), (renpy.random.randint(0, config.screen_height- 300)), None, None]
+        button_pos_4 = [(renpy.random.randint(0, config.screen_width - 500)), (renpy.random.randint(0, config.screen_height- 300)), None, None]
+        button_pos_5 = [(renpy.random.randint(0, config.screen_width - 500)), (renpy.random.randint(0, config.screen_height- 300)), None, None]
+        button_pos_6 = [(renpy.random.randint(0, config.screen_width - 500)), (renpy.random.randint(0, config.screen_height- 300)), None, None]
+        print(str(button_pos_1))
+        print(str(button_pos_2))
+        print(str(button_pos_3))
+        print(str(button_pos_4))
+        print(str(button_pos_5))
+        print(str(button_pos_6))
         return
 
 screen shoot():
