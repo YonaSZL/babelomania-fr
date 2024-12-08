@@ -4,7 +4,7 @@ default base_click_charge = 3
 default accrued_click_charge = 0
 default shoot_tip = "AIM CAREFULLY!"
 
-default button_pos_1 = [renpy.random.randint(0, config.screen_width - 500), renpy.random.randint(0, config.screen_height- 300), None, None]
+default button_pos_1 = [None, None, None, None]
 default button_pos_2 = [None, None, None, None]
 default button_pos_3 = [None, None, None, None]
 default button_pos_4 = [None, None, None, None]
@@ -99,6 +99,21 @@ init python:
         rando_pos[0] = renpy.random.randint(0, config.screen_width - 500)
         rando_pos[1] = renpy.random.randint(0, config.screen_height- 300)
         renpy.show_screen("tutorial_target_final",rando_pos)
+        return
+
+    def randomize_starting_pos():
+        global button_pos_1
+        global button_pos_2
+        global button_pos_3
+        global button_pos_4
+        global button_pos_5
+        global button_pos_6
+        button_pos_1 = [renpy.random.randint(0, config.screen_width - 500), renpy.random.randint(0, config.screen_height- 300), None, None]
+        button_pos_2 = [renpy.random.randint(0, config.screen_width - 500), renpy.random.randint(0, config.screen_height- 300), None, None]
+        button_pos_3 = [renpy.random.randint(0, config.screen_width - 500), renpy.random.randint(0, config.screen_height- 300), None, None]
+        button_pos_4 = [renpy.random.randint(0, config.screen_width - 500), renpy.random.randint(0, config.screen_height- 300), None, None]
+        button_pos_5 = [renpy.random.randint(0, config.screen_width - 500), renpy.random.randint(0, config.screen_height- 300), None, None]
+        button_pos_6 = [renpy.random.randint(0, config.screen_width - 500), renpy.random.randint(0, config.screen_height- 300), None, None]
         return
 
 screen shoot():
