@@ -1,7 +1,6 @@
 default disruptor_charge = 50
 default base_charge = 5
 default base_click_charge = 3
-default accrued_click_charge = 0
 default shoot_tip = "AIM CAREFULLY!"
 #GOTTA ADD 'WASTE AMMO' FUNCTION
 
@@ -134,7 +133,7 @@ screen border():
     zorder 100
     add "gui/shoot/bg.png"
 
-    timer 1.0 action [SetVariable("disruptor_charge", disruptor_charge + base_charge + accrued_click_charge), SetVariable("accrued_click_charge", 0)] repeat True
+    #timer 1.0 action SetVariable("disruptor_charge", disruptor_charge + base_charge) repeat True
     ###charge stuff
     hbox:
         pos(813, 938) spacing 30
@@ -143,7 +142,7 @@ screen border():
             text "CHARGE" align(0.5, 0.6) font gui.interface_text_font size 45 idle_color u"#bfaa8f" hover_color u"#951b14"
             hover_sound "audio/sfx/gun_hover.ogg"
             activate_sound "audio/sfx/gui_slots_confirm.ogg"
-            action SetVariable("accrued_click_charge", accrued_click_charge + base_click_charge)
+            action SetVariable("disruptor_charge", disruptor_charge + base_click_charge)
 
         bar:
             value disruptor_charge
