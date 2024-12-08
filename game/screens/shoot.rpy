@@ -65,7 +65,7 @@ screen tutorial_target_3():
 screen tutorial_target_final(rando_pos):
     style_prefix "target"
     timer 6.0 action [Hide("tutorial_target_final", vpunch), SetVariable("stat3", stat3 - 20), Play("sound7", "audio/sfx/hp_down.ogg")]  ### + add health loss here
-    timer 0.1 action Function("register_new_pos", rando_pos, renpy.focus_coordinates())
+    timer 0.1 action Function(register_new_pos, rando_pos, renpy.focus_coordinates()) repeat True
     button:
         if disruptor_charge >= 100:
             action [Hide("tutorial_target_final", glitch_unload), SetVariable("disruptor_charge", 0), SetVariable("stat4", stat4 - 1)]
