@@ -247,13 +247,24 @@ label story_02_yokai:
     pause 1.0
     play sound4 "audio/sfx/gui_slots_confirm.ogg"
     $ stat4_show = True
+    $ stat3_show = False
+    $ time_menu = False
+    $ inventory_show = False
+    $ codex_active = False
     $ randomize_starting_pos()
+    $ shoot_tip = "SHOOT THE TARGET!"
+    $ default_mouse = "shooty"
     $ renpy.block_rollback()
     pause 1.0
     call screen shoot_tutorial_1
 
 label story_02_elevator_escape:
     $ renpy.block_rollback()
+    $ default_mouse = "default"
+    $ stat3_show = True
+    $ time_menu = True
+    $ inventory_show = True
+    $ codex_active = True
     play sound4 "audio/em/em_impact.ogg"
     play LoNoise2 "audio/bgs/fudo_steam.ogg" fadein 0.2
     scene lvl3_corridor_dark
