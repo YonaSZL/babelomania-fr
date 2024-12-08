@@ -66,14 +66,13 @@ screen tutorial_target_final(rando_pos):
     style_prefix "target"
     timer 6.0 action [Hide("tutorial_target_final", vpunch), SetVariable("stat3", stat3 - 20), Play("sound7", "audio/sfx/hp_down.ogg")]  ### + add health loss here
     button:
-        pos(rando_pos[0],rando_pos[1])
         if disruptor_charge >= 100:
             action [Hide("tutorial_target_final", glitch_unload), SetVariable("disruptor_charge", 0), SetVariable("stat4", stat4 - 1)]
         else:
             action NullAction()
         hover_sound "audio/sfx/gun_hover.ogg"
         activate_sound "audio/se/disruptor.ogg"
-        at movearound_fix(renpy.random.randint(6, 8), renpy.focus_coordinates()), time_flash(3.0)  ##add here when it should flash that it's going to disappear
+        at movearound_fix(renpy.random.randint(6, 8), rando_pos), time_flash(3.0)  ##add here when it should flash that it's going to disappear
 ###--------------------------------------
 
 
