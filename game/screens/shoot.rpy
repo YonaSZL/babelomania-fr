@@ -171,8 +171,8 @@ screen shoot_tutorial_3():
     style_prefix "shoot"
     on "show" action Show("border")
 screen shoot_tutorial_final():
-    timer 6.1 action [Function(renpy.restart_interaction)] repeat True
-    timer 6.5  action Function(show_targets_tutorial_final, button_pos_1) repeat True
+    timer 6.1 action Function(renpy.restart_interaction) repeat True
+    timer 6.5  action [Function(randomize_starting_pos), Function(show_targets_tutorial_final, button_pos_1)] repeat True
     add "gui/shoot/darken.png"
     on "show" action Function(show_targets_tutorial_final, button_pos_1)
     style_prefix "shoot"
@@ -183,7 +183,7 @@ screen border():
     add "gui/shoot/bg.png"
 
     if can_charge == False:
-        timer 0.3 action SetVariable("can_charge", True)   
+        timer 0.5 action SetVariable("can_charge", True)   
     timer 1.0 action [SetVariable("disruptor_charge", disruptor_charge + base_charge)] repeat True
     ###charge stuff
     hbox:
