@@ -2,6 +2,12 @@ default disruptor_charge = 50
 default base_charge = 5
 default base_click_charge = 3
 default shoot_tip = "AIM CAREFULLY!"
+default button_pos_1 = (None, None, None, None)
+default button_pos_2 = (None, None, None, None)
+default button_pos_3 = (None, None, None, None)
+default button_pos_4 = (None, None, None, None)
+default button_pos_5 = (None, None, None, None)
+default button_pos_6 = (None, None, None, None)
 #GOTTA ADD 'WASTE AMMO' FUNCTION
 
 ##placeholder targets
@@ -54,9 +60,10 @@ screen tutorial_target_3():
         activate_sound "audio/se/disruptor.ogg"
         align(0.5,0.5)
         at time_flash(3.0)  ##add here when it should flash that it's going to disappear
-screen tutorial_target_final(posx,posy):
+screen tutorial_target_final(rando_pos):
     style_prefix "target"
     timer 6.0 action [Hide("tutorial_target_final", vpunch), SetVariable("stat3", stat3 - 20), Play("sound7", "audio/sfx/hp_down.ogg")]  ### + add health loss here
+    on "hide" action Function(get_current_button_pos, "tutorial_target_final", rando_pos)
     button:
         if disruptor_charge >= 100:
             action [Hide("tutorial_target_final", glitch_unload), SetVariable("disruptor_charge", 0), SetVariable("stat4", stat4 - 1)]
@@ -64,8 +71,7 @@ screen tutorial_target_final(posx,posy):
             action NullAction()
         hover_sound "audio/sfx/gun_hover.ogg"
         activate_sound "audio/se/disruptor.ogg"
-        align(0.5,0.5)
-        at movearound_fix(renpy.random.randint(6, 8), posx, posy), time_flash(3.0)  ##add here when it should flash that it's going to disappear
+        at movearound_fix(renpy.random.randint(6, 8), rando_pos), time_flash(3.0)  ##add here when it should flash that it's going to disappear
 ###--------------------------------------
 
 
@@ -74,26 +80,28 @@ init python:
     def show_targets():
         renpy.show_screen("target1")
         renpy.show_screen("target2")
-
         return
         
     def show_targets_tutorial_1():
         renpy.show_screen("tutorial_target_1")
-
         return
+
     def show_targets_tutorial_2():
         renpy.show_screen("tutorial_target_2")
-
         return
+
     def show_targets_tutorial_3():
         renpy.show_screen("tutorial_target_3")
-
         return
-    def show_targets_tutorial_final():
-        posx = renpy.random.randint(0, config.screen_width - 500)
-        posy = renpy.random.randint(0, config.screen_height- 300)
-        renpy.show_screen("tutorial_target_final",posx,posy)
 
+    def show_targets_tutorial_final(rando_pos):
+        rando_pos[0] = renpy.random.randint(0, config.screen_width - 500)
+        rando_pos[1] = renpy.random.randint(0, config.screen_height- 300)
+        renpy.show_screen("tutorial_target_final",rando_pos)
+        return
+    
+    def get_current_button_pos(button, rando_pos):
+        rando_pos = renpy.focus_coordinates(button)
         return
 
 screen shoot():
@@ -123,9 +131,9 @@ screen shoot_tutorial_3():
     on "show" action Show("border")
 screen shoot_tutorial_final():
     timer 6.1 action [Function(renpy.restart_interaction)] repeat True
-    timer 6.5  action Function(show_targets_tutorial_final) repeat True
+    timer 6.5  action Function(show_targets_tutorial_final, button_pos_1) repeat True
     add "gui/shoot/darken.png"
-    on "show" action Function(show_targets_tutorial_final)
+    on "show" action Function(show_targets_tutorial_final, button_pos_1)
     style_prefix "shoot"
     on "show" action Show("border")
 
@@ -179,8 +187,8 @@ transform movearound(speed):
     parallel:
         easein .4 zoom 1.0
         easein .4 zoom renpy.random.random() + 0.3
-transform movearound_fix(speed,posx,posy):
-    pos(posx, posy)
+transform movearound_fix(speed,rando_pos):
+    pos(rando_pos[0],rando_pos[1])
     parallel:
         linear speed pos(renpy.random.randint(0, config.screen_width - 500), renpy.random.randint(0, config.screen_height- 300))
         linear speed pos(renpy.random.randint(0, config.screen_width - 500), renpy.random.randint(0, config.screen_height - 300))
