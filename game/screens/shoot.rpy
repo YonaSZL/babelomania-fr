@@ -1,7 +1,7 @@
 default disruptor_charge = 50
-default base_charge = 5
-default base_click_charge = 3
-default shoot_tip = "AIM CAREFULLY!"
+default base_charge = 4
+default base_click_charge = 6
+default shoot_tip = "SHOOT THE TARGET!"
 default can_charge = True
 default target_shot = False
 
@@ -49,7 +49,7 @@ screen tutorial_target_1():
     style_prefix "target"
     button:
         if disruptor_charge >= 100:
-            action [Hide("tutorial_target_1", glitch_unload), SetVariable("disruptor_charge", 0)]
+            action [Hide("tutorial_target_final", glitch_unload), SetVariable("disruptor_charge", 0), SetVariable("target_shot", True), SetVariable("shoot_tip", "TIME IS SHORT!"), Hide("shoot_tutorial_1"), Show("shoot_tutorial_2")]
         else:
             action NullAction()
         hover_sound "audio/sfx/gun_hover.ogg"
@@ -59,7 +59,7 @@ screen tutorial_target_2():
     style_prefix "target"
     button:
         if disruptor_charge >= 100:
-            action [Hide("tutorial_target_2", glitch_unload), SetVariable("disruptor_charge", 0)]
+            action [Hide("tutorial_target_final", glitch_unload), SetVariable("disruptor_charge", 0), SetVariable("target_shot", True), SetVariable("shoot_tip", "WATCH YOUR AMMO!"), Hide("shoot_tutorial_2"), Show("shoot_tutorial_3")]
         else:
             action NullAction()
         hover_sound "audio/sfx/gun_hover.ogg"
@@ -70,7 +70,7 @@ screen tutorial_target_3():
     style_prefix "target"
     button:
         if disruptor_charge >= 100:
-            action [Hide("tutorial_target_3", glitch_unload), SetVariable("disruptor_charge", 0), SetVariable("stat4", stat4 - 1)]
+            action [Hide("tutorial_target_final", glitch_unload), SetVariable("disruptor_charge", 0), SetVariable("stat4", stat4 - 1), SetVariable("shoot_tip", "AIM CAREFULLY!"), SetVariable("target_shot", True), Hide("shoot_tutorial_3"), Show("shoot_tutorial_final")]
         else:
             action NullAction()
         hover_sound "audio/sfx/gun_hover.ogg"
@@ -86,7 +86,7 @@ screen tutorial_target_final(rando_pos):
         timer 0.1 action [Function(register_new_pos, button_pos_1_next, renpy.focus_coordinates()), SetVariable("button_pos_1_start", True)] repeat True
     button:
         if disruptor_charge >= 100:
-            action [Hide("tutorial_target_final", glitch_unload), SetVariable("disruptor_charge", 0), SetVariable("stat4", stat4 - 1), SetVariable("target_shot", True)]
+            action [Hide("tutorial_target_final", glitch_unload), SetVariable("disruptor_charge", 0), SetVariable("stat4", stat4 - 1), SetVariable("target_shot", True), Hide("shoot_tutorial_final"), Jump("story_02_elevator_escape")]
         else:
             action NullAction()
         hover_sound "audio/sfx/gun_hover.ogg"

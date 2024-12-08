@@ -247,9 +247,10 @@ label story_02_yokai:
     pause 1.0
     play sound4 "audio/sfx/gui_slots_confirm.ogg"
     $ stat4_show = True
+    $ randomize_starting_pos()
     $ renpy.block_rollback()
     pause 1.0
-    #call screen shooti_shot
+    call screen shoot_tutorial_1
 
 label story_02_elevator_escape:
     $ renpy.block_rollback()
