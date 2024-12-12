@@ -642,7 +642,7 @@ label story_03_taisho_lower:
     $ shigeo_inventory.remove(item_papers)
     $ shigeo_inventory.remove(item_taisho_note)
     sh_i sweat "(Alright, I have no more need of this note...{w=0.5} Might as well throw it away.)"
-    play sound4 "audio/se/paper_crush.ogg"
+    play sound4 "audio/se/paper_rustle.ogg"
     pause 1.0
     play sound "audio/se/door_heavy_unlock.ogg"
     pause 1.0

@@ -21,7 +21,7 @@ screen exp_bar_corr():
 label exp_bar_corr_window:
     $ renpy.block_rollback()
     pause 0.5
-    play sound "audio/se/window_closed.ogg"
+    play sound "audio/se/doorknob_rattle.ogg"
     pause 0.5
     sh_i neutral "(The window frame is quite modern...{w=0.5} I guess the original one needed replacement.{w=0.3} It's the type that needs a special key to be opened, hm?)"
     sh_i frown "(I can barely see the inner courtyard through the tempered glass...)"
