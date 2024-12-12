@@ -646,4 +646,6 @@ label story_03_taisho_lower:
     pause 1.0
     play sound "audio/se/door_heavy_unlock.ogg"
     pause 1.0
-    
+
+
+    $ story_progress = 2

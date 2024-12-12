@@ -1,5 +1,6 @@
 #Conversation Screens with Tabitha
 #Convo 01
+
 default tabitha_01_scenario = False #Do you know what's going on?
 default tabitha_01_gaspard = False #Why did you kill Gaspard?!
 default tabitha_01_directive = False #You have the directive to protect me?!
