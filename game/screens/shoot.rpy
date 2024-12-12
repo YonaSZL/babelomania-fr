@@ -1,7 +1,7 @@
 default disruptor_charge = 50
 default base_charge = 6
 default base_click_charge = 6
-default shoot_tip = "SHOOT THE TARGET!"
+default shoot_tip = "CHARGE AND SHOOT!"
 default can_charge = True
 default target_shot = False
 

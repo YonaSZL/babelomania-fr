@@ -195,7 +195,7 @@ label story_02_yokai:
     $ fudo_damage_distance = 1
     pause 1.5
     show lvl3_dead_scientist
-    show Fudo:
+    show Fudo blood:
         xalign 0.5 yalign 0.6 zoom 0.18
     with Reveal
     pause 1.5
@@ -229,8 +229,8 @@ label story_02_yokai:
     pause 2.0
     hide it_disruptor with dissolve
     pause 0.5
-    show Fudo:
-        xalign 0.5 yalign 0.65 zoom 0.3
+    show Fudo blood:
+        xalign 0.5 yalign 0.75 zoom 0.3
     with dissolve
     pause 0.5
     de fear sweat "<Stay back!{w=0.3} STAY BACK OR I'LL->"
@@ -242,7 +242,7 @@ label story_02_yokai:
     mi_nst static "<It doesn't care for your warnings!{w=0.3} It doesn't care for your pleas!{w=0.3} It doesn't care for your fear!>"
     $ fudo_state = "atk"
     pause 1.0
-    show Fudo with Reveal:
+    show Fudo blood atk with Reveal:
         zoom 0.85 xalign 0.5 yoffset 70
     pause 0.5
     mi_nst static "<All it wants to do is {b}erase your existence{/b}!>"
@@ -254,7 +254,7 @@ label story_02_yokai:
     $ inventory_show = False
     $ codex_active = False
     $ randomize_starting_pos()
-    $ shoot_tip = "SHOOT THE TARGET!"
+    $ shoot_tip = "CHARGE AND SHOOT!"
     $ default_mouse = "shooty"
     $ renpy.block_rollback()
     pause 1.0
@@ -267,12 +267,13 @@ label story_02_elevator_escape:
     $ time_menu = True
     $ inventory_show = True
     $ codex_active = True
+    $ fudo_shot_distance = 1
     play sound4 "audio/em/em_impact.ogg"
     play LoNoise2 "audio/bgs/fudo_steam.ogg" fadein 0.2
     scene lvl3_corridor_dark
     show lvl3_dead_scientist
-    show Fudo smoke:
-        xalign 0.5 yalign 0.5 zoom 0.5
+    show Fudo blood burn atk smoke:
+        xalign 0.5 yanchor 1.0 ypos 1280 zoom 0.5
     with flash
     pause 1.5
     play sound4 "audio/se/fudo_collapse.ogg"
