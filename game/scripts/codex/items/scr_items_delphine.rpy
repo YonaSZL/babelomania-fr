@@ -1,8 +1,17 @@
 screen scr_perrier():
-    label _("Berrier")
+    label _("Berrier Mineral Water")
     add "images/cdx/its/002_perrier.png"
-    text """This is where info about Berrier water goes.
-    """
+    text _("""Although this esteemed brand of mineral water has its roots in France, it has gained significant traction in the Anglophone world. 
+    Its history can be traced to the early 20th century, when a British entrepreneuracquired a small sparkling water spring in France, and 
+    rebranded it in honor of its previous owner, Francois Berrier.\nHe then began exporting the bottled carbonated water under the Berrier name 
+    back to his homeland, riding a fashion trend for all things French which quickly elevated its popularity among the British middle and upper 
+    classes.
+    """)
+    text _("""In a remarkably short period, Berrier's status changed from mere bottled drink to something of a status symbol: marketed as 'the 
+    Champagne of mineral waters', it was eventually granted the Royal Warrant, making Berrier the official supplier of bottled water for Buckingham 
+    Palace.\nWhile Berrier's popularity has waned somewhat waned over the years, following several restructuring efforts and scandals-this product 
+    remains one of the most globally recognized premium mineral water brands, with billions of bottles sold worldwide. 
+    """)
 
 screen scr_newspaper_clippings():
     label _("Newspaper Clippings")
