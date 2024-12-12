@@ -646,6 +646,32 @@ label story_03_taisho_lower:
     pause 1.0
     play sound "audio/se/door_heavy_unlock.ogg"
     pause 1.0
-
-
+    scene taisho_foyer with Reveal3
+    pause 1.5
+    ta bow "I deem this a safe environment, [shn].{w=0.3} Please proceed."
+    sh neutral "For now...{w=0.5} At least we can see the outside, from here."
+    am neutral "Through tempered glass...{w=0.5} How probable would you say the front door being locked is?"
+    ta neutral "Considering pregress circumstances as detailed by [shn], I calculate a 93.2 percent probability."
+    pause 1.5
+    am surprise "Ehm, right.{w=0.3} Thank you, Tabitha."
+    ta bow "You are welcome."
+    sh_n frown "*sigh*{w=0.5}\"Anyway."
+    show Shigeo neutral:
+        yanchor 1.0 xpos 300 ypos 750 zoom 0.15
+    show Amina surprise:
+        yanchor 1.0 xpos 600 ypos 750 zoom 0.15
+    show Tabitha neutral brief:
+        yanchor 1.0 xpos 900 ypos 750 zoom 0.15
+    with dissolve
+    play sound2 "audio/se/door_heavy_rattle.ogg"
+    sh neutral "I see no padlock on this one...{w=0.5} Just a keyhole."
+    show Amina surprise
+    am surprise "No code puzzle this time, then...{w=0.5} We need to {nw}"
+    play sound4 "audio/sfx/gui_spook.ogg"
+    extend "{b}find the key{/b}."
+    show Shigeo surprise
+    sh surprise "Either that or tear it down...{w=0.5} Android, would you be-"
+    show Shigeo pain
+    sh pain "No, wait, bad idea.{w=0.3} Nevermind."
+    show Tabitha  
     $ story_progress = 2
