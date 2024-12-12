@@ -53,6 +53,7 @@ label exm_lvl3_meeting_01_stationary:
         pause 1.0
         de_i surprise "(The symbol on this folder, and the others like it...{w=0.5} This is the logo of Flambas.)"
         de_i frown "(I recognize it from the objects Francesco would bring home every now and then.{w=0.3} They love their branding, from what I remember.)"
+        $ delphine_items.append(c_lictors)
         de_i surprise "(So, it's not just someone leasing their technology...{w=0.5} This place, whatever it is, belongs to the company.)"
         de_i frown sweat "(What the hell does a {nw}"
         play sound4 "audio/sfx/gui_spook.ogg"
