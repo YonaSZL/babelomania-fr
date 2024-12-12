@@ -112,14 +112,14 @@ label exp_taisho_1f_corridor_01_gaspard:
                 show Shigeo neutral
                 sh neutral "<I'm surprised.{w=0.3} You seem to like Japanese history very much.>"
                 show Gaspard neutral
-                ga smile "<Heh...{w=0.5} I wouldn't exactly say I like it.{w=0.3} Business school, remember?{w=0.5} My firm has a lot of oversea offices, including Japan...{w=0.5} And when dealing with foreigners, it's important to understand where they're coming from.>"
+                ga neutral "<Heh...{w=0.5} I wouldn't exactly say I like it.{w=0.3} Business school, remember?{w=0.5} My firm has a lot of oversea offices, including Japan...{w=0.5} And when dealing with foreigners, it's important to understand where they're coming from.>"
                 show Gaspard laugh
                 ga laugh "<And that includes their history.{w=0.5} Amazing how they still to this day name their historic eras after their emperors, despite them now being ceremonial figureheads...{w=0.5} Guess they really can't quit the kowtowing habit.>"
                 pause 1.5
                 show Shigeo frown
                 sh_i frown "(That's very {b}incorrect{/b}, but...{w=0.5} Let's not antagonize him, he seems to have calmed down.)"
                 show Gaspard neutral
-                ga smile "<And of all the periods he could have chosen, Du Bois went with the shortest one named after a walking corpse of an emperor...{w=0.5} {nw}"
+                ga neutral "<And of all the periods he could have chosen, Du Bois went with the shortest one named after a walking corpse of an emperor...{w=0.5} {nw}"
                 play sound4 "audio/sfx/gui_hint.ogg"
                 extend "{b}1912 to 1926{/b}.{w=0.3} They got all of World War I without even a little {i}Belle Époque{/i} first.>"
                 sh frown "<Hmm...{w=0.5} I guess maybe he->"

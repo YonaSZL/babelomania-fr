@@ -27,7 +27,7 @@ label story_03_android:
     $ stat3_show = True
     $ stat4_show = True
     play music "audio/bgm/shadows_breathe.ogg"
-    sh_i shock blood sweat "\"{b}AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHH...!!!\""
+    sh_i shock sweat "\"{b}AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHH...!!!\""
     pause 1.0
     scene tabitha_hand with Reveal3
     pause 1.0

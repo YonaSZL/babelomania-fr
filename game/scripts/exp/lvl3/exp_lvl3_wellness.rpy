@@ -49,7 +49,7 @@ label exp_lvl3_wellness_01_shelves:
         xalign 0.5
     with dissolve
     de_i nulla "(There's books in French and English, but also...{w=0.5} Yeah, that's Japanese.{w=0.3} And these few with titles in cyrillic...?)"
-    play sound3 "audio/sfx/item_use.ogg"
+    play sound3 "audio/sfx/gui_item_use.ogg"
     pause 1.0
     show Delphine shock sweat with dissolve
     pause 1.5

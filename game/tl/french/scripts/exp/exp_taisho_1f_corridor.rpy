@@ -141,8 +141,8 @@ translate french exp_taisho_1f_corridor_01_gaspard_2aee048c:
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:115
 translate french exp_taisho_1f_corridor_01_gaspard_05feac70:
 
-    # ga smile "<Heh...{w=0.5} I wouldn't exactly say I like it.{w=0.3} Business school, remember?{w=0.5} My firm has a lot of oversea offices, including Japan...{w=0.5} And when dealing with foreigners, it's important to understand where they're coming from.>"
-    ga smile "<Heh...{w=0.5} Je ne dirais pas exactement que j'aime ça.{w=0.3} L'école de commerce, tu te souviens ?{w=0.5} Mon entreprise a beaucoup de bureaux à l'étranger, y compris au Japon...{w=0.5} Et quand on traite avec des étrangers, il est important de comprendre d'où ils viennent.>"
+    # ga neutral "<Heh...{w=0.5} I wouldn't exactly say I like it.{w=0.3} Business school, remember?{w=0.5} My firm has a lot of oversea offices, including Japan...{w=0.5} And when dealing with foreigners, it's important to understand where they're coming from.>"
+    ga neutral "<Heh...{w=0.5} Je ne dirais pas exactement que j'aime ça.{w=0.3} L'école de commerce, tu te souviens ?{w=0.5} Mon entreprise a beaucoup de bureaux à l'étranger, y compris au Japon...{w=0.5} Et quand on traite avec des étrangers, il est important de comprendre d'où ils viennent.>"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:117
 translate french exp_taisho_1f_corridor_01_gaspard_39014036:
@@ -159,8 +159,8 @@ translate french exp_taisho_1f_corridor_01_gaspard_d15553af:
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:122
 translate french exp_taisho_1f_corridor_01_gaspard_4b9e2cfb:
 
-    # ga smile "<And of all the periods he could have chosen, Du Bois went with the shortest one named after a walking corpse of an emperor...{w=0.5} {nw}"
-    ga smile "<Et de toutes les périodes qu'il aurait pu choisir, Du Bois a opté pour la plus courte qui porte le nom d'un cadavre ambulant d'Empereur...{w=0.5} {nw}"
+    # ga neutral "<And of all the periods he could have chosen, Du Bois went with the shortest one named after a walking corpse of an emperor...{w=0.5} {nw}"
+    ga neutral "<Et de toutes les périodes qu'il aurait pu choisir, Du Bois a opté pour la plus courte qui porte le nom d'un cadavre ambulant d'Empereur...{w=0.5} {nw}"
 
 # game/scripts/exp/exp_taisho_1f_corridor.rpy:124
 translate french exp_taisho_1f_corridor_01_gaspard_e2b656bd:

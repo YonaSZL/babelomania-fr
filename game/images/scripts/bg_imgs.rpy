@@ -20,7 +20,6 @@ init python:
 
 image main_menu_bg = "gui/main_menu/main_menu_bg.jpg"
 image main_menu_bg_logo = "gui/main_menu/main_menu_bg_logo.jpg"
-image thank_you_for_playing = "gui/main_menu/thank_you_for_playing.jpg"
 image darkness_layer = "gui/darkness_layer.png"
 
 image intro_00 = "gui/main_menu/intro_00.jpg"
@@ -30,7 +29,6 @@ image intro_03 = "gui/main_menu/intro_03.jpg"
 
 #Env GUI
 image rain_overlay = Fixed(SnowBlossom("images/sfx/rain.png",200,xspeed=(30,70),yspeed=(700,900),start=0.2))
-image ash1 = Fixed(SnowBlossom("images/sfx/ash1.png", 50, xspeed=(10, 100), yspeed=(100, 300), start=3))
 
 ##Chateau BG
 

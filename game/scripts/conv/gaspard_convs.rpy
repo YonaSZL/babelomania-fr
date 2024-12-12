@@ -7,7 +7,7 @@ default gaspard_01_gaspard = False
 default gaspard_01_shigeo = False
 default gaspard_01_wedding = False
 
-screen gaspard_conv_01:
+screen gaspard_conv_01():
     add "gui/talkie/bottom.png" yalign 1.0
 
     if gaspard_conv_01 == 3:

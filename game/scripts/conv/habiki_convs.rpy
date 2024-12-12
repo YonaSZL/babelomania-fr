@@ -5,7 +5,7 @@ default habiki_01_tabitha = False
 default habiki_01_wedding = False
 default habiki_conv_01 = 0
 
-screen habiki_conv_01:
+screen habiki_conv_01():
     add "gui/talkie/bottom.png" yalign 1.0
 
     if habiki_conv_01 == 3:

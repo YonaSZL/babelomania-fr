@@ -71,10 +71,7 @@ label exp_lvl3_corridor_01_doors:
         show Delphine surprise at de_med:
             xalign 0.5
         with dissolve
-        pause 0.5
-        play sound "audio/se/thud_metal.ogg"
-        queue sound "audio/se/thud_metal.ogg"
-        pause 0.5
+        pause 1.0
         de_i nulla "(And the walls, too...{w=0.5} It's like the bulkheads on ships, or submarines.)"
         show Delphine smile
         de_i nulla "(Salaries must be {i}terrible{/i} around here...{w=0.5} And the corporate gym quite good.{w=0.3} But, seriously.)"

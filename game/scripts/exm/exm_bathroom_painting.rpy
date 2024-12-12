@@ -36,7 +36,7 @@ label exm_bathroom_painting_title:
     sh_i neutral "(Doesn't feel like the original frame of the painting...{w=0.5} There's a plaque at the bottom.)"
     play sound "audio/sfx/gui_hint.ogg"
     sh_i frown "({b}'The Festering Wound'{/b}...{w=0.5} Geez, talk about resentment.)"
-    sh_i amused "(Whoever made this was either {i}very{/i} religious, or not at all...{w=0.5} Or maybe both at different points in their life.)"
+    sh_i smile "(Whoever made this was either {i}very{/i} religious, or not at all...{w=0.5} Or maybe both at different points in their life.)"
     sh_i surprise "(I wonder, though...{w=0.5} Was the painter resenting God himself, or is the whole thing just a metaphor?{w=0.3} Not a question you can answer without knowing the author.)"
     pause 1.0
     if exm_bathroom_painting_title == False:

@@ -8,7 +8,7 @@ default gaspmina_01_gaspardamina = False
 default gaspmina_01_code = False
 default gaspmina_01_phone = False
 
-screen gaspmina_conv_01:
+screen gaspmina_conv_01():
     add "gui/talkie/bottom.png" yalign 1.0
 
     if gaspmina_conv_01 == 4:

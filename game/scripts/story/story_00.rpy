@@ -802,7 +802,7 @@ label story_00_meet_amina:
     pause 0.15
     show bathroom_painting_glitch_2
     pause 1.0
-    play sound4 "audio/se/glitch_long.ogg"
+    play sound4 "audio/se/glitch_short.ogg"
     scene black with glitch_unload_5
     pause 3.0
     jump story_01_awakening

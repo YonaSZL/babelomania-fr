@@ -8,7 +8,7 @@ default tabitha_01_rules = False #You don't have the three rules?!
 default tabitha_01_human = False #What do you mean he wasn't human?!
 default tabitha_conv_01 = 0
 
-screen tabitha_conv_01:
+screen tabitha_conv_01():
     add "gui/talkie/bottom.png" yalign 1.0
 
     if tabitha_conv_01 == 5:
@@ -250,7 +250,7 @@ label tabitha_01_human:
     ta nulla "Prior to and while engaging the hostile, he produced a number of sounds.{w=0.3} Upon repeated analysis, I can conclude with 100\% accuracy that {nw}"
     play sound4 "audio/sfx/gui_solved.ogg"
     extend "{b}no human body would be able to produce those sounds{/b}."
-    play sound4 "audio/sfx/gui_shock.ogg"
+    play sound4 "audio/em/em_shock.ogg"
     sh shock sweat "You...!{w=0.3} That can't...!!!"
     show Tabitha neutral
     ta nulla "I must clarify that my conclusions are based on the information currently included in my database.{w=0.3} If [shn] is in possession of further relevant data concerning human biology, I would be happy to readjust my model."

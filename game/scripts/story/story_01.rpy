@@ -576,8 +576,8 @@ label story_01_taisho_side_meet:
     ga nulla "<.{w=0.3}.{w=0.3}.{w=0.5}thanks.>"
     pause 1.0
     hide Amina with dissolve
-    pause 1.0
-    play sound "audio/se/ears_ringing.ogg"
+    pause 0.5
+    pause 0.5
     show Gaspard frown sweat with dissolve
     pause 1.0
     ga_i nulla "(Ugh, the ringing is getting stronger...{w=0.5} I think it's my blood pressure.{w=0.5} I need to stop getting that worked up.)"
