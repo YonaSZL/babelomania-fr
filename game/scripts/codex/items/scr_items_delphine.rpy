@@ -23,3 +23,19 @@ screen scr_newspaper_clippings():
     """
     text """{i}TLDR: I can't understand a single word, as I can't read Japanese despite Francesco's insistence over the years that I learn the language... Anyway, since the picture features a mugshot, I suppose it must be a crime news article?
     """
+
+screen scr_lictors():
+    label _("Fasces Lictors")
+    add "images/cdx/its/004_lictors.png"
+    text _("""So-called 'lictor's fasces' or 'antique fasces' are a symbol derived from Roman iconography, used as an armorial symbol in France 
+    for centuries dating back to the first French Revolution, as a symbol of unity of the French people. A similar heraldic motif was notably 
+    used by the eponymally named Italian fascist movement.""")
+    text _("""The emblem was designed at the beginning of the 20th century by Jules-Clement Chaplain, one of the most renowned French sculptors 
+    and medalists of his time considered a forebear of the Art Nouveau movement.\nInspired by the engravings on sword crossguards and uniform 
+    buttons carried by French diplomats of the time, it depicts a bundle of fasces strapped around an axe and covered by a shield with the 
+    letters RF (Republique Française), with oak and olive branches surrounding the pattern. According to heraldic tradition, the oak exemplifies 
+    justice and the olive peace.
+    """)
+    text _("""The coat of arms was first adopted in 1913 by the Ministry of Foreign Affairs of the Third Republic and remains in use to this day, 
+    notably found on the cover of every French passport.
+    """)
