@@ -52,8 +52,10 @@ label exm_lvl3_meeting_01_stationary:
             xalign 0.5 yalign 0.4
         pause 1.0
         de_i surprise "(The symbol on this folder, and the others like it...{w=0.5} This is the logo of Flambas.)"
-        de_i frown "(I recognize it from the objects Francesco would bring home every now and then.{w=0.3} They love their branding, from what I remember.)"
+        de_i frown "(I recognize it from the objects Francesco would bring home every now and then.{w=0.3} They love their branding, from what I remember.{w=0.3} As much as they like aping the French Foreign ministry...)"
+        play sound4 "audio/sfx/gui_slots_confirm.ogg"
         $ delphine_items.append(c_lictors)
+        show screen notify(_("New Entry: Fasces Lictors."))
         de_i surprise "(So, it's not just someone leasing their technology...{w=0.5} This place, whatever it is, belongs to the company.)"
         de_i frown sweat "(What the hell does a {nw}"
         play sound4 "audio/sfx/gui_spook.ogg"
@@ -65,7 +67,7 @@ label exm_lvl3_meeting_01_stationary:
         de_i neutral "(.{w=0.3}.{w=0.3}.{w=0.5}there's some papers left in this folder.)"
         if exm_lvl3_meeting_01_stationary == False:
             play sound4 "audio/sfx/gui_slots_confirm.ogg"
-            show screen notify(_("Inventory Unlocked."))
+            show screen notify(_("Inventory Unlocked.{#}"))
             $ delphine_inventory.append(item_flambas_folder)
             $ inventory_show = True
             $ exm_lvl3_meeting_01_stationary = True
