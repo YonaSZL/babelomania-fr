@@ -142,6 +142,7 @@ default language_switcher = "English"
 default current_char = "shigeo"
 default shn = "None"
 default current_puzzle = "None"
+default persistent.firstvoice = False
 
 #Defining Music Channels
 init python:
@@ -226,6 +227,8 @@ label splashscreen:
     pause 1.5
     if persistent.firstopen == False:
         call screen language with dissolve
+    if persistent.firstvoice == False:
+        call screen va_choice with dissolve
     scene black
     pause 2.0
     scene intro_00 with Reveal3
