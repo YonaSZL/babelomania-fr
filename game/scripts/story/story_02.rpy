@@ -192,6 +192,7 @@ label story_02_yokai:
     play sound4 "audio/se/bounce_gore.ogg"
     pause 0.2
     scene lvl3_corridor_dark
+    $ fudo_damage_distance = 1
     pause 1.5
     show lvl3_dead_scientist
     show Fudo:
@@ -239,6 +240,7 @@ label story_02_yokai:
     play sound4 "audio/se/fudo_steps.ogg"
     hide Fudo with dissolve
     mi_nst static "<It doesn't care for your warnings!{w=0.3} It doesn't care for your pleas!{w=0.3} It doesn't care for your fear!>"
+    $ fudo_state = "atk"
     pause 1.0
     show Fudo with Reveal:
         zoom 0.85 xalign 0.5 yoffset 70
