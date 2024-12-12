@@ -287,6 +287,25 @@ screen preferences():
                             activate_sound "audio/sfx/gui_confirm.ogg"
                     hbox:
                         style_prefix "check"
+                        label _("Mira")
+                        spacing 10
+                        textbutton _("Key"):
+                            yoffset 5
+                            action [SetVariable("persistent.mira_sfx", "keys"), Function(mira_define, amina_keys, persistent.mira_sounds)]
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                        textbutton _("Pen"):
+                            yoffset 5
+                            action [SetVariable("persistent.mira_sfx", "pens"), Function(mira_define, amina_pens, persistent.mira_sounds)]
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                        textbutton _("Bip"):
+                            yoffset 5
+                            action [SetVariable("persistent.mira_sfx", "bips"), Function(mira_define, amina_bips, persistent.mira_sounds)]
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                    hbox:
+                        style_prefix "check"
                         label _("M.Voices")
                         spacing 10
                         textbutton _("Key"):

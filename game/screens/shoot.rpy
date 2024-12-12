@@ -53,7 +53,8 @@ screen tutorial_target_1():
         else:
             action NullAction()
         hover_sound "audio/sfx/gun_hover.ogg"
-        activate_sound "audio/se/disruptor.ogg"
+        if disruptor_charge >= 100:
+            activate_sound "audio/se/disruptor.ogg"
         align(0.5,0.5)
 screen tutorial_target_2():
     style_prefix "target"
@@ -63,7 +64,8 @@ screen tutorial_target_2():
         else:
             action NullAction()
         hover_sound "audio/sfx/gun_hover.ogg"
-        activate_sound "audio/se/disruptor.ogg"
+        if disruptor_charge >= 100:
+            activate_sound "audio/se/disruptor.ogg"
         align(0.5,0.5)
         at time_flash(1.0)  ##add here when it should flash that it's going to disappear
 screen tutorial_target_3():
@@ -74,7 +76,8 @@ screen tutorial_target_3():
         else:
             action NullAction()
         hover_sound "audio/sfx/gun_hover.ogg"
-        activate_sound "audio/se/disruptor.ogg"
+        if disruptor_charge >= 100:
+            activate_sound "audio/se/disruptor.ogg"
         align(0.5,0.5)
         at time_flash(3.0)  ##add here when it should flash that it's going to disappear
 screen tutorial_target_final(rando_pos):
@@ -90,7 +93,8 @@ screen tutorial_target_final(rando_pos):
         else:
             action NullAction()
         hover_sound "audio/sfx/gun_hover.ogg"
-        activate_sound "audio/se/disruptor.ogg"
+        if disruptor_charge >= 100:
+            activate_sound "audio/se/disruptor.ogg"
         if button_pos_1_start:
             at movearound_fix(renpy.random.choice(medium_random), button_pos_1_next), time_flash(3.0)  ##add here when it should flash that it's going to disappear
         else:

@@ -5,6 +5,7 @@ default persistent.tabitha_sfx = "keys"
 default persistent.amina_sfx = "keys"
 default persistent.francesco_sfx = "keys"
 default persistent.delphine_sfx = "keys"
+default persistent.mira_sfx = "keys"
 default persistent.habiki_sfx = "keys"
 default persistent.gaspard_sfx = "keys"
 default persistent.male_sfx = "keys"
@@ -135,6 +136,7 @@ define amina_keys = ["audio/va/beeps/amina_type_a.ogg", "audio/va/beeps/amina_ty
 define amina_pens = ["audio/va/beeps/amina_pen_a.ogg", "audio/va/beeps/amina_pen_b.ogg", "audio/va/beeps/amina_pen_c.ogg", "audio/va/beeps/amina_pen_d.ogg"]
 define amina_bips = ["audio/va/beeps/amina_beep_a.ogg"]
 default persistent.amina_sounds = ["audio/va/beeps/amina_type_a.ogg", "audio/va/beeps/amina_type_b.ogg", "audio/va/beeps/amina_type_c.ogg", "audio/va/beeps/amina_type_d.ogg"]
+default persistent.mira_sounds = ["audio/va/beeps/amina_type_a.ogg", "audio/va/beeps/amina_type_b.ogg", "audio/va/beeps/amina_type_c.ogg", "audio/va/beeps/amina_type_d.ogg"]
 default persistent.delphine_sounds = ["audio/va/beeps/amina_type_a.ogg", "audio/va/beeps/amina_type_b.ogg", "audio/va/beeps/amina_type_c.ogg", "audio/va/beeps/amina_type_d.ogg"]
 default persistent.tabitha_sounds = ["audio/va/beeps/amina_type_a.ogg", "audio/va/beeps/amina_type_b.ogg", "audio/va/beeps/amina_type_c.ogg", "audio/va/beeps/amina_type_d.ogg"]
 default persistent.female_sounds = ["audio/va/beeps/amina_type_a.ogg", "audio/va/beeps/amina_type_b.ogg", "audio/va/beeps/amina_type_c.ogg", "audio/va/beeps/amina_type_d.ogg"]
@@ -158,6 +160,26 @@ init python:
         
             for i in range (50):
                 renpy.sound.queue(renpy.random.choice(persistent.amina_sounds), channel='beeps')
+        
+        elif event == "slow_done" or event == "end":
+            renpy.sound.stop(channel='beeps', fadeout=0.1)
+    
+    def mira_define(voice_bundle, mira_sounds):
+        mira_sounds.clear()
+        mira_sounds.extend(voice_bundle)
+        return
+
+    def mira_beep(event, interact=True, **kwargs):
+        global va_style
+        global mira_sounds
+        if not interact:
+            return
+        if persistent.va_style != "beeps":
+            return
+        if event == "show":
+        
+            for i in range (50):
+                renpy.sound.queue(renpy.random.choice(persistent.mira_sounds), channel='beeps')
         
         elif event == "slow_done" or event == "end":
             renpy.sound.stop(channel='beeps', fadeout=0.1)
