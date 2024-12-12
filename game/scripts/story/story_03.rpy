@@ -174,9 +174,6 @@ menu arata_nicknaming:
     "Arata-san.":
         $ shn = "Arata-san"
         jump story_03_aratanicknamed
-    "Something else...":
-        $ shn = renpy.input(prompt="You can call me...", default='Arata-dono', length=10, copypaste=True)
-        jump story_03_aratanicknamed
 
 label story_03_aratanicknamed:
     $ renpy.block_rollback()
@@ -528,7 +525,7 @@ label story_03_brainssss:
     sh nulla "{b}IT'S STILL ALIVE!{/b}{w=0.3} THAT THING IS STILL ALIVE?!"
     ta neutral "I indeed registered some responses during my investigation, [shn]."
     show Shigeo angry
-    sh nulla "WHY THE FUCK DIDN'T YOU LEAD WITH THAT?!"
+    sh nulla "WHY THE {b}FUCK{/b} DIDN'T YOU LEAD WITH THAT?!"
     ta neutral "Owing to its current state of physical integrity, it is unable to present any resistance.{w=0.3} Even in its full state, it has proven to be easily dispatchable."
     ta bow "Consequently, it is not an immediate threat.{w=0.3} The investigation into the nature of the pathogen and the decontamination of your garments were of higher priority."
     am naked shock sweat "<Ya Allah!>{w=0.3} Please tell me you're done, Tabitha!"
@@ -638,8 +635,15 @@ label story_03_fire_starter:
 
 label story_03_taisho_lower:
     $ renpy.block_rollback()
-    $ stat2 -= 1
+    $ stat2 -= 2
     $ move_time(0,2)
+    play music "audio/bgm/setting_sun.ogg"
+    pause 1.0
     $ shigeo_inventory.remove(item_papers)
     $ shigeo_inventory.remove(item_taisho_note)
-    "WELL THAT WAS FUCKING OMINOUS"
+    sh_i sweat "(Alright, I have no more need of this note...{w=0.5} Might as well throw it away.)"
+    play sound4 "audio/se/paper_crush.ogg"
+    pause 1.0
+    play sound "audio/se/door_heavy_unlock.ogg"
+    pause 1.0
+    
