@@ -773,7 +773,7 @@ label taisho_1f_library_gaspard_face:
     scene black with dissolve
     pause 0.5
     scene taisho_1f_library_base:
-        xalign 1.0
+        xalign 1.0 blur 15
     show dark_flashlight
     with dissolve
     sh_i pain sweat "(Vision...{w=0.5} Swimming...!{w=0.3} He got me good...)"
@@ -784,7 +784,8 @@ label taisho_1f_library_gaspard_face:
     play sound4 "audio/em/em_impact.ogg"
     sh_i angry sweat "(OPEN YOUR FUCKING EYES!{w=0.3} FIGHT!{w=0.3} GET UP!)"
     pause 1.5
-    scene gaspard_focus_01 with Reveal3
+    scene gaspard_focus_01 with Reveal3:
+        blur 15
     play sound2 "audio/se/glitch_hurt.ogg"
     sh_i angry sweat "\"GET UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUP...!!!\""
     pause 1.0
@@ -792,12 +793,15 @@ label taisho_1f_library_gaspard_face:
     stop music fadeout 0.3
     pause 0.5
     play sound "audio/sfx/gui_hint.ogg"
-    scene gaspard_focus_02
+    scene gaspard_focus_02:
+        blur 15
     pause 1.5
     sh surprise sweat ".{w=0.3}.{w=0.3}.{w=0.5}what?"
     play sound4 "audio/se/heartbeat.ogg"
     ta r_neutral "Hostile restrained."
     pause 1.0
+    scene gaspard_focus_02 with Reveal3
+    pause 1.5
     scene gaspard_rip with Reveal3
     pause 1.5
     ta r_neutral "Now neutralizing..."
