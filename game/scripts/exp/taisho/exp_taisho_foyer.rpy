@@ -169,18 +169,95 @@ label exp_taisho_foyer_amina:
     pause 1.0
     hide Shigeo
     scene taisho_foyer
-    call screen taisho_1f_library_explore_01
+    call screen taisho_foyer_explore
     with dissolve
 
 label exp_taisho_foyer_tabitha:
     $ renpy.block_rollback()
     $ flashlight_consume = False
     pause 0.5
-    
+    sh_i surprise "(Is it just...{w=0.5} Standing around?{w=0.3} No, wait.)"
+    sh_i frown sweat "(Its eyes are just...{w=0.5} Following me around the room, slowly.{w=0.3} So creepy.{w=0.3} Anyway, why isn't she looking?)"
+    sh frown -sweat "What are you doing, Android?"
+    ta smile "Surveying our surroundings, [shn].{w=0.3} I'm happy to inform that there's no immediate threat in range of my sensors."
+    pause 1.0
+    show Shigeo neutral with dissolve:
+        zoom 0.2 xpos 669 ypos 480
+    sh neutral "Yeah, about those sensors...{w=0.5} Have you also been surveying the surroundings for clues?"
+    show Tabitha surprise
+    ta surprise "Query:{w=0.15} clues referring to what incognita, [shn]?"
+    pause 0.5
+    show Shigeo surprise
+    sh surprise "Uhm, the...{w=0.5} They key.{w=0.3} We're looking for the key to the front door, remember?"
+    show Tabitha bow
+    ta neutral "Affirmative.{w=0.3} Apologies but I haven't been able to locate any object of the sort."
+    sh surprise "I get, I didn't expect you to...{w=0.5} But what about a hiding place for it?"
+    show Tabitha surprise
+    ta surprise "A hiding place?{w=0.3} So the key to the exit door has been absconded by someone?"
+    sh surprise "Yes!{w=0.3} Obviously!{w=0.3} What do you think the situation we find ourselves in is?!"
+    show Tabitha neutral
+    ta neutral "Observation:{w=0.15} [shn] and miss Amina currently find themselves detained by unknown subjects.{w=0.3} We are thus looking for a way to leave the current premises."
+    show Tabitha bow
+    ta bow "We also currently find ourselves facing the incognita of a possible mysterious infection, and the appearance of hostiles.{w=0.3} End of observation."
+    show Shigeo frown
+    sh frown "Ugh, right, have to be literal...{w=0.5} Android, listen.{w=0.3} Yes, the key to the door has been hidden.{w=0.3} We need to look for its hiding place and then find a way to open it."
+    show Tabitha neutral
+    ta neutral "Acknowledged, [shn].{w=0.3} What characteristics would this hiding place have?"
+    pause 1.0
+    show Shigeo surprise
+    sh surprise "I...{w=0.5} I don't know.{w=0.3} That's why we're...{w=0.5} We're looking around?"
+    show Tabitha surprise
+    ta surprise "[shn], I must say that this course of conduct seems quite inefficient.{w=0.3} If we have no information regarding to the hiding place, shouldn't we focus on collecting that first?"
+    sh surprise "But that's what we're doing!{w=0.3} It's just that we also have no idea where that information may lay, and..."
+    pause 1.0
+    show Shigeo frown with dissolve
+    sh frown ".{w=0.3}.{w=0.3}.{w=0.5}you can't do anything without a frame of reference, can't you?"
+    show Tabitha neutral
+    ta neutral "Approximate but truthful, [shn].{w=0.3} Professor Habiki prides itself in the horsepower of my chassis and the processing power of my positronic brain."
+    show Tabitha surprise
+    ta surprise "Alas, I am still a machine.{w=0.3} Asking me to perform a task without any precise data or input would send me into a potentially endless endeavour."
+    show Tabitha bow
+    ta bow "In a situation where any input is considered valid and of the same importance, {nw}"
+    play sound4 "audio/sfx/gui_spook.ogg"
+    extend "{b}I would not be able to prioritize one element over the other{/b}.{w=0.3} I would simply have to go through each of them in the most efficient order."
+    sh frown "You have no emotions, no istinct, no biases...{w=0.5} And thus no intuition."
+    show Tabitha smile
+    ta smile "Affirmative, [shn].{w=0.3} For the sake of efficiency, in observation of your energy-saving guidelines, I shall occupy myself with surveying our surroundings for possible threats unless prompted otherwise."
+    show Tabitha bow
+    show Shigeo neutral
+    play sound4 "audio/sfx/gui_slots_confirm.ogg"
+    ta bow "{b}If you ever have a precisely defined task for me to aid you with, you need only ask{/b}."
+    sh neutral ".{w=0.3}.{w=0.3}.{w=0.5}I'll keep that in mind."
     if exp_taisho_foyer_tabitha == False:
         $ exp_taisho_foyer_tabitha = True
         $ taisho_foyer_explore += 1
     $ flashlight_consume = True
     pause 1.0
-    call screen taisho_1f_library_explore_01
+    call screen taisho_foyer_explore
+    with dissolve
+
+label exp_taisho_foyer_exposition:
+    $ renpy.block_rollback()
+    $ flashlight_consume = False
+    pause 0.5
+    
+    if exp_taisho_foyer_exposition == False:
+        $ exp_taisho_foyer_exposition = True
+        $ taisho_foyer_explore += 1
+    $ flashlight_consume = True
+    pause 1.0
+    call screen taisho_foyer_explore
+    with dissolve
+
+label exp_taisho_foyer_stairs:
+    $ renpy.block_rollback()
+    $ flashlight_consume = False
+    pause 0.5
+    
+    if exp_taisho_foyer_stairs == False:
+        $ exp_taisho_foyer_stairs = True
+        $ taisho_foyer_explore += 1
+    $ flashlight_consume = True
+    pause 1.0
+    call screen taisho_foyer_explore
     with dissolve
