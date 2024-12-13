@@ -673,5 +673,24 @@ label story_03_taisho_lower:
     sh surprise "Either that or tear it down...{w=0.5} Android, would you be-"
     show Shigeo pain
     sh pain "No, wait, bad idea.{w=0.3} Nevermind."
-    show Tabitha  
+    show Tabitha surprise
+    ta surprise "[shn], I'm positive I would be able to dispose of this door."
+    show Shigeo neutral
+    sh neutral "Not without considerable expense of time and heating up, I imagine.{w=0.3} I'd rather you save that energy for emergencies."
+    show Shigeo frown sweat
+    sh frown sweat "We're in completely uncharted territory, here.{w=0.3} If more of those things show up, you're our only line of defense."
+    ta surprise "So you'd have me prioritize long term energy efficiency over immediate short-term gains."
+    show Tabitha neutral
+    ta neutral "Acknowledged.{w=0.3} I shall endeavour to function by your guidelines as closely as possible, [shn]."
+    show Shigeo neutral -sweat
+    sh neutral -sweat "Do that.{w=0.3} Let's look for that key."
+    show Amina neutral
+    am neutral "If the keycode debacle was any indication, it is not going to be straightforward at all...{w=0.5} Let's not overlook anything."
+    show Amina surprise
+    am surprise "Also, speaking of lines of defense:{w=0.3} we should try and {nw}"
+    play sound4 "audio/sfx/gui_spook.ogg"
+    extend "{b}something we can use as a weapon{/b}."
+    show Tabitha smile
+    ta smile "A wise observation, miss Amina.{w=0.3} [shn], do I have your authorization to include that in my list of tasks?"
+    sh neutral "Please do...{w=0.5} Let's get to work, now."
     $ story_progress = 2
