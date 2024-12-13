@@ -112,6 +112,15 @@ layeredimage taisho_foyer:
         attribute top_dark default:
             "darkness_layers"
 
+image taisho_foyer_door_base = "images/bgs/taisho/taisho_foyer_door.jpg"
+layeredimage taisho_foyer_door:
+    group bottom:
+        attribute base default:
+            "taisho_foyer_door_base"
+    group top:
+        attribute top_dark default:
+            "darkness_layers"
+
 image taisho_exposition_base = "images/bgs/taisho/taisho_exposition.jpg"
 layeredimage taisho_exposition:
     group bottom:

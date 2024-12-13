@@ -668,6 +668,9 @@ label story_03_taisho_lower:
     am surprise "No code puzzle this time, then...{w=0.5} We need to {nw}"
     play sound4 "audio/sfx/gui_spook.ogg"
     extend "{b}find the key{/b}."
+    pause 1.0
+    show taisho_foyer_door with Reveal
+    pause 1.0
     show Shigeo surprise
     sh surprise "Either that or tear it down...{w=0.5} Android, would you be-"
     show Shigeo pain
@@ -677,12 +680,15 @@ label story_03_taisho_lower:
     show Shigeo neutral
     sh neutral "Not without considerable expense of time and heating up, I imagine.{w=0.3} I'd rather you save that energy for emergencies."
     show Shigeo frown sweat
+    pause 1.0
+    hide taisho_foyer_door with dissolve
+    pause 0.5
     sh frown sweat "We're in completely uncharted territory, here.{w=0.3} If more of those things show up, you're our only line of defense."
-    ta surprise "So you'd have me prioritize long term energy efficiency over immediate short-term gains."
+    ta surprise "So you'd have me prioritize long term energy efficiency over possible short-term gains."
     show Tabitha neutral
     ta neutral "Acknowledged.{w=0.3} I shall endeavour to function by your guidelines as closely as possible, [shn]."
     show Shigeo neutral -sweat
-    sh neutral -sweat "Do that.{w=0.3} Let's look for that key."
+    sh neutral -sweat "Do that.{w=0.3} Now let's look for that key."
     show Amina neutral
     am neutral "If the keycode debacle was any indication, it is not going to be straightforward at all...{w=0.5} Let's not overlook anything."
     show Amina surprise
@@ -694,5 +700,6 @@ label story_03_taisho_lower:
     sh neutral "Please do...{w=0.5} Let's get to work, now."
     $ story_progress = 2
     pause 1.0
+    scene taisho_foyer with dissolve
     $ renpy.block_rollback()
-    call screen 
+    call screen taisho_foyer_explore
