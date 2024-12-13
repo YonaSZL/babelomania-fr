@@ -663,7 +663,7 @@ label story_03_taisho_lower:
         yanchor 1.0 xpos 900 ypos 750 zoom 0.15
     with dissolve
     play sound2 "audio/se/door_heavy_rattle.ogg"
-    sh neutral "I see no padlock on this one...{w=0.5} Just a keyhole."
+    sh neutral "I see no padlock or input panel on this one...{w=0.5} Just a keyhole."
     show Amina surprise
     am surprise "No code puzzle this time, then...{w=0.5} We need to {nw}"
     play sound4 "audio/sfx/gui_spook.ogg"
@@ -700,6 +700,8 @@ label story_03_taisho_lower:
     sh neutral "Please do...{w=0.5} Let's get to work, now."
     $ story_progress = 2
     pause 1.0
+    $ stat2 -= 3
+    $ move_time(0,3)
     scene taisho_foyer with dissolve
     $ renpy.block_rollback()
     call screen taisho_foyer_explore
