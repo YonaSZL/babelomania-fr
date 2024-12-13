@@ -14,6 +14,9 @@ menu choose_services:
 
     "I need your help with something." if tabitha_cheats:
         jump tabitha_cheat
+    
+    "Forget it, it's nothing.":
+        return
 
 menu choose_name:
 
