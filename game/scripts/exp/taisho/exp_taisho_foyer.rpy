@@ -104,21 +104,68 @@ label exp_taisho_foyer_door:
             $ c_chateau_dubois_config = True
             $ exp_taisho_foyer_door = True
             $ taisho_foyer_explore += 1
+            $ stat2 -= 1
+            $ move_time(0,1)
         $ flashlight_consume = True
     hide taisho_foyer_door with dissolve
     pause 1.0
     call screen taisho_1f_library_explore_01
 
 label exp_taisho_foyer_amina:
+    scene 
     $ renpy.block_rollback()
     $ flashlight_consume = False
     pause 0.5
-    
+    sh surprise "Found anything of interest?"
+    am neutral "Maybe...{w=0.5} These doors lead to the {nw}"
+    play sound4 "audio/sfx/gui_hint.ogg"
+    extend "{b}bedrooms{/b} area."
+    pause 0.5
+    show Shigeo surprise:
+        zoom 0.18 xpos 480 ypos 500
+    with dissolve
+    sh surprise "The bedrooms...{w=0.5} Right, we were going to stay overnight in this building, weren't we?"
+    am neutral "Which means this is where, technically, everyone's luggage should have been brought."
+    show Amina surprise
+    am surprise "Let's say we find your luggage.{w=0.3} Anything useful we could grab from there?"
+    show Shigeo neutral
+    sh neutral "Other than a {nw}"
+    play sound4 "audio/sfx/gui_hint.ogg"
+    extend "{b}charger for the flashlight{/b}, not really.{w=0.3} I'm on leave so, other than my phone, I didn't bring anything else work related."
+    show Shigeo smile sweatdrop
+    sh smile sweatdrop "And even if I did bring my ordnance weapon, I'm not exactly the ace of the shooting range...{w=0.5} I'm an analyst, remember?"
+    show Amina smile
+    am smile "I'll keep that in mind...{w=0.5} I guess not everyone can be a Derek Mountain, agency or not."
+    pause 0.5
+    play sound4 "audio/em/em_question.ogg"
+    show screen emote("question",0.5,0.35)
+    show Shigeo surprise
+    sh surprise "Derek...{w=0.5} Mountain?{w=0.3} Who's that?"
+    show Amina surprise blush
+    am surprise blush "Oh, uhm, he's...{w=0.5} A character from a tv series from the early 2000s.{w=0.3} Criminal Brains, ever heard of it?"
+    sh surprise "Oh, yeah, it does sound familiar...{w=0.5} Sorry, I've never seen it.{w=0.3} I don't like watching police procedurals, tell you the truth."
+    show Shigeo smile
+    sh smile "I already get enough of that kind of fare at work.{w=0.3} I could tell you stories, if only I had the clearance."
+    show Amina smile -blush
+    am smile -blush "Heh, fair enough...{w=0.5} What do you like, then?"
+    sh smile "A lot of anime...{w=0.5} Being Japanese and Italian, I had no chance in hell to not end up like that."
+    show Amina laugh
+    am laugh "Oh, I like animation too...{w=0.5} We could recommend each other stuff later, then.{w=0.3} But anyway."
+    show Amina neutral
+    am neutral "Still worth checking out, for all we know the key may be in there...{w=0.5} But let's keep it for after we finish with the foyer."
+    show Shigeo neutral
+    sh neutral "Absolutely agree.{w=0.3} There'll be no splitting up, here."
+    show Shigeo frown
+    sh frown "We're already deep enough inside a horror flick, here.{w=0.3} Let's avoid at least that trope."
     if exp_taisho_foyer_amina == False:
         $ exp_taisho_foyer_amina = True
         $ taisho_foyer_explore += 1
+        $ stat2 -= 2
+        $ move_time(0,2)
     $ flashlight_consume = True
     pause 1.0
+    hide Shigeo
+    scene 
     call screen taisho_1f_library_explore_01
 
 label exp_taisho_foyer_tabitha:
