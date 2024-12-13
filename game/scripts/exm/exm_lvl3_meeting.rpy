@@ -55,7 +55,7 @@ label exm_lvl3_meeting_01_stationary:
         de_i frown "(I recognize it from the objects Francesco would bring home every now and then.{w=0.3} They love their branding, from what I remember.{w=0.3} As much as they like aping the French Foreign ministry...)"
         play sound4 "audio/sfx/gui_slots_confirm.ogg"
         $ delphine_items.append(c_lictors)
-        show screen notify(_("New Entry: Fasces Lictors."))
+        show screen notify(_("New Codex Entry: Fasces Lictors."))
         de_i surprise "(So, it's not just someone leasing their technology...{w=0.5} This place, whatever it is, belongs to the company.)"
         de_i frown sweat "(What the hell does a {nw}"
         play sound4 "audio/sfx/gui_spook.ogg"
