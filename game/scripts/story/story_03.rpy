@@ -704,4 +704,4 @@ label story_03_taisho_lower:
     $ move_time(0,3)
     scene taisho_foyer with dissolve
     $ renpy.block_rollback()
-    call screen taisho_foyer_explore
+    call screen taisho_foyer_explore with dissolve

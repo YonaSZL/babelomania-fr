@@ -110,9 +110,12 @@ label exp_taisho_foyer_door:
     hide taisho_foyer_door with dissolve
     pause 1.0
     call screen taisho_1f_library_explore_01
+    with dissolve
 
 label exp_taisho_foyer_amina:
-    scene 
+    scene taisho_foyer
+    show Amina
+    with dissolve
     $ renpy.block_rollback()
     $ flashlight_consume = False
     pause 0.5
@@ -150,13 +153,13 @@ label exp_taisho_foyer_amina:
     am smile -blush "Heh, fair enough...{w=0.5} What do you like, then?"
     sh smile "A lot of anime...{w=0.5} Being Japanese and Italian, I had no chance in hell to not end up like that."
     show Amina laugh
-    am laugh "Oh, I like animation too...{w=0.5} We could recommend each other stuff later, then.{w=0.3} But anyway."
+    am laugh "Oh, I like animation too.{w=0.3} We could recommend each other some stuff later, then.{w=0.3} But anyway."
     show Amina neutral
-    am neutral "Still worth checking out, for all we know the key may be in there...{w=0.5} But let's keep it for after we finish with the foyer."
+    am neutral "I believe it's worth checking out, for all we know the key may be in there...{w=0.5} Still, let's keep it for after we finish with the foyer."
     show Shigeo neutral
     sh neutral "Absolutely agree.{w=0.3} There'll be no splitting up, here."
     show Shigeo frown
-    sh frown "We're deep enough inside a horror flick, already.{w=0.3} Let's avoid at least {i}that{/i} trope."
+    sh frown "We're deep enough inside a horror flick as is.{w=0.3} Let's avoid at least {i}that{/i} trope."
     if exp_taisho_foyer_amina == False:
         $ exp_taisho_foyer_amina = True
         $ taisho_foyer_explore += 1
@@ -165,8 +168,9 @@ label exp_taisho_foyer_amina:
     $ flashlight_consume = True
     pause 1.0
     hide Shigeo
-    scene 
+    scene taisho_foyer
     call screen taisho_1f_library_explore_01
+    with dissolve
 
 label exp_taisho_foyer_tabitha:
     $ renpy.block_rollback()
@@ -179,3 +183,4 @@ label exp_taisho_foyer_tabitha:
     $ flashlight_consume = True
     pause 1.0
     call screen taisho_1f_library_explore_01
+    with dissolve
