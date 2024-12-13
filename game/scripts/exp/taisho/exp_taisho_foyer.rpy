@@ -156,7 +156,7 @@ label exp_taisho_foyer_amina:
     show Shigeo neutral
     sh neutral "Absolutely agree.{w=0.3} There'll be no splitting up, here."
     show Shigeo frown
-    sh frown "We're already deep enough inside a horror flick, here.{w=0.3} Let's avoid at least that trope."
+    sh frown "We're deep enough inside a horror flick, already.{w=0.3} Let's avoid at least {i}that{/i} trope."
     if exp_taisho_foyer_amina == False:
         $ exp_taisho_foyer_amina = True
         $ taisho_foyer_explore += 1
