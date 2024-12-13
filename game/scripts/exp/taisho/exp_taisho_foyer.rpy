@@ -231,6 +231,7 @@ label exp_taisho_foyer_tabitha:
     if exp_taisho_foyer_tabitha == False:
         $ exp_taisho_foyer_tabitha = True
         $ taisho_foyer_explore += 1
+        $ tabitha_cheats = True
     $ flashlight_consume = True
     pause 1.0
     call screen taisho_foyer_explore

@@ -1,12 +1,23 @@
+default tabitha_cheats = False
+
 label conv_tabitha_exp:
     $ renpy.block_rollback()
     pause 0.5
     ta neutral "[shn].{w=0.3} How can I be of service?"
     pause 0.5
+    jump choose_services
+
+menu choose_services:
+
+    "About the way you call me.":
+        jump choose_name
+
+    "I need your help with something." if tabitha_cheats:
+        jump tabitha_cheat
 
 menu choose_name:
 
-    sh nulla "You can call me..."
+    sh neutral "You can call me..."
 
     "Arata-sama.":
         $ shn = "Arata-sama"
@@ -17,6 +28,9 @@ menu choose_name:
     "Arata-san.":
         $ shn = "Arata-san"
         jump name_chosen
+    
+    "Actually, nevermind.":
+        return
 
 label name_chosen:
     $ renpy.block_rollback()
@@ -24,3 +38,10 @@ label name_chosen:
     ta bow "Acknowledged.{w=0.3} I shall henceforth address you as [shn]."
     pause 1.0
     return
+
+menu tabitha_cheat:
+
+    sh neutral "I need your help with..."
+
+    "On second thought.":
+        jump choose_services
