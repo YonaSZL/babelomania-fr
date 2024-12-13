@@ -367,7 +367,6 @@ label story_03_reasoning:
     extend "{b}briefcase{/b} in the room where I booted up, [shn].{w=0.3} Although it has been emptied of most of the objects I was carrying for Professor Habiki."
     play sound4 "audio/sfx/gui_slots_confirm.ogg"
     $ briefcase_carry = True
-    $ flashlight_use = True
     pause 1.5
     scene taisho_1f_side_meet_base
     show darkness_layer
@@ -694,3 +693,6 @@ label story_03_taisho_lower:
     ta smile "A wise observation, miss Amina.{w=0.3} [shn], do I have your authorization to include that in my list of tasks?"
     sh neutral "Please do...{w=0.5} Let's get to work, now."
     $ story_progress = 2
+    pause 1.0
+    $ renpy.block_rollback()
+    call screen 
