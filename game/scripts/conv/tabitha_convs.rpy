@@ -204,7 +204,7 @@ label tabitha_01_rules:
     extend "{b}that can use violence against human beings{/b}...{w=0.5} And can allow harm to come to them if need be."
     show Tabitha surprise
     ta nulla "Observation:{w=0.15} any Android with a failsafe against the latter while possessing no restrictions on the former would eventually fall into a perpetual feedback loop."
-    sh frown "Oh, thank you {i}so much{/i} for that.{w=0.3} That paints the whole thing into a new light."
+    sh frown "Oh, thank you {i}so much{/i} for that.{w=0.3} That paints the whole thing in a new light."
     show Tabitha smile
     ta nulla "You're quite welcome, [shn].{w=0.3} I must reiterate that I cannot deny nor confirm your hypothesis, though."
     pause 1.5

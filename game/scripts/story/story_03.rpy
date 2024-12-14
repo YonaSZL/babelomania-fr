@@ -265,8 +265,7 @@ label story_03_uneasy_trio:
     ta nulla "Acknowledged.{w=0.3} I will be back shortly, [shn]."
     show Tabitha frown
     ta nulla "Please do try and avoid leaving the premises of this room in the meantime."
-    $ stat2 += 25
-    play sound4 "audio/sfx/hp_down.ogg"
+    $ stat2 -= 25
     stop music fadeout 3.5
     pause 1.0
     play sound2 "audio/se/steps_wood_slow.ogg"
@@ -360,6 +359,7 @@ label story_03_uneasy_trio:
 label story_03_reasoning:
     $ renpy.block_rollback()
     play music "audio/bgm/setting_sun.ogg"
+    $ stat2 += 5
     pause 1.0
     sh surprise "What do you have there, Android?"
     ta neutral "I'm happy to share that I identified my {nw}"
