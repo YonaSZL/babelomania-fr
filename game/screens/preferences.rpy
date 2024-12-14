@@ -287,6 +287,25 @@ screen preferences():
                             activate_sound "audio/sfx/gui_confirm.ogg"
                     hbox:
                         style_prefix "check"
+                        label _("Delphine")
+                        spacing 10
+                        textbutton _("Key"):
+                            yoffset 5
+                            action [SetVariable("persistent.delphine_sfx", "keys"), Function(delphine_define, amina_keys, persistent.delphine_sounds)]
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                        textbutton _("Pen"):
+                            yoffset 5
+                            action [SetVariable("persistent.delphine_sfx", "pens"), Function(delphine_define, amina_pens, persistent.delphine_sounds)]
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                        textbutton _("Bip"):
+                            yoffset 5
+                            action [SetVariable("persistent.delphine_sfx", "bips"), Function(delphine_define, amina_bips, persistent.delphine_sounds)]
+                            hover_sound "audio/sfx/gui_hover.ogg"
+                            activate_sound "audio/sfx/gui_confirm.ogg"
+                    hbox:
+                        style_prefix "check"
                         label _("Mira")
                         spacing 10
                         textbutton _("Key"):
