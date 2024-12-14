@@ -40,7 +40,7 @@ label name_chosen:
     play sound4 "audio/sfx/gui_slots_confirm.ogg"
     ta bow "Acknowledged.{w=0.3} I shall henceforth address you as [shn]."
     pause 1.0
-    return
+    jump choose_services
 
 menu tabitha_cheat:
 
