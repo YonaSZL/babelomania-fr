@@ -21,7 +21,7 @@ label flambas_folder_reveal:
     extend"{b}mugshot{/b}, isn't it?)"
     $ delphine_items.append(c_newspaper_clippings)
     play sound4 "audio/sfx/gui_slots_confirm.ogg"
-    show screen notify(_("Codex Updated"))
+    show screen notify(_("New Codex Entry: Newspaper Clippings."))
     pause 1.0
     scene lvl3_meeting with dissolve
     if flambas_folder_inspected == False:

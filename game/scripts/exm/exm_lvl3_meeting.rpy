@@ -67,7 +67,6 @@ label exm_lvl3_meeting_01_stationary:
         de_i neutral "(.{w=0.3}.{w=0.3}.{w=0.5}there's some papers left in this folder.)"
         if exm_lvl3_meeting_01_stationary == False:
             play sound4 "audio/sfx/gui_slots_confirm.ogg"
-            show screen notify(_("Inventory Unlocked.{#}"))
             $ delphine_inventory.append(item_flambas_folder)
             $ inventory_show = True
             $ exm_lvl3_meeting_01_stationary = True

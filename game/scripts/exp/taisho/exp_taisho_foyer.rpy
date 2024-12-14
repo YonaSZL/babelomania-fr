@@ -100,7 +100,7 @@ label exp_taisho_foyer_door:
         pause 0.5
         if exp_taisho_foyer_door == False:
             play sound4 "audio/sfx/gui_slots_confirm.ogg"
-            show screen notify(_("Codex Entry Updated: Chateau de Bois.{#Château configuration.}"))
+            show screen notify(_("Codex Entry Updated: Chateau de Bois II."))
             $ c_chateau_dubois_config = True
             $ exp_taisho_foyer_door = True
             $ taisho_foyer_explore += 1
