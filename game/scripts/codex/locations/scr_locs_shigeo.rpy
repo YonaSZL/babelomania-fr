@@ -7,9 +7,6 @@ screen scr_chateau_dubois():
 
     text _("""Nowadays, the château is mainly used as a museum for the various collections Du Bois accumulated over his lifetime, and a popular place to host events and receptions. Some areas, though, remain off limits to the public to this day.""")
     if c_chateau_dubois_config:
-        text _("""While the claim to fame of the château are the various buildings, each with their own peculiarities and architectural influences, any 
-        conoisseur would be remiss without mentioning the Great Courtyard, the expansion of which was a pet project of Abelard's daughter, Amandine. Styled 
-        after the Royal Gardens of Belgium, what it lacks in size the courtyard makes up for in features: from its scattered sculptures to its 
-        pavillions to its variegated offering of flora, no stay at the château is complete without a stroll in this verdant wonderland.""")
+        text _("""While the claim to fame of the château are the various buildings, each with their own peculiarities and architectural influences, any conoisseur would be remiss without mentioning the Great Courtyard, the expansion of which was a pet project of Abelard's daughter, Amandine. Styled after the Royal Gardens of Belgium, what it lacks in size the courtyard makes up for in features: from its scattered sculptures to its greenhouse to its variegated offering of flora, no stay at the château is complete without a stroll in this verdant wonderland.""")
     if c_chateau_dubois_taisho:
         text _("""One of the most unique buildings in the château, and really in the country itself, it's the Taisho Building, so named for its architecture and furnishing being inspired by the Taisho period of Japanese history.""")

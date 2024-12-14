@@ -9,6 +9,7 @@ label story_03_android:
     $ renpy.block_rollback()
     $ move_time(0,1)
     $ flashlight_consume = False
+    $ flashlight_allowed = False
     $ shigeo_blood = "blood"
     $ amina_blood = "blood"
     $ current_char = "shigeo"
@@ -637,6 +638,7 @@ label story_03_taisho_lower:
     $ stat2 -= 2
     $ move_time(0,2)
     play music "audio/bgm/setting_sun.ogg"
+    $ flashlight_use = False
     $ dark_environ = True
     pause 1.0
     $ shigeo_inventory.remove(item_papers)
@@ -646,7 +648,9 @@ label story_03_taisho_lower:
     pause 1.0
     play sound "audio/se/door_heavy_unlock.ogg"
     pause 1.0
-    scene taisho_foyer with Reveal3
+    scene taisho_foyer_base
+    show darkness_layers
+    with Reveal3
     pause 1.5
     ta bow "I deem this a safe environment, [shn].{w=0.3} Please proceed."
     sh neutral "For now...{w=0.5} At least we can see the outside, from here."
@@ -655,12 +659,14 @@ label story_03_taisho_lower:
     am surprise "Ehm, right.{w=0.3} Thank you, Tabitha."
     ta bow "You are welcome."
     sh_n frown "*sigh*{w=0.5}\"Anyway."
+    scene taisho_foyer_base
     show Amina surprise:
         yanchor 1.0 xpos 375 ypos 867 zoom 0.148
     show Shigeo neutral:
         yanchor 1.0 xpos 265 ypos 880 zoom 0.15
     show Tabitha neutral brief:
         yanchor 1.0 xpos 540 ypos 880 zoom 0.15
+    show darkness_layers
     with dissolve
     play sound2 "audio/se/door_heavy_rattle.ogg"
     sh neutral "I see no padlock or input panel on this one...{w=0.5} Just a keyhole."
@@ -669,19 +675,24 @@ label story_03_taisho_lower:
     play sound4 "audio/sfx/gui_spook.ogg"
     extend "{b}find the key{/b}."
     pause 1.0
-    show taisho_foyer_door with Reveal
+    scene taisho_foyer_door_base
+    show darkness_layers
+    with Reveal
     pause 1.0
-    show Shigeo surprise
     sh surprise "Either that or tear it down...{w=0.5} Android, would you be-"
-    show Shigeo pain
     sh pain "No, wait, bad idea.{w=0.3} Nevermind."
-    show Tabitha surprise
     ta surprise "[shn], I'm positive I would be able to dispose of this door."
-    show Shigeo neutral
     sh neutral "Not without considerable expense of time and heating up, I imagine.{w=0.3} I'd rather you save that energy for emergencies."
-    show Shigeo frown sweat
     pause 1.0
-    hide taisho_foyer_door with dissolve
+    scene taisho_foyer_base
+    show Amina surprise:
+        yanchor 1.0 xpos 375 ypos 867 zoom 0.148
+    show Shigeo frown sweat:
+        yanchor 1.0 xpos 265 ypos 880 zoom 0.15
+    show Tabitha neutral brief:
+        yanchor 1.0 xpos 540 ypos 880 zoom 0.15
+    show darkness_layers
+    with dissolve
     pause 0.5
     sh frown sweat "We're in completely uncharted territory, here.{w=0.3} If more of those things show up, you're our only line of defense."
     ta surprise "So you'd have me prioritize long term energy efficiency over possible short-term gains."
@@ -702,13 +713,24 @@ label story_03_taisho_lower:
     pause 1.0
     $ stat2 -= 3
     $ move_time(0,3)
-    scene taisho_foyer with dissolve
+    scene taisho_foyer_base
+    show darkness_layers
+    with dissolve
     $ renpy.block_rollback()
+    scene taisho_foyer_base
     show Amina neutral:
         xpos 615 ypos 555 zoom 0.12
     show Tabitha neutral brief:
         xpos 1320 ypos 540 zoom 0.2
+    show darkness_layers        
     with dissolve
     $ tabitha_return_variable = "return_taisho_foyer_explore"
+    $ flashlight_allowed = True
+    $ tabitha_need_darkness = True
 label return_taisho_foyer_explore:
+    scene taisho_foyer_base
+    show Amina neutral:
+        xpos 615 ypos 555 zoom 0.12
+    show Tabitha neutral brief:
+        xpos 1320 ypos 540 zoom 0.2
     call screen taisho_foyer_explore

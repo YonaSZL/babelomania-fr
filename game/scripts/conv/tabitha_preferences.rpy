@@ -1,6 +1,8 @@
 default tabitha_cheats = False
 
 label conv_tabitha_exp:
+    if tabitha_need_darkness:
+        show darkness_layers
     $ renpy.block_rollback()
     pause 0.5
     ta neutral "[shn].{w=0.3} How can I be of service?"
@@ -16,6 +18,8 @@ menu choose_services:
         jump tabitha_cheat
     
     "Forget it, it's nothing.":
+        if tabitha_need_darkness:
+            hide darkness_layers
         $ renpy.jump(tabitha_return_variable)
 
 menu choose_name:

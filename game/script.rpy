@@ -144,6 +144,7 @@ default shn = "None"
 default current_puzzle = "None"
 default persistent.firstvoice = False
 default tabitha_return_variable = "None"
+default tabitha_need_darkness = False
 
 #Defining Music Channels
 init python:
