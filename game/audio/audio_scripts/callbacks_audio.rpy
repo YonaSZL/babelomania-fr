@@ -34,7 +34,7 @@ init python:
             return
         if event == "show":
         
-            for i in range (50):
+            for i in range (100):
                 renpy.sound.queue(renpy.random.choice(persistent.shigeo_sounds), channel='beeps')
         
         elif event == "slow_done" or event == "end":
@@ -54,7 +54,7 @@ init python:
             return
         if event == "show":
         
-            for i in range (50):
+            for i in range (100):
                 renpy.sound.queue(renpy.random.choice(persistent.francesco_sounds), channel='beeps')
         
         elif event == "slow_done" or event == "end":
@@ -84,7 +84,7 @@ init python:
             return
         if event == "show":
         
-            for i in range (50):
+            for i in range (100):
                 renpy.sound.queue(renpy.random.choice(persistent.habiki_sounds), channel='beeps')
         
         elif event == "slow_done" or event == "end":
@@ -106,7 +106,7 @@ init python:
             return
         if event == "show":
         
-            for i in range (50):
+            for i in range (100):
                 renpy.sound.queue(renpy.random.choice(persistent.gaspard_sounds), channel='beeps')
         
         elif event == "slow_done" or event == "end":
@@ -126,7 +126,7 @@ init python:
             return
         if event == "show":
         
-            for i in range (50):
+            for i in range (100):
                 renpy.sound.queue(renpy.random.choice(persistent.male_sounds), channel='beeps')
         
         elif event == "slow_done" or event == "end":
@@ -158,7 +158,7 @@ init python:
             return
         if event == "show":
         
-            for i in range (50):
+            for i in range (100):
                 renpy.sound.queue(renpy.random.choice(persistent.amina_sounds), channel='beeps')
         
         elif event == "slow_done" or event == "end":
@@ -178,7 +178,7 @@ init python:
             return
         if event == "show":
         
-            for i in range (50):
+            for i in range (100):
                 renpy.sound.queue(renpy.random.choice(persistent.mira_sounds), channel='beeps')
         
         elif event == "slow_done" or event == "end":
@@ -198,7 +198,7 @@ init python:
             return
         if event == "show":
         
-            for i in range (50):
+            for i in range (100):
                 renpy.sound.queue(renpy.random.choice(persistent.delphine_sounds), channel='beeps')
         
         elif event == "slow_done" or event == "end":
@@ -218,7 +218,7 @@ init python:
             return
         if event == "show":
         
-            for i in range (50):
+            for i in range (100):
                 renpy.sound.queue(renpy.random.choice(persistent.tabitha_sounds), channel='beeps')
         
         elif event == "slow_done" or event == "end":
@@ -238,7 +238,7 @@ init python:
             return
         if event == "show":
         
-            for i in range (50):
+            for i in range (100):
                 renpy.sound.queue(renpy.random.choice(persistent.female_sounds), channel='beeps')
         
         elif event == "slow_done" or event == "end":

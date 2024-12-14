@@ -66,7 +66,7 @@ label story_03_android:
     play sound2 "audio/se/clothes_rustle.ogg"
     show Tabitha surprise with dissolve
     ta nulla "<I would suggest you stay seated until I have inspected you for injuries, Arata-san.>"
-    sh frown "<I feel fine...{w=0.5} And I'd rather clean myself off, first.{w=0.3} I have chunks of...>"
+    sh frown "<I feel fine...{w=0.5} And I'd rather clean myself up, first.{w=0.3} I have chunks of...>"
     sh pain "<.{w=0.3}.{w=0.3}.{w=0.5}Gaspard...{w=0.5} Shit.{w=0.3} ShitshitSH-{nw}"
     am cry blood "{cps=10}Why...?"
     play sound "audio/em/em_shock.ogg"
