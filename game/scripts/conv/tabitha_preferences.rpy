@@ -16,7 +16,7 @@ menu choose_services:
         jump tabitha_cheat
     
     "Forget it, it's nothing.":
-        return
+        $ renpy.jump(tabitha_return_variable)
 
 menu choose_name:
 
@@ -33,7 +33,7 @@ menu choose_name:
         jump name_chosen
     
     "Actually, nevermind.":
-        return
+        $ renpy.jump(tabitha_return_variable)
 
 label name_chosen:
     $ renpy.block_rollback()

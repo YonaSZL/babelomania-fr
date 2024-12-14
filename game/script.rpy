@@ -143,6 +143,7 @@ default current_char = "shigeo"
 default shn = "None"
 default current_puzzle = "None"
 default persistent.firstvoice = False
+default tabitha_return_variable = "None"
 
 #Defining Music Channels
 init python:

@@ -704,4 +704,11 @@ label story_03_taisho_lower:
     $ move_time(0,3)
     scene taisho_foyer with dissolve
     $ renpy.block_rollback()
-    call screen taisho_foyer_explore with dissolve
+    show Amina neutral:
+        xpos 615 ypos 555 zoom 0.12
+    show Tabitha neutral brief:
+        xpos 1320 ypos 540 zoom 0.2
+    with dissolve
+    $ tabitha_return_variable = "return_taisho_foyer_explore"
+label return_taisho_foyer_explore:
+    call screen taisho_foyer_explore

@@ -17,32 +17,24 @@ screen taisho_foyer_explore():
 
     tag exploration
 
-    imagebutton:
-        idle "Amina neutral"
-        hover "Amina neutral"
-        xpos 615
-        ypos 555
+    button:
+        pos(612,549)
+        xysize(98,240)
         hover_sound "audio/sfx/gui_hover.ogg"
         activate_sound "audio/sfx/gui_confirm.ogg"
         action Jump("exp_taisho_foyer_amina")
         tooltip _("Amina{#explore_foyer}")
-        at transform:
-            zoom 0.12
-    
-    imagebutton:
-        idle "Tabitha neutral brief"
-        hover "Tabitha neutral brief"
-        xpos 799
-        ypos 480
+    button:
+        pos(1314,537)
+        xysize(181,464)
+        background None
         hover_sound "audio/sfx/gui_hover.ogg"
         activate_sound "audio/sfx/gui_confirm.ogg"
         action Jump("exp_taisho_foyer_tabitha")
         tooltip _("The Android{#explore_foyer}")
-        at transform:
-            zoom 0.2
     button:
-        pos(150,375)
-        xysize(200,300)
+        pos(144,505)
+        xysize(114,384)
         background None
         hover_sound "audio/sfx/gui_hover.ogg"
         activate_sound "audio/sfx/gui_confirm.ogg"
@@ -107,7 +99,7 @@ label exp_taisho_foyer_door:
         $ flashlight_consume = True
     hide taisho_foyer_door with dissolve
     pause 1.0
-    call screen taisho_1f_library_explore_01
+    call screen taisho_foyer_explore
     with dissolve
 
 label exp_taisho_foyer_amina:
