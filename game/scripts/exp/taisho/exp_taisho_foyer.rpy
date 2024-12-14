@@ -171,12 +171,12 @@ label exp_taisho_foyer_tabitha:
     $ flashlight_consume = False
     pause 0.5
     sh_i surprise "(Is it just...{w=0.5} Standing around?{w=0.3} No, wait.)"
-    sh_i frown sweat "(Its eyes are just...{w=0.5} Following me around the room, slowly.{w=0.3} So creepy.{w=0.3} Anyway, why isn't she looking?)"
+    sh_i frown sweat "(Its eyes are following me around the room, slowly.{w=0.3} So creepy.{w=0.3} Anyway, why isn't she looking?)"
     sh frown -sweat "What are you doing, Android?"
     ta smile "Surveying our surroundings, [shn].{w=0.3} I'm happy to inform that there's no immediate threat in range of my sensors."
     pause 1.0
     show Shigeo neutral behind darkness_layers:
-        zoom 0.2 xpos 669 ypos 480
+        zoom 0.2 xpos 1140 ypos 555
     with dissolve
     sh neutral "Yeah, about those sensors...{w=0.5} Have you also been surveying the surroundings for clues?"
     show Tabitha surprise
@@ -184,7 +184,7 @@ label exp_taisho_foyer_tabitha:
     pause 0.5
     show Shigeo surprise
     sh surprise "Uhm, the...{w=0.5} They key.{w=0.3} We're looking for the key to the front door, remember?"
-    show Tabitha bow
+    show Tabitha neutral
     ta neutral "Affirmative.{w=0.3} Apologies but I haven't been able to locate any object of the sort."
     sh surprise "I get, I didn't expect you to...{w=0.5} But what about a hiding place for it?"
     show Tabitha surprise
@@ -202,15 +202,15 @@ label exp_taisho_foyer_tabitha:
     show Shigeo surprise
     sh surprise "I...{w=0.5} I don't know.{w=0.3} That's why we're...{w=0.5} We're looking around?"
     show Tabitha surprise
-    ta surprise "[shn], I must say that this course of conduct seems quite inefficient.{w=0.3} If we have no information regarding to the hiding place, shouldn't we focus on collecting that first?"
+    ta surprise "[shn], I must say that this course of action seems quite inefficient.{w=0.3} If we have no information regarding to the hiding place, shouldn't we focus on collecting that first?"
     sh surprise "But that's what we're doing!{w=0.3} It's just that we also have no idea where that information may lay, and..."
     pause 1.0
     show Shigeo frown with dissolve
-    sh frown ".{w=0.3}.{w=0.3}.{w=0.5}you can't do anything without a frame of reference, can't you?"
+    sh frown ".{w=0.3}.{w=0.3}.{w=0.5}you can't do anything without a frame of reference, can you?"
     show Tabitha neutral
     ta neutral "Approximate but truthful, [shn].{w=0.3} Professor Habiki prides itself in the horsepower of my chassis and the processing power of my positronic brain."
     show Tabitha surprise
-    ta surprise "Alas, I am still a machine.{w=0.3} Asking me to perform a task without any precise data or input would send me into a potentially endless endeavour."
+    ta surprise "Alas, I am still a machine.{w=0.3} Asking me to perform a task without any precise data or input would mean assigning me a task of virtually unending scope."
     show Tabitha bow
     ta bow "In a situation where any input is considered valid and of the same importance, {nw}"
     play sound4 "audio/sfx/gui_spook.ogg"
