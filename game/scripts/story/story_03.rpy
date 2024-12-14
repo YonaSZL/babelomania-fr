@@ -419,7 +419,7 @@ label story_03_reasoning:
     am nulla "Tabitha...{w=0.5} Sure.{w=0.3} Counting on you then, Tabitha."
     show Shigeo frown
     sh nulla "I would avoid getting too familiar with it, Amina.{w=0.3} Remember what I told you?"
-    am nulla "I'm not lowering my guard.{w=0.3} But I'm not used to calling anything by 'it', it doesn't really exist in French.{w=0.3} It just gets confusing."
+    am nulla "I'm not lowering my guard.{w=0.3} But I'm not used to calling anything I can talk to by 'it', it doesn't really exist in French.{w=0.3} It just gets confusing."
     show Amina neutral
     show Shigeo surprise
     sh nulla "Oh, right...{w=0.5} Would it help if I also started referring to it by 'she'?"
@@ -505,8 +505,8 @@ label story_03_brainssss:
     ta neutral "The latter arose when the afflicting patogen, whatever its nature, repurposed the body of the deceased human into the being that attacked [shn]."
     pause 1.0
     am naked sweat sad "Two...{w=0.5} Two questions.{w=0.3} Did you...{w=0.5} Whatever its nature means that you couldn't...{w=0.5} See anything?{w=0.3} Do you even have that kind of equipment?"
-    ta frown "I am equipped with advanced ocular sensors, and Professor Habiki often employs them in his lab work.{w=0.3} I was perfectly equipped to complete [shn]'s request to satisfaction."
-    ta neutral "In my investigation, I couldn't find any trace of a possible culprit pathogen.{w=0.5} I hypothize that, considering the pattern of alteration, we may found some traces if we were to investigate the inside of the cranial area."
+    ta frown "I am equipped with advanced ocular sensors, and Professor Habiki often employs them in his lab work.{w=0.3} I was perfectly qualified to complete [shn]'s request to satisfaction."
+    ta neutral "In my investigation, I couldn't find any trace of a possible culprit pathogen.{w=0.5} I hypothize that, considering the pattern of alteration, we may found some traces if we were to investigate the inside of the cranium."
     sh naked pain sweat ".{w=0.3}.{w=0.3}.{w=0.5}I'm going to have to ask you to abstain from that."
     ta bow "A wise choice, [shn].{w=0.3} In an uncontrolled environment such as this, we wouldn't want to risk you being contaminated during examination."
     sh naked frown sweat "Not the main reason why I asked but...{w=0.5} Sure, let's go with that."
@@ -637,6 +637,7 @@ label story_03_taisho_lower:
     $ stat2 -= 2
     $ move_time(0,2)
     play music "audio/bgm/setting_sun.ogg"
+    $ dark_environ = True
     pause 1.0
     $ shigeo_inventory.remove(item_papers)
     $ shigeo_inventory.remove(item_taisho_note)
@@ -651,16 +652,15 @@ label story_03_taisho_lower:
     sh neutral "For now...{w=0.5} At least we can see the outside, from here."
     am neutral "Through tempered glass...{w=0.5} How probable would you say the front door being locked is?"
     ta neutral "Considering pregress circumstances as detailed by [shn], I calculate a 93.2 percent probability."
-    pause 1.5
     am surprise "Ehm, right.{w=0.3} Thank you, Tabitha."
     ta bow "You are welcome."
     sh_n frown "*sigh*{w=0.5}\"Anyway."
-    show Shigeo neutral:
-        yanchor 1.0 xpos 300 ypos 750 zoom 0.15
     show Amina surprise:
-        yanchor 1.0 xpos 600 ypos 750 zoom 0.15
+        yanchor 1.0 xpos 375 ypos 867 zoom 0.148
+    show Shigeo neutral:
+        yanchor 1.0 xpos 265 ypos 880 zoom 0.15
     show Tabitha neutral brief:
-        yanchor 1.0 xpos 900 ypos 750 zoom 0.15
+        yanchor 1.0 xpos 540 ypos 880 zoom 0.15
     with dissolve
     play sound2 "audio/se/door_heavy_rattle.ogg"
     sh neutral "I see no padlock or input panel on this one...{w=0.5} Just a keyhole."
@@ -694,7 +694,7 @@ label story_03_taisho_lower:
     show Amina surprise
     am surprise "Also, speaking of lines of defense:{w=0.3} we should try and {nw}"
     play sound4 "audio/sfx/gui_spook.ogg"
-    extend "{b}something we can use as a weapon{/b}."
+    extend "{b}find something we can use as a weapon{/b}."
     show Tabitha smile
     ta smile "A wise observation, miss Amina.{w=0.3} [shn], do I have your authorization to include that in my list of tasks?"
     sh neutral "Please do...{w=0.5} Let's get to work, now."

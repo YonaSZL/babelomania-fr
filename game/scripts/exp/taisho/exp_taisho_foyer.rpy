@@ -20,14 +20,14 @@ screen taisho_foyer_explore():
     imagebutton:
         idle "Amina neutral"
         hover "Amina neutral"
-        xpos 480
-        ypos 500
+        xpos 615
+        ypos 555
         hover_sound "audio/sfx/gui_hover.ogg"
         activate_sound "audio/sfx/gui_confirm.ogg"
         action Jump("exp_taisho_foyer_amina")
         tooltip _("Amina{#explore_foyer}")
         at transform:
-            zoom 0.18
+            zoom 0.12
     
     imagebutton:
         idle "Tabitha neutral brief"
@@ -73,8 +73,6 @@ screen taisho_foyer_explore():
             tooltip _("Exposition")
         else:
             tooltip _("?????")
-
-    add "darkness_layers"
 
 label exp_taisho_foyer_door:
     $ renpy.block_rollback()

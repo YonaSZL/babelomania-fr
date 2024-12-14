@@ -203,7 +203,7 @@ screen inventory():
 
                 has vbox
 
-                textbutton _("Inspect") action [ ClearFocus("papers_drop"), Show("notify", None, _("Tabitha ripped out a bunch of papers from random books.")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
+                textbutton _("Inspect") action [ ClearFocus("papers_drop"), Show("notify", None, _("The Android ripped out a bunch of papers from random books.")) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"###Add whatever action is needed
                 if current_puzzle == "taisho_fire":
                     textbutton _("Use") action [ ClearFocus("papers_drop"), Hide("inventory"), SetVariable("pzl_papers_used", True) ] hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_item_use.ogg"
                 else:
