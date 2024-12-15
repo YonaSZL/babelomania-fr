@@ -130,6 +130,7 @@ label exm_taisho_exposition_scroll:
         sh_i neutral "(It's too dark.{w=0.3} I need to use the flashlight to look around.)"
     else:
         $ flashlight_consume = False
+        pause 1.0
         if exm_taisho_exposition_scroll == False:
             play sound4 "audio/sfx/gui_phone_swipe.ogg"
             show it_scroll with dissolve:
@@ -150,8 +151,8 @@ label exm_taisho_exposition_scroll:
             sh frown "Among other things, he was among the founders of the LDP, the Liberal Democratic Party.{w=0.3} They governed Japan almost uninterrupted from the 1950s up until a couple decades ago."
             sh surprise "And if Du Bois met him in 1960, that was literally the height of the man's power and prestige...{w=0.5} And right before his downfall."
             am neutral ".{w=0.3}.{w=0.3}.{w=0.5}sounds like the kind of company Abelard Du Bois would keep."
-            sh neutral "I can't say I'm familiar with the history of the family as much as I would like.{w=0.3} Was Abelard Du Bois a controversial figure?"
-            am frown "For now, let's just say he didn't exactly make a lot of friends in north Africa...{w=0.5} We should focus on one old-timey bastard at a time."
+            sh neutral "I can't say I'm familiar with the history of France as much as I would like.{w=0.3} Was Abelard Du Bois a controversial figure?"
+            am frown -sweatdrop "For now, let's just say he didn't exactly make a lot of friends in north Africa...{w=0.5} We should focus on one old-timey bastard at a time."
             sh frown "Agreed..."
             if exm_taisho_exposition_scroll == False:
                 $ shigeo_people.append(c_kishi)

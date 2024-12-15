@@ -674,26 +674,17 @@ label story_03_taisho_lower:
     am surprise "No code puzzle this time, then...{w=0.5} We need to {nw}"
     play sound4 "audio/sfx/gui_spook.ogg"
     extend "{b}find the key{/b}."
-    pause 1.0
-    scene taisho_foyer_door_base
-    show darkness_layers
-    with Reveal
-    pause 1.0
+    show Shigeo surprise
     sh surprise "Either that or tear it down...{w=0.5} Android, would you be-"
+    show Shigeo pain
     sh pain "No, wait, bad idea.{w=0.3} Nevermind."
+    show Tabitha surprise
     ta surprise "[shn], I'm positive I would be able to dispose of this door."
+    show Shigeo neutral
     sh neutral "Not without considerable expense of time and heating up, I imagine.{w=0.3} I'd rather you save that energy for emergencies."
-    pause 1.0
-    scene taisho_foyer_base
-    show Amina surprise:
-        yanchor 1.0 xpos 375 ypos 867 zoom 0.148
-    show Shigeo frown sweat:
-        yanchor 1.0 xpos 265 ypos 880 zoom 0.15
-    show Tabitha neutral brief:
-        yanchor 1.0 xpos 540 ypos 880 zoom 0.15
-    show darkness_layers
-    with dissolve
-    pause 0.5
+    show Amina surprise
+    show Shigeo frown sweat
+    show Tabitha neutral
     sh frown sweat "We're in completely uncharted territory, here.{w=0.3} If more of those things show up, you're our only line of defense."
     ta surprise "So you'd have me prioritize long term energy efficiency over possible short-term gains."
     show Tabitha neutral

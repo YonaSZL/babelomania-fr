@@ -88,7 +88,7 @@ label exp_taisho_foyer_door:
         sh_i frown sweat "(A building like the Taisho is a more controlled environment for them to plan around...{w=0.5} But at the same time, it limits the things they can throw at us.)"
         sh_i neutral sweat "(Once out in the open, we'll both lose a modicum of control over our surroundings.{w=0.3} And that worries me in a completely new way, considering...)"
         pause 1.5
-        sh_i frown "(We'll cross that bridge when we get to it.{w=0.3} Staying put is not an option in our current situation.)"
+        sh_i frown -sweat "(We'll cross that bridge when we get to it.{w=0.3} Staying put is not an option in our current situation.)"
         pause 1.0
         if exp_taisho_foyer_door == False:
             play sound4 "audio/sfx/gui_slots_confirm.ogg"
@@ -259,7 +259,7 @@ label exp_taisho_foyer_exposition:
         ta bow "Certainly, [shn].{w=0.3} I shall start an appropriate subroutine, as to allow continuing guard duties in parallel."
         sh smile "Heh.{w=0.3} Some of my colleagues would love having one of you down at the office whenever we're in lockdown mode...{w=0.5} While the other half would be waiting for you to go rogue on us."
         show Tabitha smile
-        ta smile "You're too kind, Arata-sama.{w=0.3} I must stress, though, that my specifications are not currently available for sale."
+        ta smile "You are too kind, Arata-sama.{w=0.3} I must stress, though, that my specifications are not currently available for sale."
         sh neutral "Obviously not...{w=0.5} Anyway, let's see what <monsieur Du Bois> got up to in Japan."
         $ tabitha_return_variable = "return_taisho_exposition_explore"
         if exp_taisho_foyer_exposition == False:
