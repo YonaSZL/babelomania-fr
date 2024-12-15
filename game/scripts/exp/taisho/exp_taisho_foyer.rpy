@@ -241,20 +241,38 @@ label exp_taisho_foyer_exposition:
     sh_i surprise "(Hm.{w=0.3} An exposition.{w=0.3} Right, the estate does double as the Du Bois family museum, doesn't it?{w=0.3} And this...)"
     play sound4 "audio/sfx/gui_hint.ogg"
     sh_i neutral "({b}Rising Sun - Abelard Du Bois and Japan{/b}...{w=0.5} Huh.)"
-    sh_i frown "(Considering what went on upstairs, we'd better pay close attention to everything here...)"
-    $ tabitha_return_variable = "return_taisho_foyer_explore"
-    if exp_taisho_foyer_exposition == False:
-        $ exp_taisho_foyer_exposition = True
-        $ taisho_foyer_explore += 1
-    pause 1.0
-    scene taisho_exposition_base
-    show darkness_layers
-    with Reveal
-    pause 0.5
-    $ flashlight_consume = True
-    pause 1.0
-    scene taisho_exposition_base
-    call screen taisho_exposition_exam
+    sh_i frown "(Considering what went on upstairs, we'd better pay close attention to everything here.{w=0.3} And with multiple sets of eyes.)"
+    if taisho_foyer_explore < 4:
+        sh_i surprise "(I should first check if Amina and the Android have managed to discern anything on their own before calling them over.)"
+        $ flashlight_consume = True
+        pause 1.0
+        hide darkness_layers
+        call screen taisho_foyer_explore
+        with dissolve
+    else:
+        sh neutral "Amina, Android.{w=0.3} Let's have a look at this together, if you would."
+        show Amina surprise
+        am surprise "The Du Bois exposition?{w=0.3} Sure."
+        show Tabitha bow
+        ta bow "Certainly, [shn].{w=0.3} I shall start an appropriate subroutine, as to allow continuing guard duties in parallel."
+        sh smile "Heh...{w=0.5} Some of my colleagues would love having one of you down at the office whenever we're in lockdown mode...{w=0.5} While the other half would be waiting for you to go rogue on us."
+        show Tabitha smile
+        ta smile "You're too kind, Arata-sama.{w=0.3} I must stress, though, that my specifications are not currently available for sale."
+        show Shigeo neutral
+        sh neutral "Obviously not...{w=0.5} Anyway, let's see about what <monsieur Du Bois> got up to in Japan."
+        $ tabitha_return_variable = "return_taisho_foyer_explore"
+        if exp_taisho_foyer_exposition == False:
+            $ exp_taisho_foyer_exposition = True
+            $ taisho_foyer_explore += 1
+        pause 1.0
+        scene taisho_exposition_base
+        show darkness_layers
+        with Reveal
+        pause 0.5
+        $ flashlight_consume = True
+        pause 1.0
+        scene taisho_exposition_base
+        call screen taisho_exposition_exam
 
 label exp_taisho_foyer_stairs:
     show darkness_layers
