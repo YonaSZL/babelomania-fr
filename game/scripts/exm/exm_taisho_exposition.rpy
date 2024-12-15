@@ -45,17 +45,18 @@ screen taisho_exposition_exam():
         else:
             tooltip _("?????")
     
-    button:
-        pos(201,494)
-        xysize(1412,158)
-        background None
-        hover_sound "audio/sfx/gui_hover.ogg"
-        activate_sound "audio/sfx/gui_confirm.ogg"
-        action Jump("exm_taisho_exposition_panel")
-        if flashlight_use:
-            tooltip _("Wooden Panel")
-        else:
-            tooltip _("?????")
+    if exm_taisho_exposition_tenugui and exm_taisho_exposition_scroll and exm_taisho_exposition_sword:
+        button:
+            pos(201,494)
+            xysize(1412,158)
+            background None
+            hover_sound "audio/sfx/gui_hover.ogg"
+            activate_sound "audio/sfx/gui_confirm.ogg"
+            action Jump("exm_taisho_exposition_panel")
+            if flashlight_use:
+                tooltip _("Wooden Panel")
+            else:
+                tooltip _("?????")
 
     button:
         pos(1703,431)
@@ -247,7 +248,16 @@ label exm_taisho_exposition_panel:
         sh_i neutral "(It's too dark.{w=0.3} I need to use the flashlight to look around.)"
     else:
         $ flashlight_consume = False
-        
+        pause 0.5
+        play sound4 "audio/sfx/gui_phone_swipe.ogg"
+        show it_scroll with dissolve:
+            xalign 0.5 yalign 0.4
+        pause 1.0
+        am neutral "That's a big block of text.{w=0.3} And we don't have a lot of light to read."
+        sh neutral "Indeed...{w=0.5} Android, are you able to memorize this text?"
+        ta bow "A simple matter.{w=0.3} Engaging textual processing protocol."
+        pause 1.0
+        ta neutral "Done.{w=0.3} Would you like me to summarize the contents for you, [shn]?"
         if exm_taisho_exposition_panel == False:
             $ shigeo_terms.append(c_airborne)
             play sound4 "audio/sfx/gui_slots_confirm.ogg"
@@ -255,7 +265,6 @@ label exm_taisho_exposition_panel:
             $ exm_taisho_exposition_panel = True
             $ taisho_foyer_explore += 1
             $ stat2 -= 1
-            $ move_time(0,1)
         $ flashlight_consume = True
     pause 1.0
     hide darkness_layers
