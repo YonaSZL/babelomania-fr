@@ -107,7 +107,7 @@ screen categories():
                 button:
                         xysize(350,75)
                         add "gui/codex/btn_bg.png"
-                        text _("Items" )
+                        text _("Terms" )
                         hover_sound "audio/sfx/gui_hover.ogg"
                         activate_sound "audio/sfx/gui_confirm.ogg"
                         action [Hide("categories"),Show("entries",dissolve, c_terms)]

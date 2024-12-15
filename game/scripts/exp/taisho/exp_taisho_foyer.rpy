@@ -225,6 +225,8 @@ label exp_taisho_foyer_tabitha:
         $ exp_taisho_foyer_tabitha = True
         $ taisho_foyer_explore += 1
         $ tabitha_cheats = True
+        $ stat2 -= 2
+        $ move_time(0,2)
     $ flashlight_consume = True
     pause 1.0
     hide Shigeo
@@ -255,15 +257,16 @@ label exp_taisho_foyer_exposition:
         am surprise "The Du Bois exposition?{w=0.3} Sure."
         show Tabitha bow
         ta bow "Certainly, [shn].{w=0.3} I shall start an appropriate subroutine, as to allow continuing guard duties in parallel."
-        sh smile "Heh...{w=0.5} Some of my colleagues would love having one of you down at the office whenever we're in lockdown mode...{w=0.5} While the other half would be waiting for you to go rogue on us."
+        sh smile "Heh.{w=0.3} Some of my colleagues would love having one of you down at the office whenever we're in lockdown mode...{w=0.5} While the other half would be waiting for you to go rogue on us."
         show Tabitha smile
         ta smile "You're too kind, Arata-sama.{w=0.3} I must stress, though, that my specifications are not currently available for sale."
-        show Shigeo neutral
-        sh neutral "Obviously not...{w=0.5} Anyway, let's see about what <monsieur Du Bois> got up to in Japan."
+        sh neutral "Obviously not...{w=0.5} Anyway, let's see what <monsieur Du Bois> got up to in Japan."
         $ tabitha_return_variable = "return_taisho_foyer_explore"
         if exp_taisho_foyer_exposition == False:
             $ exp_taisho_foyer_exposition = True
             $ taisho_foyer_explore += 1
+            $ stat2 -= 1
+            $ move_time(0,1)
         pause 1.0
         scene taisho_exposition_base
         show darkness_layers
@@ -294,6 +297,8 @@ label exp_taisho_foyer_stairs:
         show screen notify(_("New Codex Entry: Airborne Transmission."))
         $ exp_taisho_foyer_stairs = True
         $ taisho_foyer_explore += 1
+        $ stat2 -= 1
+        $ move_time(0,1)
     $ flashlight_consume = True
     pause 1.0
     hide darkness_layers

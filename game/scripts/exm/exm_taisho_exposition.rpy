@@ -5,7 +5,7 @@ default exm_taisho_exposition_scroll = False
 default exm_taisho_exposition_sword = False
 default exm_taisho_exposition_panel = False
 
-screen taisho_exposition_explore():
+screen taisho_exposition_exam():
 
     tag examination
 
