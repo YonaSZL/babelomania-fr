@@ -4,8 +4,6 @@
 ##from grandfather inherited
 ##by a son cut down
 default taisho_foyer_explore = 0
-default taisho_foyer_explore_timer = False
-default taisho_foyer_gaspard_gone = False
 
 default exp_taisho_foyer_amina = False
 default exp_taisho_foyer_tabitha = False
@@ -44,8 +42,8 @@ screen taisho_foyer_explore():
         else:
             tooltip _("?????")
     button:
-        pos(2654,341)
-        xysize(226,551)
+        pos(1721,456)
+        xysize(199,438)
         background None
         hover_sound "audio/sfx/gui_hover.ogg"
         activate_sound "audio/sfx/gui_confirm.ogg"
@@ -55,8 +53,8 @@ screen taisho_foyer_explore():
         else:
             tooltip _("?????")
     button:
-        pos(1868,697)
-        xysize(123,65)
+        pos(937,639)
+        xysize(291,279)
         background None
         hover_sound "audio/sfx/gui_hover.ogg"
         activate_sound "audio/sfx/gui_confirm.ogg"
@@ -239,21 +237,40 @@ label exp_taisho_foyer_exposition:
     $ renpy.block_rollback()
     $ flashlight_consume = False
     pause 0.5
-    
+    sh_i surprise "(Hm.{w=0.3} An exposition.{w=0.3} Right, the estate does double as the Du Bois family museum, doesn't it?{w=0.3} And this...)"
+    play sound4 "audio/sfx/gui_hint.ogg"
+    sh_i neutral "({b}Rising Sun - Abelard Du Bois and Japan{/b}...{w=0.5} Huh.)"
+    sh_i frown "(Considering what went on upstairs, I better pay close attention to everything here.)"
     if exp_taisho_foyer_exposition == False:
         $ exp_taisho_foyer_exposition = True
         $ taisho_foyer_explore += 1
+    pause 1.0
+    scene taisho_exposition_base
+    show darkness_layers
+    with Reveal
+    pause 0.5
     $ flashlight_consume = True
     pause 1.0
-    call screen taisho_foyer_explore
-    with dissolve
+    scene taisho_exposition_base
+    call screen taisho_exposition_exam
 
 label exp_taisho_foyer_stairs:
     $ renpy.block_rollback()
     $ flashlight_consume = False
     pause 0.5
-    
+    sh neutral "(The stairs to the upper floor...{w=0.5} Once we walked through and arrived on the second floor, the fire alarm stopped and with it, both doors locked again.)"
+    sh frown "(That can only be done manually, which confirms someone is observing us.{w=0.3} And I bet that they also disabled the automatic notification system for the authorities.)"
+    sh neutral sweat "(.{w=0.3}.{w=0.3}.{w=0.5}honestly, though, it might be for the best.{w=0.3} Gaspard couldn't break down the door when he was alive, I doubt his...{w=0.5} Simulacrum is going to fare any better.)"
+    sh frown sweat "(The thought of what happened to him sends shivers down my spine...{w=0.5} We'll need to play close attention to our surroundings.)"
+    sh neutral -sweat "(At least I'm pretty sure that whatever did this is {nw}"
+    play sound4 "audio/sfx/gui_spook.ogg"
+    extend "{b}anaerobic{/b}...{w=0.5} Otherwise both me and Amina would've been affected.)"
+    sh frown "(Of course, that takes for granted that we are not just going through the transformation at a wildly different rate than Gaspard did...{w=0.5} But I'd rather be an optimist, here.)"
+    sh neutral "(Also, I have the distinct feeling that the moment something starts being even remotely wrong with us, the Android is going to make it known.)"
     if exp_taisho_foyer_stairs == False:
+        $ shigeo_terms.append(c_airborne)
+        play sound4 "audio/sfx/gui_slots_confirm.ogg"
+        show screen notify(_("New Codex Entry: Airborne Transmission."))
         $ exp_taisho_foyer_stairs = True
         $ taisho_foyer_explore += 1
     $ flashlight_consume = True

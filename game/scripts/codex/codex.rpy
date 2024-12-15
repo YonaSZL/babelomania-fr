@@ -8,18 +8,18 @@ init python:
             self.owner = owner
 
     test_entry = Entry("Test title", "stuff", False, "Delphine")
-
 #SHIGEO CATEGORIES
 default shigeo_people = []
 default shigeo_events = []
 default shigeo_locations = []
 default shigeo_items = []
+default shigeo_terms = []
 #DELPHINE CATEGORIES
 default delphine_people = []
 default delphine_events = []
 default delphine_locations = []
 default delphine_items = []
-
+default delphine_terms = []
 default c_chateau_dubois = Entry("Chateau de Bois-le-Dumont", "scr_chateau_dubois", False, "Shigeo")
 default c_chateau_dubois_taisho = False
 
@@ -54,18 +54,18 @@ screen codex_main():
     on 'hide' action SetVariable("current_entry", None)
             
 screen categories():
-    
     if current_char == "shigeo":
         $ c_people = shigeo_people
         $ c_events = shigeo_events
         $ c_locations = shigeo_locations
         $ c_items = shigeo_items
+        $ c_terms = shigeo_terms
     else:
         $ c_people = delphine_people
         $ c_events = delphine_events
         $ c_locations = delphine_locations
         $ c_items = delphine_items
-
+        $ c_terms = delphine_terms
     viewport:
         style_prefix "cat"
         yalign 0.5 xpos 141 ysize 400 xsize 380 scrollbars "vertical" mousewheel True draggable True
@@ -103,6 +103,14 @@ screen categories():
                         hover_sound "audio/sfx/gui_hover.ogg"
                         activate_sound "audio/sfx/gui_confirm.ogg"
                         action [Hide("categories"),Show("entries",dissolve, c_items)]
+            if len(c_terms) > 0:
+                button:
+                        xysize(350,75)
+                        add "gui/codex/btn_bg.png"
+                        text _("Items" )
+                        hover_sound "audio/sfx/gui_hover.ogg"
+                        activate_sound "audio/sfx/gui_confirm.ogg"
+                        action [Hide("categories"),Show("entries",dissolve, c_terms)]
 
 screen entries(cat):
 

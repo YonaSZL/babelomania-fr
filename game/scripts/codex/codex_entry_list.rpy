@@ -8,7 +8,8 @@ default c_newspaper_clippings = Entry("Newspaper Clippings", "scr_newspaper_clip
 
 #Codex Entries for Shigeo
 
-
+#Terms
+default c_airborne = Entry("Airborne Transmission", "scr_airborne", False, "Shigeo")
 
 ##Codex Update Variables
 default c_chateau_dubois_config = False

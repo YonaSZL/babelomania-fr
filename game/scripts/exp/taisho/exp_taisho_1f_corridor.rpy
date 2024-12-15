@@ -134,7 +134,7 @@ label exp_taisho_1f_corridor_01_gaspard:
                 sh frown ".{w=0.3}.{w=0.3}.{w=0.5}could it be...?"
                 $ shigeo_events.append(c_taisho)
                 play sound4 "audio/sfx/gui_slots_confirm.ogg"
-                show screen notify(_("Codex Entry Updated: Chateau de Bois I."))
+                show screen notify(_("New Codex Entry: Taisho Era of Japan."))
                 ga surprise "<Could it be what?{w=0.5} Ah, whatever, I don't really care.>"
                 show Gaspard neutral
                 ga neutral "<I'm going to try and see if there's some way I can access the wiring, or something...{w=0.5} Mind taking this off my hands?>"
