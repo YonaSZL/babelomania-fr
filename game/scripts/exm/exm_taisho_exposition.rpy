@@ -27,9 +27,33 @@ screen taisho_exposition_explore():
         background None
         hover_sound "audio/sfx/gui_hover.ogg"
         activate_sound "audio/sfx/gui_confirm.ogg"
-        action Jump("exm_taisho_exposition_exposition")
+        action Jump("exm_taisho_exposition_scroll")
         if flashlight_use:
             tooltip _("Item Panel #02")
+        else:
+            tooltip _("?????")
+    
+    button:
+        pos(1475,717)
+        xysize(132,116)
+        background None
+        hover_sound "audio/sfx/gui_hover.ogg"
+        activate_sound "audio/sfx/gui_confirm.ogg"
+        action Jump("exm_taisho_exposition_sword")
+        if flashlight_use:
+            tooltip _("Item Panel #03")
+        else:
+            tooltip _("?????")
+    
+    button:
+        pos(201,494)
+        xysize(1412,158)
+        background None
+        hover_sound "audio/sfx/gui_hover.ogg"
+        activate_sound "audio/sfx/gui_confirm.ogg"
+        action Jump("exm_taisho_exposition_panel")
+        if flashlight_use:
+            tooltip _("Wooden Panel")
         else:
             tooltip _("?????")
     
