@@ -56,6 +56,15 @@ screen taisho_exposition_exam():
             tooltip _("Wooden Panel")
         else:
             tooltip _("?????")
+
+    button:
+        pos(1703,431)
+        xysize(217,649)
+        background None
+        hover_sound "audio/sfx/gui_hover.ogg"
+        activate_sound "audio/sfx/gui_confirm.ogg"
+        action Jump("exm_taisho_exposition_return")
+        tooltip _("Return")
     
     add "darkness_layers"
 
@@ -186,15 +195,45 @@ label exm_taisho_exposition_sword:
         sh_i neutral "(It's too dark.{w=0.3} I need to use the flashlight to look around.)"
     else:
         $ flashlight_consume = False
-        
         if exm_taisho_exposition_sword == False:
-            $ shigeo_terms.append(c_airborne)
-            play sound4 "audio/sfx/gui_slots_confirm.ogg"
-            show screen notify(_("New Codex Entry: Airborne Transmission."))
-            $ exm_taisho_exposition_sword = True
-            $ taisho_foyer_explore += 1
-            $ stat2 -= 1
-            $ move_time(0,1)
+            am surprise "Huh...{w=0.5} Maybe we've found a weapon."
+            sh neutral "You're talking about the {nw}"
+            play sound4 "audio/sfx/gui_hint.ogg"
+            extend "{b}Katana{/b}, I suppose?"
+            pause 0.5
+            play sound4 "audio/sfx/gui_phone_swipe.ogg"
+            show it_scroll with dissolve:
+                xalign 0.5 yalign 0.4
+            pause 0.5
+            nvl clear
+            d """{size=40}{b}Uchigatana"""
+            d """{size=32}{b}Location Obtained: Yamaguchi Prefecture, Japan, 1960"""
+            d """One of the most unique items in Abelard Du Bois's private collection, this Uchigatana -the Japanese word to refer to a Japanese single-bladed weapon- was not gifted or bought, but found."""
+            d """As detailed in his diaries, Du Bois found the weapon at an unspecified location in the Yamaguchi Prefecture during his travels in the region. Subsequent examinations date this particular weapon back to the 12th century."""
+            sh neutral "Bummer.{w=0.3} I still remember some {nw}"
+            play sound4 "audio/sfx/gui_hint.ogg"
+            extend "{b}Kendo{/b} from high school, but that is most definitely a prop.{w=0.3} There's no way that thing is almost a thousand years old."
+            ta bow "Very well observed, [shn].{w=0.3} The make of the scabbard and shape of the crossguard date it at least down to the Tokugawa period."
+            am neutral "Still, prop or not, better to have it than not, wouldn't you say?"
+            sh frown "Maybe...{w=0.5} It looks more heavy than it's worth carrying around, to be honest."
+            sh neutral "Let's say that if we don't find anything else suitable before leaving the building, we'll smash and grab it.{w=0.3} Deal?"
+            am smile "Deal."
+            if exm_taisho_exposition_sword == False:
+                $ exm_taisho_exposition_sword = True
+                $ taisho_foyer_explore += 1
+                $ stat2 -= 1
+                $ move_time(0,1)
+        else:
+            pause 0.5
+            play sound4 "audio/sfx/gui_phone_swipe.ogg"
+            show it_scroll with dissolve:
+                xalign 0.5 yalign 0.4
+            pause 0.5
+            nvl clear
+            d """{size=40}{b}Uchigatana"""
+            d """{size=32}{b}Location Obtained: Yamaguchi Prefecture, Japan, 1960"""
+            d """One of the most unique items in Abelard Du Bois's private collection, this Uchigatana -the Japanese word to refer to a Japanese single-bladed weapon- was not gifted or bought, but found."""
+            d """As detailed in his diaries, Du Bois found the weapon at an unspecified location in the Yamaguchi Prefecture during his travels in the region. Subsequent examinations date this particular weapon back to the 12th century."""
         $ flashlight_consume = True
     pause 1.0
     hide darkness_layers
@@ -226,21 +265,19 @@ label exm_taisho_exposition_panel:
 label exm_taisho_exposition_return:
     show darkness_layers
     $ renpy.block_rollback()
-    if flashlight_use == False:
-        sh_i neutral "(It's too dark.{w=0.3} I need to use the flashlight to look around.)"
-    else:
-        $ flashlight_consume = False
-        
-        if exm_taisho_exposition_scroll == False:
-            $ shigeo_terms.append(c_airborne)
-            play sound4 "audio/sfx/gui_slots_confirm.ogg"
-            show screen notify(_("New Codex Entry: Airborne Transmission."))
-            $ exm_taisho_exposition_scroll = True
-            $ taisho_foyer_explore += 1
-            $ stat2 -= 1
-            $ move_time(0,1)
-        $ flashlight_consume = True
     pause 1.0
-    hide darkness_layers
-    call screen taisho_exposition_exam
+    $ tabitha_return_variable = "return_taisho_foyer_explore"
+    scene taisho_foyer_base
+    show Amina neutral:
+        xpos 615 ypos 555 zoom 0.12
+    show Tabitha neutral brief:
+        xpos 1320 ypos 540 zoom 0.2
+    show darkness_layers        
     with dissolve
+    pause 0.5
+    scene taisho_foyer_base
+    show Amina neutral:
+        xpos 615 ypos 555 zoom 0.12
+    show Tabitha neutral brief:
+        xpos 1320 ypos 540 zoom 0.2
+    call screen taisho_foyer_explore
