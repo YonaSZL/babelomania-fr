@@ -244,7 +244,7 @@ label exp_taisho_foyer_exposition:
     play sound4 "audio/sfx/gui_hint.ogg"
     sh_i neutral "({b}Rising Sun - Abelard Du Bois and Japan{/b}...{w=0.5} Huh.)"
     sh_i frown "(Considering what went on upstairs, we'd better pay close attention to everything here.{w=0.3} And with multiple sets of eyes.)"
-    if taisho_foyer_explore < 4:
+    if exp_taisho_foyer_amina == False or exp_taisho_foyer_tabitha == False:
         sh_i surprise "(I should first check if Amina and the Android have managed to discern anything on their own before calling them over.)"
         $ flashlight_consume = True
         pause 1.0

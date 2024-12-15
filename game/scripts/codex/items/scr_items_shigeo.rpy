@@ -7,7 +7,7 @@ screen scr_babel_painting():
 
     text _("""{i}The subject intrigues me enough but unfortunately there's no information about the author, and his signature on the canvas is faded. I took a picture, I want to find out more.""") justify True
 
-screen scr_Tenugui():
+screen scr_tenugui():
     label _("Tenugui")
     add "images/cdx/its/004_Tenugui.png"
     text _("""Tenugui are traditional Japanese decorative towels, with their origins tracing back to the Heian period of Japanese history. Made out of woven silk or hemp and used in ceremonies and religious rituals Tenugui were originally an expensive commodity due to the intricate process of fabric-making, labor-intensive and costly in a period before mass production techniques.""") justify True
