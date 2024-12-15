@@ -256,6 +256,7 @@ label exm_taisho_exposition_panel:
         am neutral "That's a big block of text.{w=0.3} And we don't have a lot of light to read."
         sh neutral "Indeed...{w=0.5} Android, are you able to memorize this text?"
         ta bow "A simple matter.{w=0.3} Engaging textual processing protocol."
+        $ stat2 += 5
         pause 1.0
         ta neutral "Done.{w=0.3} Would you like me to summarize the contents for you, [shn]?"
         if exm_taisho_exposition_panel == False:
@@ -264,7 +265,6 @@ label exm_taisho_exposition_panel:
             show screen notify(_("New Codex Entry: Airborne Transmission."))
             $ exm_taisho_exposition_panel = True
             $ taisho_foyer_explore += 1
-            $ stat2 -= 1
         $ flashlight_consume = True
     pause 1.0
     hide darkness_layers
