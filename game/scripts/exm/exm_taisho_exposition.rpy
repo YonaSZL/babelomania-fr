@@ -143,20 +143,37 @@ label exm_taisho_exposition_scroll:
             play sound4 "audio/em/em_shock.ogg"
             show screen emote("surprise",0.15,0.5)
             sh shock "{b}Kishi Nobusuke{/b}!{w=0.3} Seriously?!"
-            am surprise "Who's that?{w=0.3} Someone important?"
-            ta neutral "Kishi Nobusuke.{w=0.3} Japanese bureaucrat and politician, born 13 November 1896 and deceased 7 August 1987."
-            
+            am neutral "Someone important, I assume?"
+            ta neutral "Kishi Nobusuke.{w=0.3} Japanese bureaucrat and politician, born 13 November 1896 and deceased 7 August 1987.{w=0.3} Served as Vice Minister for War Time Territory of Manchuria from 1935 to 1939.{w=0.3} Served as Prime Minister of Japan from 1957 to 1960."
+            ta bow "Common Aliases:{w=0.15} {font=gui/font/ShipporiMincho-Medium.ttf}昭和の妖怪{/font}, the 'Monster of the Showa Era', posthumously given."
+            am surprise sweatdrop "Huff!{w=0.3} A nice guy, I take?"
+            sh frown "Among other things, he was the founder of the LDP, the Liberal Democratic Party.{w=0.3} They governed Japan almost uninterrupted from the 1950s up until a couple decades ago."
+            sh surprise "And if Du Bois met him in 1960, that was literally the height of the man's power and prestige...{w=0.5} And right before his downfall."
+            am neutral ".{w=0.3}.{w=0.3}.{w=0.5}sounds like the kind of company Abelard Du Bois would keep."
+            sh neutral "I can't say I'm familiar with the history of the family as much as I would like.{w=0.3} Was Abelard Du Bois a controversial figure?"
+            am frown "For now, let's just say he didn't exactly make a lot of friends in north Africa...{w=0.5} We should focus on one old-timey bastard at a time."
+            sh frown "Agreed..."
             if exm_taisho_exposition_scroll == False:
-                $ shigeo_terms.append(c_airborne)
+                $ shigeo_people.append(c_kishi)
                 play sound4 "audio/sfx/gui_slots_confirm.ogg"
-                show screen notify(_("New Codex Entry: Airborne Transmission."))
+                show screen notify(_("New Codex Entry: Nobusuke Kishi."))
                 $ exm_taisho_exposition_scroll = True
                 $ taisho_foyer_explore += 1
                 $ stat2 -= 1
                 $ move_time(0,1)
         else:
-            $ flashlight_consume = True
+            play sound4 "audio/sfx/gui_phone_swipe.ogg"
+            show it_scroll with dissolve:
+                xalign 0.5 yalign 0.4
+            pause 0.5
+            nvl clear
+            d """{size=40}{b}Kakekijo (Hanging Scroll)"""
+            d """{size=32}{b}Location Obtained: Greater Tokyo Area, Japan, 1960"""
+            d """Featuring beautiful calligraphy inscriptions and a detailed illustration, this scroll comes from the personal collection of Abelard Du Bois."""
+            d """It's hypothized, but not confirmed, that this item may have been a gift from Kishi Nobusuke. The correspondence of the time places the meeting between Du Bois and the statesman in the same two days window as the acquisition of the scroll."""
+        $ flashlight_consume = True
     pause 1.0
+    hide it_scroll with dissolve
     hide darkness_layers
     call screen taisho_exposition_exam
     with dissolve
