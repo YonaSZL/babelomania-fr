@@ -82,6 +82,8 @@ screen tutorial_target_3():
         at time_flash(3.0)  ##add here when it should flash that it's going to disappear
 screen tutorial_target_final(rando_pos):
     style_prefix "target"
+    if stat3 <= 0:
+        timer 0.01 action [Hide("tutorial_target_final"), Hide("border"), Hide("shoot_tutorial_final"), Jump("game_over")]  ### + add health loss here    
     timer 6.0 action [Hide("tutorial_target_final", vpunch), SetVariable("stat3", stat3 - 20), Play("sound7", "audio/sfx/hp_down.ogg")]  ### + add health loss here
     if button_pos_1_start:
         timer 0.9 action Function(register_new_pos, button_pos_1_next, renpy.focus_coordinates()) repeat True

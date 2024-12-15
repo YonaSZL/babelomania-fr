@@ -159,6 +159,8 @@ screen overlay_stats():
             if stat4_show:
                 button:
                     xysize(353,38) xalign 0.5 yoffset 20
+                    if codex_active == False:
+                        xoffset 20
                     bar:
                         right_bar "gui/stats/empty.png"
                         left_bar "gui/stats/stat_1.png"

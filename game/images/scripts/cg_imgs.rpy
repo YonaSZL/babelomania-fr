@@ -2,6 +2,7 @@
 image title_01 = "gui/titlecards/ch_01.jpg"
 image title_02 = "gui/titlecards/ch_02.jpg"
 image title_03 = "gui/titlecards/ch_03.jpg"
+image game_over = "images/cgs/game_over.jpg"
 
 #Intro Sequence
 image white = Solid("#dddddd")

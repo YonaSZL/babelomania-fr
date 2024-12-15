@@ -249,7 +249,6 @@ label story_02_yokai:
     pause 1.0
     play sound4 "audio/sfx/gui_slots_confirm.ogg"
     $ stat4_show = True
-    $ stat3_show = False
     $ time_menu = False
     $ inventory_show = False
     $ codex_active = False
@@ -263,7 +262,6 @@ label story_02_yokai:
 label story_02_elevator_escape:
     $ renpy.block_rollback()
     $ default_mouse = "default"
-    $ stat3_show = True
     $ time_menu = True
     $ inventory_show = True
     $ codex_active = True
@@ -355,3 +353,25 @@ label story_02_happyday:
     pause 2.0
     $ renpy.block_rollback()
     jump story_03_android
+
+label game_over:
+    $ renpy.block_rollback()
+    $ stat1_show = False
+    $ stat2_show = False
+    $ stat3_show = False
+    $ stat4_show = False
+    stop music fadeout 0.5
+    stop LoNoise fadeout 0.5
+    stop LoNoise2 fadeout 0.5
+    stop LoNoise3 fadeout 0.5
+    pause 0.5
+    play sound "audio/se/body_slash.ogg"
+    scene blood with glitch_load
+    pause 2.0
+    scene black with Reveal
+    pause 1.0
+    scene game_over with Reveal
+    pause 3.0
+    scene black with Reveal
+    pause 1.5
+    jump splashscreen
