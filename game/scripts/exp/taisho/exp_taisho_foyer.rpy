@@ -84,7 +84,7 @@ label exp_taisho_foyer_door:
         play sound4 "audio/sfx/gui_hint.ogg"
         extend "{b}Great Courtyard{/b} of the château.{w=0.3} But I wouldn't call us home-free.)"
         sh_i frown "(I doubt whoever's doing this would be done with us so soon...{w=0.5} Considering the average class and job of the people at the reception, they have maybe twentyfour hours before anyone comes looking.)"
-        sh_i neutral "(Which means that, whatever their intentions, they only have so much time to squeeze us.{w=0.3} Which makes me nervous.)"
+        sh_i neutral "(Whatever their intentions, they only have so much time to squeeze us.{w=0.3} Which makes me nervous.)"
         sh_i frown sweat "(A building like the Taisho is a more controlled environment for them to plan around...{w=0.5} But at the same time, it limits the things they can throw at us.)"
         sh_i neutral sweat "(Once out in the open, we'll both lose a modicum of control over our surroundings.{w=0.3} And that worries me in a completely new way, considering...)"
         pause 1.5
@@ -200,7 +200,7 @@ label exp_taisho_foyer_tabitha:
     show Shigeo surprise
     sh surprise "I...{w=0.5} I don't know.{w=0.3} That's why we're...{w=0.5} We're looking around?"
     show Tabitha surprise
-    ta surprise "[shn], I must say that this course of action seems quite inefficient.{w=0.3} If we have no information regarding to the hiding place, shouldn't we focus on collecting that first?"
+    ta surprise "[shn], I must say that this course of action seems quite inefficient.{w=0.3} If we have no information regarding the hiding place, shouldn't we focus on collecting that first?"
     sh surprise "But that's what we're doing!{w=0.3} It's just that we also have no idea where that information may lay, and..."
     pause 1.0
     show Shigeo frown with dissolve
@@ -234,13 +234,15 @@ label exp_taisho_foyer_tabitha:
     with dissolve
 
 label exp_taisho_foyer_exposition:
+    show darkness_layers
     $ renpy.block_rollback()
     $ flashlight_consume = False
     pause 0.5
     sh_i surprise "(Hm.{w=0.3} An exposition.{w=0.3} Right, the estate does double as the Du Bois family museum, doesn't it?{w=0.3} And this...)"
     play sound4 "audio/sfx/gui_hint.ogg"
     sh_i neutral "({b}Rising Sun - Abelard Du Bois and Japan{/b}...{w=0.5} Huh.)"
-    sh_i frown "(Considering what went on upstairs, I better pay close attention to everything here.)"
+    sh_i frown "(Considering what went on upstairs, we'd better pay close attention to everything here...)"
+    $ tabitha_return_variable = "return_taisho_foyer_explore"
     if exp_taisho_foyer_exposition == False:
         $ exp_taisho_foyer_exposition = True
         $ taisho_foyer_explore += 1
@@ -255,18 +257,19 @@ label exp_taisho_foyer_exposition:
     call screen taisho_exposition_exam
 
 label exp_taisho_foyer_stairs:
+    show darkness_layers
     $ renpy.block_rollback()
     $ flashlight_consume = False
     pause 0.5
-    sh neutral "(The stairs to the upper floor...{w=0.5} Once we walked through and arrived on the second floor, the fire alarm stopped and with it, both doors locked again.)"
-    sh frown "(That can only be done manually, which confirms someone is observing us.{w=0.3} And I bet that they also disabled the automatic notification system for the authorities.)"
-    sh neutral sweat "(.{w=0.3}.{w=0.3}.{w=0.5}honestly, though, it might be for the best.{w=0.3} Gaspard couldn't break down the door when he was alive, I doubt his...{w=0.5} Simulacrum is going to fare any better.)"
-    sh frown sweat "(The thought of what happened to him sends shivers down my spine...{w=0.5} We'll need to play close attention to our surroundings.)"
-    sh neutral -sweat "(At least I'm pretty sure that whatever did this is {nw}"
+    sh_i neutral "(The stairs to the upper floor...{w=0.5} Once we walked through and arrived on the ground floor, the fire alarm stopped and with it, the doors locked again.)"
+    sh_i frown "(That can only be done manually, which confirms someone is observing us.{w=0.3} And I bet that they also disabled the automatic notification system for the authorities.)"
+    sh_i neutral sweat "(.{w=0.3}.{w=0.3}.{w=0.5}honestly, though, it might be for the best.{w=0.3} Gaspard couldn't break down the door when he was alive, I doubt his...{w=0.5} Simulacrum is going to fare any better.)"
+    sh_i frown sweat "(The thought of what happened to him sends shivers down my spine...{w=0.5} We'll need to play close attention to our surroundings.)"
+    sh_i neutral -sweat "(At least I'm pretty sure that whatever did this is {nw}"
     play sound4 "audio/sfx/gui_spook.ogg"
     extend "{b}anaerobic{/b}...{w=0.5} Otherwise both me and Amina would've been affected.)"
-    sh frown "(Of course, that takes for granted that we are not just going through the transformation at a wildly different rate than Gaspard did...{w=0.5} But I'd rather be an optimist, here.)"
-    sh neutral "(Also, I have the distinct feeling that the moment something starts being even remotely wrong with us, the Android is going to make it known.)"
+    sh_i frown "(Of course, that takes for granted that we are not just going through the transformation at a wildly different rate than Gaspard did...{w=0.5} But I'd rather be an optimist, here.)"
+    sh_i neutral "(Also, I have the distinct feeling that the moment something starts being even remotely wrong with us, the Android is going to make it known.)"
     if exp_taisho_foyer_stairs == False:
         $ shigeo_terms.append(c_airborne)
         play sound4 "audio/sfx/gui_slots_confirm.ogg"
@@ -275,5 +278,6 @@ label exp_taisho_foyer_stairs:
         $ taisho_foyer_explore += 1
     $ flashlight_consume = True
     pause 1.0
+    hide darkness_layers
     call screen taisho_foyer_explore
     with dissolve
