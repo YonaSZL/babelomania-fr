@@ -53,6 +53,6 @@ menu tabitha_cheat:
     "On second thought.":
         jump choose_services
 
-label return_taisho_foyer_explore:
+label return_taisho_exposition_explore:
     scene taisho_exposition_base
-    call screen taisho_foyer_explore
+    call screen taisho_exposition_exam

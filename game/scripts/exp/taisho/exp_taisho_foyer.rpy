@@ -261,7 +261,7 @@ label exp_taisho_foyer_exposition:
         show Tabitha smile
         ta smile "You're too kind, Arata-sama.{w=0.3} I must stress, though, that my specifications are not currently available for sale."
         sh neutral "Obviously not...{w=0.5} Anyway, let's see what <monsieur Du Bois> got up to in Japan."
-        $ tabitha_return_variable = "return_taisho_foyer_explore"
+        $ tabitha_return_variable = "return_taisho_exposition_explore"
         if exp_taisho_foyer_exposition == False:
             $ exp_taisho_foyer_exposition = True
             $ taisho_foyer_explore += 1
