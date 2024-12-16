@@ -107,8 +107,11 @@ screen about():
                 label _("{size=35}3D MODELLER") yalign 0.5
                 text "\"Reina\"" xoffset 15 yalign 0.5
             vbox:
-                label _("{size=35}PLOT, SCRIPT WRITER") yalign 0.5
+                label _("{size=35}CONCEPT, PLOT WRITER") yalign 0.5
                 text "\"Meinos Kaen\"" xoffset 15 yalign 0.5
+            vbox:
+                label _("{size=35}SCRIPT WRITERS") yalign 0.5
+                text "\"Meinos Kaen\", \"Yutte\"" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}STORY CONSULTANTS") yalign 0.5
                 text "\"Adori\"(aka Meinos Kaen's wife), {a=mailto:yona.sazela@gmail.com}\"Yona\"{/a}, Anthony \"Rosstail\" Bac" xoffset 15 yalign 0.5

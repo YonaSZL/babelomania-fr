@@ -126,7 +126,7 @@ screen gallery():
         hbox:
 
             ###This will make 5 buttons
-            for page in range(1, 6):
+            for page in range(1, 8):
                 textbutton "[page]" action SetVariable("gallery_page", page) hover_sound "audio/sfx/gui_hover.ogg" activate_sound "audio/sfx/gui_confirm.ogg"
 
             add "gui/button/dec_small.png" offset(10,9)
@@ -299,7 +299,7 @@ screen gal_6():
             add g.make_button("story_02_03", Transform("closed_folder", xysize=gallery_thumb_size))
             add g.make_button("story_02_04", Transform("fudo_appears_04", xysize=gallery_thumb_size))
 
-screen gal_6():
+screen gal_7():
 
     fixed:
         xsize 1500 xalign 0.5 xoffset -150
