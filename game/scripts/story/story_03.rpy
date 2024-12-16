@@ -899,6 +899,7 @@ label story_03_bedrooms:
     scene black
     pause 3.0
     $ renpy.block_rollback()
+    $ persistent.early_access_01_complete = True
     pause 2.0
     play music "audio/bgm/babelomania.ogg"
     call screen ending with dissolve

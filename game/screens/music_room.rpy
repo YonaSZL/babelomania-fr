@@ -83,6 +83,45 @@ init python:
         unlock_condition="True",
     )
 
+    my_room.add(
+        name=_("Expired Wellness"),
+        path="audio/bgm/flambas_lvl3.ogg",
+        artist="Sazameki Street",
+        art="gui/music_room/MyGameOST.png",
+        unlock_condition="persistent.early_access_01_complete",
+    )
+
+    my_room.add(
+        name=_("Fudo Myoo"),
+        path="audio/bgm/fudo_myoo.ogg",
+        artist="OddTillTheEnd",
+        art="gui/music_room/MyGameOST.png",
+        unlock_condition="persistent.early_access_01_complete",
+    )
+
+    my_room.add(
+        name=_("Measure of Ningen"),
+        path="audio/bgm/measure_of_ningen.ogg",
+        artist="Nailik",
+        art="gui/music_room/MyGameOST.png",
+        unlock_condition="persistent.early_access_01_complete",
+    )
+
+    my_room.add(
+        name=_("Lonely Piano"),
+        path="audio/bgm/lonely_piano.ogg",
+        artist="Ayato Sound Create",
+        art="gui/music_room/MyGameOST.png",
+        unlock_condition="True",
+    )
+
+    my_room.add(
+        name=_("Setting Sun"),
+        path="audio/bgm/setting_sun.ogg",
+        artist="Nailik",
+        art="gui/music_room/MyGameOST.png",
+        unlock_condition="persistent.early_access_01_complete",
+    )
 
 
 ################################################################################
