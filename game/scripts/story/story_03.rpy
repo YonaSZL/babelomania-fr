@@ -766,7 +766,9 @@ label story_03_bedrooms:
     pause 0.5
     play sound "audio/se/door_slide.ogg"
     pause 0.1
-    scene taisho_foyer_base
+    scene black
+    show taisho_foyer_cutout
+    show taisho_foyer_hole
     show Amina neutral:
         xpos 810 ypos 555 zoom 0.12
     show Shigeo neutral:
@@ -778,7 +780,9 @@ label story_03_bedrooms:
     show Shigeo surprise
     sh surprise "The story?{w=0.3} What do you mean?"
     pause 1.0
-    scene taisho_foyer_base
+    scene black
+    show taisho_foyer_cutout
+    show taisho_foyer_hole
     show darkness_layers
     show Amina surprise at am_big:
         xalign 0.75
@@ -870,7 +874,27 @@ label story_03_bedrooms:
     sh nulla "It could be alien magic, for all I know...{w=0.5} But yeah, let's say it was a virus."
     show Shigeo neutral -sweat
     sh nulla "Why would that point at her?"
+    show taisho_foyer_cutout:
+        linear 5.0 xoffset -35
     stop music fadeout 3.5
+    $ quick_menu = False
+    $ time_menu = False
+    $ stat1_show = False
+    $ stat2_show = False
     am nulla "Because Christine Du Bois is the CEO of the most pre-eminent bio-engineering firm on the continent..."
     pause 0.5
     show Amina surprise -sweat with dissolve
+    am nulla "She's the CEO of {nw}"
+    play sound4 "audio/sfx/gui_spook.ogg"
+    extend "{b}Flambas{/b}.{w=0.3} And Francesco w-"
+    play sound2 "audio/se/fglitch_attack.ogg"
+    pause 0.2
+    show Amina shock sweat
+    show Shigeo shock sweat
+    pause 1.0
+    scene black
+    pause 3.0
+    $ renpy.block_rollback()
+    pause 2.0
+    play music "audio/bgm/babelomania.ogg"
+    call screen ending with dissolve

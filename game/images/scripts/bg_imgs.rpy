@@ -112,6 +112,8 @@ layeredimage taisho_foyer:
     group top:
         attribute top_dark default:
             "darkness_layers"
+image taisho_foyer_hole = "images/bgs/taisho/taisho_foyer_hole.png"
+image taisho_foyer_cutout = "images/bgs/taisho/taisho_foyer_cutout.png"
 
 image taisho_foyer_door_base = "images/bgs/taisho/taisho_foyer_door.jpg"
 layeredimage taisho_foyer_door:
