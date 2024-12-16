@@ -725,3 +725,152 @@ label return_taisho_foyer_explore:
     show Tabitha neutral brief:
         xpos 1320 ypos 540 zoom 0.2
     call screen taisho_foyer_explore
+
+label story_03_bedrooms:
+    $ renpy.block_rollback()
+    $ flashlight_consume = False
+    scene taisho_foyer_base
+    show darkness_layers
+    with dissolve
+    pause 1.0
+    am frown "How should we do this, then?"
+    ta frown "[shn], please allow me to verify the safety of the new area first."
+    sh frown "That was my idea...{w=0.5} But don't wander too far in, alright?"
+    pause 0.5
+    show Amina frown behind darkness_layers:
+        xpos 810 ypos 555 zoom 0.12
+    show Shigeo frown behind darkness_layers:
+        xpos 540 ypos 535 zoom 0.12
+    show Tabitha neutral brief behind darkness_layers:
+        xpos 699 ypos 490 zoom 0.12
+    with dissolve
+    sh frown "Just check the first part of the corridor, see if any of the doors are open and then come back.{w=0.3} Got it?"
+    ta neutral "Yes, [shn].{w=0.3} I will be back shortly."
+    show Tabitha frown
+    ta frown "Please do not leave the immediate vicinity."
+    sh neutral "We couldn't even if we wanted to, Android...{w=0.5} Just go."
+    show Tabitha bow
+    stop music fadeout 3.5
+    ta bow "Acknowledged.{w=0.3} If you'll excuse me..."
+    play sound "audio/se/door_slide.ogg"
+    pause 0.2
+    scene taisho_foyer_door_base
+    show Amina neutral:
+        xpos 810 ypos 555 zoom 0.12
+    show Shigeo neutral:
+        xpos 540 ypos 535 zoom 0.12
+    show Tabitha bow brief:
+        xpos 699 ypos 490 zoom 0.12
+    show darkness_layers
+    with dissolve
+    pause 0.5
+    play sound "audio/se/door_slide.ogg"
+    pause 0.1
+    scene taisho_foyer_base
+    show Amina neutral:
+        xpos 810 ypos 555 zoom 0.12
+    show Shigeo neutral:
+        xpos 540 ypos 535 zoom 0.12
+    show darkness_layers
+    with dissolve
+    pause 1.5
+    am neutral "So...{w=0.5} What's the story?"
+    show Shigeo surprise
+    sh surprise "The story?{w=0.3} What do you mean?"
+    pause 1.0
+    scene taisho_foyer_base
+    show darkness_layers
+    show Amina surprise at am_big:
+        xalign 0.75
+    show Shigeo neutral at sh_big:
+        xalign 0.35
+    with Reveal
+    pause 0.5
+    am nulla "Correct me if I'm wrong, but I feel a certain animosity directed squarely at Tabitha."
+    show Shigeo frown
+    sh nulla "Oh, that...{w=0.5} There's no animosity.{w=0.3} It's a machine, emotions are reserved for people."
+    show Amina smile
+    am nulla "<Au contraire>, [shn].{w=0.3} She may not react to it like an actual human being would, but there's no mistaking the undercurrent of strong hostility you feel at her presence."
+    pause 1.5
+    show Shigeo pain with dissolve
+    show screen emote("frustration",0.15,0.5)
+    sh nulla "Ugh...{w=0.5} Yeah, I can't deny it.{w=0.3} I'm sorry, I should be honest with you.{w=0.5} We need to be able to trust each other."
+    am nulla "It's alright...{w=0.5} So?{w=0.3} I mean, it's pretty clear you dislike her."
+    show Amina surprise
+    am nulla "And since you have never met her before tonight, I can only assume you have issues with Androids in general."
+    sh nulla "I do...{w=0.5} It's because of something job related, so I can't really go into detail."
+    show Amina neutral
+    show Shigeo neutral
+    sh nulla "Suffice to say, I think Androids are inherently dangerous.{w=0.3} I can see the benefits in their existence, but their roles, shapes and capabilities should be severely limited."
+    show Shigeo frown sweat
+    sh nulla "Tabitha is like something out of my worst nightmares...{w=0.5} Human looking, extremely powerful and capable of using violence.{w=0.3} When this is over and done with, I will make sure Professor Habiki is arrested and the Android is dismantled."
+    show Amina surprise
+    am nulla "Despite the fact that the guy may have literally sent her to protect you?" 
+    show Shigeo surprise
+    pause 1.5
+    show Shigeo pain -sweat with dissolve
+    sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}we'll see.{w=0.3} Anyway, speaking of authorities."
+    show Shigeo neutral
+    play music "audio/bgm/shadows_whisper.ogg"
+    sh nulla "Can I pick your brain about the invitees, since we have a moment?{w=0.3}"
+    show Amina neutral
+    am nulla "Sure.{w=0.3} Trying to whittle the list of suspects down?"
+    show Shigeo frown
+    sh nulla "Yeah...{w=0.5} Here's the thing.{w=0.3} The puzzle, the research they made on us, hijacking the security systems...{w=0.5} This was prepared in advance."
+    show Shigeo neutral
+    sh nulla "The château is still owned by the family, correct?{w=0.3} Although I suspect they don't run it themselves anymore."
+    am nulla "Correct.{w=0.3} The estate is much bigger than just this place.{w=0.3} I remember Gaspard talking about how they have a big team of people running everything."
+    show Shigeo frown
+    sh nulla "Got it...{w=0.5} Thing is, organizing something like this wouldn't have been possible without knowing someone on the inside...{w=0.5} Or {i}being{/i} someone on the inside."
+    show Shigeo neutral
+    show Amina surprise
+    sh nulla "We're looking for someone involved in the running of the Du Bois estate.{w=0.3} Or someone real chummy with any of its members."
+    am nulla "Or someone with enough power and influence to buy that collaboration.{w=0.3} And we're taking for granted that they should be at the estate?"
+    sh nulla "Yes.{w=0.3} Not only to oversee the proceedings but also to give themselves an alibi."
+    am nulla "You think they'd need one...?"
+    show Shigeo frown
+    sh nulla "Of course...{w=0.5} No matter what happens tonight, it will have a huge fallout.{w=0.3} Europol will be all over this."
+    show Amina sad
+    show Shigeo neutral
+    sh nulla "If our culprit has any sense of self-preservation, whatever their motives...{w=0.5} They will need an alibi.{w=0.3} So?"
+    am nulla ".{w=0.3}.{w=0.3}.{w=0.5}I really wish Gaspard was still here.{w=0.3} Off the top of my head?"
+    show Amina neutral
+    am nulla "There are three people that immediately come to mind...{w=0.5} One is {nw}"
+    play sound4 "audio/sfx/gui_spook.ogg"
+    extend "{b}Odis Graf{/b}." #The Count/Earl who sleeps
+    show Shigeo surprise
+    play sound "audio/em/em_surprise.ogg"
+    show screen emote("surprise",0.15,0.5)
+    sh nulla "Odis...?{w=0.3} You mean the politician?"
+    am nulla "Exactly him.{w=0.3} Delphine's father is a politician, and they've been campaigning at an union level for years, now.{w=0.3} You can imagine why."
+    show Shigeo frown
+    sh nulla "So it really {i}was{/i} him...{w=0.5} I thought he never went anywhere without an armed escort."
+    am nulla "Who says he didn't?{w=0.3} I saw him come in with at least one pretty intimidating looking guy, and someone {i}must{/i} have moved us around after we passed out.{w=0.3} Moving on..."
+    show Amina neutral
+    am nulla "Number two would be...{w=0.5} {nw}"
+    play sound4 "audio/sfx/gui_spook.ogg"
+    extend "{b}Gaspard's father, Jacques Faucigny{/b}." #Usurper Faucigny
+    show Shigeo surprise sweatdrop
+    sh nulla "Gaspard's father...?{w=0.5} Amina, are you sure?{w=0.3} That would imply..."
+    show Amina angry
+    am nulla "I know what it would imply.{w=0.3} And I wouldn't put it past Jacques Faucigny."
+    show Amina neutral
+    am nulla "He's got a tight work relationship with the Du Bois, and Gaspard took after him in the social butterfly habits...{w=0.5} If we're looking at anyone who could know the ins and outs of everyone at the party, he fits the bill."
+    show Shigeo sad -sweatdrop
+    sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}I can't deny the logic in that.{w=0.5} And number three?"
+    show Amina surprise
+    am nulla "Number three...{w=0.5} Number three is the only Du Bois who's actively involved in managing the family estate.{w=0.3} {nw}"
+    play sound4 "audio/sfx/gui_spook.ogg"
+    extend "{b}Christine Du Bois{/b}.{w=0.3} And there's something else." #Christine is the doc Hunk needed to bring the G Virus to.
+    show Shigeo surprise
+    sh nulla "Something else?{w=0.3} What do you mean?"
+    show Amina neutral sweat
+    am nulla "Gaspard...{w=0.5} His mutation.{w=0.3} If we assume that it was because of some kind of infection?{w=0.3} It points at her."
+    show Shigeo frown sweat
+    sh nulla "It could be alien magic, for all I know...{w=0.5} But yeah, let's say it was a virus."
+    show Shigeo neutral -sweat
+    sh nulla "Why would that point at her?"
+    stop music fadeout 3.5
+    am nulla "Because Christine Du Bois is the CEO of the most pre-eminent bio-engineering firm on the continent..."
+    pause 0.5
+    show Amina surprise -sweat with dissolve

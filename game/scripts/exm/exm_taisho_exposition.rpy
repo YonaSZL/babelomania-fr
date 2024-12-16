@@ -46,17 +46,18 @@ screen taisho_exposition_exam():
             tooltip _("?????")
     
     if exm_taisho_exposition_tenugui and exm_taisho_exposition_scroll and exm_taisho_exposition_sword:
-        button:
-            pos(201,494)
-            xysize(1412,158)
-            background None
-            hover_sound "audio/sfx/gui_hover.ogg"
-            activate_sound "audio/sfx/gui_confirm.ogg"
-            action Jump("exm_taisho_exposition_panel")
-            if flashlight_use:
-                tooltip _("Wooden Panel")
-            else:
-                tooltip _("?????")
+        if exm_taisho_exposition_panel == False:
+            button:
+                pos(201,494)
+                xysize(1412,158)
+                background None
+                hover_sound "audio/sfx/gui_hover.ogg"
+                activate_sound "audio/sfx/gui_confirm.ogg"
+                action Jump("exm_taisho_exposition_panel")
+                if flashlight_use:
+                    tooltip _("Wooden Panel")
+                else:
+                    tooltip _("?????")
 
     button:
         pos(1703,431)
@@ -269,11 +270,13 @@ label exm_taisho_exposition_panel:
         ta surprise "It reports that Abelard Du Bois was in Tokyo on the {nw}"
         play sound4 "audio/sfx/gui_spook.ogg"
         extend "{b}19th of May 1960{/b}, during the Anpo Protests."
-        sh surprise sweat "The {b}May 19th Incident{/b}...{w=0.5} Alright, that settles it.{w=0.3} The solution to the puzzle must concern his connection to Kishi."
+        sh surprise sweat "The {i}May 19th Incident{/i}...{w=0.5} Alright, that settles it.{w=0.3} The solution to the puzzle must concern his connection to Kishi."
+        am neutral "Alright, so we should have all the pieces needed to find the answer...{w=0.5} We're missing the question, though."
+        sh neutral "Indeed...{w=0.5} See anything else of interest in this room?"
+        am surprise "Negative...{w=0.5} What do you say, should we inspect the area with the bedrooms next?"
+        sh frown "Feels like a good time to extend our area of research, yes."
+        hide it_japan_panel with dissolve
         if exm_taisho_exposition_panel == False:
-            $ shigeo_terms.append(c_airborne)
-            play sound4 "audio/sfx/gui_slots_confirm.ogg"
-            show screen notify(_("New Codex Entry: Airborne Transmission."))
             $ exm_taisho_exposition_panel = True
             $ taisho_foyer_explore += 1
         $ flashlight_consume = True
@@ -287,17 +290,20 @@ label exm_taisho_exposition_return:
     $ renpy.block_rollback()
     pause 1.0
     $ tabitha_return_variable = "return_taisho_foyer_explore"
-    scene taisho_foyer_base
-    show Amina neutral:
-        xpos 615 ypos 555 zoom 0.12
-    show Tabitha neutral brief:
-        xpos 1320 ypos 540 zoom 0.2
-    show darkness_layers        
-    with dissolve
-    pause 0.5
-    scene taisho_foyer_base
-    show Amina neutral:
-        xpos 615 ypos 555 zoom 0.12
-    show Tabitha neutral brief:
-        xpos 1320 ypos 540 zoom 0.2
-    call screen taisho_foyer_explore
+    if taisho_foyer_explore >= 9:
+        jump story_03_bedrooms
+    else:
+        scene taisho_foyer_base
+        show Amina neutral:
+            xpos 615 ypos 555 zoom 0.12
+        show Tabitha neutral brief:
+            xpos 1320 ypos 540 zoom 0.2
+        show darkness_layers        
+        with dissolve
+        pause 0.5
+        scene taisho_foyer_base
+        show Amina neutral:
+            xpos 615 ypos 555 zoom 0.12
+        show Tabitha neutral brief:
+            xpos 1320 ypos 540 zoom 0.2
+        call screen taisho_foyer_explore
