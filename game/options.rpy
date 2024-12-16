@@ -42,7 +42,7 @@ define config.save_directory = "babelomania-1725385568"
 
 ## The version of the game.
 
-define config.version = "1.07"
+define config.version = "1.1"
 
 ## Custom Mouse Icon
 define config.mouse = {

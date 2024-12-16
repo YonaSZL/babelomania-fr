@@ -84,6 +84,21 @@ init python:
     g.button("story_01_11")
     g.unlock_image("gaspard_tear")
 
+    g.button("story_02_01")
+    g.unlock_image("francesco_flashback")
+
+    g.button("story_02_02")
+    g.unlock_image("open_folder")
+
+    g.button("story_02_03")
+    g.unlock_image("closed_folder")
+
+    g.button("story_02_04")
+    g.unlock_image("fudo_appears_04")
+
+    g.button("story_03_01")
+    g.unlock_image("gaspard_flex")
+
 ###Test CG
 image test = "gui/test_cg.png"
 
@@ -268,3 +283,33 @@ screen gal_5():
             add g.make_button("story_01_09", Transform("gaspard_focus_02", xysize=gallery_thumb_size))
             add g.make_button("story_01_10", Transform("gaspard_rip", xysize=gallery_thumb_size))
             add g.make_button("story_01_11", Transform("gaspard_tear", xysize=gallery_thumb_size))
+
+screen gal_6():
+
+    fixed:
+        xsize 1500 xalign 0.5 xoffset -150
+
+        grid 2 2:
+            style_prefix "slot"
+            xoffset 40
+
+
+            add g.make_button("story_02_01", Transform("francesco_flashback", xysize=gallery_thumb_size))
+            add g.make_button("story_02_02", Transform("open_folder", xysize=gallery_thumb_size))
+            add g.make_button("story_02_03", Transform("closed_folder", xysize=gallery_thumb_size))
+            add g.make_button("story_02_04", Transform("fudo_appears_04", xysize=gallery_thumb_size))
+
+screen gal_6():
+
+    fixed:
+        xsize 1500 xalign 0.5 xoffset -150
+
+        grid 2 2:
+            style_prefix "slot"
+            xoffset 40
+
+
+            add g.make_button("story_03_01", Transform("gaspard_flex", xysize=gallery_thumb_size))
+            #add g.make_button("story_02_02", Transform("open_folder", xysize=gallery_thumb_size))
+            #add g.make_button("story_02_03", Transform("closed_folder", xysize=gallery_thumb_size))
+            #add g.make_button("story_02_04", Transform("fudo_appears_04", xysize=gallery_thumb_size))
