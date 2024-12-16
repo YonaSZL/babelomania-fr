@@ -738,11 +738,11 @@ label story_03_bedrooms:
     sh frown "That was my idea...{w=0.5} But don't wander too far in, alright?"
     pause 0.5
     show Amina frown behind darkness_layers:
-        xpos 810 ypos 555 zoom 0.12
+        xpos 650 ypos 555 zoom 0.12
     show Shigeo frown behind darkness_layers:
         xpos 540 ypos 535 zoom 0.12
     show Tabitha neutral brief behind darkness_layers:
-        xpos 699 ypos 490 zoom 0.12
+        xpos 810 ypos 525 zoom 0.12
     with dissolve
     sh frown "Just check the first part of the corridor, see if any of the doors are open and then come back.{w=0.3} Got it?"
     ta neutral "Yes, [shn].{w=0.3} I will be back shortly."
@@ -752,15 +752,16 @@ label story_03_bedrooms:
     show Tabitha bow
     stop music fadeout 3.5
     ta bow "Acknowledged.{w=0.3} If you'll excuse me..."
+    $ tabitha_cmp = False
     play sound "audio/se/door_slide.ogg"
     pause 0.2
-    scene taisho_foyer_door_base
+    scene taisho_foyer_open_base
     show Amina neutral:
-        xpos 810 ypos 555 zoom 0.12
+        xpos 650 ypos 555 zoom 0.12
     show Shigeo neutral:
         xpos 540 ypos 535 zoom 0.12
     show Tabitha bow brief:
-        xpos 699 ypos 490 zoom 0.12
+        xpos 810 ypos 525 zoom 0.12
     show darkness_layers
     with dissolve
     pause 0.5
@@ -770,7 +771,7 @@ label story_03_bedrooms:
     show taisho_foyer_cutout
     show taisho_foyer_hole
     show Amina neutral:
-        xpos 810 ypos 555 zoom 0.12
+        xpos 650 ypos 555 zoom 0.12
     show Shigeo neutral:
         xpos 540 ypos 535 zoom 0.12
     show darkness_layers
@@ -785,9 +786,9 @@ label story_03_bedrooms:
     show taisho_foyer_hole
     show darkness_layers
     show Amina surprise at am_big:
-        xalign 0.75
-    show Shigeo neutral at sh_big:
-        xalign 0.35
+        xalign 0.25
+    show Shigeo surprise at sh_big:
+        xalign 0.8
     with Reveal
     pause 0.5
     am nulla "Correct me if I'm wrong, but I feel a certain animosity directed squarely at Tabitha."
@@ -797,12 +798,13 @@ label story_03_bedrooms:
     am nulla "<Au contraire>, [shn].{w=0.3} She may not react to it like an actual human being would, but there's no mistaking the undercurrent of strong hostility you feel at her presence."
     pause 1.5
     show Shigeo pain with dissolve
-    show screen emote("frustration",0.15,0.5)
+    show screen emote("frustration",0.7,0.05)
+    play sound "audio/em/em_frust.ogg"
     sh nulla "Ugh...{w=0.5} Yeah, I can't deny it.{w=0.3} I'm sorry, I should be honest with you.{w=0.5} We need to be able to trust each other."
     am nulla "It's alright...{w=0.5} So?{w=0.3} I mean, it's pretty clear you dislike her."
     show Amina surprise
     am nulla "And since you have never met her before tonight, I can only assume you have issues with Androids in general."
-    sh nulla "I do...{w=0.5} It's because of something job related, so I can't really go into detail."
+    sh nulla "I do...{w=0.5} It's because of a job related event, so I can't really go into detail."
     show Amina neutral
     show Shigeo neutral
     sh nulla "Suffice to say, I think Androids are inherently dangerous.{w=0.3} I can see the benefits in their existence, but their roles, shapes and capabilities should be severely limited."
@@ -818,7 +820,7 @@ label story_03_bedrooms:
     play music "audio/bgm/shadows_whisper.ogg"
     sh nulla "Can I pick your brain about the invitees, since we have a moment?{w=0.3}"
     show Amina neutral
-    am nulla "Sure.{w=0.3} Trying to whittle the list of suspects down?"
+    am nulla "Sure.{w=0.3} Trying to whittle down the list of suspects?"
     show Shigeo frown
     sh nulla "Yeah...{w=0.5} Here's the thing.{w=0.3} The puzzle, the research they made on us, hijacking the security systems...{w=0.5} This was prepared in advance."
     show Shigeo neutral
@@ -829,11 +831,11 @@ label story_03_bedrooms:
     show Shigeo neutral
     show Amina surprise
     sh nulla "We're looking for someone involved in the running of the Du Bois estate.{w=0.3} Or someone real chummy with any of its members."
-    am nulla "Or someone with enough power and influence to buy that collaboration.{w=0.3} And we're taking for granted that they should be at the estate?"
+    am nulla "Or someone with enough power and influence to buy that collaboration.{w=0.3} And we're taking for granted that they would have been at the ceremony?"
     sh nulla "Yes.{w=0.3} Not only to oversee the proceedings but also to give themselves an alibi."
     am nulla "You think they'd need one...?"
     show Shigeo frown
-    sh nulla "Of course...{w=0.5} No matter what happens tonight, it will have a huge fallout.{w=0.3} Europol will be all over this."
+    sh nulla "Of course...{w=0.5} No matter what, tonight's events will have a huge fallout.{w=0.3} Europol will be all over this, that's for sure."
     show Amina sad
     show Shigeo neutral
     sh nulla "If our culprit has any sense of self-preservation, whatever their motives...{w=0.5} They will need an alibi.{w=0.3} So?"
@@ -844,12 +846,12 @@ label story_03_bedrooms:
     extend "{b}Odis Graf{/b}." #The Count/Earl who sleeps
     show Shigeo surprise
     play sound "audio/em/em_surprise.ogg"
-    show screen emote("surprise",0.15,0.5)
+    show screen emote("surprise",0.7,0.05)
     sh nulla "Odis...?{w=0.3} You mean the politician?"
-    am nulla "Exactly him.{w=0.3} Delphine's father is a politician, and they've been campaigning at an union level for years, now.{w=0.3} You can imagine why."
+    am nulla "Exactly him.{w=0.3} Delphine's father is in politics as well, and they've been campaigning at an union level for years, now.{w=0.3} You can imagine why."
     show Shigeo frown
     sh nulla "So it really {i}was{/i} him...{w=0.5} I thought he never went anywhere without an armed escort."
-    am nulla "Who says he didn't?{w=0.3} I saw him come in with at least one pretty intimidating looking guy, and someone {i}must{/i} have moved us around after we passed out.{w=0.3} Moving on..."
+    am nulla "Who says he didn't?{w=0.3} I saw him come in with at least one intimidating looking guy, and someone {i}must{/i} have moved us around after we passed out.{w=0.3} Moving on..."
     show Amina neutral
     am nulla "Number two would be...{w=0.5} {nw}"
     play sound4 "audio/sfx/gui_spook.ogg"
@@ -859,7 +861,7 @@ label story_03_bedrooms:
     show Amina angry
     am nulla "I know what it would imply.{w=0.3} And I wouldn't put it past Jacques Faucigny."
     show Amina neutral
-    am nulla "He's got a tight work relationship with the Du Bois, and Gaspard took after him in the social butterfly habits...{w=0.5} If we're looking at anyone who could know the ins and outs of everyone at the party, he fits the bill."
+    am nulla "He's got a tight work relationship with the Du Bois, and Gaspard took after him in the social butterfly habits...{w=0.5} If we're looking at anyone who could know the ins and outs of everyone at the wedding, he fits the bill."
     show Shigeo sad -sweatdrop
     sh nulla ".{w=0.3}.{w=0.3}.{w=0.5}I can't deny the logic in that.{w=0.5} And number three?"
     show Amina surprise
@@ -881,6 +883,8 @@ label story_03_bedrooms:
     $ time_menu = False
     $ stat1_show = False
     $ stat2_show = False
+    $ codex_active = False
+    $ inventory_show = False
     am nulla "Because Christine Du Bois is the CEO of the most pre-eminent bio-engineering firm on the continent..."
     pause 0.5
     show Amina surprise -sweat with dissolve

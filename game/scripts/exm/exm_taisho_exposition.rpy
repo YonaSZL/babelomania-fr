@@ -256,7 +256,7 @@ label exm_taisho_exposition_panel:
             xalign 0.5 yalign 0.4
         pause 1.0
         am neutral "That's a big block of text.{w=0.3} And we don't have a lot of light to read."
-        sh neutral "Indeed...{w=0.5} Android, are you able to memorize this text?"
+        sh neutral "Indeed...{w=0.5} Android, are you able to memorize this?"
         ta bow "A simple matter.{w=0.3} Engaging textual processing protocol."
         $ stat2 += 5
         pause 1.0
@@ -266,11 +266,11 @@ label exm_taisho_exposition_panel:
         ta bow "The panel features a brief account of Abelard Du Bois's travels in Japan in the year 1960.{w=0.3} The text states that the reasons behind the trip were of economic nature, hoping that Du Bois could support attempts by Japanese businesses to expand their export foothold in Europe."
         ta surprise "I need to add that historically, this did not happen."
         sh surprise "Alright...{w=0.5} Anything else?{w=0.3} Any dates, or anecdotes?"
-        ta neutral "The text also mentions how Du Bois took the occasion to travel the country and familiarize himself with its beauty and people.{w=0.3} And as a last addendum..."
+        ta neutral "The text also mentions how Du Bois took the opportunity to travel the country and familiarize himself with its natural beauty and hard-working people.{w=0.3} And as a last addendum..."
         ta surprise "It reports that Abelard Du Bois was in Tokyo on the {nw}"
         play sound4 "audio/sfx/gui_spook.ogg"
         extend "{b}19th of May 1960{/b}, during the Anpo Protests."
-        sh surprise sweat "The {i}May 19th Incident{/i}...{w=0.5} Alright, that settles it.{w=0.3} The solution to the puzzle must concern his connection to Kishi."
+        sh surprise "The {i}May 19th Incident{/i}...{w=0.5} Alright, that settles it.{w=0.3} The solution to the puzzle must concern his connection to Kishi."
         am neutral "Alright, so we should have all the pieces needed to find the answer...{w=0.5} We're missing the question, though."
         sh neutral "Indeed...{w=0.5} See anything else of interest in this room?"
         am surprise "Negative...{w=0.5} What do you say, should we inspect the area with the bedrooms next?"

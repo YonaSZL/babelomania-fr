@@ -104,7 +104,7 @@ layeredimage taisho_1f_library:
             "darkness_layers"
 
 image taisho_foyer_base = "images/bgs/taisho/taisho_foyer.jpg"
-image taisho_foyer_door_base = "images/bgs/taisho/taisho_foyer_door.jpg"
+image taisho_foyer_open_base = "images/bgs/taisho/taisho_foyer_open.jpg"
 layeredimage taisho_foyer:
     group bottom:
         attribute base default:

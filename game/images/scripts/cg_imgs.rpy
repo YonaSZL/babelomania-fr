@@ -6,6 +6,7 @@ image game_over = "images/cgs/game_over.jpg"
 
 #Intro Sequence
 image white = Solid("#dddddd")
+image black = Solid("#000000")
 image blood = Solid("#770001")
 
 image babelomania_logo = At("gui/babelomania_logo.png", glow_outline(4, "#951B14"))

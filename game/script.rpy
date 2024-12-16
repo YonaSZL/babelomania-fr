@@ -227,8 +227,8 @@ init -1:
 label splashscreen:
     scene black
     pause 1.5
-    if persistent.firstopen == False:
-        call screen language with dissolve
+    #if persistent.firstopen == False:
+    #    call screen language with dissolve
     if persistent.firstvoice == False:
         call screen va_choice with dissolve
     scene black
