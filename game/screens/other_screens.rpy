@@ -133,7 +133,7 @@ screen about():
                 text "{a=https://feniksdev.com}Feniks{/a}, {a=https://remort-studios.itch.io/}Nai @ MakeVisualNovels{/a}" xoffset 15 yalign 0.5
             vbox:
                 label _("{size=35}ADDITIONAL IMAGES") yalign 0.5
-                text "{a=https://www.flickr.com/photos/40595948@N00/5048729493}A. Davey{/a}" xoffset 15 yalign 0.5
+                text "{a=https://www.flickr.com/photos/40595948@N00/5048729493}A. Davey{/a}({a=https://creativecommons.org/licenses/by/2.0/}LICENCE{/a}), {a=https://www.flickr.com/people/11414181@N08}Elstner Hilton{/a}({a=https://creativecommons.org/licenses/by/2.0/}LICENCE{/a}), {a=https://www.flickr.com/people/11414181@N08}ma_shimaro{/a}({a=https://creativecommons.org/licenses/by/2.0/}LICENCE{/a}), {a=https://www.flickr.com/people/11414181@N08}Elstner Hilton{/a}({a=https://creativecommons.org/licenses/by/2.0/}LICENCE{/a}, {a=https://www.flickr.com/photos/39873055@N00}Vera46{/a}({a=https://creativecommons.org/licenses/by/2.0/}LICENCE{/a}), {a=https://commons.wikimedia.org/wiki/User:Opzwartbeek}Opzwartbeek{/a}({a=https://creativecommons.org/licenses/by-sa/4.0}LICENCE{/a})" xoffset 15 yalign 0.5
 
         text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
         

@@ -203,7 +203,7 @@ label exm_taisho_exposition_sword:
             extend "{b}Katana{/b}, I suppose?"
             pause 0.5
             play sound4 "audio/sfx/gui_phone_swipe.ogg"
-            show it_scroll with dissolve:
+            show it_katana with dissolve:
                 xalign 0.5 yalign 0.4
             pause 0.5
             nvl clear
@@ -227,7 +227,7 @@ label exm_taisho_exposition_sword:
         else:
             pause 0.5
             play sound4 "audio/sfx/gui_phone_swipe.ogg"
-            show it_scroll with dissolve:
+            show it_katana with dissolve:
                 xalign 0.5 yalign 0.4
             pause 0.5
             nvl clear
@@ -237,6 +237,7 @@ label exm_taisho_exposition_sword:
             d """As detailed in his diaries, Du Bois found the weapon at an unspecified location in the Yamaguchi Prefecture during his travels in the region. Subsequent examinations date this particular weapon back to the 12th century."""
         $ flashlight_consume = True
     pause 1.0
+    hide it_katana with dissolve
     hide darkness_layers
     call screen taisho_exposition_exam
     with dissolve

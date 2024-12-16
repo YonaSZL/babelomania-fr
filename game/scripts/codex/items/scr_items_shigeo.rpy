@@ -9,7 +9,7 @@ screen scr_babel_painting():
 
 screen scr_tenugui():
     label _("Tenugui")
-    add "images/cdx/its/004_Tenugui.png"
+    add "images/cdx/its/005_tenugui.png"
     text _("""Tenugui are traditional Japanese decorative towels, with their origins tracing back to the Heian period of Japanese history. Made out of woven silk or hemp and used in ceremonies and religious rituals Tenugui were originally an expensive commodity due to the intricate process of fabric-making, labor-intensive and costly in a period before mass production techniques.""") justify True
 
     text _("""Tenugui did not achieve widespread popularity until much later and with affordability, came widespread use in various endeavors. More durable than paper, thus able to be washed and reused, it served as everything from clothing and headwear to protective and decorative wrapping. Over time, Tenugui became so affordable that they even started to be utilized for home cleaning and personal hygiene.""")  justify True
