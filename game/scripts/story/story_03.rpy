@@ -668,7 +668,6 @@ label story_03_taisho_lower:
         yanchor 1.0 xpos 540 ypos 880 zoom 0.15
     show darkness_layers
     with dissolve
-    play sound2 "audio/se/door_heavy_rattle.ogg"
     sh neutral "I see no padlock or input panel on this one...{w=0.5} Just a keyhole."
     show Amina surprise
     am surprise "No code puzzle this time, then...{w=0.5} We need to {nw}"
