@@ -11,3 +11,7 @@
 *.zip
 *.psd
 *.rar
+*.vscode
+*.vs
+*.git
+*.idea
