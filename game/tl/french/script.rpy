@@ -16,7 +16,7 @@ translate french start_1aad2f4b:
 translate french start_0124420b:
 
     # d "This game contains elements that may be disturbing or triggering to some players, including but not limited to:{nw}"
-    d "Ce jeu contient des éléments qui peuvent être dérangeants ou choquants pour certains joueurs, incluant mais n'était pas limité au : {nw}"
+    d "Ce jeu contient des notions qui peuvent être dérangeantes ou choquantes chez certains, incluant sans se limiter au : {nw}"
 
 # game/script.rpy:210
 translate french start_dde17c2e:
@@ -130,15 +130,15 @@ translate french strings:
 
     # game/script.rpy:68
     old "Professor Habiki"
-    new "Professor Habiki"
+    new "Professeur Habiki"
 
     # game/script.rpy:77
     old "Academic Invitee"
-    new "Invité Académique"
+    new "Invité académique"
 
     # game/script.rpy:78
     old "Fashionable Invitee"
-    new "Invité à la Mode"
+    new "Invité élégant"
 
     # game/script.rpy:243
     old "Do you understand?"
@@ -154,7 +154,7 @@ translate french strings:
 
     # game/script.rpy:252
     old "What level of gore would you prefer? (This setting can be changed at any time from the OPTIONS menu.)"
-    new "Quel niveau de gore préférez-vous ? (Ce paramètre peut être changé à tout moment depuis le menu des OPTIONS.)"
+    new "Quel niveau de gore préféreriez-vous ? (Ce paramètre peut être changé à tout moment depuis le menu OPTIONS.)"
 
     # game/script.rpy:252
     old "Full gore."
