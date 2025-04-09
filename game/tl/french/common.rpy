@@ -52,7 +52,7 @@ translate french strings:
 
     # renpy/common/00accessibility.rpy:121
     old "Accessibility Menu. Use up and down arrows to navigate, and enter to activate buttons and bars."
-    new "Menu d'Accessibilité. Utiliser les fléches haut et bas pour naviguer, et entrée pour activer les boutons et barres."
+    new "Menu d'accessibilité. Utiliser les flèches haut et bas pour naviguer, et 'entrée' pour activer les boutons et les barres."
 
     # renpy/common/00accessibility.rpy:140
     old "Font Override"
@@ -84,7 +84,7 @@ translate french strings:
 
     # renpy/common/00accessibility.rpy:182
     old "High Contrast Text"
-    new "Texte Haut Contraste"
+    new "Texte haut contraste"
 
     # renpy/common/00accessibility.rpy:184
     old "Enable"
@@ -524,7 +524,7 @@ translate french strings:
 
     # renpy/common/00gui.rpy:460
     old "Do you trust the device the save was created on? You should only choose yes if you are the device's sole user."
-    new "Faites-vous confiance à l'appareil sur lequel la sauvegarde a été créée ? Vous devriez seulement choisir oui si vous êtes le seul utilisateur de l'appareil."
+    new "Faites-vous confiance à l'appareil sur lequel la sauvegarde a été créée ? Vous devriez seulement choisir "oui" si vous êtes le seul utilisateur de l'appareil."
 
     # renpy/common/00keymap.rpy:328
     old "Failed to save screenshot as %s."
@@ -540,7 +540,7 @@ translate french strings:
 
     # renpy/common/00library.rpy:335
     old "This program contains free software under a number of licenses, including the MIT License and GNU Lesser General Public License. A complete list of software, including links to full source code, can be found {a=https://www.renpy.org/l/license}here{/a}."
-    new "Ce programme contient un logiciel gratuit sous un nombre de licences, incluant la licence MIT et GNU Lesser General Public License. Une liste complète du logiciel, incluant des liens vers le code source entier, peux être trouver {a=https://www.renpy.org/l/license}ici{/a}."
+    new "Ce programme contient un logiciel gratuit sous un nombre de licences. Une liste complète du logiciel, incluant des liens vers le code source entier, {a=https://www.renpy.org/l/license}peut être trouvée ici{/a}."
 
     # renpy/common/00preferences.rpy:288
     old "display"
@@ -784,7 +784,7 @@ translate french strings:
 
     # renpy/common/00preferences.rpy:703
     old "Self-voicing enabled. Press 'v' to disable."
-    new "Narration activée. Presser 'v' pour désactiver."
+    new "Narration activée. Presser 'V' pour désactiver."
 
     # renpy/common/00speechbubble.rpy:416
     old "Speech Bubble Editor"
@@ -820,7 +820,7 @@ translate french strings:
 
     # renpy/common/00sync.rpy:316
     old "Please enter the sync ID you generated.\nNever enter a sync ID you didn't create yourself."
-    new "S'il vous plaît, entrer le sync ID que vous avez généré.\nN'entrer jamais un sync ID que vous n'avez pas créer vous-même."
+    new "S'il vous plaît, entrer le sync ID que vous avez généré.\nN'entrez jamais un sync ID que vous n'avez pas créé vous-même."
 
     # renpy/common/00sync.rpy:335
     old "The sync ID is not in the correct format."
@@ -912,7 +912,7 @@ translate french strings:
 
     # renpy/common/00updater.rpy:953
     old "Either this project does not support updating, or the update status file was deleted."
-    new "Soit ce projet n'est pas supporté pour les mises à jour, ou le fichier d'état de mise à jour a été supprimé."
+    new "Soit ce projet ne supporte pas les mises à jour, soit le fichier ne supporte pas les mises à jour."
 
     # renpy/common/00updater.rpy:967
     old "This account does not have permission to perform an update."
@@ -956,7 +956,7 @@ translate french strings:
 
     # renpy/common/00updater.rpy:2035
     old "[u.version] is available. Do you want to install it?"
-    new "[u.version] est disponible. Voulez-vous l'installer?"
+    new "[u.version] est disponible. Voulez-vous l'installer ?"
 
     # renpy/common/00updater.rpy:2037
     old "Preparing to download the updates."
@@ -992,7 +992,7 @@ translate french strings:
 
     # renpy/common/00updater.rpy:2080
     old "Preparing to download the game data."
-    new "Préparation du téléchargement des données du jeu."
+    new "Préparation du téléchargement des données de jeu."
 
     # renpy/common/00updater.rpy:2082
     old "Downloading the game data."
@@ -1008,7 +1008,7 @@ translate french strings:
 
     # renpy/common/00updater.rpy:2091
     old "This game cannot be run until the game data has been downloaded."
-    new "Le jeu ne peux pas se lancer jusqu'à que les données soient téléchargées."
+    new "Le jeu ne peut pas se lancer jusqu'à que les données soient téléchargées."
 
     # renpy/common/00updater.rpy:2098
     old "Retry"
@@ -1040,7 +1040,7 @@ translate french strings:
 
     # renpy/common/00gltest.rpy:94
     old "Automatically Choose"
-    new "Choisir Automatiquement"
+    new "Choisir automatiquement"
 
     # renpy/common/00gltest.rpy:101
     old "Force GL Renderer"
@@ -1076,7 +1076,7 @@ translate french strings:
 
     # renpy/common/00gltest.rpy:174
     old "Framerate"
-    new "Taux de raffraichissement"
+    new "Taux de raffraîchissement"
 
     # renpy/common/00gltest.rpy:178
     old "Screen"
@@ -1108,11 +1108,11 @@ translate french strings:
 
     # renpy/common/00gltest.rpy:251
     old "This game requires use of GL2 that can't be initialised."
-    new "Ce jeu nécessite l'utilisation de GL2 qui ne peut être initialisé."
+    new "Ce jeu nécessite l'utilisation de GL2 qui ne peut pas être initialisé."
 
     # renpy/common/00gltest.rpy:253
     old "This computer has a problem displaying graphics: [problem]."
-    new "Cet ordinateur a du mal pour afficher les graphismes: [problem]."
+    new "Cet ordinateur a un problème d'affichage: [problem]."
 
     # renpy/common/00gltest.rpy:257
     old "Its graphics drivers may be out of date or not operating correctly. This can lead to slow or incorrect graphics display."
@@ -1128,15 +1128,15 @@ translate french strings:
 
     # renpy/common/00gltest.rpy:271
     old "Continue, Show this warning again"
-    new "Poursuivre, Continuer à montrer cet avertissement"
+    new "Poursuivre, continuer à montrer cet avertissement"
 
     # renpy/common/00gltest.rpy:275
     old "Continue, Don't show warning again"
-    new "Poursuivre, Ne plus montrer cet avertissement"
+    new "Poursuivre, ne plus montrer cet avertissement"
 
     # renpy/common/00gltest.rpy:283
     old "Change render options"
-    new "Garder options de rendu"
+    new "Changer options de rendu"
 
     # renpy/common/00gamepad.rpy:33
     old "Select Gamepad to Calibrate"
@@ -1144,7 +1144,7 @@ translate french strings:
 
     # renpy/common/00gamepad.rpy:36
     old "No Gamepads Available"
-    new "Pas de Gamepads disponibles"
+    new "Pas de gamepads disponibles"
 
     # renpy/common/00gamepad.rpy:56
     old "Calibrating [name] ([i]/[total])"
